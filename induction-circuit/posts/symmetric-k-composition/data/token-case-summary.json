@@ -1,0 +1,162 @@
+{
+  "source_model": {
+    "id": "c4-90M_default",
+    "repo": "allenai/DataDecide-c4-90M",
+    "revision": "2e612c115480fa22d56ab35f1b7468a686c32ad9",
+    "step": 29901,
+    "scale": "90M",
+    "recipe": "C4",
+    "seed": "default"
+  },
+  "reader_layer": 13,
+  "reader_head": 8,
+  "paired_head_layer": 12,
+  "paired_head": 7,
+  "paired_head_writer_label": 0,
+  "token_IDs": [
+    5195,
+    3893
+  ],
+  "token_texts": [
+    " spread",
+    "\n      "
+  ],
+  "contexts_per_role": 64,
+  "layers": 16,
+  "integer_distances": 2048,
+  "native_layer_pair": [
+    {
+      "left_layer": 13,
+      "right_layer": 12,
+      "component": "C",
+      "same_mean": 543.3832754780409,
+      "different_mean": 18.226659069466265,
+      "gap": 525.1566164085747,
+      "matched_context_fraction": 1.0
+    },
+    {
+      "left_layer": 13,
+      "right_layer": 12,
+      "component": "Hplus",
+      "same_mean": 622.8868480547745,
+      "different_mean": 24.182256111314782,
+      "gap": 598.7045919434597,
+      "matched_context_fraction": 1.0
+    },
+    {
+      "left_layer": 13,
+      "right_layer": 12,
+      "component": "Hminus",
+      "same_mean": -62.79570580439775,
+      "different_mean": -34.41702226408289,
+      "gap": -28.37868354031486,
+      "matched_context_fraction": 0.013239383697509766
+    },
+    {
+      "left_layer": 13,
+      "right_layer": 12,
+      "component": "A",
+      "same_mean": -16.707866772338143,
+      "different_mean": 28.461425222234233,
+      "gap": -45.169291994572376,
+      "matched_context_fraction": 0.1510612964630127
+    }
+  ],
+  "all_layer_summary": {
+    "C": {
+      "same_mean_over_all_layers_contexts_D": 501.48631816682877,
+      "different_mean_over_all_layers_contexts_D": 14.29337590726239,
+      "mean_gap": 487.1929422595664,
+      "layer_pairs_positive_mean_gap": 256,
+      "layer_pairs_mean_same_greater_every_D": 256,
+      "different_layer_pairs_positive_mean_gap": 240,
+      "minimum_layer_pair_mean_gap": 83.91045992044945,
+      "maximum_layer_pair_mean_gap": 803.9436003888809,
+      "minimum_layer_pair": [
+        0,
+        15
+      ],
+      "maximum_layer_pair": [
+        1,
+        2
+      ],
+      "matched_context_comparison_fraction_over_all_D_layers": 0.9966140608303249,
+      "same_score_global_min": -22.859064819019007,
+      "same_score_global_max": 1165.3242634873236,
+      "different_score_global_min": -610.0814396617002,
+      "different_score_global_max": 675.2076285097993
+    },
+    "Hplus": {
+      "same_mean_over_all_layers_contexts_D": 558.3198101309019,
+      "different_mean_over_all_layers_contexts_D": 5.021646521750943,
+      "mean_gap": 553.2981636091511,
+      "layer_pairs_positive_mean_gap": 256,
+      "layer_pairs_mean_same_greater_every_D": 256,
+      "different_layer_pairs_positive_mean_gap": 240,
+      "minimum_layer_pair_mean_gap": 76.85211566096662,
+      "maximum_layer_pair_mean_gap": 923.9188007310271,
+      "minimum_layer_pair": [
+        0,
+        15
+      ],
+      "maximum_layer_pair": [
+        1,
+        2
+      ],
+      "matched_context_comparison_fraction_over_all_D_layers": 0.999155349098146,
+      "same_score_global_min": -15.428333299852353,
+      "same_score_global_max": 1224.0554442554271,
+      "different_score_global_min": -562.9379197249178,
+      "different_score_global_max": 661.9760035335694
+    },
+    "Hminus": {
+      "same_mean_over_all_layers_contexts_D": -54.588845485030475,
+      "different_mean_over_all_layers_contexts_D": -31.311822429814153,
+      "mean_gap": -23.27702305521633,
+      "layer_pairs_positive_mean_gap": 20,
+      "layer_pairs_mean_same_greater_every_D": 14,
+      "different_layer_pairs_positive_mean_gap": 20,
+      "minimum_layer_pair_mean_gap": -49.14390552475636,
+      "maximum_layer_pair_mean_gap": 16.55532473438658,
+      "minimum_layer_pair": [
+        3,
+        4
+      ],
+      "maximum_layer_pair": [
+        14,
+        0
+      ],
+      "matched_context_comparison_fraction_over_all_D_layers": 0.10717445658519864,
+      "same_score_global_min": -224.19056428344197,
+      "same_score_global_max": 43.66092889780828,
+      "different_score_global_min": -170.60870167923235,
+      "different_score_global_max": 58.068935801496075
+    },
+    "A": {
+      "same_mean_over_all_layers_contexts_D": -2.244646479044721,
+      "different_mean_over_all_layers_contexts_D": 40.58355181532545,
+      "mean_gap": -42.828198294370175,
+      "layer_pairs_positive_mean_gap": 22,
+      "layer_pairs_mean_same_greater_every_D": 3,
+      "different_layer_pairs_positive_mean_gap": 21,
+      "minimum_layer_pair_mean_gap": -99.6284365653852,
+      "maximum_layer_pair_mean_gap": 58.81524036918686,
+      "minimum_layer_pair": [
+        8,
+        2
+      ],
+      "maximum_layer_pair": [
+        3,
+        0
+      ],
+      "matched_context_comparison_fraction_over_all_D_layers": 0.24465808272361755,
+      "same_score_global_min": -291.6343259959334,
+      "same_score_global_max": 366.5387734869391,
+      "different_score_global_min": -256.30723438308087,
+      "different_score_global_max": 649.6408360457456
+    }
+  },
+  "score_definition": "x(layer,query_context).T M_D y(layer,partner_context), no extra unit normalization, Hminus signed, no sqrt44 scaling",
+  "max_score_decomposition_error": 9.734435479913373e-12,
+  "scope": "One selected reader, its original paired earlier head, and two token identities; exploratory finite comparison."
+}

@@ -1,0 +1,56 @@
+{
+  "publication_date": "2026-10-13",
+  "sources": {
+    "90M_all_layers_all64_contexts_all_distances_20261013/results.json": {
+      "sha256": "88b251ca58e222fe338e84f696f4b302f90a92f93f0b95479038e04d49f111e4",
+      "bytes": 17806
+    },
+    "90M_all_layers_all64_contexts_all_distances_20261013/layer_pair_all_distance_context_summary.csv": {
+      "sha256": "60e14917c9168fef49b99f7960112e2f5e104b0bee62c460173a1911ba383f16",
+      "bytes": 81845
+    },
+    "90M_Hplus_distance_change_token5195_20261013/all_distance_change.csv": {
+      "sha256": "feb117c511877c831d8132b1f4eb08a5c8db9c0956c8f5c1e537ba2a21195b4b",
+      "bytes": 397312
+    },
+    "90M_Hplus_distance_change_token5195_20261013/all_distance_direction.csv": {
+      "sha256": "3c07d6092a69b536fa54d6677c60f2b4fad41974fe13424065961e44b2859cf7",
+      "bytes": 492524
+    },
+    "90M_Hplus_distance_change_token5195_20261013/results.json": {
+      "sha256": "3c0ae697968bc8b653558f44cfb473d9c613a7b01b42dac57fdf1e4889d9e5df",
+      "bytes": 9322
+    },
+    "90M_Hplus_distance_change_token5195_20261013/direction_results.json": {
+      "sha256": "193fd6d2c38fbc76afeb1d8c8656a959c5868fabb4db8fcece44abb8770a9d9f",
+      "bytes": 8262
+    },
+    "90M_token5195_shared_component_all_layers_contexts_20261013/results.json": {
+      "sha256": "78b1117d5786b40320fe2e4e9ab6dba7bb8ea6d1589d0be6724b19c9af578275",
+      "bytes": 23917
+    },
+    "all_distance_reader_energy_DEV_results.json": {
+      "sha256": "cb36690ba6565d314b8c6d57fe80ab82f1f3b600d02ecd372cf06fdc1312fd30",
+      "bytes": 7085750
+    },
+    "joint_positive_concentration_DEV_results.json": {
+      "sha256": "e91ac20fcd1ef3305fe1222e83b7786a991e531199bc2d33fd84422ba4e0c1ea",
+      "bytes": 12596159
+    },
+    "joint_positive_frequency_DEV_results.json": {
+      "sha256": "8e1ebd2200a01370554a263ef07fd8caaabc813231df50a89c9890e8fbb7c1cf",
+      "bytes": 3635473
+    }
+  },
+  "scope": "Frozen existing analysis artifacts; no new model forwards, labels, fits, or interventions.",
+  "static_coverage": {
+    "energy_snapshot_models": 697,
+    "reference_distance_concentration_models": 700,
+    "reference_distance_frequency_models": 700,
+    "reference_distances": [
+      0,
+      127,
+      2047
+    ]
+  }
+}

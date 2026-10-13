@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A symmetric spectral analysis of induction-circuit matching, with proofs, OLMo matrix statistics, and an exploratory contextual-token case study." />
+  <meta name="theme-color" content="#ffffff" />
+  <title>A Symmetric Spectral View of Induction-Circuit Matching | Shaoxiang Wu</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="./post.css" />
+  <script src="./post.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<main class="article-shell" id="main">
+  <nav class="article-nav" aria-label="Article navigation"><a href="/">Shaoxiang Wu</a><span aria-hidden="true"> / </span><a href="/induction-circuit/">Induction-Circuit Initialization</a></nav>
+  <header class="article-header">
+    <p class="eyebrow">Research note · <time datetime="2026-10-13">13 October 2026</time></p>
+    <h1>A Symmetric Spectral View of Induction-Circuit Matching</h1>
+    <p class="dek">Positive eigenvalues, low-dimensional structure, and the gap between a positive self-score and selective token matching.</p>
+    <p class="byline">Shaoxiang Wu</p>
+  </header>
+  <nav class="article-contents" aria-label="Contents">
+    <a href="#motivation">Motivation</a><a href="#algebra">Algebra</a><a href="#energy">Matrix energy</a><a href="#geometry">Geometry</a><a href="#tokens">Token representations</a><a href="#questions">Open questions</a><a href="#data">Data</a>
+  </nav>
+  <article class="article-body">
+    <section id="motivation">
+      <h2>1. From prefix matching to a matrix question</h2>
+      <p>An induction head implements a familiar pattern: <span class="math">[A][B] … [A] → [B]</span>. A later attention head locates a position whose preceding token matches the current token, then copies information about the following token. In a two-head account, an earlier head supplies previous-token information to the key of a later reader.</p>
+      <p>Anthropic’s <em>A Mathematical Framework for Transformer Circuits</em> (2021) analyzed this interaction through K-composition. Positive eigenvalues of the effective matching matrix provided a useful heuristic for same-token matching. The paper also explicitly noted the limitation: nonorthogonal eigenvectors can invalidate a universal copying guarantee. <a class="reference" href="#ref1" aria-label="Reference 1">[1]</a></p>
+      <p><em>In-context Learning and Induction Heads</em> (2022) further examined eigenvalue-based diagnostics. In small attention-only models, an embedding-sandwiched, previous-token-attention-weighted K-composition trace correlated with measured prefix matching. These papers studied trained circuits; the initialization objective considered here is a subsequent research question. <a class="reference" href="#ref2" aria-label="Reference 2">[2]</a></p>
+      <p>This post develops a symmetric spectral account of the same-input score, then asks whether its dominant positive directions also support matching between contextual representations of the same token. The algebra is exact; token selectivity and transfer across circuits require empirical evidence.</p>
+      <div class="equation" role="math" aria-label="The relative-distance K-composition operator">C<sub>D</sub> = Q<sub>r</sub><sup>⊤</sup> R(−D) K<sub>r</sub> O<sub>w</sub> V<sub>w</sub>, &nbsp; s<sub>D</sub>(x, y) = x<sup>⊤</sup>C<sub>D</sub>y.</div>
+      <p class="method-note">We use column vectors. <span class="math">Q<sub>r</sub>, K<sub>r</sub></span> map residual space into reader head space, <span class="math">O<sub>w</sub>V<sub>w</sub></span> is the earlier head’s residual-space output map, and <span class="math">R(−D)</span> is the relative RoPE rotation. In the empirical operator, the appropriate affine RMSNorm factors are included. This is one composition path, rather than the complete attention computation.</p>
+    </section>
+
+    <section id="algebra">
+      <h2>2. Why a positive spectrum is suggestive, but insufficient</h2>
+      <p>For a real right eigenvector <span class="math">v</span> with a positive eigenvalue, <span class="math">Cv = λv</span> implies</p>
+      <div class="equation" role="math">v<sup>⊤</sup>Cv = λ‖v‖<sup>2</sup> &gt; 0.</div>
+      <p>This explains the intuition. However, a general nonsymmetric matrix need not have orthogonal eigenvectors. When an input combines several eigenvectors, cross terms can outweigh the positive diagonal terms.</p>
+      <div class="equation equation-wrap" role="math">x<sup>⊤</sup>Cx = ∑<sub>i</sub> a<sub>i</sub><sup>2</sup>λ<sub>i</sub>‖v<sub>i</sub>‖<sup>2</sup> + ∑<sub>i&lt;j</sub> a<sub>i</sub>a<sub>j</sub>(λ<sub>i</sub> + λ<sub>j</sub>)v<sub>i</sub><sup>⊤</sup>v<sub>j</sub>, &nbsp; x = ∑<sub>i</sub>a<sub>i</sub>v<sub>i</sub>.</div>
+      <p>For a concrete counterexample, take <span class="math">C = [[1, 4], [0, 2]]</span>. Its eigenvalues are 1 and 2, with eigenvectors <span class="math">v<sub>1</sub> = (1, 0)<sup>⊤</sup></span> and <span class="math">v<sub>2</sub> = (4, 1)<sup>⊤</sup></span>. Yet <span class="math">x = (1, −1)<sup>⊤</sup> = 5v<sub>1</sub> − v<sub>2</sub></span> gives <span class="math">x<sup>⊤</sup>Cx = −1</span>: the diagonal contributions sum to 59, while the cross term is −60.</p>
+      <figure><img src="./assets/positive-eigenvalue-counterexample.png" alt="Self-score of a unit vector varies with its angle and becomes negative despite the matrix having eigenvalues 1 and 2." width="1440" height="630" /><figcaption><strong>Figure 1.</strong> An analytical counterexample. The curve evaluates the specified 2 × 2 matrix on unit vectors; it is not a model experiment. <a href="./assets/positive-eigenvalue-counterexample.svg">SVG</a> · <a href="./assets/positive-eigenvalue-counterexample.pdf">PDF</a></figcaption></figure>
+      <p>Trace also has an average-case interpretation. If the input second moment is isotropic, <span class="math">E[xx<sup>⊤</sup>] = I</span>, then <span class="math">E[x<sup>⊤</sup>Cx] = tr(C)</span>. For a general second-moment matrix <span class="math">M<sub>2</sub></span>, the expectation is <span class="math">tr(CM<sub>2</sub>)</span>. Thus a positive trace need not characterize every input direction, and the input distribution matters.</p>
+      <h3>The symmetric part determines identical-vector scores</h3>
+      <p>Write <span class="math">C = H + A</span>, where</p>
+      <div class="equation" role="math">H = ½(C + C<sup>⊤</sup>), &nbsp; A = ½(C − C<sup>⊤</sup>).</div>
+      <p>Because <span class="math">A<sup>⊤</sup> = −A</span>, the scalar <span class="math">x<sup>⊤</sup>Ax</span> equals its transpose and also its own negative:</p>
+      <div class="equation" role="math">x<sup>⊤</sup>Ax = (x<sup>⊤</sup>Ax)<sup>⊤</sup> = x<sup>⊤</sup>A<sup>⊤</sup>x = −x<sup>⊤</sup>Ax = 0.</div>
+      <p>Consequently, <span class="math">x<sup>⊤</sup>Cx = x<sup>⊤</sup>Hx</span>. The symmetric part, rather than the spectrum of the original nonsymmetric matrix, determines whether every identical-vector score is nonnegative.</p>
+      <p>Diagonalize <span class="math">H = UΛU<sup>⊤</sup></span> in an orthonormal basis and separate its positive and signed negative parts:</p>
+      <div class="equation equation-wrap" role="math">H<sup>+</sup> = ∑<sub>λ<sub>i</sub>&gt;0</sub> λ<sub>i</sub>u<sub>i</sub>u<sub>i</sub><sup>⊤</sup>, &nbsp; H<sup>−</sup> = ∑<sub>λ<sub>i</sub>&lt;0</sub> λ<sub>i</sub>u<sub>i</sub>u<sub>i</sub><sup>⊤</sup>, &nbsp; C = H<sup>+</sup> + H<sup>−</sup> + A.</div>
+      <div class="equation" role="math">x<sup>⊤</sup>H<sup>+</sup>x = ∑<sub>λ<sub>i</sub>&gt;0</sub> λ<sub>i</sub>(u<sub>i</sub><sup>⊤</sup>x)<sup>2</sup> ≥ 0.</div>
+      <p>Thus <span class="math">H<sup>+</sup></span> is positive semidefinite. The score is strictly positive only when the input has a nonzero projection onto its positive eigenspace; inputs in its nullspace score zero.</p>
+    </section>
+
+    <section id="energy">
+      <h2>3. How much of the operator is positive symmetric energy?</h2>
+      <p>The three components are orthogonal under the Frobenius inner product. Symmetric and antisymmetric matrices are orthogonal, and <span class="math">H<sup>+</sup>H<sup>−</sup> = 0</span> because they occupy disjoint eigenspaces. Therefore,</p>
+      <div class="equation" role="math">‖C<sub>D</sub>‖<sub>F</sub><sup>2</sup> = ‖H<sub>D</sub><sup>+</sup>‖<sub>F</sub><sup>2</sup> + ‖H<sub>D</sub><sup>−</sup>‖<sub>F</sub><sup>2</sup> + ‖A<sub>D</sub>‖<sub>F</sub><sup>2</sup>.</div>
+      <p>We measure this decomposition in OLMo/DataDecide models across 14 parameter scales. For every included head, the analysis covers all integer distances <span class="math">D = 0, …, 2047</span>. Within each scale, we average each component’s raw squared norm over distances, then over qualifying heads within a model, then equally over included models. We divide only after these averages:</p>
+      <div class="equation" role="math">F<sub>+</sub> = ⟨‖H<sub>D</sub><sup>+</sup>‖<sub>F</sub><sup>2</sup>⟩ / ⟨‖C<sub>D</sub>‖<sub>F</sub><sup>2</sup>⟩, &nbsp; F<sub>−</sub> + F<sub>+</sub> + F<sub>A</sub> = 1.</div>
+      <p>This <em>composition of mean raw energies</em> differs from averaging per-distance energy fractions. Reader qualification requires both existing behavioral banks to exceed the selected threshold strictly. Models with no qualifying heads do not contribute zero-valued observations.</p>
+      <div class="figure-controls"><label for="energy-threshold">Reader threshold in both banks</label><select id="energy-threshold"><option value="0.3">&gt; 0.3</option><option value="0.5">&gt; 0.5</option></select></div>
+      <figure><img id="energy-figure" src="./assets/all-distance-energy-03.png" alt="Stacked energy shares of H plus, H minus, and the antisymmetric part across fourteen model scales." loading="lazy" /><figcaption><strong>Figure 2.</strong> Distance-averaged raw-energy composition, shown separately by model scale. The plot uses a frozen available-model snapshot of 697 models. <a id="energy-svg" href="./assets/all-distance-energy-03.svg">SVG</a> · <a href="./data/all-distance-energy.csv" download>CSV</a></figcaption></figure>
+      <details><summary>Numerical values by scale</summary><div class="table-scroll"><table><thead><tr><th scope="col">Scale</th><th scope="col">H⁺ (%)</th><th scope="col">H⁻ (%)</th><th scope="col">A (%)</th></tr></thead><tbody id="energy-table-body"><tr><th scope="row">4M</th><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><th scope="row">6M</th><td>53.46</td><td>14.32</td><td>32.22</td></tr>
+<tr><th scope="row">8M</th><td>58.50</td><td>9.28</td><td>32.22</td></tr>
+<tr><th scope="row">10M</th><td>59.11</td><td>11.52</td><td>29.37</td></tr>
+<tr><th scope="row">14M</th><td>65.58</td><td>7.06</td><td>27.36</td></tr>
+<tr><th scope="row">16M</th><td>65.67</td><td>6.41</td><td>27.92</td></tr>
+<tr><th scope="row">20M</th><td>65.18</td><td>6.48</td><td>28.34</td></tr>
+<tr><th scope="row">60M</th><td>67.50</td><td>4.87</td><td>27.64</td></tr>
+<tr><th scope="row">90M</th><td>73.96</td><td>2.51</td><td>23.53</td></tr>
+<tr><th scope="row">150M</th><td>74.80</td><td>2.06</td><td>23.14</td></tr>
+<tr><th scope="row">300M</th><td>72.98</td><td>2.71</td><td>24.31</td></tr>
+<tr><th scope="row">530M</th><td>67.39</td><td>4.02</td><td>28.59</td></tr>
+<tr><th scope="row">750M</th><td>64.33</td><td>5.05</td><td>30.62</td></tr>
+<tr><th scope="row">1B</th><td>60.19</td><td>6.35</td><td>33.46</td></tr></tbody></table></div></details>
+      <p>For example, at 90M and the &gt; 0.3 threshold, the positive symmetric, negative symmetric, and antisymmetric components account for 73.96%, 2.51%, and 23.53% of mean raw energy, respectively. The component balance varies across model scales.</p>
+      <p>A large <span class="math">F<sub>+</sub></span> describes the matrix. It does not establish that a particular input lies in its dominant positive directions, that the full operator has positive self-scores everywhere, or that a matching token outranks competing tokens.</p>
+    </section>
+
+    <section id="geometry">
+      <h2>4. Concentration and RoPE geometry</h2>
+      <p>Two structural questions motivate the next step: is the positive spectrum concentrated in relatively few directions, and do the images of those directions preferentially occupy slowly rotating RoPE planes?</p>
+      <h3>Trace concentration and energy concentration are distinct</h3>
+      <p>The existing concentration analysis selects the fewest leading positive eigenvectors accounting for 90% of positive trace:</p>
+      <div class="equation" role="math">r<sub>90,tr</sub> = min { k : ∑<sub>i≤k</sub>λ<sub>i</sub><sup>+</sup> / ∑<sub>i</sub>λ<sub>i</sub><sup>+</sup> ≥ 0.9 }.</div>
+      <p>A 90% squared-energy rank instead uses <span class="math">(λ<sub>i</sub><sup>+</sup>)<sup>2</sup></span>. The rank plotted here is the trace-based quantity; squared-energy retention is measured separately. Concentration identifies a compact subspace of the operator, while its relationship to token-identity information remains an empirical hypothesis.</p>
+      <figure><img src="./assets/concentration-and-frequency.png" alt="Positive-trace concentration ranks and low-frequency mapped-direction occupancy by model scale at reference distances 0, 127, and 2047." loading="lazy" /><figcaption><strong>Figure 3.</strong> Static concentration and frequency measurements at three reference distances: D = 0, 127, and 2047. These panels do not average over every distance. Qualified readers exceed 0.3 in both banks. The left panel shows medians of per-model mean ranks; the right shows equal-model means of trace-weighted directional amplitude shares, not squared Frobenius energy fractions. The reference-distance cohort contains 700 models. <a href="./assets/concentration-and-frequency.svg">SVG</a> · <a href="./data/static-geometry.csv" download>CSV</a></figcaption></figure>
+      <p>At 90M and D = 127, the median per-model mean trace90 rank is 11.75 in a 528-dimensional residual space. The corresponding equal-model mean low-frequency image-energy shares are 97.75% on the query side and 96.75% on the key–output–value side. The trace-weighted directional low-frequency amplitude share is 97.68%.</p>
+      <p>RoPE frequencies belong to two-dimensional planes in <em>head space</em>. Residual-space eigenvectors are mapped there through the reader’s query map and the key–output–value composition. We call a plane low-frequency when its accumulated phase across the context is less than one full rotation: <span class="math">2047ω &lt; 2π</span>. A residual coordinate index is not itself a RoPE-frequency label.</p>
+      <p class="method-note">The Q and KOV image-energy shares treat the selected orthonormal eigenvectors equally; they do not weight those vectors by their eigenvalues. The directional amplitude statistic is separately trace-weighted.</p>
+      <h3>Energy retention across distance does not imply invariant directions</h3>
+      <p>For the 90M case below, the positive rank at D = 0 is 44, while its 90%-trace rank is 11. Let <span class="math">U<sub>0</sub></span> contain those 11 leading directions. Across every integer distance, the fixed subspace captures at least <strong>90.37%</strong> of squared <span class="math">H<sup>+</sup></span> energy:</p>
+      <div class="equation" role="math">capture(D) = ‖U<sub>0</sub><sup>⊤</sup>H<sub>D</sub><sup>+</sup>U<sub>0</sub>‖<sub>F</sub><sup>2</sup> / ‖H<sub>D</sub><sup>+</sup>‖<sub>F</sub><sup>2</sup>.</div>
+      <p>Nevertheless, the top-11 subspace’s mean squared principal-angle cosine falls to <strong>0.7446</strong> at D = 2047, and the largest principal angle reaches <strong>79.38°</strong>. The full positive matrix changes by <strong>52.77%</strong> in relative Frobenius norm. This example supports persistent energy concentration, while showing substantial directional and matrix drift.</p>
+      <figure><img src="./assets/distance-energy-and-drift.png" alt="Energy capture stays above ninety percent as top eleven direction overlap declines; matrix change is much larger than the fixed same-token score change." loading="lazy" /><figcaption><strong>Figure 4.</strong> One selected 90M reader and its original paired head, all 2,048 distances. The right panel’s token score uses one fixed query/partner context pair. <a href="./assets/distance-energy-and-drift.svg">SVG</a> · <a href="./data/hplus-subspace-distance.csv" download>Subspace CSV</a> · <a href="./data/hplus-distance-change.csv" download>Matrix/score CSV</a></figcaption></figure>
+      <div class="explorer" aria-labelledby="explorer-title">
+        <h3 id="explorer-title">Explore relative distance</h3>
+        <p>Inspect the retained measurements for one fixed contextual token pair.</p>
+        <label for="distance-slider">Distance D: <output id="distance-value" for="distance-slider">0</output></label>
+        <input id="distance-slider" type="range" min="0" max="2047" step="1" value="0" />
+        <div class="explorer-metrics" aria-live="polite"><div><span>Fixed-subspace energy</span><strong id="distance-capture">99.27%</strong></div><div><span>Top-11 overlap</span><strong id="distance-overlap">100.00%</strong></div><div><span>H⁺ matrix change</span><strong id="distance-change">0.00%</strong></div><div><span>Same / different score</span><strong id="distance-score">Loading…</strong></div></div>
+        <p class="method-note" id="explorer-status">All integer distances are retained in the downloadable data.</p>
+      </div>
+    </section>
+
+    <section id="tokens">
+      <h2>5. From identical vectors to contextual token identity</h2>
+      <p>Prefix matching is a ranking problem. For a query representation <span class="math">x</span>, a same-identity candidate <span class="math">y<sub>same</sub></span> should receive a higher score than competing identities. Positive self-scores alone do not guarantee this margin:</p>
+      <div class="equation" role="math">Δ<sub>D</sub> = x<sup>⊤</sup>C<sub>D</sub>y<sub>same</sub> − x<sup>⊤</sup>C<sub>D</sub>y<sub>different</sub>.</div>
+      <p>Even a positive-definite matrix can prefer a different unit vector: with <span class="math">H = diag(2, 1)</span>, <span class="math">x = (1, 1)/√2</span>, and <span class="math">y = (2, 1)/√5</span>, we have <span class="math">x<sup>⊤</sup>Hx = 1.5 &lt; x<sup>⊤</sup>Hy = 5/√10 ≈ 1.581</span>.</p>
+      <p>More fundamentally, the same token in different contexts or layers generally has different residual vectors. For <span class="math">x ≠ y</span>, the antisymmetric contribution <span class="math">x<sup>⊤</sup>Ay</span> need not vanish, and a positive-semidefinite matrix can have a negative cross-input score. The identical-vector proof therefore does not automatically extend to contextual identity matching.</p>
+      <h3>An exploratory 90M case study</h3>
+      <p>We analyze <a href="https://huggingface.co/allenai/DataDecide-c4-90M">DataDecide-c4-90M</a> at step 29,901, revision <code>2e612c115480fa22d56ab35f1b7468a686c32ad9</code>. The selected reader is layer 13, head 8, with an existing reader strength of 0.89593. Its original paired earlier head is layer 12, head 7, with composition capture 0.83000. The earlier head’s existing writer label is 0; we therefore describe it as a paired head rather than a behaviorally verified previous-token writer.</p>
+      <p>The retained comparison uses token 5195 (<code> spread</code>, including its leading space) as the target and token 3893 (<code>\n      </code>) as the alternative. Each token has 64 query-role contexts and 64 partner-role contexts at each of 16 input layers: 128 vectors per layer when pooled across roles, rather than 128 contexts for each role.</p>
+      <p>Inputs are stored RMSNorm-normalized residuals before affine scaling. The operator includes the affine factors. Scores use <span class="math">x<sup>⊤</sup>M<sub>D</sub>y</span>, without additional unit normalization or division by <span class="math">√44</span>. They are raw composition-path scores, not softmax probabilities or the complete attention logits.</p>
+      <figure><img src="./assets/token-matching-native-layers.png" alt="At the native input layers, H plus gives a mean same-token score of 622.89 and different-token score of 24.18; signed negative and antisymmetric terms reduce the margin." loading="lazy" /><figcaption><strong>Figure 5.</strong> Native input layers 13 / 12. Means average all 64 × 64 context pairs and all 2,048 matrix distances. <a href="./assets/token-matching-native-layers.svg">SVG</a> · <a href="./data/token-layer-pair-scores.csv" download>CSV</a></figcaption></figure>
+      <div class="table-scroll"><table><thead><tr><th scope="col">Component</th><th scope="col">Same token</th><th scope="col">Different token</th><th scope="col">Mean margin</th></tr></thead><tbody><tr><th scope="row">Full C</th><td>543.38</td><td>18.23</td><td>525.16</td></tr><tr><th scope="row">H⁺</th><td>622.89</td><td>24.18</td><td>598.70</td></tr><tr><th scope="row">H⁻ (signed)</th><td>−62.80</td><td>−34.42</td><td>−28.38</td></tr><tr><th scope="row">A</th><td>−16.71</td><td>28.46</td><td>−45.17</td></tr></tbody></table></div>
+      <p>At the native layers, the full operator and <span class="math">H<sup>+</sup></span> both favor the same token in every matched-context comparison in this finite grid. Across all 16 × 16 layer pairs, the positive component’s pooled means are <strong>558.32</strong> for the same token and <strong>5.02</strong> for the alternative; its matched-context winning fraction is <strong>99.916%</strong>. All 256 layer pairs have a positive mean margin at every distance.</p>
+      <figure><img src="./assets/token-matching-layer-margins.png" alt="Positive mean same-minus-different margins across all 256 query and paired-head input layer combinations, with the native layer pair outlined." loading="lazy" /><figcaption><strong>Figure 6.</strong> Layer-pair matching margins for the fixed selected operator. Other input layers are representational controls, not executions of the reader at those layers. The outlined cell marks layers 13 / 12. <a href="./assets/token-matching-layer-margins.svg">SVG</a> · <a href="./data/token-layer-pair-scores.csv" download>CSV</a></figcaption></figure>
+      <p>These results support strong pairwise discrimination in the selected example. They do not establish vocabulary-wide retrieval: only one alternative token is tested. Individual same-identity cross-input <span class="math">H<sup>+</sup></span> scores can also be negative—the minimum over this grid is −15.43—which is consistent with positive semidefiniteness applying to identical-vector quadratic forms.</p>
+      <h3>How stable are the retained token representations?</h3>
+      <p>A descriptive layer–context decomposition for token 5195 gives <span class="math">x<sub>ℓc</sub> = μ + a<sub>ℓ</sub> + b<sub>c</sub> + ε<sub>ℓc</sub></span>. On the balanced grid, the global shared mean accounts for <strong>65.62%</strong> of mean squared residual norm; layer, context, and interaction terms account for 25.45%, 4.04%, and 4.89%, respectively. The two context-bank means have cosine similarity 0.99928.</p>
+      <figure><img src="./assets/residual-variation.png" alt="The pooled residual decomposition has a 65.62 percent shared mean component, with remaining layer, context and interaction effects; per-layer stability varies." loading="lazy" /><figcaption><strong>Figure 7.</strong> Token 5195, 16 layers and 128 pooled query/partner contexts per layer. Shared-mean energy and mean-direction alignment are descriptive stability measurements. <a href="./assets/residual-variation.svg">SVG</a> · <a href="./data/residual-stability.json" download>JSON</a></figcaption></figure>
+      <p>A shared mean is not a measurement of token-identity information, and generic residual anisotropy can contribute to it. The empirical covariance has no zero-variance linear direction at the reported numerical tolerance. Approximate representational stability therefore remains distinct from an exactly invariant token subspace.</p>
+    </section>
+
+    <section id="questions">
+      <h2>6. Questions for a transferable initialization rule</h2>
+      <p>The positive symmetric component supplies an exact nonnegativity guarantee for identical vectors. Its concentrated geometry and the contextual-token case study motivate a more specific hypothesis: a useful matching operator may align its dominant positive directions with token-identity structure that persists across contexts and layers.</p>
+      <p>Several questions remain:</p>
+      <ol class="questions-list"><li>How does token-identity information evolve across layers, after separating identity, context, and shared anisotropy?</li><li>Are the dominant positive subspaces shared across reader–paired-head compositions, or can distinct operators achieve similar matching through different bases?</li><li>Can we identify persistent token-identity subspaces that generalize to held-out tokens, entire circuits, and model scales?</li></ol>
+      <p>Answering these questions requires broader token comparisons, suitable hard negatives, and intervention-based tests. A transferable joint-matrix initialization rule must ultimately be tested in newly initialized models. The present evidence identifies candidate structure and a finite matching example; it does not yet validate that initialization rule.</p>
+    </section>
+
+    <section id="data">
+      <h2>Data, methods, and figure downloads</h2>
+      <p>All empirical figures use existing retained analysis artifacts, frozen for this post. The all-distance energy section uses the available-model snapshot; the cross-scale concentration and frequency sections use the completed reference-distance cohort. The 90M sections use one selected operator and the finite populations described above. Layer and head indices are zero-based.</p>
+      <ul class="data-links"><li><a href="./data/all-distance-energy.csv" download>All-distance raw-energy composition (CSV)</a></li><li><a href="./data/static-geometry.csv" download>Reference-distance concentration and frequency summaries (CSV)</a></li><li><a href="./data/token-layer-pair-scores.csv" download>90M layer-pair token scores (CSV)</a></li><li><a href="./data/hplus-subspace-distance.csv" download>Every-distance H⁺ subspace measurements (CSV)</a></li><li><a href="./data/hplus-distance-change.csv" download>Every-distance matrix and fixed-input scores (CSV)</a></li><li><a href="./data/token-case-summary.json" download>90M experiment definitions and summary (JSON)</a></li><li><a href="./data/residual-stability.json" download>Residual stability summary (JSON)</a></li><li><a href="./data/source-provenance.json" download>Source filenames and SHA-256 provenance (JSON)</a></li><li><a href="./data/data-and-figures.zip" download>All tables, figure data, and exportable figures (ZIP)</a></li></ul>
+      <p class="method-note">The downloadable data preserve raw precision. Displayed values are rounded. Source hashes bind the published extracts to their original artifacts; these figures do not pool model scales into a single headline statistic.</p>
+    </section>
+
+    <section class="references" aria-labelledby="references-title">
+      <h2 id="references-title">References</h2>
+      <ol><li id="ref1">Elhage et al. (2021). <a href="https://transformer-circuits.pub/2021/framework/index.html">A Mathematical Framework for Transformer Circuits.</a> See <a href="https://transformer-circuits.pub/2021/framework/index.html#copying-matrix">copying matrices</a> and <a href="https://transformer-circuits.pub/2021/framework/index.html#checking-the-mechanistic-theory">checking the mechanistic theory</a>.</li><li id="ref2">Olsson et al. (2022). <a href="https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html">In-context Learning and Induction Heads.</a> See <a href="https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html#qk-eig-trace">QK eigenvalue trace</a> and <a href="https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html#validating-qk-and-ov-eigenvalues">validation of the eigenvalue diagnostics</a>.</li></ol>
+    </section>
+  </article>
+  <footer class="article-footer"><a href="/induction-circuit/">← All induction-circuit posts</a><span>© 2026 Shaoxiang Wu</span></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{
+  "token_ID": 5195,
+  "normalization": "Stored Float32 RMSNorm-normalized residual before gamma, cast losslessly to Float64 for reduction. Not unnormalized residual stream.",
+  "primary_estimand": "Least-squares constant mean energy / total mean squared vector norm. Descriptive shared-mean energy, not information content or exact invariant subspace.",
+  "pooled_contexts_per_layer": 128,
+  "layers": 16,
+  "component_fraction": {
+    "shared_mean": 0.6562239298200995,
+    "layer": 0.2545146926023787,
+    "context": 0.040351362630185496,
+    "layer_context_interaction": 0.048910014947336336
+  },
+  "per_layer_context_stable_energy_fraction": [
+    1.0000000000000027,
+    0.974282443640982,
+    0.9610670109797419,
+    0.9477179768768175,
+    0.9406247942356593,
+    0.9152953068292435,
+    0.8995780415679762,
+    0.9269378214926399,
+    0.9203413563171916,
+    0.9044605522899847,
+    0.8917457604580662,
+    0.8842744975460813,
+    0.8770088688670248,
+    0.8245453862078923,
+    0.8627277717526813,
+    0.8412149446513862
+  ],
+  "per_layer_mean_cosine_to_global_direction": [
+    0.2741667699277138,
+    0.823379191128903,
+    0.8385526031622915,
+    0.8533164141569705,
+    0.8728564042979172,
+    0.8739446235805555,
+    0.8702946276691619,
+    0.8704931986052792,
+    0.8832593112853357,
+    0.8864651254144413,
+    0.8779681980495591,
+    0.8605719139677397,
+    0.854188453743082,
+    0.8097517788667401,
+    0.8023672334325287,
+    0.7096344470557827
+  ],
+  "bank_stability": {
+    "bank_mean_cosine": 0.9992795783896323,
+    "bank_mean_norms": [
+      18.62037331033844,
+      18.61455359331868
+    ],
+    "mean_direction_relative_difference": 0.037966565954419815,
+    "interpretation": "Two independently seeded context banks; mean alignment is a stability check, not an independence/causal certificate."
+  },
+  "one_other_token_control": {
+    "other_token_ID": 3893,
+    "other_token_text": "\n      ",
+    "global_token_mean_cosine": 0.5343774557580523,
+    "interpretation": "Only one other token; cannot separate token-specific signal from generic residual anisotropy without a wider token baseline."
+  },
+  "zero_variance_direction_dimension": 0
+}
