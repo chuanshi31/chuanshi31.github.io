@@ -62,3 +62,9 @@ code { font-size:.78em; overflow-wrap:anywhere; background:#f5f7f7; padding:2px 
  .explorer-metrics strong { font-size:20px; }
  .article-footer { flex-direction:column; }
 }
+
+.article-body blockquote { max-width:742px; margin:28px auto; padding:4px 24px; border-left:3px solid #397b83; color:#435760; }
+.article-body blockquote p { margin:10px 0; }
+#token-curve { display:block; width:100%; height:auto; margin:20px 0 10px; font-family:Arial,Helvetica,sans-serif; }
+.explorer .figure-controls { margin:18px 0; }
+.explorer .figure-controls label { margin:0; }

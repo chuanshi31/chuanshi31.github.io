@@ -52,5 +52,24 @@
       127,
       2047
     ]
+  },
+  "revision_20261014": {
+    "token_source_sha256": {
+      "90M_all_reader_pair_mean_Hplus_Uspace_token_tracking_20261013/R13H8_P12H7__allD_Hplus_core_cache.npz": "cb5a600f9f6b3941c8cb6b196cbb13d872ae0a647b4c75a8b3e22a8dfcba960b",
+      "90M_single_reader_fixed_residual_all_distance_scores_20261013/source_inputs.npz": "8ae84a30eeb7a8176606409a3f21ef8ee6e98a3f415fd50d187c52c04ce5d447",
+      "90M_single_reader_fixed_residual_all_distance_scores_20261013/scores.npz": "8ab6f4342f787cda2c0e97bc7bb8102fad7eed243e3fdba2b9355dedf9a3e817",
+      "90M_single_reader_fixed_residual_all_distance_scores_20261013/source_metadata.json": "1f11673f1e85de1710438336e9bc47db0cc3df583ab3d9f232d2f07e3c35648d"
+    },
+    "static_source_sha256": {
+      "joint_positive_concentration_DEV_results.json": "e91ac20fcd1ef3305fe1222e83b7786a991e531199bc2d33fd84422ba4e0c1ea",
+      "joint_positive_frequency_DEV_results.json": "8e1ebd2200a01370554a263ef07fd8caaabc813231df50a89c9890e8fbb7c1cf",
+      "OLMo_DataDecide_model_information_20261013.json": "8cbf97595f94f29980deb04264b440fdbb7d8e9b6d81c4631bbecf3c9f60325a"
+    },
+    "context_inputs_verified": 128,
+    "new_model_forwards": 0,
+    "new_jobs": 0,
+    "exact_quote_location": "2021/framework/index.html#copying-matrix; paragraph discussing qualification after positive eigenvalues",
+    "adaptive_frequency": "Computed from retained per-distance eigenvectors, with trace90selectionrepeatedfor each D.",
+    "note": "All-scale geometry remains reference-distance;90M selectedoperatorhasall-distanceadaptive summaries."
   }
 }

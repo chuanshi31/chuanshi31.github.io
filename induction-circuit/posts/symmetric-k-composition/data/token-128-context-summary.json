@@ -1,0 +1,35 @@
+{
+  "updated": "2026-10-14",
+  "tokens": [
+    5195,
+    3893
+  ],
+  "contexts_per_token_per_layer": 128,
+  "same_distinct_context_pairs": 16256,
+  "different_token_pairs": 16384,
+  "layers": 16,
+  "matrix_distances": 2048,
+  "operator": "R13H8_P12H7",
+  "same_13_12_mean": 620.0728619324998,
+  "different_13_12_mean": 2.1678552198433025,
+  "layer_averaged_same_mean": 558.8666624451421,
+  "layer_averaged_different_mean": -1.1601794601975293,
+  "adaptive_trace90_rank_mean_D": 10.22802734375,
+  "adaptive_trace_weighted_lowfreq_amplitude_mean_D": 0.9919920944474958,
+  "source_sha256": {
+    "90M_all_reader_pair_mean_Hplus_Uspace_token_tracking_20261013/R13H8_P12H7__allD_Hplus_core_cache.npz": "cb5a600f9f6b3941c8cb6b196cbb13d872ae0a647b4c75a8b3e22a8dfcba960b",
+    "90M_single_reader_fixed_residual_all_distance_scores_20261013/source_inputs.npz": "8ae84a30eeb7a8176606409a3f21ef8ee6e98a3f415fd50d187c52c04ce5d447",
+    "90M_single_reader_fixed_residual_all_distance_scores_20261013/scores.npz": "8ab6f4342f787cda2c0e97bc7bb8102fad7eed243e3fdba2b9355dedf9a3e817",
+    "90M_single_reader_fixed_residual_all_distance_scores_20261013/source_metadata.json": "1f11673f1e85de1710438336e9bc47db0cc3df583ab3d9f232d2f07e3c35648d"
+  },
+  "protocol": {
+    "pooling": "64early-positioncontexts+64later-positioncontexts. Fourcombinationsincludedwithsameweights. Independentbackgrounds;matchedcellacrosstokensisnotidenticaltext.",
+    "normalization": "RMSNormnormalizedbeforelearnedaffine;affineincludedinoperator. Noextravectorunitnormalizationorsqrt(head_dim)division.",
+    "layers": "Indices0..15 denote attentioninputwithintransformerblocks;operatorfixedatreader13/earlier12evenwhenvectorsfromotherlayersareused.",
+    "context_pair_mean": "All-pairmeanscomputedexactlybybilinearity;removei=jforsame-token distinct-contextcondition.",
+    "layer_average": "Mean16layersforeachcontext,thencompare128contextvectorsacrosstokens.",
+    "new_model_forwards": 0,
+    "new_jobs": 0
+  },
+  "verification": "Threeexplicit128x128gridsindependentlycheckmeanidentity;retainedreferencecompositionandHplusscoresverifiedatD0,127,2047."
+}
