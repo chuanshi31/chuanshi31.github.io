@@ -25,3 +25,22 @@ a:focus-visible { outline:2px solid var(--link); outline-offset:3px; }
   section { margin-bottom:44px; }
   .footer { margin-top:62px; }
 }
+
+/* Induction-circuit project and posts index */
+.project-page,.project-footer { width:min(900px,calc(100% - 112px)); }
+.project-nav { margin:40px 0 48px; font-size:14px; }
+.project-header { margin-bottom:58px; }
+.project-kicker { color:var(--muted); font-size:13px; margin-bottom:10px; }
+.project-page h1 { margin:0 0 18px; text-align:left; font-size:34px; line-height:1.3; }
+.project-description { max-width:720px; font-size:17px; line-height:1.7; }
+.project-intro { color:var(--muted); margin-bottom:24px; }
+.post-list { border-top:1px solid #e3e5e6; }
+.posts-empty { color:var(--muted); padding:24px 0; margin:0; }
+.project-footer { margin-top:90px; }
+@media (max-width:700px) {
+  .project-page,.project-footer { width:calc(100% - 40px); }
+  .project-nav { margin:28px 0 38px; }
+  .project-page h1 { font-size:28px; }
+  .project-header { margin-bottom:44px; }
+  .project-description { font-size:16px; }
+}
