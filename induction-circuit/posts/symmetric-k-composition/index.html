@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="The geometry of induction-circuit matching: complete positive and joint operators, exact margin decomposition, and Pythia experiments."><title>From Positive Eigenvalues to Token Matching | Shaoxiang Wu</title><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="./post.css"><script src="./post.js" defer></script></head><body><a class="skip-link" href="#main">Skip to main content</a><main class="article-shell" id="main"><nav class="article-nav"><a href="/">Shaoxiang Wu</a> / <a href="/induction-circuit/">Induction-Circuit Initialization</a></nav><header class="article-header"><p class="eyebrow">Research report · Updated 26 October 2026</p><h1>From Positive Eigenvalues to Token Matching</h1><p class="dek">The geometry of induction-circuit K-composition</p><p class="byline">Shaoxiang Wu</p></header><nav class="article-contents"><a href="#why-positive-eigenvalues-suggest-matching">1. Matching</a><a href="#decomposing-the-matrix-and-its-energy">2. Matrix components</a><a href="#complete-matching-scores-and-positive-spectral-geometry">3. Scores and experiments</a><a href="#margin-explorer">Explore the data</a></nav><article class="article-body"><section id="why-positive-eigenvalues-suggest-matching" class="level1"
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="The geometry of induction-circuit matching: complete positive and joint operators, exact margin decomposition, and Pythia experiments."><title>From Positive Eigenvalues to Token Matching | Shaoxiang Wu</title><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="./post.css"><script src="./post.js" defer></script></head><body><a class="skip-link" href="#main">Skip to main content</a><main class="article-shell" id="main"><nav class="article-nav"><a href="/">Shaoxiang Wu</a> / <a href="/induction-circuit/">Induction-Circuit Initialization</a></nav><header class="article-header"><p class="eyebrow">Research report · Updated 27 October 2026</p><h1>From Positive Eigenvalues to Token Matching</h1><p class="dek">The geometry of induction-circuit K-composition</p><p class="byline">Shaoxiang Wu</p></header><nav class="article-contents"><a href="#why-positive-eigenvalues-suggest-matching">1. Matching</a><a href="#decomposing-the-matrix-and-its-energy">2. Matrix components</a><a href="#complete-matching-scores-and-positive-spectral-geometry">3. Scores and experiments</a><a href="#margin-explorer">Explore the data</a></nav><article class="article-body"><section id="why-positive-eigenvalues-suggest-matching" class="level1"
 data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Why
 positive eigenvalues suggest matching</h1>
@@ -1167,105 +1167,41 @@ sequence.</p>
 <section id="endpoint-components-and-their-contribution-to-matching"
 class="level3" data-number="3.2.4">
 <h3 data-number="3.2.4"><span class="header-section-number">3.2.4</span>
-Endpoint components and their contribution to matching</h3>
+Endpoint components and their contribution to matching</h3><p class="method-note absolute-bias-note">Mean |b| takes the absolute value for each token-pair bias before averaging. It measures bias magnitude; signed b and signed T retain their roles in m = G − b + T. A small signed mean can contain cancellation across comparisons.</p>
 <p>Table 1 reports both complete operators at checkpoint 143,000. All
 four model averages have a positive margin under both operators. In
 these population averages, the separation term
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
-supplies the dominant positive contribution; the signed norm-bias and
-deviation means are much smaller. The complete
+supplies the dominant positive contribution; the signed norm-bias and deviation means are much smaller. These signed means describe net contributions, while mean |b| separately describes the size of individual biases. The complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
 operator also includes the negative and antisymmetric parts, which can
 change individual paths substantially.</p>
 <div class="center">
 <div class="table-scroll"><table>
 <thead>
-<tr>
-<th style="text-align: left;">Model</th>
-<th style="text-align: left;">Operator</th>
-<th
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>G</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar G</annotation></semantics></math></th>
-<th
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>b</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar b</annotation></semantics></math></th>
-<th
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>T</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar T</annotation></semantics></math></th>
-<th
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>m</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar m</annotation></semantics></math></th>
-</tr>
+<tr><th style="text-align: left;">Model</th><th style="text-align: left;">Operator</th><th
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>G</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar G</annotation></semantics></math></th><th
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>b</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar b</annotation></semantics></math></th><th>Mean |b|</th><th
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>T</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar T</annotation></semantics></math></th><th
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>m</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar m</annotation></semantics></math></th></tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;">70M</td>
-<td
-style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td>
-<td style="text-align: right;">3.790935</td>
-<td style="text-align: right;">-0.001228</td>
-<td style="text-align: right;">-0.047227</td>
-<td style="text-align: right;">3.744936</td>
-</tr>
-<tr>
-<td style="text-align: left;">70M</td>
-<td
-style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td>
-<td style="text-align: right;">3.442043</td>
-<td style="text-align: right;">-0.000449</td>
-<td style="text-align: right;">-0.038318</td>
-<td style="text-align: right;">3.404174</td>
-</tr>
-<tr>
-<td style="text-align: left;">160M</td>
-<td
-style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td>
-<td style="text-align: right;">2.767392</td>
-<td style="text-align: right;">-0.003751</td>
-<td style="text-align: right;">-0.010979</td>
-<td style="text-align: right;">2.760164</td>
-</tr>
-<tr>
-<td style="text-align: left;">160M</td>
-<td
-style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td>
-<td style="text-align: right;">2.635691</td>
-<td style="text-align: right;">-0.003023</td>
-<td style="text-align: right;">-0.009607</td>
-<td style="text-align: right;">2.629107</td>
-</tr>
-<tr>
-<td style="text-align: left;">410M</td>
-<td
-style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td>
-<td style="text-align: right;">0.994606</td>
-<td style="text-align: right;">-0.001773</td>
-<td style="text-align: right;">-0.001176</td>
-<td style="text-align: right;">0.995202</td>
-</tr>
-<tr>
-<td style="text-align: left;">410M</td>
-<td
-style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td>
-<td style="text-align: right;">0.904222</td>
-<td style="text-align: right;">-0.000865</td>
-<td style="text-align: right;">-0.000755</td>
-<td style="text-align: right;">0.904332</td>
-</tr>
-<tr>
-<td style="text-align: left;">1B</td>
-<td
-style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td>
-<td style="text-align: right;">2.120978</td>
-<td style="text-align: right;">-0.002364</td>
-<td style="text-align: right;">-0.001996</td>
-<td style="text-align: right;">2.121346</td>
-</tr>
-<tr>
-<td style="text-align: left;">1B</td>
-<td
-style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td>
-<td style="text-align: right;">1.768305</td>
-<td style="text-align: right;">-0.001803</td>
-<td style="text-align: right;">-0.001223</td>
-<td style="text-align: right;">1.768884</td>
-</tr>
+<tr><td style="text-align: left;">70M</td><td
+style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td><td style="text-align: right;">3.790935</td><td style="text-align: right;">-0.001228</td><td>0.982847</td><td style="text-align: right;">-0.047227</td><td style="text-align: right;">3.744936</td></tr>
+<tr><td style="text-align: left;">70M</td><td
+style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td><td style="text-align: right;">3.442043</td><td style="text-align: right;">-0.000449</td><td>—</td><td style="text-align: right;">-0.038318</td><td style="text-align: right;">3.404174</td></tr>
+<tr><td style="text-align: left;">160M</td><td
+style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td><td style="text-align: right;">2.767392</td><td style="text-align: right;">-0.003751</td><td>0.567177</td><td style="text-align: right;">-0.010979</td><td style="text-align: right;">2.760164</td></tr>
+<tr><td style="text-align: left;">160M</td><td
+style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td><td style="text-align: right;">2.635691</td><td style="text-align: right;">-0.003023</td><td>—</td><td style="text-align: right;">-0.009607</td><td style="text-align: right;">2.629107</td></tr>
+<tr><td style="text-align: left;">410M</td><td
+style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td><td style="text-align: right;">0.994606</td><td style="text-align: right;">-0.001773</td><td>0.239750</td><td style="text-align: right;">-0.001176</td><td style="text-align: right;">0.995202</td></tr>
+<tr><td style="text-align: left;">410M</td><td
+style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td><td style="text-align: right;">0.904222</td><td style="text-align: right;">-0.000865</td><td>—</td><td style="text-align: right;">-0.000755</td><td style="text-align: right;">0.904332</td></tr>
+<tr><td style="text-align: left;">1B</td><td
+style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td><td style="text-align: right;">2.120978</td><td style="text-align: right;">-0.002364</td><td>0.378833</td><td style="text-align: right;">-0.001996</td><td style="text-align: right;">2.121346</td></tr>
+<tr><td style="text-align: left;">1B</td><td
+style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td><td style="text-align: right;">1.768305</td><td style="text-align: right;">-0.001803</td><td>—</td><td style="text-align: right;">-0.001223</td><td style="text-align: right;">1.768884</td></tr>
 </tbody>
 </table></div>
 </div>
@@ -1313,230 +1249,60 @@ from step 64,000 to 143,000 comes from the decrease in
 <div class="table-scroll"><table>
 <tbody>
 <tr>
-<td colspan="9"
+<td colspan="10"
 style="text-align: left;"><strong>Pythia-70M</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;"></td>
-<td colspan="4" style="text-align: center;">Complete
+<td colspan="5" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td>
 <td colspan="4" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td>
 </tr>
+<tr><td style="text-align: right;">Checkpoint</td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td><th>Mean |b⁺|</th><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td></tr>
 <tr>
-<td style="text-align: right;">Checkpoint</td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td>
-</tr>
-<tr>
-<td colspan="9"
+<td colspan="10"
 style="text-align: left;"><strong>Pythia-70M</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;"></td>
-<td colspan="4" style="text-align: center;">Complete
+<td colspan="5" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td>
 <td colspan="4" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td>
 </tr>
-<tr>
-<td style="text-align: right;">Checkpoint</td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td>
-</tr>
-<tr>
-<td style="text-align: right;"></td>
-<td style="text-align: right;">0.040041</td>
-<td style="text-align: right;">-1.1898e-5</td>
-<td style="text-align: right;">-0.00010616</td>
-<td style="text-align: right;">0.039947</td>
-<td style="text-align: right;">0.00022618</td>
-<td style="text-align: right;">7.1159e-7</td>
-<td style="text-align: right;">7.9013e-7</td>
-<td style="text-align: right;">0.00022626</td>
-</tr>
-<tr>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0.040041</td>
-<td style="text-align: right;">-1.1898e-5</td>
-<td style="text-align: right;">-0.00010616</td>
-<td style="text-align: right;">0.039947</td>
-<td style="text-align: right;">0.00022618</td>
-<td style="text-align: right;">7.1159e-7</td>
-<td style="text-align: right;">7.9013e-7</td>
-<td style="text-align: right;">0.00022626</td>
-</tr>
-<tr>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">0.040043</td>
-<td style="text-align: right;">-1.1911e-5</td>
-<td style="text-align: right;">-0.00010621</td>
-<td style="text-align: right;">0.039949</td>
-<td style="text-align: right;">0.00022656</td>
-<td style="text-align: right;">6.8805e-7</td>
-<td style="text-align: right;">7.6478e-7</td>
-<td style="text-align: right;">0.00022663</td>
-</tr>
-<tr>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">0.03697</td>
-<td style="text-align: right;">-1.1892e-5</td>
-<td style="text-align: right;">-0.00010905</td>
-<td style="text-align: right;">0.036873</td>
-<td style="text-align: right;">0.00021502</td>
-<td style="text-align: right;">-9.0235e-7</td>
-<td style="text-align: right;">-1.3424e-6</td>
-<td style="text-align: right;">0.00021458</td>
-</tr>
-<tr>
-<td style="text-align: right;">64</td>
-<td style="text-align: right;">0.021499</td>
-<td style="text-align: right;">-7.5488e-6</td>
-<td style="text-align: right;">-0.00010622</td>
-<td style="text-align: right;">0.0214</td>
-<td style="text-align: right;">1.8259e-5</td>
-<td style="text-align: right;">-9.3856e-7</td>
-<td style="text-align: right;">2.2772e-6</td>
-<td style="text-align: right;">2.1474e-5</td>
-</tr>
-<tr>
-<td style="text-align: right;">256</td>
-<td style="text-align: right;">0.041609</td>
-<td style="text-align: right;">-4.2824e-5</td>
-<td style="text-align: right;">-0.000164</td>
-<td style="text-align: right;">0.041487</td>
-<td style="text-align: right;">0.0036166</td>
-<td style="text-align: right;">-2.2052e-5</td>
-<td style="text-align: right;">-8.6446e-6</td>
-<td style="text-align: right;">0.00363</td>
-</tr>
-<tr>
-<td style="text-align: right;">512</td>
-<td style="text-align: right;">0.1013</td>
-<td style="text-align: right;">-0.00010621</td>
-<td style="text-align: right;">-0.00024935</td>
-<td style="text-align: right;">0.10116</td>
-<td style="text-align: right;">0.05366</td>
-<td style="text-align: right;">-8.8437e-5</td>
-<td style="text-align: right;">-6.6427e-5</td>
-<td style="text-align: right;">0.053682</td>
-</tr>
-<tr>
-<td style="text-align: right;">1000</td>
-<td style="text-align: right;">1.036</td>
-<td style="text-align: right;">-0.00089436</td>
-<td style="text-align: right;">-0.0015903</td>
-<td style="text-align: right;">1.0353</td>
-<td style="text-align: right;">0.96774</td>
-<td style="text-align: right;">-0.00097152</td>
-<td style="text-align: right;">-0.0012134</td>
-<td style="text-align: right;">0.9675</td>
-</tr>
-<tr>
-<td style="text-align: right;">2000</td>
-<td style="text-align: right;">1.9689</td>
-<td style="text-align: right;">-0.0015608</td>
-<td style="text-align: right;">-0.0028887</td>
-<td style="text-align: right;">1.9675</td>
-<td style="text-align: right;">1.8753</td>
-<td style="text-align: right;">-0.0012042</td>
-<td style="text-align: right;">-0.0024051</td>
-<td style="text-align: right;">1.8741</td>
-</tr>
-<tr>
-<td style="text-align: right;">4000</td>
-<td style="text-align: right;">2.6965</td>
-<td style="text-align: right;">-0.0020034</td>
-<td style="text-align: right;">-0.004089</td>
-<td style="text-align: right;">2.6944</td>
-<td style="text-align: right;">2.5898</td>
-<td style="text-align: right;">-0.0014863</td>
-<td style="text-align: right;">-0.0035334</td>
-<td style="text-align: right;">2.5878</td>
-</tr>
-<tr>
-<td style="text-align: right;">8000</td>
-<td style="text-align: right;">3.5169</td>
-<td style="text-align: right;">-0.0029825</td>
-<td style="text-align: right;">-0.0055953</td>
-<td style="text-align: right;">3.5143</td>
-<td style="text-align: right;">3.3957</td>
-<td style="text-align: right;">-0.0024454</td>
-<td style="text-align: right;">-0.0049193</td>
-<td style="text-align: right;">3.3932</td>
-</tr>
-<tr>
-<td style="text-align: right;">16000</td>
-<td style="text-align: right;">3.9794</td>
-<td style="text-align: right;">-0.0040239</td>
-<td style="text-align: right;">-0.0066487</td>
-<td style="text-align: right;">3.9767</td>
-<td style="text-align: right;">3.8521</td>
-<td style="text-align: right;">-0.0034613</td>
-<td style="text-align: right;">-0.0058649</td>
-<td style="text-align: right;">3.8497</td>
-</tr>
-<tr>
-<td style="text-align: right;">32000</td>
-<td style="text-align: right;">4.1274</td>
-<td style="text-align: right;">-0.0046203</td>
-<td style="text-align: right;">-0.0074978</td>
-<td style="text-align: right;">4.1245</td>
-<td style="text-align: right;">3.9928</td>
-<td style="text-align: right;">-0.0038977</td>
-<td style="text-align: right;">-0.0065959</td>
-<td style="text-align: right;">3.9901</td>
-</tr>
-<tr>
-<td style="text-align: right;">64000</td>
-<td style="text-align: right;">4.7486</td>
-<td style="text-align: right;">-0.0049486</td>
-<td style="text-align: right;">-0.014333</td>
-<td style="text-align: right;">4.7392</td>
-<td style="text-align: right;">4.5839</td>
-<td style="text-align: right;">-0.0042703</td>
-<td style="text-align: right;">-0.012652</td>
-<td style="text-align: right;">4.5755</td>
-</tr>
-<tr>
-<td style="text-align: right;">143000</td>
-<td style="text-align: right;">3.7909</td>
-<td style="text-align: right;">-0.0012276</td>
-<td style="text-align: right;">-0.047227</td>
-<td style="text-align: right;">3.7449</td>
-<td style="text-align: right;">3.442</td>
-<td style="text-align: right;">-0.00044911</td>
-<td style="text-align: right;">-0.038318</td>
-<td style="text-align: right;">3.4042</td>
-</tr>
+<tr><td style="text-align: right;">Checkpoint</td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td><th>Mean |b⁺|</th><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td></tr>
+<tr><td>0</td><td style="text-align: right;">0.040041</td><td style="text-align: right;">-1.1898e-5</td><td>0.0054546</td><td style="text-align: right;">-0.00010616</td><td style="text-align: right;">0.039947</td><td style="text-align: right;">0.00022618</td><td style="text-align: right;">7.1159e-7</td><td style="text-align: right;">7.9013e-7</td><td style="text-align: right;">0.00022626</td></tr>
+<tr><td style="text-align: right;">1</td><td style="text-align: right;">0.040041</td><td style="text-align: right;">-1.1898e-5</td><td>0.0054546</td><td style="text-align: right;">-0.00010616</td><td style="text-align: right;">0.039947</td><td style="text-align: right;">0.00022618</td><td style="text-align: right;">7.1159e-7</td><td style="text-align: right;">7.9013e-7</td><td style="text-align: right;">0.00022626</td></tr>
+<tr><td style="text-align: right;">4</td><td style="text-align: right;">0.040043</td><td style="text-align: right;">-1.1911e-5</td><td>0.005459</td><td style="text-align: right;">-0.00010621</td><td style="text-align: right;">0.039949</td><td style="text-align: right;">0.00022656</td><td style="text-align: right;">6.8805e-7</td><td style="text-align: right;">7.6478e-7</td><td style="text-align: right;">0.00022663</td></tr>
+<tr><td style="text-align: right;">16</td><td style="text-align: right;">0.03697</td><td style="text-align: right;">-1.1892e-5</td><td>0.005627</td><td style="text-align: right;">-0.00010905</td><td style="text-align: right;">0.036873</td><td style="text-align: right;">0.00021502</td><td style="text-align: right;">-9.0235e-7</td><td style="text-align: right;">-1.3424e-6</td><td style="text-align: right;">0.00021458</td></tr>
+<tr><td style="text-align: right;">64</td><td style="text-align: right;">0.021499</td><td style="text-align: right;">-7.5488e-6</td><td>0.005038</td><td style="text-align: right;">-0.00010622</td><td style="text-align: right;">0.0214</td><td style="text-align: right;">1.8259e-5</td><td style="text-align: right;">-9.3856e-7</td><td style="text-align: right;">2.2772e-6</td><td style="text-align: right;">2.1474e-5</td></tr>
+<tr><td style="text-align: right;">256</td><td style="text-align: right;">0.041609</td><td style="text-align: right;">-4.2824e-5</td><td>0.012859</td><td style="text-align: right;">-0.000164</td><td style="text-align: right;">0.041487</td><td style="text-align: right;">0.0036166</td><td style="text-align: right;">-2.2052e-5</td><td style="text-align: right;">-8.6446e-6</td><td style="text-align: right;">0.00363</td></tr>
+<tr><td style="text-align: right;">512</td><td style="text-align: right;">0.1013</td><td style="text-align: right;">-0.00010621</td><td>0.033149</td><td style="text-align: right;">-0.00024935</td><td style="text-align: right;">0.10116</td><td style="text-align: right;">0.05366</td><td style="text-align: right;">-8.8437e-5</td><td style="text-align: right;">-6.6427e-5</td><td style="text-align: right;">0.053682</td></tr>
+<tr><td style="text-align: right;">1000</td><td style="text-align: right;">1.036</td><td style="text-align: right;">-0.00089436</td><td>0.16677</td><td style="text-align: right;">-0.0015903</td><td style="text-align: right;">1.0353</td><td style="text-align: right;">0.96774</td><td style="text-align: right;">-0.00097152</td><td style="text-align: right;">-0.0012134</td><td style="text-align: right;">0.9675</td></tr>
+<tr><td style="text-align: right;">2000</td><td style="text-align: right;">1.9689</td><td style="text-align: right;">-0.0015608</td><td>0.27435</td><td style="text-align: right;">-0.0028887</td><td style="text-align: right;">1.9675</td><td style="text-align: right;">1.8753</td><td style="text-align: right;">-0.0012042</td><td style="text-align: right;">-0.0024051</td><td style="text-align: right;">1.8741</td></tr>
+<tr><td style="text-align: right;">4000</td><td style="text-align: right;">2.6965</td><td style="text-align: right;">-0.0020034</td><td>0.35575</td><td style="text-align: right;">-0.004089</td><td style="text-align: right;">2.6944</td><td style="text-align: right;">2.5898</td><td style="text-align: right;">-0.0014863</td><td style="text-align: right;">-0.0035334</td><td style="text-align: right;">2.5878</td></tr>
+<tr><td style="text-align: right;">8000</td><td style="text-align: right;">3.5169</td><td style="text-align: right;">-0.0029825</td><td>0.48157</td><td style="text-align: right;">-0.0055953</td><td style="text-align: right;">3.5143</td><td style="text-align: right;">3.3957</td><td style="text-align: right;">-0.0024454</td><td style="text-align: right;">-0.0049193</td><td style="text-align: right;">3.3932</td></tr>
+<tr><td style="text-align: right;">16000</td><td style="text-align: right;">3.9794</td><td style="text-align: right;">-0.0040239</td><td>0.56198</td><td style="text-align: right;">-0.0066487</td><td style="text-align: right;">3.9767</td><td style="text-align: right;">3.8521</td><td style="text-align: right;">-0.0034613</td><td style="text-align: right;">-0.0058649</td><td style="text-align: right;">3.8497</td></tr>
+<tr><td style="text-align: right;">32000</td><td style="text-align: right;">4.1274</td><td style="text-align: right;">-0.0046203</td><td>0.58912</td><td style="text-align: right;">-0.0074978</td><td style="text-align: right;">4.1245</td><td style="text-align: right;">3.9928</td><td style="text-align: right;">-0.0038977</td><td style="text-align: right;">-0.0065959</td><td style="text-align: right;">3.9901</td></tr>
+<tr><td style="text-align: right;">64000</td><td style="text-align: right;">4.7486</td><td style="text-align: right;">-0.0049486</td><td>0.7907</td><td style="text-align: right;">-0.014333</td><td style="text-align: right;">4.7392</td><td style="text-align: right;">4.5839</td><td style="text-align: right;">-0.0042703</td><td style="text-align: right;">-0.012652</td><td style="text-align: right;">4.5755</td></tr>
+<tr><td style="text-align: right;">143000</td><td style="text-align: right;">3.7909</td><td style="text-align: right;">-0.0012276</td><td>0.98285</td><td style="text-align: right;">-0.047227</td><td style="text-align: right;">3.7449</td><td style="text-align: right;">3.442</td><td style="text-align: right;">-0.00044911</td><td style="text-align: right;">-0.038318</td><td style="text-align: right;">3.4042</td></tr>
 </tbody>
 </table></div>
 </div>
@@ -1549,230 +1315,60 @@ denotes powers of ten.</p>
 <div class="table-scroll"><table>
 <tbody>
 <tr>
-<td colspan="9"
+<td colspan="10"
 style="text-align: left;"><strong>Pythia-160M</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;"></td>
-<td colspan="4" style="text-align: center;">Complete
+<td colspan="5" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td>
 <td colspan="4" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td>
 </tr>
+<tr><td style="text-align: right;">Checkpoint</td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td><th>Mean |b⁺|</th><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td></tr>
 <tr>
-<td style="text-align: right;">Checkpoint</td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td>
-</tr>
-<tr>
-<td colspan="9"
+<td colspan="10"
 style="text-align: left;"><strong>Pythia-160M</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;"></td>
-<td colspan="4" style="text-align: center;">Complete
+<td colspan="5" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td>
 <td colspan="4" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td>
 </tr>
-<tr>
-<td style="text-align: right;">Checkpoint</td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td>
-</tr>
-<tr>
-<td style="text-align: right;"></td>
-<td style="text-align: right;">0.015748</td>
-<td style="text-align: right;">-6.7358e-6</td>
-<td style="text-align: right;">-2.1612e-5</td>
-<td style="text-align: right;">0.015733</td>
-<td style="text-align: right;">-5.0438e-5</td>
-<td style="text-align: right;">-6.4799e-7</td>
-<td style="text-align: right;">-3.853e-7</td>
-<td style="text-align: right;">-5.0176e-5</td>
-</tr>
-<tr>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0.015748</td>
-<td style="text-align: right;">-6.7358e-6</td>
-<td style="text-align: right;">-2.1612e-5</td>
-<td style="text-align: right;">0.015733</td>
-<td style="text-align: right;">-5.0438e-5</td>
-<td style="text-align: right;">-6.4799e-7</td>
-<td style="text-align: right;">-3.853e-7</td>
-<td style="text-align: right;">-5.0176e-5</td>
-</tr>
-<tr>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">0.015741</td>
-<td style="text-align: right;">-6.769e-6</td>
-<td style="text-align: right;">-2.1641e-5</td>
-<td style="text-align: right;">0.015726</td>
-<td style="text-align: right;">-5.1762e-5</td>
-<td style="text-align: right;">-6.3862e-7</td>
-<td style="text-align: right;">-3.8877e-7</td>
-<td style="text-align: right;">-5.1512e-5</td>
-</tr>
-<tr>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">0.010811</td>
-<td style="text-align: right;">-4.6761e-6</td>
-<td style="text-align: right;">-2.0087e-5</td>
-<td style="text-align: right;">0.010795</td>
-<td style="text-align: right;">-5.3078e-5</td>
-<td style="text-align: right;">4.7745e-7</td>
-<td style="text-align: right;">-1.9052e-7</td>
-<td style="text-align: right;">-5.3746e-5</td>
-</tr>
-<tr>
-<td style="text-align: right;">64</td>
-<td style="text-align: right;">0.010112</td>
-<td style="text-align: right;">-8.2612e-6</td>
-<td style="text-align: right;">-2.2828e-5</td>
-<td style="text-align: right;">0.010097</td>
-<td style="text-align: right;">-0.00017787</td>
-<td style="text-align: right;">-1.7612e-6</td>
-<td style="text-align: right;">-7.6933e-7</td>
-<td style="text-align: right;">-0.00017688</td>
-</tr>
-<tr>
-<td style="text-align: right;">256</td>
-<td style="text-align: right;">0.016325</td>
-<td style="text-align: right;">-1.1972e-5</td>
-<td style="text-align: right;">-3.0828e-5</td>
-<td style="text-align: right;">0.016306</td>
-<td style="text-align: right;">0.00041905</td>
-<td style="text-align: right;">-6.803e-6</td>
-<td style="text-align: right;">-9.7258e-7</td>
-<td style="text-align: right;">0.00042488</td>
-</tr>
-<tr>
-<td style="text-align: right;">512</td>
-<td style="text-align: right;">0.05381</td>
-<td style="text-align: right;">-7.558e-5</td>
-<td style="text-align: right;">-6.7623e-5</td>
-<td style="text-align: right;">0.053818</td>
-<td style="text-align: right;">0.030813</td>
-<td style="text-align: right;">-3.9118e-5</td>
-<td style="text-align: right;">-2.4145e-5</td>
-<td style="text-align: right;">0.030828</td>
-</tr>
-<tr>
-<td style="text-align: right;">1000</td>
-<td style="text-align: right;">0.51904</td>
-<td style="text-align: right;">-0.00045187</td>
-<td style="text-align: right;">-0.00044861</td>
-<td style="text-align: right;">0.51904</td>
-<td style="text-align: right;">0.47384</td>
-<td style="text-align: right;">-0.00043076</td>
-<td style="text-align: right;">-0.00033899</td>
-<td style="text-align: right;">0.47393</td>
-</tr>
-<tr>
-<td style="text-align: right;">2000</td>
-<td style="text-align: right;">1.2158</td>
-<td style="text-align: right;">-0.0010454</td>
-<td style="text-align: right;">-0.00088455</td>
-<td style="text-align: right;">1.2159</td>
-<td style="text-align: right;">1.1373</td>
-<td style="text-align: right;">-0.00081148</td>
-<td style="text-align: right;">-0.00070339</td>
-<td style="text-align: right;">1.1375</td>
-</tr>
-<tr>
-<td style="text-align: right;">4000</td>
-<td style="text-align: right;">2.0645</td>
-<td style="text-align: right;">-0.0018119</td>
-<td style="text-align: right;">-0.0015038</td>
-<td style="text-align: right;">2.0648</td>
-<td style="text-align: right;">1.9437</td>
-<td style="text-align: right;">-0.0015725</td>
-<td style="text-align: right;">-0.0012434</td>
-<td style="text-align: right;">1.9441</td>
-</tr>
-<tr>
-<td style="text-align: right;">8000</td>
-<td style="text-align: right;">3.2692</td>
-<td style="text-align: right;">-0.0032578</td>
-<td style="text-align: right;">-0.0023923</td>
-<td style="text-align: right;">3.2701</td>
-<td style="text-align: right;">3.1012</td>
-<td style="text-align: right;">-0.0028045</td>
-<td style="text-align: right;">-0.0020355</td>
-<td style="text-align: right;">3.1019</td>
-</tr>
-<tr>
-<td style="text-align: right;">16000</td>
-<td style="text-align: right;">4.4928</td>
-<td style="text-align: right;">-0.0049953</td>
-<td style="text-align: right;">-0.003339</td>
-<td style="text-align: right;">4.4945</td>
-<td style="text-align: right;">4.2667</td>
-<td style="text-align: right;">-0.004178</td>
-<td style="text-align: right;">-0.0028588</td>
-<td style="text-align: right;">4.268</td>
-</tr>
-<tr>
-<td style="text-align: right;">32000</td>
-<td style="text-align: right;">5.5228</td>
-<td style="text-align: right;">-0.0065835</td>
-<td style="text-align: right;">-0.0042346</td>
-<td style="text-align: right;">5.5252</td>
-<td style="text-align: right;">5.2516</td>
-<td style="text-align: right;">-0.0051477</td>
-<td style="text-align: right;">-0.0036034</td>
-<td style="text-align: right;">5.2531</td>
-</tr>
-<tr>
-<td style="text-align: right;">64000</td>
-<td style="text-align: right;">5.0191</td>
-<td style="text-align: right;">-0.0067287</td>
-<td style="text-align: right;">-0.0056053</td>
-<td style="text-align: right;">5.0202</td>
-<td style="text-align: right;">4.7782</td>
-<td style="text-align: right;">-0.0049715</td>
-<td style="text-align: right;">-0.00479</td>
-<td style="text-align: right;">4.7784</td>
-</tr>
-<tr>
-<td style="text-align: right;">143000</td>
-<td style="text-align: right;">2.7674</td>
-<td style="text-align: right;">-0.0037512</td>
-<td style="text-align: right;">-0.010979</td>
-<td style="text-align: right;">2.7602</td>
-<td style="text-align: right;">2.6357</td>
-<td style="text-align: right;">-0.0030229</td>
-<td style="text-align: right;">-0.0096069</td>
-<td style="text-align: right;">2.6291</td>
-</tr>
+<tr><td style="text-align: right;">Checkpoint</td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td><th>Mean |b⁺|</th><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td></tr>
+<tr><td>0</td><td style="text-align: right;">0.015748</td><td style="text-align: right;">-6.7358e-6</td><td>0.0023691</td><td style="text-align: right;">-2.1612e-5</td><td style="text-align: right;">0.015733</td><td style="text-align: right;">-5.0438e-5</td><td style="text-align: right;">-6.4799e-7</td><td style="text-align: right;">-3.853e-7</td><td style="text-align: right;">-5.0176e-5</td></tr>
+<tr><td style="text-align: right;">1</td><td style="text-align: right;">0.015748</td><td style="text-align: right;">-6.7358e-6</td><td>0.0023691</td><td style="text-align: right;">-2.1612e-5</td><td style="text-align: right;">0.015733</td><td style="text-align: right;">-5.0438e-5</td><td style="text-align: right;">-6.4799e-7</td><td style="text-align: right;">-3.853e-7</td><td style="text-align: right;">-5.0176e-5</td></tr>
+<tr><td style="text-align: right;">4</td><td style="text-align: right;">0.015741</td><td style="text-align: right;">-6.769e-6</td><td>0.0023696</td><td style="text-align: right;">-2.1641e-5</td><td style="text-align: right;">0.015726</td><td style="text-align: right;">-5.1762e-5</td><td style="text-align: right;">-6.3862e-7</td><td style="text-align: right;">-3.8877e-7</td><td style="text-align: right;">-5.1512e-5</td></tr>
+<tr><td style="text-align: right;">16</td><td style="text-align: right;">0.010811</td><td style="text-align: right;">-4.6761e-6</td><td>0.0020618</td><td style="text-align: right;">-2.0087e-5</td><td style="text-align: right;">0.010795</td><td style="text-align: right;">-5.3078e-5</td><td style="text-align: right;">4.7745e-7</td><td style="text-align: right;">-1.9052e-7</td><td style="text-align: right;">-5.3746e-5</td></tr>
+<tr><td style="text-align: right;">64</td><td style="text-align: right;">0.010112</td><td style="text-align: right;">-8.2612e-6</td><td>0.0021432</td><td style="text-align: right;">-2.2828e-5</td><td style="text-align: right;">0.010097</td><td style="text-align: right;">-0.00017787</td><td style="text-align: right;">-1.7612e-6</td><td style="text-align: right;">-7.6933e-7</td><td style="text-align: right;">-0.00017688</td></tr>
+<tr><td style="text-align: right;">256</td><td style="text-align: right;">0.016325</td><td style="text-align: right;">-1.1972e-5</td><td>0.0036541</td><td style="text-align: right;">-3.0828e-5</td><td style="text-align: right;">0.016306</td><td style="text-align: right;">0.00041905</td><td style="text-align: right;">-6.803e-6</td><td style="text-align: right;">-9.7258e-7</td><td style="text-align: right;">0.00042488</td></tr>
+<tr><td style="text-align: right;">512</td><td style="text-align: right;">0.05381</td><td style="text-align: right;">-7.558e-5</td><td>0.023321</td><td style="text-align: right;">-6.7623e-5</td><td style="text-align: right;">0.053818</td><td style="text-align: right;">0.030813</td><td style="text-align: right;">-3.9118e-5</td><td style="text-align: right;">-2.4145e-5</td><td style="text-align: right;">0.030828</td></tr>
+<tr><td style="text-align: right;">1000</td><td style="text-align: right;">0.51904</td><td style="text-align: right;">-0.00045187</td><td>0.086265</td><td style="text-align: right;">-0.00044861</td><td style="text-align: right;">0.51904</td><td style="text-align: right;">0.47384</td><td style="text-align: right;">-0.00043076</td><td style="text-align: right;">-0.00033899</td><td style="text-align: right;">0.47393</td></tr>
+<tr><td style="text-align: right;">2000</td><td style="text-align: right;">1.2158</td><td style="text-align: right;">-0.0010454</td><td>0.1791</td><td style="text-align: right;">-0.00088455</td><td style="text-align: right;">1.2159</td><td style="text-align: right;">1.1373</td><td style="text-align: right;">-0.00081148</td><td style="text-align: right;">-0.00070339</td><td style="text-align: right;">1.1375</td></tr>
+<tr><td style="text-align: right;">4000</td><td style="text-align: right;">2.0645</td><td style="text-align: right;">-0.0018119</td><td>0.30246</td><td style="text-align: right;">-0.0015038</td><td style="text-align: right;">2.0648</td><td style="text-align: right;">1.9437</td><td style="text-align: right;">-0.0015725</td><td style="text-align: right;">-0.0012434</td><td style="text-align: right;">1.9441</td></tr>
+<tr><td style="text-align: right;">8000</td><td style="text-align: right;">3.2692</td><td style="text-align: right;">-0.0032578</td><td>0.47747</td><td style="text-align: right;">-0.0023923</td><td style="text-align: right;">3.2701</td><td style="text-align: right;">3.1012</td><td style="text-align: right;">-0.0028045</td><td style="text-align: right;">-0.0020355</td><td style="text-align: right;">3.1019</td></tr>
+<tr><td style="text-align: right;">16000</td><td style="text-align: right;">4.4928</td><td style="text-align: right;">-0.0049953</td><td>0.66298</td><td style="text-align: right;">-0.003339</td><td style="text-align: right;">4.4945</td><td style="text-align: right;">4.2667</td><td style="text-align: right;">-0.004178</td><td style="text-align: right;">-0.0028588</td><td style="text-align: right;">4.268</td></tr>
+<tr><td style="text-align: right;">32000</td><td style="text-align: right;">5.5228</td><td style="text-align: right;">-0.0065835</td><td>0.83813</td><td style="text-align: right;">-0.0042346</td><td style="text-align: right;">5.5252</td><td style="text-align: right;">5.2516</td><td style="text-align: right;">-0.0051477</td><td style="text-align: right;">-0.0036034</td><td style="text-align: right;">5.2531</td></tr>
+<tr><td style="text-align: right;">64000</td><td style="text-align: right;">5.0191</td><td style="text-align: right;">-0.0067287</td><td>0.81395</td><td style="text-align: right;">-0.0056053</td><td style="text-align: right;">5.0202</td><td style="text-align: right;">4.7782</td><td style="text-align: right;">-0.0049715</td><td style="text-align: right;">-0.00479</td><td style="text-align: right;">4.7784</td></tr>
+<tr><td style="text-align: right;">143000</td><td style="text-align: right;">2.7674</td><td style="text-align: right;">-0.0037512</td><td>0.56718</td><td style="text-align: right;">-0.010979</td><td style="text-align: right;">2.7602</td><td style="text-align: right;">2.6357</td><td style="text-align: right;">-0.0030229</td><td style="text-align: right;">-0.0096069</td><td style="text-align: right;">2.6291</td></tr>
 </tbody>
 </table></div>
 </div>
@@ -1785,230 +1381,60 @@ denotes powers of ten.</p>
 <div class="table-scroll"><table>
 <tbody>
 <tr>
-<td colspan="9"
+<td colspan="10"
 style="text-align: left;"><strong>Pythia-410M</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;"></td>
-<td colspan="4" style="text-align: center;">Complete
+<td colspan="5" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td>
 <td colspan="4" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td>
 </tr>
+<tr><td style="text-align: right;">Checkpoint</td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td><th>Mean |b⁺|</th><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td></tr>
 <tr>
-<td style="text-align: right;">Checkpoint</td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td>
-</tr>
-<tr>
-<td colspan="9"
+<td colspan="10"
 style="text-align: left;"><strong>Pythia-410M</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;"></td>
-<td colspan="4" style="text-align: center;">Complete
+<td colspan="5" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td>
 <td colspan="4" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td>
 </tr>
-<tr>
-<td style="text-align: right;">Checkpoint</td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td>
-</tr>
-<tr>
-<td style="text-align: right;"></td>
-<td style="text-align: right;">0.0061982</td>
-<td style="text-align: right;">-2.9218e-6</td>
-<td style="text-align: right;">-4.5753e-6</td>
-<td style="text-align: right;">0.0061965</td>
-<td style="text-align: right;">-2.2404e-6</td>
-<td style="text-align: right;">9.0637e-8</td>
-<td style="text-align: right;">3.5207e-8</td>
-<td style="text-align: right;">-2.2958e-6</td>
-</tr>
-<tr>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0.0061982</td>
-<td style="text-align: right;">-2.9218e-6</td>
-<td style="text-align: right;">-4.5753e-6</td>
-<td style="text-align: right;">0.0061965</td>
-<td style="text-align: right;">-2.2404e-6</td>
-<td style="text-align: right;">9.0637e-8</td>
-<td style="text-align: right;">3.5207e-8</td>
-<td style="text-align: right;">-2.2958e-6</td>
-</tr>
-<tr>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">0.00613</td>
-<td style="text-align: right;">-2.9866e-6</td>
-<td style="text-align: right;">-4.5653e-6</td>
-<td style="text-align: right;">0.0061284</td>
-<td style="text-align: right;">-2.1199e-6</td>
-<td style="text-align: right;">1.7459e-8</td>
-<td style="text-align: right;">3.1172e-8</td>
-<td style="text-align: right;">-2.1062e-6</td>
-</tr>
-<tr>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">0.0030477</td>
-<td style="text-align: right;">-2.1293e-6</td>
-<td style="text-align: right;">-3.8028e-6</td>
-<td style="text-align: right;">0.0030461</td>
-<td style="text-align: right;">3.7403e-6</td>
-<td style="text-align: right;">-2.7203e-7</td>
-<td style="text-align: right;">-7.1709e-9</td>
-<td style="text-align: right;">4.0051e-6</td>
-</tr>
-<tr>
-<td style="text-align: right;">64</td>
-<td style="text-align: right;">0.0044528</td>
-<td style="text-align: right;">-4.0085e-6</td>
-<td style="text-align: right;">-4.5399e-6</td>
-<td style="text-align: right;">0.0044522</td>
-<td style="text-align: right;">8.1259e-6</td>
-<td style="text-align: right;">-8.9903e-7</td>
-<td style="text-align: right;">7.2795e-8</td>
-<td style="text-align: right;">9.0978e-6</td>
-</tr>
-<tr>
-<td style="text-align: right;">256</td>
-<td style="text-align: right;">0.0064059</td>
-<td style="text-align: right;">-4.154e-6</td>
-<td style="text-align: right;">-5.8299e-6</td>
-<td style="text-align: right;">0.0064042</td>
-<td style="text-align: right;">-2.85e-5</td>
-<td style="text-align: right;">-3.3661e-7</td>
-<td style="text-align: right;">5.668e-8</td>
-<td style="text-align: right;">-2.8107e-5</td>
-</tr>
-<tr>
-<td style="text-align: right;">512</td>
-<td style="text-align: right;">0.0083455</td>
-<td style="text-align: right;">-3.6455e-6</td>
-<td style="text-align: right;">-6.6194e-6</td>
-<td style="text-align: right;">0.0083425</td>
-<td style="text-align: right;">-0.00021529</td>
-<td style="text-align: right;">-5.8105e-7</td>
-<td style="text-align: right;">1.0355e-7</td>
-<td style="text-align: right;">-0.00021461</td>
-</tr>
-<tr>
-<td style="text-align: right;">1000</td>
-<td style="text-align: right;">0.079201</td>
-<td style="text-align: right;">-0.00010021</td>
-<td style="text-align: right;">-3.6163e-5</td>
-<td style="text-align: right;">0.079266</td>
-<td style="text-align: right;">0.061049</td>
-<td style="text-align: right;">-9.2596e-5</td>
-<td style="text-align: right;">-1.8591e-5</td>
-<td style="text-align: right;">0.061123</td>
-</tr>
-<tr>
-<td style="text-align: right;">2000</td>
-<td style="text-align: right;">0.26323</td>
-<td style="text-align: right;">-0.00023941</td>
-<td style="text-align: right;">-0.00010532</td>
-<td style="text-align: right;">0.26336</td>
-<td style="text-align: right;">0.22455</td>
-<td style="text-align: right;">-0.00020685</td>
-<td style="text-align: right;">-6.5247e-5</td>
-<td style="text-align: right;">0.22469</td>
-</tr>
-<tr>
-<td style="text-align: right;">4000</td>
-<td style="text-align: right;">0.55559</td>
-<td style="text-align: right;">-0.00042394</td>
-<td style="text-align: right;">-0.00024059</td>
-<td style="text-align: right;">0.55578</td>
-<td style="text-align: right;">0.48691</td>
-<td style="text-align: right;">-0.000342</td>
-<td style="text-align: right;">-0.000167</td>
-<td style="text-align: right;">0.48708</td>
-</tr>
-<tr>
-<td style="text-align: right;">8000</td>
-<td style="text-align: right;">1.0636</td>
-<td style="text-align: right;">-0.00073983</td>
-<td style="text-align: right;">-0.00053109</td>
-<td style="text-align: right;">1.0638</td>
-<td style="text-align: right;">0.94806</td>
-<td style="text-align: right;">-0.00045671</td>
-<td style="text-align: right;">-0.00039704</td>
-<td style="text-align: right;">0.94812</td>
-</tr>
-<tr>
-<td style="text-align: right;">16000</td>
-<td style="text-align: right;">1.6482</td>
-<td style="text-align: right;">-0.0011935</td>
-<td style="text-align: right;">-0.00088185</td>
-<td style="text-align: right;">1.6485</td>
-<td style="text-align: right;">1.4846</td>
-<td style="text-align: right;">-0.00071405</td>
-<td style="text-align: right;">-0.00066769</td>
-<td style="text-align: right;">1.4846</td>
-</tr>
-<tr>
-<td style="text-align: right;">32000</td>
-<td style="text-align: right;">2.123</td>
-<td style="text-align: right;">-0.0018667</td>
-<td style="text-align: right;">-0.0011607</td>
-<td style="text-align: right;">2.1237</td>
-<td style="text-align: right;">1.9284</td>
-<td style="text-align: right;">-0.0011919</td>
-<td style="text-align: right;">-0.0008796</td>
-<td style="text-align: right;">1.9287</td>
-</tr>
-<tr>
-<td style="text-align: right;">64000</td>
-<td style="text-align: right;">1.9873</td>
-<td style="text-align: right;">-0.002177</td>
-<td style="text-align: right;">-0.0011571</td>
-<td style="text-align: right;">1.9883</td>
-<td style="text-align: right;">1.8167</td>
-<td style="text-align: right;">-0.0014489</td>
-<td style="text-align: right;">-0.00087893</td>
-<td style="text-align: right;">1.8173</td>
-</tr>
-<tr>
-<td style="text-align: right;">143000</td>
-<td style="text-align: right;">0.99461</td>
-<td style="text-align: right;">-0.0017726</td>
-<td style="text-align: right;">-0.0011758</td>
-<td style="text-align: right;">0.9952</td>
-<td style="text-align: right;">0.90422</td>
-<td style="text-align: right;">-0.00086534</td>
-<td style="text-align: right;">-0.0007548</td>
-<td style="text-align: right;">0.90433</td>
-</tr>
+<tr><td style="text-align: right;">Checkpoint</td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td><th>Mean |b⁺|</th><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td></tr>
+<tr><td>0</td><td style="text-align: right;">0.0061982</td><td style="text-align: right;">-2.9218e-6</td><td>0.00096515</td><td style="text-align: right;">-4.5753e-6</td><td style="text-align: right;">0.0061965</td><td style="text-align: right;">-2.2404e-6</td><td style="text-align: right;">9.0637e-8</td><td style="text-align: right;">3.5207e-8</td><td style="text-align: right;">-2.2958e-6</td></tr>
+<tr><td style="text-align: right;">1</td><td style="text-align: right;">0.0061982</td><td style="text-align: right;">-2.9218e-6</td><td>0.00096515</td><td style="text-align: right;">-4.5753e-6</td><td style="text-align: right;">0.0061965</td><td style="text-align: right;">-2.2404e-6</td><td style="text-align: right;">9.0637e-8</td><td style="text-align: right;">3.5207e-8</td><td style="text-align: right;">-2.2958e-6</td></tr>
+<tr><td style="text-align: right;">4</td><td style="text-align: right;">0.00613</td><td style="text-align: right;">-2.9866e-6</td><td>0.00097063</td><td style="text-align: right;">-4.5653e-6</td><td style="text-align: right;">0.0061284</td><td style="text-align: right;">-2.1199e-6</td><td style="text-align: right;">1.7459e-8</td><td style="text-align: right;">3.1172e-8</td><td style="text-align: right;">-2.1062e-6</td></tr>
+<tr><td style="text-align: right;">16</td><td style="text-align: right;">0.0030477</td><td style="text-align: right;">-2.1293e-6</td><td>0.00083221</td><td style="text-align: right;">-3.8028e-6</td><td style="text-align: right;">0.0030461</td><td style="text-align: right;">3.7403e-6</td><td style="text-align: right;">-2.7203e-7</td><td style="text-align: right;">-7.1709e-9</td><td style="text-align: right;">4.0051e-6</td></tr>
+<tr><td style="text-align: right;">64</td><td style="text-align: right;">0.0044528</td><td style="text-align: right;">-4.0085e-6</td><td>0.00092766</td><td style="text-align: right;">-4.5399e-6</td><td style="text-align: right;">0.0044522</td><td style="text-align: right;">8.1259e-6</td><td style="text-align: right;">-8.9903e-7</td><td style="text-align: right;">7.2795e-8</td><td style="text-align: right;">9.0978e-6</td></tr>
+<tr><td style="text-align: right;">256</td><td style="text-align: right;">0.0064059</td><td style="text-align: right;">-4.154e-6</td><td>0.0010061</td><td style="text-align: right;">-5.8299e-6</td><td style="text-align: right;">0.0064042</td><td style="text-align: right;">-2.85e-5</td><td style="text-align: right;">-3.3661e-7</td><td style="text-align: right;">5.668e-8</td><td style="text-align: right;">-2.8107e-5</td></tr>
+<tr><td style="text-align: right;">512</td><td style="text-align: right;">0.0083455</td><td style="text-align: right;">-3.6455e-6</td><td>0.0013976</td><td style="text-align: right;">-6.6194e-6</td><td style="text-align: right;">0.0083425</td><td style="text-align: right;">-0.00021529</td><td style="text-align: right;">-5.8105e-7</td><td style="text-align: right;">1.0355e-7</td><td style="text-align: right;">-0.00021461</td></tr>
+<tr><td style="text-align: right;">1000</td><td style="text-align: right;">0.079201</td><td style="text-align: right;">-0.00010021</td><td>0.019915</td><td style="text-align: right;">-3.6163e-5</td><td style="text-align: right;">0.079266</td><td style="text-align: right;">0.061049</td><td style="text-align: right;">-9.2596e-5</td><td style="text-align: right;">-1.8591e-5</td><td style="text-align: right;">0.061123</td></tr>
+<tr><td style="text-align: right;">2000</td><td style="text-align: right;">0.26323</td><td style="text-align: right;">-0.00023941</td><td>0.047961</td><td style="text-align: right;">-0.00010532</td><td style="text-align: right;">0.26336</td><td style="text-align: right;">0.22455</td><td style="text-align: right;">-0.00020685</td><td style="text-align: right;">-6.5247e-5</td><td style="text-align: right;">0.22469</td></tr>
+<tr><td style="text-align: right;">4000</td><td style="text-align: right;">0.55559</td><td style="text-align: right;">-0.00042394</td><td>0.095979</td><td style="text-align: right;">-0.00024059</td><td style="text-align: right;">0.55578</td><td style="text-align: right;">0.48691</td><td style="text-align: right;">-0.000342</td><td style="text-align: right;">-0.000167</td><td style="text-align: right;">0.48708</td></tr>
+<tr><td style="text-align: right;">8000</td><td style="text-align: right;">1.0636</td><td style="text-align: right;">-0.00073983</td><td>0.17609</td><td style="text-align: right;">-0.00053109</td><td style="text-align: right;">1.0638</td><td style="text-align: right;">0.94806</td><td style="text-align: right;">-0.00045671</td><td style="text-align: right;">-0.00039704</td><td style="text-align: right;">0.94812</td></tr>
+<tr><td style="text-align: right;">16000</td><td style="text-align: right;">1.6482</td><td style="text-align: right;">-0.0011935</td><td>0.27616</td><td style="text-align: right;">-0.00088185</td><td style="text-align: right;">1.6485</td><td style="text-align: right;">1.4846</td><td style="text-align: right;">-0.00071405</td><td style="text-align: right;">-0.00066769</td><td style="text-align: right;">1.4846</td></tr>
+<tr><td style="text-align: right;">32000</td><td style="text-align: right;">2.123</td><td style="text-align: right;">-0.0018667</td><td>0.3641</td><td style="text-align: right;">-0.0011607</td><td style="text-align: right;">2.1237</td><td style="text-align: right;">1.9284</td><td style="text-align: right;">-0.0011919</td><td style="text-align: right;">-0.0008796</td><td style="text-align: right;">1.9287</td></tr>
+<tr><td style="text-align: right;">64000</td><td style="text-align: right;">1.9873</td><td style="text-align: right;">-0.002177</td><td>0.35222</td><td style="text-align: right;">-0.0011571</td><td style="text-align: right;">1.9883</td><td style="text-align: right;">1.8167</td><td style="text-align: right;">-0.0014489</td><td style="text-align: right;">-0.00087893</td><td style="text-align: right;">1.8173</td></tr>
+<tr><td style="text-align: right;">143000</td><td style="text-align: right;">0.99461</td><td style="text-align: right;">-0.0017726</td><td>0.23975</td><td style="text-align: right;">-0.0011758</td><td style="text-align: right;">0.9952</td><td style="text-align: right;">0.90422</td><td style="text-align: right;">-0.00086534</td><td style="text-align: right;">-0.0007548</td><td style="text-align: right;">0.90433</td></tr>
 </tbody>
 </table></div>
 </div>
@@ -2021,230 +1447,60 @@ denotes powers of ten.</p>
 <div class="table-scroll"><table>
 <tbody>
 <tr>
-<td colspan="9"
+<td colspan="10"
 style="text-align: left;"><strong>Pythia-1B</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;"></td>
-<td colspan="4" style="text-align: center;">Complete
+<td colspan="5" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td>
 <td colspan="4" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td>
 </tr>
+<tr><td style="text-align: right;">Checkpoint</td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td><th>Mean |b⁺|</th><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td></tr>
 <tr>
-<td style="text-align: right;">Checkpoint</td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td>
-</tr>
-<tr>
-<td colspan="9"
+<td colspan="10"
 style="text-align: left;"><strong>Pythia-1B</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;"></td>
-<td colspan="4" style="text-align: center;">Complete
+<td colspan="5" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msup><mi>H</mi><mo>+</mo></msup><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{H^+}</annotation></semantics></math></td>
 <td colspan="4" style="text-align: center;">Complete
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline C</annotation></semantics></math></td>
 </tr>
-<tr>
-<td style="text-align: right;">Checkpoint</td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td>
-<td
-style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td>
-</tr>
-<tr>
-<td style="text-align: right;"></td>
-<td style="text-align: right;">0.026239</td>
-<td style="text-align: right;">-1.276e-5</td>
-<td style="text-align: right;">-2.9184e-5</td>
-<td style="text-align: right;">0.026223</td>
-<td style="text-align: right;">-3.465e-5</td>
-<td style="text-align: right;">1.5678e-7</td>
-<td style="text-align: right;">1.3464e-7</td>
-<td style="text-align: right;">-3.4672e-5</td>
-</tr>
-<tr>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0.026239</td>
-<td style="text-align: right;">-1.276e-5</td>
-<td style="text-align: right;">-2.9184e-5</td>
-<td style="text-align: right;">0.026223</td>
-<td style="text-align: right;">-3.465e-5</td>
-<td style="text-align: right;">1.5678e-7</td>
-<td style="text-align: right;">1.3464e-7</td>
-<td style="text-align: right;">-3.4672e-5</td>
-</tr>
-<tr>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">0.02622</td>
-<td style="text-align: right;">-1.2818e-5</td>
-<td style="text-align: right;">-2.9178e-5</td>
-<td style="text-align: right;">0.026203</td>
-<td style="text-align: right;">-3.4236e-5</td>
-<td style="text-align: right;">1.1852e-7</td>
-<td style="text-align: right;">1.1763e-7</td>
-<td style="text-align: right;">-3.4237e-5</td>
-</tr>
-<tr>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">0.014209</td>
-<td style="text-align: right;">-9.1642e-6</td>
-<td style="text-align: right;">-2.5192e-5</td>
-<td style="text-align: right;">0.014193</td>
-<td style="text-align: right;">-1.7605e-5</td>
-<td style="text-align: right;">4.5978e-7</td>
-<td style="text-align: right;">1.8473e-7</td>
-<td style="text-align: right;">-1.788e-5</td>
-</tr>
-<tr>
-<td style="text-align: right;">64</td>
-<td style="text-align: right;">0.020472</td>
-<td style="text-align: right;">-9.5199e-6</td>
-<td style="text-align: right;">-2.9293e-5</td>
-<td style="text-align: right;">0.020452</td>
-<td style="text-align: right;">-8.648e-5</td>
-<td style="text-align: right;">3.2131e-8</td>
-<td style="text-align: right;">-7.9156e-8</td>
-<td style="text-align: right;">-8.6591e-5</td>
-</tr>
-<tr>
-<td style="text-align: right;">256</td>
-<td style="text-align: right;">0.028226</td>
-<td style="text-align: right;">-8.4689e-6</td>
-<td style="text-align: right;">-3.5954e-5</td>
-<td style="text-align: right;">0.028199</td>
-<td style="text-align: right;">9.881e-5</td>
-<td style="text-align: right;">-3.7461e-6</td>
-<td style="text-align: right;">-1.5579e-7</td>
-<td style="text-align: right;">0.0001024</td>
-</tr>
-<tr>
-<td style="text-align: right;">512</td>
-<td style="text-align: right;">0.15569</td>
-<td style="text-align: right;">-0.00021039</td>
-<td style="text-align: right;">-9.4745e-5</td>
-<td style="text-align: right;">0.15581</td>
-<td style="text-align: right;">0.11242</td>
-<td style="text-align: right;">-0.00021332</td>
-<td style="text-align: right;">-3.7527e-5</td>
-<td style="text-align: right;">0.11259</td>
-</tr>
-<tr>
-<td style="text-align: right;">1000</td>
-<td style="text-align: right;">0.31735</td>
-<td style="text-align: right;">-0.00028794</td>
-<td style="text-align: right;">-0.00019276</td>
-<td style="text-align: right;">0.31745</td>
-<td style="text-align: right;">0.25351</td>
-<td style="text-align: right;">-0.0002573</td>
-<td style="text-align: right;">-9.9862e-5</td>
-<td style="text-align: right;">0.25367</td>
-</tr>
-<tr>
-<td style="text-align: right;">2000</td>
-<td style="text-align: right;">0.77285</td>
-<td style="text-align: right;">-0.00048871</td>
-<td style="text-align: right;">-0.00045024</td>
-<td style="text-align: right;">0.77288</td>
-<td style="text-align: right;">0.64678</td>
-<td style="text-align: right;">-0.00037615</td>
-<td style="text-align: right;">-0.00026606</td>
-<td style="text-align: right;">0.64689</td>
-</tr>
-<tr>
-<td style="text-align: right;">4000</td>
-<td style="text-align: right;">1.4249</td>
-<td style="text-align: right;">-0.00073729</td>
-<td style="text-align: right;">-0.00086625</td>
-<td style="text-align: right;">1.4248</td>
-<td style="text-align: right;">1.2151</td>
-<td style="text-align: right;">-0.00059339</td>
-<td style="text-align: right;">-0.00054768</td>
-<td style="text-align: right;">1.2152</td>
-</tr>
-<tr>
-<td style="text-align: right;">8000</td>
-<td style="text-align: right;">2.3465</td>
-<td style="text-align: right;">-0.0013076</td>
-<td style="text-align: right;">-0.0015624</td>
-<td style="text-align: right;">2.3462</td>
-<td style="text-align: right;">2.0072</td>
-<td style="text-align: right;">-0.0010346</td>
-<td style="text-align: right;">-0.0010155</td>
-<td style="text-align: right;">2.0072</td>
-</tr>
-<tr>
-<td style="text-align: right;">16000</td>
-<td style="text-align: right;">3.4753</td>
-<td style="text-align: right;">-0.0024254</td>
-<td style="text-align: right;">-0.0025829</td>
-<td style="text-align: right;">3.4752</td>
-<td style="text-align: right;">2.9692</td>
-<td style="text-align: right;">-0.0019691</td>
-<td style="text-align: right;">-0.0016992</td>
-<td style="text-align: right;">2.9694</td>
-</tr>
-<tr>
-<td style="text-align: right;">32000</td>
-<td style="text-align: right;">4.3465</td>
-<td style="text-align: right;">-0.0038954</td>
-<td style="text-align: right;">-0.0035612</td>
-<td style="text-align: right;">4.3468</td>
-<td style="text-align: right;">3.6825</td>
-<td style="text-align: right;">-0.0030719</td>
-<td style="text-align: right;">-0.0023087</td>
-<td style="text-align: right;">3.6833</td>
-</tr>
-<tr>
-<td style="text-align: right;">64000</td>
-<td style="text-align: right;">3.9461</td>
-<td style="text-align: right;">-0.0041438</td>
-<td style="text-align: right;">-0.0035096</td>
-<td style="text-align: right;">3.9468</td>
-<td style="text-align: right;">3.3137</td>
-<td style="text-align: right;">-0.0032533</td>
-<td style="text-align: right;">-0.0022161</td>
-<td style="text-align: right;">3.3147</td>
-</tr>
-<tr>
-<td style="text-align: right;">143000</td>
-<td style="text-align: right;">2.121</td>
-<td style="text-align: right;">-0.0023641</td>
-<td style="text-align: right;">-0.0019955</td>
-<td style="text-align: right;">2.1213</td>
-<td style="text-align: right;">1.7683</td>
-<td style="text-align: right;">-0.0018027</td>
-<td style="text-align: right;">-0.0012235</td>
-<td style="text-align: right;">1.7689</td>
-</tr>
+<tr><td style="text-align: right;">Checkpoint</td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar G^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar b^+</annotation></semantics></math></td><th>Mean |b⁺|</th><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar T^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mo>+</mo></msup><annotation encoding="application/x-tex">\bar m^+</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>G</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar G^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>b</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar b^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>T</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar T^C</annotation></semantics></math></td><td
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>m</mi><mo accent="true">‾</mo></mover><mi>C</mi></msup><annotation encoding="application/x-tex">\bar m^C</annotation></semantics></math></td></tr>
+<tr><td>0</td><td style="text-align: right;">0.026239</td><td style="text-align: right;">-1.276e-5</td><td>0.0021128</td><td style="text-align: right;">-2.9184e-5</td><td style="text-align: right;">0.026223</td><td style="text-align: right;">-3.465e-5</td><td style="text-align: right;">1.5678e-7</td><td style="text-align: right;">1.3464e-7</td><td style="text-align: right;">-3.4672e-5</td></tr>
+<tr><td style="text-align: right;">1</td><td style="text-align: right;">0.026239</td><td style="text-align: right;">-1.276e-5</td><td>0.0021128</td><td style="text-align: right;">-2.9184e-5</td><td style="text-align: right;">0.026223</td><td style="text-align: right;">-3.465e-5</td><td style="text-align: right;">1.5678e-7</td><td style="text-align: right;">1.3464e-7</td><td style="text-align: right;">-3.4672e-5</td></tr>
+<tr><td style="text-align: right;">4</td><td style="text-align: right;">0.02622</td><td style="text-align: right;">-1.2818e-5</td><td>0.0021155</td><td style="text-align: right;">-2.9178e-5</td><td style="text-align: right;">0.026203</td><td style="text-align: right;">-3.4236e-5</td><td style="text-align: right;">1.1852e-7</td><td style="text-align: right;">1.1763e-7</td><td style="text-align: right;">-3.4237e-5</td></tr>
+<tr><td style="text-align: right;">16</td><td style="text-align: right;">0.014209</td><td style="text-align: right;">-9.1642e-6</td><td>0.0017687</td><td style="text-align: right;">-2.5192e-5</td><td style="text-align: right;">0.014193</td><td style="text-align: right;">-1.7605e-5</td><td style="text-align: right;">4.5978e-7</td><td style="text-align: right;">1.8473e-7</td><td style="text-align: right;">-1.788e-5</td></tr>
+<tr><td style="text-align: right;">64</td><td style="text-align: right;">0.020472</td><td style="text-align: right;">-9.5199e-6</td><td>0.0019422</td><td style="text-align: right;">-2.9293e-5</td><td style="text-align: right;">0.020452</td><td style="text-align: right;">-8.648e-5</td><td style="text-align: right;">3.2131e-8</td><td style="text-align: right;">-7.9156e-8</td><td style="text-align: right;">-8.6591e-5</td></tr>
+<tr><td style="text-align: right;">256</td><td style="text-align: right;">0.028226</td><td style="text-align: right;">-8.4689e-6</td><td>0.0028</td><td style="text-align: right;">-3.5954e-5</td><td style="text-align: right;">0.028199</td><td style="text-align: right;">9.881e-5</td><td style="text-align: right;">-3.7461e-6</td><td style="text-align: right;">-1.5579e-7</td><td style="text-align: right;">0.0001024</td></tr>
+<tr><td style="text-align: right;">512</td><td style="text-align: right;">0.15569</td><td style="text-align: right;">-0.00021039</td><td>0.041477</td><td style="text-align: right;">-9.4745e-5</td><td style="text-align: right;">0.15581</td><td style="text-align: right;">0.11242</td><td style="text-align: right;">-0.00021332</td><td style="text-align: right;">-3.7527e-5</td><td style="text-align: right;">0.11259</td></tr>
+<tr><td style="text-align: right;">1000</td><td style="text-align: right;">0.31735</td><td style="text-align: right;">-0.00028794</td><td>0.054548</td><td style="text-align: right;">-0.00019276</td><td style="text-align: right;">0.31745</td><td style="text-align: right;">0.25351</td><td style="text-align: right;">-0.0002573</td><td style="text-align: right;">-9.9862e-5</td><td style="text-align: right;">0.25367</td></tr>
+<tr><td style="text-align: right;">2000</td><td style="text-align: right;">0.77285</td><td style="text-align: right;">-0.00048871</td><td>0.11955</td><td style="text-align: right;">-0.00045024</td><td style="text-align: right;">0.77288</td><td style="text-align: right;">0.64678</td><td style="text-align: right;">-0.00037615</td><td style="text-align: right;">-0.00026606</td><td style="text-align: right;">0.64689</td></tr>
+<tr><td style="text-align: right;">4000</td><td style="text-align: right;">1.4249</td><td style="text-align: right;">-0.00073729</td><td>0.21883</td><td style="text-align: right;">-0.00086625</td><td style="text-align: right;">1.4248</td><td style="text-align: right;">1.2151</td><td style="text-align: right;">-0.00059339</td><td style="text-align: right;">-0.00054768</td><td style="text-align: right;">1.2152</td></tr>
+<tr><td style="text-align: right;">8000</td><td style="text-align: right;">2.3465</td><td style="text-align: right;">-0.0013076</td><td>0.36635</td><td style="text-align: right;">-0.0015624</td><td style="text-align: right;">2.3462</td><td style="text-align: right;">2.0072</td><td style="text-align: right;">-0.0010346</td><td style="text-align: right;">-0.0010155</td><td style="text-align: right;">2.0072</td></tr>
+<tr><td style="text-align: right;">16000</td><td style="text-align: right;">3.4753</td><td style="text-align: right;">-0.0024254</td><td>0.55709</td><td style="text-align: right;">-0.0025829</td><td style="text-align: right;">3.4752</td><td style="text-align: right;">2.9692</td><td style="text-align: right;">-0.0019691</td><td style="text-align: right;">-0.0016992</td><td style="text-align: right;">2.9694</td></tr>
+<tr><td style="text-align: right;">32000</td><td style="text-align: right;">4.3465</td><td style="text-align: right;">-0.0038954</td><td>0.73657</td><td style="text-align: right;">-0.0035612</td><td style="text-align: right;">4.3468</td><td style="text-align: right;">3.6825</td><td style="text-align: right;">-0.0030719</td><td style="text-align: right;">-0.0023087</td><td style="text-align: right;">3.6833</td></tr>
+<tr><td style="text-align: right;">64000</td><td style="text-align: right;">3.9461</td><td style="text-align: right;">-0.0041438</td><td>0.68411</td><td style="text-align: right;">-0.0035096</td><td style="text-align: right;">3.9468</td><td style="text-align: right;">3.3137</td><td style="text-align: right;">-0.0032533</td><td style="text-align: right;">-0.0022161</td><td style="text-align: right;">3.3147</td></tr>
+<tr><td style="text-align: right;">143000</td><td style="text-align: right;">2.121</td><td style="text-align: right;">-0.0023641</td><td>0.37883</td><td style="text-align: right;">-0.0019955</td><td style="text-align: right;">2.1213</td><td style="text-align: right;">1.7683</td><td style="text-align: right;">-0.0018027</td><td style="text-align: right;">-0.0012235</td><td style="text-align: right;">1.7689</td></tr>
 </tbody>
 </table></div>
 </div>
@@ -2290,4 +1546,4 @@ repeated-sequence test.</p>
 </section>
 </section>
 
-<section id="margin-explorer"><h2>Explore a complete composition path</h2><p>Choose a model, checkpoint, and Reader–Writer path. Values are raw finite-population averages under the complete operators. The probe score is measured at checkpoint 143,000 and identifies the fixed endpoint-selected head.</p><div class="explorer-controls"><label>Model<select id="model-select" aria-label="Model"></select></label><label>Checkpoint<select id="checkpoint-select" aria-label="Checkpoint"></select></label><label>Reader–Writer path<select id="head-select" aria-label="Reader–Writer path"></select></label></div><p id="path-metadata" aria-live="polite"></p><div class="table-scroll"><table id="margin-table"><thead><tr><th>Operator</th><th>G</th><th>b</th><th>T</th><th>m = G − b + T</th></tr></thead><tbody></tbody></table></div><figure><svg id="trajectory" viewBox="0 0 900 310" role="img" aria-label="Raw G, minus b, T, and m across checkpoints for the selected path"></svg><figcaption>Solid: complete C. Dashed: complete H⁺. Colors show G, −b, T, and m in the same raw score units. Checkpoints are equally spaced samples.</figcaption></figure><p><a href="./data/full-operator-margins.json" download>Download the numerical data and weighting definitions</a></p></section><section class="references"><h2>References</h2><ol><li><a href="https://transformer-circuits.pub/2021/framework/index.html">Elhage et al. (2021), A Mathematical Framework for Transformer Circuits.</a></li><li><a href="https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html">Olsson et al. (2022), In-context Learning and Induction Heads.</a></li></ol></section></article><footer class="article-footer"><span>Shaoxiang Wu · Research report</span><a href="/induction-circuit/">Back to project</a></footer></main></body></html>
+<section id="margin-explorer"><h2>Explore a complete composition path</h2><p>Choose a model, checkpoint, and Reader–Writer path. Values are raw finite-population averages under the complete operators. The probe score is measured at checkpoint 143,000 and identifies the fixed endpoint-selected head.</p><p class="method-note">Mean |b| is computed before averaging token pairs and describes bias magnitude. The margin identity uses signed b and signed T.</p><div class="explorer-controls"><label>Model<select id="model-select" aria-label="Model"></select></label><label>Checkpoint<select id="checkpoint-select" aria-label="Checkpoint"></select></label><label>Reader–Writer path<select id="head-select" aria-label="Reader–Writer path"></select></label></div><p id="path-metadata" aria-live="polite"></p><div class="table-scroll"><table id="margin-table"><thead><tr><th>Operator</th><th>G</th><th>b (signed mean)</th><th>Mean |b|</th><th>T (signed mean)</th><th>m = G − b + T</th></tr></thead><tbody></tbody></table></div><figure><svg id="trajectory" viewBox="0 0 900 310" role="img" aria-label="Raw G, minus b, mean absolute b, T, and m across checkpoints for the selected path"></svg><figcaption>Solid: complete C. Dashed: complete H⁺. Colors show G, −b, T, and m; the orange dotted line shows mean |b⁺|. All values use the same raw score units. Checkpoints are equally spaced samples.</figcaption></figure><p><a href="./data/full-operator-margins.json" download>Download the numerical data and weighting definitions</a> · <a href="./data/absolute-bias.csv" download>Download mean absolute bias by path and checkpoint</a></p></section><section class="references"><h2>References</h2><ol><li><a href="https://transformer-circuits.pub/2021/framework/index.html">Elhage et al. (2021), A Mathematical Framework for Transformer Circuits.</a></li><li><a href="https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html">Olsson et al. (2022), In-context Learning and Induction Heads.</a></li></ol></section></article><footer class="article-footer"><span>Shaoxiang Wu · Research report</span><a href="/induction-circuit/">Back to project</a></footer></main></body></html>
