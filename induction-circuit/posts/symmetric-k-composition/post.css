@@ -68,3 +68,24 @@ code { font-size:.78em; overflow-wrap:anywhere; background:#f5f7f7; padding:2px 
 #token-curve { display:block; width:100%; height:auto; margin:20px 0 10px; font-family:Arial,Helvetica,sans-serif; }
 .explorer .figure-controls { margin:18px 0; }
 .explorer .figure-controls label { margin:0; }
+/* The complete report shares the established project typography. */
+.article-body .level1 { margin:0 0 48px; }
+.article-body .level2,.article-body .level3 { margin:30px 0; }
+.article-body .level1 h1 { max-width:790px; margin:38px auto 22px; font:400 28px/1.35 Arial,Helvetica,sans-serif; }
+.article-body h4 { max-width:790px; margin:26px auto 12px; font:600 17px/1.5 Arial,Helvetica,sans-serif; }
+.article-body .math.display { display:block; max-width:100%; overflow-x:auto; padding:12px 0; text-align:center; }
+.article-body math { font-size:1em; }
+.article-body figure img { max-width:900px; margin:auto; }
+.article-body section#margin-explorer { margin-top:48px; padding-top:28px; border-top:1px solid #dce4e7; }
+.explorer-controls { max-width:790px; margin:22px auto; display:grid; grid-template-columns:1fr 1fr 2fr; gap:16px; font:14px/1.5 Arial,Helvetica,sans-serif; }
+.explorer-controls label { display:flex; flex-direction:column; gap:7px; }
+.explorer-controls select { width:100%; min-width:0; }
+#path-metadata { font:14px/1.7 Arial,Helvetica,sans-serif; color:#52616a; }
+#margin-table { font-variant-numeric:tabular-nums; }
+#trajectory { width:100%; display:block; font-family:Arial,Helvetica,sans-serif; }
+.article-body .table-scroll { max-width:100%; }
+.article-body table { width:auto; min-width:80%; margin:auto; }
+.article-body .flushright { text-align:right; font-size:14px; }
+@media(max-width:700px){.explorer-controls{grid-template-columns:1fr 1fr}.explorer-controls label:last-child{grid-column:1 / -1}.article-body .level1 h1{font-size:24px}.article-body table{min-width:100%}}
+.figure-legend { text-align:center; font:14px/1.6 Arial,Helvetica,sans-serif; margin-bottom:12px; }
+.figure-legend span { margin:0 14px; }
