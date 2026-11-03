@@ -1278,12 +1278,6 @@ Comparison-weighted score statistics; Reader score is the endpoint native correc
 <p>A supplementary, aligned sequence-0 CPU diagnostic at step 120,000 helps separate these effects. L4H1 has <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>T</mi><mi>C</mi></msup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>9.51</mn></mrow><annotation encoding="application/x-tex">\sigma(T^C)=9.51</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>T</mi><mi>A</mi></msup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>4.96</mn></mrow><annotation encoding="application/x-tex">\sigma(T^A)=4.96</annotation></semantics></math>; its algebraic <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mo>+</mo></msup><mo>+</mo><msup><mi>T</mi><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">T^++T^-</annotation></semantics></math> sum without <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>T</mi><mi>A</mi></msup><annotation encoding="application/x-tex">T^A</annotation></semantics></math> has standard deviation 4.75. For L3H5 the corresponding values are 2.82, 1.18, and 1.95. L4H1’s antisymmetric squared-energy fraction is <strong>43.91%</strong>, compared with <strong>18.59%</strong> for L3H5; its negative fraction is also larger, <strong>13.25% versus 3.05%</strong>.</p>
 <p>In that diagnostic, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Cov</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msup><mi>T</mi><mi>A</mi></msup><mo>,</mo><msup><mi>T</mi><mi>C</mi></msup><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mrow><mi mathvariant="normal">Var</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msup><mi>T</mi><mi>C</mi></msup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0.511</mn></mrow><annotation encoding="application/x-tex">\operatorname{Cov}(T^A,T^C)/\operatorname{Var}(T^C)=0.511</annotation></semantics></math> for L4H1. This is a signed covariance attribution that includes interactions with the other terms, not an independent causal percentage. The results support a substantial antisymmetric contribution to L4’s larger <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> variation, while retaining contributions from the negative component and their covariances. The diagnostic is a separate CPU replica on one sequence, not an assertion of bitwise identity with the production GPU capture or a full-population intervention.</p>
 <p>A standardized margin is useful for late-stage comparisons, but it is not automatically a universally better predictor. At step 120,000 the correlation with the native removal score rises from <strong>r=0.695 for the raw mean margin to r=0.944 for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>μ</mi><mi>m</mi></msub><mi>/</mi><msub><mi>σ</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">\mu_m/\sigma_m</annotation></semantics></math></strong>. At the endpoint it rises from 0.681 to 0.932. Pooled over all 190 route–checkpoint points, however, the raw mean gives r=0.869 and the standardized mean r=0.845. Training stage changes the relationship; we keep checkpoint-specific fits and Reader-grouped checks rather than treating the pooled curve as a causal law.</p>
-<figure>
-<img src="assets/revision-standardized-margin-fit.svg" alt="Raw mean full-C margin and mean divided by standard deviation plotted against route-removal Reader scores" loading="lazy">
-<figcaption>
-<strong>Figure 7.</strong> Raw and standardized full-C margins versus native route-removal scores, 10 fixed 70M paths × 19 checkpoints. The pooled panels summarize the available observations; the accompanying JSON retains within-checkpoint fits, the analysis excluding the selection endpoint, and Reader-grouped cross-validation. Repeated checkpoints and shared Writer L2H7 do not provide 190 independent model replicates.
-</figcaption>
-</figure>
 <h3 id="rotate-h-directions-while-preserving-its-spectrum">3.2.6 Rotate H⁺ directions while preserving its spectrum</h3>
 <p>The positive center term depends on both eigenvalues and directions:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>H</mi><mi>D</mi><mo>+</mo></msubsup><mo>=</mo><msub><mi>U</mi><mi>D</mi></msub><msubsup><mi mathvariant="normal">Λ</mi><mi>D</mi><mo>+</mo></msubsup><msubsup><mi>U</mi><mi>D</mi><mi>⊤</mi></msubsup><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>G</mi><mrow><mi>i</mi><mi>k</mi></mrow><mo>+</mo></msubsup><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><munder><mo>∑</mo><mi>a</mi></munder><msubsup><mi>λ</mi><mi>a</mi><mo>+</mo></msubsup><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo><mo minsize="120%" maxsize="120%" stretchy="true" form="prefix">(</mo><msub><mi>u</mi><mi>a</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><msub><mi>δ</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub><msup><mo minsize="120%" maxsize="120%" stretchy="true" form="postfix">)</mo><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">H_D^+=U_D\Lambda_D^+U_D^\top,\qquad G^+_{ik}(D)=\tfrac12\sum_a\lambda_a^+(D)\bigl(u_a(D)^\top\delta_{ik}\bigr)^2.</annotation></semantics></math></p>
@@ -1300,7 +1294,7 @@ Comparison-weighted score statistics; Reader score is the endpoint native correc
 <figure>
 <img src="assets/revision-rotation-L3H0.svg" alt="L3H0: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 8a.</strong> L3H0, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 7a.</strong> L3H0, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -1503,7 +1497,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L3H1.svg" alt="L3H1: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 8b.</strong> L3H1, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 7b.</strong> L3H1, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -1706,7 +1700,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L3H3.svg" alt="L3H3: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 8c.</strong> L3H3, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 7c.</strong> L3H3, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -1909,7 +1903,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L3H5.svg" alt="L3H5: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 8d.</strong> L3H5, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 7d.</strong> L3H5, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -2112,7 +2106,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L3H6.svg" alt="L3H6: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 8e.</strong> L3H6, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 7e.</strong> L3H6, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -2315,7 +2309,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L4H0.svg" alt="L4H0: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 8f.</strong> L4H0, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 7f.</strong> L4H0, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -2518,7 +2512,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L4H1.svg" alt="L4H1: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 8g.</strong> L4H1, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 7g.</strong> L4H1, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -2721,7 +2715,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L4H3.svg" alt="L4H3: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 8h.</strong> L4H3, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 7h.</strong> L4H3, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -2924,7 +2918,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L4H6.svg" alt="L4H6: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 8i.</strong> L4H6, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 7i.</strong> L4H6, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -3127,7 +3121,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L4H7.svg" alt="L4H7: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 8j.</strong> L4H7, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 7j.</strong> L4H7, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
