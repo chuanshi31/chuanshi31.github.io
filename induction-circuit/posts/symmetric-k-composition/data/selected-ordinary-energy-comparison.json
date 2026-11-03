@@ -1,0 +1,55 @@
+{
+  "Pythia": {
+    "models": 6,
+    "selected_paths": 193,
+    "ordinary_unique_paths": 203,
+    "matched_selected_paths": 191,
+    "unmatched_selected_paths": 2,
+    "earlier_OLMo_paths_outside_support_excluded": 0,
+    "ordinary_supported_selected_weight": 0.9814814814814814,
+    "mean_selected": [
+      0.5871720893535342,
+      0.0734217129089019,
+      0.3394061977375638
+    ],
+    "mean_ordinary": [
+      0.25214466078514575,
+      0.25328862719821227,
+      0.49456671201664193
+    ],
+    "weighting": "Each model equal;selected paths equal within model. Ordinary paths reweighted to selected model×writer-layer×reader-layer composition on shared support.",
+    "unmatched_paths": [
+      {
+        "model": "pythia-1b-deduped-step143000",
+        "reader": "L5H6",
+        "writer": "L1H0"
+      },
+      {
+        "model": "pythia-1b-deduped-step143000",
+        "reader": "L5H7",
+        "writer": "L1H0"
+      }
+    ]
+  },
+  "OLMo": {
+    "models": 133,
+    "selected_paths": 3152,
+    "ordinary_unique_paths": 6068,
+    "matched_selected_paths": 3152,
+    "unmatched_selected_paths": 0,
+    "earlier_OLMo_paths_outside_support_excluded": 12,
+    "ordinary_supported_selected_weight": 0.9999999999999999,
+    "mean_selected": [
+      0.5053812782799241,
+      0.11381193672708004,
+      0.3808067849929961
+    ],
+    "mean_ordinary": [
+      0.2534547736643634,
+      0.25228667015001227,
+      0.494258556185625
+    ],
+    "weighting": "Each model equal;selected paths equal within model. Ordinary paths reweighted to selected model×writer-layer×reader-layer composition on shared support.",
+    "unmatched_paths": []
+  }
+}

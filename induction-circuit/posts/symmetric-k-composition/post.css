@@ -89,3 +89,36 @@ code { font-size:.78em; overflow-wrap:anywhere; background:#f5f7f7; padding:2px 
 @media(max-width:700px){.explorer-controls{grid-template-columns:1fr 1fr}.explorer-controls label:last-child{grid-column:1 / -1}.article-body .level1 h1{font-size:24px}.article-body table{min-width:100%}}
 .figure-legend { text-align:center; font:14px/1.6 Arial,Helvetica,sans-serif; margin-bottom:12px; }
 .figure-legend span { margin:0 14px; }
+
+/* 2026-11-03 article revision: preserve the original site's typography. */
+.normalization-controls { padding:12px 16px; background:#f3f7f8; border:1px solid #dbe5e8; border-radius:5px; margin-bottom:26px; }
+.normalization-controls button { font:13px/1.45 Arial,Helvetica,sans-serif; padding:8px 12px; border:1px solid #b6c9cf; border-radius:4px; background:white; color:#314955; cursor:pointer; }
+.normalization-controls button[aria-pressed="true"] { background:#165d71; color:white; border-color:#165d71; }
+.article-body .level3 { margin-bottom:38px; }
+.article-body math[display="block"] { display:block; max-width:100%; overflow-x:auto; padding:10px 4px; margin:24px auto; }
+.article-body h3 { scroll-margin-top:24px; }
+.article-body .rotation-card { max-width:100%; border:1px solid #d9e3e7; border-radius:6px; padding:0; margin:20px 0; font-family:Arial,Helvetica,sans-serif; }
+.rotation-card summary { display:flex; justify-content:space-between; align-items:center; gap:16px; padding:17px 20px; background:#f6f9f9; color:#234959; list-style-position:inside; }
+.rotation-card summary strong { font-size:18px; }
+.rotation-card summary span { font-size:14px; color:#536c77; }
+.article-body .rotation-card figure { margin:18px 12px; }
+.rotation-card .table-scroll { padding:0 14px; max-width:100%; }
+.article-body .rotation-card figcaption { padding:0 12px; }
+.article-body .trajectory-figure { margin-bottom:48px; }
+.article-body .table-scroll table { width:100%; }
+.article-body #margin-explorer { border-top:1px solid #dce5e7; padding-top:38px; }
+.explorer-controls { display:grid; grid-template-columns:2fr 1fr 1fr; gap:16px; font:14px/1.6 Arial,Helvetica,sans-serif; margin:28px 0; }
+.explorer-controls label { display:flex; flex-direction:column; gap:7px; }
+#trajectory { width:100%; min-width:580px; }
+.trajectory-scroll { overflow-x:auto; }
+@media (max-width:700px) {
+ .article-shell { width:calc(100% - 32px); }
+ .article-header h1 { font-size:32px; }
+ .rotation-card summary { align-items:flex-start; flex-direction:column; gap:6px; padding:14px; }
+ .rotation-card summary span { font-size:12px; }
+ .article-body .rotation-card figure { overflow-x:auto; }
+ .rotation-card figure img { min-width:760px; }
+ .explorer-controls { grid-template-columns:1fr 1fr; }
+ .explorer-controls label:first-child { grid-column:1 / -1; }
+ .article-body { font-size:17px; }
+}

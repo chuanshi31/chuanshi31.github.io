@@ -1,0 +1,575 @@
+{
+  "environment": {
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "matplotlib": "3.11.2"
+  },
+  "status": "PASS",
+  "routes": 193,
+  "Readers": 104,
+  "source_SHA": "935decb4227ed35d6bec49ae4153084302dff01004f7a5f0d26f83db77db0aca",
+  "source_completion_SHA": "58914cdc3ff8405fb4eeefe4628d26746aeac1dde4e68fc31f493b7e52ddddd0",
+  "code_SHA": "801802523f25425d3c21de04f50feddd7f68b93a2ca1cb7011e50b117f387f8c",
+  "scales": {
+    "70m": {
+      "N": 10,
+      "Readers": 10,
+      "Pearson": 0.962213437361054,
+      "Spearman": 0.8909090909090909,
+      "R_squared": 0.9258546990381786,
+      "slope": 1.5718264174476413,
+      "intercept_percentage_points": -57.83127860637667,
+      "slope_cluster_bootstrap_95": [
+        1.2948937938927998,
+        1.90573811069531
+      ],
+      "Pearson_cluster_bootstrap_95": [
+        0.9149779563854532,
+        0.991656989886332
+      ],
+      "mean_Hplus_percentage": 66.39771915970205,
+      "mean_drop_percentage_points": 46.53441042711241,
+      "energy_range_percentage": [
+        43.59613415874207,
+        89.50980407274729
+      ],
+      "drop_range_percentage_points": [
+        10.382568883534798,
+        85.86932419245878
+      ]
+    },
+    "160m": {
+      "N": 29,
+      "Readers": 22,
+      "Pearson": 0.7011394609313388,
+      "Spearman": 0.7246305418719211,
+      "R_squared": 0.49159654367509215,
+      "slope": 1.2999593063295303,
+      "intercept_percentage_points": -52.92704281267725,
+      "slope_cluster_bootstrap_95": [
+        0.7595692108526793,
+        1.7895935486900125
+      ],
+      "Pearson_cluster_bootstrap_95": [
+        0.5401289223704128,
+        0.8254753046073334
+      ],
+      "mean_Hplus_percentage": 64.75858435874115,
+      "mean_drop_percentage_points": 31.256481589194262,
+      "energy_range_percentage": [
+        40.30814634522557,
+        89.86229624955499
+      ],
+      "drop_range_percentage_points": [
+        10.327418351707747,
+        89.08074908429612
+      ]
+    },
+    "410m": {
+      "N": 36,
+      "Readers": 19,
+      "Pearson": 0.7738031263233112,
+      "Spearman": 0.6638352638352639,
+      "R_squared": 0.5987712783077312,
+      "slope": 1.4751537242913382,
+      "intercept_percentage_points": -59.24221564251198,
+      "slope_cluster_bootstrap_95": [
+        0.9880068343873609,
+        1.9152143996139688
+      ],
+      "Pearson_cluster_bootstrap_95": [
+        0.5719182193609048,
+        0.9125810465158898
+      ],
+      "mean_Hplus_percentage": 63.56577730208423,
+      "mean_drop_percentage_points": 34.527077482131375,
+      "energy_range_percentage": [
+        37.75414177223767,
+        91.28780158015137
+      ],
+      "drop_range_percentage_points": [
+        10.226686491595146,
+        94.09116170223633
+      ]
+    },
+    "1b": {
+      "N": 18,
+      "Readers": 10,
+      "Pearson": 0.8925993669223333,
+      "Spearman": 0.8410732714138286,
+      "R_squared": 0.7967336298301522,
+      "slope": 1.6113515395710334,
+      "intercept_percentage_points": -51.86466743911243,
+      "slope_cluster_bootstrap_95": [
+        1.2085691414324133,
+        2.2676267250753894
+      ],
+      "Pearson_cluster_bootstrap_95": [
+        0.7930051190568997,
+        0.9550727851548231
+      ],
+      "mean_Hplus_percentage": 51.885417111390176,
+      "mean_drop_percentage_points": 31.740979304611365,
+      "energy_range_percentage": [
+        31.457313755232956,
+        72.3717468301337
+      ],
+      "drop_range_percentage_points": [
+        12.218049675339545,
+        77.35425350311468
+      ]
+    },
+    "1.4b": {
+      "N": 36,
+      "Readers": 16,
+      "Pearson": 0.8426040959963506,
+      "Spearman": 0.8190476190476191,
+      "R_squared": 0.709981662589827,
+      "slope": 1.6280487590130754,
+      "intercept_percentage_points": -60.91667133688294,
+      "slope_cluster_bootstrap_95": [
+        1.2174690575707814,
+        1.9594547001045712
+      ],
+      "Pearson_cluster_bootstrap_95": [
+        0.6941214003796582,
+        0.9215507956793044
+      ],
+      "mean_Hplus_percentage": 55.294693730852245,
+      "mean_drop_percentage_points": 29.105786171639142,
+      "energy_range_percentage": [
+        39.780755754290404,
+        78.63556144211098
+      ],
+      "drop_range_percentage_points": [
+        10.14515173003359,
+        85.03652391133437
+      ]
+    },
+    "2.8b": {
+      "N": 64,
+      "Readers": 27,
+      "Pearson": 0.6395709060963353,
+      "Spearman": 0.6323260073260072,
+      "R_squared": 0.4090509439248866,
+      "slope": 0.9282436520934517,
+      "intercept_percentage_points": -22.399110645211252,
+      "slope_cluster_bootstrap_95": [
+        0.5066654748961782,
+        1.6570208916599714
+      ],
+      "Pearson_cluster_bootstrap_95": [
+        0.48900405091622573,
+        0.8155838305480372
+      ],
+      "mean_Hplus_percentage": 50.40106194935072,
+      "mean_drop_percentage_points": 24.385355168042363,
+      "energy_range_percentage": [
+        24.32126900119302,
+        70.70182345316428
+      ],
+      "drop_range_percentage_points": [
+        10.062197492353631,
+        73.30350406617127
+      ]
+    }
+  },
+  "pooled": {
+    "N": 193,
+    "Readers": 104,
+    "Pearson": 0.74771638776683,
+    "Spearman": 0.6942220634581485,
+    "R_squared": 0.5590797965350739,
+    "slope": 1.2186355033058949,
+    "intercept_percentage_points": -39.309497393274725,
+    "slope_cluster_bootstrap_95": [
+      0.9788494777069876,
+      1.4710810961587004
+    ],
+    "Pearson_cluster_bootstrap_95": [
+      0.6678090260196424,
+      0.8241845121568211
+    ],
+    "mean_Hplus_percentage": 56.89408584429896,
+    "mean_drop_percentage_points": 30.02365554472131,
+    "energy_range_percentage": [
+      24.32126900119302,
+      91.28780158015137
+    ],
+    "drop_range_percentage_points": [
+      10.062197492353631,
+      94.09116170223633
+    ]
+  },
+  "within_scale_centered": {
+    "Pearson": 0.7625590159189739,
+    "Spearman": 0.7300925431333796,
+    "slope": 1.3437507884348465,
+    "R_squared": 0.5814962527593139,
+    "Pearson_cluster_bootstrap_95": [
+      0.6834436898672518,
+      0.8332772285947223
+    ],
+    "slope_cluster_bootstrap_95": [
+      1.0938151602574788,
+      1.611865923696082
+    ],
+    "definition": "Subtract each scale mean separately for x and y;Readerclusters resampled within scale;all models/checkpoints fixed."
+  },
+  "fresh_best103_sensitivity": {
+    "70m": {
+      "selection": {
+        "N": 10,
+        "Readers": 10,
+        "Pearson": 0.962213437361054,
+        "Spearman": 0.8909090909090909,
+        "R_squared": 0.9258546990381786,
+        "slope": 1.5718264174476413,
+        "intercept_percentage_points": -57.83127860637667,
+        "slope_cluster_bootstrap_95": [
+          1.2964434172259636,
+          1.9057333697044714
+        ],
+        "Pearson_cluster_bootstrap_95": [
+          0.9178743034527027,
+          0.9918981712622865
+        ],
+        "mean_Hplus_percentage": 66.39771915970205,
+        "mean_drop_percentage_points": 46.53441042711241,
+        "energy_range_percentage": [
+          43.59613415874207,
+          89.50980407274729
+        ],
+        "drop_range_percentage_points": [
+          10.382568883534798,
+          85.86932419245878
+        ]
+      },
+      "fresh_test": {
+        "N": 10,
+        "Readers": 10,
+        "Pearson": 0.9619521857776214,
+        "Spearman": 0.8909090909090909,
+        "R_squared": 0.9253520077223454,
+        "slope": 1.5697552086636017,
+        "intercept_percentage_points": -57.69576801273513,
+        "slope_cluster_bootstrap_95": [
+          1.2928208631252298,
+          1.9070451907573405
+        ],
+        "Pearson_cluster_bootstrap_95": [
+          0.9168792618001206,
+          0.991828235245151
+        ],
+        "mean_Hplus_percentage": 66.39771915970205,
+        "mean_drop_percentage_points": 46.53239748159019,
+        "energy_range_percentage": [
+          43.59613415874207,
+          89.50980407274729
+        ],
+        "drop_range_percentage_points": [
+          10.427888125964122,
+          85.8882277649226
+        ]
+      }
+    },
+    "160m": {
+      "selection": {
+        "N": 22,
+        "Readers": 22,
+        "Pearson": 0.742598839773662,
+        "Spearman": 0.707509881422925,
+        "R_squared": 0.5514530368331826,
+        "slope": 1.883046892562101,
+        "intercept_percentage_points": -95.14498613049074,
+        "slope_cluster_bootstrap_95": [
+          1.0920021938112474,
+          2.8906798529084172
+        ],
+        "Pearson_cluster_bootstrap_95": [
+          0.5507260570204714,
+          0.8835889133948487
+        ],
+        "mean_Hplus_percentage": 69.72949186969527,
+        "mean_drop_percentage_points": 36.1589168546732,
+        "energy_range_percentage": [
+          45.28939051646842,
+          89.86229624955499
+        ],
+        "drop_range_percentage_points": [
+          10.327418351707747,
+          89.08074908429612
+        ]
+      },
+      "fresh_test": {
+        "N": 22,
+        "Readers": 22,
+        "Pearson": 0.741889375001781,
+        "Spearman": 0.6973461321287409,
+        "R_squared": 0.550399844740525,
+        "slope": 1.8784283434117215,
+        "intercept_percentage_points": -94.80727892720475,
+        "slope_cluster_bootstrap_95": [
+          1.0877023300996072,
+          2.8838592733581776
+        ],
+        "Pearson_cluster_bootstrap_95": [
+          0.5493306697811702,
+          0.883201774060663
+        ],
+        "mean_Hplus_percentage": 69.72949186969527,
+        "mean_drop_percentage_points": 36.17457497252802,
+        "energy_range_percentage": [
+          45.28939051646842,
+          89.86229624955499
+        ],
+        "drop_range_percentage_points": [
+          10.274726580824446,
+          88.9532356369396
+        ]
+      }
+    },
+    "410m": {
+      "selection": {
+        "N": 19,
+        "Readers": 19,
+        "Pearson": 0.740414061184707,
+        "Spearman": 0.743859649122807,
+        "R_squared": 0.5482129820000323,
+        "slope": 1.3421674904371377,
+        "intercept_percentage_points": -43.14827613807874,
+        "slope_cluster_bootstrap_95": [
+          0.7207285134233934,
+          1.7750641425440958
+        ],
+        "Pearson_cluster_bootstrap_95": [
+          0.3675503905912329,
+          0.9551897204965368
+        ],
+        "mean_Hplus_percentage": 70.52219289397055,
+        "mean_drop_percentage_points": 51.50431851854546,
+        "energy_range_percentage": [
+          37.75414177223767,
+          91.28780158015137
+        ],
+        "drop_range_percentage_points": [
+          10.226686491595146,
+          94.09116170223633
+        ]
+      },
+      "fresh_test": {
+        "N": 19,
+        "Readers": 19,
+        "Pearson": 0.7400747152189939,
+        "Spearman": 0.743859649122807,
+        "R_squared": 0.5477105841064774,
+        "slope": 1.3422079052755544,
+        "intercept_percentage_points": -43.12851007382115,
+        "slope_cluster_bootstrap_95": [
+          0.7194938474333541,
+          1.775737469401992
+        ],
+        "Pearson_cluster_bootstrap_95": [
+          0.3669850281221458,
+          0.9549470027880804
+        ],
+        "mean_Hplus_percentage": 70.52219289397055,
+        "mean_drop_percentage_points": 51.52693472583367,
+        "energy_range_percentage": [
+          37.75414177223767,
+          91.28780158015137
+        ],
+        "drop_range_percentage_points": [
+          10.208256906288852,
+          94.11269782517468
+        ]
+      }
+    },
+    "1b": {
+      "selection": {
+        "N": 10,
+        "Readers": 10,
+        "Pearson": 0.9466639360140249,
+        "Spearman": 0.8909090909090909,
+        "R_squared": 0.8961726077495596,
+        "slope": 2.188860453212517,
+        "intercept_percentage_points": -86.13779836527166,
+        "slope_cluster_bootstrap_95": [
+          1.7118598038047144,
+          2.9496483384764773
+        ],
+        "Pearson_cluster_bootstrap_95": [
+          0.8686709368032219,
+          0.9926743226071598
+        ],
+        "mean_Hplus_percentage": 58.867453392859396,
+        "mean_drop_percentage_points": 42.71484234768924,
+        "energy_range_percentage": [
+          44.750391158953775,
+          72.3717468301337
+        ],
+        "drop_range_percentage_points": [
+          13.59489589491105,
+          77.35425350311468
+        ]
+      },
+      "fresh_test": {
+        "N": 10,
+        "Readers": 10,
+        "Pearson": 0.946735033127881,
+        "Spearman": 0.8909090909090909,
+        "R_squared": 0.8963072229516484,
+        "slope": 2.1926726072842904,
+        "intercept_percentage_points": -86.29827577776803,
+        "slope_cluster_bootstrap_95": [
+          1.7162902936404294,
+          2.9553708014154214
+        ],
+        "Pearson_cluster_bootstrap_95": [
+          0.868602145193841,
+          0.9927505056275645
+        ],
+        "mean_Hplus_percentage": 58.867453392859396,
+        "mean_drop_percentage_points": 42.778776737339435,
+        "energy_range_percentage": [
+          44.750391158953775,
+          72.3717468301337
+        ],
+        "drop_range_percentage_points": [
+          13.589612154654635,
+          77.4525262836954
+        ]
+      }
+    },
+    "1.4b": {
+      "selection": {
+        "N": 16,
+        "Readers": 16,
+        "Pearson": 0.8509973362093964,
+        "Spearman": 0.8176470588235294,
+        "R_squared": 0.7241964662354853,
+        "slope": 1.9470625816708285,
+        "intercept_percentage_points": -77.51827166294879,
+        "slope_cluster_bootstrap_95": [
+          1.2332853111591262,
+          2.36507775958957
+        ],
+        "Pearson_cluster_bootstrap_95": [
+          0.5904704443158861,
+          0.9673278577019168
+        ],
+        "mean_Hplus_percentage": 57.83216428194936,
+        "mean_drop_percentage_points": 35.084571427475005,
+        "energy_range_percentage": [
+          42.37846217331356,
+          78.63556144211098
+        ],
+        "drop_range_percentage_points": [
+          10.14515173003359,
+          85.03652391133437
+        ]
+      },
+      "fresh_test": {
+        "N": 16,
+        "Readers": 16,
+        "Pearson": 0.8501329809449121,
+        "Spearman": 0.8176470588235294,
+        "R_squared": 0.7227260852902794,
+        "slope": 1.9460179549374519,
+        "intercept_percentage_points": -77.43799009723145,
+        "slope_cluster_bootstrap_95": [
+          1.2295813283611765,
+          2.3657381583048536
+        ],
+        "Pearson_cluster_bootstrap_95": [
+          0.5878241918735811,
+          0.9671049917060536
+        ],
+        "mean_Hplus_percentage": 57.83216428194936,
+        "mean_drop_percentage_points": 35.10443996833439,
+        "energy_range_percentage": [
+          42.37846217331356,
+          78.63556144211098
+        ],
+        "drop_range_percentage_points": [
+          10.140754291562782,
+          85.19350831331319
+        ]
+      }
+    },
+    "2.8b": {
+      "selection": {
+        "N": 26,
+        "Readers": 26,
+        "Pearson": 0.7425294299771514,
+        "Spearman": 0.7702564102564102,
+        "R_squared": 0.5513499543821935,
+        "slope": 1.6995116115510929,
+        "intercept_percentage_points": -68.85840572388884,
+        "slope_cluster_bootstrap_95": [
+          1.1956806772054147,
+          2.270648803955833
+        ],
+        "Pearson_cluster_bootstrap_95": [
+          0.599689673034093,
+          0.8619324840237947
+        ],
+        "mean_Hplus_percentage": 58.95133990184968,
+        "mean_drop_percentage_points": 31.33008095579995,
+        "energy_range_percentage": [
+          46.797807775888,
+          70.70182345316428
+        ],
+        "drop_range_percentage_points": [
+          10.062197492353631,
+          73.30350406617127
+        ]
+      },
+      "fresh_test": {
+        "N": 26,
+        "Readers": 26,
+        "Pearson": 0.7429251866152391,
+        "Spearman": 0.7702564102564102,
+        "R_squared": 0.5519378329072905,
+        "slope": 1.7006109771827902,
+        "intercept_percentage_points": -68.90706069325475,
+        "slope_cluster_bootstrap_95": [
+          1.1974535896179859,
+          2.2701383853329964
+        ],
+        "Pearson_cluster_bootstrap_95": [
+          0.6000170813310616,
+          0.862252402368134
+        ],
+        "mean_Hplus_percentage": 58.95133990184968,
+        "mean_drop_percentage_points": 31.34623506346464,
+        "energy_range_percentage": [
+          46.797807775888,
+          70.70182345316428
+        ],
+        "drop_range_percentage_points": [
+          10.123196379799069,
+          73.3448689633802
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "X": "Mean squared Frobenius energy of Hplus_D divided by mean squared Frobenius energy of C_D,D0..2047,complete spectrum;not squared norm of average matrix.",
+    "Y": "Selection-sample absolute decrease in native correct-successor attention mass when the individual previous-token Writer\u2192OV\u2192Reader-key route is removed,with actual query/other residual/LN denominator fixed. Reported in percentage points.",
+    "fit": "OLS y_pp=intercept+slope*x_percent;no forced zero intercept;slope units pp attention per pp Hplus share."
+  },
+  "uncertainty": {
+    "bootstrap": 10000,
+    "seed": 20261102,
+    "unit": "Readercluster within scale;all paths for same Reader resampled together;models and fixed probes treated as fixed",
+    "limits": "Conditional descriptive resampling intervals;not independent model-seed or causal inference;shared Writers can induce dependence across Readerclusters."
+  },
+  "limitations": [
+    "Only selected routes with Writerprevious>.1 and drop>.1;range restricted sample;cannot generalize this fit to all ordinary routes.",
+    "Main193 response measured on selection contexts;fresh individual drops available only for103best pairs and reported separately.",
+    "Several paths can share a Reader/Writer;193paths are not193independent heads.",
+    "Hplus energy is a static weight-matrix proportion;route drop also includes native writer attention,bias and normalization factors.",
+    "No website/PDF/classifier changes."
+  ]
+}

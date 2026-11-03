@@ -1,0 +1,82 @@
+{
+  "scope": "Article-only reorganization and plotting from accepted stored results;no newmodel/GPU forwards",
+  "source_files_SHA": {
+    "work/pythia_sequence_competition_20261102/hplus_training_trajectory_70m/SOURCE.download.json": "5019cbb834ced4397f480a6647cf58d5aa53f459ef3975cd423b2ed120f1a0a1",
+    "work/pythia_sequence_competition_20261102/hplus_training_trajectory_70m/C_SOURCE.download.json": "189fcd6256b89a8a6b03a4674814d22c759da57f9a727f6f29e74ddc27b5f5d5",
+    "work/energy_drop_fit193_20261102/PAIR_DETAILS.json": "935decb4227ed35d6bec49ae4153084302dff01004f7a5f0d26f83db77db0aca",
+    "work/energy_drop_fit193_20261102/FIT_RESULT.json": "b40794453264d1a3c2e27210cd242691ecc3f988c9d4d0018fd015841c5fe2e9",
+    "work/nonreader_nonwriter_background_20261031/PAIR_DETAILS.json": "0f967c09ecf6a408b0619cad93e13fbd491cddf341433a9ea6606e0e683f7b6a",
+    "work/best_pair_spectral_energy_20261031/PAIR_DETAILS.json": "ba383e1de4a93243a0d7a36886e0ae27cf44da70ab913a756b598cb1a854296c",
+    "work/pythia_sequence_competition_20261102/m_standardized_fit/FIT_RESULT.json": "faa8753dc54fde7512f23e291e97665e83f204dce46e6cc615bb0318ab78b971",
+    "work/pythia70m_other9_isospectral_20261103/RESULT.json": "21ca1f0d651b32c3e69794b372bd228322c80820a54fe395fe3b8563b74a3858",
+    "work/pythia_sequence_competition_20261102/l4_variance_step120000/local_cpu/ONE_SEQUENCE_DECOMPOSITION.json": "5bda316d14b015c58267e12f438ba68c72321686dee5f26d42177b9c1ed69ad4",
+    "work/pythia_sequence_competition_20261102/l4_variance_step120000/local_cpu/MATRIX_ENERGY_L3_L4.json": "3b814b0f99af6e7a675d0ec6e7ce9905840e83f1b99288634f1eb84854c840b8"
+  },
+  "main_reference": "MeanC_D and meanpositivepartH_D overD0..2047;not C(D=0)",
+  "normalization": "Comparison-weighted component means divided by each own std;raw identities remain separate",
+  "R_late_statistics": {
+    "C": {
+      "median_R_RMS_over_m_RMS": 0.05119588568151198,
+      "max_R_RMS_over_m_RMS": 0.34199056062605326
+    },
+    "Hplus": {
+      "median_R_RMS_over_m_RMS": 0.03182412347113393,
+      "max_R_RMS_over_m_RMS": 0.16917194972308489
+    }
+  },
+  "energy_control_coverage": {
+    "Pythia": {
+      "models": 6,
+      "selected_paths": 193,
+      "ordinary_unique_paths": 203,
+      "matched_selected_paths": 191,
+      "unmatched_selected_paths": 2,
+      "earlier_OLMo_paths_outside_support_excluded": 0,
+      "ordinary_supported_selected_weight": 0.9814814814814814,
+      "mean_selected": [
+        0.5871720893535342,
+        0.0734217129089019,
+        0.3394061977375638
+      ],
+      "mean_ordinary": [
+        0.25214466078514575,
+        0.25328862719821227,
+        0.49456671201664193
+      ],
+      "weighting": "Each model equal;selected paths equal within model. Ordinary paths reweighted to selected model×writer-layer×reader-layer composition on shared support.",
+      "unmatched_paths": [
+        {
+          "model": "pythia-1b-deduped-step143000",
+          "reader": "L5H6",
+          "writer": "L1H0"
+        },
+        {
+          "model": "pythia-1b-deduped-step143000",
+          "reader": "L5H7",
+          "writer": "L1H0"
+        }
+      ]
+    },
+    "OLMo": {
+      "models": 133,
+      "selected_paths": 3152,
+      "ordinary_unique_paths": 6068,
+      "matched_selected_paths": 3152,
+      "unmatched_selected_paths": 0,
+      "earlier_OLMo_paths_outside_support_excluded": 12,
+      "ordinary_supported_selected_weight": 0.9999999999999999,
+      "mean_selected": [
+        0.5053812782799241,
+        0.11381193672708004,
+        0.3808067849929961
+      ],
+      "mean_ordinary": [
+        0.2534547736643634,
+        0.25228667015001227,
+        0.494258556185625
+      ],
+      "weighting": "Each model equal;selected paths equal within model. Ordinary paths reweighted to selected model×writer-layer×reader-layer composition on shared support.",
+      "unmatched_paths": []
+    }
+  }
+}
