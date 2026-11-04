@@ -938,7 +938,45 @@ component.</p>
 </figcaption>
 </figure>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mtext mathvariant="normal">score at one correct position</mtext><mo>−</mo><mtext mathvariant="normal">score at one wrong position</mtext><mi>.</mi></mrow><annotation encoding="application/x-tex">m=\text{score at one correct position}-\text{score at one wrong position}.</annotation></semantics></math></p>
-<p>We repeat these comparisons for every evaluated query, always within that sequence’s visible positions.</p>
+<p><strong>Repeat this at the query positions in copies 2, 3, and 4.</strong> For every designated query token, we look again at what is visible at that occurrence, collect all correct historical successors, and compare each one with every visible wrong position. Copy 1 supplies the initial history and is not evaluated. Each occurrence therefore gets its own candidate list.</p>
+<p>For the same A shown in the diagram:</p>
+<div class="table-scroll">
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 30%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr>
+<th>Query occurrence</th>
+<th>Correct B positions it can see</th>
+<th style="text-align: right;">Separate correct–wrong margins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A in copy 2, at position 26</td>
+<td>B at position 2</td>
+<td style="text-align: right;">1 correct × 26 wrong = 26</td>
+</tr>
+<tr>
+<td>A in copy 3, at position 51</td>
+<td>B at positions 2 and 27</td>
+<td style="text-align: right;">2 correct × 50 wrong = 100</td>
+</tr>
+<tr>
+<td>A in copy 4, at position 76</td>
+<td>B at positions 2, 27, and 52</td>
+<td style="text-align: right;">3 correct × 74 wrong = 222</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Take the final average.</strong> The margin means in the following figures give <strong>each individual score difference the same weight</strong>. We collect the differences from all evaluated queries in copies 2–4, across all ten contexts per token and all 5,000 token identities, then calculate</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>m</mi><mo accent="true">¯</mo></mover><mo>=</mo><mfrac><mtext mathvariant="normal">sum of all collected margins</mtext><mtext mathvariant="normal">number of collected margins</mtext></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\overline m=\frac{\text{sum of all collected margins}}{\text{number of collected margins}}.</annotation></semantics></math></p>
+<p>For this A in this one context, all <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>26</mn><mo>+</mo><mn>100</mn><mo>+</mo><mn>222</mn><mo>=</mo><mn>348</mn></mrow><annotation encoding="application/x-tex">26+100+222=348</annotation></semantics></math> differences enter that collection. An occurrence with more comparisons contributes more differences to the final average. The component means for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>T</mi><mo>,</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">G,b,T,R</annotation></semantics></math> use the same comparison weights.</p>
+<p>We also save a second, separately named summary: first average the margins within each query, then average the three copies equally, the ten contexts equally, and the 5,000 tokens equally. This gives every evaluated query equal weight. The figures here use the first, comparison-weighted convention. The Reader attention and attention-decrease scores still use the equal-copy attention averaging defined in Section 1.3.</p>
 
 <h3 id="a-common-reference-and-why-the-exact-identity-needs-r">3.2.2 Why the position-wise margin needs R</h3>
 <p><strong>Section 3.1 uses one fixed matrix; actual candidates are at different distances.</strong> RoPE makes the operator depend on the query–key distance. In the example above, the first correct B uses <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>49</mn></msub><annotation encoding="application/x-tex">M_{49}</annotation></semantics></math>, the second uses <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>24</mn></msub><annotation encoding="application/x-tex">M_{24}</annotation></semantics></math>, and the incorrect C uses <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>48</mn></msub><annotation encoding="application/x-tex">M_{48}</annotation></semantics></math>. Their scores therefore do not all use the same matrix.</p>
