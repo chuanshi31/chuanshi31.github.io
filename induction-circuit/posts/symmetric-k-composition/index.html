@@ -619,110 +619,18 @@ both sides. It retains the
 contributions to contextual variation and may increase or decrease the
 actual margin.</p>
 </section>
-<section id="ask-for-self-matching-to-win-for-both-token-identities."
-class="level4" data-number="3.1.0.2">
-<h4 data-number="3.1.0.2"><span
-class="header-section-number">3.1.0.2</span> Ask for self-matching to
-win for both token identities.</h4>
-<p>We have compared token i’s query with representations of i and j. Now reverse the roles and check whether token j’s query also gives a higher score to its own token. The two query representations are
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>i</mi></msub><mo>=</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>+</mo><msub><mi>ϵ</mi><mi>q</mi></msub></mrow><annotation encoding="application/x-tex">q_i=\mu_i+\epsilon_q</annotation></semantics></math> and
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>j</mi></msub><mo>=</mo><msub><mi>μ</mi><mi>j</mi></msub><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>q</mi><mo>,</mo><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">q_j=\mu_j+\epsilon_{q,j}</annotation></semantics></math>. Each is its token’s center plus a deviation, and we keep both deviations in the calculation.
-Using the same
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
-and the same right-input observations
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>i</mi></msub><annotation encoding="application/x-tex">x_i</annotation></semantics></math>
-and
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>j</mi></msub><annotation encoding="application/x-tex">x_j</annotation></semantics></math>,
-the two directed margins are
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msubsup><mi>m</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><msubsup><mi>q</mi><mi>i</mi><mi>⊤</mi></msubsup><mi>C</mi><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><msubsup><mi>q</mi><mi>i</mi><mi>⊤</mi></msubsup><mi>C</mi><msub><mi>x</mi><mi>j</mi></msub><mo>=</mo><msubsup><mi>G</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup><mo>−</mo><msubsup><mi>b</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup><mo>+</mo><msubsup><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msubsup><mi>m</mi><mrow><mi>j</mi><mi>i</mi></mrow><mi>C</mi></msubsup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><msubsup><mi>q</mi><mi>j</mi><mi>⊤</mi></msubsup><mi>C</mi><msub><mi>x</mi><mi>j</mi></msub><mo>−</mo><msubsup><mi>q</mi><mi>j</mi><mi>⊤</mi></msubsup><mi>C</mi><msub><mi>x</mi><mi>i</mi></msub><mo>=</mo><msubsup><mi>G</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup><mo>+</mo><msubsup><mi>b</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup><mo>+</mo><msubsup><mi>T</mi><mrow><mi>j</mi><mi>i</mi></mrow><mi>C</mi></msubsup><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
-m_{ij}^C&amp;=q_i^\top Cx_i-q_i^\top Cx_j
- =G_{ij}^C-b_{ij}^C+T_{ij}^C,\\
-m_{ji}^C&amp;=q_j^\top Cx_j-q_j^\top Cx_i
- =G_{ij}^C+b_{ij}^C+T_{ji}^C.
-\end{aligned}</annotation></semantics></math> Each <em>directed
-margin</em> fixes one token on the left and compares its same-token
-observation with the other token’s observation on the right.
-Simultaneous self-matching requires both complete margins to be
-positive. The reverse expansion uses
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>G</mi><mrow><mi>j</mi><mi>i</mi></mrow><mi>C</mi></msubsup><mo>=</mo><msubsup><mi>G</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup></mrow><annotation encoding="application/x-tex">G_{ji}^C=G_{ij}^C</annotation></semantics></math>,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>b</mi><mrow><mi>j</mi><mi>i</mi></mrow><mi>C</mi></msubsup><mo>=</mo><mi>−</mi><msubsup><mi>b</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup></mrow><annotation encoding="application/x-tex">b_{ji}^C=-b_{ij}^C</annotation></semantics></math>,
-and
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>T</mi><mrow><mi>j</mi><mi>i</mi></mrow><mi>C</mi></msubsup><mo>=</mo><msubsup><mi>ϵ</mi><mrow><mi>q</mi><mo>,</mo><mi>j</mi></mrow><mi>⊤</mi></msubsup><mi>C</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>j</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>j</mi></msub><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>q</mi><mo>,</mo><mi>j</mi></mrow></msub><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><mi>C</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>ϵ</mi><mi>j</mi></msub><mo>−</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">T_{ji}^C=\epsilon_{q,j}^\top C(\mu_j-\mu_i)
- +(\mu_j+\epsilon_{q,j})^\top C(\epsilon_j-\epsilon_i).</annotation></semantics></math>
-Adding the two full margins yields
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msubsup><mi>m</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup><mo>+</mo><msubsup><mi>m</mi><mrow><mi>j</mi><mi>i</mi></mrow><mi>C</mi></msubsup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><mi>H</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>+</mo><msubsup><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup><mo>+</mo><msubsup><mi>T</mi><mrow><mi>j</mi><mi>i</mi></mrow><mi>C</mi></msubsup></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><msup><mi>H</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mspace width="1.0em"></mspace><mo>+</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><msup><mi>H</mi><mo>−</mo></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>+</mo><msubsup><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup><mo>+</mo><msubsup><mi>T</mi><mrow><mi>j</mi><mi>i</mi></mrow><mi>C</mi></msubsup><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}
-m_{ij}^C+m_{ji}^C
-&amp;=(\mu_i-\mu_j)^\top H(\mu_i-\mu_j)+T_{ij}^C+T_{ji}^C\\
-&amp;=(\mu_i-\mu_j)^\top H^+(\mu_i-\mu_j)\\
-&amp;\quad+(\mu_i-\mu_j)^\top H^-(\mu_i-\mu_j)+T_{ij}^C+T_{ji}^C.
-\end{split}</annotation></semantics></math></p>
-<div class="flushright">
-<p>(18)</p>
-</div>
-<p>The quadratic-form imbalance and antisymmetric center interaction in
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>b</mi><mi>C</mi></msup><annotation encoding="application/x-tex">b^C</annotation></semantics></math>
-reverse sign and cancel. The variation terms remain, including their
-interactions with
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>;
-they need not cancel.</p>
-<p>Since both margins must be positive, their sum must be positive. Thus
-a necessary condition is
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><msup><mi>H</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mrow></mrow></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi>−</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><msup><mi>H</mi><mo>−</mo></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi>−</mi><msubsup><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup><mo>−</mo><msubsup><mi>T</mi><mrow><mi>j</mi><mi>i</mi></mrow><mi>C</mi></msubsup><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}
-(\mu_i-\mu_j)^\top H^+(\mu_i-\mu_j)
-&gt;{}&amp;-(\mu_i-\mu_j)^\top H^-(\mu_i-\mu_j)\\
-&amp;-T_{ij}^C-T_{ji}^C.
-\end{split}</annotation></semantics></math></p>
-<div class="flushright">
-<p>(19)</p>
-</div>
-<p>The
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>−</mo></msup><annotation encoding="application/x-tex">H^-</annotation></semantics></math>
-contribution is nonpositive, while the summed variation can help or
-hurt. The
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math>-weighted
-center gap supplies a nonnegative contribution to this full comparison;
-its required size depends on the other terms.</p>
-<p>A positive sum alone is insufficient. Each individual directed margin
-must satisfy
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>G</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup><mo>−</mo><msubsup><mi>b</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup><mo>+</mo><msubsup><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup><mo>&gt;</mo><mn>0</mn><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>G</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup><mo>+</mo><msubsup><mi>b</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup><mo>+</mo><msubsup><mi>T</mi><mrow><mi>j</mi><mi>i</mi></mrow><mi>C</mi></msubsup><mo>&gt;</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">G_{ij}^C-b_{ij}^C+T_{ij}^C&gt;0,\qquad
-G_{ij}^C+b_{ij}^C+T_{ji}^C&gt;0.</annotation></semantics></math> Thus
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>b</mi><mrow><mi>i</mi><mi>j</mi></mrow><mi>C</mi></msubsup><annotation encoding="application/x-tex">b_{ij}^C</annotation></semantics></math>
-and the corresponding variation term remain important in each direction,
-even though the signed center biases cancel in the sum.</p>
-<p>One optimization direction for making many different tokens prefer
-their own representations is therefore to enlarge their
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math>-weighted
-center gaps,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><msup><mi>H</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\mu_i-\mu_j)^\top H^+(\mu_i-\mu_j)</annotation></semantics></math>,
-across token pairs. These gaps supply the positive separation
-contribution to the summed self-matching margins.</p>
-</section>
-<section id="use-the-observed-energy-composition-to-focus-the-analysis."
-class="level4" data-number="3.1.0.3">
-<h4 data-number="3.1.0.3"><span
-class="header-section-number">3.1.0.3</span> Use the observed energy
-composition to focus the analysis.</h4>
-<p>The expansion identifies how the positive part contributes to
-simultaneous matching of the observed representations. The archived
-OLMo/DataDecide measurements provide a second reason to examine it:
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math>
-is shifted toward larger energy fractions in the separately identified selected-pair distributions in Figure 1. Figure 2 reports the distinct Pythia route-removal fit; neither measurement makes energy alone a ranking guarantee.</p>
-<p>This concentration may echo the optimization direction above: as
-training progresses, the model may concentrate positive spectral energy
-on selected directions that increase
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>G</mi><mrow><mi>i</mi><mi>j</mi></mrow><mo>+</mo></msubsup><annotation encoding="application/x-tex">G_{ij}^+</annotation></semantics></math>
-by separating token centers. We therefore examine which directions are
-selected and how their weights contribute to separation. This is a
-possible interpretation of the learned concentration, while the complete
-one-way margins retain the contributions of
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>−</mo></msup><annotation encoding="application/x-tex">H^-</annotation></semantics></math>,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,
-signed bias, and contextual variation.</p>
+
+<section id="use-the-observed-energy-composition-to-focus-the-analysis." class="level4" data-number="3.1.0.2">
+<h4 data-number="3.1.0.2"><span class="header-section-number">3.1.0.2</span> From positive energy to a possible training direction</h4>
+<p>The energy distributions in Section 2 show that the selected functional paths are shifted toward a larger <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math> energy fraction. Applying the margin decomposition to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math> separates its center-dependent contribution into <strong>center separation <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mo>+</mo></msup><annotation encoding="application/x-tex">G^+</annotation></semantics></math></strong> and <strong>signed center bias <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>b</mi><mo>+</mo></msup><annotation encoding="application/x-tex">b^+</annotation></semantics></math></strong>; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>T</mi><mo>+</mo></msup><annotation encoding="application/x-tex">T^+</annotation></semantics></math> retains the contribution of representation deviations.</p>
+<p>Increasing the positive eigenvalue weights along directions that separate token centers increases <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mo>+</mo></msup><annotation encoding="application/x-tex">G^+</annotation></semantics></math>. In this sense, greater <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math> energy can support a larger separation contribution, provided that its directions remain aligned with the token-center differences.</p>
+<p>The bias behaves differently. Because <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math> is symmetric, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>b</mi><mrow><mi>j</mi><mi>i</mi></mrow><mo>+</mo></msubsup><mo>=</mo><mi>−</mi><msubsup><mi>b</mi><mrow><mi>i</mi><mi>j</mi></mrow><mo>+</mo></msubsup></mrow><annotation encoding="application/x-tex">b_{ji}^+=-b_{ij}^+</annotation></semantics></math>: a center-norm imbalance that favors one token against another disfavors the reverse comparison. With equal weight on the two orders of each token pair, these bias contributions cancel on average. Thus <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>b</mi><mo>+</mo></msup><annotation encoding="application/x-tex">b^+</annotation></semantics></math> redistributes the advantage between tokens rather than providing a shared positive separation contribution.</p>
+<p>This suggests a <strong>possible training optimization direction</strong>: increase positive spectral weight along token-separating directions, thereby increasing <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mo>+</mo></msup><annotation encoding="application/x-tex">G^+</annotation></semantics></math> and supporting a broader self-matching advantage. The complete margin still combines this gain with the changes in <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>b</mi><mo>+</mo></msup><annotation encoding="application/x-tex">b^+</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>T</mi><mo>+</mo></msup><annotation encoding="application/x-tex">T^+</annotation></semantics></math>. The following derivation makes these terms explicit.</p>
 </section>
 <section id="resolve-the-positive-contribution-in-the-original-space."
-class="level4" data-number="3.1.0.4">
-<h4 data-number="3.1.0.4"><span
-class="header-section-number">3.1.0.4</span> Resolve the positive
+class="level4" data-number="3.1.0.3">
+<h4 data-number="3.1.0.3"><span
+class="header-section-number">3.1.0.3</span> Resolve the positive
 contribution in the original space.</h4>
 <p>Applying the same expansion to the
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math>
@@ -738,7 +646,7 @@ m_{ij}^+
  +\epsilon_q^\top H^+(\epsilon_i-\epsilon_j).
 \end{split}</annotation></semantics></math></p>
 <div class="flushright">
-<p>(20)</p>
+<p>(18)</p>
 </div>
 <p>The first term compares token centers. The remaining terms couple the
 first representation’s deviation to the center difference, its center to
@@ -758,9 +666,9 @@ Rearranging the center comparison therefore yields
 &amp;\quad+\frac12\bigl(\mu_i^\top H^+\mu_i-\mu_j^\top H^+\mu_j\bigr).
 \end{split}</annotation></semantics></math></p>
 <div class="flushright">
-<p>(21)</p>
+<p>(19)</p>
 </div>
-<p>Substituting this center identity into (20) gives the complete
+<p>Substituting this center identity into (18) gives the complete
 expanded margin:
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msubsup><mi>m</mi><mrow><mi>i</mi><mi>j</mi></mrow><mo>+</mo></msubsup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><msup><mi>H</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo minsize="120%" maxsize="120%" stretchy="true" form="prefix">(</mo><msubsup><mi>μ</mi><mi>i</mi><mi>⊤</mi></msubsup><msup><mi>H</mi><mo>+</mo></msup><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msubsup><mi>μ</mi><mi>j</mi><mi>⊤</mi></msubsup><msup><mi>H</mi><mo>+</mo></msup><msub><mi>μ</mi><mi>j</mi></msub><mo minsize="120%" maxsize="120%" stretchy="true" form="postfix">)</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mspace width="1.0em"></mspace><mo>+</mo><msubsup><mi>ϵ</mi><mi>q</mi><mi>⊤</mi></msubsup><msup><mi>H</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mspace width="1.0em"></mspace><mo>+</mo><msubsup><mi>μ</mi><mi>i</mi><mi>⊤</mi></msubsup><msup><mi>H</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>ϵ</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>+</mo><msubsup><mi>ϵ</mi><mi>q</mi><mi>⊤</mi></msubsup><msup><mi>H</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>ϵ</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}
 m_{ij}^+
@@ -776,21 +684,21 @@ Grouping the full expression now gives the three contributions in the
 original coordinates:
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>G</mi><mrow><mi>i</mi><mi>j</mi></mrow><mo>+</mo></msubsup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><msup><mi>H</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>,</mo></mrow><annotation encoding="application/x-tex">G_{ij}^+=\frac12(\mu_i-\mu_j)^\top H^+(\mu_i-\mu_j),</annotation></semantics></math></p>
 <div class="flushright">
-<p>(22)</p>
+<p>(20)</p>
 </div>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>b</mi><mrow><mi>i</mi><mi>j</mi></mrow><mo>+</mo></msubsup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo minsize="120%" maxsize="120%" stretchy="true" form="prefix">(</mo><msubsup><mi>μ</mi><mi>j</mi><mi>⊤</mi></msubsup><msup><mi>H</mi><mo>+</mo></msup><msub><mi>μ</mi><mi>j</mi></msub><mo>−</mo><msubsup><mi>μ</mi><mi>i</mi><mi>⊤</mi></msubsup><msup><mi>H</mi><mo>+</mo></msup><msub><mi>μ</mi><mi>i</mi></msub><mo minsize="120%" maxsize="120%" stretchy="true" form="postfix">)</mo><mo>,</mo></mrow><annotation encoding="application/x-tex">b_{ij}^+=\frac12\bigl(\mu_j^\top H^+\mu_j-\mu_i^\top H^+\mu_i\bigr),</annotation></semantics></math></p>
 <div class="flushright">
-<p>(23)</p>
+<p>(21)</p>
 </div>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow><mo>+</mo></msubsup><mo>=</mo><msubsup><mi>ϵ</mi><mi>q</mi><mi>⊤</mi></msubsup><msup><mi>H</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>+</mo><msub><mi>ϵ</mi><mi>q</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><msup><mi>H</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>ϵ</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">T_{ij}^+=\epsilon_q^\top H^+(\mu_i-\mu_j)
  +(\mu_i+\epsilon_q)^\top H^+(\epsilon_i-\epsilon_j).</annotation></semantics></math></p>
 <div class="flushright">
-<p>(24)</p>
+<p>(22)</p>
 </div>
 <p>Then the exact margin is
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><msubsup><mi>m</mi><mrow><mi>i</mi><mi>j</mi></mrow><mo>+</mo></msubsup><mo>=</mo><msubsup><mi>G</mi><mrow><mi>i</mi><mi>j</mi></mrow><mo>+</mo></msubsup><mo>−</mo><msubsup><mi>b</mi><mrow><mi>i</mi><mi>j</mi></mrow><mo>+</mo></msubsup><mo>+</mo><msubsup><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow><mo>+</mo></msubsup><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">\boxed{m_{ij}^+=G_{ij}^+-b_{ij}^++T_{ij}^+.}</annotation></semantics></math></p>
 <div class="flushright">
-<p>(25)</p>
+<p>(23)</p>
 </div>
 <p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mo>+</mo></msup><annotation encoding="application/x-tex">G^+</annotation></semantics></math>
 measures center separation under
@@ -805,9 +713,9 @@ help or hurt a particular comparison.</p>
 </section>
 <section
 id="read-the-effect-of-the-positive-directions-and-their-weights."
-class="level4" data-number="3.1.0.5">
-<h4 data-number="3.1.0.5"><span
-class="header-section-number">3.1.0.5</span> Read the effect of the
+class="level4" data-number="3.1.0.4">
+<h4 data-number="3.1.0.4"><span
+class="header-section-number">3.1.0.4</span> Read the effect of the
 positive directions and their weights.</h4>
 <p>Write
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>H</mi><mo>+</mo></msup><mo>=</mo><msub><mi>U</mi><mo>+</mo></msub><msub><mi mathvariant="normal">Λ</mi><mo>+</mo></msub><msubsup><mi>U</mi><mo>+</mo><mi>⊤</mi></msubsup><mo>=</mo><msub><mo>∑</mo><mi>a</mi></msub><msubsup><mi>λ</mi><mi>a</mi><mo>+</mo></msubsup><msub><mi>u</mi><mi>a</mi></msub><msubsup><mi>u</mi><mi>a</mi><mi>⊤</mi></msubsup></mrow><annotation encoding="application/x-tex">H^+=U_+\Lambda_+U_+^\top=\sum_a\lambda_a^+u_au_a^\top</annotation></semantics></math>,
@@ -823,7 +731,7 @@ G_{ij}^+
 &amp;=\frac12\sum_a\lambda_a^+\bigl(u_a^\top\mu_i-u_a^\top\mu_j\bigr)^2.
 \end{split}</annotation></semantics></math></p>
 <div class="flushright">
-<p>(26)</p>
+<p>(24)</p>
 </div>
 <p>The squared difference measures how far apart the token centers lie
 along
@@ -853,9 +761,9 @@ deviations through the same selected directions. Their signed
 combination determines the same-token score advantage.</p>
 </section>
 <section id="view-the-same-comparison-inside-the-positive-subspace."
-class="level4" data-number="3.1.0.6">
-<h4 data-number="3.1.0.6"><span
-class="header-section-number">3.1.0.6</span> View the same comparison
+class="level4" data-number="3.1.0.5">
+<h4 data-number="3.1.0.5"><span
+class="header-section-number">3.1.0.5</span> View the same comparison
 inside the positive subspace.</h4>
 <p>Let
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mo>+</mo></msub><annotation encoding="application/x-tex">r_+</annotation></semantics></math>
@@ -873,7 +781,7 @@ x^\top H^+y
  \bigl(\Lambda_+^{1/2}U_+^\top y\bigr).
 \end{split}</annotation></semantics></math></p>
 <div class="flushright">
-<p>(27)</p>
+<p>(25)</p>
 </div>
 <p>Here
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>U</mi><mo>+</mo><mi>⊤</mi></msubsup><mi>x</mi></mrow><annotation encoding="application/x-tex">U_+^\top x</annotation></semantics></math>
@@ -905,7 +813,7 @@ e_i=\Lambda_+^{1/2}U_+^\top\epsilon_i,\quad
 e_j=\Lambda_+^{1/2}U_+^\top\epsilon_j.
 \end{gathered}</annotation></semantics></math></p>
 <div class="flushright">
-<p>(28)</p>
+<p>(26)</p>
 </div>
 <p>Applying these definitions to
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>i</mi></msub><mo>=</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>+</mo><msub><mi>ϵ</mi><mi>q</mi></msub></mrow><annotation encoding="application/x-tex">q_i=\mu_i+\epsilon_q</annotation></semantics></math>,
@@ -927,7 +835,7 @@ share the center code
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>z</mi><mi>i</mi></msub><annotation encoding="application/x-tex">z_i</annotation></semantics></math>,
 while their contextual or layer deviations remain distinct.</p>
 <p><strong>Expand the same margin in these coordinates.</strong> Apply
-(27) to both scores, then substitute the mapped inputs:
+(25) to both scores, then substitute the mapped inputs:
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msubsup><mi>m</mi><mrow><mi>i</mi><mi>j</mi></mrow><mo>+</mo></msubsup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><msubsup><mi>q</mi><mi>i</mi><mi>⊤</mi></msubsup><msup><mi>H</mi><mo>+</mo></msup><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><msubsup><mi>q</mi><mi>i</mi><mi>⊤</mi></msubsup><msup><mi>H</mi><mo>+</mo></msup><msub><mi>x</mi><mi>j</mi></msub></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo>+</mo><msub><mi>e</mi><mi>q</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo>+</mo><msub><mi>e</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo>+</mo><msub><mi>e</mi><mi>q</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>z</mi><mi>j</mi></msub><mo>+</mo><msub><mi>e</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo>+</mo><msub><mi>e</mi><mi>q</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><mo minsize="120%" maxsize="120%" stretchy="true" form="prefix">[</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo>−</mo><msub><mi>z</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>e</mi><mi>i</mi></msub><mo>−</mo><msub><mi>e</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mo minsize="120%" maxsize="120%" stretchy="true" form="postfix">]</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><msubsup><mi>z</mi><mi>i</mi><mi>⊤</mi></msubsup><mo stretchy="false" form="prefix">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo>−</mo><msub><mi>z</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>+</mo><msubsup><mi>e</mi><mi>q</mi><mi>⊤</mi></msubsup><mo stretchy="false" form="prefix">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo>−</mo><msub><mi>z</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo>+</mo><msub><mi>e</mi><mi>q</mi></msub><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>e</mi><mi>i</mi></msub><mo>−</mo><msub><mi>e</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}
 m_{ij}^+
 &amp;=q_i^\top H^+x_i-q_i^\top H^+x_j\\
@@ -958,7 +866,7 @@ b_{ij}^+&amp;=\frac12\bigl(\left\lVert z_j\right\rVert^2-\left\lVert z_i\right\r
 T_{ij}^+&amp;=e_q^\top(z_i-z_j)+(z_i+e_q)^\top(e_i-e_j).
 \end{aligned}</annotation></semantics></math></p>
 <div class="flushright">
-<p>(29)</p>
+<p>(27)</p>
 </div>
 <p>These are the original-space quantities in new coordinates. For
 example,
@@ -972,14 +880,14 @@ converts the two center quadratic forms in
 into squared norms and the two deviation products in
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>T</mi><mo>+</mo></msup><annotation encoding="application/x-tex">T^+</annotation></semantics></math>
 into inner products. Thus center distances, center-norm differences, and
-the distribution of deviations describe the same margin as (25), now
+the distribution of deviations describe the same margin as (23), now
 through the token distribution within the selected space.</p>
 </section>
 <section
 id="keep-the-component-interpretation-attached-to-the-complete-score."
-class="level4" data-number="3.1.0.7">
-<h4 data-number="3.1.0.7"><span
-class="header-section-number">3.1.0.7</span> Keep the component
+class="level4" data-number="3.1.0.6">
+<h4 data-number="3.1.0.6"><span
+class="header-section-number">3.1.0.6</span> Keep the component
 interpretation attached to the complete score.</h4>
 <p>Replacing
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math>
@@ -1001,7 +909,7 @@ T_{ij}^C&amp;=T_{ij}^++T_{ij}^-+T_{ij}^{A},\\
 m_{ij}^C&amp;=G_{ij}^C-b_{ij}^C+T_{ij}^C.
 \end{aligned}</annotation></semantics></math></p>
 <div class="flushright">
-<p>(30)</p>
+<p>(28)</p>
 </div>
 <p>Every positive-component term is part of the same complete
 comparison. Although
