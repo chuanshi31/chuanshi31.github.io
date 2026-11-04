@@ -624,12 +624,9 @@ class="level4" data-number="3.1.0.2">
 <h4 data-number="3.1.0.2"><span
 class="header-section-number">3.1.0.2</span> Ask for self-matching to
 win for both token identities.</h4>
-<p>Keep all deviations in the comparison. Alongside
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>q</mi></msub><mo>=</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>+</mo><msub><mi>ϵ</mi><mi>q</mi></msub></mrow><annotation encoding="application/x-tex">x_q=\mu_i+\epsilon_q</annotation></semantics></math>,
-take a left-input representation
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>q</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>=</mo><msub><mi>μ</mi><mi>j</mi></msub><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>q</mi><mo>,</mo><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">x_{q,j}=\mu_j+\epsilon_{q,j}</annotation></semantics></math>
-of token
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>.
+<p>We have compared token i’s query with representations of i and j. Now reverse the roles and check whether token j’s query also gives a higher score to its own token. The two query representations are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>q</mi></msub><mo>=</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>+</mo><msub><mi>ϵ</mi><mi>q</mi></msub></mrow><annotation encoding="application/x-tex">x_q=\mu_i+\epsilon_q</annotation></semantics></math> and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>q</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>=</mo><msub><mi>μ</mi><mi>j</mi></msub><mo>+</mo><msub><mi>ϵ</mi><mrow><mi>q</mi><mo>,</mo><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">x_{q,j}=\mu_j+\epsilon_{q,j}</annotation></semantics></math>. Each is its token’s center plus a deviation, and we keep both deviations in the calculation.
 Using the same
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
 and the same right-input observations
