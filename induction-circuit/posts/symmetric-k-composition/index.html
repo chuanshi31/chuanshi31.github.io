@@ -979,6 +979,38 @@ component.</p>
 <p>We also save a second, separately named summary: first average the margins within each query, then average the three copies equally, the ten contexts equally, and the 5,000 tokens equally. This gives every evaluated query equal weight. The figures here use the first, comparison-weighted convention. The Reader attention and attention-decrease scores still use the equal-copy attention averaging defined in Section 1.3.</p>
 
 <h3 id="a-common-reference-and-why-the-exact-identity-needs-r">3.2.2 Why the position-wise margin needs R</h3>
+<p><strong>First, the notation.</strong> <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mi>D</mi></msub><annotation encoding="application/x-tex">M_D</annotation></semantics></math> means the matrix used at query–key distance <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>: we set <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>D</mi></msub><mo>=</mo><msub><mi>C</mi><mi>D</mi></msub></mrow><annotation encoding="application/x-tex">M_D=C_D</annotation></semantics></math> when analyzing the complete Writer–Reader composition, and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>D</mi></msub><mo>=</mo><msubsup><mi>H</mi><mi>D</mi><mo>+</mo></msubsup></mrow><annotation encoding="application/x-tex">M_D=H_D^+</annotation></semantics></math> when analyzing only its positive-spectral component.</p>
+<p>The subscripts <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>,</mo><mi>p</mi><mo>,</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">t,p,j</annotation></semantics></math> are <strong>positions in the same input sequence</strong>:</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>In the example above</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math></td>
+<td>Current query position</td>
+<td>A at position 51</td>
+</tr>
+<tr>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math></td>
+<td>One correct key position</td>
+<td>B at position 2 or 27</td>
+</tr>
+<tr>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math></td>
+<td>One wrong key position</td>
+<td>For example, C at position 3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The correct candidate uses distance <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mi>t</mi><mo>−</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">D=t-p</annotation></semantics></math>; the wrong candidate uses <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mi>t</mi><mo>−</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">D=t-j</annotation></semantics></math>. Thus the first B-versus-C comparison uses distances <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>51</mn><mo>−</mo><mn>2</mn><mo>=</mo><mn>49</mn></mrow><annotation encoding="application/x-tex">51-2=49</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>51</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>48</mn></mrow><annotation encoding="application/x-tex">51-3=48</annotation></semantics></math>.</p>
+<p>In the formulas, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>t</mi></msub><annotation encoding="application/x-tex">x_t</annotation></semantics></math> is the Reader input at the query position. The vectors <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>y</mi><mi>p</mi></msub><annotation encoding="application/x-tex">y_p</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>y</mi><mi>j</mi></msub><annotation encoding="application/x-tex">y_j</annotation></semantics></math> are the Writer inputs <strong>one position before</strong> the correct and wrong keys, at <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p-1</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">j-1</annotation></semantics></math>. For example, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>y</mi><mn>2</mn></msub><annotation encoding="application/x-tex">y_2</annotation></semantics></math> comes from A at position 1, while <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>y</mi><mn>3</mn></msub><annotation encoding="application/x-tex">y_3</annotation></semantics></math> comes from B at position 2.</p>
 <p><strong>Section 3.1 uses one fixed matrix; actual candidates are at different distances.</strong> RoPE makes the operator depend on the query–key distance. In the example above, the first correct B uses <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>49</mn></msub><annotation encoding="application/x-tex">M_{49}</annotation></semantics></math>, the second uses <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>24</mn></msub><annotation encoding="application/x-tex">M_{24}</annotation></semantics></math>, and the incorrect C uses <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>48</mn></msub><annotation encoding="application/x-tex">M_{48}</annotation></semantics></math>. Their scores therefore do not all use the same matrix.</p>
 <p>To describe token-center separation and contextual variation with one common reference, we use the average matrix</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">f</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mn>2048</mn></mfrac><munderover><mo>∑</mo><mrow><mi>D</mi><mo>=</mo><mn>0</mn></mrow><mn>2047</mn></munderover><msub><mi>M</mi><mi>D</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">M_{\mathrm{ref}}=\frac1{2048}\sum_{D=0}^{2047}M_D.</annotation></semantics></math></p>
