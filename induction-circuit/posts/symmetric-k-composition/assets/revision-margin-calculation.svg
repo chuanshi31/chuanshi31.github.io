@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">Every correct position is compared with every wrong position</title>
+<desc id="desc">At query A at position51,52positions are visible. B at2 and B at27 are correct historical successors. The50other visible positions are wrong candidates,including BOS and the query itself. Each of the2correct scores is separately subtracted against all50wrong scores,producing100margins. Example scores4.0,3.5,and1.2are illustrative.</desc>
+<rect width="1200" height="900" rx="8" fill="white"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#253e49">
+<text x="30" y="38" font-size="27" fill="#253e49" font-weight="bold" text-anchor="start">1  Look only at what the current A can see</text>
+<text x="30" y="70" font-size="20" fill="#58717b" font-weight="normal" text-anchor="start">One 25-token block A B C … Y, repeated four times after BOS.</text>
+<rect x="28" y="98" width="810" height="180" rx="7" fill="#f0f8f8" stroke="#8cbdc4"/>
+<rect x="858" y="98" width="314" height="180" rx="7" fill="#f5f6f7" stroke="#dce2e5"/>
+<text x="46" y="126" font-size="19" fill="#116c7c" font-weight="bold" text-anchor="start">VISIBLE: positions 0–51</text>
+<text x="877" y="126" font-size="19" fill="#7b8e97" font-weight="bold" text-anchor="start">FUTURE: not visible</text>
+<rect x="46" y="165" width="67" height="53" rx="7" fill="#f4f7f8" stroke="#cedce1"/>
+<text x="79" y="198" font-size="20" fill="#253e49" font-weight="normal" text-anchor="middle">BOS</text>
+<text x="79" y="245" font-size="17" fill="#607982" font-weight="normal" text-anchor="middle">0</text>
+<text x="256" y="153" font-size="18" fill="#607982" font-weight="normal" text-anchor="middle">Copy 1</text>
+<rect x="139" y="165" width="45" height="53" rx="7" fill="white" stroke="#cedce1"/>
+<text x="161" y="199" font-size="25" fill="#253e49" font-weight="bold" text-anchor="middle">A</text>
+<text x="161" y="245" font-size="17" fill="#607982" font-weight="normal" text-anchor="middle">1</text>
+<rect x="194" y="165" width="45" height="53" rx="7" fill="#dbf1eb" stroke="#26957c"/>
+<text x="216" y="199" font-size="25" fill="#126e59" font-weight="bold" text-anchor="middle">B</text>
+<text x="216" y="245" font-size="17" fill="#607982" font-weight="normal" text-anchor="middle">2</text>
+<rect x="249" y="165" width="45" height="53" rx="7" fill="white" stroke="#cedce1"/>
+<text x="271" y="199" font-size="25" fill="#253e49" font-weight="bold" text-anchor="middle">C</text>
+<text x="271" y="245" font-size="17" fill="#607982" font-weight="normal" text-anchor="middle">3</text>
+<rect x="333" y="165" width="45" height="53" rx="7" fill="white" stroke="#cedce1"/>
+<text x="355" y="199" font-size="25" fill="#253e49" font-weight="bold" text-anchor="middle">Y</text>
+<text x="355" y="245" font-size="17" fill="#607982" font-weight="normal" text-anchor="middle">25</text>
+<text x="310" y="199" font-size="24" fill="#607982" font-weight="normal" text-anchor="middle">…</text>
+<text x="542" y="153" font-size="18" fill="#607982" font-weight="normal" text-anchor="middle">Copy 2</text>
+<rect x="425" y="165" width="45" height="53" rx="7" fill="white" stroke="#cedce1"/>
+<text x="447" y="199" font-size="25" fill="#253e49" font-weight="bold" text-anchor="middle">A</text>
+<text x="447" y="245" font-size="17" fill="#607982" font-weight="normal" text-anchor="middle">26</text>
+<rect x="480" y="165" width="45" height="53" rx="7" fill="#dbf1eb" stroke="#26957c"/>
+<text x="502" y="199" font-size="25" fill="#126e59" font-weight="bold" text-anchor="middle">B</text>
+<text x="502" y="245" font-size="17" fill="#607982" font-weight="normal" text-anchor="middle">27</text>
+<rect x="535" y="165" width="45" height="53" rx="7" fill="white" stroke="#cedce1"/>
+<text x="557" y="199" font-size="25" fill="#253e49" font-weight="bold" text-anchor="middle">C</text>
+<text x="557" y="245" font-size="17" fill="#607982" font-weight="normal" text-anchor="middle">28</text>
+<rect x="619" y="165" width="45" height="53" rx="7" fill="white" stroke="#cedce1"/>
+<text x="641" y="199" font-size="25" fill="#253e49" font-weight="bold" text-anchor="middle">Y</text>
+<text x="641" y="245" font-size="17" fill="#607982" font-weight="normal" text-anchor="middle">50</text>
+<text x="596" y="199" font-size="24" fill="#607982" font-weight="normal" text-anchor="middle">…</text>
+<rect x="727" y="157" width="85" height="69" rx="7" fill="#fff1d9" stroke="#d99934"/>
+<text x="769" y="151" font-size="18" fill="#96702f" font-weight="normal" text-anchor="middle">Copy 3</text>
+<text x="769" y="198" font-size="29" fill="#865e19" font-weight="bold" text-anchor="middle">A</text>
+<text x="769" y="245" font-size="17" fill="#865e19" font-weight="normal" text-anchor="middle">51: query</text>
+<text x="1015" y="186" font-size="21" fill="#94a2a9" font-weight="normal" text-anchor="middle">B  C  …  Y  |  Copy 4</text>
+<text x="1015" y="222" font-size="17" fill="#7b8e97" font-weight="normal" text-anchor="middle">Starts at position 52</text>
+<text x="1015" y="250" font-size="17" fill="#7b8e97" font-weight="normal" text-anchor="middle">No comparisons here</text>
+<text x="30" y="320" font-size="25" fill="#253e49" font-weight="bold" text-anchor="start">2  Find the correct positions; all other visible positions are wrong</text>
+<rect x="30" y="342" width="380" height="196" rx="7" fill="#f1f9f5" stroke="#9ccbb9"/>
+<rect x="438" y="342" width="732" height="196" rx="7" fill="#fff8ef" stroke="#e2c8a8"/>
+<text x="50" y="376" font-size="22" fill="#176c58" font-weight="bold" text-anchor="start">2 correct positions</text>
+<rect x="49" y="389" width="342" height="43" rx="5" fill="#e0f2e9" stroke="#b4d9c9"/>
+<text x="63" y="417" font-size="19" fill="#176c58" font-weight="normal" text-anchor="start">B @ 2     distance 49     score 4.0</text>
+<rect x="49" y="444" width="342" height="43" rx="5" fill="#e0f2e9" stroke="#b4d9c9"/>
+<text x="63" y="472" font-size="19" fill="#176c58" font-weight="normal" text-anchor="start">B @ 27   distance 24     score 3.5</text>
+<text x="50" y="519" font-size="19" fill="#427867" font-weight="normal" text-anchor="start">Each B follows an earlier A.</text>
+<text x="458" y="376" font-size="22" fill="#93612d" font-weight="bold" text-anchor="start">50 wrong positions</text>
+<rect x="458" y="393" width="97" height="42" rx="5" fill="white" stroke="#e2c8a8"/>
+<text x="506.5" y="421" font-size="18" fill="#93612d" font-weight="normal" text-anchor="middle">BOS</text>
+<rect x="566" y="393" width="95" height="42" rx="5" fill="white" stroke="#e2c8a8"/>
+<text x="613.5" y="421" font-size="18" fill="#93612d" font-weight="normal" text-anchor="middle">A @ 1</text>
+<rect x="672" y="393" width="101" height="42" rx="5" fill="white" stroke="#e2c8a8"/>
+<text x="722.5" y="421" font-size="18" fill="#93612d" font-weight="normal" text-anchor="middle">C @ 3</text>
+<rect x="784" y="393" width="78" height="42" rx="5" fill="white" stroke="#e2c8a8"/>
+<text x="823.0" y="421" font-size="18" fill="#93612d" font-weight="normal" text-anchor="middle">…</text>
+<rect x="873" y="393" width="276" height="42" rx="5" fill="white" stroke="#e2c8a8"/>
+<text x="1011.0" y="421" font-size="18" fill="#93612d" font-weight="normal" text-anchor="middle">A @ 51: query itself</text>
+<text x="458" y="470" font-size="22" fill="#93612d" font-weight="normal" text-anchor="start">Scores:  w1,  w2,  w3 = 1.2,  …,  w50</text>
+<text x="458" y="503" font-size="18" fill="#866b51" font-weight="normal" text-anchor="start">Includes BOS and the current A.</text>
+<text x="458" y="527" font-size="18" fill="#866b51" font-weight="normal" text-anchor="start">Neither correct B is in this set.</text>
+<text x="30" y="582" font-size="27" fill="#253e49" font-weight="bold" text-anchor="start">3  Each correct score − every wrong score</text>
+<rect x="30" y="605" width="1140" height="180" rx="7" fill="white" stroke="#cbd9de"/>
+<path d="M30 660 H1170 M30 723 H1170 M274 605 V785" fill="none" stroke="#d7e1e5"/>
+<text x="359" y="640" font-size="20" fill="#93612d" font-weight="bold" text-anchor="middle">Wrong 1</text>
+<text x="529" y="640" font-size="20" fill="#93612d" font-weight="bold" text-anchor="middle">Wrong 2</text>
+<text x="737" y="640" font-size="20" fill="#93612d" font-weight="bold" text-anchor="middle">C @ 3</text>
+<text x="895" y="640" font-size="20" fill="#93612d" font-weight="bold" text-anchor="middle">…</text>
+<text x="1050" y="640" font-size="20" fill="#93612d" font-weight="bold" text-anchor="middle">Wrong 50</text>
+<text x="52" y="699" font-size="23" fill="#176c58" font-weight="bold" text-anchor="start">B @ 2:  4.0</text>
+<text x="359" y="699" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">4.0 − w1</text>
+<text x="529" y="699" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">4.0 − w2</text>
+<text x="737" y="699" font-size="22" fill="#253e49" font-weight="bold" text-anchor="middle">4.0 − 1.2 = 2.8</text>
+<text x="895" y="699" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">…</text>
+<text x="1050" y="699" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">4.0 − w50</text>
+<text x="52" y="763" font-size="23" fill="#176c58" font-weight="bold" text-anchor="start">B @ 27:  3.5</text>
+<text x="359" y="763" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">3.5 − w1</text>
+<text x="529" y="763" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">3.5 − w2</text>
+<text x="737" y="763" font-size="22" fill="#253e49" font-weight="bold" text-anchor="middle">3.5 − 1.2 = 2.3</text>
+<text x="895" y="763" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">…</text>
+<text x="1050" y="763" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">3.5 − w50</text>
+<text x="600" y="831" font-size="25" fill="#176c58" font-weight="bold" text-anchor="middle">2 correct positions × 50 wrong positions = 100 separate margins</text>
+<text x="600" y="869" font-size="21" fill="#58717b" font-weight="normal" text-anchor="middle">One subtraction gives one m. Positive means the correct position scores higher.</text>
+</g></svg>
