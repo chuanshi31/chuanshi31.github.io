@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Functional Writer–Reader routes, exact G−b+T+R position margins, standardized training trajectories, and isospectral H⁺ direction interventions."><title>From Positive Eigenvalues to Token Matching | Shaoxiang Wu</title><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="./post.css?v=20261104-input-v1"><script src="./post.js?v=20261103-position-v1" defer></script></head><body><a class="skip-link" href="#main">Skip to main content</a><main class="article-shell" id="main"><nav class="article-nav"><a href="/">Shaoxiang Wu</a> / <a href="/induction-circuit/">Induction-Circuit Initialization</a></nav><header class="article-header"><p class="eyebrow">Research report · Updated 4 November 2026</p><h1>From Positive Eigenvalues to Token Matching</h1><p class="dek">Functional paths, position-wise margins, and the directions of positive geometry</p><p class="byline">Shaoxiang Wu</p></header><nav class="article-contents"><a href="#why-positive-eigenvalues-suggest-matching">1. Matching</a><a href="#decomposing-the-matrix-and-its-energy">2. Matrix components</a><a href="#complete-matching-scores-and-positive-spectral-geometry">3. Scores and experiments</a><a href="#margin-explorer">Explore the data</a></nav><article class="article-body"><section id="why-positive-eigenvalues-suggest-matching" class="level1"
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Functional Writer–Reader routes, exact G−b+T+R position margins, standardized training trajectories, and isospectral H⁺ direction interventions."><title>From Positive Eigenvalues to Token Matching | Shaoxiang Wu</title><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="./post.css?v=20261104-explorer-v1"><script src="./post.js?v=20261104-explorer-v1" defer></script></head><body><a class="skip-link" href="#main">Skip to main content</a><main class="article-shell" id="main"><nav class="article-nav"><a href="/">Shaoxiang Wu</a> / <a href="/induction-circuit/">Induction-Circuit Initialization</a></nav><header class="article-header"><p class="eyebrow">Research report · Updated 4 November 2026</p><h1>From Positive Eigenvalues to Token Matching</h1><p class="dek">Functional paths, position-wise margins, and the directions of positive geometry</p><p class="byline">Shaoxiang Wu</p></header><nav class="article-contents"><a href="#why-positive-eigenvalues-suggest-matching">1. Matching</a><a href="#decomposing-the-matrix-and-its-energy">2. Matrix components</a><a href="#complete-matching-scores-and-positive-spectral-geometry">3. Scores and experiments</a><a href="#margin-explorer">Explore the data</a></nav><article class="article-body"><section id="why-positive-eigenvalues-suggest-matching" class="level1"
 data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Why
 positive eigenvalues suggest matching</h1>
@@ -1047,33 +1047,31 @@ T^M_{t,p,j}&amp;=x_t^\top M_{\mathrm{ref}}(y_p-y_j)-(\mu_i^W)^\top M_{\mathrm{re
 <p>This divides by the <strong>standard deviation</strong>, not the variance; we do not subtract the mean. It records the signed mean in units of that term’s own spread. Each component and checkpoint has its own denominator. Consequently, the standardized curves <strong>do not add</strong> to the standardized margin. The additive identity remains the raw-score identity above; raw means are available alongside every trajectory.</p>
 <p>Consider step 120,000. L3H5 and L4H1 have almost the same mean <strong>positive center-separation term <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mo>+</mo></msup><annotation encoding="application/x-tex">G^+</annotation></semantics></math></strong>, <strong>4.543 and 4.598</strong>, respectively. Here <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mo>+</mo></msup><annotation encoding="application/x-tex">G^+</annotation></semantics></math> is calculated using <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math>. Their <strong>complete-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> contextual terms <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>T</mi><mi>C</mi></msup><annotation encoding="application/x-tex">T^C</annotation></semantics></math></strong> have standard deviations <strong>2.549 and 11.230</strong>. Their <strong>complete-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> margins <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>m</mi><mi>C</mi></msup><annotation encoding="application/x-tex">m^C</annotation></semantics></math></strong> have means <strong>5.001 and 4.092</strong>, and standard deviations <strong>3.453 and 11.432</strong>. Thus <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>μ</mi><msup><mi>m</mi><mi>C</mi></msup></msub><mi>/</mi><msub><mi>σ</mi><msup><mi>m</mi><mi>C</mi></msup></msub></mrow><annotation encoding="application/x-tex">\mu_{m^C}/\sigma_{m^C}</annotation></semantics></math> is <strong>1.448 versus 0.358</strong>. Similar mean <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mo>+</mo></msup><annotation encoding="application/x-tex">G^+</annotation></semantics></math> values can therefore accompany very different distributions of the complete correct–incorrect margin <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>m</mi><mi>C</mi></msup><annotation encoding="application/x-tex">m^C</annotation></semantics></math>.</p>
 <p>The contextual term <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>T</mi><mi>C</mi></msup><annotation encoding="application/x-tex">T^C</annotation></semantics></math> records how using the actual representations, rather than the shared token centers, changes the margin under the reference <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> matrix. A positive <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>T</mi><mi>C</mi></msup><annotation encoding="application/x-tex">T^C</annotation></semantics></math> raises the margin; a negative <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>T</mi><mi>C</mi></msup><annotation encoding="application/x-tex">T^C</annotation></semantics></math> lowers it. Its standard deviation <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>T</mi><mi>C</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\sigma(T^C)</annotation></semantics></math> measures how much this correction varies across comparisons. A large standard deviation alone does not determine whether its mean is positive or negative, or whether it offsets the center-separation term in every comparison.</p>
-<div class="figure-controls normalization-controls" role="group" aria-label="Trajectory units">
-<span>Trajectory units</span><button type="button" data-mode="standardized" aria-pressed="true">Mean / own standard deviation</button><button type="button" data-mode="raw" aria-pressed="false">Original score units</button>
+<p class="method-note">A high mean-to-standard-deviation ratio indicates an advantage relative to its spread; it does not imply a large absolute score. Multiplying every margin by the same positive factor leaves this ratio unchanged. Use <strong>Raw mean (μ)</strong> and <strong>Standard deviation (σ)</strong> to inspect both quantities in the original score units.</p>
+<section id="margin-explorer" class="trajectory-explorer" aria-label="Choose a model and a head">
+<p class="method-note" id="model-availability">Available trajectory results: Pythia 70M. Other sizes are marked as not yet included.</p>
+<div class="explorer-controls">
+<label>Model<select id="model-select" aria-label="Model" disabled></select></label>
+<label>Reader head ← Writer head<select id="head-select" aria-label="Reader head and Writer route" disabled></select></label>
+<label>Operator<select id="operator-select" aria-label="Operator"><option value="Hplus">H⁺</option><option value="C">Complete C</option></select></label>
+<label>Checkpoint<select id="checkpoint-select" aria-label="Checkpoint" disabled></select></label>
 </div>
-<figure class="trajectory-figure">
-<img src="assets/revision-L3-hplus-standardized.svg" data-standardized="assets/revision-L3-hplus-standardized.svg" data-raw="assets/revision-L3-hplus-raw.svg" alt="L3 heads: H⁺ margins and G, minus b, T, R across all 19 checkpoints" loading="lazy">
-<figcaption>
-<strong>Figure 3.</strong> L3, H⁺. Default: each comparison-weighted component mean divided by its own standard deviation at that checkpoint. The raw-score option preserves the additive decomposition. All five heads use Writer L2H7; labels report endpoint route-removal Reader scores. Checkpoints are equally spaced samples.
-</figcaption>
+<div class="figure-controls normalization-controls" role="group" aria-label="Quantity shown">
+<button type="button" data-mode="standardized" aria-pressed="true">Mean / own std (μ/σ)</button>
+<button type="button" data-mode="raw" aria-pressed="false">Raw mean (μ)</button>
+<button type="button" data-mode="std" aria-pressed="false">Standard deviation (σ)</button>
+</div>
+<p id="path-metadata" aria-live="polite">Loading the selected trajectory…</p>
+<figure class="selected-trajectory">
+<div class="trajectory-scroll"><svg id="trajectory" viewBox="0 0 960 440" role="img" aria-label="Selected model and head trajectory of G, minus b, T, R and m"></svg></div>
+<figcaption><strong>Figure 3.</strong> One selected Writer–Reader route across its available checkpoints. Each mean and standard deviation uses equal comparison weights. The normalized view divides each term's mean by its own standard deviation; raw means preserve the additive decomposition. Checkpoints are equally spaced samples. <span id="trajectory-caption"></span></figcaption>
 </figure>
-<figure class="trajectory-figure">
-<img src="assets/revision-L4-hplus-standardized.svg" data-standardized="assets/revision-L4-hplus-standardized.svg" data-raw="assets/revision-L4-hplus-raw.svg" alt="L4 heads: H⁺ margins and G, minus b, T, R across all 19 checkpoints" loading="lazy">
-<figcaption>
-<strong>Figure 4.</strong> L4, H⁺. Default: each comparison-weighted component mean divided by its own standard deviation at that checkpoint. The raw-score option preserves the additive decomposition. All five heads use Writer L2H7; labels report endpoint route-removal Reader scores. Checkpoints are equally spaced samples.
-</figcaption>
-</figure>
-<figure class="trajectory-figure">
-<img src="assets/revision-L3-c-standardized.svg" data-standardized="assets/revision-L3-c-standardized.svg" data-raw="assets/revision-L3-c-raw.svg" alt="L3 heads: complete C margins and G, minus b, T, R across all 19 checkpoints" loading="lazy">
-<figcaption>
-<strong>Figure 5.</strong> L3, complete C. Default: each comparison-weighted component mean divided by its own standard deviation at that checkpoint. The raw-score option preserves the additive decomposition. All five heads use Writer L2H7; labels report endpoint route-removal Reader scores. Checkpoints are equally spaced samples.
-</figcaption>
-</figure>
-<figure class="trajectory-figure">
-<img src="assets/revision-L4-c-standardized.svg" data-standardized="assets/revision-L4-c-standardized.svg" data-raw="assets/revision-L4-c-raw.svg" alt="L4 heads: complete C margins and G, minus b, T, R across all 19 checkpoints" loading="lazy">
-<figcaption>
-<strong>Figure 6.</strong> L4, complete C. Default: each comparison-weighted component mean divided by its own standard deviation at that checkpoint. The raw-score option preserves the additive decomposition. All five heads use Writer L2H7; labels report endpoint route-removal Reader scores. Checkpoints are equally spaced samples.
-</figcaption>
-</figure>
+<details class="trajectory-values"><summary>Values at the selected checkpoint: mean and standard deviation</summary>
+<div class="table-scroll"><table id="margin-table"><thead><tr><th>Term</th><th>Mean (μ)</th><th>Std (σ)</th><th>μ / own σ</th><th>Query-equal mean</th></tr></thead><tbody></tbody></table></div>
+</details>
+<details><summary>Data and weighting definitions</summary><p>The trajectory uses comparison-weighted means and population standard deviations. The separately named query-equal mean averages comparisons within each query before equal copy/context/token weighting. The raw identity is m = G − b + T + R. Mean plots show −b; the table retains the raw sign of b. The standard-deviation view shows σ(b), since changing a sign does not change its spread.</p><ul><li><a id="trajectory-data-link" href="data/position-margin-trajectories.json" download>Selected model's trajectory data and reference definitions (JSON)</a></li><li><a href="data/position-margin-trajectories.csv" download>70M trajectory means and standard deviations (CSV)</a></li><li><a href="data/energy-reader-fit193.json" download>193-route energy fits</a></li><li><a href="data/margin-reader-fit70m.json" download>70M raw/standardized margin fits, including grouped validation</a></li><li><a href="data/T-spectral-variance-diagnostic.json" download>Separate sequence-0 T spectral diagnostic</a></li><li><a href="data/rotation-by-head.json" download>All ten rotation interventions</a></li><li><a href="data/revision-source-manifest.json" download>Source SHA manifest and scope audit</a></li></ul></details>
+</section>
+
 <h3 id="trace-the-complete-margin-back-to-positive-geometry">3.2.4 Trace the complete margin back to positive geometry</h3>
 <p>Linearity gives the exact component accounting</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>D</mi></msub><mo>=</mo><msubsup><mi>H</mi><mi>D</mi><mo>+</mo></msubsup><mo>+</mo><msubsup><mi>H</mi><mi>D</mi><mo>−</mo></msubsup><mo>+</mo><msub><mi>A</mi><mi>D</mi></msub><mo>,</mo><mspace width="2.0em"></mspace><msup><mi>m</mi><mi>C</mi></msup><mo>=</mo><msup><mi>m</mi><mo>+</mo></msup><mo>+</mo><msup><mi>m</mi><mo>−</mo></msup><mo>+</mo><msup><mi>m</mi><mi>A</mi></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">C_D=H_D^++H_D^-+A_D,\qquad m^C=m^++m^-+m^A.</annotation></semantics></math></p>
@@ -1342,7 +1340,7 @@ Comparison-weighted score statistics; Reader score is the endpoint native correc
 <figure>
 <img src="assets/revision-rotation-L3H0.svg" alt="L3H0: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 7a.</strong> L3H0, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 4a.</strong> L3H0, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -1545,7 +1543,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L3H1.svg" alt="L3H1: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 7b.</strong> L3H1, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 4b.</strong> L3H1, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -1748,7 +1746,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L3H3.svg" alt="L3H3: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 7c.</strong> L3H3, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 4c.</strong> L3H3, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -1951,7 +1949,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L3H5.svg" alt="L3H5: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 7d.</strong> L3H5, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 4d.</strong> L3H5, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -2154,7 +2152,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L3H6.svg" alt="L3H6: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 7e.</strong> L3H6, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 4e.</strong> L3H6, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -2357,7 +2355,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L4H0.svg" alt="L4H0: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 7f.</strong> L4H0, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 4f.</strong> L4H0, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -2560,7 +2558,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L4H1.svg" alt="L4H1: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 7g.</strong> L4H1, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 4g.</strong> L4H1, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -2763,7 +2761,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L4H3.svg" alt="L4H3: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 7h.</strong> L4H3, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 4h.</strong> L4H3, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -2966,7 +2964,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L4H6.svg" alt="L4H6: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 7i.</strong> L4H6, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 4i.</strong> L4H6, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -3169,7 +3167,7 @@ mC
 <figure>
 <img src="assets/revision-rotation-L4H7.svg" alt="L4H7: rotation decreases G plus, H plus margin, full-C margin, and route-removal Reader score" loading="lazy">
 <figcaption>
-<strong>Figure 7j.</strong> L4H7, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
+<strong>Figure 4j.</strong> L4H7, all 2,084 sequences. Before and after use the same positive eigenvalues and energy; H⁻ and A are fixed. Score terms are standardized using each term’s original σ; raw means are annotated. Reader score uses native correct-successor attention mass and is not an energy percentage.
 </figcaption>
 </figure>
 <div class="table-scroll">
@@ -3374,8 +3372,5 @@ mC
 </section>
 
 
-<section id="margin-explorer"><h2>Explore the new position-wise measurements</h2><p>Ten fixed 70M routes, all 19 checkpoints. Every score term includes the actual causal competition; R restores position-specific matrices. Reader scores describe a route-removal intervention, while the decomposition describes its structural operator.</p>
-<div class="explorer-controls"><label>Reader–Writer path<select id="head-select" aria-label="Reader–Writer path"></select></label><label>Checkpoint<select id="checkpoint-select" aria-label="Checkpoint"></select></label><label>Operator<select id="operator-select"><option value="C">Complete C</option><option value="Hplus">H⁺</option></select></label></div>
-<p id="path-metadata" aria-live="polite"></p><div class="table-scroll"><table id="margin-table"><thead><tr><th>Term</th><th>Mean</th><th>Standard deviation</th><th>Mean / own σ</th><th>Query-equal mean</th></tr></thead><tbody></tbody></table></div><div class="trajectory-scroll"><svg id="trajectory" viewBox="0 0 900 350" role="img" aria-label="Selected head trajectory including G, minus b, T, R and m"></svg></div><p class="method-note" id="trajectory-caption">Standardized components have different denominators and are not additive.</p>
-<details><summary>Data and weighting definitions</summary><p>Mean and standard-deviation columns use equal weight over actual correct–incorrect comparisons. The separately named query-equal mean averages comparisons within each query before equal context/token weighting. The signed raw identity is m = G − b + T + R; the b row retains its original sign.</p><ul><li><a href="data/position-margin-trajectories.json" download>All trajectory data and reference definitions (JSON)</a></li><li><a href="data/position-margin-trajectories.csv" download>Trajectory means and standard deviations (CSV)</a></li><li><a href="data/energy-reader-fit193.json" download>193-route energy fits</a></li><li><a href="data/margin-reader-fit70m.json" download>70M raw/standardized margin fits, including grouped validation</a></li><li><a href="data/T-spectral-variance-diagnostic.json" download>Separate sequence-0 T spectral diagnostic</a></li><li><a href="data/rotation-by-head.json" download>All ten rotation interventions</a></li><li><a href="data/revision-source-manifest.json" download>Source SHA manifest and scope audit</a></li></ul></details></section>
+
 <section class="references"><h2>References</h2><ol><li><a href="https://transformer-circuits.pub/2021/framework/index.html">Elhage et al. (2021), A Mathematical Framework for Transformer Circuits.</a></li><li><a href="https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html">Olsson et al. (2022), In-context Learning and Induction Heads.</a></li></ol></section></article><footer class="article-footer"><span>Shaoxiang Wu · Research report</span><a href="/induction-circuit/">Back to project</a></footer></main></body></html>

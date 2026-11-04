@@ -126,3 +126,23 @@ code { font-size:.78em; overflow-wrap:anywhere; background:#f5f7f7; padding:2px 
 /* Repeated-input schematic, 2026-11-04. */
 .input-probe-scroll { overflow-x:auto; }
 .article-body .input-probe-figure img { width:100%; min-width:740px; max-width:1200px; }
+
+/* One route at a time; models are enabled when their results are available. */
+.article-body #margin-explorer.trajectory-explorer { margin:24px 0 42px; padding:22px 20px; border:1px solid #dbe5e8; border-radius:6px; }
+.trajectory-explorer .explorer-controls { max-width:none; grid-template-columns:1.2fr 1.5fr 1fr 1fr; margin:20px 0; }
+.trajectory-explorer .explorer-controls label { grid-column:auto; }
+.trajectory-explorer select { padding:9px 7px; background:#fff; color:#233d50; border:1px solid #b6c9cf; border-radius:4px; font:14px/1.5 Arial,Helvetica,sans-serif; }
+.trajectory-explorer .normalization-controls { margin:16px 0; display:flex; flex-wrap:wrap; gap:8px; }
+.trajectory-explorer #path-metadata { margin:18px 0; }
+.article-body .selected-trajectory { margin:20px 0; }
+.trajectory-explorer .trajectory-values { margin:24px 0 16px; }
+.trajectory-explorer .table-scroll { overflow-x:auto; }
+.trajectory-explorer summary { cursor:pointer; }
+.trajectory-explorer select:focus-visible, .trajectory-explorer button:focus-visible { outline:3px solid #82b8c7; outline-offset:3px; }
+@media(max-width:700px) {
+ .article-body #margin-explorer.trajectory-explorer { padding:16px 12px; }
+ .trajectory-explorer .explorer-controls { grid-template-columns:1fr 1fr; gap:12px; }
+ .trajectory-explorer .normalization-controls { padding:10px; }
+ .trajectory-explorer .normalization-controls button { flex:1 1 150px; }
+}
+.trajectory-explorer #trajectory { min-width:760px; }
