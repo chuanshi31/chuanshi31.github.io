@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="730" viewBox="0 0 1200 730" role="img" aria-labelledby="title desc">
+<title id="title">Repeated-token induction probe</title>
+<desc id="desc">Four copies of one random 25-token block after BOS. Evaluate target queries only in copies 2, 3 and 4. A current A retrieves the B following each earlier A. Five thousand target identities times ten contexts times three copies equals 150000 queries.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#147b8b"/></marker></defs>
+<rect width="1200" height="730" rx="8" fill="white"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#253e49">
+<text x="34" y="37" font-size="24" text-anchor="start" fill="#253e49" font-weight="bold">1  One random block, copied four times</text>
+<text x="34" y="70" font-size="18" text-anchor="start" fill="#58717b" font-weight="normal">25 distinct tokens per block · same order in all four copies · 101 input tokens including BOS</text>
+<rect x="32" y="125" width="76" height="68" rx="7" fill="#f2f5f6" stroke="#d7e2e5"/>
+<text x="70" y="167" font-size="20" text-anchor="middle" fill="#253e49" font-weight="normal">BOS</text>
+<text x="260" y="111" font-size="21" text-anchor="middle" fill="#253e49" font-weight="bold">Copy 1</text>
+<rect x="140" y="125" width="240" height="68" rx="7" fill="#f2f5f6" stroke="#cbd8dd"/>
+<text x="260" y="167" font-size="23" text-anchor="middle" fill="#253e49" font-weight="normal">t₁  …  t₂₄  |  t₂₅</text>
+<text x="260" y="224" font-size="17" text-anchor="middle" fill="#607982" font-weight="normal">History only</text>
+<text x="390" y="167" font-size="20" text-anchor="middle" fill="#7d939c" font-weight="normal">→</text>
+<text x="520" y="111" font-size="21" text-anchor="middle" fill="#253e49" font-weight="bold">Copy 2</text>
+<rect x="400" y="125" width="240" height="68" rx="7" fill="#edf7f7" stroke="#71b0b8"/>
+<text x="520" y="167" font-size="23" text-anchor="middle" fill="#253e49" font-weight="normal">t₁  …  t₂₄  |  t₂₅</text>
+<text x="520" y="224" font-size="17" text-anchor="middle" fill="#117184" font-weight="normal">Evaluate target queries</text>
+<text x="520" y="249" font-size="16" text-anchor="middle" fill="#607982" font-weight="normal">24 per normal block</text>
+<text x="650" y="167" font-size="20" text-anchor="middle" fill="#7d939c" font-weight="normal">→</text>
+<text x="780" y="111" font-size="21" text-anchor="middle" fill="#253e49" font-weight="bold">Copy 3</text>
+<rect x="660" y="125" width="240" height="68" rx="7" fill="#edf7f7" stroke="#71b0b8"/>
+<text x="780" y="167" font-size="23" text-anchor="middle" fill="#253e49" font-weight="normal">t₁  …  t₂₄  |  t₂₅</text>
+<text x="780" y="224" font-size="17" text-anchor="middle" fill="#117184" font-weight="normal">Evaluate target queries</text>
+<text x="780" y="249" font-size="16" text-anchor="middle" fill="#607982" font-weight="normal">24 per normal block</text>
+<text x="910" y="167" font-size="20" text-anchor="middle" fill="#7d939c" font-weight="normal">→</text>
+<text x="1040" y="111" font-size="21" text-anchor="middle" fill="#253e49" font-weight="bold">Copy 4</text>
+<rect x="920" y="125" width="240" height="68" rx="7" fill="#edf7f7" stroke="#71b0b8"/>
+<text x="1040" y="167" font-size="23" text-anchor="middle" fill="#253e49" font-weight="normal">t₁  …  t₂₄  |  t₂₅</text>
+<text x="1040" y="224" font-size="17" text-anchor="middle" fill="#117184" font-weight="normal">Evaluate target queries</text>
+<text x="1040" y="249" font-size="16" text-anchor="middle" fill="#607982" font-weight="normal">24 per normal block</text>
+<text x="34" y="306" font-size="24" text-anchor="start" fill="#253e49" font-weight="bold">2  At a current A, sum attention to earlier B positions</text>
+<text x="34" y="337" font-size="18" text-anchor="start" fill="#58717b" font-weight="normal">The same A → B relation appears in every copy of the block.</text>
+<path d="M 1026 440 C 1026 329, 291 329, 291 439" stroke="#147b8b" stroke-width="2.1" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1026 440 C 1026 349, 551 349, 551 439" stroke="#147b8b" stroke-width="2.1" fill="none" marker-end="url(#arrow)"/>
+<path d="M 1026 440 C 1026 369, 811 369, 811 439" stroke="#147b8b" stroke-width="2.1" fill="none" marker-end="url(#arrow)"/>
+<text x="155" y="427" font-size="17" text-anchor="start" fill="#607982" font-weight="normal">Copy 1</text>
+<rect x="140" y="441" width="240" height="66" rx="7" fill="#fbfcfc" stroke="#d7e2e5"/>
+<text x="173" y="482" font-size="24" text-anchor="middle" fill="#8b9ea5" font-weight="normal">…</text>
+<rect x="223" y="452" width="47" height="43" rx="4" fill="#f2f5f6" stroke="#ccd8dd"/>
+<text x="246" y="481" font-size="24" text-anchor="middle" fill="#253e49" font-weight="bold">A</text>
+<rect x="271" y="452" width="42" height="43" rx="4" fill="#e1f4f4" stroke="#147b8b"/>
+<text x="292" y="481" font-size="24" text-anchor="middle" fill="#106b7a" font-weight="bold">B</text>
+<text x="351" y="482" font-size="24" text-anchor="middle" fill="#8b9ea5" font-weight="normal">…</text>
+<text x="260" y="537" font-size="16" text-anchor="middle" fill="#117184" font-weight="normal">Correct historical B</text>
+<text x="415" y="427" font-size="17" text-anchor="start" fill="#607982" font-weight="normal">Copy 2</text>
+<rect x="400" y="441" width="240" height="66" rx="7" fill="#fbfcfc" stroke="#d7e2e5"/>
+<text x="433" y="482" font-size="24" text-anchor="middle" fill="#8b9ea5" font-weight="normal">…</text>
+<rect x="483" y="452" width="47" height="43" rx="4" fill="#f2f5f6" stroke="#ccd8dd"/>
+<text x="506" y="481" font-size="24" text-anchor="middle" fill="#253e49" font-weight="bold">A</text>
+<rect x="531" y="452" width="42" height="43" rx="4" fill="#e1f4f4" stroke="#147b8b"/>
+<text x="552" y="481" font-size="24" text-anchor="middle" fill="#106b7a" font-weight="bold">B</text>
+<text x="611" y="482" font-size="24" text-anchor="middle" fill="#8b9ea5" font-weight="normal">…</text>
+<text x="520" y="537" font-size="16" text-anchor="middle" fill="#117184" font-weight="normal">Correct historical B</text>
+<text x="675" y="427" font-size="17" text-anchor="start" fill="#607982" font-weight="normal">Copy 3</text>
+<rect x="660" y="441" width="240" height="66" rx="7" fill="#fbfcfc" stroke="#d7e2e5"/>
+<text x="693" y="482" font-size="24" text-anchor="middle" fill="#8b9ea5" font-weight="normal">…</text>
+<rect x="743" y="452" width="47" height="43" rx="4" fill="#f2f5f6" stroke="#ccd8dd"/>
+<text x="766" y="481" font-size="24" text-anchor="middle" fill="#253e49" font-weight="bold">A</text>
+<rect x="791" y="452" width="42" height="43" rx="4" fill="#e1f4f4" stroke="#147b8b"/>
+<text x="812" y="481" font-size="24" text-anchor="middle" fill="#106b7a" font-weight="bold">B</text>
+<text x="871" y="482" font-size="24" text-anchor="middle" fill="#8b9ea5" font-weight="normal">…</text>
+<text x="780" y="537" font-size="16" text-anchor="middle" fill="#117184" font-weight="normal">Correct historical B</text>
+<text x="935" y="427" font-size="17" text-anchor="start" fill="#607982" font-weight="normal">Copy 4</text>
+<rect x="920" y="441" width="240" height="66" rx="7" fill="#fbfcfc" stroke="#d7e2e5"/>
+<text x="953" y="482" font-size="24" text-anchor="middle" fill="#8b9ea5" font-weight="normal">…</text>
+<rect x="1003" y="452" width="47" height="43" rx="4" fill="#fff1df" stroke="#d78630"/>
+<text x="1026" y="481" font-size="24" text-anchor="middle" fill="#a35819" font-weight="bold">A</text>
+<rect x="1051" y="452" width="42" height="43" rx="4" fill="#f0f2f3" stroke="#d6dfe2"/>
+<text x="1072" y="481" font-size="24" text-anchor="middle" fill="#96a5ab" font-weight="bold">B</text>
+<text x="1131" y="482" font-size="24" text-anchor="middle" fill="#8b9ea5" font-weight="normal">…</text>
+<text x="1040" y="537" font-size="16" text-anchor="middle" fill="#a35819" font-weight="normal">Current A · future B masked</text>
+<rect x="34" y="581" width="1130" height="108" rx="7" fill="#f4f8f9" stroke="#d7e2e5"/>
+<text x="599" y="618" font-size="23" text-anchor="middle" fill="#253e49" font-weight="normal">5,000 target identities × 10 random contexts × 3 evaluated copies</text>
+<text x="599" y="657" font-size="27" text-anchor="middle" fill="#117184" font-weight="bold">= 150,000 evaluated query positions</text>
+<text x="34" y="716" font-size="17" text-anchor="start" fill="#58717b" font-weight="normal">2,083 normal blocks × 24 targets + 1 final block × 8 targets = 50,000 token–context combinations</text>
+</g></svg>
