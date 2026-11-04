@@ -10,7 +10,7 @@
   const caption = document.getElementById('trajectory-caption');
   const colors = {G:'#10849b',b:'#de7c32',T:'#8058b1',R:'#47975d',m:'#233d50'};
   const terms = ['G','b','T','R','m'];
-  const modes = {standardized:'Mean / own std (μ/σ)',raw:'Raw mean (μ)',std:'Standard deviation (σ)'};
+  const modes = {standardized:'Mean / own std (μ/σ)',raw:'Raw mean (μ)'};
   const cache = new Map();
   let mode = 'standardized', data, fit, route, series = [], loadId = 0;
   const routeKey = r => JSON.stringify([r.reader,r.writer]);
@@ -34,7 +34,6 @@
     return row.std[term]>0 && Number.isFinite(row.mean_over_std[term]) ? row.mean_over_std[term] : NaN;
   }
   function value(row,term) {
-    if (mode==='std') return row.std[term];
     return (mode==='standardized'?ratio(row,term):row.mean[term])*(term==='b'?-1:1);
   }
   const el = (tag,attributes,text) => {
@@ -63,7 +62,7 @@
     const W=960,H=440,left=76,right=25,top=91,bottom=78;
     const values=series.flatMap(r=>terms.map(k=>value(r,k))).filter(Number.isFinite);
     let lo=Math.min(0,...values),hi=Math.max(0,...values); if(lo===hi)hi=lo+1;
-    const pad=(hi-lo)*.08;lo=mode==='std'?0:lo-pad;hi+=pad;
+    const pad=(hi-lo)*.08;lo-=pad;hi+=pad;
     const x=i=>left+(series.length===1?.5:i/(series.length-1))*(W-left-right);
     const y=v=>top+(hi-v)*(H-top-bottom)/(hi-lo);
     el('text',{x:left,y:25,fill:'#233d50','font-size':16,'font-weight':600},config.label+' · '+route.reader+' ← '+route.writer+' · '+operatorName);
@@ -82,7 +81,7 @@
       }).join(' ');
       el('path',{'data-term':k,d:path,fill:'none',stroke:colors[k],'stroke-width':k==='m'?2.8:2,'stroke-dasharray':k==='m'?'6 4':'none'});
       el('line',{x1:left+i*112,x2:left+i*112+24,y1:58,y2:58,stroke:colors[k],'stroke-width':2.5,'stroke-dasharray':k==='m'?'6 4':'none'});
-      const label=mode==='std'?'σ('+k+')':k==='b'?'−b':k;
+      const label=k==='b'?'−b':k;
       el('text',{x:left+i*112+31,y:62,fill:'#263d49','font-size':14},label);
     });
     series.forEach((r,i)=>{
@@ -93,7 +92,7 @@
     el('line',{x1:x(pos),x2:x(pos),y1:top,y2:H-bottom,stroke:'#617b87','stroke-dasharray':'3 4'});
     terms.forEach(k=>{const v=value(row,k);if(Number.isFinite(v))el('circle',{cx:x(pos),cy:y(v),r:3.5,fill:colors[k]});});
     el('text',{x:(left+W-right)/2,y:H-8,'text-anchor':'middle',fill:'#526770','font-size':12},'Training checkpoint');
-    caption.textContent=mode==='standardized'?'Each term uses its own standard deviation at each checkpoint. These standardized curves are not additive.':mode==='raw'?'Raw comparison-weighted means: μ(m) = μ(G) − μ(b) + μ(T) + μ(R).':'Population standard deviations in the original score units. The standard deviations are not additive.';
+    caption.textContent=mode==='standardized'?'Each term uses its own standard deviation at each checkpoint. These standardized curves are not additive.':'Raw comparison-weighted means: μ(m) = μ(G) − μ(b) + μ(T) + μ(R).';
   }
   function selectSeries() {
     route=JSON.parse(head.value);
@@ -128,6 +127,9 @@
       Array.from(operator.options).forEach(o=>o.disabled=!ops.has(o.value));
       if(!ops.has(operator.value))operator.value=[...ops][0];
       document.getElementById('trajectory-data-link').href='./data/'+config.data;
+      const csvLink=document.getElementById('trajectory-csv-link');
+      csvLink.hidden=!config.csv;
+      if(config.csv)csvLink.href='./data/'+config.csv;
       selectSeries();
     } catch(error) {
       if(request!==loadId)return;

@@ -1,10 +1,38 @@
 {
   "models": [
-    {"id": "70m", "label": "Pythia 70M", "data": "position-margin-trajectories.json", "reader_scores": "margin-reader-fit70m.json"},
-    {"id": "160m", "label": "Pythia 160M", "data": null},
-    {"id": "410m", "label": "Pythia 410M", "data": null},
-    {"id": "1b", "label": "Pythia 1B", "data": null},
-    {"id": "1.4b", "label": "Pythia 1.4B", "data": null},
-    {"id": "2.8b", "label": "Pythia 2.8B", "data": null}
+    {
+      "id": "70m",
+      "label": "Pythia 70M",
+      "data": "position-margin-trajectories.json",
+      "reader_scores": "margin-reader-fit70m.json",
+      "csv": "position-margin-trajectories.csv"
+    },
+    {
+      "id": "160m",
+      "label": "Pythia 160M",
+      "data": "position-margin-trajectories-160m.json",
+      "csv": "position-margin-trajectories-160m.csv",
+      "reader_scores": "route-removal-scores160m.json"
+    },
+    {
+      "id": "410m",
+      "label": "Pythia 410M",
+      "data": null
+    },
+    {
+      "id": "1b",
+      "label": "Pythia 1B",
+      "data": null
+    },
+    {
+      "id": "1.4b",
+      "label": "Pythia 1.4B",
+      "data": null
+    },
+    {
+      "id": "2.8b",
+      "label": "Pythia 2.8B",
+      "data": null
+    }
   ]
 }

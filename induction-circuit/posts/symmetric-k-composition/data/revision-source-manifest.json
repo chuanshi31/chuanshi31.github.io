@@ -10,7 +10,10 @@
     "work/pythia_sequence_competition_20261102/m_standardized_fit/FIT_RESULT.json": "faa8753dc54fde7512f23e291e97665e83f204dce46e6cc615bb0318ab78b971",
     "work/pythia70m_other9_isospectral_20261103/RESULT.json": "21ca1f0d651b32c3e69794b372bd228322c80820a54fe395fe3b8563b74a3858",
     "work/pythia_sequence_competition_20261102/l4_variance_step120000/local_cpu/ONE_SEQUENCE_DECOMPOSITION.json": "5bda316d14b015c58267e12f438ba68c72321686dee5f26d42177b9c1ed69ad4",
-    "work/pythia_sequence_competition_20261102/l4_variance_step120000/local_cpu/MATRIX_ENERGY_L3_L4.json": "3b814b0f99af6e7a675d0ec6e7ce9905840e83f1b99288634f1eb84854c840b8"
+    "work/pythia_sequence_competition_20261102/l4_variance_step120000/local_cpu/MATRIX_ENERGY_L3_L4.json": "3b814b0f99af6e7a675d0ec6e7ce9905840e83f1b99288634f1eb84854c840b8",
+    "work/pythia_sequence_competition_20261102/core_results_160m_review_20261104/SOURCE.download.json": "f5c7dcf29a264640d64f5ac8724c721ad016462faa90010acad44b7784e9ed63",
+    "outputs/pythia160m_core_review_20261104/ACCEPTANCE.json": "8002eba399e84605b0d3f8900c5d9d719955b7b400626c8e59afc8883b50b0f7",
+    "work/pythia_fixed193_drop19_20261102/LOCAL_DELIVERY_SUMMARY.json": "30c6344605f253994b3faecd9c148f13bccb94f077112dec79fed207dab8701d"
   },
   "main_reference": "MeanC_D and meanpositivepartH_D overD0..2047;not C(D=0)",
   "normalization": "Comparison-weighted component means divided by each own std;raw identities remain separate",
@@ -77,6 +80,25 @@
       ],
       "weighting": "Each model equal;selected paths equal within model. Ordinary paths reweighted to selected model×writer-layer×reader-layer composition on shared support.",
       "unmatched_paths": []
+    }
+  },
+  "trajectory_models": {
+    "70m": {
+      "routes": 10,
+      "checkpoints": 19
+    },
+    "160m": {
+      "routes": 29,
+      "readers": 22,
+      "checkpoints": 19,
+      "operators": [
+        "C",
+        "Hplus"
+      ],
+      "source_SHA": "f5c7dcf29a264640d64f5ac8724c721ad016462faa90010acad44b7784e9ed63",
+      "comparison_weighted": true,
+      "normalization": "component mean / own population standard deviation",
+      "R_retained": true
     }
   }
 }
