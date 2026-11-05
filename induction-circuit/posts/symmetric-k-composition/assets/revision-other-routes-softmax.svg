@@ -1,57 +1,143 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="530" viewBox="0 0 1120 530" role="img" aria-labelledby="title desc">
-<title id="title">The same route scores can produce different full attention</title>
-<desc id="desc">Illustrative logits, with only two visible positions. In both examples the route gives correct B a score of 5 and wrong BOS a score of 3. Remaining contributions are zero in the first example, so B receives 88.1 percent attention. In the second example the remaining contribution to BOS is 3, so total scores are 5 and 6 and B receives 26.9 percent attention.</desc>
-<rect width="1120" height="530" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="850" viewBox="0 0 1280 850" role="img" aria-labelledby="title desc">
+<title id="title">Identical C-route scores on the same sequence, different attention</title>
+<desc id="desc">Two aligned copies of the visible prefix BOS A B C A B C A. The current query is the final A at position 7; correct historical successors are B at positions 2 and 5. Each position lists the C-route contribution, all remaining contributions, their total, and the resulting attention probability. C-route scores are identical in both panels: 0,1,6,1,1,6,1,1. Only the remaining contribution to BOS changes from 0 to 8. Correct attention is summed over both B positions. All scores are illustrative and are not measured 160M logits.</desc>
+<rect width="1280" height="850" fill="white"/>
 <g font-family="Arial,Helvetica,sans-serif" fill="#253e49">
-<text x="26" y="37" font-size="26" fill="#253e49" font-weight="bold" text-anchor="start">The route stays the same. The competing position gains support.</text>
-<text x="26" y="70" font-size="18" fill="#617783" font-weight="normal" text-anchor="start">Illustration with two visible positions; these are not the measured 160M logits.</text>
-<rect x="26" y="95" width="512" height="381" rx="9" fill="#fafcfc" stroke="#d4e0e4"/>
-<text x="48" y="132" font-size="23" fill="#253e49" font-weight="bold" text-anchor="start">Background 1</text>
-<text x="48" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="start">Position</text>
-<text x="254" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="middle">Route</text>
-<text x="364" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="middle">Remaining</text>
-<text x="470" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="middle">Total</text>
-<text x="48" y="219" font-size="21" fill="#167b65" font-weight="bold" text-anchor="start">Correct B</text>
-<text x="254" y="219" font-size="25" fill="#167b65" font-weight="bold" text-anchor="middle">5</text>
-<text x="308" y="219" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">+</text>
-<text x="364" y="219" font-size="25" fill="#167b65" font-weight="bold" text-anchor="middle">0</text>
-<text x="419" y="219" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">=</text>
-<text x="470" y="219" font-size="25" fill="#167b65" font-weight="bold" text-anchor="middle">5</text>
-<text x="48" y="279" font-size="21" fill="#a66430" font-weight="bold" text-anchor="start">Wrong BOS</text>
-<text x="254" y="279" font-size="25" fill="#a66430" font-weight="bold" text-anchor="middle">3</text>
-<text x="308" y="279" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">+</text>
-<text x="364" y="279" font-size="25" fill="#a66430" font-weight="bold" text-anchor="middle">0</text>
-<text x="419" y="279" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">=</text>
-<text x="470" y="279" font-size="25" fill="#a66430" font-weight="bold" text-anchor="middle">3</text>
-<text x="282" y="326" font-size="18" fill="#526b76" font-weight="normal" text-anchor="middle">Softmax over the two TOTAL scores</text>
-<rect x="48" y="346" width="468" height="35" rx="4" fill="#ddb28d"/>
-<rect x="48" y="346" width="412.2130" height="35" rx="4" fill="#238b75"/>
-<text x="48" y="419" font-size="23" fill="#167b65" font-weight="bold" text-anchor="start">Correct B: 88.1%</text>
-<text x="516" y="419" font-size="20" fill="#a66430" font-weight="normal" text-anchor="end">Wrong BOS: 11.9%</text>
-<text x="48" y="453" font-size="18" fill="#526b76" font-weight="normal" text-anchor="start">Route margin: 2; full margin: 2</text>
-<rect x="582" y="95" width="512" height="381" rx="9" fill="#fafcfc" stroke="#d4e0e4"/>
-<text x="604" y="132" font-size="23" fill="#253e49" font-weight="bold" text-anchor="start">Background 2</text>
-<text x="604" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="start">Position</text>
-<text x="810" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="middle">Route</text>
-<text x="920" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="middle">Remaining</text>
-<text x="1026" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="middle">Total</text>
-<text x="604" y="219" font-size="21" fill="#167b65" font-weight="bold" text-anchor="start">Correct B</text>
-<text x="810" y="219" font-size="25" fill="#167b65" font-weight="bold" text-anchor="middle">5</text>
-<text x="864" y="219" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">+</text>
-<text x="920" y="219" font-size="25" fill="#167b65" font-weight="bold" text-anchor="middle">0</text>
-<text x="975" y="219" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">=</text>
-<text x="1026" y="219" font-size="25" fill="#167b65" font-weight="bold" text-anchor="middle">5</text>
-<text x="604" y="279" font-size="21" fill="#a66430" font-weight="bold" text-anchor="start">Wrong BOS</text>
-<text x="810" y="279" font-size="25" fill="#a66430" font-weight="bold" text-anchor="middle">3</text>
-<text x="864" y="279" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">+</text>
-<text x="920" y="279" font-size="25" fill="#a66430" font-weight="bold" text-anchor="middle">3</text>
-<text x="975" y="279" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">=</text>
-<text x="1026" y="279" font-size="25" fill="#a66430" font-weight="bold" text-anchor="middle">6</text>
-<text x="838" y="326" font-size="18" fill="#526b76" font-weight="normal" text-anchor="middle">Softmax over the two TOTAL scores</text>
-<rect x="604" y="346" width="468" height="35" rx="4" fill="#ddb28d"/>
-<rect x="604" y="346" width="125.8646" height="35" rx="4" fill="#238b75"/>
-<text x="604" y="419" font-size="23" fill="#167b65" font-weight="bold" text-anchor="start">Correct B: 26.9%</text>
-<text x="1072" y="419" font-size="20" fill="#a66430" font-weight="normal" text-anchor="end">Wrong BOS: 73.1%</text>
-<text x="604" y="453" font-size="18" fill="#526b76" font-weight="normal" text-anchor="start">Route margin: 2; full margin: -1</text>
-<text x="560" y="512" font-size="21" fill="#526b76" font-weight="normal" text-anchor="middle">Attention follows the combined scores, not the isolated route scores alone.</text>
+<text x="24" y="34" font-size="28" fill="#253e49" font-weight="bold" text-anchor="start">Keep the C route fixed; change the other contributions.</text>
+<text x="24" y="65" font-size="19" fill="#607985" font-weight="normal" text-anchor="start">Same query A at position 7. Correct positions: B @ 2 and B @ 5. All scores are illustrative.</text>
+<rect x="24" y="85" width="1232" height="328" rx="5" fill="#fafcfc" stroke="#d5e0e4"/>
+<text x="44" y="115" font-size="23" fill="#253e49" font-weight="bold" text-anchor="start">1  Same C scores; no extra support for BOS</text>
+<text x="44" y="174" font-size="19" fill="#607985" font-weight="normal" text-anchor="start">Visible sequence</text>
+<text x="310" y="144" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 0</text>
+<rect x="260" y="154" width="100" height="39" rx="5" fill="#fff" stroke="#cedce1"/>
+<text x="310" y="181" font-size="20" fill="#253e49" font-weight="bold" text-anchor="middle">BOS</text>
+<text x="436" y="144" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 1</text>
+<rect x="386" y="154" width="100" height="39" rx="5" fill="#fff" stroke="#cedce1"/>
+<text x="436" y="181" font-size="20" fill="#253e49" font-weight="bold" text-anchor="middle">A</text>
+<text x="562" y="144" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 2</text>
+<rect x="512" y="154" width="100" height="39" rx="5" fill="#e0f2eb" stroke="#29947b"/>
+<text x="562" y="181" font-size="20" fill="#176c58" font-weight="bold" text-anchor="middle">B</text>
+<text x="688" y="144" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 3</text>
+<rect x="638" y="154" width="100" height="39" rx="5" fill="#fff" stroke="#cedce1"/>
+<text x="688" y="181" font-size="20" fill="#253e49" font-weight="bold" text-anchor="middle">C</text>
+<text x="814" y="144" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 4</text>
+<rect x="764" y="154" width="100" height="39" rx="5" fill="#fff" stroke="#cedce1"/>
+<text x="814" y="181" font-size="20" fill="#253e49" font-weight="bold" text-anchor="middle">A</text>
+<text x="940" y="144" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 5</text>
+<rect x="890" y="154" width="100" height="39" rx="5" fill="#e0f2eb" stroke="#29947b"/>
+<text x="940" y="181" font-size="20" fill="#176c58" font-weight="bold" text-anchor="middle">B</text>
+<text x="1066" y="144" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 6</text>
+<rect x="1016" y="154" width="100" height="39" rx="5" fill="#fff" stroke="#cedce1"/>
+<text x="1066" y="181" font-size="20" fill="#253e49" font-weight="bold" text-anchor="middle">C</text>
+<text x="1192" y="144" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 7</text>
+<rect x="1142" y="154" width="100" height="39" rx="5" fill="#fff0d5" stroke="#d29a3a"/>
+<text x="1192" y="181" font-size="20" fill="#865e19" font-weight="bold" text-anchor="middle">A (query)</text>
+<rect x="251" y="204" width="984" height="35" rx="5" fill="#edf7fa" stroke="#d7eaf0"/>
+<text x="44" y="225" font-size="19" fill="#107f96" font-weight="bold" text-anchor="start">C route</text>
+<text x="310" y="225" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">0</text>
+<text x="436" y="225" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">1</text>
+<text x="562" y="225" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">6</text>
+<text x="688" y="225" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">1</text>
+<text x="814" y="225" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">1</text>
+<text x="940" y="225" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">6</text>
+<text x="1066" y="225" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">1</text>
+<text x="1192" y="225" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">1</text>
+<text x="44" y="260" font-size="19" fill="#8058b1" font-weight="normal" text-anchor="start">Other contributions</text>
+<text x="310" y="260" font-size="22" fill="#8058b1" font-weight="normal" text-anchor="middle">0</text>
+<text x="436" y="260" font-size="22" fill="#8058b1" font-weight="normal" text-anchor="middle">0</text>
+<text x="562" y="260" font-size="22" fill="#8058b1" font-weight="normal" text-anchor="middle">0</text>
+<text x="688" y="260" font-size="22" fill="#8058b1" font-weight="normal" text-anchor="middle">0</text>
+<text x="814" y="260" font-size="22" fill="#8058b1" font-weight="normal" text-anchor="middle">0</text>
+<text x="940" y="260" font-size="22" fill="#8058b1" font-weight="normal" text-anchor="middle">0</text>
+<text x="1066" y="260" font-size="22" fill="#8058b1" font-weight="normal" text-anchor="middle">0</text>
+<text x="1192" y="260" font-size="22" fill="#8058b1" font-weight="normal" text-anchor="middle">0</text>
+<text x="44" y="295" font-size="19" fill="#253e49" font-weight="normal" text-anchor="start">Total = C + other</text>
+<text x="310" y="295" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">0</text>
+<text x="436" y="295" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">1</text>
+<text x="562" y="295" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">6</text>
+<text x="688" y="295" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">1</text>
+<text x="814" y="295" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">1</text>
+<text x="940" y="295" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">6</text>
+<text x="1066" y="295" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">1</text>
+<text x="1192" y="295" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">1</text>
+<text x="44" y="330" font-size="19" fill="#526b76" font-weight="normal" text-anchor="start">Attention: softmax</text>
+<text x="310" y="330" font-size="19" fill="#526b76" font-weight="normal" text-anchor="middle">0.12%</text>
+<text x="436" y="330" font-size="19" fill="#526b76" font-weight="normal" text-anchor="middle">0.33%</text>
+<text x="562" y="330" font-size="19" fill="#176c58" font-weight="normal" text-anchor="middle">49.11%</text>
+<text x="688" y="330" font-size="19" fill="#526b76" font-weight="normal" text-anchor="middle">0.33%</text>
+<text x="814" y="330" font-size="19" fill="#526b76" font-weight="normal" text-anchor="middle">0.33%</text>
+<text x="940" y="330" font-size="19" fill="#176c58" font-weight="normal" text-anchor="middle">49.11%</text>
+<text x="1066" y="330" font-size="19" fill="#526b76" font-weight="normal" text-anchor="middle">0.33%</text>
+<text x="1192" y="330" font-size="19" fill="#526b76" font-weight="normal" text-anchor="middle">0.33%</text>
+<text x="44" y="385" font-size="23" fill="#176c58" font-weight="bold" text-anchor="start">Correct attention = B @ 2 + B @ 5 = 98.22%</text>
+<text x="1227" y="385" font-size="18" fill="#607985" font-weight="normal" text-anchor="end">Two correct B positions</text>
+<rect x="24" y="430" width="1232" height="328" rx="5" fill="#fafcfc" stroke="#d5e0e4"/>
+<text x="44" y="460" font-size="23" fill="#253e49" font-weight="bold" text-anchor="start">2  Same C scores; other contributions favor BOS</text>
+<text x="44" y="519" font-size="19" fill="#607985" font-weight="normal" text-anchor="start">Visible sequence</text>
+<text x="310" y="489" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 0</text>
+<rect x="260" y="499" width="100" height="39" rx="5" fill="#fff" stroke="#cedce1"/>
+<text x="310" y="526" font-size="20" fill="#253e49" font-weight="bold" text-anchor="middle">BOS</text>
+<text x="436" y="489" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 1</text>
+<rect x="386" y="499" width="100" height="39" rx="5" fill="#fff" stroke="#cedce1"/>
+<text x="436" y="526" font-size="20" fill="#253e49" font-weight="bold" text-anchor="middle">A</text>
+<text x="562" y="489" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 2</text>
+<rect x="512" y="499" width="100" height="39" rx="5" fill="#e0f2eb" stroke="#29947b"/>
+<text x="562" y="526" font-size="20" fill="#176c58" font-weight="bold" text-anchor="middle">B</text>
+<text x="688" y="489" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 3</text>
+<rect x="638" y="499" width="100" height="39" rx="5" fill="#fff" stroke="#cedce1"/>
+<text x="688" y="526" font-size="20" fill="#253e49" font-weight="bold" text-anchor="middle">C</text>
+<text x="814" y="489" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 4</text>
+<rect x="764" y="499" width="100" height="39" rx="5" fill="#fff" stroke="#cedce1"/>
+<text x="814" y="526" font-size="20" fill="#253e49" font-weight="bold" text-anchor="middle">A</text>
+<text x="940" y="489" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 5</text>
+<rect x="890" y="499" width="100" height="39" rx="5" fill="#e0f2eb" stroke="#29947b"/>
+<text x="940" y="526" font-size="20" fill="#176c58" font-weight="bold" text-anchor="middle">B</text>
+<text x="1066" y="489" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 6</text>
+<rect x="1016" y="499" width="100" height="39" rx="5" fill="#fff" stroke="#cedce1"/>
+<text x="1066" y="526" font-size="20" fill="#253e49" font-weight="bold" text-anchor="middle">C</text>
+<text x="1192" y="489" font-size="16" fill="#607985" font-weight="normal" text-anchor="middle">j = 7</text>
+<rect x="1142" y="499" width="100" height="39" rx="5" fill="#fff0d5" stroke="#d29a3a"/>
+<text x="1192" y="526" font-size="20" fill="#865e19" font-weight="bold" text-anchor="middle">A (query)</text>
+<rect x="251" y="549" width="984" height="35" rx="5" fill="#edf7fa" stroke="#d7eaf0"/>
+<text x="44" y="570" font-size="19" fill="#107f96" font-weight="bold" text-anchor="start">C route</text>
+<text x="310" y="570" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">0</text>
+<text x="436" y="570" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">1</text>
+<text x="562" y="570" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">6</text>
+<text x="688" y="570" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">1</text>
+<text x="814" y="570" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">1</text>
+<text x="940" y="570" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">6</text>
+<text x="1066" y="570" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">1</text>
+<text x="1192" y="570" font-size="22" fill="#107f96" font-weight="bold" text-anchor="middle">1</text>
+<text x="44" y="605" font-size="19" fill="#8058b1" font-weight="normal" text-anchor="start">Other contributions</text>
+<rect x="267" y="581" width="86" height="31" rx="5" fill="#fff0db" stroke="#d99b4f"/>
+<text x="310" y="605" font-size="22" fill="#a66430" font-weight="bold" text-anchor="middle">8</text>
+<text x="436" y="605" font-size="22" fill="#8058b1" font-weight="normal" text-anchor="middle">0</text>
+<text x="562" y="605" font-size="22" fill="#8058b1" font-weight="normal" text-anchor="middle">0</text>
+<text x="688" y="605" font-size="22" fill="#8058b1" font-weight="normal" text-anchor="middle">0</text>
+<text x="814" y="605" font-size="22" fill="#8058b1" font-weight="normal" text-anchor="middle">0</text>
+<text x="940" y="605" font-size="22" fill="#8058b1" font-weight="normal" text-anchor="middle">0</text>
+<text x="1066" y="605" font-size="22" fill="#8058b1" font-weight="normal" text-anchor="middle">0</text>
+<text x="1192" y="605" font-size="22" fill="#8058b1" font-weight="normal" text-anchor="middle">0</text>
+<text x="44" y="640" font-size="19" fill="#253e49" font-weight="normal" text-anchor="start">Total = C + other</text>
+<text x="310" y="640" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">8</text>
+<text x="436" y="640" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">1</text>
+<text x="562" y="640" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">6</text>
+<text x="688" y="640" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">1</text>
+<text x="814" y="640" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">1</text>
+<text x="940" y="640" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">6</text>
+<text x="1066" y="640" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">1</text>
+<text x="1192" y="640" font-size="22" fill="#253e49" font-weight="normal" text-anchor="middle">1</text>
+<text x="44" y="675" font-size="19" fill="#526b76" font-weight="normal" text-anchor="start">Attention: softmax</text>
+<text x="310" y="675" font-size="19" fill="#526b76" font-weight="normal" text-anchor="middle">78.42%</text>
+<text x="436" y="675" font-size="19" fill="#526b76" font-weight="normal" text-anchor="middle">0.07%</text>
+<text x="562" y="675" font-size="19" fill="#176c58" font-weight="normal" text-anchor="middle">10.61%</text>
+<text x="688" y="675" font-size="19" fill="#526b76" font-weight="normal" text-anchor="middle">0.07%</text>
+<text x="814" y="675" font-size="19" fill="#526b76" font-weight="normal" text-anchor="middle">0.07%</text>
+<text x="940" y="675" font-size="19" fill="#176c58" font-weight="normal" text-anchor="middle">10.61%</text>
+<text x="1066" y="675" font-size="19" fill="#526b76" font-weight="normal" text-anchor="middle">0.07%</text>
+<text x="1192" y="675" font-size="19" fill="#526b76" font-weight="normal" text-anchor="middle">0.07%</text>
+<text x="44" y="730" font-size="23" fill="#176c58" font-weight="bold" text-anchor="start">Correct attention = B @ 2 + B @ 5 = 21.23%</text>
+<text x="1227" y="730" font-size="18" fill="#607985" font-weight="normal" text-anchor="end">C scores unchanged</text>
+<text x="640" y="798" font-size="21" fill="#526b76" font-weight="normal" text-anchor="middle">Only the extra score at BOS changes: 0 → 8. Both C-route rows stay identical.</text>
+<text x="640" y="832" font-size="20" fill="#526b76" font-weight="normal" text-anchor="middle">Softmax uses the total score at every visible position, so correct B attention falls.</text>
 </g></svg>
