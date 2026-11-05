@@ -1,0 +1,409 @@
+{
+  "status": "PASS",
+  "checkpoint_step": 143000,
+  "scope": "Original unrotated fixed endpoint routes:70M10;160M29",
+  "queries_per_route": 150000,
+  "sequences_per_route": 2084,
+  "comparisons_per_route": 20849616,
+  "definitions": {
+    "mplus_in_complete_C": "Per comparison:abs(mplus)/(abs(mplus)+abs(mminus)+abs(mA))",
+    "Gplus_in_positive_components": "Per comparison:abs(Gplus)/(abs(Gplus)+abs(bplus)+abs(Tplus)+abs(Rplus))",
+    "Gplus_in_complete_C_expansion": "Per comparison:abs(Gplus)/(abs(Gplus)+abs(bplus)+abs(Tplus)+abs(Rplus)+abs(mminus)+abs(mA))"
+  },
+  "weighting": "First normalize each comparison, then average all20849616 ratios within a route. Model summaries give equal weight to each route.",
+  "zero_denominators": 0,
+  "zero_policy": "Exclude exactly zero denominator;count and report;no epsilon or clipping",
+  "interpretation": "Absolute score-amplitude shares, not squared-energy shares or fractions of native attention;the third is computed directly,not the product of the first two averages.",
+  "Hminus_and_A": "Each remains a whole actual-distance margin component in the complete-C expansion;Rplus is retained.",
+  "source_SHA": {
+    "70m": {
+      "result_SHA": "3d5bb3c73e959150f9edbb50d33ca760a435d32e01a36156b9e856a13cd2a379",
+      "validation_SHA": "6fa03db99e6fc3b3340159593b5811cc449df8f92fceb9d2f2da22b811867534",
+      "analysis_script_SHA": "72d21140eb6771947923c7f24f0d17e6553f7eecba3e0bfc724776b8dd2953fc"
+    },
+    "160m": {
+      "result_SHA": "e0ad16c19a39af9e5b9a12a72a1a0b88d1b34ab46ef07dc674860d2e4d052b42",
+      "validation_SHA": "f00a9f1aacb766b452372e8209c89809d605a38090bdd4867960ba91c40a1d07",
+      "analysis_script_SHA": "72d21140eb6771947923c7f24f0d17e6553f7eecba3e0bfc724776b8dd2953fc"
+    }
+  },
+  "models": [
+    {
+      "id": "70m",
+      "label": "Pythia 70M",
+      "routes": 10,
+      "step": 143000,
+      "route_equal_mean": {
+        "mplus_in_complete_C": 0.7103745932270101,
+        "Gplus_in_positive_components": 0.6217352278600908,
+        "Gplus_in_complete_C_expansion": 0.521194385351271
+      },
+      "route_values": [
+        {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L3H0",
+          "writer": "L2H7",
+          "mplus_in_complete_C": 0.8562154758051708,
+          "Gplus_in_positive_components": 0.6294282509109232,
+          "Gplus_in_complete_C_expansion": 0.5656999728496002
+        },
+        {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L3H1",
+          "writer": "L2H7",
+          "mplus_in_complete_C": 0.91187677299979,
+          "Gplus_in_positive_components": 0.6690834702374713,
+          "Gplus_in_complete_C_expansion": 0.6278393943253753
+        },
+        {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L3H3",
+          "writer": "L2H7",
+          "mplus_in_complete_C": 0.8451181152118502,
+          "Gplus_in_positive_components": 0.6598194818797585,
+          "Gplus_in_complete_C_expansion": 0.5882919761826917
+        },
+        {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L3H5",
+          "writer": "L2H7",
+          "mplus_in_complete_C": 0.7842825535053897,
+          "Gplus_in_positive_components": 0.6584864682245828,
+          "Gplus_in_complete_C_expansion": 0.5596959193336516
+        },
+        {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L3H6",
+          "writer": "L2H7",
+          "mplus_in_complete_C": 0.9050669304442913,
+          "Gplus_in_positive_components": 0.6609845435041143,
+          "Gplus_in_complete_C_expansion": 0.616895106346124
+        },
+        {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L4H0",
+          "writer": "L2H7",
+          "mplus_in_complete_C": 0.5878695548084409,
+          "Gplus_in_positive_components": 0.5982028410150642,
+          "Gplus_in_complete_C_expansion": 0.4695601811404803
+        },
+        {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L4H1",
+          "writer": "L2H7",
+          "mplus_in_complete_C": 0.5026998496507198,
+          "Gplus_in_positive_components": 0.5917305211024387,
+          "Gplus_in_complete_C_expansion": 0.4175800937405903
+        },
+        {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L4H3",
+          "writer": "L2H7",
+          "mplus_in_complete_C": 0.5871629025759338,
+          "Gplus_in_positive_components": 0.58272794967786,
+          "Gplus_in_complete_C_expansion": 0.45775425380677315
+        },
+        {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L4H6",
+          "writer": "L2H7",
+          "mplus_in_complete_C": 0.5228865144801501,
+          "Gplus_in_positive_components": 0.5623624314684621,
+          "Gplus_in_complete_C_expansion": 0.4264228523224181
+        },
+        {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L4H7",
+          "writer": "L2H7",
+          "mplus_in_complete_C": 0.6005672627883647,
+          "Gplus_in_positive_components": 0.6045263205802336,
+          "Gplus_in_complete_C_expansion": 0.4822041034650057
+        }
+      ]
+    },
+    {
+      "id": "160m",
+      "label": "Pythia 160M",
+      "routes": 29,
+      "step": 143000,
+      "route_equal_mean": {
+        "mplus_in_complete_C": 0.6987377932037324,
+        "Gplus_in_positive_components": 0.5447394612603151,
+        "Gplus_in_complete_C_expansion": 0.4534971667506517
+      },
+      "route_values": [
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L4H0",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.9165557361426633,
+          "Gplus_in_positive_components": 0.7890958032881361,
+          "Gplus_in_complete_C_expansion": 0.7373242453463954
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L4H6",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.927917782999682,
+          "Gplus_in_positive_components": 0.8029772638430889,
+          "Gplus_in_complete_C_expansion": 0.75715041905371
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L4H8",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.9013911705821731,
+          "Gplus_in_positive_components": 0.7773758501818426,
+          "Gplus_in_complete_C_expansion": 0.7137924567527333
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L4H10",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.9150674737701396,
+          "Gplus_in_positive_components": 0.7842950165739526,
+          "Gplus_in_complete_C_expansion": 0.7307418115588854
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L4H11",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.912987836728008,
+          "Gplus_in_positive_components": 0.7913043056635175,
+          "Gplus_in_complete_C_expansion": 0.7388454556198278
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L5H2",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.7636680687722859,
+          "Gplus_in_positive_components": 0.7035550893611636,
+          "Gplus_in_complete_C_expansion": 0.5907964371355366
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L5H6",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.8519591695620529,
+          "Gplus_in_positive_components": 0.7453760405037486,
+          "Gplus_in_complete_C_expansion": 0.668927021364479
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L5H6",
+          "writer": "L3H8",
+          "mplus_in_complete_C": 0.5827796839007605,
+          "Gplus_in_positive_components": 0.6782610144932049,
+          "Gplus_in_complete_C_expansion": 0.48210645160206167
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L5H9",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.676380665129799,
+          "Gplus_in_positive_components": 0.7153876678516659,
+          "Gplus_in_complete_C_expansion": 0.5595573510006264
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L5H10",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.7097070941497282,
+          "Gplus_in_positive_components": 0.7077815378898886,
+          "Gplus_in_complete_C_expansion": 0.5637399305573898
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L6H6",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.8321935660263675,
+          "Gplus_in_positive_components": 0.6581316087045057,
+          "Gplus_in_complete_C_expansion": 0.610582082249766
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L8H2",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.6519308083081797,
+          "Gplus_in_positive_components": 0.5813802686627778,
+          "Gplus_in_complete_C_expansion": 0.5163794777820514
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L8H2",
+          "writer": "L7H3",
+          "mplus_in_complete_C": 0.6872287923804444,
+          "Gplus_in_positive_components": 0.4185139353150616,
+          "Gplus_in_complete_C_expansion": 0.31903584522009365
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L8H5",
+          "writer": "L7H3",
+          "mplus_in_complete_C": 0.6610041074772502,
+          "Gplus_in_positive_components": 0.33404226600669173,
+          "Gplus_in_complete_C_expansion": 0.2458408338709376
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L8H8",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.5039918593041938,
+          "Gplus_in_positive_components": 0.5577776935949192,
+          "Gplus_in_complete_C_expansion": 0.450665249592479
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L8H8",
+          "writer": "L7H3",
+          "mplus_in_complete_C": 0.6716297068444134,
+          "Gplus_in_positive_components": 0.3526541581359094,
+          "Gplus_in_complete_C_expansion": 0.26490050108980684
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L8H10",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.6041592942923003,
+          "Gplus_in_positive_components": 0.5888574276310706,
+          "Gplus_in_complete_C_expansion": 0.5068355882188963
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L8H10",
+          "writer": "L7H3",
+          "mplus_in_complete_C": 0.6815944435513964,
+          "Gplus_in_positive_components": 0.3838602045213734,
+          "Gplus_in_complete_C_expansion": 0.295628594951283
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L9H2",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.4928808669406618,
+          "Gplus_in_positive_components": 0.5589431381221867,
+          "Gplus_in_complete_C_expansion": 0.44397266256817736
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L9H2",
+          "writer": "L7H3",
+          "mplus_in_complete_C": 0.689751740304799,
+          "Gplus_in_positive_components": 0.3474816694011366,
+          "Gplus_in_complete_C_expansion": 0.2667603393689709
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L9H6",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.4739276065173536,
+          "Gplus_in_positive_components": 0.564914550533371,
+          "Gplus_in_complete_C_expansion": 0.43535947791207275
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L9H6",
+          "writer": "L7H3",
+          "mplus_in_complete_C": 0.6817993003216773,
+          "Gplus_in_positive_components": 0.35841400029096226,
+          "Gplus_in_complete_C_expansion": 0.27026098790725905
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L9H8",
+          "writer": "L7H3",
+          "mplus_in_complete_C": 0.6283873613477183,
+          "Gplus_in_positive_components": 0.3139076496673358,
+          "Gplus_in_complete_C_expansion": 0.21977609023302944
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L9H9",
+          "writer": "L7H3",
+          "mplus_in_complete_C": 0.6593655578367756,
+          "Gplus_in_positive_components": 0.34428860370349557,
+          "Gplus_in_complete_C_expansion": 0.2513458053788786
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L10H6",
+          "writer": "L7H3",
+          "mplus_in_complete_C": 0.6859142293903152,
+          "Gplus_in_positive_components": 0.3544432678619991,
+          "Gplus_in_complete_C_expansion": 0.27427640599420444
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L10H7",
+          "writer": "L7H3",
+          "mplus_in_complete_C": 0.6595236453940592,
+          "Gplus_in_positive_components": 0.3388748280473557,
+          "Gplus_in_complete_C_expansion": 0.2525055788058836
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L10H8",
+          "writer": "L7H3",
+          "mplus_in_complete_C": 0.6836317366210706,
+          "Gplus_in_positive_components": 0.3396028627351459,
+          "Gplus_in_complete_C_expansion": 0.26146366648324715
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L10H10",
+          "writer": "L3H0",
+          "mplus_in_complete_C": 0.4656377825251593,
+          "Gplus_in_positive_components": 0.5490925800224378,
+          "Gplus_in_complete_C_expansion": 0.4456194490119617
+        },
+        {
+          "scale": "160m",
+          "step": 143000,
+          "reader": "L10H10",
+          "writer": "L7H3",
+          "mplus_in_complete_C": 0.690428915786812,
+          "Gplus_in_positive_components": 0.3568540739411933,
+          "Gplus_in_complete_C_expansion": 0.2772276191382554
+        }
+      ]
+    }
+  ]
+}

@@ -1292,257 +1292,35 @@ Every point is one fixed endpoint-selected route: 10 routes in 70M and 29 routes
 
 <div id="margin-fit-interpretation">
 <p><strong>What the fits tell us about the mechanism.</strong> Among the four summaries, the complete-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> mean margin divided by its own standard deviation, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>μ</mi><msup><mi>m</mi><mi>C</mi></msup></msub><mi>/</mi><msub><mi>σ</mi><msup><mi>m</mi><mi>C</mi></msup></msub></mrow><annotation encoding="application/x-tex">\mu_{m^C}/\sigma_{m^C}</annotation></semantics></math>, gives the strongest overall fit across the checkpoints examined here. Averaging the separately fitted checkpoint <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mn>2</mn></msup><annotation encoding="application/x-tex">R^2</annotation></semantics></math> values gives <strong>0.803 for 70M and 0.795 for 160M</strong>, although the best summary varies at individual checkpoints. The margin <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>m</mi><mi>C</mi></msup><annotation encoding="application/x-tex">m^C</annotation></semantics></math> is itself the correct-minus-incorrect score difference calculated from <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>: it combines <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>G</mi><mi>C</mi></msup><mo>−</mo><msup><mi>b</mi><mi>C</mi></msup><mo>+</mo><msup><mi>T</mi><mi>C</mi></msup><mo>+</mo><msup><mi>R</mi><mi>C</mi></msup></mrow><annotation encoding="application/x-tex">G^C-b^C+T^C+R^C</annotation></semantics></math>, rather than measuring <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mi>C</mi></msup><annotation encoding="application/x-tex">G^C</annotation></semantics></math> alone.</p>
-<p>Given the two issues above, our aim is not to establish a perfectly accurate, one-to-one mapping from a route’s structural summary to its native attention decrease. Instead, the complete-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> trajectories reveal a substantial positive contribution from <strong><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>, the token-center separation advantage</strong>, to the observed mean margins. In a particular comparison, if this separation is not offset by the signed bias, contextual, and position-correction terms, it supports a positive margin and hence a self-matching advantage. The mean-level accounting below quantifies this contribution.</p>
+<p>Given the two issues above, our aim is not to establish a perfectly accurate, one-to-one mapping from a route’s structural summary to its native attention decrease. Instead, the complete-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> trajectories reveal a substantial positive contribution from <strong><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>, the token-center separation advantage</strong>, to the observed mean margins. In a particular comparison, if this separation is not offset by the signed bias, contextual, and position-correction terms, it supports a positive margin and hence a self-matching advantage. The per-comparison amplitude accounting below quantifies this contribution.</p>
 <p>The center-separation term depends entirely on the symmetric part of the common reference <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> matrix. With <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>=</mo><msubsup><mi>μ</mi><mi>i</mi><mi>W</mi></msubsup><mo>−</mo><msubsup><mi>μ</mi><mi>j</mi><mi>W</mi></msubsup></mrow><annotation encoding="application/x-tex">\delta=\mu_i^W-\mu_j^W</annotation></semantics></math>,</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>G</mi><mi>C</mi></msup><mo>=</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><msup><mi>δ</mi><mi>⊤</mi></msup><mfrac><mrow><msub><mi>C</mi><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">f</mi></mrow></msub><mo>+</mo><msubsup><mi>C</mi><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">f</mi></mrow><mi>⊤</mi></msubsup></mrow><mn>2</mn></mfrac><mi>δ</mi><mo>=</mo><msup><mi>G</mi><mo>+</mo></msup><mo>+</mo><msup><mi>G</mi><mo>−</mo></msup><mo>,</mo><mspace width="2.0em"></mspace><msup><mi>G</mi><mo>+</mo></msup><mo>≥</mo><mn>0</mn><mo>,</mo><mspace width="1.0em"></mspace><msup><mi>G</mi><mo>−</mo></msup><mo>≤</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">G^C=\tfrac12\delta^\top\frac{C_{\mathrm{ref}}+C_{\mathrm{ref}}^\top}{2}\delta=G^++G^-,\qquad G^+\geq0,\quad G^-\leq0.</annotation></semantics></math></p>
 <p>Its positive contribution comes from <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math>; the negative symmetric component contributes nonpositively, and the antisymmetric component contributes no <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math> term. This gives a mechanistic interpretation of the high <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math> energy observed in functional routes: positive eigenvalue weights can reward separation between token centers. But <strong>high <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math> energy is not a sufficient condition for a large <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mo>+</mo></msup><annotation encoding="application/x-tex">G^+</annotation></semantics></math></strong>. The positive directions must also align with the relevant token differences.</p>
 <p>The rotation experiments below test this distinction while keeping the positive eigenvalues and energy fixed. Changing the directions substantially reduces <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mo>+</mo></msup><annotation encoding="application/x-tex">G^+</annotation></semantics></math> and is accompanied by decreases in the matching margins and native route-removal Reader scores. These interventions demonstrate that direction at fixed positive energy can change both the separation geometry and induction behavior. Because the rotations also change <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>,</mo><mi>T</mi><mo>,</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">b,T,R</annotation></semantics></math>, they do not isolate the entire behavioral change as an effect of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mo>+</mo></msup><annotation encoding="application/x-tex">G^+</annotation></semantics></math> alone.</p>
 </div>
 
-<div id="trace-the-complete-margin-back-to-positive-geometry">
-<p><strong>Quantitative evidence at the level of means.</strong> The following percentages compare <strong>comparison-weighted, signed raw means on the same finite set of comparisons</strong>. They are ratios of means, not averages of per-comparison ratios. They do not describe every individual comparison, matrix-energy shares, or fractions of attention probability. Opposing contributions can cancel in a mean even when they vary substantially across comparisons.</p>
-<p>Linearity gives <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>m</mi><mi>C</mi></msup><mo>=</mo><msup><mi>m</mi><mo>+</mo></msup><mo>+</mo><msup><mi>m</mi><mo>−</mo></msup><mo>+</mo><msup><mi>m</mi><mi>A</mi></msup></mrow><annotation encoding="application/x-tex">m^C=m^++m^-+m^A</annotation></semantics></math>. At the final 70M checkpoint, step 143,000, <strong><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>μ</mi><msup><mi>m</mi><mo>+</mo></msup></msub><mi>/</mi><msub><mi>μ</mi><msup><mi>m</mi><mi>C</mi></msup></msub></mrow><annotation encoding="application/x-tex">\mu_{m^+}/\mu_{m^C}</annotation></semantics></math> is 97.5–100.0% in L3 and 84.9–99.9% in L4</strong>. Within L3, <strong><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>μ</mi><msup><mi>G</mi><mo>+</mo></msup></msub><mi>/</mi><msub><mi>μ</mi><msup><mi>m</mi><mo>+</mo></msup></msub></mrow><annotation encoding="application/x-tex">\mu_{G^+}/\mu_{m^+}</annotation></semantics></math> is 82.9–91.8%</strong>. In L4 this latter ratio exceeds 100% because the negative mean of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>T</mi><mo>+</mo></msup><annotation encoding="application/x-tex">T^+</annotation></semantics></math> offsets part of the positive center-separation advantage.</p>
-<p>For example, the comparison-weighted means for L3H0 at that checkpoint are</p>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>μ</mi><msup><mi>m</mi><mi>C</mi></msup></msub><mo>=</mo><mn>4.135</mn><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>μ</mi><msup><mi>m</mi><mo>+</mo></msup></msub><mo>=</mo><mn>4.075</mn><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>μ</mi><msup><mi>G</mi><mo>+</mo></msup></msub><mo>=</mo><mn>3.377</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">\mu_{m^C}=4.135,\qquad \mu_{m^+}=4.075,\qquad \mu_{G^+}=3.377.</annotation></semantics></math></p>
-<p>Thus, <strong>in the mean</strong>, the complete margin is close to the positive-component margin, and much of that positive margin is supplied by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mo>+</mo></msup><annotation encoding="application/x-tex">G^+</annotation></semantics></math>. This supports the component interpretation of the averaged structural scores; it does not establish that <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mo>+</mo></msup><annotation encoding="application/x-tex">G^+</annotation></semantics></math> supplies the same proportion of each margin or of the native Reader’s attention decrease. The per-comparison terms <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>,</mo><mi>T</mi><mo>,</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">b,T,R</annotation></semantics></math> and the two issues above remain relevant.</p>
 <p><strong>A separate RMS check for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.</strong> Across the mature 70M checkpoints from step 20,000 onward, the median <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">RMS</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mrow><mi mathvariant="normal">RMS</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{RMS}(R)/\operatorname{RMS}(m)</annotation></semantics></math> is <strong>5.12% for complete <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> and 3.18% for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math></strong>. The largest complete-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> ratio in that set is <strong>34.2%</strong>, at L4H0, step 30,000, so <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> is retained throughout. These are ratios of root-mean-square score terms, not signed-mean shares or matrix-energy fractions.</p>
-<details>
-<summary>
-Endpoint raw means and variation, by head
-</summary>
-<div class="table-scroll">
-<table>
-<thead>
-<tr>
-<th>
-Reader
-</th>
-<th>
-μ(G⁺)
-</th>
-<th>
-μ(m⁺)
-</th>
-<th>
-μ(mC)
-</th>
-<th>
-σ(TC)
-</th>
-<th>
-Reader score (pp)
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">
-L3H0
-</th>
-<td>
-3.377
-</td>
-<td>
-4.075
-</td>
-<td>
-4.135
-</td>
-<td>
-1.633
-</td>
-<td>
-62.790
-</td>
-</tr>
-<tr>
-<th scope="row">
-L3H1
-</th>
-<td>
-7.965
-</td>
-<td>
-9.109
-</td>
-<td>
-9.340
-</td>
-<td>
-3.031
-</td>
-<td>
-85.869
-</td>
-</tr>
-<tr>
-<th scope="row">
-L3H3
-</th>
-<td>
-6.826
-</td>
-<td>
-7.654
-</td>
-<td>
-7.789
-</td>
-<td>
-3.242
-</td>
-<td>
-78.561
-</td>
-</tr>
-<tr>
-<th scope="row">
-L3H5
-</th>
-<td>
-4.847
-</td>
-<td>
-5.279
-</td>
-<td>
-5.280
-</td>
-<td>
-2.727
-</td>
-<td>
-69.345
-</td>
-</tr>
-<tr>
-<th scope="row">
-L3H6
-</th>
-<td>
-6.040
-</td>
-<td>
-7.103
-</td>
-<td>
-7.266
-</td>
-<td>
-2.500
-</td>
-<td>
-73.896
-</td>
-</tr>
-<tr>
-<th scope="row">
-L4H0
-</th>
-<td>
-6.379
-</td>
-<td>
-4.410
-</td>
-<td>
-4.996
-</td>
-<td>
-5.200
-</td>
-<td>
-21.943
-</td>
-</tr>
-<tr>
-<th scope="row">
-L4H1
-</th>
-<td>
-4.538
-</td>
-<td>
-3.305
-</td>
-<td>
-3.894
-</td>
-<td>
-7.479
-</td>
-<td>
-26.128
-</td>
-</tr>
-<tr>
-<th scope="row">
-L4H3
-</th>
-<td>
-7.810
-</td>
-<td>
-5.529
-</td>
-<td>
-5.808
-</td>
-<td>
-5.464
-</td>
-<td>
-12.508
-</td>
-</tr>
-<tr>
-<th scope="row">
-L4H6
-</th>
-<td>
-4.175
-</td>
-<td>
-2.761
-</td>
-<td>
-2.765
-</td>
-<td>
-3.775
-</td>
-<td>
-10.383
-</td>
-</tr>
-<tr>
-<th scope="row">
-L4H7
-</th>
-<td>
-8.054
-</td>
-<td>
-5.315
-</td>
-<td>
-6.168
-</td>
-<td>
-6.534
-</td>
-<td>
-23.921
-</td>
-</tr>
-</tbody>
-</table>
-</div>
+
+<div id="trace-the-complete-margin-back-to-positive-geometry">
+<p><strong>Quantitative evidence from individual comparisons.</strong> At the final checkpoint, step 143,000, we measure three absolute-amplitude shares: how much of the complete margin’s component amplitude comes from <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>m</mi><mo>+</mo></msup><annotation encoding="application/x-tex">m^+</annotation></semantics></math>, how much of the positive margin’s component amplitude comes from <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mo>+</mo></msup><annotation encoding="application/x-tex">G^+</annotation></semantics></math>, and how much of the complete margin’s expanded component amplitude comes from <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mo>+</mo></msup><annotation encoding="application/x-tex">G^+</annotation></semantics></math>.</p>
+<p>Since <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>m</mi><mi>C</mi></msup><mo>=</mo><msup><mi>m</mi><mo>+</mo></msup><mo>+</mo><msup><mi>m</mi><mo>−</mo></msup><mo>+</mo><msup><mi>m</mi><mi>A</mi></msup></mrow><annotation encoding="application/x-tex">m^C=m^++m^-+m^A</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>m</mi><mo>+</mo></msup><mo>=</mo><msup><mi>G</mi><mo>+</mo></msup><mo>−</mo><msup><mi>b</mi><mo>+</mo></msup><mo>+</mo><msup><mi>T</mi><mo>+</mo></msup><mo>+</mo><msup><mi>R</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">m^+=G^+-b^++T^++R^+</annotation></semantics></math>, define</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mo>+</mo></msub><mo>=</mo><mo stretchy="false" form="prefix">|</mo><msup><mi>G</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mo stretchy="false" form="prefix">|</mo><msup><mi>b</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mo stretchy="false" form="prefix">|</mo><msup><mi>T</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mo stretchy="false" form="prefix">|</mo><msup><mi>R</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">|</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">a_+=|G^+|+|b^+|+|T^+|+|R^+|.</annotation></semantics></math></p>
+<p>For each individual correct-minus-incorrect comparison, calculate</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msub><mi>s</mi><mrow><msup><mi>m</mi><mo>+</mo></msup><mo>∣</mo><mi>C</mi></mrow></msub></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">|</mo><msup><mi>m</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">|</mo></mrow><mrow><mo stretchy="false" form="prefix">|</mo><msup><mi>m</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mo stretchy="false" form="prefix">|</mo><msup><mi>m</mi><mo>−</mo></msup><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mo stretchy="false" form="prefix">|</mo><msup><mi>m</mi><mi>A</mi></msup><mo stretchy="false" form="prefix">|</mo></mrow></mfrac><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msub><mi>s</mi><mrow><msup><mi>G</mi><mo>+</mo></msup><mo>∣</mo><mi>+</mi></mrow></msub></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">|</mo><msup><mi>G</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">|</mo></mrow><msub><mi>a</mi><mo>+</mo></msub></mfrac><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msub><mi>s</mi><mrow><msup><mi>G</mi><mo>+</mo></msup><mo>∣</mo><mi>C</mi></mrow></msub></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">|</mo><msup><mi>G</mi><mo>+</mo></msup><mo stretchy="false" form="prefix">|</mo></mrow><mrow><msub><mi>a</mi><mo>+</mo></msub><mo>+</mo><mo stretchy="false" form="prefix">|</mo><msup><mi>m</mi><mo>−</mo></msup><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mo stretchy="false" form="prefix">|</mo><msup><mi>m</mi><mi>A</mi></msup><mo stretchy="false" form="prefix">|</mo></mrow></mfrac><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+s_{m^+\mid C}&amp;=\frac{|m^+|}{|m^+|+|m^-|+|m^A|},\\[4pt]
+s_{G^+\mid +}&amp;=\frac{|G^+|}{a_+},\\[4pt]
+s_{G^+\mid C}&amp;=\frac{|G^+|}{a_++|m^-|+|m^A|}.
+\end{aligned}</annotation></semantics></math></p>
+<p>For each route, we first compute every ratio over all <strong>20,849,616 actual comparisons</strong>, then average those ratios. The model summaries below give each route equal weight: ten routes in 70M and 29 in 160M. These are <strong>averages of per-comparison ratios, not ratios of component means</strong>. The third share is computed directly; it is not the product of the first two averages. We retain <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mo>+</mo></msup><annotation encoding="application/x-tex">R^+</annotation></semantics></math>, and keep <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>m</mi><mo>−</mo></msup><annotation encoding="application/x-tex">m^-</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>m</mi><mi>A</mi></msup><annotation encoding="application/x-tex">m^A</annotation></semantics></math> as whole margin components in this expansion.</p>
+<div class="table-scroll"><table id="endpoint-amplitude-summary"><thead><tr><th>Model (routes)</th><th>m⁺ in complete m<sup>C</sup></th><th>G⁺ in m⁺ components</th><th>G⁺ in expanded m<sup>C</sup></th></tr></thead><tbody><tr><th scope="row">Pythia 70M (10)</th><td>71.04%</td><td>62.17%</td><td>52.12%</td></tr><tr><th scope="row">Pythia 160M (29)</th><td>69.87%</td><td>54.47%</td><td>45.35%</td></tr></tbody></table></div>
+<p>At the model-average level, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>m</mi><mo>+</mo></msup><annotation encoding="application/x-tex">m^+</annotation></semantics></math> accounts for about <strong>70%</strong> of the complete margin’s absolute component amplitude. Within the positive-component decomposition, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>G</mi><mo>+</mo></msup><annotation encoding="application/x-tex">G^+</annotation></semantics></math> accounts for <strong>62.17% in 70M and 54.47% in 160M</strong>. In the complete six-term expansion, its share is <strong>52.12% and 45.35%</strong>, respectively. Thus, the positive component and its center-separation term supply substantial score amplitude, while the remaining terms still matter for the final margin.</p>
+<p>These are <strong>absolute score-amplitude shares</strong>, not squared-energy fractions or fractions of attention probability. Absolute values measure size; the signs and the competition described above determine whether each contribution helps self-matching. No comparison had a zero denominator.</p>
+<details id="amplitude-routes-70m"><summary>Pythia 70M: all 10 routes</summary><div class="table-scroll"><table><thead><tr><th>Reader ← Writer</th><th>m⁺ in complete m<sup>C</sup></th><th>G⁺ in m⁺ components</th><th>G⁺ in expanded m<sup>C</sup></th></tr></thead><tbody><tr><th scope="row">L3H0 ← L2H7</th><td>85.62%</td><td>62.94%</td><td>56.57%</td></tr><tr><th scope="row">L3H1 ← L2H7</th><td>91.19%</td><td>66.91%</td><td>62.78%</td></tr><tr><th scope="row">L3H3 ← L2H7</th><td>84.51%</td><td>65.98%</td><td>58.83%</td></tr><tr><th scope="row">L3H5 ← L2H7</th><td>78.43%</td><td>65.85%</td><td>55.97%</td></tr><tr><th scope="row">L3H6 ← L2H7</th><td>90.51%</td><td>66.10%</td><td>61.69%</td></tr><tr><th scope="row">L4H0 ← L2H7</th><td>58.79%</td><td>59.82%</td><td>46.96%</td></tr><tr><th scope="row">L4H1 ← L2H7</th><td>50.27%</td><td>59.17%</td><td>41.76%</td></tr><tr><th scope="row">L4H3 ← L2H7</th><td>58.72%</td><td>58.27%</td><td>45.78%</td></tr><tr><th scope="row">L4H6 ← L2H7</th><td>52.29%</td><td>56.24%</td><td>42.64%</td></tr><tr><th scope="row">L4H7 ← L2H7</th><td>60.06%</td><td>60.45%</td><td>48.22%</td></tr></tbody></table></div></details><details id="amplitude-routes-160m"><summary>Pythia 160M: all 29 routes</summary><div class="table-scroll"><table><thead><tr><th>Reader ← Writer</th><th>m⁺ in complete m<sup>C</sup></th><th>G⁺ in m⁺ components</th><th>G⁺ in expanded m<sup>C</sup></th></tr></thead><tbody><tr><th scope="row">L4H0 ← L3H0</th><td>91.66%</td><td>78.91%</td><td>73.73%</td></tr><tr><th scope="row">L4H6 ← L3H0</th><td>92.79%</td><td>80.30%</td><td>75.72%</td></tr><tr><th scope="row">L4H8 ← L3H0</th><td>90.14%</td><td>77.74%</td><td>71.38%</td></tr><tr><th scope="row">L4H10 ← L3H0</th><td>91.51%</td><td>78.43%</td><td>73.07%</td></tr><tr><th scope="row">L4H11 ← L3H0</th><td>91.30%</td><td>79.13%</td><td>73.88%</td></tr><tr><th scope="row">L5H2 ← L3H0</th><td>76.37%</td><td>70.36%</td><td>59.08%</td></tr><tr><th scope="row">L5H6 ← L3H0</th><td>85.20%</td><td>74.54%</td><td>66.89%</td></tr><tr><th scope="row">L5H6 ← L3H8</th><td>58.28%</td><td>67.83%</td><td>48.21%</td></tr><tr><th scope="row">L5H9 ← L3H0</th><td>67.64%</td><td>71.54%</td><td>55.96%</td></tr><tr><th scope="row">L5H10 ← L3H0</th><td>70.97%</td><td>70.78%</td><td>56.37%</td></tr><tr><th scope="row">L6H6 ← L3H0</th><td>83.22%</td><td>65.81%</td><td>61.06%</td></tr><tr><th scope="row">L8H2 ← L3H0</th><td>65.19%</td><td>58.14%</td><td>51.64%</td></tr><tr><th scope="row">L8H2 ← L7H3</th><td>68.72%</td><td>41.85%</td><td>31.90%</td></tr><tr><th scope="row">L8H5 ← L7H3</th><td>66.10%</td><td>33.40%</td><td>24.58%</td></tr><tr><th scope="row">L8H8 ← L3H0</th><td>50.40%</td><td>55.78%</td><td>45.07%</td></tr><tr><th scope="row">L8H8 ← L7H3</th><td>67.16%</td><td>35.27%</td><td>26.49%</td></tr><tr><th scope="row">L8H10 ← L3H0</th><td>60.42%</td><td>58.89%</td><td>50.68%</td></tr><tr><th scope="row">L8H10 ← L7H3</th><td>68.16%</td><td>38.39%</td><td>29.56%</td></tr><tr><th scope="row">L9H2 ← L3H0</th><td>49.29%</td><td>55.89%</td><td>44.40%</td></tr><tr><th scope="row">L9H2 ← L7H3</th><td>68.98%</td><td>34.75%</td><td>26.68%</td></tr><tr><th scope="row">L9H6 ← L3H0</th><td>47.39%</td><td>56.49%</td><td>43.54%</td></tr><tr><th scope="row">L9H6 ← L7H3</th><td>68.18%</td><td>35.84%</td><td>27.03%</td></tr><tr><th scope="row">L9H8 ← L7H3</th><td>62.84%</td><td>31.39%</td><td>21.98%</td></tr><tr><th scope="row">L9H9 ← L7H3</th><td>65.94%</td><td>34.43%</td><td>25.13%</td></tr><tr><th scope="row">L10H6 ← L7H3</th><td>68.59%</td><td>35.44%</td><td>27.43%</td></tr><tr><th scope="row">L10H7 ← L7H3</th><td>65.95%</td><td>33.89%</td><td>25.25%</td></tr><tr><th scope="row">L10H8 ← L7H3</th><td>68.36%</td><td>33.96%</td><td>26.15%</td></tr><tr><th scope="row">L10H10 ← L3H0</th><td>46.56%</td><td>54.91%</td><td>44.56%</td></tr><tr><th scope="row">L10H10 ← L7H3</th><td>69.04%</td><td>35.69%</td><td>27.72%</td></tr></tbody></table></div></details>
 <p class="method-note">
-Comparison-weighted score statistics; Reader score is the endpoint native correct-successor attention decrease from single-route removal, in percentage points.
+<a href="data/endpoint-absolute-margin-shares.json" download>Download the three definitions, model summaries and all 39 route values (JSON)</a> · <a href="data/endpoint-absolute-margin-shares.csv" download>Per-route shares (CSV)</a>
 </p>
-</details>
 </div>
+
 
 <h3 id="rotate-h-directions-while-preserving-its-spectrum">3.2.4 Rotate H⁺ directions while preserving its spectrum</h3>
 <p>The positive center term depends on both eigenvalues and directions:</p>
