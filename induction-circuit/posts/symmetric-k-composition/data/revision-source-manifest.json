@@ -100,5 +100,35 @@
       "normalization": "component mean / own population standard deviation",
       "R_retained": true
     }
+  },
+  "section323_revision_20261105": {
+    "two_issues_examples": "margin-attention-two-issues.json",
+    "checkpoint_fits": "checkpoint-margin-fits.json",
+    "fit_cases": 76,
+    "fit_summaries": 304,
+    "scales": [
+      "70m",
+      "160m"
+    ],
+    "checkpoints_per_scale": 19,
+    "metrics": [
+      "mean_G",
+      "G_over_std",
+      "mean_m",
+      "m_over_std"
+    ],
+    "no_new_forward": true,
+    "no_GPU": true
+  },
+  "rotation_models_20261105": {
+    "models": {
+      "70m": 10,
+      "160m": 29
+    },
+    "step": 143000,
+    "sequences_per_route": 2084,
+    "source_160m_acceptance_SHA": "2c57362ed2549e97ae61a29af2b75561729740086aeec7bd6482444549b29e9e",
+    "all29_native_gates_and_cpu_gates_SHA_verified": true,
+    "no_experiment_rerun": true
   }
 }

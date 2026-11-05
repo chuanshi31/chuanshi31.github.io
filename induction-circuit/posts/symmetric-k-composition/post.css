@@ -18,6 +18,10 @@
 .equation-wrap { white-space:normal; }
 .reference { font-family:Arial,Helvetica,sans-serif; font-size:13px; white-space:nowrap; }
 .article-body .method-note { font-family:Arial,Helvetica,sans-serif; color:#5b666d; font-size:13px; line-height:1.7; }
+.fit-metrics { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; max-width:790px; margin:18px auto; font-family:Arial,Helvetica,sans-serif; }
+.fit-metrics div { padding:12px; background:#f2f7f8; border:1px solid #dce6e8; border-radius:4px; }
+.fit-metrics span { display:block; color:#526770; font-size:12px; }
+.fit-metrics strong { display:block; font-size:23px; color:#233d50; font-weight:400; }
 .article-body figure { margin:32px 0 38px; }
 .article-body figure img { display:block; width:100%; height:auto; border:0; }
 .article-body figcaption { font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.7; color:#5b666d; max-width:900px; margin:16px auto 0; }
@@ -146,3 +150,18 @@ code { font-size:.78em; overflow-wrap:anywhere; background:#f5f7f7; padding:2px 
  .trajectory-explorer .normalization-controls button { flex:1 1 150px; }
 }
 .trajectory-explorer #trajectory { min-width:760px; }
+.article-body #checkpoint-fit-explorer { margin:28px 0 42px; padding:22px 20px; border:1px solid #dbe5e8; border-radius:6px; }
+#checkpoint-fit-explorer .explorer-controls { grid-template-columns:1fr 1fr 1fr 2fr; }
+#checkpoint-fit-plot { display:block; width:100%; min-width:760px; }
+.article-body #rotation-explorer { margin:28px 0 42px; padding:22px 20px; border:1px solid #dbe5e8; border-radius:6px; }
+#rotation-explorer .explorer-controls { grid-template-columns:1fr 2fr; }
+.rotation-card[hidden] { display:none; }
+#other-routes-softmax-schematic { overflow-x:auto; }
+#other-routes-softmax-schematic img { min-width:760px; }
+@media(max-width:700px) {
+ .article-body #checkpoint-fit-explorer { padding:16px 12px; }
+ .article-body #rotation-explorer { padding:16px 12px; }
+ #rotation-explorer .explorer-controls { grid-template-columns:1fr; }
+ #checkpoint-fit-explorer .explorer-controls { grid-template-columns:1fr 1fr; }
+ #checkpoint-fit-explorer .explorer-controls label:last-child { grid-column:1 / -1; }
+}

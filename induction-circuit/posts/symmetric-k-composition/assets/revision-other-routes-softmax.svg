@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="530" viewBox="0 0 1120 530" role="img" aria-labelledby="title desc">
+<title id="title">The same route scores can produce different full attention</title>
+<desc id="desc">Illustrative logits, with only two visible positions. In both examples the route gives correct B a score of 5 and wrong BOS a score of 3. Remaining contributions are zero in the first example, so B receives 88.1 percent attention. In the second example the remaining contribution to BOS is 3, so total scores are 5 and 6 and B receives 26.9 percent attention.</desc>
+<rect width="1120" height="530" fill="white"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#253e49">
+<text x="26" y="37" font-size="26" fill="#253e49" font-weight="bold" text-anchor="start">The route stays the same. The competing position gains support.</text>
+<text x="26" y="70" font-size="18" fill="#617783" font-weight="normal" text-anchor="start">Illustration with two visible positions; these are not the measured 160M logits.</text>
+<rect x="26" y="95" width="512" height="381" rx="9" fill="#fafcfc" stroke="#d4e0e4"/>
+<text x="48" y="132" font-size="23" fill="#253e49" font-weight="bold" text-anchor="start">Background 1</text>
+<text x="48" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="start">Position</text>
+<text x="254" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="middle">Route</text>
+<text x="364" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="middle">Remaining</text>
+<text x="470" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="middle">Total</text>
+<text x="48" y="219" font-size="21" fill="#167b65" font-weight="bold" text-anchor="start">Correct B</text>
+<text x="254" y="219" font-size="25" fill="#167b65" font-weight="bold" text-anchor="middle">5</text>
+<text x="308" y="219" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">+</text>
+<text x="364" y="219" font-size="25" fill="#167b65" font-weight="bold" text-anchor="middle">0</text>
+<text x="419" y="219" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">=</text>
+<text x="470" y="219" font-size="25" fill="#167b65" font-weight="bold" text-anchor="middle">5</text>
+<text x="48" y="279" font-size="21" fill="#a66430" font-weight="bold" text-anchor="start">Wrong BOS</text>
+<text x="254" y="279" font-size="25" fill="#a66430" font-weight="bold" text-anchor="middle">3</text>
+<text x="308" y="279" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">+</text>
+<text x="364" y="279" font-size="25" fill="#a66430" font-weight="bold" text-anchor="middle">0</text>
+<text x="419" y="279" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">=</text>
+<text x="470" y="279" font-size="25" fill="#a66430" font-weight="bold" text-anchor="middle">3</text>
+<text x="282" y="326" font-size="18" fill="#526b76" font-weight="normal" text-anchor="middle">Softmax over the two TOTAL scores</text>
+<rect x="48" y="346" width="468" height="35" rx="4" fill="#ddb28d"/>
+<rect x="48" y="346" width="412.2130" height="35" rx="4" fill="#238b75"/>
+<text x="48" y="419" font-size="23" fill="#167b65" font-weight="bold" text-anchor="start">Correct B: 88.1%</text>
+<text x="516" y="419" font-size="20" fill="#a66430" font-weight="normal" text-anchor="end">Wrong BOS: 11.9%</text>
+<text x="48" y="453" font-size="18" fill="#526b76" font-weight="normal" text-anchor="start">Route margin: 2; full margin: 2</text>
+<rect x="582" y="95" width="512" height="381" rx="9" fill="#fafcfc" stroke="#d4e0e4"/>
+<text x="604" y="132" font-size="23" fill="#253e49" font-weight="bold" text-anchor="start">Background 2</text>
+<text x="604" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="start">Position</text>
+<text x="810" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="middle">Route</text>
+<text x="920" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="middle">Remaining</text>
+<text x="1026" y="164" font-size="17" fill="#617783" font-weight="normal" text-anchor="middle">Total</text>
+<text x="604" y="219" font-size="21" fill="#167b65" font-weight="bold" text-anchor="start">Correct B</text>
+<text x="810" y="219" font-size="25" fill="#167b65" font-weight="bold" text-anchor="middle">5</text>
+<text x="864" y="219" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">+</text>
+<text x="920" y="219" font-size="25" fill="#167b65" font-weight="bold" text-anchor="middle">0</text>
+<text x="975" y="219" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">=</text>
+<text x="1026" y="219" font-size="25" fill="#167b65" font-weight="bold" text-anchor="middle">5</text>
+<text x="604" y="279" font-size="21" fill="#a66430" font-weight="bold" text-anchor="start">Wrong BOS</text>
+<text x="810" y="279" font-size="25" fill="#a66430" font-weight="bold" text-anchor="middle">3</text>
+<text x="864" y="279" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">+</text>
+<text x="920" y="279" font-size="25" fill="#a66430" font-weight="bold" text-anchor="middle">3</text>
+<text x="975" y="279" font-size="21" fill="#70848c" font-weight="normal" text-anchor="middle">=</text>
+<text x="1026" y="279" font-size="25" fill="#a66430" font-weight="bold" text-anchor="middle">6</text>
+<text x="838" y="326" font-size="18" fill="#526b76" font-weight="normal" text-anchor="middle">Softmax over the two TOTAL scores</text>
+<rect x="604" y="346" width="468" height="35" rx="4" fill="#ddb28d"/>
+<rect x="604" y="346" width="125.8646" height="35" rx="4" fill="#238b75"/>
+<text x="604" y="419" font-size="23" fill="#167b65" font-weight="bold" text-anchor="start">Correct B: 26.9%</text>
+<text x="1072" y="419" font-size="20" fill="#a66430" font-weight="normal" text-anchor="end">Wrong BOS: 73.1%</text>
+<text x="604" y="453" font-size="18" fill="#526b76" font-weight="normal" text-anchor="start">Route margin: 2; full margin: -1</text>
+<text x="560" y="512" font-size="21" fill="#526b76" font-weight="normal" text-anchor="middle">Attention follows the combined scores, not the isolated route scores alone.</text>
+</g></svg>
