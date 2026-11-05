@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "metric": "Native single-route-removal correct-successor attention decrease (Reader score),percentage points",
+  "definition": "For either original or rotated route:attention with that route retained minus attention after removing the same route",
+  "weighting": "Within each route,equal queries/copies/contexts/tokens as Section1.3;then equal weight per route within scale",
+  "queries_per_route": 150000,
+  "sequences_per_route": 2084,
+  "step": 143000,
+  "negative_scores_preserved": true,
+  "models": [
+    {
+      "scale": "70m",
+      "step": 143000,
+      "routes": 10,
+      "mean_reader_score_before_pp": 46.53441041686472,
+      "mean_reader_score_after_pp": 3.093317066679428,
+      "change_pp": -43.4410933501853
+    },
+    {
+      "scale": "160m",
+      "step": 143000,
+      "routes": 29,
+      "mean_reader_score_before_pp": 31.256481498709782,
+      "mean_reader_score_after_pp": 3.650912127630204,
+      "change_pp": -27.60556937107958
+    }
+  ],
+  "source_SHA": {
+    "70m": {
+      "accepted_result_SHA": "21ca1f0d651b32c3e69794b372bd228322c80820a54fe395fe3b8563b74a3858",
+      "published_route_values_SHA": "4fc0232c8626764b73f1c7e56577abfc0ef5f3397153c5ccbe849828e9a9e8ad",
+      "published_route_values": "rotation-by-head.json"
+    },
+    "160m": {
+      "accepted_result_SHA": "daf5ae0f4caba901b1e910b55634c43157ba3e6c7c272f00b3e1f5b2d12dfca4",
+      "published_route_values_SHA": "0f46c055d63840ed9b9de7c899ed5325f6d7b8a7472bd0b9090e8a315f9f8bdd",
+      "published_route_values": "rotation-by-route-160m.json"
+    }
+  }
+}
