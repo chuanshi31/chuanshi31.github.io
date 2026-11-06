@@ -1,609 +1,279 @@
 {
-  "experiment": "Native parameter rotation, meanfix_v2",
   "models": [
     {
       "id": "70m",
       "label": "Pythia 70M",
-      "data": "native-rotation-70m.json",
+      "data": "rotation-by-head.json",
       "step": 143000,
       "routes": [
         {
           "reader": "L3H0",
           "writer": "L2H7",
           "id": "rotation-L3H0",
-          "asset": "native-rotation-70m-L3H0-L2H7.svg"
+          "asset": "revision-rotation-L3H0.svg"
         },
         {
           "reader": "L3H1",
           "writer": "L2H7",
           "id": "rotation-L3H1",
-          "asset": "native-rotation-70m-L3H1-L2H7.svg"
+          "asset": "revision-rotation-L3H1.svg"
         },
         {
           "reader": "L3H3",
           "writer": "L2H7",
           "id": "rotation-L3H3",
-          "asset": "native-rotation-70m-L3H3-L2H7.svg"
+          "asset": "revision-rotation-L3H3.svg"
         },
         {
           "reader": "L3H5",
           "writer": "L2H7",
           "id": "rotation-L3H5",
-          "asset": "native-rotation-70m-L3H5-L2H7.svg"
+          "asset": "revision-rotation-L3H5.svg"
         },
         {
           "reader": "L3H6",
           "writer": "L2H7",
           "id": "rotation-L3H6",
-          "asset": "native-rotation-70m-L3H6-L2H7.svg"
+          "asset": "revision-rotation-L3H6.svg"
         },
         {
           "reader": "L4H0",
           "writer": "L2H7",
           "id": "rotation-L4H0",
-          "asset": "native-rotation-70m-L4H0-L2H7.svg"
+          "asset": "revision-rotation-L4H0.svg"
         },
         {
           "reader": "L4H1",
           "writer": "L2H7",
           "id": "rotation-L4H1",
-          "asset": "native-rotation-70m-L4H1-L2H7.svg"
+          "asset": "revision-rotation-L4H1.svg"
         },
         {
           "reader": "L4H3",
           "writer": "L2H7",
           "id": "rotation-L4H3",
-          "asset": "native-rotation-70m-L4H3-L2H7.svg"
+          "asset": "revision-rotation-L4H3.svg"
         },
         {
           "reader": "L4H6",
           "writer": "L2H7",
           "id": "rotation-L4H6",
-          "asset": "native-rotation-70m-L4H6-L2H7.svg"
+          "asset": "revision-rotation-L4H6.svg"
         },
         {
           "reader": "L4H7",
           "writer": "L2H7",
           "id": "rotation-L4H7",
-          "asset": "native-rotation-70m-L4H7-L2H7.svg"
+          "asset": "revision-rotation-L4H7.svg"
         }
       ]
     },
     {
       "id": "160m",
       "label": "Pythia 160M",
-      "data": "native-rotation-160m.json",
+      "data": "rotation-by-route-160m.json",
       "step": 143000,
       "routes": [
         {
           "reader": "L4H0",
           "writer": "L3H0",
           "id": "rotation-160m-L4H0-L3H0",
-          "asset": "native-rotation-160m-L4H0-L3H0.svg"
+          "asset": "revision-rotation-160m-L4H0-L3H0.svg"
         },
         {
           "reader": "L4H6",
           "writer": "L3H0",
           "id": "rotation-160m-L4H6-L3H0",
-          "asset": "native-rotation-160m-L4H6-L3H0.svg"
+          "asset": "revision-rotation-160m-L4H6-L3H0.svg"
         },
         {
           "reader": "L4H8",
           "writer": "L3H0",
           "id": "rotation-160m-L4H8-L3H0",
-          "asset": "native-rotation-160m-L4H8-L3H0.svg"
+          "asset": "revision-rotation-160m-L4H8-L3H0.svg"
         },
         {
           "reader": "L4H10",
           "writer": "L3H0",
           "id": "rotation-160m-L4H10-L3H0",
-          "asset": "native-rotation-160m-L4H10-L3H0.svg"
+          "asset": "revision-rotation-160m-L4H10-L3H0.svg"
         },
         {
           "reader": "L4H11",
           "writer": "L3H0",
           "id": "rotation-160m-L4H11-L3H0",
-          "asset": "native-rotation-160m-L4H11-L3H0.svg"
+          "asset": "revision-rotation-160m-L4H11-L3H0.svg"
         },
         {
           "reader": "L5H2",
           "writer": "L3H0",
           "id": "rotation-160m-L5H2-L3H0",
-          "asset": "native-rotation-160m-L5H2-L3H0.svg"
+          "asset": "revision-rotation-160m-L5H2-L3H0.svg"
         },
         {
           "reader": "L5H6",
           "writer": "L3H0",
           "id": "rotation-160m-L5H6-L3H0",
-          "asset": "native-rotation-160m-L5H6-L3H0.svg"
+          "asset": "revision-rotation-160m-L5H6-L3H0.svg"
         },
         {
           "reader": "L5H6",
           "writer": "L3H8",
           "id": "rotation-160m-L5H6-L3H8",
-          "asset": "native-rotation-160m-L5H6-L3H8.svg"
+          "asset": "revision-rotation-160m-L5H6-L3H8.svg"
         },
         {
           "reader": "L5H9",
           "writer": "L3H0",
           "id": "rotation-160m-L5H9-L3H0",
-          "asset": "native-rotation-160m-L5H9-L3H0.svg"
+          "asset": "revision-rotation-160m-L5H9-L3H0.svg"
         },
         {
           "reader": "L5H10",
           "writer": "L3H0",
           "id": "rotation-160m-L5H10-L3H0",
-          "asset": "native-rotation-160m-L5H10-L3H0.svg"
+          "asset": "revision-rotation-160m-L5H10-L3H0.svg"
         },
         {
           "reader": "L6H6",
           "writer": "L3H0",
           "id": "rotation-160m-L6H6-L3H0",
-          "asset": "native-rotation-160m-L6H6-L3H0.svg"
+          "asset": "revision-rotation-160m-L6H6-L3H0.svg"
         },
         {
           "reader": "L8H2",
           "writer": "L3H0",
           "id": "rotation-160m-L8H2-L3H0",
-          "asset": "native-rotation-160m-L8H2-L3H0.svg"
+          "asset": "revision-rotation-160m-L8H2-L3H0.svg"
         },
         {
           "reader": "L8H2",
           "writer": "L7H3",
           "id": "rotation-160m-L8H2-L7H3",
-          "asset": "native-rotation-160m-L8H2-L7H3.svg"
+          "asset": "revision-rotation-160m-L8H2-L7H3.svg"
         },
         {
           "reader": "L8H5",
           "writer": "L7H3",
           "id": "rotation-160m-L8H5-L7H3",
-          "asset": "native-rotation-160m-L8H5-L7H3.svg"
+          "asset": "revision-rotation-160m-L8H5-L7H3.svg"
         },
         {
           "reader": "L8H8",
           "writer": "L3H0",
           "id": "rotation-160m-L8H8-L3H0",
-          "asset": "native-rotation-160m-L8H8-L3H0.svg"
+          "asset": "revision-rotation-160m-L8H8-L3H0.svg"
         },
         {
           "reader": "L8H8",
           "writer": "L7H3",
           "id": "rotation-160m-L8H8-L7H3",
-          "asset": "native-rotation-160m-L8H8-L7H3.svg"
+          "asset": "revision-rotation-160m-L8H8-L7H3.svg"
         },
         {
           "reader": "L8H10",
           "writer": "L3H0",
           "id": "rotation-160m-L8H10-L3H0",
-          "asset": "native-rotation-160m-L8H10-L3H0.svg"
+          "asset": "revision-rotation-160m-L8H10-L3H0.svg"
         },
         {
           "reader": "L8H10",
           "writer": "L7H3",
           "id": "rotation-160m-L8H10-L7H3",
-          "asset": "native-rotation-160m-L8H10-L7H3.svg"
+          "asset": "revision-rotation-160m-L8H10-L7H3.svg"
         },
         {
           "reader": "L9H2",
           "writer": "L3H0",
           "id": "rotation-160m-L9H2-L3H0",
-          "asset": "native-rotation-160m-L9H2-L3H0.svg"
+          "asset": "revision-rotation-160m-L9H2-L3H0.svg"
         },
         {
           "reader": "L9H2",
           "writer": "L7H3",
           "id": "rotation-160m-L9H2-L7H3",
-          "asset": "native-rotation-160m-L9H2-L7H3.svg"
+          "asset": "revision-rotation-160m-L9H2-L7H3.svg"
         },
         {
           "reader": "L9H6",
           "writer": "L3H0",
           "id": "rotation-160m-L9H6-L3H0",
-          "asset": "native-rotation-160m-L9H6-L3H0.svg"
+          "asset": "revision-rotation-160m-L9H6-L3H0.svg"
         },
         {
           "reader": "L9H6",
           "writer": "L7H3",
           "id": "rotation-160m-L9H6-L7H3",
-          "asset": "native-rotation-160m-L9H6-L7H3.svg"
+          "asset": "revision-rotation-160m-L9H6-L7H3.svg"
         },
         {
           "reader": "L9H8",
           "writer": "L7H3",
           "id": "rotation-160m-L9H8-L7H3",
-          "asset": "native-rotation-160m-L9H8-L7H3.svg"
+          "asset": "revision-rotation-160m-L9H8-L7H3.svg"
         },
         {
           "reader": "L9H9",
           "writer": "L7H3",
           "id": "rotation-160m-L9H9-L7H3",
-          "asset": "native-rotation-160m-L9H9-L7H3.svg"
+          "asset": "revision-rotation-160m-L9H9-L7H3.svg"
         },
         {
           "reader": "L10H6",
           "writer": "L7H3",
           "id": "rotation-160m-L10H6-L7H3",
-          "asset": "native-rotation-160m-L10H6-L7H3.svg"
+          "asset": "revision-rotation-160m-L10H6-L7H3.svg"
         },
         {
           "reader": "L10H7",
           "writer": "L7H3",
           "id": "rotation-160m-L10H7-L7H3",
-          "asset": "native-rotation-160m-L10H7-L7H3.svg"
+          "asset": "revision-rotation-160m-L10H7-L7H3.svg"
         },
         {
           "reader": "L10H8",
           "writer": "L7H3",
           "id": "rotation-160m-L10H8-L7H3",
-          "asset": "native-rotation-160m-L10H8-L7H3.svg"
+          "asset": "revision-rotation-160m-L10H8-L7H3.svg"
         },
         {
           "reader": "L10H10",
           "writer": "L3H0",
           "id": "rotation-160m-L10H10-L3H0",
-          "asset": "native-rotation-160m-L10H10-L3H0.svg"
+          "asset": "revision-rotation-160m-L10H10-L3H0.svg"
         },
         {
           "reader": "L10H10",
           "writer": "L7H3",
           "id": "rotation-160m-L10H10-L7H3",
-          "asset": "native-rotation-160m-L10H10-L7H3.svg"
+          "asset": "revision-rotation-160m-L10H10-L7H3.svg"
         }
       ]
     },
     {
       "id": "410m",
       "label": "Pythia 410M",
-      "data": "native-rotation-410m.json",
-      "step": 143000,
-      "routes": [
-        {
-          "reader": "L6H2",
-          "writer": "L5H2",
-          "id": "rotation-410m-L6H2-L5H2",
-          "asset": "native-rotation-410m-L6H2-L5H2.svg"
-        },
-        {
-          "reader": "L6H3",
-          "writer": "L5H2",
-          "id": "rotation-410m-L6H3-L5H2",
-          "asset": "native-rotation-410m-L6H3-L5H2.svg"
-        },
-        {
-          "reader": "L7H1",
-          "writer": "L5H2",
-          "id": "rotation-410m-L7H1-L5H2",
-          "asset": "native-rotation-410m-L7H1-L5H2.svg"
-        },
-        {
-          "reader": "L7H7",
-          "writer": "L4H9",
-          "id": "rotation-410m-L7H7-L4H9",
-          "asset": "native-rotation-410m-L7H7-L4H9.svg"
-        },
-        {
-          "reader": "L7H7",
-          "writer": "L5H2",
-          "id": "rotation-410m-L7H7-L5H2",
-          "asset": "native-rotation-410m-L7H7-L5H2.svg"
-        },
-        {
-          "reader": "L7H7",
-          "writer": "L6H13",
-          "id": "rotation-410m-L7H7-L6H13",
-          "asset": "native-rotation-410m-L7H7-L6H13.svg"
-        },
-        {
-          "reader": "L8H3",
-          "writer": "L5H2",
-          "id": "rotation-410m-L8H3-L5H2",
-          "asset": "native-rotation-410m-L8H3-L5H2.svg"
-        },
-        {
-          "reader": "L8H6",
-          "writer": "L5H2",
-          "id": "rotation-410m-L8H6-L5H2",
-          "asset": "native-rotation-410m-L8H6-L5H2.svg"
-        },
-        {
-          "reader": "L8H6",
-          "writer": "L5H4",
-          "id": "rotation-410m-L8H6-L5H4",
-          "asset": "native-rotation-410m-L8H6-L5H4.svg"
-        },
-        {
-          "reader": "L8H7",
-          "writer": "L5H2",
-          "id": "rotation-410m-L8H7-L5H2",
-          "asset": "native-rotation-410m-L8H7-L5H2.svg"
-        },
-        {
-          "reader": "L9H4",
-          "writer": "L5H2",
-          "id": "rotation-410m-L9H4-L5H2",
-          "asset": "native-rotation-410m-L9H4-L5H2.svg"
-        },
-        {
-          "reader": "L10H0",
-          "writer": "L5H2",
-          "id": "rotation-410m-L10H0-L5H2",
-          "asset": "native-rotation-410m-L10H0-L5H2.svg"
-        },
-        {
-          "reader": "L10H0",
-          "writer": "L9H8",
-          "id": "rotation-410m-L10H0-L9H8",
-          "asset": "native-rotation-410m-L10H0-L9H8.svg"
-        },
-        {
-          "reader": "L10H3",
-          "writer": "L5H2",
-          "id": "rotation-410m-L10H3-L5H2",
-          "asset": "native-rotation-410m-L10H3-L5H2.svg"
-        },
-        {
-          "reader": "L10H3",
-          "writer": "L9H8",
-          "id": "rotation-410m-L10H3-L9H8",
-          "asset": "native-rotation-410m-L10H3-L9H8.svg"
-        },
-        {
-          "reader": "L10H4",
-          "writer": "L5H2",
-          "id": "rotation-410m-L10H4-L5H2",
-          "asset": "native-rotation-410m-L10H4-L5H2.svg"
-        },
-        {
-          "reader": "L10H4",
-          "writer": "L9H8",
-          "id": "rotation-410m-L10H4-L9H8",
-          "asset": "native-rotation-410m-L10H4-L9H8.svg"
-        },
-        {
-          "reader": "L10H9",
-          "writer": "L5H2",
-          "id": "rotation-410m-L10H9-L5H2",
-          "asset": "native-rotation-410m-L10H9-L5H2.svg"
-        },
-        {
-          "reader": "L10H9",
-          "writer": "L9H8",
-          "id": "rotation-410m-L10H9-L9H8",
-          "asset": "native-rotation-410m-L10H9-L9H8.svg"
-        },
-        {
-          "reader": "L10H13",
-          "writer": "L5H2",
-          "id": "rotation-410m-L10H13-L5H2",
-          "asset": "native-rotation-410m-L10H13-L5H2.svg"
-        },
-        {
-          "reader": "L10H13",
-          "writer": "L9H8",
-          "id": "rotation-410m-L10H13-L9H8",
-          "asset": "native-rotation-410m-L10H13-L9H8.svg"
-        },
-        {
-          "reader": "L11H1",
-          "writer": "L5H2",
-          "id": "rotation-410m-L11H1-L5H2",
-          "asset": "native-rotation-410m-L11H1-L5H2.svg"
-        },
-        {
-          "reader": "L11H1",
-          "writer": "L6H13",
-          "id": "rotation-410m-L11H1-L6H13",
-          "asset": "native-rotation-410m-L11H1-L6H13.svg"
-        },
-        {
-          "reader": "L11H1",
-          "writer": "L9H8",
-          "id": "rotation-410m-L11H1-L9H8",
-          "asset": "native-rotation-410m-L11H1-L9H8.svg"
-        },
-        {
-          "reader": "L11H1",
-          "writer": "L10H11",
-          "id": "rotation-410m-L11H1-L10H11",
-          "asset": "native-rotation-410m-L11H1-L10H11.svg"
-        },
-        {
-          "reader": "L11H2",
-          "writer": "L5H2",
-          "id": "rotation-410m-L11H2-L5H2",
-          "asset": "native-rotation-410m-L11H2-L5H2.svg"
-        },
-        {
-          "reader": "L11H2",
-          "writer": "L9H8",
-          "id": "rotation-410m-L11H2-L9H8",
-          "asset": "native-rotation-410m-L11H2-L9H8.svg"
-        },
-        {
-          "reader": "L11H2",
-          "writer": "L10H11",
-          "id": "rotation-410m-L11H2-L10H11",
-          "asset": "native-rotation-410m-L11H2-L10H11.svg"
-        },
-        {
-          "reader": "L11H14",
-          "writer": "L5H2",
-          "id": "rotation-410m-L11H14-L5H2",
-          "asset": "native-rotation-410m-L11H14-L5H2.svg"
-        },
-        {
-          "reader": "L11H14",
-          "writer": "L9H8",
-          "id": "rotation-410m-L11H14-L9H8",
-          "asset": "native-rotation-410m-L11H14-L9H8.svg"
-        },
-        {
-          "reader": "L11H14",
-          "writer": "L10H11",
-          "id": "rotation-410m-L11H14-L10H11",
-          "asset": "native-rotation-410m-L11H14-L10H11.svg"
-        },
-        {
-          "reader": "L12H4",
-          "writer": "L5H2",
-          "id": "rotation-410m-L12H4-L5H2",
-          "asset": "native-rotation-410m-L12H4-L5H2.svg"
-        },
-        {
-          "reader": "L12H4",
-          "writer": "L9H8",
-          "id": "rotation-410m-L12H4-L9H8",
-          "asset": "native-rotation-410m-L12H4-L9H8.svg"
-        },
-        {
-          "reader": "L12H4",
-          "writer": "L10H11",
-          "id": "rotation-410m-L12H4-L10H11",
-          "asset": "native-rotation-410m-L12H4-L10H11.svg"
-        },
-        {
-          "reader": "L12H8",
-          "writer": "L5H2",
-          "id": "rotation-410m-L12H8-L5H2",
-          "asset": "native-rotation-410m-L12H8-L5H2.svg"
-        },
-        {
-          "reader": "L16H3",
-          "writer": "L5H2",
-          "id": "rotation-410m-L16H3-L5H2",
-          "asset": "native-rotation-410m-L16H3-L5H2.svg"
-        }
-      ]
+      "data": null,
+      "routes": []
     },
     {
       "id": "1b",
       "label": "Pythia 1B",
-      "data": "native-rotation-1b.json",
-      "step": 143000,
-      "routes": [
-        {
-          "reader": "L4H1",
-          "writer": "L3H5",
-          "id": "rotation-1b-L4H1-L3H5",
-          "asset": "native-rotation-1b-L4H1-L3H5.svg"
-        },
-        {
-          "reader": "L4H4",
-          "writer": "L3H5",
-          "id": "rotation-1b-L4H4-L3H5",
-          "asset": "native-rotation-1b-L4H4-L3H5.svg"
-        },
-        {
-          "reader": "L4H5",
-          "writer": "L3H5",
-          "id": "rotation-1b-L4H5-L3H5",
-          "asset": "native-rotation-1b-L4H5-L3H5.svg"
-        },
-        {
-          "reader": "L5H6",
-          "writer": "L1H0",
-          "id": "rotation-1b-L5H6-L1H0",
-          "asset": "native-rotation-1b-L5H6-L1H0.svg"
-        },
-        {
-          "reader": "L5H6",
-          "writer": "L3H5",
-          "id": "rotation-1b-L5H6-L3H5",
-          "asset": "native-rotation-1b-L5H6-L3H5.svg"
-        },
-        {
-          "reader": "L5H6",
-          "writer": "L3H6",
-          "id": "rotation-1b-L5H6-L3H6",
-          "asset": "native-rotation-1b-L5H6-L3H6.svg"
-        },
-        {
-          "reader": "L5H7",
-          "writer": "L1H0",
-          "id": "rotation-1b-L5H7-L1H0",
-          "asset": "native-rotation-1b-L5H7-L1H0.svg"
-        },
-        {
-          "reader": "L5H7",
-          "writer": "L3H5",
-          "id": "rotation-1b-L5H7-L3H5",
-          "asset": "native-rotation-1b-L5H7-L3H5.svg"
-        },
-        {
-          "reader": "L5H7",
-          "writer": "L3H6",
-          "id": "rotation-1b-L5H7-L3H6",
-          "asset": "native-rotation-1b-L5H7-L3H6.svg"
-        },
-        {
-          "reader": "L7H1",
-          "writer": "L6H3",
-          "id": "rotation-1b-L7H1-L6H3",
-          "asset": "native-rotation-1b-L7H1-L6H3.svg"
-        },
-        {
-          "reader": "L8H5",
-          "writer": "L3H5",
-          "id": "rotation-1b-L8H5-L3H5",
-          "asset": "native-rotation-1b-L8H5-L3H5.svg"
-        },
-        {
-          "reader": "L8H5",
-          "writer": "L6H3",
-          "id": "rotation-1b-L8H5-L6H3",
-          "asset": "native-rotation-1b-L8H5-L6H3.svg"
-        },
-        {
-          "reader": "L9H1",
-          "writer": "L3H5",
-          "id": "rotation-1b-L9H1-L3H5",
-          "asset": "native-rotation-1b-L9H1-L3H5.svg"
-        },
-        {
-          "reader": "L9H1",
-          "writer": "L6H3",
-          "id": "rotation-1b-L9H1-L6H3",
-          "asset": "native-rotation-1b-L9H1-L6H3.svg"
-        },
-        {
-          "reader": "L10H5",
-          "writer": "L3H5",
-          "id": "rotation-1b-L10H5-L3H5",
-          "asset": "native-rotation-1b-L10H5-L3H5.svg"
-        },
-        {
-          "reader": "L10H5",
-          "writer": "L6H3",
-          "id": "rotation-1b-L10H5-L6H3",
-          "asset": "native-rotation-1b-L10H5-L6H3.svg"
-        },
-        {
-          "reader": "L11H5",
-          "writer": "L3H5",
-          "id": "rotation-1b-L11H5-L3H5",
-          "asset": "native-rotation-1b-L11H5-L3H5.svg"
-        },
-        {
-          "reader": "L11H5",
-          "writer": "L6H3",
-          "id": "rotation-1b-L11H5-L6H3",
-          "asset": "native-rotation-1b-L11H5-L6H3.svg"
-        }
-      ]
+      "data": null,
+      "routes": []
     },
     {
       "id": "1.4b",
       "label": "Pythia 1.4B",
       "data": null,
-      "step": 143000,
       "routes": []
     },
     {
       "id": "2.8b",
       "label": "Pythia 2.8B",
       "data": null,
-      "step": 143000,
       "routes": []
     }
-  ]
+  ],
+  "scope": "Accepted 70M10routes and160M29routes;step143000;same frozen2084sequences per route;one route edited at a time"
 }

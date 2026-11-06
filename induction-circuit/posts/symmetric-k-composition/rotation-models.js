@@ -6,7 +6,7 @@
   const meta = document.getElementById('rotation-metadata');
   const link = document.getElementById('rotation-model-data');
   const cards = [...document.querySelectorAll('[data-rotation-model]')];
-  const response = await fetch('./data/rotation-models.json?v=20261106-native93-v1');
+  const response = await fetch('./data/rotation-models.json?v=20261106-restore-hplus-only');
   if (!response.ok) throw new Error('Rotation model data could not be loaded');
   const data = await response.json();
   const option = (parent,value,label,disabled=false) => {

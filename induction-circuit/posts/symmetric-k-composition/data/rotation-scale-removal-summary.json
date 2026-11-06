@@ -1,50 +1,40 @@
 {
-  "experiment": "Native parameter rotation",
-  "metric": "Mean route-removal Reader score in percentage points; equal weight per route",
+  "status": "PASS",
+  "metric": "Native single-route-removal correct-successor attention decrease (Reader score),percentage points",
+  "definition": "For either original or rotated route:attention with that route retained minus attention after removing the same route",
+  "weighting": "Within each route,equal queries/copies/contexts/tokens as Section1.3;then equal weight per route within scale",
+  "queries_per_route": 150000,
+  "sequences_per_route": 2084,
+  "step": 143000,
+  "negative_scores_preserved": true,
   "models": [
     {
       "scale": "70m",
+      "step": 143000,
       "routes": 10,
-      "Gplus_before": 6.0011421096291375,
-      "Gplus_after": 0.11897485840345426,
-      "score_before_pp": 46.53441041686472,
-      "score_after_pp": 0.012314088893206688,
-      "decreased": 10,
-      "negative_after": 4,
-      "Gplus_drop_percent": 98.01746307236162
+      "mean_reader_score_before_pp": 46.53441041686472,
+      "mean_reader_score_after_pp": 3.093317066679428,
+      "change_pp": -43.4410933501853
     },
     {
       "scale": "160m",
+      "step": 143000,
       "routes": 29,
-      "Gplus_before": 5.7066030563247825,
-      "Gplus_after": 0.07886200737166629,
-      "score_before_pp": 31.25648149870977,
-      "score_after_pp": 0.14512452172384507,
-      "decreased": 29,
-      "negative_after": 4,
-      "Gplus_drop_percent": 98.61805689666356
-    },
-    {
-      "scale": "410m",
-      "routes": 36,
-      "Gplus_before": 2.3488432112609954,
-      "Gplus_after": 0.03269091501739638,
-      "score_before_pp": 34.52707748213138,
-      "score_after_pp": 0.15900466219149914,
-      "decreased": 36,
-      "negative_after": 2,
-      "Gplus_drop_percent": 98.608212124987
-    },
-    {
-      "scale": "1b",
-      "routes": 18,
-      "Gplus_before": 3.1307650242308602,
-      "Gplus_after": 0.03787996685233064,
-      "score_before_pp": 31.740979304611358,
-      "score_after_pp": 0.1328081949565295,
-      "decreased": 18,
-      "negative_after": 6,
-      "Gplus_drop_percent": 98.79007314317252
+      "mean_reader_score_before_pp": 31.256481498709782,
+      "mean_reader_score_after_pp": 3.650912127630204,
+      "change_pp": -27.60556937107958
     }
-  ]
+  ],
+  "source_SHA": {
+    "70m": {
+      "accepted_result_SHA": "21ca1f0d651b32c3e69794b372bd228322c80820a54fe395fe3b8563b74a3858",
+      "published_route_values_SHA": "4fc0232c8626764b73f1c7e56577abfc0ef5f3397153c5ccbe849828e9a9e8ad",
+      "published_route_values": "rotation-by-head.json"
+    },
+    "160m": {
+      "accepted_result_SHA": "daf5ae0f4caba901b1e910b55634c43157ba3e6c7c272f00b3e1f5b2d12dfca4",
+      "published_route_values_SHA": "0f46c055d63840ed9b9de7c899ed5325f6d7b8a7472bd0b9090e8a315f9f8bdd",
+      "published_route_values": "rotation-by-route-160m.json"
+    }
+  }
 }
