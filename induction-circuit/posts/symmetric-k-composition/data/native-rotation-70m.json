@@ -1,0 +1,2128 @@
+{
+  "status": "COMPLETE_VERIFIED",
+  "experiment": "Native mean-preserving whole-C parameter rotation",
+  "scale": "70m",
+  "step": 143000,
+  "rows": [
+    {
+      "status": "COMPLETE",
+      "scale": "70m",
+      "route": {
+        "reader": "L3H0",
+        "writer": "L2H7",
+        "reader_layer": 3,
+        "reader_head": 0,
+        "writer_layer": 2,
+        "writer_head": 7,
+        "endpoint_pair": {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L3H0",
+          "writer": "L2H7",
+          "writer_layer": 2,
+          "writer_head": 7,
+          "index": 23,
+          "selection_delta": 0.6278974078974909,
+          "previous_attention": 0.9213199646648227
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 62.789740912113814,
+      "new_route_score_pp": 0.0035453490774010185,
+      "route_score_change_pp": -62.786195563036415,
+      "old_attention": 0.713866078201403,
+      "new_attention": 0.020494833232872798,
+      "new_removed_attention": 0.02045937974209879,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 3.1753642294847446,
+            "new_mean": 0.0484265573228764,
+            "old_std": 1.200036715079005,
+            "new_std": 0.02287478116697738,
+            "old_mean_abs": 3.1753642294847446,
+            "new_mean_abs": 0.048435198005461096,
+            "new_positive_fraction": 0.9989471268919293,
+            "new_query_equal_mean": 0.04821060739416712
+          },
+          "b": {
+            "old_mean": -0.05402560239481169,
+            "new_mean": -0.0007533492057405159,
+            "old_std": 1.0226454929154396,
+            "new_std": 0.02165182955114957,
+            "old_mean_abs": 0.7871278725542823,
+            "new_mean_abs": 0.016375955937202046,
+            "new_positive_fraction": 0.4851876408659037,
+            "new_query_equal_mean": -0.0009554719900388325
+          },
+          "T": {
+            "old_mean": 0.8820008881754283,
+            "new_mean": 0.04057062010342343,
+            "old_std": 1.633023341419753,
+            "new_std": 0.3041514006335527,
+            "old_mean_abs": 1.457707546066313,
+            "new_mean_abs": 0.23599751918628645,
+            "new_positive_fraction": 0.5468773621538162,
+            "new_query_equal_mean": 0.03825080780761678
+          },
+          "R": {
+            "old_mean": 0.023819566602894447,
+            "new_mean": -0.000447543138890319,
+            "old_std": 0.14716347919871492,
+            "new_std": 0.030900618172648258,
+            "old_mean_abs": 0.1155833722412011,
+            "new_mean_abs": 0.02316008448517211,
+            "new_positive_fraction": 0.49256034259815623,
+            "new_query_equal_mean": -0.0005063381036433184
+          },
+          "m": {
+            "old_mean": 4.135210286659396,
+            "new_mean": 0.08930298349314982,
+            "old_std": 2.0894849211776516,
+            "new_std": 0.304752201523147,
+            "old_mean_abs": 4.140182288589169,
+            "new_mean_abs": 0.244004530988293,
+            "new_positive_fraction": 0.6136482321784728,
+            "new_query_equal_mean": 0.08691054908817955
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 3.3765289418574023,
+            "new_mean": 0.07437310177039504,
+            "old_std": 1.2307551267690582,
+            "new_std": 0.02692393240900166,
+            "old_mean_abs": 3.3765289418574023,
+            "new_mean_abs": 0.07437310177039504,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.07403902173575358
+          },
+          "b": {
+            "old_mean": -0.05121740767404575,
+            "new_mean": -0.001156803258828156,
+            "old_std": 0.9764438182208282,
+            "new_std": 0.024299018005256367,
+            "old_mean_abs": 0.752874922191037,
+            "new_mean_abs": 0.018090923205803577,
+            "new_positive_fraction": 0.4845620178328464,
+            "new_query_equal_mean": -0.0014645604997024304
+          },
+          "T": {
+            "old_mean": 0.6429291040846613,
+            "new_mean": 0.04997927024872003,
+            "old_std": 1.517353529085815,
+            "new_std": 0.27840451976340397,
+            "old_mean_abs": 1.2915565289366289,
+            "new_mean_abs": 0.21609570852292403,
+            "new_positive_fraction": 0.5625387057488253,
+            "new_query_equal_mean": 0.04891887722589673
+          },
+          "R": {
+            "old_mean": 0.004147756541442522,
+            "new_mean": -0.0004729385525105681,
+            "old_std": 0.08477165233385875,
+            "new_std": 0.020618003672907857,
+            "old_mean_abs": 0.06562541200374118,
+            "new_mean_abs": 0.015878262636140346,
+            "new_positive_fraction": 0.49254077389243045,
+            "new_query_equal_mean": -0.00042728862516192343
+          },
+          "m": {
+            "old_mean": 4.074823210156579,
+            "new_mean": 0.12503623672543265,
+            "old_std": 1.9552382582742405,
+            "new_std": 0.2795669636513012,
+            "old_mean_abs": 4.076583367723293,
+            "new_mean_abs": 0.234010725862055,
+            "new_positive_fraction": 0.674291459372681,
+            "new_query_equal_mean": 0.12399517083619065
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 0,
+        "route": {
+          "reader": "L3H0",
+          "writer": "L2H7",
+          "reader_layer": 3,
+          "reader_head": 0,
+          "writer_layer": 2,
+          "writer_head": 7,
+          "endpoint_pair": {
+            "scale": "70m",
+            "step": 143000,
+            "reader": "L3H0",
+            "writer": "L2H7",
+            "writer_layer": 2,
+            "writer_head": 7,
+            "index": 23,
+            "selection_delta": 0.6278974078974909,
+            "previous_attention": 0.9213199646648227
+          }
+        },
+        "parameters_SHA": "a911747cb397678ec2d4c8f31399c39a31db26dfbfa0703aff879acac04f6685",
+        "old_Gplus": 3.3765289418567948,
+        "new_Gplus": 0.07437310177039486,
+        "minimum_Gplus": 0.07437310177039266,
+        "Gplus_retained": 0.02202649615954311,
+        "factor_Q_relative_error": 1.3877451587447618e-15,
+        "factor_KOV_relative_error": 1.5057745840192418e-15,
+        "affine_Q_error": 1.1102230246251565e-16,
+        "affine_V_error": 2.7755575615628914e-17,
+        "frame_isometry_error": 1.9984014443252818e-15,
+        "actual_weight_matrix_error_seven_distances": 2.2213720671489814e-15,
+        "stock_native_attention_overlap_error": 7.521589517889282e-09,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 128,
+          "fixed_mean_component_norm": 0.03195494706057175,
+          "mean_component_max_change": 4.7704895589362195e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 8.815708516453364e-16,
+        "original_head_width": 64,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 32.92474858959648,
+        "new_raw_Q_norm": 36.79019067349764,
+        "old_raw_V_norm": 4.908125092712705,
+        "new_raw_V_norm": 4.888515326609026
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 1.7763568394002505e-14,
+        "Writer_previous_attention_unchanged_max_error": 1.9984014443252818e-15,
+        "changed_Q_native_reconstruction_max_error": 7.105427357601002e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "70m",
+      "route": {
+        "reader": "L3H1",
+        "writer": "L2H7",
+        "reader_layer": 3,
+        "reader_head": 1,
+        "writer_layer": 2,
+        "writer_head": 7,
+        "endpoint_pair": {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L3H1",
+          "writer": "L2H7",
+          "writer_layer": 2,
+          "writer_head": 7,
+          "index": 23,
+          "selection_delta": 0.8586932419245877,
+          "previous_attention": 0.9213199646648227
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 85.86932431953107,
+      "new_route_score_pp": 0.325421876968711,
+      "route_score_change_pp": -85.54390244256237,
+      "old_attention": 0.8875792157514764,
+      "new_attention": 0.0249431769472215,
+      "new_removed_attention": 0.02168895817753439,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 7.81414675732115,
+            "new_mean": 0.10469596634822212,
+            "old_std": 2.5871530426937657,
+            "new_std": 0.044445139045911415,
+            "old_mean_abs": 7.81414675732115,
+            "new_mean_abs": 0.10469596634822212,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.10422877982634962
+          },
+          "b": {
+            "old_mean": -0.113602132072421,
+            "new_mean": -0.0016409914207546543,
+            "old_std": 2.152077735391407,
+            "new_std": 0.040334798105421905,
+            "old_mean_abs": 1.6387433348074643,
+            "new_mean_abs": 0.0302032013423357,
+            "new_positive_fraction": 0.48481410880660825,
+            "new_query_equal_mean": -0.002077906998129993
+          },
+          "T": {
+            "old_mean": 1.3450792752970617,
+            "new_mean": 0.07968025412371696,
+            "old_std": 3.03126669389735,
+            "new_std": 0.5536027777044381,
+            "old_mean_abs": 2.655150891744258,
+            "new_mean_abs": 0.42979053485561286,
+            "new_positive_fraction": 0.5505776221490123,
+            "new_query_equal_mean": 0.07812906241795307
+          },
+          "R": {
+            "old_mean": 0.06758596419797844,
+            "new_mean": 0.0010605532646229265,
+            "old_std": 0.23071887820470482,
+            "new_std": 0.04412786651761061,
+            "old_mean_abs": 0.18365069699696235,
+            "new_mean_abs": 0.032710690670159255,
+            "new_positive_fraction": 0.50577833184074,
+            "new_query_equal_mean": 0.000839769367500693
+          },
+          "m": {
+            "old_mean": 9.34041412889759,
+            "new_mean": 0.18707776515731664,
+            "old_std": 4.209144656075353,
+            "new_std": 0.5537221827676914,
+            "old_mean_abs": 9.341460767453343,
+            "new_mean_abs": 0.44868674479131776,
+            "new_positive_fraction": 0.6313496613079109,
+            "new_query_equal_mean": 0.18527551860993324
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 7.965376795497704,
+            "new_mean": 0.127331297781403,
+            "old_std": 2.602137111996149,
+            "new_std": 0.048353576396874716,
+            "old_mean_abs": 7.965376795497704,
+            "new_mean_abs": 0.127331297781403,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.12676116615344368
+          },
+          "b": {
+            "old_mean": -0.11115086029513388,
+            "new_mean": -0.0019822868325492095,
+            "old_std": 2.1060445090966855,
+            "new_std": 0.04306708551918862,
+            "old_mean_abs": 1.606034361373208,
+            "new_mean_abs": 0.03202337112350054,
+            "new_positive_fraction": 0.48461324179783455,
+            "new_query_equal_mean": -0.0025103044834213135
+          },
+          "T": {
+            "old_mean": 0.9870810744187694,
+            "new_mean": 0.08718737557435235,
+            "old_std": 2.9164326603945465,
+            "new_std": 0.5255381853094608,
+            "old_mean_abs": 2.443820038526784,
+            "new_mean_abs": 0.40750791767978134,
+            "new_positive_fraction": 0.5576172721838139,
+            "new_query_equal_mean": 0.08582649915362124
+          },
+          "R": {
+            "old_mean": 0.044895322271294065,
+            "new_mean": 0.00047486476304431136,
+            "old_std": 0.1295996381714356,
+            "new_std": 0.028724868034333318,
+            "old_mean_abs": 0.10482655304114388,
+            "new_mean_abs": 0.021522773587689416,
+            "new_positive_fraction": 0.5102448889226545,
+            "new_query_equal_mean": 0.0005502678517837445
+          },
+          "m": {
+            "old_mean": 9.108504052490176,
+            "new_mean": 0.21697582495134937,
+            "old_std": 4.131801710651086,
+            "new_std": 0.5279933687684544,
+            "old_mean_abs": 9.109535298445374,
+            "new_mean_abs": 0.43644126523369914,
+            "new_positive_fraction": 0.6601361387183342,
+            "new_query_equal_mean": 0.21564823764226945
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 1,
+        "route": {
+          "reader": "L3H1",
+          "writer": "L2H7",
+          "reader_layer": 3,
+          "reader_head": 1,
+          "writer_layer": 2,
+          "writer_head": 7,
+          "endpoint_pair": {
+            "scale": "70m",
+            "step": 143000,
+            "reader": "L3H1",
+            "writer": "L2H7",
+            "writer_layer": 2,
+            "writer_head": 7,
+            "index": 23,
+            "selection_delta": 0.8586932419245877,
+            "previous_attention": 0.9213199646648227
+          }
+        },
+        "parameters_SHA": "d69870a97112509d64f05ed9b0163efa3df443a66f9dea4bd1c9aefb81f7f03f",
+        "old_Gplus": 7.9653767955039765,
+        "new_Gplus": 0.1273312977814028,
+        "minimum_Gplus": 0.12733129778139834,
+        "Gplus_retained": 0.015985596293859497,
+        "factor_Q_relative_error": 1.4617918559880227e-15,
+        "factor_KOV_relative_error": 1.4651165687370734e-15,
+        "affine_Q_error": 5.551115123125783e-17,
+        "affine_V_error": 2.7755575615628914e-17,
+        "frame_isometry_error": 1.5543122344752192e-15,
+        "actual_weight_matrix_error_seven_distances": 2.178019362812479e-15,
+        "stock_native_attention_overlap_error": 1.0652346782435984e-09,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 128,
+          "fixed_mean_component_norm": 0.0300555283634358,
+          "mean_component_max_change": 5.204170427930421e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 8.530931134273868e-16,
+        "original_head_width": 64,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 39.06042423929921,
+        "new_raw_Q_norm": 43.55917668991953,
+        "old_raw_V_norm": 4.908125092712705,
+        "new_raw_V_norm": 4.888183307352394
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 1.7763568394002505e-14,
+        "Writer_previous_attention_unchanged_max_error": 1.9984014443252818e-15,
+        "changed_Q_native_reconstruction_max_error": 1.1368683772161603e-13,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "70m",
+      "route": {
+        "reader": "L3H3",
+        "writer": "L2H7",
+        "reader_layer": 3,
+        "reader_head": 3,
+        "writer_layer": 2,
+        "writer_head": 7,
+        "endpoint_pair": {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L3H3",
+          "writer": "L2H7",
+          "writer_layer": 2,
+          "writer_head": 7,
+          "index": 23,
+          "selection_delta": 0.7856054273677725,
+          "previous_attention": 0.9213199646648227
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 78.56054288379286,
+      "new_route_score_pp": -0.02810255460467427,
+      "route_score_change_pp": -78.58864543839753,
+      "old_attention": 0.8545643582907338,
+      "new_attention": 0.017109683522707086,
+      "new_removed_attention": 0.01739070906875383,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 6.612060910621253,
+            "new_mean": 0.08249410017239699,
+            "old_std": 2.3057086708684595,
+            "new_std": 0.037515715767781614,
+            "old_mean_abs": 6.612060910621253,
+            "new_mean_abs": 0.08252006674698187,
+            "new_positive_fraction": 0.9987920161215439,
+            "new_query_equal_mean": 0.08212965179434045
+          },
+          "b": {
+            "old_mean": -0.101021459813271,
+            "new_mean": -0.0012803457595840552,
+            "old_std": 2.518201637095894,
+            "new_std": 0.03426493524362737,
+            "old_mean_abs": 1.8852643856270404,
+            "new_mean_abs": 0.02579269856810907,
+            "new_positive_fraction": 0.4850131532398486,
+            "new_query_equal_mean": -0.0016246505888342893
+          },
+          "T": {
+            "old_mean": 1.056424055762455,
+            "new_mean": 0.06988676613602025,
+            "old_std": 3.242349697820938,
+            "new_std": 0.4929661854479026,
+            "old_mean_abs": 2.672749352374917,
+            "new_mean_abs": 0.38157162779968307,
+            "new_positive_fraction": 0.5502970414419144,
+            "new_query_equal_mean": 0.06802563370990998
+          },
+          "R": {
+            "old_mean": 0.019253878639677622,
+            "new_mean": 0.00039358732731189713,
+            "old_std": 0.2276428748889264,
+            "new_std": 0.033985310509055795,
+            "old_mean_abs": 0.1769027868281708,
+            "new_mean_abs": 0.02506762319742543,
+            "new_positive_fraction": 0.506531199423529,
+            "new_query_equal_mean": 0.00032703860520647216
+          },
+          "m": {
+            "old_mean": 7.788760304841256,
+            "new_mean": 0.15405479939531325,
+            "old_std": 4.069254808100026,
+            "new_std": 0.49811308309494634,
+            "old_mean_abs": 7.811382207549417,
+            "new_mean_abs": 0.3991777530502051,
+            "new_positive_fraction": 0.6211515358364393,
+            "new_query_equal_mean": 0.15210697469829154
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 6.825596690994574,
+            "new_mean": 0.10952628888178022,
+            "old_std": 2.316230781182362,
+            "new_std": 0.0412436561866661,
+            "old_mean_abs": 6.825596690994574,
+            "new_mean_abs": 0.10952628888178022,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.10903612939789288
+          },
+          "b": {
+            "old_mean": -0.09198771264598964,
+            "new_mean": -0.0017043341435858264,
+            "old_std": 2.018819263278278,
+            "new_std": 0.03684121118675824,
+            "old_mean_abs": 1.5076453750016636,
+            "new_mean_abs": 0.027395470125044244,
+            "new_positive_fraction": 0.48458446428941426,
+            "new_query_equal_mean": -0.0021587383362388947
+          },
+          "T": {
+            "old_mean": 0.7391506134602314,
+            "new_mean": 0.0743599327097424,
+            "old_std": 2.6375386127259417,
+            "new_std": 0.4446105319958503,
+            "old_mean_abs": 2.1670050516189714,
+            "new_mean_abs": 0.34455589092606814,
+            "new_positive_fraction": 0.5578887879757594,
+            "new_query_equal_mean": 0.07314102434402589
+          },
+          "R": {
+            "old_mean": -0.002832146347841788,
+            "new_mean": 0.0003144110838622249,
+            "old_std": 0.11587815349655856,
+            "new_std": 0.01999488764592397,
+            "old_mean_abs": 0.08949691979664948,
+            "new_mean_abs": 0.014950805824753647,
+            "new_positive_fraction": 0.5050104519910582,
+            "new_query_equal_mean": 0.00013946465178068027
+          },
+          "m": {
+            "old_mean": 7.653902870761393,
+            "new_mean": 0.1859049668189713,
+            "old_std": 3.59107427678032,
+            "new_std": 0.4488754210436783,
+            "old_mean_abs": 7.655502620902274,
+            "new_mean_abs": 0.371206174770142,
+            "new_positive_fraction": 0.6612611954100258,
+            "new_query_equal_mean": 0.18447535672993856
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 2,
+        "route": {
+          "reader": "L3H3",
+          "writer": "L2H7",
+          "reader_layer": 3,
+          "reader_head": 3,
+          "writer_layer": 2,
+          "writer_head": 7,
+          "endpoint_pair": {
+            "scale": "70m",
+            "step": 143000,
+            "reader": "L3H3",
+            "writer": "L2H7",
+            "writer_layer": 2,
+            "writer_head": 7,
+            "index": 23,
+            "selection_delta": 0.7856054273677725,
+            "previous_attention": 0.9213199646648227
+          }
+        },
+        "parameters_SHA": "53cb5d9ecbd2ef83221395aabd3d07ee0edb55b9da34cd417372314321d21547",
+        "old_Gplus": 6.825596691003878,
+        "new_Gplus": 0.10952628888178034,
+        "minimum_Gplus": 0.10952628888177825,
+        "Gplus_retained": 0.016046405001651467,
+        "factor_Q_relative_error": 1.2975741212667707e-15,
+        "factor_KOV_relative_error": 1.4978510912224958e-15,
+        "affine_Q_error": 3.552713678800501e-15,
+        "affine_V_error": 2.7755575615628914e-17,
+        "frame_isometry_error": 2.1094237467877974e-15,
+        "actual_weight_matrix_error_seven_distances": 3.0396687079979177e-15,
+        "stock_native_attention_overlap_error": 3.745961263401654e-09,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 128,
+          "fixed_mean_component_norm": 0.03825868146973215,
+          "mean_component_max_change": 5.204170427930421e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 8.388512555989901e-16,
+        "original_head_width": 64,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 74.64305880454616,
+        "new_raw_Q_norm": 87.89684267718877,
+        "old_raw_V_norm": 4.908125092712705,
+        "new_raw_V_norm": 4.884557325058858
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 1.7763568394002505e-14,
+        "Writer_previous_attention_unchanged_max_error": 1.9984014443252818e-15,
+        "changed_Q_native_reconstruction_max_error": 1.9184653865522705e-13,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "70m",
+      "route": {
+        "reader": "L3H5",
+        "writer": "L2H7",
+        "reader_layer": 3,
+        "reader_head": 5,
+        "writer_layer": 2,
+        "writer_head": 7,
+        "endpoint_pair": {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L3H5",
+          "writer": "L2H7",
+          "writer_layer": 2,
+          "writer_head": 7,
+          "index": 23,
+          "selection_delta": 0.6934545951321992,
+          "previous_attention": 0.9213199646648227
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 69.34545957717246,
+      "new_route_score_pp": 0.027080689782808802,
+      "route_score_change_pp": -69.31837888738966,
+      "old_attention": 0.7410015551663036,
+      "new_attention": 0.018217877702097703,
+      "new_removed_attention": 0.017947070804269615,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 4.63701787686971,
+            "new_mean": 0.05369806563472568,
+            "old_std": 1.6962166674578234,
+            "new_std": 0.027448079709404667,
+            "old_mean_abs": 4.637020411438795,
+            "new_mean_abs": 0.053955383456124176,
+            "new_positive_fraction": 0.9898543934813955,
+            "new_query_equal_mean": 0.05345809212349699
+          },
+          "b": {
+            "old_mean": -0.06996715980996288,
+            "new_mean": -0.0008480565177873247,
+            "old_std": 2.316974935233031,
+            "new_std": 0.025565283964771278,
+            "old_mean_abs": 1.715470513438687,
+            "new_mean_abs": 0.01929098239522907,
+            "new_positive_fraction": 0.4852871151200099,
+            "new_query_equal_mean": -0.0010725665713816957
+          },
+          "T": {
+            "old_mean": 0.5813161948203747,
+            "new_mean": 0.04837883632313417,
+            "old_std": 2.7273270632621354,
+            "new_std": 0.3816354156424264,
+            "old_mean_abs": 2.1057122783064344,
+            "new_mean_abs": 0.2946118488255416,
+            "new_positive_fraction": 0.5442786092559211,
+            "new_query_equal_mean": 0.04720628135013005
+          },
+          "R": {
+            "old_mean": -0.007923083276374294,
+            "new_mean": 0.0001594330006338097,
+            "old_std": 0.11512756214801034,
+            "new_std": 0.02566646569013174,
+            "old_mean_abs": 0.08722373648353289,
+            "new_mean_abs": 0.01907272339585307,
+            "new_positive_fraction": 0.5004314228137343,
+            "new_query_equal_mean": 4.370938942398096e-05
+          },
+          "m": {
+            "old_mean": 5.280378148222399,
+            "new_mean": 0.10308439147628108,
+            "old_std": 3.362499840920352,
+            "new_std": 0.3840859545653019,
+            "old_mean_abs": 5.374378282705294,
+            "new_mean_abs": 0.3043320317478613,
+            "new_positive_fraction": 0.6049914300579924,
+            "new_query_equal_mean": 0.10178064943443269
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 4.846965527375447,
+            "new_mean": 0.08104475675759691,
+            "old_std": 1.6995917519432722,
+            "new_std": 0.030009275452347817,
+            "old_mean_abs": 4.846965527375447,
+            "new_mean_abs": 0.08104475675759691,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.0806816519905996
+          },
+          "b": {
+            "old_mean": -0.06629682916551687,
+            "new_mean": -0.0012626443144854351,
+            "old_std": 1.5824517141340655,
+            "new_std": 0.026989837988661846,
+            "old_mean_abs": 1.1472941570173312,
+            "new_mean_abs": 0.02007517406986482,
+            "new_positive_fraction": 0.484582641713881,
+            "new_query_equal_mean": -0.0015990184547621312
+          },
+          "T": {
+            "old_mean": 0.3743492748314604,
+            "new_mean": 0.0552655169379646,
+            "old_std": 1.9541170740131777,
+            "new_std": 0.32659521225929444,
+            "old_mean_abs": 1.5485523158370507,
+            "new_mean_abs": 0.25304145666560834,
+            "new_positive_fraction": 0.5584566161794059,
+            "new_query_equal_mean": 0.054116944234930305
+          },
+          "R": {
+            "old_mean": -0.008811934176812154,
+            "new_mean": -0.0004824479415954705,
+            "old_std": 0.06966650119096936,
+            "new_std": 0.017621900273214457,
+            "old_mean_abs": 0.053633722287253126,
+            "new_mean_abs": 0.01340459832701803,
+            "new_positive_fraction": 0.4873802471949603,
+            "new_query_equal_mean": -0.00042024949647733747
+          },
+          "m": {
+            "old_mean": 5.278799697194624,
+            "new_mean": 0.1370904700684511,
+            "old_std": 2.616472496335949,
+            "new_std": 0.3294444785571005,
+            "old_mean_abs": 5.283323921187126,
+            "new_mean_abs": 0.2724721025841863,
+            "new_positive_fraction": 0.6621189570110069,
+            "new_query_equal_mean": 0.13597736518381462
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 3,
+        "route": {
+          "reader": "L3H5",
+          "writer": "L2H7",
+          "reader_layer": 3,
+          "reader_head": 5,
+          "writer_layer": 2,
+          "writer_head": 7,
+          "endpoint_pair": {
+            "scale": "70m",
+            "step": 143000,
+            "reader": "L3H5",
+            "writer": "L2H7",
+            "writer_layer": 2,
+            "writer_head": 7,
+            "index": 23,
+            "selection_delta": 0.6934545951321992,
+            "previous_attention": 0.9213199646648227
+          }
+        },
+        "parameters_SHA": "dbe49056a045b061e4d33d97d8e715bb5b90b37219c9588a17f8117faf381b08",
+        "old_Gplus": 4.846965527373451,
+        "new_Gplus": 0.08104475675759677,
+        "minimum_Gplus": 0.08104475675759565,
+        "Gplus_retained": 0.01672072068594112,
+        "factor_Q_relative_error": 1.4820154399322982e-15,
+        "factor_KOV_relative_error": 1.4491243019711382e-15,
+        "affine_Q_error": 7.105427357601002e-15,
+        "affine_V_error": 2.7755575615628914e-17,
+        "frame_isometry_error": 1.3322676295501878e-15,
+        "actual_weight_matrix_error_seven_distances": 3.7335757614012846e-15,
+        "stock_native_attention_overlap_error": 7.810750934922339e-10,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 128,
+          "fixed_mean_component_norm": 0.036294526910526974,
+          "mean_component_max_change": 5.421010862427522e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 8.334221148314616e-16,
+        "original_head_width": 64,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 75.16170794084418,
+        "new_raw_Q_norm": 89.64264955431884,
+        "old_raw_V_norm": 4.908125092712705,
+        "new_raw_V_norm": 4.889287182951398
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 1.7763568394002505e-14,
+        "Writer_previous_attention_unchanged_max_error": 1.9984014443252818e-15,
+        "changed_Q_native_reconstruction_max_error": 1.7053025658242404e-13,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "70m",
+      "route": {
+        "reader": "L3H6",
+        "writer": "L2H7",
+        "reader_layer": 3,
+        "reader_head": 6,
+        "writer_layer": 2,
+        "writer_head": 7,
+        "endpoint_pair": {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L3H6",
+          "writer": "L2H7",
+          "writer_layer": 2,
+          "writer_head": 7,
+          "index": 23,
+          "selection_delta": 0.7389649193484664,
+          "previous_attention": 0.9213199646648227
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 73.89649185691894,
+      "new_route_score_pp": 0.05131378883132281,
+      "route_score_change_pp": -73.84517806808762,
+      "old_attention": 0.7707198687153611,
+      "new_attention": 0.021467794713606447,
+      "new_removed_attention": 0.02095465682529322,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 5.898051238132499,
+            "new_mean": 0.08042181237029007,
+            "old_std": 1.93494629501268,
+            "new_std": 0.03446531371569426,
+            "old_mean_abs": 5.898051238132499,
+            "new_mean_abs": 0.08042181362419223,
+            "new_positive_fraction": 0.9999983692745229,
+            "new_query_equal_mean": 0.08006191269870652
+          },
+          "b": {
+            "old_mean": -0.08934779697965715,
+            "new_mean": -0.0012661428700223832,
+            "old_std": 1.5262585568069815,
+            "new_std": 0.031183974125193956,
+            "old_mean_abs": 1.1784537691682817,
+            "new_mean_abs": 0.02340162825308723,
+            "new_positive_fraction": 0.4847071524003128,
+            "new_query_equal_mean": -0.0015984823662016346
+          },
+          "T": {
+            "old_mean": 1.2368896318454963,
+            "new_mean": 0.06290358691582261,
+            "old_std": 2.499866829644531,
+            "new_std": 0.4422883963024903,
+            "old_mean_abs": 2.228881352737127,
+            "new_mean_abs": 0.34323282885054934,
+            "new_positive_fraction": 0.5499497928403094,
+            "new_query_equal_mean": 0.062456343618638666
+          },
+          "R": {
+            "old_mean": 0.041635131291110475,
+            "new_mean": 0.0009759279233895366,
+            "old_std": 0.20396751600379334,
+            "new_std": 0.03457481789367086,
+            "old_mean_abs": 0.1582937750228724,
+            "new_mean_abs": 0.026240399843630993,
+            "new_positive_fraction": 0.5093148957755385,
+            "new_query_equal_mean": 0.0012334470393906317
+          },
+          "m": {
+            "old_mean": 7.265923798250559,
+            "new_mean": 0.14556747007952436,
+            "old_std": 3.2575047013025107,
+            "new_std": 0.44615711648236733,
+            "old_mean_abs": 7.267026688242164,
+            "new_mean_abs": 0.3599364748710216,
+            "new_positive_fraction": 0.6269360068789757,
+            "new_query_equal_mean": 0.14535018572293756
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 6.040141360272789,
+            "new_mean": 0.09983352224387025,
+            "old_std": 1.9507984965180496,
+            "new_std": 0.037876293207188064,
+            "old_mean_abs": 6.040141360272789,
+            "new_mean_abs": 0.09983352224387025,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.09938681700821088
+          },
+          "b": {
+            "old_mean": -0.08735660807185923,
+            "new_mean": -0.0015544251908094575,
+            "old_std": 1.5034864705957334,
+            "new_std": 0.03374698480188416,
+            "old_mean_abs": 1.155202361571834,
+            "new_mean_abs": 0.025096439609908684,
+            "new_positive_fraction": 0.48459866119356826,
+            "new_query_equal_mean": -0.0019685627841391578
+          },
+          "T": {
+            "old_mean": 0.950682177707124,
+            "new_mean": 0.068314159963911,
+            "old_std": 2.3761309982531014,
+            "new_std": 0.4122856801753544,
+            "old_mean_abs": 2.0316775912746134,
+            "new_mean_abs": 0.31993238008558406,
+            "new_positive_fraction": 0.5576325722257907,
+            "new_query_equal_mean": 0.06713778328491372
+          },
+          "R": {
+            "old_mean": 0.025048330948607592,
+            "new_mean": 0.000642919753557541,
+            "old_std": 0.10431152692504089,
+            "new_std": 0.01993147010159763,
+            "old_mean_abs": 0.08152279489562489,
+            "new_mean_abs": 0.015304723535517161,
+            "new_positive_fraction": 0.5121720706990479,
+            "new_query_equal_mean": 0.0006079484177630516
+          },
+          "m": {
+            "old_mean": 7.103228477008818,
+            "new_mean": 0.17034502715214825,
+            "old_std": 3.2202902115592593,
+            "new_std": 0.4167524938189752,
+            "old_mean_abs": 7.104068900031214,
+            "new_mean_abs": 0.3444822686676419,
+            "new_positive_fraction": 0.6591597658201475,
+            "new_query_equal_mean": 0.1691011114950265
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 4,
+        "route": {
+          "reader": "L3H6",
+          "writer": "L2H7",
+          "reader_layer": 3,
+          "reader_head": 6,
+          "writer_layer": 2,
+          "writer_head": 7,
+          "endpoint_pair": {
+            "scale": "70m",
+            "step": 143000,
+            "reader": "L3H6",
+            "writer": "L2H7",
+            "writer_layer": 2,
+            "writer_head": 7,
+            "index": 23,
+            "selection_delta": 0.7389649193484664,
+            "previous_attention": 0.9213199646648227
+          }
+        },
+        "parameters_SHA": "9650457e5925b785cd4203e6cdaf82d8044d9aa314f41f4a08afe3c6693ac8af",
+        "old_Gplus": 6.0401413602817415,
+        "new_Gplus": 0.09983352224387028,
+        "minimum_Gplus": 0.09983352224386759,
+        "Gplus_retained": 0.016528342018673144,
+        "factor_Q_relative_error": 1.400779997636314e-15,
+        "factor_KOV_relative_error": 1.406250510676395e-15,
+        "affine_Q_error": 2.220446049250313e-16,
+        "affine_V_error": 2.7755575615628914e-17,
+        "frame_isometry_error": 1.5543122344752192e-15,
+        "actual_weight_matrix_error_seven_distances": 1.816565688781119e-15,
+        "stock_native_attention_overlap_error": 6.121434470429676e-10,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 128,
+          "fixed_mean_component_norm": 0.03462864168482197,
+          "mean_component_max_change": 4.933119884809045e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 8.172715094001461e-16,
+        "original_head_width": 64,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 25.914196562564854,
+        "new_raw_Q_norm": 28.176949654987844,
+        "old_raw_V_norm": 4.908125092712705,
+        "new_raw_V_norm": 4.886668458293209
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 1.7763568394002505e-14,
+        "Writer_previous_attention_unchanged_max_error": 1.9984014443252818e-15,
+        "changed_Q_native_reconstruction_max_error": 4.973799150320701e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "70m",
+      "route": {
+        "reader": "L4H0",
+        "writer": "L2H7",
+        "reader_layer": 4,
+        "reader_head": 0,
+        "writer_layer": 2,
+        "writer_head": 7,
+        "endpoint_pair": {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L4H0",
+          "writer": "L2H7",
+          "writer_layer": 2,
+          "writer_head": 7,
+          "index": 23,
+          "selection_delta": 0.21942970598045664,
+          "previous_attention": 0.9213199646648227
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 21.942970526663398,
+      "new_route_score_pp": -0.17168493205190133,
+      "route_score_change_pp": -22.114655458715298,
+      "old_attention": 0.28448648294841117,
+      "new_attention": 0.028882288475535256,
+      "new_removed_attention": 0.03059913779605427,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 4.997131300382387,
+            "new_mean": 0.013634787405615146,
+            "old_std": 2.2624143420109712,
+            "new_std": 0.048666855864425665,
+            "old_mean_abs": 4.997170686629507,
+            "new_mean_abs": 0.038341088293762884,
+            "new_positive_fraction": 0.6253642273315729,
+            "new_query_equal_mean": 0.013586856695960207
+          },
+          "b": {
+            "old_mean": -0.09780245152772096,
+            "new_mean": -0.0002177120955560008,
+            "old_std": 2.0288767119325204,
+            "new_std": 0.049770634274545526,
+            "old_mean_abs": 1.5933859682921145,
+            "new_mean_abs": 0.03767103750228367,
+            "new_positive_fraction": 0.49644271625913877,
+            "new_query_equal_mean": -0.00030119971501013285
+          },
+          "T": {
+            "old_mean": -0.11737574799246416,
+            "new_mean": 0.01448739088069011,
+            "old_std": 5.199765781936883,
+            "new_std": 0.8359296574155477,
+            "old_mean_abs": 3.7837943379195487,
+            "new_mean_abs": 0.6462961099151364,
+            "new_positive_fraction": 0.5057696506256998,
+            "new_query_equal_mean": 0.021772088642200045
+          },
+          "R": {
+            "old_mean": 0.0187149154648716,
+            "new_mean": 0.0025126355113786825,
+            "old_std": 0.7254687484363268,
+            "new_std": 0.23406070645087554,
+            "old_mean_abs": 0.543351408507497,
+            "new_mean_abs": 0.17906466232897966,
+            "new_positive_fraction": 0.5054227857242071,
+            "new_query_equal_mean": 0.004578971145547966
+          },
+          "m": {
+            "old_mean": 4.9962729193770565,
+            "new_mean": 0.030852525893239984,
+            "old_std": 5.752176336459083,
+            "new_std": 0.8024806726573643,
+            "old_mean_abs": 5.915167558696802,
+            "new_mean_abs": 0.618158903205367,
+            "new_positive_fraction": 0.5146825725711207,
+            "new_query_equal_mean": 0.04023911619871841
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 6.3794345951611175,
+            "new_mean": 0.1361285821033548,
+            "old_std": 2.45863026604375,
+            "new_std": 0.05059104555147341,
+            "old_mean_abs": 6.3794345951611175,
+            "new_mean_abs": 0.1361285821033548,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.1355207656877189
+          },
+          "b": {
+            "old_mean": -0.1097057404172637,
+            "new_mean": -0.0021258112059420273,
+            "old_std": 2.0547305406482534,
+            "new_std": 0.04570126520513053,
+            "old_mean_abs": 1.6128026231651729,
+            "new_mean_abs": 0.0339433583979504,
+            "new_positive_fraction": 0.48462753462701663,
+            "new_query_equal_mean": -0.0026932538694038645
+          },
+          "T": {
+            "old_mean": -2.0737217416692837,
+            "new_mean": -0.036870902519026055,
+            "old_std": 2.611011374556542,
+            "new_std": 0.6192216535126646,
+            "old_mean_abs": 2.653218291091713,
+            "new_mean_abs": 0.4771277790290943,
+            "new_positive_fraction": 0.46739465129717495,
+            "new_query_equal_mean": -0.03220593422312544
+          },
+          "R": {
+            "old_mean": -0.005156047194416712,
+            "new_mean": -0.0009867474106143687,
+            "old_std": 0.35430813352338003,
+            "new_std": 0.12478372247394559,
+            "old_mean_abs": 0.27110663229314935,
+            "new_mean_abs": 0.09668285534924922,
+            "new_positive_fraction": 0.5011443376223332,
+            "new_query_equal_mean": 0.000498494864963815
+          },
+          "m": {
+            "old_mean": 4.410262546715778,
+            "new_mean": 0.10039674337965632,
+            "old_std": 3.1055101888238186,
+            "new_std": 0.6087973353987555,
+            "old_mean_abs": 4.505038647887541,
+            "new_mean_abs": 0.47205003585792804,
+            "new_positive_fraction": 0.5645915493119873,
+            "new_query_equal_mean": 0.10650658019896064
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 5,
+        "route": {
+          "reader": "L4H0",
+          "writer": "L2H7",
+          "reader_layer": 4,
+          "reader_head": 0,
+          "writer_layer": 2,
+          "writer_head": 7,
+          "endpoint_pair": {
+            "scale": "70m",
+            "step": 143000,
+            "reader": "L4H0",
+            "writer": "L2H7",
+            "writer_layer": 2,
+            "writer_head": 7,
+            "index": 23,
+            "selection_delta": 0.21942970598045664,
+            "previous_attention": 0.9213199646648227
+          }
+        },
+        "parameters_SHA": "bab05c40b420302b58f13d3f45112898bc962398a3ec14ad554244b3d40131fc",
+        "old_Gplus": 6.379434595162524,
+        "new_Gplus": 0.13612858210335477,
+        "minimum_Gplus": 0.1361285821033523,
+        "Gplus_retained": 0.021338659417651215,
+        "factor_Q_relative_error": 1.3665994405968668e-15,
+        "factor_KOV_relative_error": 1.5118128780720126e-15,
+        "affine_Q_error": 5.551115123125783e-17,
+        "affine_V_error": 2.7755575615628914e-17,
+        "frame_isometry_error": 1.7763568394002505e-15,
+        "actual_weight_matrix_error_seven_distances": 2.5074692918035327e-15,
+        "stock_native_attention_overlap_error": 1.228099305583541e-08,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 128,
+          "fixed_mean_component_norm": 0.030839472889632687,
+          "mean_component_max_change": 4.7704895589362195e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 8.490279378641913e-16,
+        "original_head_width": 64,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 62.66604977436627,
+        "new_raw_Q_norm": 99.02389283307129,
+        "old_raw_V_norm": 4.908125092712705,
+        "new_raw_V_norm": 4.898227672158865
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 1.7763568394002505e-14,
+        "Writer_previous_attention_unchanged_max_error": 1.9984014443252818e-15,
+        "changed_Q_native_reconstruction_max_error": 1.9895196601282805e-13,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "70m",
+      "route": {
+        "reader": "L4H1",
+        "writer": "L2H7",
+        "reader_layer": 4,
+        "reader_head": 1,
+        "writer_layer": 2,
+        "writer_head": 7,
+        "endpoint_pair": {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L4H1",
+          "writer": "L2H7",
+          "writer_layer": 2,
+          "writer_head": 7,
+          "index": 23,
+          "selection_delta": 0.261276608617862,
+          "previous_attention": 0.9213199646648227
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 26.127660720313084,
+      "new_route_score_pp": 0.0367664360717572,
+      "route_score_change_pp": -26.090894284241326,
+      "old_attention": 0.3830540306680598,
+      "new_attention": 0.019409733697266535,
+      "new_removed_attention": 0.019042069336548964,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 3.091937528125563,
+            "new_mean": -0.006819929241544089,
+            "old_std": 1.6409927261746802,
+            "new_std": 0.04426830239008944,
+            "old_mean_abs": 3.093886674120641,
+            "new_mean_abs": 0.033126723576385506,
+            "new_positive_fraction": 0.4581183653454337,
+            "new_query_equal_mean": -0.006774408849402016
+          },
+          "b": {
+            "old_mean": -0.06257917180422232,
+            "new_mean": 8.426780065146949e-05,
+            "old_std": 1.3265031226736175,
+            "new_std": 0.04438817233572844,
+            "old_mean_abs": 1.0484314751827681,
+            "new_mean_abs": 0.03334708278682413,
+            "new_positive_fraction": 0.5005309450303546,
+            "new_query_equal_mean": 9.924097212760565e-05
+          },
+          "T": {
+            "old_mean": 0.7186460373036184,
+            "new_mean": 0.019155039729891656,
+            "old_std": 7.478967402323884,
+            "new_std": 0.7279747220674673,
+            "old_mean_abs": 4.975015277991554,
+            "new_mean_abs": 0.5606132662921768,
+            "new_positive_fraction": 0.509627515442011,
+            "new_query_equal_mean": 0.0235458013833815
+          },
+          "R": {
+            "old_mean": 0.020727679458371243,
+            "new_mean": 0.003879919088041277,
+            "old_std": 0.4923594659725467,
+            "new_std": 0.09354250861006512,
+            "old_mean_abs": 0.3800631505639803,
+            "new_mean_abs": 0.06899413287999326,
+            "new_positive_fraction": 0.5157526162592155,
+            "new_query_equal_mean": 0.003925321672096005
+          },
+          "m": {
+            "old_mean": 3.893890416690383,
+            "new_mean": 0.016130761775737457,
+            "old_std": 7.695864965788514,
+            "new_std": 0.7339862520482321,
+            "old_mean_abs": 6.085179006213053,
+            "new_mean_abs": 0.5649664416676992,
+            "new_positive_fraction": 0.5085794385853437,
+            "new_query_equal_mean": 0.02059747323394795
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 4.538221760502374,
+            "new_mean": 0.11255460374932023,
+            "old_std": 1.8269261421956053,
+            "new_std": 0.040454241449593614,
+            "old_mean_abs": 4.538221760502374,
+            "new_mean_abs": 0.11255460374932023,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.11205025839199818
+          },
+          "b": {
+            "old_mean": -0.07040868334449599,
+            "new_mean": -0.0017541373197232674,
+            "old_std": 1.2597150507960924,
+            "new_std": 0.03676375962296224,
+            "old_mean_abs": 0.9849717388691407,
+            "new_mean_abs": 0.027345263088927194,
+            "new_positive_fraction": 0.4845341995747068,
+            "new_query_equal_mean": -0.0022215636197188975
+          },
+          "T": {
+            "old_mean": -1.3088453868637466,
+            "new_mean": -0.030308180762247658,
+            "old_std": 2.6005042748355516,
+            "new_std": 0.4528357186922601,
+            "old_mean_abs": 2.2214361590610427,
+            "new_mean_abs": 0.34967855880490223,
+            "new_positive_fraction": 0.4641946403233518,
+            "new_query_equal_mean": -0.02672359450404884
+          },
+          "R": {
+            "old_mean": 0.005359462472127088,
+            "new_mean": -0.0015935389738699296,
+            "old_std": 0.2217932176338744,
+            "new_std": 0.0506161308470974,
+            "old_mean_abs": 0.17030703100396294,
+            "new_mean_abs": 0.03865292427214532,
+            "new_positive_fraction": 0.48753185670182125,
+            "new_query_equal_mean": -0.0015810123528928633
+          },
+          "m": {
+            "old_mean": 3.3051445194545237,
+            "new_mean": 0.08240702133292571,
+            "old_std": 2.883601991779945,
+            "new_std": 0.4567833466071997,
+            "old_mean_abs": 3.5386914679164416,
+            "new_mean_abs": 0.3561586412942941,
+            "new_positive_fraction": 0.5702903113419451,
+            "new_query_equal_mean": 0.08596721515477543
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 6,
+        "route": {
+          "reader": "L4H1",
+          "writer": "L2H7",
+          "reader_layer": 4,
+          "reader_head": 1,
+          "writer_layer": 2,
+          "writer_head": 7,
+          "endpoint_pair": {
+            "scale": "70m",
+            "step": 143000,
+            "reader": "L4H1",
+            "writer": "L2H7",
+            "writer_layer": 2,
+            "writer_head": 7,
+            "index": 23,
+            "selection_delta": 0.261276608617862,
+            "previous_attention": 0.9213199646648227
+          }
+        },
+        "parameters_SHA": "eaa5fce573341a0f2a842373fba2ddd52041a5ced5dcec69948ecc471cd6c82d",
+        "old_Gplus": 4.538221760501207,
+        "new_Gplus": 0.11255460374932025,
+        "minimum_Gplus": 0.1125546037493187,
+        "Gplus_retained": 0.024801477250175095,
+        "factor_Q_relative_error": 1.3490234052749641e-15,
+        "factor_KOV_relative_error": 1.4803367431908269e-15,
+        "affine_Q_error": 1.4210854715202004e-14,
+        "affine_V_error": 2.7755575615628914e-17,
+        "frame_isometry_error": 1.3322676295501878e-15,
+        "actual_weight_matrix_error_seven_distances": 3.886150165389512e-15,
+        "stock_native_attention_overlap_error": 1.8648871114024246e-08,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 128,
+          "fixed_mean_component_norm": 0.032989990401319634,
+          "mean_component_max_change": 4.336808689942018e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 8.639067051702024e-16,
+        "original_head_width": 64,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 68.70224496541951,
+        "new_raw_Q_norm": 116.29512772763265,
+        "old_raw_V_norm": 4.908125092712705,
+        "new_raw_V_norm": 4.8933164849840685
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 1.7763568394002505e-14,
+        "Writer_previous_attention_unchanged_max_error": 1.9984014443252818e-15,
+        "changed_Q_native_reconstruction_max_error": 2.8421709430404007e-13,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "70m",
+      "route": {
+        "reader": "L4H3",
+        "writer": "L2H7",
+        "reader_layer": 4,
+        "reader_head": 3,
+        "writer_layer": 2,
+        "writer_head": 7,
+        "endpoint_pair": {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L4H3",
+          "writer": "L2H7",
+          "writer_layer": 2,
+          "writer_head": 7,
+          "index": 23,
+          "selection_delta": 0.12508248747828776,
+          "previous_attention": 0.9213199646648227
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 12.508248648968538,
+      "new_route_score_pp": -0.057620330326353726,
+      "route_score_change_pp": -12.56586897929489,
+      "old_attention": 0.17077503748036385,
+      "new_attention": 0.029042322690840065,
+      "new_removed_attention": 0.0296185259941036,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 5.627548667418233,
+            "new_mean": 0.013120780386005714,
+            "old_std": 3.474306051121445,
+            "new_std": 0.06772127860191264,
+            "old_mean_abs": 5.628494623242359,
+            "new_mean_abs": 0.05248341362261179,
+            "new_positive_fraction": 0.5873787795420309,
+            "new_query_equal_mean": 0.013096844939115932
+          },
+          "b": {
+            "old_mean": -0.11166121389765148,
+            "new_mean": -0.00023766547865306173,
+            "old_std": 3.0303255803677898,
+            "new_std": 0.06952202555389983,
+            "old_mean_abs": 2.354519612051719,
+            "new_mean_abs": 0.052847549734907386,
+            "new_positive_fraction": 0.49694114270497836,
+            "new_query_equal_mean": -0.00032167043878270405
+          },
+          "T": {
+            "old_mean": 0.048261095548964426,
+            "new_mean": 0.02742871386986614,
+            "old_std": 5.464185457931911,
+            "new_std": 1.1416197958345886,
+            "old_mean_abs": 4.091200165196239,
+            "new_mean_abs": 0.8830078075715362,
+            "new_positive_fraction": 0.5073060818002595,
+            "new_query_equal_mean": 0.03139892583689108
+          },
+          "R": {
+            "old_mean": 0.020318572257999327,
+            "new_mean": 0.002898481215749191,
+            "old_std": 0.6524064872073796,
+            "new_std": 0.1244484503674755,
+            "old_mean_abs": 0.4968357221912988,
+            "new_mean_abs": 0.09213379569176222,
+            "new_positive_fraction": 0.5081390947439991,
+            "new_query_equal_mean": 0.002804060424185998
+          },
+          "m": {
+            "old_mean": 5.807789549125919,
+            "new_mean": 0.04368564095027408,
+            "old_std": 6.128855041713428,
+            "new_std": 1.1559353914296076,
+            "old_mean_abs": 6.616659793526779,
+            "new_mean_abs": 0.894995902194385,
+            "new_positive_fraction": 0.5131186588760196,
+            "new_query_equal_mean": 0.04762150163897572
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 7.810277733463123,
+            "new_mean": 0.18599568663449148,
+            "old_std": 3.7103112621190277,
+            "new_std": 0.06980384880224315,
+            "old_mean_abs": 7.810277733463123,
+            "new_mean_abs": 0.18599568663449148,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.18516622792944196
+          },
+          "b": {
+            "old_mean": -0.13200197323987603,
+            "new_mean": -0.0029070832727999315,
+            "old_std": 3.101534116609025,
+            "new_std": 0.06289918072198523,
+            "old_mean_abs": 2.428750113641168,
+            "new_mean_abs": 0.046727673392739505,
+            "new_positive_fraction": 0.48462005247482737,
+            "new_query_equal_mean": -0.0036830484252075796
+          },
+          "T": {
+            "old_mean": -2.455549877111272,
+            "new_mean": -0.05046544833877968,
+            "old_std": 3.4781929445686988,
+            "new_std": 0.8669832614398445,
+            "old_mean_abs": 3.3054129112539363,
+            "new_mean_abs": 0.6692926603101107,
+            "new_positive_fraction": 0.4686480077139071,
+            "new_query_equal_mean": -0.044065828379899016
+          },
+          "R": {
+            "old_mean": 0.04193020786662862,
+            "new_mean": 0.0029213251844807386,
+            "old_std": 0.2805485441996772,
+            "new_std": 0.0813663199486819,
+            "old_mean_abs": 0.2187781442664648,
+            "new_mean_abs": 0.0623582117801291,
+            "new_positive_fraction": 0.5131823051321425,
+            "new_query_equal_mean": 0.0026324137603791907
+          },
+          "m": {
+            "old_mean": 5.528660037462279,
+            "new_mean": 0.14135864675299253,
+            "old_std": 4.026987055377601,
+            "new_std": 0.8761651191516836,
+            "old_mean_abs": 5.624225594243092,
+            "new_mean_abs": 0.6821017506876952,
+            "new_positive_fraction": 0.5622160619169198,
+            "new_query_equal_mean": 0.14741586173512947
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 7,
+        "route": {
+          "reader": "L4H3",
+          "writer": "L2H7",
+          "reader_layer": 4,
+          "reader_head": 3,
+          "writer_layer": 2,
+          "writer_head": 7,
+          "endpoint_pair": {
+            "scale": "70m",
+            "step": 143000,
+            "reader": "L4H3",
+            "writer": "L2H7",
+            "writer_layer": 2,
+            "writer_head": 7,
+            "index": 23,
+            "selection_delta": 0.12508248747828776,
+            "previous_attention": 0.9213199646648227
+          }
+        },
+        "parameters_SHA": "275250388d7b56608a969321a20f2f0c31130926e9df5d4a788d13e25c1cd275",
+        "old_Gplus": 7.810277733466216,
+        "new_Gplus": 0.18599568663449156,
+        "minimum_Gplus": 0.18599568663448907,
+        "Gplus_retained": 0.023814221847389586,
+        "factor_Q_relative_error": 1.5329581763174672e-15,
+        "factor_KOV_relative_error": 1.499467048097277e-15,
+        "affine_Q_error": 8.881784197001252e-16,
+        "affine_V_error": 2.7755575615628914e-17,
+        "frame_isometry_error": 2.3314683517128287e-15,
+        "actual_weight_matrix_error_seven_distances": 2.458279942879247e-15,
+        "stock_native_attention_overlap_error": 8.342330021227085e-09,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 128,
+          "fixed_mean_component_norm": 0.028326872968088508,
+          "mean_component_max_change": 4.9873299934333204e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 8.529977223457691e-16,
+        "original_head_width": 64,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 63.38828318074562,
+        "new_raw_Q_norm": 98.62620775489455,
+        "old_raw_V_norm": 4.908125092712705,
+        "new_raw_V_norm": 4.891244524164782
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 1.7763568394002505e-14,
+        "Writer_previous_attention_unchanged_max_error": 1.9984014443252818e-15,
+        "changed_Q_native_reconstruction_max_error": 4.547473508864641e-13,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "70m",
+      "route": {
+        "reader": "L4H6",
+        "writer": "L2H7",
+        "reader_layer": 4,
+        "reader_head": 6,
+        "writer_layer": 2,
+        "writer_head": 7,
+        "endpoint_pair": {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L4H6",
+          "writer": "L2H7",
+          "writer_layer": 2,
+          "writer_head": 7,
+          "index": 23,
+          "selection_delta": 0.10382568883534798,
+          "previous_attention": 0.9213199646648227
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 10.382568866825144,
+      "new_route_score_pp": -0.10331582934323781,
+      "route_score_change_pp": -10.485884696168382,
+      "old_attention": 0.19857077566065978,
+      "new_attention": 0.010295654512730222,
+      "new_removed_attention": 0.0113288128061626,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 2.5540954539377148,
+            "new_mean": -0.017566686916655527,
+            "old_std": 1.4863660513565933,
+            "new_std": 0.042706973169171394,
+            "old_mean_abs": 2.5587493256174,
+            "new_mean_abs": 0.03454992775697672,
+            "new_positive_fraction": 0.33862455788154566,
+            "new_query_equal_mean": -0.01747351011317829
+          },
+          "b": {
+            "old_mean": -0.06934699785592804,
+            "new_mean": 0.00023887600809473724,
+            "old_std": 1.580165674868649,
+            "new_std": 0.04423088011708733,
+            "old_mean_abs": 1.2549826405273266,
+            "new_mean_abs": 0.03334185061027375,
+            "new_positive_fraction": 0.50371719076265,
+            "new_query_equal_mean": 0.00029514509153398945
+          },
+          "T": {
+            "old_mean": 0.12609340700063718,
+            "new_mean": 0.009697543819690662,
+            "old_std": 3.774932350601267,
+            "new_std": 0.8299441710155563,
+            "old_mean_abs": 2.822358064672583,
+            "new_mean_abs": 0.6398790446294756,
+            "new_positive_fraction": 0.5058359827826086,
+            "new_query_equal_mean": 0.009917135711846077
+          },
+          "R": {
+            "old_mean": 0.015333970382535552,
+            "new_mean": 0.00046124150106078237,
+            "old_std": 0.7496365002010709,
+            "new_std": 0.19986026882999983,
+            "old_mean_abs": 0.5723516637206362,
+            "new_mean_abs": 0.15336617670633843,
+            "new_positive_fraction": 0.4995097271815462,
+            "new_query_equal_mean": -8.040986181316343e-05
+          },
+          "m": {
+            "old_mean": 2.764869829178879,
+            "new_mean": -0.007646777603998803,
+            "old_std": 3.8959956008184333,
+            "new_std": 0.805475895160606,
+            "old_mean_abs": 3.658226634223193,
+            "new_mean_abs": 0.62104495297487,
+            "new_positive_fraction": 0.4964052575356784,
+            "new_query_equal_mean": -0.007931929354679366
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 4.174561717071128,
+            "new_mean": 0.10147670026072414,
+            "old_std": 1.6882799912986175,
+            "new_std": 0.03797060150726761,
+            "old_mean_abs": 4.174561717071128,
+            "new_mean_abs": 0.10147670026072414,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.1010247312034917
+          },
+          "b": {
+            "old_mean": -0.08500141418412867,
+            "new_mean": -0.0015882014015403897,
+            "old_std": 1.5650882726572397,
+            "new_std": 0.034446391634193906,
+            "old_mean_abs": 1.242258669000144,
+            "new_mean_abs": 0.02552650967606693,
+            "new_positive_fraction": 0.48468422631860464,
+            "new_query_equal_mean": -0.002012994808939312
+          },
+          "T": {
+            "old_mean": -1.4934921890612758,
+            "new_mean": -0.029208749743491337,
+            "old_std": 1.8927430439246704,
+            "new_std": 0.5087315692815287,
+            "old_mean_abs": 1.9173106288422286,
+            "new_mean_abs": 0.391621871492003,
+            "new_positive_fraction": 0.46903132412606546,
+            "new_query_equal_mean": -0.025808631374049963
+          },
+          "R": {
+            "old_mean": -0.00487913117091776,
+            "new_mean": -0.001743624891628132,
+            "old_std": 0.349933848107422,
+            "new_std": 0.09539974488989451,
+            "old_mean_abs": 0.2712750143730704,
+            "new_mean_abs": 0.07282974811305133,
+            "new_positive_fraction": 0.49336122065749316,
+            "new_query_equal_mean": -0.00164843301211489
+          },
+          "m": {
+            "old_mean": 2.761191811024731,
+            "new_mean": 0.07211252702714478,
+            "old_std": 2.2145860327467046,
+            "new_std": 0.49097300533481625,
+            "old_mean_abs": 2.872159100660887,
+            "new_mean_abs": 0.3800332720540763,
+            "new_positive_fraction": 0.556626606456445,
+            "new_query_equal_mean": 0.07558066162626628
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 8,
+        "route": {
+          "reader": "L4H6",
+          "writer": "L2H7",
+          "reader_layer": 4,
+          "reader_head": 6,
+          "writer_layer": 2,
+          "writer_head": 7,
+          "endpoint_pair": {
+            "scale": "70m",
+            "step": 143000,
+            "reader": "L4H6",
+            "writer": "L2H7",
+            "writer_layer": 2,
+            "writer_head": 7,
+            "index": 23,
+            "selection_delta": 0.10382568883534798,
+            "previous_attention": 0.9213199646648227
+          }
+        },
+        "parameters_SHA": "a510f4eb8cde6ce8d7b299813237194dde5a81fd6c1a23044541c2618888574a",
+        "old_Gplus": 4.174561717072819,
+        "new_Gplus": 0.10147670026072403,
+        "minimum_Gplus": 0.10147670026072139,
+        "Gplus_retained": 0.024308348310126068,
+        "factor_Q_relative_error": 1.2780292329860933e-15,
+        "factor_KOV_relative_error": 1.4767856914780495e-15,
+        "affine_Q_error": 7.105427357601002e-15,
+        "affine_V_error": 2.7755575615628914e-17,
+        "frame_isometry_error": 2.1094237467877974e-15,
+        "actual_weight_matrix_error_seven_distances": 2.3336474886711027e-15,
+        "stock_native_attention_overlap_error": 8.325494668670608e-09,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 128,
+          "fixed_mean_component_norm": 0.030768025168031336,
+          "mean_component_max_change": 5.637851296924623e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 8.595023948968337e-16,
+        "original_head_width": 64,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 59.92048282784314,
+        "new_raw_Q_norm": 104.96597168742508,
+        "old_raw_V_norm": 4.908125092712705,
+        "new_raw_V_norm": 4.896981631028924
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 1.7763568394002505e-14,
+        "Writer_previous_attention_unchanged_max_error": 1.9984014443252818e-15,
+        "changed_Q_native_reconstruction_max_error": 1.7053025658242404e-13,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "70m",
+      "route": {
+        "reader": "L4H7",
+        "writer": "L2H7",
+        "reader_layer": 4,
+        "reader_head": 7,
+        "writer_layer": 2,
+        "writer_head": 7,
+        "endpoint_pair": {
+          "scale": "70m",
+          "step": 143000,
+          "reader": "L4H7",
+          "writer": "L2H7",
+          "writer_layer": 2,
+          "writer_head": 7,
+          "index": 23,
+          "selection_delta": 0.23921096012877052,
+          "previous_attention": 0.9213199646648227
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 23.92109585634789,
+      "new_route_score_pp": 0.0397363945262332,
+      "route_score_change_pp": -23.881359461821656,
+      "old_attention": 0.2668109191864267,
+      "new_attention": 0.020111829672719062,
+      "new_removed_attention": 0.01971446572745673,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 6.574661590980364,
+            "new_mean": 0.018595153565780672,
+            "old_std": 2.6994861208845933,
+            "new_std": 0.056383371653817065,
+            "old_mean_abs": 6.574662873458527,
+            "new_mean_abs": 0.045307849609769565,
+            "new_positive_fraction": 0.642998892641476,
+            "new_query_equal_mean": 0.018521061454115494
+          },
+          "b": {
+            "old_mean": -0.12581636983226274,
+            "new_mean": -0.0002727481280716141,
+            "old_std": 2.9309152900813245,
+            "new_std": 0.05769437451810126,
+            "old_mean_abs": 2.2903866884496953,
+            "new_mean_abs": 0.04385675972339423,
+            "new_positive_fraction": 0.49586678239062054,
+            "new_query_equal_mean": -0.00036846464024451646
+          },
+          "T": {
+            "old_mean": -0.5631137559544497,
+            "new_mean": 0.01682032276286688,
+            "old_std": 6.53447365273247,
+            "new_std": 0.9540657583111639,
+            "old_mean_abs": 4.7389894628504425,
+            "new_mean_abs": 0.7353244857906225,
+            "new_positive_fraction": 0.5055033147852699,
+            "new_query_equal_mean": 0.02297610038389728
+          },
+          "R": {
+            "old_mean": 0.030508270148841957,
+            "new_mean": 0.0032242883122455945,
+            "old_std": 0.6459463598694472,
+            "new_std": 0.12980724245433087,
+            "old_mean_abs": 0.4894066105222775,
+            "new_mean_abs": 0.09577709952431009,
+            "new_positive_fraction": 0.5085058161263017,
+            "new_query_equal_mean": 0.0015403408032753985
+          },
+          "m": {
+            "old_mean": 6.167872475012733,
+            "new_mean": 0.03891251276896479,
+            "old_std": 7.100224411236476,
+            "new_std": 0.9708916504836204,
+            "old_mean_abs": 7.1454758771939,
+            "new_mean_abs": 0.7487280536879143,
+            "new_positive_fraction": 0.5150704933846264,
+            "new_query_equal_mean": 0.04340596728153271
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 8.054315974095719,
+            "new_mean": 0.16148404385160647,
+            "old_std": 2.9174740085648843,
+            "new_std": 0.05991219582021416,
+            "old_mean_abs": 8.054315974095719,
+            "new_mean_abs": 0.16148404385160647,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.16076226586793846
+          },
+          "b": {
+            "old_mean": -0.13292041793739978,
+            "new_mean": -0.0025203168497638178,
+            "old_std": 2.506835658193167,
+            "new_std": 0.05402351265511982,
+            "old_mean_abs": 1.9448285210368599,
+            "new_mean_abs": 0.04014999454058637,
+            "new_positive_fraction": 0.48458667056505983,
+            "new_query_equal_mean": -0.003192313019147633
+          },
+          "T": {
+            "old_mean": -2.871882551779744,
+            "new_mean": -0.043000605281327764,
+            "old_std": 3.177007899416147,
+            "new_std": 0.7099459446269302,
+            "old_mean_abs": 3.440368995277721,
+            "new_mean_abs": 0.5483853511345611,
+            "new_positive_fraction": 0.46731229966057886,
+            "new_query_equal_mean": -0.037360600287851674
+          },
+          "R": {
+            "old_mean": -0.0005338092042799553,
+            "new_mean": -0.0007708651832867485,
+            "old_std": 0.3320875338849954,
+            "new_std": 0.10515706627817614,
+            "old_mean_abs": 0.2544385308629215,
+            "new_mean_abs": 0.08142010323217728,
+            "new_positive_fraction": 0.49729467439592173,
+            "new_query_equal_mean": -0.001181703588961246
+          },
+          "m": {
+            "old_mean": 5.314820031053105,
+            "new_mean": 0.120232890236756,
+            "old_std": 3.7270870213031158,
+            "new_std": 0.7182384339085167,
+            "old_mean_abs": 5.418740131829678,
+            "new_mean_abs": 0.5596869004780567,
+            "new_positive_fraction": 0.5649091570799194,
+            "new_query_equal_mean": 0.12541227501027308
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 9,
+        "route": {
+          "reader": "L4H7",
+          "writer": "L2H7",
+          "reader_layer": 4,
+          "reader_head": 7,
+          "writer_layer": 2,
+          "writer_head": 7,
+          "endpoint_pair": {
+            "scale": "70m",
+            "step": 143000,
+            "reader": "L4H7",
+            "writer": "L2H7",
+            "writer_layer": 2,
+            "writer_head": 7,
+            "index": 23,
+            "selection_delta": 0.23921096012877052,
+            "previous_attention": 0.9213199646648227
+          }
+        },
+        "parameters_SHA": "d9cf4680dad603565d4de15d1525cdbe20f4d4995a000bb16b47b4aca6787c3d",
+        "old_Gplus": 8.05431597409913,
+        "new_Gplus": 0.16148404385160647,
+        "minimum_Gplus": 0.1614840438516042,
+        "Gplus_retained": 0.02004938027895887,
+        "factor_Q_relative_error": 1.3527909680670767e-15,
+        "factor_KOV_relative_error": 1.4780726418878304e-15,
+        "affine_Q_error": 1.4210854715202004e-14,
+        "affine_V_error": 2.7755575615628914e-17,
+        "frame_isometry_error": 1.4432899320127035e-15,
+        "actual_weight_matrix_error_seven_distances": 3.2343594518883457e-15,
+        "stock_native_attention_overlap_error": 1.5468052422251688e-08,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 128,
+          "fixed_mean_component_norm": 0.03159961069337646,
+          "mean_component_max_change": 3.469446951953614e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 8.477973329083737e-16,
+        "original_head_width": 64,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 74.25881101316851,
+        "new_raw_Q_norm": 126.86860464290557,
+        "old_raw_V_norm": 4.908125092712705,
+        "new_raw_V_norm": 4.896749030028141
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 1.7763568394002505e-14,
+        "Writer_previous_attention_unchanged_max_error": 1.9984014443252818e-15,
+        "changed_Q_native_reconstruction_max_error": 4.689582056016661e-13,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    }
+  ]
+}

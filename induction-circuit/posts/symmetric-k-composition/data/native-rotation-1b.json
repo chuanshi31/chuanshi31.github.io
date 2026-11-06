@@ -1,0 +1,3824 @@
+{
+  "status": "COMPLETE_VERIFIED",
+  "experiment": "Native mean-preserving whole-C parameter rotation",
+  "scale": "1b",
+  "step": 143000,
+  "rows": [
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L4H1",
+        "writer": "L3H5",
+        "reader_layer": 4,
+        "reader_head": 1,
+        "writer_layer": 3,
+        "writer_head": 5,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L4H1",
+          "writer": "L3H5",
+          "writer_layer": 3,
+          "writer_head": 5,
+          "index": 29,
+          "selection_delta": 0.7628291316146661,
+          "previous_attention": 0.888758123931266
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 76.28291316146661,
+      "new_route_score_pp": 0.465937280509476,
+      "route_score_change_pp": -75.81697588095713,
+      "old_attention": 0.8438290992987872,
+      "new_attention": 0.03383611759804594,
+      "new_removed_attention": 0.029176744792951178,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 4.862426607730925,
+            "new_mean": 0.00836935595971285,
+            "old_std": 1.1293881489964563,
+            "new_std": 0.0100507660042194,
+            "old_mean_abs": 4.862426607730925,
+            "new_mean_abs": 0.010625705413015102,
+            "new_positive_fraction": 0.8011128838056298,
+            "new_query_equal_mean": 0.008335879946484007
+          },
+          "b": {
+            "old_mean": -0.06128709310207994,
+            "new_mean": -0.00013670770190498156,
+            "old_std": 0.8459433156665496,
+            "new_std": 0.009852795869281616,
+            "old_mean_abs": 0.6581515206010334,
+            "new_mean_abs": 0.007820898644209045,
+            "new_positive_fraction": 0.49106774916142343,
+            "new_query_equal_mean": -0.00017297138979454187
+          },
+          "T": {
+            "old_mean": 0.9079224113848415,
+            "new_mean": 0.1543087109809855,
+            "old_std": 1.0358146223290796,
+            "new_std": 0.23918326230251613,
+            "old_mean_abs": 1.1211805059660762,
+            "new_mean_abs": 0.22012325810044975,
+            "new_positive_fraction": 0.7569613752118984,
+            "new_query_equal_mean": 0.14309474126994082
+          },
+          "R": {
+            "old_mean": 0.05489040616373508,
+            "new_mean": 0.002843056806838177,
+            "old_std": 0.21890407885749863,
+            "new_std": 0.029779283856278156,
+            "old_mean_abs": 0.1753823120000549,
+            "new_mean_abs": 0.02257977747529488,
+            "new_positive_fraction": 0.5380218033751797,
+            "new_query_equal_mean": 0.003355355315292806
+          },
+          "m": {
+            "old_mean": 5.8865265183769395,
+            "new_mean": 0.1656578314494417,
+            "old_std": 1.5711747256971114,
+            "new_std": 0.24094484957754972,
+            "old_mean_abs": 5.886543509795017,
+            "new_mean_abs": 0.2271604423478267,
+            "new_positive_fraction": 0.7719192046510592,
+            "new_query_equal_mean": 0.15495894792151194
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 5.403057003529768,
+            "new_mean": 0.05603160251285308,
+            "old_std": 1.1024158214861308,
+            "new_std": 0.009155031325583226,
+            "old_mean_abs": 5.403057003529768,
+            "new_mean_abs": 0.05603160251285308,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.055792328983168216
+          },
+          "b": {
+            "old_mean": -0.07528730271466094,
+            "new_mean": -0.0008681054878251184,
+            "old_std": 0.8947175554040878,
+            "new_std": 0.007663053280091102,
+            "old_mean_abs": 0.6777944128702775,
+            "new_mean_abs": 0.005487378272566654,
+            "new_positive_fraction": 0.4827029907888951,
+            "new_query_equal_mean": -0.001107101702730074
+          },
+          "T": {
+            "old_mean": 0.7810598431368894,
+            "new_mean": 0.23782411346985421,
+            "old_std": 1.0055073431954864,
+            "new_std": 0.2429811351909758,
+            "old_mean_abs": 1.023503405217911,
+            "new_mean_abs": 0.2689914838556395,
+            "new_positive_fraction": 0.8690414250315209,
+            "new_query_equal_mean": 0.22767051262955376
+          },
+          "R": {
+            "old_mean": 0.036554602774557333,
+            "new_mean": 0.0010043532821758531,
+            "old_std": 0.10812850788246027,
+            "new_std": 0.0167728831731379,
+            "old_mean_abs": 0.08938957944718966,
+            "new_mean_abs": 0.012785706863249542,
+            "new_positive_fraction": 0.5187492661735352,
+            "new_query_equal_mean": 0.0010677359931582037
+          },
+          "m": {
+            "old_mean": 6.295958752158124,
+            "new_mean": 0.29572817475270885,
+            "old_std": 1.5981693212173504,
+            "new_std": 0.2453166218583787,
+            "old_mean_abs": 6.29597094203569,
+            "new_mean_abs": 0.3153324812417424,
+            "new_positive_fraction": 0.917193055258188,
+            "new_query_equal_mean": 0.2856376793086102
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 0,
+        "route": {
+          "reader": "L4H1",
+          "writer": "L3H5",
+          "reader_layer": 4,
+          "reader_head": 1,
+          "writer_layer": 3,
+          "writer_head": 5,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L4H1",
+            "writer": "L3H5",
+            "writer_layer": 3,
+            "writer_head": 5,
+            "index": 29,
+            "selection_delta": 0.7628291316146661,
+            "previous_attention": 0.888758123931266
+          }
+        },
+        "parameters_SHA": "d6a400ce31fa728c6756fa6de5ed3604c89a7853246686bff9321bb6416c1405",
+        "old_Gplus": 5.403057003531625,
+        "new_Gplus": 0.056031602512852816,
+        "minimum_Gplus": 0.05603160251283821,
+        "Gplus_retained": 0.010370351909341068,
+        "factor_Q_relative_error": 2.169077875100678e-15,
+        "factor_KOV_relative_error": 2.3306404674744506e-15,
+        "affine_Q_error": 2.7755575615628914e-17,
+        "affine_V_error": 6.938893903907228e-18,
+        "frame_isometry_error": 3.552713678800501e-15,
+        "actual_weight_matrix_error_seven_distances": 2.5452571098801535e-15,
+        "stock_native_attention_overlap_error": 2.7755575615628914e-17,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.014792156900037769,
+          "mean_component_max_change": 2.710505431213761e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.641467379716864e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 19.319290589755465,
+        "new_raw_Q_norm": 19.35825666767177,
+        "old_raw_V_norm": 11.578941417303795,
+        "new_raw_V_norm": 11.592016363093759
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 3.375077994860476e-14,
+        "Writer_previous_attention_unchanged_max_error": 2.9976021664879227e-15,
+        "changed_Q_native_reconstruction_max_error": 1.199040866595169e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L4H4",
+        "writer": "L3H5",
+        "reader_layer": 4,
+        "reader_head": 4,
+        "writer_layer": 3,
+        "writer_head": 5,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L4H4",
+          "writer": "L3H5",
+          "writer_layer": 3,
+          "writer_head": 5,
+          "index": 29,
+          "selection_delta": 0.7735425350311468,
+          "previous_attention": 0.888758123931266
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 77.3542535031145,
+      "new_route_score_pp": 0.6415987636607224,
+      "route_score_change_pp": -76.71265473945378,
+      "old_attention": 0.9328492217692063,
+      "new_attention": 0.03737571199211973,
+      "new_removed_attention": 0.03095972435551251,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 5.486161587311992,
+            "new_mean": 0.015493946540231944,
+            "old_std": 1.1879778718712677,
+            "new_std": 0.011763044708465384,
+            "old_mean_abs": 5.486161587311992,
+            "new_mean_abs": 0.01648347935176191,
+            "new_positive_fraction": 0.9092292155404684,
+            "new_query_equal_mean": 0.015430659824912851
+          },
+          "b": {
+            "old_mean": -0.07474013649635802,
+            "new_mean": -0.0002502079033105888,
+            "old_std": 0.7928637656306464,
+            "new_std": 0.011513886731997934,
+            "old_mean_abs": 0.589337750475495,
+            "new_mean_abs": 0.00916741584176781,
+            "new_positive_fraction": 0.48796275192790123,
+            "new_query_equal_mean": -0.0003168636733567403
+          },
+          "T": {
+            "old_mean": 1.4933857488888058,
+            "new_mean": 0.20660029512058636,
+            "old_std": 1.3502367227718752,
+            "new_std": 0.2792630394588137,
+            "old_mean_abs": 1.6841850702062064,
+            "new_mean_abs": 0.26982163728414366,
+            "new_positive_fraction": 0.7869443734599236,
+            "new_query_equal_mean": 0.19670677711022688
+          },
+          "R": {
+            "old_mean": 0.01030630980333763,
+            "new_mean": -4.5624262066844004e-05,
+            "old_std": 0.25484744547379806,
+            "new_std": 0.023440653478340887,
+            "old_mean_abs": 0.19490029070667242,
+            "new_mean_abs": 0.017733259083665964,
+            "new_positive_fraction": 0.4996777398682067,
+            "new_query_equal_mean": 0.0003907307490181167
+          },
+          "m": {
+            "old_mean": 7.06459378249498,
+            "new_mean": 0.2222988253020618,
+            "old_std": 1.7950106143459328,
+            "new_std": 0.2789423404936306,
+            "old_mean_abs": 7.064645505444091,
+            "new_mean_abs": 0.27902069335904994,
+            "new_positive_fraction": 0.8056552696222319,
+            "new_query_equal_mean": 0.21284503135751445
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 5.9451839453827535,
+            "new_mean": 0.06950748152598267,
+            "old_std": 1.1734219291903423,
+            "new_std": 0.011211301667792186,
+            "old_mean_abs": 5.9451839453827535,
+            "new_mean_abs": 0.06950748152598267,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.06921068374719622
+          },
+          "b": {
+            "old_mean": -0.08209090267636986,
+            "new_mean": -0.001077114202250476,
+            "old_std": 0.8691922536261024,
+            "new_std": 0.00941616569681537,
+            "old_mean_abs": 0.6317949804262248,
+            "new_mean_abs": 0.006720599331963728,
+            "new_positive_fraction": 0.4826434213464651,
+            "new_query_equal_mean": -0.0013735872683069217
+          },
+          "T": {
+            "old_mean": 1.2308640490794853,
+            "new_mean": 0.29470403715932314,
+            "old_std": 1.2442752243194577,
+            "new_std": 0.29061045137201985,
+            "old_mean_abs": 1.4540521569057019,
+            "new_mean_abs": 0.3284414103934048,
+            "new_positive_fraction": 0.8781625522503628,
+            "new_query_equal_mean": 0.28354581143550045
+          },
+          "R": {
+            "old_mean": 9.700357254595744e-05,
+            "new_mean": 5.174283221535158e-05,
+            "old_std": 0.11773117819863708,
+            "new_std": 0.015928830813243196,
+            "old_mean_abs": 0.09055458809855445,
+            "new_mean_abs": 0.012258917017739882,
+            "new_positive_fraction": 0.5035977161401918,
+            "new_query_equal_mean": 0.00031613315344414917
+          },
+          "m": {
+            "old_mean": 7.258235900716772,
+            "new_mean": 0.3653403757197717,
+            "old_std": 1.754209862247275,
+            "new_std": 0.2910723713159871,
+            "old_mean_abs": 7.258285713230287,
+            "new_mean_abs": 0.38546729561856324,
+            "new_positive_fraction": 0.9264594129695243,
+            "new_query_equal_mean": 0.3544462156044479
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 1,
+        "route": {
+          "reader": "L4H4",
+          "writer": "L3H5",
+          "reader_layer": 4,
+          "reader_head": 4,
+          "writer_layer": 3,
+          "writer_head": 5,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L4H4",
+            "writer": "L3H5",
+            "writer_layer": 3,
+            "writer_head": 5,
+            "index": 29,
+            "selection_delta": 0.7735425350311468,
+            "previous_attention": 0.888758123931266
+          }
+        },
+        "parameters_SHA": "62a1de67bd707a1be1a8ff3b0586908c98c419a46318b7affe07999c9a2b3526",
+        "old_Gplus": 5.945183945387745,
+        "new_Gplus": 0.06950748152598266,
+        "minimum_Gplus": 0.06950748152596865,
+        "Gplus_retained": 0.01169139292652271,
+        "factor_Q_relative_error": 2.2376455843834113e-15,
+        "factor_KOV_relative_error": 2.3404860931234062e-15,
+        "affine_Q_error": 2.7755575615628914e-17,
+        "affine_V_error": 6.938893903907228e-18,
+        "frame_isometry_error": 3.3306690738754696e-15,
+        "actual_weight_matrix_error_seven_distances": 2.836749620264655e-15,
+        "stock_native_attention_overlap_error": 1.3877787807814457e-16,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.015160489628698733,
+          "mean_component_max_change": 2.3852447794681098e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.6334013346826943e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 22.621798288853483,
+        "new_raw_Q_norm": 22.677504156697534,
+        "old_raw_V_norm": 11.578941417303795,
+        "new_raw_V_norm": 11.590916440924962
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 3.375077994860476e-14,
+        "Writer_previous_attention_unchanged_max_error": 2.9976021664879227e-15,
+        "changed_Q_native_reconstruction_max_error": 1.7763568394002505e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L4H5",
+        "writer": "L3H5",
+        "reader_layer": 4,
+        "reader_head": 5,
+        "writer_layer": 3,
+        "writer_head": 5,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L4H5",
+          "writer": "L3H5",
+          "writer_layer": 3,
+          "writer_head": 5,
+          "index": 29,
+          "selection_delta": 0.37055756650606037,
+          "previous_attention": 0.888758123931266
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 37.05575665060602,
+      "new_route_score_pp": 0.2734740135674171,
+      "route_score_change_pp": -36.782282637038605,
+      "old_attention": 0.4051362869349942,
+      "new_attention": 0.030377627545197204,
+      "new_removed_attention": 0.027642887409523035,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 2.9454216652447407,
+            "new_mean": -0.0017538202364155142,
+            "old_std": 0.702986488644861,
+            "new_std": 0.008291076974181417,
+            "old_mean_abs": 2.9454216652447407,
+            "new_mean_abs": 0.006689578234261229,
+            "new_positive_fraction": 0.42258063649709426,
+            "new_query_equal_mean": -0.001743777151118789
+          },
+          "b": {
+            "old_mean": -0.04378475808600548,
+            "new_mean": 2.5294973732023488e-05,
+            "old_std": 0.5005400121837131,
+            "new_std": 0.008245739066244004,
+            "old_mean_abs": 0.371515225743651,
+            "new_mean_abs": 0.006526913052138248,
+            "new_positive_fraction": 0.502061237003118,
+            "new_query_equal_mean": 3.141870232159403e-05
+          },
+          "T": {
+            "old_mean": 0.7402936564737121,
+            "new_mean": 0.10343178657513498,
+            "old_std": 0.792625465457208,
+            "new_std": 0.17030039680585446,
+            "old_mean_abs": 0.8887500587541578,
+            "new_mean_abs": 0.15416871665861737,
+            "new_positive_fraction": 0.7404127251072634,
+            "new_query_equal_mean": 0.09626879433195962
+          },
+          "R": {
+            "old_mean": 0.093572393381474,
+            "new_mean": 0.006180484812672243,
+            "old_std": 0.2936980808453307,
+            "new_std": 0.034649439149727866,
+            "old_mean_abs": 0.2440974783445715,
+            "new_mean_abs": 0.0269052935363639,
+            "new_positive_fraction": 0.5710791508102595,
+            "new_query_equal_mean": 0.006671748475683776
+          },
+          "m": {
+            "old_mean": 3.82307247318749,
+            "new_mean": 0.10783315617765986,
+            "old_std": 1.0795958123079439,
+            "new_std": 0.17473175114934425,
+            "old_mean_abs": 3.823241446385539,
+            "new_mean_abs": 0.15904473909592115,
+            "new_positive_fraction": 0.7441105869767578,
+            "new_query_equal_mean": 0.10116534695420308
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 3.464689794292915,
+            "new_mean": 0.044737133641262763,
+            "old_std": 0.7274064601520761,
+            "new_std": 0.006902709619057565,
+            "old_mean_abs": 3.464689794292915,
+            "new_mean_abs": 0.044737133641262763,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.04454598261052557
+          },
+          "b": {
+            "old_mean": -0.05233722290670187,
+            "new_mean": -0.0006937151059625875,
+            "old_std": 0.5457652046047293,
+            "new_std": 0.00587888207258768,
+            "old_mean_abs": 0.39246477797059637,
+            "new_mean_abs": 0.004143898607961254,
+            "new_positive_fraction": 0.4824131053540746,
+            "new_query_equal_mean": -0.0008844229172911264
+          },
+          "T": {
+            "old_mean": 0.6625584479243211,
+            "new_mean": 0.184841549324612,
+            "old_std": 0.7512576406825147,
+            "new_std": 0.17515082470773685,
+            "old_mean_abs": 0.8192038689480404,
+            "new_mean_abs": 0.2030291498455605,
+            "new_positive_fraction": 0.8895294282638108,
+            "new_query_equal_mean": 0.17826688714419212
+          },
+          "R": {
+            "old_mean": 0.08727095507772747,
+            "new_mean": 0.002812324996175044,
+            "old_std": 0.16966675433844347,
+            "new_std": 0.021802822894209366,
+            "old_mean_abs": 0.15143466446326656,
+            "new_mean_abs": 0.01678483156680339,
+            "new_positive_fraction": 0.5446336757473135,
+            "new_query_equal_mean": 0.002683848024890519
+          },
+          "m": {
+            "old_mean": 4.26685642019988,
+            "new_mean": 0.23308472306801237,
+            "old_std": 1.0825828121689376,
+            "new_std": 0.1792035643048251,
+            "old_mean_abs": 4.266920208257302,
+            "new_mean_abs": 0.24400112030628326,
+            "new_positive_fraction": 0.9341001292301978,
+            "new_query_equal_mean": 0.2263811406968995
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 2,
+        "route": {
+          "reader": "L4H5",
+          "writer": "L3H5",
+          "reader_layer": 4,
+          "reader_head": 5,
+          "writer_layer": 3,
+          "writer_head": 5,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L4H5",
+            "writer": "L3H5",
+            "writer_layer": 3,
+            "writer_head": 5,
+            "index": 29,
+            "selection_delta": 0.37055756650606037,
+            "previous_attention": 0.888758123931266
+          }
+        },
+        "parameters_SHA": "212ae7f39baa911bfc658b247f66d1b4834c2311f7d2da3aae17cbcfdae8c800",
+        "old_Gplus": 3.4646897942900963,
+        "new_Gplus": 0.044737133641262805,
+        "minimum_Gplus": 0.044737133641252994,
+        "Gplus_retained": 0.012912305660088481,
+        "factor_Q_relative_error": 2.1683430285494606e-15,
+        "factor_KOV_relative_error": 2.3299666709449702e-15,
+        "affine_Q_error": 2.7755575615628914e-17,
+        "affine_V_error": 1.3877787807814457e-17,
+        "frame_isometry_error": 3.774758283725532e-15,
+        "actual_weight_matrix_error_seven_distances": 2.7151069010895927e-15,
+        "stock_native_attention_overlap_error": 0.0,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.014750464013959106,
+          "mean_component_max_change": 2.8189256484623115e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.6412351757018398e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 18.53881227277233,
+        "new_raw_Q_norm": 18.57814018054026,
+        "old_raw_V_norm": 11.578941417303795,
+        "new_raw_V_norm": 11.59204928947976
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 3.375077994860476e-14,
+        "Writer_previous_attention_unchanged_max_error": 2.9976021664879227e-15,
+        "changed_Q_native_reconstruction_max_error": 1.1102230246251565e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L5H6",
+        "writer": "L1H0",
+        "reader_layer": 5,
+        "reader_head": 6,
+        "writer_layer": 1,
+        "writer_head": 0,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L5H6",
+          "writer": "L1H0",
+          "writer_layer": 1,
+          "writer_head": 0,
+          "index": 8,
+          "selection_delta": 0.1408558527393043,
+          "previous_attention": 0.6212887573241358
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 14.085585273930457,
+      "new_route_score_pp": -0.021548608100649288,
+      "route_score_change_pp": -14.107133882031107,
+      "old_attention": 0.711814061040333,
+      "new_attention": 0.03200046026094305,
+      "new_removed_attention": 0.03221594634194955,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 1.2733122781861737,
+            "new_mean": -0.04034584047113857,
+            "old_std": 0.46749938425819565,
+            "new_std": 0.010487880945760147,
+            "old_mean_abs": 1.2733155613405063,
+            "new_mean_abs": 0.04034584047113857,
+            "new_positive_fraction": 0.0,
+            "new_query_equal_mean": -0.04017216112511371
+          },
+          "b": {
+            "old_mean": -0.011788324852696484,
+            "new_mean": 0.0006198156408026755,
+            "old_std": 0.413464288777774,
+            "new_std": 0.009799641466166869,
+            "old_mean_abs": 0.32825898128177744,
+            "new_mean_abs": 0.007684528299569883,
+            "new_positive_fraction": 0.5154255119135048,
+            "new_query_equal_mean": 0.0007922358731631289
+          },
+          "T": {
+            "old_mean": -0.14523581703000352,
+            "new_mean": 0.025801222285228177,
+            "old_std": 0.4436360646012181,
+            "new_std": 0.09561305500180803,
+            "old_mean_abs": 0.36493801038380924,
+            "new_mean_abs": 0.07671067980547704,
+            "new_positive_fraction": 0.6124707524589422,
+            "new_query_equal_mean": 0.026758059819547726
+          },
+          "R": {
+            "old_mean": -0.005269137013900038,
+            "new_mean": 0.0005055270668447884,
+            "old_std": 0.10194984989271098,
+            "new_std": 0.01182506339611714,
+            "old_mean_abs": 0.07976644694509616,
+            "new_mean_abs": 0.009176369364347155,
+            "new_positive_fraction": 0.5165491776922894,
+            "new_query_equal_mean": 0.0004909902831377559
+          },
+          "m": {
+            "old_mean": 1.1345956489938542,
+            "new_mean": -0.014658906759868313,
+            "old_std": 0.6416048943999123,
+            "new_std": 0.095779084196053,
+            "old_mean_abs": 1.1424179371995817,
+            "new_mean_abs": 0.07495680071867289,
+            "new_positive_fraction": 0.4337685164081679,
+            "new_query_equal_mean": -0.013715346895591328
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 1.8752973813139564,
+            "new_mean": 0.018196121340853258,
+            "old_std": 0.4927075396701197,
+            "new_std": 0.0029467224516044666,
+            "old_mean_abs": 1.8752973813139564,
+            "new_mean_abs": 0.018196121340853258,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.018118500568330278
+          },
+          "b": {
+            "old_mean": -0.018860710781247864,
+            "new_mean": -0.00028173310607665673,
+            "old_std": 0.36666328470604614,
+            "new_std": 0.002557740272996528,
+            "old_mean_abs": 0.28669418436590405,
+            "new_mean_abs": 0.0018404750199727943,
+            "new_positive_fraction": 0.48260351653478895,
+            "new_query_equal_mean": -0.0003597255030131353
+          },
+          "T": {
+            "old_mean": -0.71625526326577,
+            "new_mean": 0.0017164736256047388,
+            "old_std": 0.374818663590863,
+            "new_std": 0.05069642490436776,
+            "old_mean_abs": 0.7193597974400056,
+            "new_mean_abs": 0.038949587281347516,
+            "new_positive_fraction": 0.5089773835642825,
+            "new_query_equal_mean": 0.001983778554412195
+          },
+          "R": {
+            "old_mean": -0.0004423173699528583,
+            "new_mean": 8.944475433962099e-05,
+            "old_std": 0.042055858609465986,
+            "new_std": 0.008188210991081123,
+            "old_mean_abs": 0.03292880078279061,
+            "new_mean_abs": 0.006331151667831783,
+            "new_positive_fraction": 0.5045850244915782,
+            "new_query_equal_mean": 0.00012529952201246214
+          },
+          "m": {
+            "old_mean": 1.177460511461291,
+            "new_mean": 0.020283772826874245,
+            "old_std": 0.4537356847199329,
+            "new_std": 0.051056514683254436,
+            "old_mean_abs": 1.177639504816052,
+            "new_mean_abs": 0.042429480692779124,
+            "new_positive_fraction": 0.6631461701740694,
+            "new_query_equal_mean": 0.02058730414776805
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 3,
+        "route": {
+          "reader": "L5H6",
+          "writer": "L1H0",
+          "reader_layer": 5,
+          "reader_head": 6,
+          "writer_layer": 1,
+          "writer_head": 0,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L5H6",
+            "writer": "L1H0",
+            "writer_layer": 1,
+            "writer_head": 0,
+            "index": 8,
+            "selection_delta": 0.1408558527393043,
+            "previous_attention": 0.6212887573241358
+          }
+        },
+        "parameters_SHA": "7a915707f1f426321bd5e2753a29b33ccbff9a8c6113d9d2a84088646a9b6e09",
+        "old_Gplus": 1.8752973813157425,
+        "new_Gplus": 0.018196121340853227,
+        "minimum_Gplus": 0.01819612134084847,
+        "Gplus_retained": 0.009703059110596369,
+        "factor_Q_relative_error": 2.1728954965260584e-15,
+        "factor_KOV_relative_error": 2.330853837414164e-15,
+        "affine_Q_error": 2.7755575615628914e-17,
+        "affine_V_error": 1.3877787807814457e-17,
+        "frame_isometry_error": 4.107825191113079e-15,
+        "actual_weight_matrix_error_seven_distances": 2.7739155859195924e-15,
+        "stock_native_attention_overlap_error": 1.1102230246251565e-16,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.01585968012890695,
+          "mean_component_max_change": 3.0899761915836876e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.6673851533517185e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 19.770829871218467,
+        "new_raw_Q_norm": 19.868759402659943,
+        "old_raw_V_norm": 9.572186076036896,
+        "new_raw_V_norm": 9.626046227742439
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 2.842170943040401e-14,
+        "Writer_previous_attention_unchanged_max_error": 2.220446049250313e-15,
+        "changed_Q_native_reconstruction_max_error": 1.687538997430238e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L5H6",
+        "writer": "L3H5",
+        "reader_layer": 5,
+        "reader_head": 6,
+        "writer_layer": 3,
+        "writer_head": 5,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L5H6",
+          "writer": "L3H5",
+          "writer_layer": 3,
+          "writer_head": 5,
+          "index": 29,
+          "selection_delta": 0.6762295856040369,
+          "previous_attention": 0.888758123931266
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 67.62295856040369,
+      "new_route_score_pp": 0.45650748333864366,
+      "route_score_change_pp": -67.16645107706505,
+      "old_attention": 0.711814061040333,
+      "new_attention": 0.035733419026407504,
+      "new_removed_attention": 0.031168344193021065,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 5.525590141984255,
+            "new_mean": 0.009192321329941692,
+            "old_std": 1.383060897142809,
+            "new_std": 0.010544022859523374,
+            "old_mean_abs": 5.525590141984255,
+            "new_mean_abs": 0.011370246492724641,
+            "new_positive_fraction": 0.8118579258246291,
+            "new_query_equal_mean": 0.00915773651727751
+          },
+          "b": {
+            "old_mean": -0.08001830098856644,
+            "new_mean": -0.00014223461444131403,
+            "old_std": 0.8576243143846826,
+            "new_std": 0.010451004380623704,
+            "old_mean_abs": 0.6288073874074984,
+            "new_mean_abs": 0.008296767557384807,
+            "new_positive_fraction": 0.4910278443497473,
+            "new_query_equal_mean": -0.00018329896713330785
+          },
+          "T": {
+            "old_mean": 0.3083892416534855,
+            "new_mean": 0.14399189754009467,
+            "old_std": 1.2753324736213838,
+            "new_std": 0.2709850636987862,
+            "old_mean_abs": 1.017795627024616,
+            "new_mean_abs": 0.23564357515326942,
+            "new_positive_fraction": 0.7117709026391661,
+            "new_query_equal_mean": 0.14008194642928404
+          },
+          "R": {
+            "old_mean": -0.0060164725538244795,
+            "new_mean": 5.752396746109268e-06,
+            "old_std": 0.18483461242972385,
+            "new_std": 0.02324229704419118,
+            "old_mean_abs": 0.1444245858178487,
+            "new_mean_abs": 0.017726722963213773,
+            "new_positive_fraction": 0.501318345623248,
+            "new_query_equal_mean": -0.0007205317820247995
+          },
+          "m": {
+            "old_mean": 5.907981212075361,
+            "new_mean": 0.15333220588122384,
+            "old_std": 1.6576963242898253,
+            "new_std": 0.26986873889059004,
+            "old_mean_abs": 5.90818631936802,
+            "new_mean_abs": 0.23903262453451377,
+            "new_positive_fraction": 0.726542877336446,
+            "new_query_equal_mean": 0.14870245013166977
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 5.950850959917187,
+            "new_mean": 0.05846318140823421,
+            "old_std": 1.3916598632231458,
+            "new_std": 0.009695521895088528,
+            "old_mean_abs": 5.950850959917187,
+            "new_mean_abs": 0.05846318140823421,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.05821368024952723
+          },
+          "b": {
+            "old_mean": -0.08369654246170319,
+            "new_mean": -0.0009054088386961236,
+            "old_std": 0.9196243001654214,
+            "new_std": 0.008079767181157242,
+            "old_mean_abs": 0.6772517926120666,
+            "new_mean_abs": 0.005807238444493408,
+            "new_positive_fraction": 0.4827415526501783,
+            "new_query_equal_mean": -0.0011548879534610049
+          },
+          "T": {
+            "old_mean": -0.14761127723748288,
+            "new_mean": 0.20321118067837474,
+            "old_std": 1.1877102491291374,
+            "new_std": 0.2592028995897785,
+            "old_mean_abs": 0.9147210826612723,
+            "new_mean_abs": 0.25459823610607696,
+            "new_positive_fraction": 0.806532887704023,
+            "new_query_equal_mean": 0.19816018899365076
+          },
+          "R": {
+            "old_mean": -0.002234502777717484,
+            "new_mean": -5.591025294692715e-05,
+            "old_std": 0.08397140560252496,
+            "new_std": 0.01451025487092821,
+            "old_mean_abs": 0.06620398204923879,
+            "new_mean_abs": 0.011173278346629137,
+            "new_positive_fraction": 0.5023062774873168,
+            "new_query_equal_mean": -0.00031111252933395476
+          },
+          "m": {
+            "old_mean": 5.884701722362882,
+            "new_mean": 0.26252386067235783,
+            "old_std": 1.5926156145223327,
+            "new_std": 0.25907096015664877,
+            "old_mean_abs": 5.884884353171745,
+            "new_mean_abs": 0.29488286218818105,
+            "new_positive_fraction": 0.8731891752826527,
+            "new_query_equal_mean": 0.2572176446673047
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 4,
+        "route": {
+          "reader": "L5H6",
+          "writer": "L3H5",
+          "reader_layer": 5,
+          "reader_head": 6,
+          "writer_layer": 3,
+          "writer_head": 5,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L5H6",
+            "writer": "L3H5",
+            "writer_layer": 3,
+            "writer_head": 5,
+            "index": 29,
+            "selection_delta": 0.6762295856040369,
+            "previous_attention": 0.888758123931266
+          }
+        },
+        "parameters_SHA": "04fef03ae7e04da82bbbf091a216547a03658ca021be8ef7458a249d5d021e1f",
+        "old_Gplus": 5.950850959915633,
+        "new_Gplus": 0.05846318140823417,
+        "minimum_Gplus": 0.05846318140821877,
+        "Gplus_retained": 0.009824339712427115,
+        "factor_Q_relative_error": 2.1693970247379123e-15,
+        "factor_KOV_relative_error": 2.304752843756388e-15,
+        "affine_Q_error": 2.7755575615628914e-17,
+        "affine_V_error": 6.938893903907228e-18,
+        "frame_isometry_error": 4.6629367034256575e-15,
+        "actual_weight_matrix_error_seven_distances": 2.53204643239359e-15,
+        "stock_native_attention_overlap_error": 2.7755575615628914e-17,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.014854391505632355,
+          "mean_component_max_change": 2.6020852139652106e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.6226137430826472e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 19.770829871218467,
+        "new_raw_Q_norm": 19.807589464432027,
+        "old_raw_V_norm": 11.578941417303795,
+        "new_raw_V_norm": 11.591007003901883
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 3.375077994860476e-14,
+        "Writer_previous_attention_unchanged_max_error": 2.9976021664879227e-15,
+        "changed_Q_native_reconstruction_max_error": 1.2878587085651816e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L5H6",
+        "writer": "L3H6",
+        "reader_layer": 5,
+        "reader_head": 6,
+        "writer_layer": 3,
+        "writer_head": 6,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L5H6",
+          "writer": "L3H6",
+          "writer_layer": 3,
+          "writer_head": 6,
+          "index": 30,
+          "selection_delta": 0.12218049675339544,
+          "previous_attention": 0.40973081415167484
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 12.218049675339515,
+      "new_route_score_pp": -0.03199913994585525,
+      "route_score_change_pp": -12.25004881528537,
+      "old_attention": 0.711814061040333,
+      "new_attention": 0.02825497952301653,
+      "new_removed_attention": 0.028574970922475084,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 1.453360927790064,
+            "new_mean": -0.04071327560503524,
+            "old_std": 0.43967560034483416,
+            "new_std": 0.013900498677528952,
+            "old_mean_abs": 1.453420056300122,
+            "new_mean_abs": 0.04071349083762049,
+            "new_positive_fraction": 6.41738437772667e-05,
+            "new_query_equal_mean": -0.04053388615326503
+          },
+          "b": {
+            "old_mean": -0.022777830903917464,
+            "new_mean": 0.000623735874450784,
+            "old_std": 0.4527999118713108,
+            "new_std": 0.01324294259175678,
+            "old_mean_abs": 0.3523662046808445,
+            "new_mean_abs": 0.010539247336574608,
+            "new_positive_fraction": 0.5151937570456933,
+            "new_query_equal_mean": 0.0007941575334799077
+          },
+          "T": {
+            "old_mean": 0.14131108611069193,
+            "new_mean": 0.01700797997105753,
+            "old_std": 0.778962327748562,
+            "new_std": 0.2087905374293097,
+            "old_mean_abs": 0.6134720699440747,
+            "new_mean_abs": 0.1626082536264253,
+            "new_positive_fraction": 0.5385830607144035,
+            "new_query_equal_mean": 0.008515564960351593
+          },
+          "R": {
+            "old_mean": 0.006839872171542163,
+            "new_mean": 0.0005845426346408482,
+            "old_std": 0.13514494985829503,
+            "new_std": 0.025714013916038097,
+            "old_mean_abs": 0.10642340750832391,
+            "new_mean_abs": 0.019854236535282056,
+            "new_positive_fraction": 0.5080620189839468,
+            "new_query_equal_mean": 0.0013064696835988333
+          },
+          "m": {
+            "old_mean": 1.6242897169780208,
+            "new_mean": -0.023744488873787634,
+            "old_std": 0.9200691863143108,
+            "new_std": 0.20807811130675447,
+            "old_mean_abs": 1.6539363772326827,
+            "new_mean_abs": 0.16243496442801278,
+            "new_positive_fraction": 0.45475465831121303,
+            "new_query_equal_mean": -0.031506009042794485
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 2.2245204265901983,
+            "new_mean": 0.03640327932156397,
+            "old_std": 0.4736257589484951,
+            "new_std": 0.005481463445096344,
+            "old_mean_abs": 2.2245204265901983,
+            "new_mean_abs": 0.03640327932156397,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.03624787851213494
+          },
+          "b": {
+            "old_mean": -0.03268414127071818,
+            "new_mean": -0.0005649293321725509,
+            "old_std": 0.33840762869343366,
+            "new_std": 0.004708255266209177,
+            "old_mean_abs": 0.24525845699940527,
+            "new_mean_abs": 0.003296467972171002,
+            "new_positive_fraction": 0.48219257371454705,
+            "new_query_equal_mean": -0.0007200746172801794
+          },
+          "T": {
+            "old_mean": 0.016461401068942852,
+            "new_mean": 0.10068459073738771,
+            "old_std": 0.4880858626542103,
+            "new_std": 0.13627017981630402,
+            "old_mean_abs": 0.3731805988078445,
+            "new_mean_abs": 0.1316817306780927,
+            "new_positive_fraction": 0.789529361116291,
+            "new_query_equal_mean": 0.09391458050791733
+          },
+          "R": {
+            "old_mean": 0.00015731099618707947,
+            "new_mean": 0.0001612790871770237,
+            "old_std": 0.05258067026460933,
+            "new_std": 0.013106261819599117,
+            "old_mean_abs": 0.04143498272947857,
+            "new_mean_abs": 0.010124449719687957,
+            "new_positive_fraction": 0.5054690695502497,
+            "new_query_equal_mean": 0.0005083702199633136
+          },
+          "m": {
+            "old_mean": 2.2738232799246605,
+            "new_mean": 0.13781407847830135,
+            "old_std": 0.6614148305482871,
+            "new_std": 0.1362833970181611,
+            "old_mean_abs": 2.27402435612062,
+            "new_mean_abs": 0.1561250268250354,
+            "new_positive_fraction": 0.8681169955360329,
+            "new_query_equal_mean": 0.13139090385729582
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 5,
+        "route": {
+          "reader": "L5H6",
+          "writer": "L3H6",
+          "reader_layer": 5,
+          "reader_head": 6,
+          "writer_layer": 3,
+          "writer_head": 6,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L5H6",
+            "writer": "L3H6",
+            "writer_layer": 3,
+            "writer_head": 6,
+            "index": 30,
+            "selection_delta": 0.12218049675339544,
+            "previous_attention": 0.40973081415167484
+          }
+        },
+        "parameters_SHA": "15368cd5b9c01002ed47276db886d4baf2b0deeb819665e99944a5513f26e838",
+        "old_Gplus": 2.224520426589128,
+        "new_Gplus": 0.03640327932156395,
+        "minimum_Gplus": 0.03640327932155616,
+        "Gplus_retained": 0.016364551606919315,
+        "factor_Q_relative_error": 2.1673049228342623e-15,
+        "factor_KOV_relative_error": 2.3399980107591853e-15,
+        "affine_Q_error": 2.7755575615628914e-17,
+        "affine_V_error": 1.3877787807814457e-17,
+        "frame_isometry_error": 3.552713678800501e-15,
+        "actual_weight_matrix_error_seven_distances": 2.780810871524725e-15,
+        "stock_native_attention_overlap_error": 0.0,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.01302734672149641,
+          "mean_component_max_change": 2.1141942363467336e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.6680769560785257e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 19.770829871218467,
+        "new_raw_Q_norm": 19.80763405941301,
+        "old_raw_V_norm": 12.675427484290886,
+        "new_raw_V_norm": 12.695597036137473
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 3.375077994860476e-14,
+        "Writer_previous_attention_unchanged_max_error": 2.942091015256665e-15,
+        "changed_Q_native_reconstruction_max_error": 1.554312234475219e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L5H7",
+        "writer": "L1H0",
+        "reader_layer": 5,
+        "reader_head": 7,
+        "writer_layer": 1,
+        "writer_head": 0,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L5H7",
+          "writer": "L1H0",
+          "writer_layer": 1,
+          "writer_head": 0,
+          "index": 8,
+          "selection_delta": 0.1245067197525228,
+          "previous_attention": 0.6212887573241358
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 12.45067197525228,
+      "new_route_score_pp": -0.04512405914526365,
+      "route_score_change_pp": -12.495796034397545,
+      "old_attention": 0.6608939662861079,
+      "new_attention": 0.029614911587426285,
+      "new_removed_attention": 0.030066152178878924,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 1.1655030058848173,
+            "new_mean": -0.05251066667327593,
+            "old_std": 0.42809559689581733,
+            "new_std": 0.013483350487314364,
+            "old_mean_abs": 1.1655408048972595,
+            "new_mean_abs": 0.05251066667327593,
+            "new_positive_fraction": 0.0,
+            "new_query_equal_mean": -0.0522806640960729
+          },
+          "b": {
+            "old_mean": -0.013429094235859515,
+            "new_mean": 0.0008215587518315356,
+            "old_std": 0.39974165806519774,
+            "new_std": 0.01244566037217703,
+            "old_mean_abs": 0.3175418205056088,
+            "new_mean_abs": 0.009733889831732597,
+            "new_positive_fraction": 0.51601698563657,
+            "new_query_equal_mean": 0.001042727433852149
+          },
+          "T": {
+            "old_mean": -0.11720911001107141,
+            "new_mean": 0.03053212710418039,
+            "old_std": 0.5012105701725139,
+            "new_std": 0.12088671021547426,
+            "old_mean_abs": 0.4039804844247508,
+            "new_mean_abs": 0.09711704053299368,
+            "new_positive_fraction": 0.6049276399143274,
+            "new_query_equal_mean": 0.02939247465733962
+          },
+          "R": {
+            "old_mean": -0.008684662848530105,
+            "new_mean": -3.588909432875877e-05,
+            "old_std": 0.12437561129389708,
+            "new_std": 0.017131130698110838,
+            "old_mean_abs": 0.09699398201932104,
+            "new_mean_abs": 0.013274102578377339,
+            "new_positive_fraction": 0.4996763489552997,
+            "new_query_equal_mean": 1.691747691339456e-05
+          },
+          "m": {
+            "old_mean": 1.053038327260866,
+            "new_mean": -0.022835987415255974,
+            "old_std": 0.7127328901546285,
+            "new_std": 0.12081972726751365,
+            "old_mean_abs": 1.085958579263564,
+            "new_mean_abs": 0.09570668551376423,
+            "new_positive_fraction": 0.42110415846507676,
+            "new_query_equal_mean": -0.02391399939567205
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 2.0184144301566986,
+            "new_mean": 0.021374066191596364,
+            "old_std": 0.4527586482264444,
+            "new_std": 0.003425170961209491,
+            "old_mean_abs": 2.0184144301566986,
+            "new_mean_abs": 0.021374066191596364,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.02128284520765547
+          },
+          "b": {
+            "old_mean": -0.020895261648448564,
+            "new_mean": -0.0003309784163670098,
+            "old_std": 0.3803574395652431,
+            "new_std": 0.0029855065159616707,
+            "old_mean_abs": 0.29427198798829224,
+            "new_mean_abs": 0.002143346031203376,
+            "new_positive_fraction": 0.48258557855454026,
+            "new_query_equal_mean": -0.000422591337838856
+          },
+          "T": {
+            "old_mean": -0.7674028696976589,
+            "new_mean": 0.0020843529924338337,
+            "old_std": 0.38258646335697305,
+            "new_std": 0.05634958122546313,
+            "old_mean_abs": 0.7698059104039375,
+            "new_mean_abs": 0.043368767028673094,
+            "new_positive_fraction": 0.510027330958997,
+            "new_query_equal_mean": 0.002406895154556133
+          },
+          "R": {
+            "old_mean": -0.006568307947182761,
+            "new_mean": -0.00017271979313123343,
+            "old_std": 0.05081454055247409,
+            "new_std": 0.009712739279543473,
+            "old_mean_abs": 0.03990105867493885,
+            "new_mean_abs": 0.007482025517876107,
+            "new_positive_fraction": 0.4932600677153958,
+            "new_query_equal_mean": -0.00023680086874685547
+          },
+          "m": {
+            "old_mean": 1.2653385141616056,
+            "new_mean": 0.023616677807265996,
+            "old_std": 0.44324202023969733,
+            "new_std": 0.05701400573547482,
+            "old_mean_abs": 1.2654230351805713,
+            "new_mean_abs": 0.04778819692235961,
+            "new_positive_fraction": 0.6691799983270675,
+            "new_query_equal_mean": 0.023875530831303657
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 6,
+        "route": {
+          "reader": "L5H7",
+          "writer": "L1H0",
+          "reader_layer": 5,
+          "reader_head": 7,
+          "writer_layer": 1,
+          "writer_head": 0,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L5H7",
+            "writer": "L1H0",
+            "writer_layer": 1,
+            "writer_head": 0,
+            "index": 8,
+            "selection_delta": 0.1245067197525228,
+            "previous_attention": 0.6212887573241358
+          }
+        },
+        "parameters_SHA": "475079424f3c6c9c4ba627505175a0b083ab8b228fee8aef15a52b229013f547",
+        "old_Gplus": 2.018414430158143,
+        "new_Gplus": 0.021374066191596375,
+        "minimum_Gplus": 0.021374066191590737,
+        "Gplus_retained": 0.010589532987990834,
+        "factor_Q_relative_error": 2.18342002815502e-15,
+        "factor_KOV_relative_error": 2.3294037241666462e-15,
+        "affine_Q_error": 2.7755575615628914e-17,
+        "affine_V_error": 6.938893903907228e-18,
+        "frame_isometry_error": 3.552713678800501e-15,
+        "actual_weight_matrix_error_seven_distances": 2.850241803075683e-15,
+        "stock_native_attention_overlap_error": 0.0,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.015673962249729053,
+          "mean_component_max_change": 2.3852447794681098e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.6715960588028445e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 22.166936533273283,
+        "new_raw_Q_norm": 22.29458016717701,
+        "old_raw_V_norm": 9.572186076036896,
+        "new_raw_V_norm": 9.621634260553146
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 2.842170943040401e-14,
+        "Writer_previous_attention_unchanged_max_error": 2.220446049250313e-15,
+        "changed_Q_native_reconstruction_max_error": 2.1316282072803006e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L5H7",
+        "writer": "L3H5",
+        "reader_layer": 5,
+        "reader_head": 7,
+        "writer_layer": 3,
+        "writer_head": 5,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L5H7",
+          "writer": "L3H5",
+          "writer_layer": 3,
+          "writer_head": 5,
+          "index": 29,
+          "selection_delta": 0.6201163751477016,
+          "previous_attention": 0.888758123931266
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 62.01163751477017,
+      "new_route_score_pp": 0.3775718185056054,
+      "route_score_change_pp": -61.634065696264564,
+      "old_attention": 0.6608939662861079,
+      "new_attention": 0.03404126913003709,
+      "new_removed_attention": 0.030265550944981037,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 5.595202266818272,
+            "new_mean": -0.0004911885448637258,
+            "old_std": 1.326668300709675,
+            "new_std": 0.012547172677779087,
+            "old_mean_abs": 5.595202266818272,
+            "new_mean_abs": 0.009939519028585827,
+            "new_positive_fraction": 0.49029545676045067,
+            "new_query_equal_mean": -0.00048337608116861
+          },
+          "b": {
+            "old_mean": -0.06912504479852205,
+            "new_mean": 8.724720617281008e-06,
+            "old_std": 0.8960438802994547,
+            "new_std": 0.012326101911634506,
+            "old_mean_abs": 0.6873771849201509,
+            "new_mean_abs": 0.009767799399912512,
+            "new_positive_fraction": 0.5001543433701608,
+            "new_query_equal_mean": 7.849678244180863e-06
+          },
+          "T": {
+            "old_mean": 0.19489185817156796,
+            "new_mean": 0.1445367049633627,
+            "old_std": 1.2717978953231048,
+            "new_std": 0.2917195485427533,
+            "old_mean_abs": 0.9950531644750719,
+            "new_mean_abs": 0.2498981000023928,
+            "new_positive_fraction": 0.6980897393985578,
+            "new_query_equal_mean": 0.14100151770764704
+          },
+          "R": {
+            "old_mean": -0.024884523403461117,
+            "new_mean": -0.00019900743205213185,
+            "old_std": 0.18828240076067246,
+            "new_std": 0.028261127458658466,
+            "old_mean_abs": 0.1479336067687666,
+            "new_mean_abs": 0.021667815914251973,
+            "new_positive_fraction": 0.4964551865127876,
+            "new_query_equal_mean": -0.0005533183682464246
+          },
+          "m": {
+            "old_mean": 5.834334646381315,
+            "new_mean": 0.14383778426582983,
+            "old_std": 1.7662819803213365,
+            "new_std": 0.29193521998538885,
+            "old_mean_abs": 5.834444397291772,
+            "new_mean_abs": 0.24991571224871786,
+            "new_positive_fraction": 0.6973578793969155,
+            "new_query_equal_mean": 0.1399569735799878
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 6.245520741130056,
+            "new_mean": 0.06285585519900647,
+            "old_std": 1.299092420360147,
+            "new_std": 0.01039356094420533,
+            "old_mean_abs": 6.245520741130056,
+            "new_mean_abs": 0.06285585519900647,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.06258756839076503
+          },
+          "b": {
+            "old_mean": -0.08423768858342993,
+            "new_mean": -0.0009734553157842633,
+            "old_std": 1.047882357277362,
+            "new_std": 0.00866842868634837,
+            "old_mean_abs": 0.7901522625542257,
+            "new_mean_abs": 0.006225484304981986,
+            "new_positive_fraction": 0.4828088920198818,
+            "new_query_equal_mean": -0.0012416508465043102
+          },
+          "T": {
+            "old_mean": -0.0830168445999888,
+            "new_mean": 0.21769784257773042,
+            "old_std": 1.1435665661804666,
+            "new_std": 0.2742323563634202,
+            "old_mean_abs": 0.8690482096994823,
+            "new_mean_abs": 0.2707625466009886,
+            "new_positive_fraction": 0.8094170175604193,
+            "new_query_equal_mean": 0.21260731197722776
+          },
+          "R": {
+            "old_mean": -0.01787757794987369,
+            "new_mean": -0.0006959276346198921,
+            "old_std": 0.08652396324363297,
+            "new_std": 0.01487200657803534,
+            "old_mean_abs": 0.06927491696399378,
+            "new_mean_abs": 0.011470540617452809,
+            "new_positive_fraction": 0.48070664706726496,
+            "new_query_equal_mean": -0.0006293710611221724
+          },
+          "m": {
+            "old_mean": 6.228864007167626,
+            "new_mean": 0.2808312254579018,
+            "old_std": 1.7250773649767746,
+            "new_std": 0.27474152076540376,
+            "old_mean_abs": 6.22899469893651,
+            "new_mean_abs": 0.3142914341348988,
+            "new_positive_fraction": 0.8749528528487047,
+            "new_query_equal_mean": 0.27580716015337536
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 7,
+        "route": {
+          "reader": "L5H7",
+          "writer": "L3H5",
+          "reader_layer": 5,
+          "reader_head": 7,
+          "writer_layer": 3,
+          "writer_head": 5,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L5H7",
+            "writer": "L3H5",
+            "writer_layer": 3,
+            "writer_head": 5,
+            "index": 29,
+            "selection_delta": 0.6201163751477016,
+            "previous_attention": 0.888758123931266
+          }
+        },
+        "parameters_SHA": "d359abfbf90150ba7e97dbd73d25329228e54286827c0c8ee7f8272d7d74e2d3",
+        "old_Gplus": 6.245520741135257,
+        "new_Gplus": 0.06285585519900629,
+        "minimum_Gplus": 0.06285585519899084,
+        "Gplus_retained": 0.010064149620865864,
+        "factor_Q_relative_error": 2.186892124906568e-15,
+        "factor_KOV_relative_error": 2.3287831264413658e-15,
+        "affine_Q_error": 2.7755575615628914e-17,
+        "affine_V_error": 1.3877787807814457e-17,
+        "frame_isometry_error": 3.885780586188048e-15,
+        "actual_weight_matrix_error_seven_distances": 2.645376302538267e-15,
+        "stock_native_attention_overlap_error": 2.0816681711721685e-17,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.014611707351839741,
+          "mean_component_max_change": 2.4936649967166602e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.646575717177857e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 22.166936533273283,
+        "new_raw_Q_norm": 22.230451750666695,
+        "old_raw_V_norm": 11.578941417303795,
+        "new_raw_V_norm": 11.592277295767559
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 3.375077994860476e-14,
+        "Writer_previous_attention_unchanged_max_error": 2.9976021664879227e-15,
+        "changed_Q_native_reconstruction_max_error": 2.042810365310288e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L5H7",
+        "writer": "L3H6",
+        "reader_layer": 5,
+        "reader_head": 7,
+        "writer_layer": 3,
+        "writer_head": 6,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L5H7",
+          "writer": "L3H6",
+          "writer_layer": 3,
+          "writer_head": 6,
+          "index": 30,
+          "selection_delta": 0.3307810624791261,
+          "previous_attention": 0.40973081415167484
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 33.07810624791265,
+      "new_route_score_pp": -0.0024654489238255337,
+      "route_score_change_pp": -33.08057169683648,
+      "old_attention": 0.6608939662861079,
+      "new_attention": 0.031676072745909806,
+      "new_removed_attention": 0.03170072723514806,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 4.845928025272088,
+            "new_mean": -0.04795706576664152,
+            "old_std": 1.5938428165138365,
+            "new_std": 0.020479451634968338,
+            "old_mean_abs": 4.8459312902678935,
+            "new_mean_abs": 0.04799631654597111,
+            "new_positive_fraction": 0.0038144587411106275,
+            "new_query_equal_mean": -0.04774581955430915
+          },
+          "b": {
+            "old_mean": -0.06374872895087089,
+            "new_mean": 0.0007300457598699159,
+            "old_std": 1.1400068513450055,
+            "new_std": 0.020075071143360962,
+            "old_mean_abs": 0.9027026700952935,
+            "new_mean_abs": 0.015998277098250517,
+            "new_positive_fraction": 0.5148029584813456,
+            "new_query_equal_mean": 0.0009315269750031761
+          },
+          "T": {
+            "old_mean": 0.2815083919626888,
+            "new_mean": 0.06075389352519548,
+            "old_std": 1.9147818526982503,
+            "new_std": 0.42133619637307856,
+            "old_mean_abs": 1.4814966248649315,
+            "new_mean_abs": 0.3288511700665047,
+            "new_positive_fraction": 0.5624548672742942,
+            "new_query_equal_mean": 0.046070559989876095
+          },
+          "R": {
+            "old_mean": -0.011928262210085354,
+            "new_mean": 0.0019523108435991693,
+            "old_std": 0.14921818116672952,
+            "new_std": 0.03372285148194334,
+            "old_mean_abs": 0.11653507578325839,
+            "new_mean_abs": 0.025980740302406484,
+            "new_positive_fraction": 0.5230354842026826,
+            "new_query_equal_mean": 0.002231959385977795
+          },
+          "m": {
+            "old_mean": 5.179256883976922,
+            "new_mean": 0.014019092842283165,
+            "old_std": 2.4707374501487127,
+            "new_std": 0.4214597827844779,
+            "old_mean_abs": 5.2094311661035855,
+            "new_mean_abs": 0.3253961334572355,
+            "new_positive_fraction": 0.5141302362595072,
+            "new_query_equal_mean": -0.0003748271534583364
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 5.710361309843288,
+            "new_mean": 0.05912939836633307,
+            "old_std": 1.5943552855225402,
+            "new_std": 0.010499717169582758,
+            "old_mean_abs": 5.710361309843288,
+            "new_mean_abs": 0.05912939836633307,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.05887738367474309
+          },
+          "b": {
+            "old_mean": -0.07973370448551138,
+            "new_mean": -0.0009155212697705408,
+            "old_std": 1.2960575750545371,
+            "new_std": 0.008612355926517792,
+            "old_mean_abs": 1.022410262556637,
+            "new_mean_abs": 0.006281038272575911,
+            "new_positive_fraction": 0.48310271038085306,
+            "new_query_equal_mean": -0.001167847773001829
+          },
+          "T": {
+            "old_mean": 0.09342202730585789,
+            "new_mean": 0.16718293897197967,
+            "old_std": 1.336289855959091,
+            "new_std": 0.31783552141171667,
+            "old_mean_abs": 1.0127582165419018,
+            "new_mean_abs": 0.2761726857278112,
+            "new_positive_fraction": 0.7174038600998695,
+            "new_query_equal_mean": 0.1499745962213556
+          },
+          "R": {
+            "old_mean": -0.0027440280325426096,
+            "new_mean": 0.0009656427012608689,
+            "old_std": 0.06694674148010708,
+            "new_std": 0.017794055527768488,
+            "old_mean_abs": 0.052647235848159064,
+            "new_mean_abs": 0.01375387433891708,
+            "new_positive_fraction": 0.5218049579426307,
+            "new_query_equal_mean": 0.0011150663530689138
+          },
+          "m": {
+            "old_mean": 5.880773013607326,
+            "new_mean": 0.22819350130934393,
+            "old_std": 2.1963717313439424,
+            "new_std": 0.3181987473056728,
+            "old_mean_abs": 5.881858734295755,
+            "new_mean_abs": 0.30708518118521927,
+            "new_positive_fraction": 0.7860350041938422,
+            "new_query_equal_mean": 0.21113489402216903
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 8,
+        "route": {
+          "reader": "L5H7",
+          "writer": "L3H6",
+          "reader_layer": 5,
+          "reader_head": 7,
+          "writer_layer": 3,
+          "writer_head": 6,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L5H7",
+            "writer": "L3H6",
+            "writer_layer": 3,
+            "writer_head": 6,
+            "index": 30,
+            "selection_delta": 0.3307810624791261,
+            "previous_attention": 0.40973081415167484
+          }
+        },
+        "parameters_SHA": "2165273888131cd5b0e960168d61a17857e674ff6255d600458695fcadb40275",
+        "old_Gplus": 5.710361309847533,
+        "new_Gplus": 0.059129398366332894,
+        "minimum_Gplus": 0.059129398366320786,
+        "Gplus_retained": 0.010354756057968538,
+        "factor_Q_relative_error": 2.183650080875994e-15,
+        "factor_KOV_relative_error": 2.3431292802420363e-15,
+        "affine_Q_error": 2.7755575615628914e-17,
+        "affine_V_error": 6.938893903907228e-18,
+        "frame_isometry_error": 3.9968028886505635e-15,
+        "actual_weight_matrix_error_seven_distances": 2.3158722641525795e-15,
+        "stock_native_attention_overlap_error": 5.551115123125783e-17,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.012779830109186674,
+          "mean_component_max_change": 2.710505431213761e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.6745597367034619e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 22.166936533273283,
+        "new_raw_Q_norm": 22.23339691335273,
+        "old_raw_V_norm": 12.675427484290886,
+        "new_raw_V_norm": 12.698084572608147
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 3.375077994860476e-14,
+        "Writer_previous_attention_unchanged_max_error": 2.942091015256665e-15,
+        "changed_Q_native_reconstruction_max_error": 1.509903313490213e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L7H1",
+        "writer": "L6H3",
+        "reader_layer": 7,
+        "reader_head": 1,
+        "writer_layer": 6,
+        "writer_head": 3,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L7H1",
+          "writer": "L6H3",
+          "writer_layer": 6,
+          "writer_head": 3,
+          "index": 51,
+          "selection_delta": 0.1359489589491105,
+          "previous_attention": 0.40937852958467014
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 13.594895894911119,
+      "new_route_score_pp": 0.05728783062168866,
+      "route_score_change_pp": -13.53760806428943,
+      "old_attention": 0.4880058465337251,
+      "new_attention": 0.031185966312853173,
+      "new_removed_attention": 0.030613088006636285,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 1.1871074970937516,
+            "new_mean": -0.007794759418975562,
+            "old_std": 0.3821480418587468,
+            "new_std": 0.006214780521986597,
+            "old_mean_abs": 1.1871074970937516,
+            "new_mean_abs": 0.008334381317088448,
+            "new_positive_fraction": 0.09925707984262157,
+            "new_query_equal_mean": -0.007759442052070382
+          },
+          "b": {
+            "old_mean": -0.04109612568920244,
+            "new_mean": 0.00011499496205749537,
+            "old_std": 0.4609994455402017,
+            "new_std": 0.006182083839537311,
+            "old_mean_abs": 0.3434223261174713,
+            "new_mean_abs": 0.004921566731184544,
+            "new_positive_fraction": 0.511026869751462,
+            "new_query_equal_mean": 0.00014808443256171365
+          },
+          "T": {
+            "old_mean": 1.7346718174819185,
+            "new_mean": 0.07973675748115541,
+            "old_std": 1.9531907313214119,
+            "new_std": 0.19435151741040868,
+            "old_mean_abs": 2.119301806814196,
+            "new_mean_abs": 0.1648329484602983,
+            "new_positive_fraction": 0.6663472842857154,
+            "new_query_equal_mean": 0.07260792779394926
+          },
+          "R": {
+            "old_mean": 0.0009704112505105126,
+            "new_mean": -0.004855925037797295,
+            "old_std": 0.5606718309151119,
+            "new_std": 0.06804711149142356,
+            "old_mean_abs": 0.4376764899431834,
+            "new_mean_abs": 0.052789634008651685,
+            "new_positive_fraction": 0.4706106337881715,
+            "new_query_equal_mean": -0.006482755509229242
+          },
+          "m": {
+            "old_mean": 2.9638458515159343,
+            "new_mean": 0.06697107806232497,
+            "old_std": 1.9121882927174996,
+            "new_std": 0.18835031404789415,
+            "old_mean_abs": 3.0504886227807293,
+            "new_mean_abs": 0.15680088193201044,
+            "new_positive_fraction": 0.6439187656981309,
+            "new_query_equal_mean": 0.058217645800088154
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 1.6759576442772681,
+            "new_mean": 0.0316983398374145,
+            "old_std": 0.46126080367221883,
+            "new_std": 0.00456331726921142,
+            "old_mean_abs": 1.6759576442772681,
+            "new_mean_abs": 0.0316983398374145,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.0315639246913227
+          },
+          "b": {
+            "old_mean": -0.06188429694488015,
+            "new_mean": -0.0004895550178105627,
+            "old_std": 0.4782389437841728,
+            "new_std": 0.003886792373804335,
+            "old_mean_abs": 0.3079552910485962,
+            "new_mean_abs": 0.002639885624132756,
+            "new_positive_fraction": 0.48230327119693717,
+            "new_query_equal_mean": -0.0006251752427569579
+          },
+          "T": {
+            "old_mean": 1.8339084280069424,
+            "new_mean": 0.21078087309175159,
+            "old_std": 2.2666188457754153,
+            "new_std": 0.1771192101542609,
+            "old_mean_abs": 2.3432578462060003,
+            "new_mean_abs": 0.22910442030234449,
+            "new_positive_fraction": 0.8956080054424024,
+            "new_query_equal_mean": 0.1863074456997878
+          },
+          "R": {
+            "old_mean": -0.024226726799663412,
+            "new_mean": -0.0041140958251268825,
+            "old_std": 0.31222923511604306,
+            "new_std": 0.03180396800945816,
+            "old_mean_abs": 0.2395021491574301,
+            "new_mean_abs": 0.024824632371824917,
+            "new_positive_fraction": 0.45137809732323125,
+            "new_query_equal_mean": -0.004077255060862426
+          },
+          "m": {
+            "old_mean": 3.5475236424284797,
+            "new_mean": 0.23885467212185,
+            "old_std": 2.1923516286190767,
+            "new_std": 0.17335193503262722,
+            "old_mean_abs": 3.620248138909181,
+            "new_mean_abs": 0.2509060067685993,
+            "new_positive_fraction": 0.9270212458589165,
+            "new_query_equal_mean": 0.2144192905730052
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 9,
+        "route": {
+          "reader": "L7H1",
+          "writer": "L6H3",
+          "reader_layer": 7,
+          "reader_head": 1,
+          "writer_layer": 6,
+          "writer_head": 3,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L7H1",
+            "writer": "L6H3",
+            "writer_layer": 6,
+            "writer_head": 3,
+            "index": 51,
+            "selection_delta": 0.1359489589491105,
+            "previous_attention": 0.40937852958467014
+          }
+        },
+        "parameters_SHA": "5b06c95a451328769543f4f92be41b75fab4971e39a419f876aeb59cebd90741",
+        "old_Gplus": 1.675957644276516,
+        "new_Gplus": 0.031698339837414505,
+        "minimum_Gplus": 0.031698339837407025,
+        "Gplus_retained": 0.01891356857714514,
+        "factor_Q_relative_error": 2.2084187734130047e-15,
+        "factor_KOV_relative_error": 2.3687898315820116e-15,
+        "affine_Q_error": 1.3877787807814457e-17,
+        "affine_V_error": 1.3877787807814457e-17,
+        "frame_isometry_error": 3.552713678800501e-15,
+        "actual_weight_matrix_error_seven_distances": 2.965608079956306e-15,
+        "stock_native_attention_overlap_error": 0.0,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.011826002322562944,
+          "mean_component_max_change": 3.0357660829594124e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.6851625950105566e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 19.991194777904287,
+        "new_raw_Q_norm": 20.016807276888088,
+        "old_raw_V_norm": 14.715939063735531,
+        "new_raw_V_norm": 14.771004876791945
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 2.8421709430404007e-12,
+        "Writer_previous_attention_unchanged_max_error": 4.773959005888173e-15,
+        "changed_Q_native_reconstruction_max_error": 1.0658141036401503e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L8H5",
+        "writer": "L3H5",
+        "reader_layer": 8,
+        "reader_head": 5,
+        "writer_layer": 3,
+        "writer_head": 5,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L8H5",
+          "writer": "L3H5",
+          "writer_layer": 3,
+          "writer_head": 5,
+          "index": 29,
+          "selection_delta": 0.2178207452559829,
+          "previous_attention": 0.888758123931266
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 21.78207452559836,
+      "new_route_score_pp": 0.005147595742923537,
+      "route_score_change_pp": -21.77692692985544,
+      "old_attention": 0.712692971627596,
+      "new_attention": 0.028243231252682854,
+      "new_removed_attention": 0.02819175529525362,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 1.5921935080122305,
+            "new_mean": -0.02487723460662937,
+            "old_std": 0.4840394786246887,
+            "new_std": 0.009618293286829477,
+            "old_mean_abs": 1.5921942009051833,
+            "new_mean_abs": 0.024882546900513558,
+            "new_positive_fraction": 0.0013240531624179553,
+            "new_query_equal_mean": -0.024764708927527287
+          },
+          "b": {
+            "old_mean": -0.02759609929423496,
+            "new_mean": 0.00037962210531503017,
+            "old_std": 0.4171559152910961,
+            "new_std": 0.009345164718000547,
+            "old_mean_abs": 0.32658492639039327,
+            "new_mean_abs": 0.00746626660248646,
+            "new_positive_fraction": 0.5150410444010096,
+            "new_query_equal_mean": 0.0004820452938738023
+          },
+          "T": {
+            "old_mean": 0.20687368720950317,
+            "new_mean": 0.027575903515736556,
+            "old_std": 0.8823338979322672,
+            "new_std": 0.1982294449459025,
+            "old_mean_abs": 0.7143243904675399,
+            "new_mean_abs": 0.15602499890569985,
+            "new_positive_fraction": 0.5573203362594303,
+            "new_query_equal_mean": 0.02381709773817577
+          },
+          "R": {
+            "old_mean": 0.0025422940694695153,
+            "new_mean": 0.0006076039978764196,
+            "old_std": 0.13253185651884583,
+            "new_std": 0.03336707369327442,
+            "old_mean_abs": 0.10371332865407165,
+            "new_mean_abs": 0.025683715666935898,
+            "new_positive_fraction": 0.506336951241692,
+            "new_query_equal_mean": 0.0006373382935104826
+          },
+          "m": {
+            "old_mean": 1.8292055885850642,
+            "new_mean": 0.0029266508016685816,
+            "old_std": 0.9648059309762033,
+            "new_std": 0.19733660100353262,
+            "old_mean_abs": 1.8460427133428507,
+            "new_mean_abs": 0.15383646355790423,
+            "new_positive_fraction": 0.505130550126199,
+            "new_query_equal_mean": -0.0007923181897148267
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 2.205673610546617,
+            "new_mean": 0.03243443278849254,
+            "old_std": 0.5309943679258006,
+            "new_std": 0.004962286496606724,
+            "old_mean_abs": 2.205673610546617,
+            "new_mean_abs": 0.03243443278849254,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.0322959049753917
+          },
+          "b": {
+            "old_mean": -0.029378984876374217,
+            "new_mean": -0.0005030958832472748,
+            "old_std": 0.406716357352286,
+            "new_std": 0.004238496803218008,
+            "old_mean_abs": 0.3083384380333672,
+            "new_mean_abs": 0.002980894805252956,
+            "new_positive_fraction": 0.48232917095451544,
+            "new_query_equal_mean": -0.0006413467411671733
+          },
+          "T": {
+            "old_mean": -0.4671101002181982,
+            "new_mean": 0.032076380911483446,
+            "old_std": 0.6352401035291666,
+            "new_std": 0.129561724374921,
+            "old_mean_abs": 0.6216186400596128,
+            "new_mean_abs": 0.10254127945790564,
+            "new_positive_fraction": 0.5946640935737137,
+            "new_query_equal_mean": 0.030656240180748435
+          },
+          "R": {
+            "old_mean": -0.0025439663143145795,
+            "new_mean": -0.000494198388901299,
+            "old_std": 0.052415522706785,
+            "new_std": 0.017073506538254023,
+            "old_mean_abs": 0.04129555959184891,
+            "new_mean_abs": 0.013252556880102684,
+            "new_positive_fraction": 0.48909581835943644,
+            "new_query_equal_mean": -0.0007495958562839868
+          },
+          "m": {
+            "old_mean": 1.7653985288898406,
+            "new_mean": 0.06451971119432186,
+            "old_std": 0.6852762905773854,
+            "new_std": 0.12962212424010883,
+            "old_mean_abs": 1.7665795292115318,
+            "new_mean_abs": 0.11215814059284494,
+            "new_positive_fraction": 0.6979821594795799,
+            "new_query_equal_mean": 0.06284389604102322
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 10,
+        "route": {
+          "reader": "L8H5",
+          "writer": "L3H5",
+          "reader_layer": 8,
+          "reader_head": 5,
+          "writer_layer": 3,
+          "writer_head": 5,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L8H5",
+            "writer": "L3H5",
+            "writer_layer": 3,
+            "writer_head": 5,
+            "index": 29,
+            "selection_delta": 0.2178207452559829,
+            "previous_attention": 0.888758123931266
+          }
+        },
+        "parameters_SHA": "7b6c2b48805ad94466b0f4a763a937bdfe891bd7c2f818eb248916ddd063d5e1",
+        "old_Gplus": 2.2056736105457935,
+        "new_Gplus": 0.0324344327884924,
+        "minimum_Gplus": 0.03243443278848611,
+        "Gplus_retained": 0.014705001063356109,
+        "factor_Q_relative_error": 2.1546685847354648e-15,
+        "factor_KOV_relative_error": 2.3013914739827235e-15,
+        "affine_Q_error": 2.7755575615628914e-17,
+        "affine_V_error": 1.3877787807814457e-17,
+        "frame_isometry_error": 3.552713678800501e-15,
+        "actual_weight_matrix_error_seven_distances": 2.8594784209344515e-15,
+        "stock_native_attention_overlap_error": 5.551115123125783e-17,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.013672327252986892,
+          "mean_component_max_change": 2.2768245622195593e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.6520057189043264e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 20.545060793869506,
+        "new_raw_Q_norm": 20.63782271969265,
+        "old_raw_V_norm": 11.578941417303795,
+        "new_raw_V_norm": 11.592583582881495
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 3.375077994860476e-14,
+        "Writer_previous_attention_unchanged_max_error": 2.9976021664879227e-15,
+        "changed_Q_native_reconstruction_max_error": 1.4210854715202004e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L8H5",
+        "writer": "L6H3",
+        "reader_layer": 8,
+        "reader_head": 5,
+        "writer_layer": 6,
+        "writer_head": 3,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L8H5",
+          "writer": "L6H3",
+          "writer_layer": 6,
+          "writer_head": 3,
+          "index": 51,
+          "selection_delta": 0.26056470269028603,
+          "previous_attention": 0.40937852958467014
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 26.05647026902858,
+      "new_route_score_pp": 0.12846462463896446,
+      "route_score_change_pp": -25.928005644389614,
+      "old_attention": 0.712692971627596,
+      "new_attention": 0.03135353740686021,
+      "new_removed_attention": 0.030068891160470568,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 1.911140084016843,
+            "new_mean": -0.005023009978951449,
+            "old_std": 0.6129462347679351,
+            "new_std": 0.008224435455204253,
+            "old_mean_abs": 1.911140084016843,
+            "new_mean_abs": 0.007662698807748229,
+            "new_positive_fraction": 0.2718442392416244,
+            "new_query_equal_mean": -0.00499556754025305
+          },
+          "b": {
+            "old_mean": -0.06030673047415333,
+            "new_mean": 7.619687508546024e-05,
+            "old_std": 0.6924286360113948,
+            "new_std": 0.008209945516470543,
+            "old_mean_abs": 0.5250260247689625,
+            "new_mean_abs": 0.00651357827978288,
+            "new_positive_fraction": 0.5061135898138364,
+            "new_query_equal_mean": 9.52075133170816e-05
+          },
+          "T": {
+            "old_mean": 3.0747505336309526,
+            "new_mean": 0.13396717758307333,
+            "old_std": 3.332428355346651,
+            "new_std": 0.3488073078955291,
+            "old_mean_abs": 3.655233872134974,
+            "new_mean_abs": 0.29297112794258334,
+            "new_positive_fraction": 0.6582071823289215,
+            "new_query_equal_mean": 0.1297710484592032
+          },
+          "R": {
+            "old_mean": 0.05156082105471658,
+            "new_mean": -0.001548595355963443,
+            "old_std": 0.506373708803506,
+            "new_std": 0.059928419078759364,
+            "old_mean_abs": 0.3937524278809328,
+            "new_mean_abs": 0.04650109805231888,
+            "new_positive_fraction": 0.48926814767236,
+            "new_query_equal_mean": -0.002219247600452007
+          },
+          "m": {
+            "old_mean": 5.097758169178502,
+            "new_mean": 0.12731937537307308,
+            "old_std": 3.205216653088058,
+            "new_std": 0.34799767992178277,
+            "old_mean_abs": 5.211570092217351,
+            "new_mean_abs": 0.2904414875512087,
+            "new_positive_fraction": 0.6508071899261838,
+            "new_query_equal_mean": 0.12246102580518088
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 2.4532406278336123,
+            "new_mean": 0.044237453637677546,
+            "old_std": 0.6986503981564633,
+            "new_std": 0.006477960085569078,
+            "old_mean_abs": 2.4532406278336123,
+            "new_mean_abs": 0.044237453637677546,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.044049763882372736
+          },
+          "b": {
+            "old_mean": -0.08383867486590868,
+            "new_mean": -0.0006834017022825997,
+            "old_std": 0.7196299818491485,
+            "new_std": 0.005492080827296153,
+            "old_mean_abs": 0.49325363515311915,
+            "new_mean_abs": 0.003757581215521693,
+            "new_positive_fraction": 0.48238902817202967,
+            "new_query_equal_mean": -0.0008725804089674909
+          },
+          "T": {
+            "old_mean": 2.776949169405421,
+            "new_mean": 0.26613339324509705,
+            "old_std": 3.3906313391057483,
+            "new_std": 0.2722239600592975,
+            "old_mean_abs": 3.507625571123965,
+            "new_mean_abs": 0.3109688509094014,
+            "new_positive_fraction": 0.8482982612245712,
+            "new_query_equal_mean": 0.24346126175648825
+          },
+          "R": {
+            "old_mean": -0.003615122661869953,
+            "new_mean": -0.0016428664977381022,
+            "old_std": 0.18390501055344174,
+            "new_std": 0.03432046616389471,
+            "old_mean_abs": 0.14328675081984513,
+            "new_mean_abs": 0.026895155969090836,
+            "new_positive_fraction": 0.4782758588935163,
+            "new_query_equal_mean": -0.0020343359128826453
+          },
+          "m": {
+            "old_mean": 5.310413349443498,
+            "new_mean": 0.3094113820873188,
+            "old_std": 3.364040310389666,
+            "new_std": 0.2714803069460997,
+            "old_mean_abs": 5.429222656559765,
+            "new_mean_abs": 0.3422861383815678,
+            "new_positive_fraction": 0.8840900954722619,
+            "new_query_equal_mean": 0.28634927013494577
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 11,
+        "route": {
+          "reader": "L8H5",
+          "writer": "L6H3",
+          "reader_layer": 8,
+          "reader_head": 5,
+          "writer_layer": 6,
+          "writer_head": 3,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L8H5",
+            "writer": "L6H3",
+            "writer_layer": 6,
+            "writer_head": 3,
+            "index": 51,
+            "selection_delta": 0.26056470269028603,
+            "previous_attention": 0.40937852958467014
+          }
+        },
+        "parameters_SHA": "a70ea414a6d3dd6a383254ab0b281f950af0c67a6fe3c85b512ffa8be50aa94c",
+        "old_Gplus": 2.4532406278332504,
+        "new_Gplus": 0.04423745363767753,
+        "minimum_Gplus": 0.04423745363766672,
+        "Gplus_retained": 0.0180322521711818,
+        "factor_Q_relative_error": 2.162616870130895e-15,
+        "factor_KOV_relative_error": 2.328177035381085e-15,
+        "affine_Q_error": 2.7755575615628914e-17,
+        "affine_V_error": 6.938893903907228e-18,
+        "frame_isometry_error": 3.219646771412954e-15,
+        "actual_weight_matrix_error_seven_distances": 2.8868762562814588e-15,
+        "stock_native_attention_overlap_error": 0.0,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.011590176981886254,
+          "mean_component_max_change": 3.144186300207963e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.678390385741912e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 20.545060793869506,
+        "new_raw_Q_norm": 20.572492769697266,
+        "old_raw_V_norm": 14.715939063735531,
+        "new_raw_V_norm": 14.771415016905264
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 2.8421709430404007e-12,
+        "Writer_previous_attention_unchanged_max_error": 4.773959005888173e-15,
+        "changed_Q_native_reconstruction_max_error": 1.509903313490213e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L9H1",
+        "writer": "L3H5",
+        "reader_layer": 9,
+        "reader_head": 1,
+        "writer_layer": 3,
+        "writer_head": 5,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L9H1",
+          "writer": "L3H5",
+          "writer_layer": 3,
+          "writer_head": 5,
+          "index": 29,
+          "selection_delta": 0.2034182155764446,
+          "previous_attention": 0.888758123931266
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 20.34182155764446,
+      "new_route_score_pp": -0.010752377357355727,
+      "route_score_change_pp": -20.352573935001818,
+      "old_attention": 0.3726201287600037,
+      "new_attention": 0.029030927766493703,
+      "new_removed_attention": 0.02913845154006726,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 1.599559649640894,
+            "new_mean": -0.0190436313479164,
+            "old_std": 0.5961117395071784,
+            "new_std": 0.0076960979087891445,
+            "old_mean_abs": 1.599559649640894,
+            "new_mean_abs": 0.019052474388882364,
+            "new_positive_fraction": 0.002494146654787311,
+            "new_query_equal_mean": -0.018958861803030136
+          },
+          "b": {
+            "old_mean": -0.029598020408667287,
+            "new_mean": 0.000292841205628274,
+            "old_std": 0.4044702156261055,
+            "new_std": 0.007534604425427448,
+            "old_mean_abs": 0.31253447932910255,
+            "new_mean_abs": 0.006016918280161837,
+            "new_positive_fraction": 0.5149067493617149,
+            "new_query_equal_mean": 0.00037158963312285045
+          },
+          "T": {
+            "old_mean": 0.05189457886290375,
+            "new_mean": 0.02061360645464797,
+            "old_std": 0.7441762284032322,
+            "new_std": 0.1777704030157828,
+            "old_mean_abs": 0.5873412266148581,
+            "new_mean_abs": 0.13947862371853784,
+            "new_positive_fraction": 0.5476277356858754,
+            "new_query_equal_mean": 0.018644420159511475
+          },
+          "R": {
+            "old_mean": -0.00287396275947931,
+            "new_mean": 0.0006552016669965888,
+            "old_std": 0.2031766485395786,
+            "new_std": 0.032333150607620494,
+            "old_mean_abs": 0.15901082288952484,
+            "new_mean_abs": 0.02496254483232962,
+            "new_positive_fraction": 0.5074568279818679,
+            "new_query_equal_mean": -0.00010272657315441979
+          },
+          "m": {
+            "old_mean": 1.6781782861539127,
+            "new_mean": 0.0019323355680998969,
+            "old_std": 0.8968922414083436,
+            "new_std": 0.17959820179202338,
+            "old_mean_abs": 1.690244860981322,
+            "new_mean_abs": 0.13995496759759032,
+            "new_positive_fraction": 0.5036653432849795,
+            "new_query_equal_mean": -0.0007887578497959237
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 2.0876572190792793,
+            "new_mean": 0.026736681875223163,
+            "old_std": 0.6345225502262978,
+            "new_std": 0.004184880153488506,
+            "old_mean_abs": 2.0876572190792793,
+            "new_mean_abs": 0.026736681875223163,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.026622556439754964
+          },
+          "b": {
+            "old_mean": -0.02907305560784787,
+            "new_mean": -0.000414379554568068,
+            "old_std": 0.3989228098846669,
+            "new_std": 0.003549969286205593,
+            "old_mean_abs": 0.3024764479932403,
+            "new_mean_abs": 0.0025122601441409076,
+            "new_positive_fraction": 0.48253320348921536,
+            "new_query_equal_mean": -0.0005284041716062635
+          },
+          "T": {
+            "old_mean": -0.6118658638706331,
+            "new_mean": 0.01817462454474506,
+            "old_std": 0.6319035364443374,
+            "new_std": 0.12638003876143022,
+            "old_mean_abs": 0.7033700682891855,
+            "new_mean_abs": 0.09850552972503604,
+            "new_positive_fraction": 0.551222238337627,
+            "new_query_equal_mean": 0.018861710790803055
+          },
+          "R": {
+            "old_mean": -0.007428790217402395,
+            "new_mean": -0.00013356610496166742,
+            "old_std": 0.0830707626581809,
+            "new_std": 0.01897363016873571,
+            "old_mean_abs": 0.06541299680301402,
+            "new_mean_abs": 0.01475195080245625,
+            "new_positive_fraction": 0.497530362189884,
+            "new_query_equal_mean": -3.215147973749412e-05
+          },
+          "m": {
+            "old_mean": 1.497435620599702,
+            "new_mean": 0.045192119869574575,
+            "old_std": 0.6875246263252163,
+            "new_std": 0.1270301235288676,
+            "old_mean_abs": 1.4996622956190193,
+            "new_mean_abs": 0.104193985873945,
+            "new_positive_fraction": 0.6414799198220246,
+            "new_query_equal_mean": 0.04598051992242682
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 12,
+        "route": {
+          "reader": "L9H1",
+          "writer": "L3H5",
+          "reader_layer": 9,
+          "reader_head": 1,
+          "writer_layer": 3,
+          "writer_head": 5,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L9H1",
+            "writer": "L3H5",
+            "writer_layer": 3,
+            "writer_head": 5,
+            "index": 29,
+            "selection_delta": 0.2034182155764446,
+            "previous_attention": 0.888758123931266
+          }
+        },
+        "parameters_SHA": "581702169caaa9f47b2602a8ef1bce6e4a4fbd7c758c300805929ea45b70f548",
+        "old_Gplus": 2.0876572190800045,
+        "new_Gplus": 0.026736681875223146,
+        "minimum_Gplus": 0.02673668187521796,
+        "Gplus_retained": 0.012807026762279275,
+        "factor_Q_relative_error": 2.1823366817323753e-15,
+        "factor_KOV_relative_error": 2.311077107159699e-15,
+        "affine_Q_error": 1.3877787807814457e-17,
+        "affine_V_error": 1.3877787807814457e-17,
+        "frame_isometry_error": 4.107825191113079e-15,
+        "actual_weight_matrix_error_seven_distances": 2.9219029336624724e-15,
+        "stock_native_attention_overlap_error": 0.0,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.013530532822601108,
+          "mean_component_max_change": 2.9815559743351372e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.6392038260550076e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 18.88056768538066,
+        "new_raw_Q_norm": 18.94954390283489,
+        "old_raw_V_norm": 11.578941417303795,
+        "new_raw_V_norm": 11.592065462937287
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 3.375077994860476e-14,
+        "Writer_previous_attention_unchanged_max_error": 2.9976021664879227e-15,
+        "changed_Q_native_reconstruction_max_error": 1.509903313490213e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L9H1",
+        "writer": "L6H3",
+        "reader_layer": 9,
+        "reader_head": 1,
+        "writer_layer": 6,
+        "writer_head": 3,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L9H1",
+          "writer": "L6H3",
+          "writer_layer": 6,
+          "writer_head": 3,
+          "index": 51,
+          "selection_delta": 0.19658809829177912,
+          "previous_attention": 0.40937852958467014
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 19.658809829177898,
+      "new_route_score_pp": 0.06090363934375334,
+      "route_score_change_pp": -19.597906189834145,
+      "old_attention": 0.3726201287600037,
+      "new_attention": 0.033820501045460326,
+      "new_removed_attention": 0.03321146465202279,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 1.8199198255985998,
+            "new_mean": -0.006180193541595258,
+            "old_std": 0.6900406945822936,
+            "new_std": 0.0063936307099651465,
+            "old_mean_abs": 1.8199198255985998,
+            "new_mean_abs": 0.007244119705012303,
+            "new_positive_fraction": 0.16377788444640898,
+            "new_query_equal_mean": -0.006151674082434307
+          },
+          "b": {
+            "old_mean": -0.06492975006662594,
+            "new_mean": 9.292105602257095e-05,
+            "old_std": 0.6613723688439705,
+            "new_std": 0.0063987556263355345,
+            "old_mean_abs": 0.4842870779160416,
+            "new_mean_abs": 0.005084549007089134,
+            "new_positive_fraction": 0.5096947588866865,
+            "new_query_equal_mean": 0.00011906929085574073
+          },
+          "T": {
+            "old_mean": 2.255032642948424,
+            "new_mean": 0.06922564493724269,
+            "old_std": 2.9765056557611027,
+            "new_std": 0.2959295203142285,
+            "old_mean_abs": 2.9125644367617625,
+            "new_mean_abs": 0.23761651602697237,
+            "new_positive_fraction": 0.5947953669746244,
+            "new_query_equal_mean": 0.07615607749492924
+          },
+          "R": {
+            "old_mean": -0.011489783422708075,
+            "new_mean": -0.0037208899058631863,
+            "old_std": 0.5167715779821156,
+            "new_std": 0.07737868941144366,
+            "old_mean_abs": 0.40018468857769124,
+            "new_mean_abs": 0.05960199703771351,
+            "new_positive_fraction": 0.4828580535967665,
+            "new_query_equal_mean": -0.0013026759624767896
+          },
+          "m": {
+            "old_mean": 4.12839243519014,
+            "new_mean": 0.05923164043376166,
+            "old_std": 2.974784890900017,
+            "new_std": 0.2955244724246046,
+            "old_mean_abs": 4.27704952247557,
+            "new_mean_abs": 0.23587972477246777,
+            "new_positive_fraction": 0.580109053327409,
+            "new_query_equal_mean": 0.06858265815916256
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 2.268358327207281,
+            "new_mean": 0.03256725404089181,
+            "old_std": 0.777896802807805,
+            "new_std": 0.004884143915167169,
+            "old_mean_abs": 2.268358327207281,
+            "new_mean_abs": 0.03256725404089181,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.03242909521198722
+          },
+          "b": {
+            "old_mean": -0.08484905522775571,
+            "new_mean": -0.0005033642970492845,
+            "old_std": 0.6940519553679178,
+            "new_std": 0.00411466149124374,
+            "old_mean_abs": 0.4634017499663653,
+            "new_mean_abs": 0.0028387331170242136,
+            "new_positive_fraction": 0.4824212589814604,
+            "new_query_equal_mean": -0.000642612405980322
+          },
+          "T": {
+            "old_mean": 1.8807716018616363,
+            "new_mean": 0.15546491714006402,
+            "old_std": 3.0130930142714245,
+            "new_std": 0.23074101269537073,
+            "old_mean_abs": 2.7972391077189003,
+            "new_mean_abs": 0.22067620977078095,
+            "new_positive_fraction": 0.7603006213639618,
+            "new_query_equal_mean": 0.14764006621460132
+          },
+          "R": {
+            "old_mean": -0.040390921585260656,
+            "new_mean": -0.005070094293937742,
+            "old_std": 0.25575946308559394,
+            "new_std": 0.03794055598085544,
+            "old_mean_abs": 0.20194706378193295,
+            "new_mean_abs": 0.029916569321237183,
+            "new_positive_fraction": 0.4455530020313084,
+            "new_query_equal_mean": -0.003150330473827239
+          },
+          "m": {
+            "old_mean": 4.193588062710524,
+            "new_mean": 0.18346544118406727,
+            "old_std": 3.0219477115166926,
+            "new_std": 0.23262894202447829,
+            "old_mean_abs": 4.349950591620526,
+            "new_mean_abs": 0.23720560360731457,
+            "new_positive_fraction": 0.7950218843359034,
+            "new_query_equal_mean": 0.17756144335874177
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 13,
+        "route": {
+          "reader": "L9H1",
+          "writer": "L6H3",
+          "reader_layer": 9,
+          "reader_head": 1,
+          "writer_layer": 6,
+          "writer_head": 3,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L9H1",
+            "writer": "L6H3",
+            "writer_layer": 6,
+            "writer_head": 3,
+            "index": 51,
+            "selection_delta": 0.19658809829177912,
+            "previous_attention": 0.40937852958467014
+          }
+        },
+        "parameters_SHA": "82891b51753a98b1669ee375823b55e4531a8cd284718c20389fa8075f7295c2",
+        "old_Gplus": 2.2683583272058243,
+        "new_Gplus": 0.032567254040891766,
+        "minimum_Gplus": 0.032567254040882385,
+        "Gplus_retained": 0.01435719112377112,
+        "factor_Q_relative_error": 2.1838029512594697e-15,
+        "factor_KOV_relative_error": 2.3251341235594426e-15,
+        "affine_Q_error": 2.7755575615628914e-17,
+        "affine_V_error": 1.3877787807814457e-17,
+        "frame_isometry_error": 3.1086244689504383e-15,
+        "actual_weight_matrix_error_seven_distances": 2.7810485067202137e-15,
+        "stock_native_attention_overlap_error": 0.0,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.011099697207567302,
+          "mean_component_max_change": 2.3852447794681098e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.6641624124107747e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 18.88056768538066,
+        "new_raw_Q_norm": 18.89095826820898,
+        "old_raw_V_norm": 14.715939063735531,
+        "new_raw_V_norm": 14.771227672077073
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 2.8421709430404007e-12,
+        "Writer_previous_attention_unchanged_max_error": 4.773959005888173e-15,
+        "changed_Q_native_reconstruction_max_error": 1.3322676295501878e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L10H5",
+        "writer": "L3H5",
+        "reader_layer": 10,
+        "reader_head": 5,
+        "writer_layer": 3,
+        "writer_head": 5,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L10H5",
+          "writer": "L3H5",
+          "writer_layer": 3,
+          "writer_head": 5,
+          "index": 29,
+          "selection_delta": 0.19346460377751148,
+          "previous_attention": 0.888758123931266
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 19.34646037775114,
+      "new_route_score_pp": -0.013502719178487194,
+      "route_score_change_pp": -19.359963096929626,
+      "old_attention": 0.559891071226348,
+      "new_attention": 0.0338203542190841,
+      "new_removed_attention": 0.03395538141086898,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 1.069861225442089,
+            "new_mean": -0.014593506357802941,
+            "old_std": 0.3415969219856212,
+            "new_std": 0.005497642501353475,
+            "old_mean_abs": 1.069861225442089,
+            "new_mean_abs": 0.014595452829900003,
+            "new_positive_fraction": 0.0008338762689921964,
+            "new_query_equal_mean": -0.014529247501182462
+          },
+          "b": {
+            "old_mean": -0.017975872084105952,
+            "new_mean": 0.0002241018373651188,
+            "old_std": 0.2452419289313808,
+            "new_std": 0.0053108494506980235,
+            "old_mean_abs": 0.18913110578107015,
+            "new_mean_abs": 0.004235331164832799,
+            "new_positive_fraction": 0.5150120750425332,
+            "new_query_equal_mean": 0.0002853212294512636
+          },
+          "T": {
+            "old_mean": 0.2115988415741428,
+            "new_mean": 0.013792488339254214,
+            "old_std": 0.6200368779429152,
+            "new_std": 0.13251794418815177,
+            "old_mean_abs": 0.5126299362648936,
+            "new_mean_abs": 0.10403955344733384,
+            "new_positive_fraction": 0.5421470112447155,
+            "new_query_equal_mean": 0.012360556990276632
+          },
+          "R": {
+            "old_mean": -0.013626124163139141,
+            "new_mean": -3.214947070801099e-05,
+            "old_std": 0.13766345240141636,
+            "new_std": 0.027937413815919323,
+            "old_mean_abs": 0.1084084316691487,
+            "new_mean_abs": 0.021431238858176892,
+            "new_positive_fraction": 0.4993238724396651,
+            "new_query_equal_mean": -0.00036727797025645455
+          },
+          "m": {
+            "old_mean": 1.2858098149371606,
+            "new_mean": -0.0010572693266218728,
+            "old_std": 0.6867182596306273,
+            "new_std": 0.13311811445876284,
+            "old_mean_abs": 1.2950511100678908,
+            "new_mean_abs": 0.10383740975511635,
+            "new_positive_fraction": 0.4953022636004423,
+            "new_query_equal_mean": -0.0028212897106135305
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 1.4206820315680853,
+            "new_mean": 0.01739697265653336,
+            "old_std": 0.3619759321162369,
+            "new_std": 0.0027451249625461117,
+            "old_mean_abs": 1.4206820315680853,
+            "new_mean_abs": 0.01739697265653336,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.01732271620186796
+          },
+          "b": {
+            "old_mean": -0.018014447194241088,
+            "new_mean": -0.0002695959468953426,
+            "old_std": 0.2811206688893904,
+            "new_std": 0.002322089118231686,
+            "old_mean_abs": 0.21700524115940098,
+            "new_mean_abs": 0.001646922081470606,
+            "new_positive_fraction": 0.4826077372360239,
+            "new_query_equal_mean": -0.00034380354430133415
+          },
+          "T": {
+            "old_mean": -0.36487972674326746,
+            "new_mean": 0.005389192244243153,
+            "old_std": 0.4311256241010496,
+            "new_std": 0.08808060533163072,
+            "old_mean_abs": 0.4517003108115116,
+            "new_mean_abs": 0.06829906105576601,
+            "new_positive_fraction": 0.5181403340953618,
+            "new_query_equal_mean": 0.0050955180777167925
+          },
+          "R": {
+            "old_mean": -0.006426688528333279,
+            "new_mean": -0.0003665748956164778,
+            "old_std": 0.05365893359773975,
+            "new_std": 0.01307928544170303,
+            "old_mean_abs": 0.042435526604171984,
+            "new_mean_abs": 0.01015157191557287,
+            "new_positive_fraction": 0.49107120246243385,
+            "new_query_equal_mean": -0.0006197493728249993
+          },
+          "m": {
+            "old_mean": 1.0673900634891318,
+            "new_mean": 0.022689185952055425,
+            "old_std": 0.4692686965108317,
+            "new_std": 0.08725775444766891,
+            "old_mean_abs": 1.0682823445343361,
+            "new_mean_abs": 0.06975355338104774,
+            "new_positive_fraction": 0.6037874750307152,
+            "new_query_equal_mean": 0.022142288451061046
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 14,
+        "route": {
+          "reader": "L10H5",
+          "writer": "L3H5",
+          "reader_layer": 10,
+          "reader_head": 5,
+          "writer_layer": 3,
+          "writer_head": 5,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L10H5",
+            "writer": "L3H5",
+            "writer_layer": 3,
+            "writer_head": 5,
+            "index": 29,
+            "selection_delta": 0.19346460377751148,
+            "previous_attention": 0.888758123931266
+          }
+        },
+        "parameters_SHA": "27c73dbde40e4202f2a2e382fecdacc13be58ee6dd4423f0e283bbaed8f669bb",
+        "old_Gplus": 1.42068203156651,
+        "new_Gplus": 0.017396972656533356,
+        "minimum_Gplus": 0.017396972656529678,
+        "Gplus_retained": 0.012245507629424049,
+        "factor_Q_relative_error": 2.109676853215379e-15,
+        "factor_KOV_relative_error": 2.3089656689010695e-15,
+        "affine_Q_error": 1.3877787807814457e-17,
+        "affine_V_error": 1.3877787807814457e-17,
+        "frame_isometry_error": 3.3306690738754696e-15,
+        "actual_weight_matrix_error_seven_distances": 2.741616236797132e-15,
+        "stock_native_attention_overlap_error": 0.0,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.01310982668655931,
+          "mean_component_max_change": 2.656295322589486e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.6411196182712535e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 16.127360280206965,
+        "new_raw_Q_norm": 16.201332567078794,
+        "old_raw_V_norm": 11.578941417303795,
+        "new_raw_V_norm": 11.592525624230953
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 3.375077994860476e-14,
+        "Writer_previous_attention_unchanged_max_error": 2.9976021664879227e-15,
+        "changed_Q_native_reconstruction_max_error": 1.3322676295501878e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L10H5",
+        "writer": "L6H3",
+        "reader_layer": 10,
+        "reader_head": 5,
+        "writer_layer": 6,
+        "writer_head": 3,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L10H5",
+          "writer": "L6H3",
+          "writer_layer": 6,
+          "writer_head": 3,
+          "index": 51,
+          "selection_delta": 0.1514346042300156,
+          "previous_attention": 0.40937852958467014
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 15.143460423001564,
+      "new_route_score_pp": 0.027345218229256715,
+      "route_score_change_pp": -15.116115204772306,
+      "old_attention": 0.559891071226348,
+      "new_attention": 0.028843578488453786,
+      "new_removed_attention": 0.02857012630616122,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 0.9194559103752268,
+            "new_mean": -0.009292869940258667,
+            "old_std": 0.3169812961142777,
+            "new_std": 0.004579223144100431,
+            "old_mean_abs": 0.9194559103752268,
+            "new_mean_abs": 0.009334000101671099,
+            "new_positive_fraction": 0.014768329546213226,
+            "new_query_equal_mean": -0.00924913107630855
+          },
+          "b": {
+            "old_mean": -0.02666914799981722,
+            "new_mean": 0.00014555795548561973,
+            "old_std": 0.324761189254853,
+            "new_std": 0.0045121273609938575,
+            "old_mean_abs": 0.2479198249631537,
+            "new_mean_abs": 0.00360035455093667,
+            "new_positive_fraction": 0.5147481852903191,
+            "new_query_equal_mean": 0.00018278084812499098
+          },
+          "T": {
+            "old_mean": 1.2386215904059095,
+            "new_mean": 0.03349759207621006,
+            "old_std": 2.377093423315266,
+            "new_std": 0.2433102605735555,
+            "old_mean_abs": 2.1627174417172985,
+            "new_mean_abs": 0.19209695423406084,
+            "new_positive_fraction": 0.5552892197151257,
+            "new_query_equal_mean": 0.04478740011220402
+          },
+          "R": {
+            "old_mean": -0.0023359339644965934,
+            "new_mean": 0.0006179022230175471,
+            "old_std": 0.2813829264132927,
+            "new_std": 0.0560809846354932,
+            "old_mean_abs": 0.2177371673583229,
+            "new_mean_abs": 0.043501674386228394,
+            "new_positive_fraction": 0.5041202677305904,
+            "new_query_equal_mean": 0.0010430339010702038
+          },
+          "m": {
+            "old_mean": 2.18241071481665,
+            "new_mean": 0.02467706640348332,
+            "old_std": 2.333902397793226,
+            "new_std": 0.2334905765325014,
+            "old_mean_abs": 2.609111446487776,
+            "new_mean_abs": 0.18387343103520193,
+            "new_positive_fraction": 0.5409670374744552,
+            "new_query_equal_mean": 0.03639852208884069
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 1.283766964996727,
+            "new_mean": 0.01904464727720068,
+            "old_std": 0.35884020813250433,
+            "new_std": 0.002875511707702526,
+            "old_mean_abs": 1.283766964996727,
+            "new_mean_abs": 0.01904464727720068,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.018963866462394476
+          },
+          "b": {
+            "old_mean": -0.03855653555347641,
+            "new_mean": -0.0002943100890829334,
+            "old_std": 0.35038884097563266,
+            "new_std": 0.002417916023176246,
+            "old_mean_abs": 0.24774019373782158,
+            "new_mean_abs": 0.0016722075097116002,
+            "new_positive_fraction": 0.4824137768292711,
+            "new_query_equal_mean": -0.0003757502489058936
+          },
+          "T": {
+            "old_mean": 0.920950434411964,
+            "new_mean": 0.06943353243327527,
+            "old_std": 1.8066335577163517,
+            "new_std": 0.15768086633811038,
+            "old_mean_abs": 1.6314269111290904,
+            "new_mean_abs": 0.1353113178166275,
+            "new_positive_fraction": 0.6780971409737234,
+            "new_query_equal_mean": 0.07009923060711949
+          },
+          "R": {
+            "old_mean": -0.013131751443536633,
+            "new_mean": -0.0006186257300513959,
+            "old_std": 0.12359550673979564,
+            "new_std": 0.022097302876686042,
+            "old_mean_abs": 0.09634307843842463,
+            "new_mean_abs": 0.0172888436607891,
+            "new_positive_fraction": 0.48845316863389715,
+            "new_query_equal_mean": -0.00018667632483295506
+          },
+          "m": {
+            "old_mean": 2.2301421835170583,
+            "new_mean": 0.08815386406950722,
+            "old_std": 1.790692812378656,
+            "new_std": 0.15447350958806116,
+            "old_mean_abs": 2.3742279877602424,
+            "new_mean_abs": 0.1406601559616861,
+            "new_positive_fraction": 0.7250930184997172,
+            "new_query_equal_mean": 0.08925217099358687
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 15,
+        "route": {
+          "reader": "L10H5",
+          "writer": "L6H3",
+          "reader_layer": 10,
+          "reader_head": 5,
+          "writer_layer": 6,
+          "writer_head": 3,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L10H5",
+            "writer": "L6H3",
+            "writer_layer": 6,
+            "writer_head": 3,
+            "index": 51,
+            "selection_delta": 0.1514346042300156,
+            "previous_attention": 0.40937852958467014
+          }
+        },
+        "parameters_SHA": "ab6bd698e6ea3e8dae5c01a7250503adfd441df44486a12b196a0125174bae96",
+        "old_Gplus": 1.2837669649953083,
+        "new_Gplus": 0.01904464727720066,
+        "minimum_Gplus": 0.019044647277196056,
+        "Gplus_retained": 0.014834972231327249,
+        "factor_Q_relative_error": 2.1073142547939783e-15,
+        "factor_KOV_relative_error": 2.328937178036296e-15,
+        "affine_Q_error": 2.7755575615628914e-17,
+        "affine_V_error": 6.938893903907228e-18,
+        "frame_isometry_error": 3.774758283725532e-15,
+        "actual_weight_matrix_error_seven_distances": 2.6968998537616116e-15,
+        "stock_native_attention_overlap_error": 0.0,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.01090045492043413,
+          "mean_component_max_change": 2.6020852139652106e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.6789203163792419e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 16.127360280206965,
+        "new_raw_Q_norm": 16.14545992568595,
+        "old_raw_V_norm": 14.715939063735531,
+        "new_raw_V_norm": 14.771870713113083
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 2.8421709430404007e-12,
+        "Writer_previous_attention_unchanged_max_error": 4.773959005888173e-15,
+        "changed_Q_native_reconstruction_max_error": 1.1546319456101628e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L11H5",
+        "writer": "L3H5",
+        "reader_layer": 11,
+        "reader_head": 5,
+        "writer_layer": 3,
+        "writer_head": 5,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L11H5",
+          "writer": "L3H5",
+          "writer_layer": 3,
+          "writer_head": 5,
+          "index": 29,
+          "selection_delta": 0.27481255987196046,
+          "previous_attention": 0.888758123931266
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 27.481255987196,
+      "new_route_score_pp": 0.010304755343126089,
+      "route_score_change_pp": -27.470951231852876,
+      "old_attention": 0.7038065722435094,
+      "new_attention": 0.02550710041343019,
+      "new_removed_attention": 0.025404052859998933,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 1.84786382645938,
+            "new_mean": -0.017886894760041152,
+            "old_std": 0.5182168009277613,
+            "new_std": 0.007438484443416709,
+            "old_mean_abs": 1.84786382645938,
+            "new_mean_abs": 0.01789603900836265,
+            "new_positive_fraction": 0.002784223939663925,
+            "new_query_equal_mean": -0.017807309757247456
+          },
+          "b": {
+            "old_mean": -0.02832758529724009,
+            "new_mean": 0.00027224704505445234,
+            "old_std": 0.414309808773961,
+            "new_std": 0.007196599779493305,
+            "old_mean_abs": 0.325234572462505,
+            "new_mean_abs": 0.005744531448097747,
+            "new_positive_fraction": 0.5147281369594529,
+            "new_query_equal_mean": 0.0003474173856477539
+          },
+          "T": {
+            "old_mean": 0.3705747546627501,
+            "new_mean": 0.02173258646616094,
+            "old_std": 0.8193906481451672,
+            "new_std": 0.17259629442844074,
+            "old_mean_abs": 0.7099202958544033,
+            "new_mean_abs": 0.13525052807198096,
+            "new_positive_fraction": 0.552248732062979,
+            "new_query_equal_mean": 0.0239528560784453
+          },
+          "R": {
+            "old_mean": -0.013985170496194188,
+            "new_mean": 6.167453686896516e-05,
+            "old_std": 0.14929343001188217,
+            "new_std": 0.028416877335467362,
+            "old_mean_abs": 0.11616013195788555,
+            "new_mean_abs": 0.02194880742053236,
+            "new_positive_fraction": 0.5014938404620978,
+            "new_query_equal_mean": 7.508754992209882e-05
+          },
+          "m": {
+            "old_mean": 2.2327809959222025,
+            "new_mean": 0.0036351191979343204,
+            "old_std": 0.9276204052545582,
+            "new_std": 0.17271257046426505,
+            "old_mean_abs": 2.235841754840606,
+            "new_mean_abs": 0.13425224939032018,
+            "new_positive_fraction": 0.5079016323370176,
+            "new_query_equal_mean": 0.005873216485472204
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 2.272001900583929,
+            "new_mean": 0.024973783593529388,
+            "old_std": 0.5318897996119737,
+            "new_std": 0.00396928226210036,
+            "old_mean_abs": 2.272001900583929,
+            "new_mean_abs": 0.024973783593529388,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.024867176432219893
+          },
+          "b": {
+            "old_mean": -0.030106655976814764,
+            "new_mean": -0.00038697270151716534,
+            "old_std": 0.43099200687306344,
+            "new_std": 0.003349645113422008,
+            "old_mean_abs": 0.33406753720678856,
+            "new_mean_abs": 0.002380591064010651,
+            "new_positive_fraction": 0.48260226950942403,
+            "new_query_equal_mean": -0.0004935104842402358
+          },
+          "T": {
+            "old_mean": -0.5015134759374014,
+            "new_mean": 0.00697072056245847,
+            "old_std": 0.6325848326878237,
+            "new_std": 0.12778493749487388,
+            "old_mean_abs": 0.6429500302482143,
+            "new_mean_abs": 0.09905596829950224,
+            "new_positive_fraction": 0.5155368808710914,
+            "new_query_equal_mean": 0.006023512251335137
+          },
+          "R": {
+            "old_mean": -0.00489936770998249,
+            "new_mean": -0.00019933080156188813,
+            "old_std": 0.05673380575234752,
+            "new_std": 0.01557935481881845,
+            "old_mean_abs": 0.044499305552379936,
+            "new_mean_abs": 0.012053432260541995,
+            "new_positive_fraction": 0.493509856488484,
+            "new_query_equal_mean": -9.112489631684205e-05
+          },
+          "m": {
+            "old_mean": 1.7956957129104578,
+            "new_mean": 0.03213214605594315,
+            "old_std": 0.6923142069135556,
+            "new_std": 0.12917576695869926,
+            "old_mean_abs": 1.7962747272731623,
+            "new_mean_abs": 0.10298934664350623,
+            "new_positive_fraction": 0.5989725662093729,
+            "new_query_equal_mean": 0.03129307427147841
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 16,
+        "route": {
+          "reader": "L11H5",
+          "writer": "L3H5",
+          "reader_layer": 11,
+          "reader_head": 5,
+          "writer_layer": 3,
+          "writer_head": 5,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L11H5",
+            "writer": "L3H5",
+            "writer_layer": 3,
+            "writer_head": 5,
+            "index": 29,
+            "selection_delta": 0.27481255987196046,
+            "previous_attention": 0.888758123931266
+          }
+        },
+        "parameters_SHA": "75f16ba817267211f1838eb0a934a00ad0273b65644cb57da31724adfaa4e178",
+        "old_Gplus": 2.272001900581227,
+        "new_Gplus": 0.02497378359352933,
+        "minimum_Gplus": 0.024973783593524215,
+        "Gplus_retained": 0.010991973020418908,
+        "factor_Q_relative_error": 2.1923886404228823e-15,
+        "factor_KOV_relative_error": 2.3123038325184237e-15,
+        "affine_Q_error": 2.7755575615628914e-17,
+        "affine_V_error": 1.3877787807814457e-17,
+        "frame_isometry_error": 3.9968028886505635e-15,
+        "actual_weight_matrix_error_seven_distances": 2.8449920597432066e-15,
+        "stock_native_attention_overlap_error": 0.0,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.013445445231793998,
+          "mean_component_max_change": 2.7376104855258987e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.6437844285239697e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 16.20650773949997,
+        "new_raw_Q_norm": 16.32470618300243,
+        "old_raw_V_norm": 11.578941417303795,
+        "new_raw_V_norm": 11.59232677604401
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 3.375077994860476e-14,
+        "Writer_previous_attention_unchanged_max_error": 2.9976021664879227e-15,
+        "changed_Q_native_reconstruction_max_error": 1.509903313490213e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    },
+    {
+      "status": "COMPLETE",
+      "scale": "1b",
+      "route": {
+        "reader": "L11H5",
+        "writer": "L6H3",
+        "reader_layer": 11,
+        "reader_head": 5,
+        "writer_layer": 6,
+        "writer_head": 3,
+        "endpoint_pair": {
+          "scale": "1b",
+          "step": 143000,
+          "reader": "L11H5",
+          "writer": "L6H3",
+          "writer_layer": 6,
+          "writer_head": 3,
+          "index": 51,
+          "selection_delta": 0.15772446055899428,
+          "previous_attention": 0.40937852958467014
+        }
+      },
+      "sequences": 2084,
+      "queries": 150000,
+      "comparisons": 20849616,
+      "old_route_score_pp": 15.772446055899414,
+      "new_route_score_pp": 0.01139683836739035,
+      "route_score_change_pp": -15.761049217532022,
+      "old_attention": 0.7038065722435094,
+      "new_attention": 0.022911536572944483,
+      "new_removed_attention": 0.022797568189270583,
+      "parts": {
+        "C": {
+          "G": {
+            "old_mean": 1.3198012783128856,
+            "new_mean": -0.01418181825562287,
+            "old_std": 0.4445758714803276,
+            "new_std": 0.006434790943982495,
+            "old_mean_abs": 1.3198012783128856,
+            "new_mean_abs": 0.014212652158440925,
+            "new_positive_fraction": 0.008457613799697799,
+            "new_query_equal_mean": -0.014117879954627946
+          },
+          "b": {
+            "old_mean": -0.027669700697751154,
+            "new_mean": 0.00021702124183513207,
+            "old_std": 0.43791317896538806,
+            "new_std": 0.006309929694435788,
+            "old_mean_abs": 0.34175717674058653,
+            "new_mean_abs": 0.005043897089980402,
+            "new_positive_fraction": 0.5145352317280089,
+            "new_query_equal_mean": 0.00027611023057525744
+          },
+          "T": {
+            "old_mean": 1.7961858361811462,
+            "new_mean": 0.02915864463919575,
+            "old_std": 2.0382270044818154,
+            "new_std": 0.24305350783688673,
+            "old_mean_abs": 2.1800524026271786,
+            "new_mean_abs": 0.19200366316114528,
+            "new_positive_fraction": 0.5491441185295691,
+            "new_query_equal_mean": 0.036101605166301697
+          },
+          "R": {
+            "old_mean": -0.018090541957211347,
+            "new_mean": -0.0030139821767228283,
+            "old_std": 0.4536975298568945,
+            "new_std": 0.05546663137957627,
+            "old_mean_abs": 0.3552726802086293,
+            "new_mean_abs": 0.04276117523986323,
+            "new_positive_fraction": 0.479798045201408,
+            "new_query_equal_mean": -0.0038608187908179444
+          },
+          "m": {
+            "old_mean": 3.1255662732339142,
+            "new_mean": 0.011745822965014995,
+            "old_std": 2.230042864165876,
+            "new_std": 0.24460067165980445,
+            "old_mean_abs": 3.2683466531340124,
+            "new_mean_abs": 0.19217607737032846,
+            "new_positive_fraction": 0.5194206934074949,
+            "new_query_equal_mean": 0.01784679619028061
+          }
+        },
+        "Hplus": {
+          "G": {
+            "old_mean": 1.84853611790587,
+            "new_mean": 0.026051718127302694,
+            "old_std": 0.499168951020267,
+            "new_std": 0.0038819995193822565,
+            "old_mean_abs": 1.84853611790587,
+            "new_mean_abs": 0.026051718127302694,
+            "new_positive_fraction": 1.0,
+            "new_query_equal_mean": 0.02594118408811815
+          },
+          "b": {
+            "old_mean": -0.05253530753636452,
+            "new_mean": -0.00040258445693260595,
+            "old_std": 0.46141783269990083,
+            "new_std": 0.003275469443096124,
+            "old_mean_abs": 0.3202613927144578,
+            "new_mean_abs": 0.0022555194141539014,
+            "new_positive_fraction": 0.4824312351843794,
+            "new_query_equal_mean": -0.0005139837963983152
+          },
+          "T": {
+            "old_mean": 1.2682458151935283,
+            "new_mean": 0.0875469364483171,
+            "old_std": 1.9004661857942426,
+            "new_std": 0.19166534740749913,
+            "old_mean_abs": 1.8234923230861435,
+            "new_mean_abs": 0.16536813748276719,
+            "new_positive_fraction": 0.6806354611039359,
+            "new_query_equal_mean": 0.08282932489375061
+          },
+          "R": {
+            "old_mean": -0.02922805379975139,
+            "new_mean": -0.0012206396954098635,
+            "old_std": 0.1753669642533697,
+            "new_std": 0.026046832042742024,
+            "old_mean_abs": 0.13983554259833567,
+            "new_mean_abs": 0.020328731934508005,
+            "new_positive_fraction": 0.4803786793963016,
+            "new_query_equal_mean": -0.0007286010010943395
+          },
+          "m": {
+            "old_mean": 3.1400891868390053,
+            "new_mean": 0.11278059933714231,
+            "old_std": 1.9896416211146808,
+            "new_std": 0.19199362299095665,
+            "old_mean_abs": 3.212637121973966,
+            "new_mean_abs": 0.17592391494925602,
+            "new_positive_fraction": 0.7280464062263785,
+            "new_query_equal_mean": 0.10855589177717247
+          }
+        }
+      },
+      "physical_parameter_edit": true,
+      "original_shapes_preserved": true,
+      "logit_patching": false,
+      "limitations": [
+        "Whole C rotated;Hminus and A directions change",
+        "Reader prefix representations and other circuits sharing Q/V may change",
+        "Gplus optimized on all frozen Writer centers;not a held-out Gplus generalization test",
+        "C removal is fixed-current-prefix key-route removal,not removal followed by a second network forward"
+      ],
+      "construction_controls": {
+        "index": 17,
+        "route": {
+          "reader": "L11H5",
+          "writer": "L6H3",
+          "reader_layer": 11,
+          "reader_head": 5,
+          "writer_layer": 6,
+          "writer_head": 3,
+          "endpoint_pair": {
+            "scale": "1b",
+            "step": 143000,
+            "reader": "L11H5",
+            "writer": "L6H3",
+            "writer_layer": 6,
+            "writer_head": 3,
+            "index": 51,
+            "selection_delta": 0.15772446055899428,
+            "previous_attention": 0.40937852958467014
+          }
+        },
+        "parameters_SHA": "d7315e1943941150093cd2fa3820ce648d3d189ed3f19531592bc7d2a37f15e2",
+        "old_Gplus": 1.848536117908199,
+        "new_Gplus": 0.026051718127302684,
+        "minimum_Gplus": 0.026051718127297667,
+        "Gplus_retained": 0.01409316154275783,
+        "factor_Q_relative_error": 2.19586725983146e-15,
+        "factor_KOV_relative_error": 2.345300081950092e-15,
+        "affine_Q_error": 2.7755575615628914e-17,
+        "affine_V_error": 1.3877787807814457e-17,
+        "frame_isometry_error": 3.6637359812630166e-15,
+        "actual_weight_matrix_error_seven_distances": 2.92655419651217e-15,
+        "stock_native_attention_overlap_error": 1.1102230246251565e-16,
+        "global_minimum": "Von Neumann trace rearrangement of P Hplus P, O1=1;historical operator mean component retained",
+        "mean_direction_control": {
+          "projected_support_rank": 512,
+          "fixed_mean_component_norm": 0.011871168009914362,
+          "mean_component_max_change": 2.168404344971009e-18
+        },
+        "physical_centered_key_KOV_conjugation_error": 1.6783414437947475e-15,
+        "original_head_width": 256,
+        "parameter_shapes_unchanged": true,
+        "all_distance_preservation": "F isometry and actual factor coefficients equal original coefficients",
+        "whole_C_rotated": true,
+        "Hminus_A_directions_fixed": false,
+        "attention_used_in_objective": false,
+        "old_raw_Q_norm": 16.20650773949997,
+        "new_raw_Q_norm": 16.24689434528714,
+        "old_raw_V_norm": 14.715939063735531,
+        "new_raw_V_norm": 14.771005773654702
+      },
+      "native_gate": {
+        "status": "PASS",
+        "true_parameter_forward": true,
+        "logit_patching": false,
+        "Writer_input_unchanged_max_error": 2.8421709430404007e-12,
+        "Writer_previous_attention_unchanged_max_error": 4.773959005888173e-15,
+        "changed_Q_native_reconstruction_max_error": 1.509903313490213e-14,
+        "all_other_weight_slices_unmodified": true,
+        "modified_slices": [
+          "Reader Q weight and bias",
+          "Writer V weight and bias"
+        ],
+        "route_removal": "Actual modified q and previous-token OV message removed from Reader key score;modified prefix/LN denominator fixed"
+      }
+    }
+  ]
+}

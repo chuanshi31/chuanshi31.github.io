@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 405" role="img" aria-labelledby="title desc">
+<title id="title">Pythia 1B: L5H6 ← L1H0, native parameter intervention</title>
+<desc id="desc">Before and after G plus, H plus margin and complete C margin, scaled by each term original standard deviation. The right panel shows route-removal attention decrease in percentage points. Raw means are labelled.</desc>
+<rect width="940" height="405" rx="12" fill="#f6f9f9"/>
+<g font-family="Arial,sans-serif" fill="#243b48">
+<text x="30" y="31" font-size="18" font-weight="bold">Native parameter edit · step 143,000</text>
+<text x="30" y="57" font-size="13">Score terms / original standard deviation</text>
+<text x="659" y="57" font-size="13">Route-removal Reader score (pp)</text>
+<rect x="490" y="19" width="14" height="14" fill="#427887"/><text x="512" y="31" font-size="13">Original</text>
+<rect x="600" y="19" width="14" height="14" fill="#cc7954"/><text x="622" y="31" font-size="13">Parameter edit</text>
+<path d="M45 272.609 H610" stroke="#80939b"/>
+<rect x="88" y="135.373" width="32" height="137.236" fill="#427887"/>
+<text x="104" y="126.373" text-anchor="middle" font-size="13">3.806</text>
+<rect x="130" y="271.277" width="32" height="1.332" fill="#cc7954"/>
+<text x="146" y="262.277" text-anchor="middle" font-size="13">0.037</text>
+<text x="125" y="322" text-anchor="middle" font-size="18">G⁺</text>
+<text x="125" y="347" text-anchor="middle" font-size="12">Raw mean: 1.8753 → 0.0182</text>
+<rect x="268" y="179.040" width="32" height="93.569" fill="#427887"/>
+<text x="284" y="170.040" text-anchor="middle" font-size="13">2.595</text>
+<rect x="310" y="270.997" width="32" height="1.612" fill="#cc7954"/>
+<text x="326" y="261.997" text-anchor="middle" font-size="13">0.045</text>
+<text x="305" y="322" text-anchor="middle" font-size="18">m⁺</text>
+<text x="305" y="347" text-anchor="middle" font-size="12">Raw mean: 1.1775 → 0.0203</text>
+<rect x="448" y="208.847" width="32" height="63.762" fill="#427887"/>
+<text x="464" y="199.847" text-anchor="middle" font-size="13">1.768</text>
+<rect x="490" y="272.609" width="32" height="0.824" fill="#cc7954"/>
+<text x="506" y="290.433" text-anchor="middle" font-size="13">-0.023</text>
+<text x="485" y="322" text-anchor="middle" font-size="18">mᶜ</text>
+<text x="485" y="347" text-anchor="middle" font-size="12">Raw mean: 1.1346 → -0.0147</text>
+<path d="M659 278.217 H910" stroke="#80939b"/>
+<rect x="701" y="133.906" width="44" height="144.310" fill="#427887"/>
+<text x="723" y="123.906" text-anchor="middle" font-size="14">14.0856</text>
+<rect x="804" y="278.217" width="44" height="0.650" fill="#cc7954"/>
+<text x="826" y="296.438" text-anchor="middle" font-size="14">-0.0215</text>
+<text x="775" y="322" text-anchor="middle" font-size="16">Attention decrease</text>
+<text x="775" y="347" text-anchor="middle" font-size="12">Each condition uses its own route removal</text>
+<text x="30" y="384" font-size="12">2,084 sequences · 150,000 queries · 20,849,616 comparisons per route</text></g></svg>
