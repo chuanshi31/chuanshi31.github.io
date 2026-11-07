@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "seed": 20261107,
+  "scope": "Independent synthetic FP64 algebra checks, not new model evidence or interval arithmetic",
+  "partial_and_full_rotary_cases": 3,
+  "distances_per_case": 31,
+  "zero_energy_plane_included": true,
+  "checks_max_relative_residual_or_violation": {
+    "plane_energy_product": 2.393032166311197e-16,
+    "direct_rope_expansion": 4.553534582734714e-16,
+    "nonrotary_cancellation": 8.604228440844963e-16,
+    "exact_gram_identity": 6.263316766133286e-16,
+    "weighted_gram_certificate": 0.0,
+    "phase_mean_chord_bound": 0.0,
+    "phase_uniform_envelope": 0.0,
+    "pointwise_relative_certificate": 0.0,
+    "closed_uniform_certificate": 0.0,
+    "mean_RMS_certificate": 0.0,
+    "mean_squared_minimum_identity": 2.1105095128375462e-16,
+    "operator_below_frobenius": 0.0,
+    "complex_phase_identity": 4.3820740158638326e-16,
+    "all_zero_rotation_is_constant": 0.0
+  }
+}

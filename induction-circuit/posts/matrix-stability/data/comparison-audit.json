@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETE",
+  "model_states": 48,
+  "route_records": 11081,
+  "groups": {
+    "ordinary_frozen_negative": 2829,
+    "ordinary_frozen_control": 126,
+    "ordinary_layer_matched_unselected": 8126
+  },
+  "selected_reference_records": 433,
+  "unmatched_selected": [
+    {
+      "family": "Pythia",
+      "scale": "1b",
+      "model": "pythia-1b-deduped-step143000",
+      "reader": "L5H6",
+      "writer": "L1H0"
+    },
+    {
+      "family": "Pythia",
+      "scale": "1b",
+      "model": "pythia-1b-deduped-step143000",
+      "reader": "L5H7",
+      "writer": "L1H0"
+    }
+  ],
+  "prior_kappa_replays": 11081,
+  "prior_kappa_max_relative_error": 3.5184492958396864e-15,
+  "max_numerical_identity_relative_error": 5.906386491005833e-14,
+  "new_forwards": 0,
+  "Pythia_checkpoint": 143000,
+  "Hplus_Hminus_distances": [
+    0,
+    127,
+    2047
+  ],
+  "C_H_A_distances": "Every integer0..2047",
+  "output_archives_and_source_receipts_SHA_verified": true
+}
