@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "coverage": {
+    "70m": {
+      "routes": 10,
+      "checkpoints": 19,
+      "rows": 380,
+      "native_score_points": 190
+    },
+    "160m": {
+      "routes": 29,
+      "checkpoints": 19,
+      "rows": 1102,
+      "native_score_points": 551
+    },
+    "410m": {
+      "routes": 36,
+      "checkpoints": 19,
+      "rows": 1368,
+      "native_score_points": 684
+    },
+    "1b": {
+      "routes": 18,
+      "checkpoints": 19,
+      "rows": 684,
+      "native_score_points": 342
+    },
+    "1.4b": {
+      "routes": 36,
+      "checkpoints": 19,
+      "rows": 1368,
+      "native_score_points": 684
+    },
+    "2.8b": {
+      "routes": 64,
+      "checkpoints": 19,
+      "rows": 2432,
+      "native_score_points": 1216
+    }
+  },
+  "route_checkpoints": 3667,
+  "operator_rows": 7334,
+  "scientific_manifest_SHA": "467cabeffbf3108ed47c3ea37c9392ce7f701e2a805a662422b8b48faf0d75ae",
+  "main_completion_SHA": "3b76fd2b08199fe86cca06d88f0d99796dcf52b65932369d6934a7c1f23590a8",
+  "source_summary_SHA": "b373cd8d2f78f0f82e0ce030044329d35376e9f955a621547306d01bae7b9d76",
+  "max_mean_identity_residual": 3.320514089383275e-11,
+  "max_native_drop_difference": 1.3433698597964394e-14,
+  "previous_70m_160m_values_exact": true,
+  "no_new_forward": true,
+  "no_GPU": true,
+  "files_SHA256": {
+    "position-margin-trajectories.json": "acfbf58d9979a391a06baf7f1ff19c663ba4914b6512696cd72b709542e4152e",
+    "position-margin-trajectories.csv": "e7732bbc0d6edff4e31d68d00fd2e26b8168a981379f49f96d7be21c08c33661",
+    "route-removal-scores-70m.json": "aee9ae4a3a557128d4b89fe14d24e612b0db7fd73e2bda643103509e7a7f8e86",
+    "position-margin-trajectories-160m.json": "eff2cde6877b058d4263e7289ac31e031794c3e0e8d6901def6258a4591cfcd3",
+    "position-margin-trajectories-160m.csv": "e0b329a1ef40002f3bd6ca43b10c87162ee275e456a8a921b4abfb7b4e53df8b",
+    "route-removal-scores-160m.json": "7ccd74486844530835682096f5db558a60b988f88f964ebd4513cbddf61bcd5d",
+    "position-margin-trajectories-410m.json": "5e434234f4e3d02fb3c27daabf082edeaab9e88f23463cd7a20f7c3c5d3ad29a",
+    "position-margin-trajectories-410m.csv": "9271ef9cca19409411930159b44f80569083efe5508878eeae502a6b2ba92ad0",
+    "route-removal-scores-410m.json": "98a245a6b867e3eba0f5190dc836e778e1614200699305022f74ccedbc63eb62",
+    "position-margin-trajectories-1b.json": "36f6bdf791a435041eec31d8314bcc086e646f59922d8ba4651c42e857193955",
+    "position-margin-trajectories-1b.csv": "b27037a6f6feb80da025774ec87aa293b192115dd31d9693a014e9418f9c3049",
+    "route-removal-scores-1b.json": "e8f1a4d61f48889aedc7a172dd807b5dd433f3055ca78e94d6ac634daff54fc1",
+    "position-margin-trajectories-1.4b.json": "2447edf2e83758347fbd7c875ce4be7f24dbc2ea79fe5c0db1ef55b0c9b318e3",
+    "position-margin-trajectories-1.4b.csv": "1693755d63b4eaabbaea7d5dd27bfecc7958fbd042951809150bcee9d1324adb",
+    "route-removal-scores-1.4b.json": "3e36daf4e0ba858f8271bd87511d9225893e30915f2065173b7af5a4cf3ed3c7",
+    "position-margin-trajectories-2.8b.json": "a7faf1d9240f2d2804aa3b9781424769e68b6e3969f37ab4a6951fa9164868f8",
+    "position-margin-trajectories-2.8b.csv": "deae0d4352defc8bd82f85576930237788cb70f3d5ae0bb9987f8167d46a77f2",
+    "route-removal-scores-2.8b.json": "4d3e3a6269b1833572ebe0fc6e045864586d1c25fe5b22db4f34380d2cc6be32"
+  }
+}

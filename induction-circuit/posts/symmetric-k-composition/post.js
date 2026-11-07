@@ -19,7 +19,7 @@
     const e = document.createElement('option'); e.value=value; e.textContent=label; e.disabled=disabled; parent.append(e);
   };
   const readJSON = async path => {
-    const response = await fetch('./data/'+path);
+    const response = await fetch('./data/'+path+'?v=20261107-six-scale-trajectories');
     if (!response.ok) throw new Error('Could not load '+path);
     return response.json();
   };
@@ -27,7 +27,7 @@
   manifest.models.forEach(m=>option(model,m.id,m.label+(m.data?'':' — not yet included'),!m.data));
   const available = manifest.models.filter(m=>m.data);
   if (!available.length) throw new Error('No trajectory data available');
-  document.getElementById('model-availability').textContent='Available trajectory results: '+available.map(m=>m.label).join(', ')+'. Other sizes are marked as not yet included.';
+  document.getElementById('model-availability').textContent='Available trajectory results: '+available.map(m=>m.label).join(', ')+'. All 193 routes at all 19 checkpoints; complete C and H⁺.';
   model.value=available[0].id;
   model.disabled=false;
   function ratio(row,term) {
@@ -55,7 +55,7 @@
     const config=manifest.models.find(m=>m.id===model.value);
     const outcome=fit?.rows.find(r=>r.reader===route.reader&&(!r.writer||r.writer===route.writer)&&r.step===selected);
     const operatorName=operator.value==='C'?'complete C':'H⁺';
-    meta.textContent=config.label+' · '+route.reader+' ← '+route.writer+' · step '+selected.toLocaleString('en-US')+(outcome?' · native route-removal attention decrease '+outcome.drop_pp.toFixed(3)+' pp':'')+'.';
+    meta.textContent=config.label+' · '+config.routes+' routes · '+config.checkpoints+' checkpoints · '+route.reader+' ← '+route.writer+' · step '+selected.toLocaleString('en-US')+(outcome?' · native route-removal attention decrease '+outcome.drop_pp.toFixed(3)+' pp':'')+'.';
     svg.replaceChildren();
     svg.setAttribute('aria-label',config.label+', '+route.reader+' with Writer '+route.writer+', '+operatorName+': '+modes[mode]+', G, minus b, T, R and m across checkpoints');
     el('title',{},config.label+' · '+route.reader+' ← '+route.writer+' · '+operatorName+' · '+modes[mode]);

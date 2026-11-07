@@ -4,35 +4,94 @@
       "id": "70m",
       "label": "Pythia 70M",
       "data": "position-margin-trajectories.json",
-      "reader_scores": "margin-reader-fit70m.json",
-      "csv": "position-margin-trajectories.csv"
+      "csv": "position-margin-trajectories.csv",
+      "reader_scores": "route-removal-scores-70m.json",
+      "routes": 10,
+      "readers": 10,
+      "checkpoints": 19,
+      "operators": [
+        "C",
+        "Hplus"
+      ]
     },
     {
       "id": "160m",
       "label": "Pythia 160M",
       "data": "position-margin-trajectories-160m.json",
       "csv": "position-margin-trajectories-160m.csv",
-      "reader_scores": "route-removal-scores160m.json"
+      "reader_scores": "route-removal-scores-160m.json",
+      "routes": 29,
+      "readers": 22,
+      "checkpoints": 19,
+      "operators": [
+        "C",
+        "Hplus"
+      ]
     },
     {
       "id": "410m",
       "label": "Pythia 410M",
-      "data": null
+      "data": "position-margin-trajectories-410m.json",
+      "csv": "position-margin-trajectories-410m.csv",
+      "reader_scores": "route-removal-scores-410m.json",
+      "routes": 36,
+      "readers": 19,
+      "checkpoints": 19,
+      "operators": [
+        "C",
+        "Hplus"
+      ]
     },
     {
       "id": "1b",
       "label": "Pythia 1B",
-      "data": null
+      "data": "position-margin-trajectories-1b.json",
+      "csv": "position-margin-trajectories-1b.csv",
+      "reader_scores": "route-removal-scores-1b.json",
+      "routes": 18,
+      "readers": 10,
+      "checkpoints": 19,
+      "operators": [
+        "C",
+        "Hplus"
+      ]
     },
     {
       "id": "1.4b",
       "label": "Pythia 1.4B",
-      "data": null
+      "data": "position-margin-trajectories-1.4b.json",
+      "csv": "position-margin-trajectories-1.4b.csv",
+      "reader_scores": "route-removal-scores-1.4b.json",
+      "routes": 36,
+      "readers": 16,
+      "checkpoints": 19,
+      "operators": [
+        "C",
+        "Hplus"
+      ]
     },
     {
       "id": "2.8b",
       "label": "Pythia 2.8B",
-      "data": null
+      "data": "position-margin-trajectories-2.8b.json",
+      "csv": "position-margin-trajectories-2.8b.csv",
+      "reader_scores": "route-removal-scores-2.8b.json",
+      "routes": 64,
+      "readers": 27,
+      "checkpoints": 19,
+      "operators": [
+        "C",
+        "Hplus"
+      ]
     }
-  ]
+  ],
+  "coverage": {
+    "models": 6,
+    "routes": 193,
+    "checkpoints": 19,
+    "states": 114,
+    "route_checkpoints": 3667,
+    "operator_rows": 7334
+  },
+  "scientific_manifest_SHA": "467cabeffbf3108ed47c3ea37c9392ce7f701e2a805a662422b8b48faf0d75ae"
 }

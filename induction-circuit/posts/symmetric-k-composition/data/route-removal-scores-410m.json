@@ -1,0 +1,4116 @@
+{
+  "scope": "Pythia 410M: native single-route removal attention decrease;36 routes x19 checkpoints",
+  "manifest_SHA": "8b8a127c2780111cee4b3cde7471e6dc7e97609aff3740117a9182be2f104547",
+  "input_files_SHA": {
+    "pythia_INPUTS.npy": "d99cf2c42ef1f2ec930ff00eae21786bec8a13d16dbd030d06bfb42d3b75fba1",
+    "TARGET_INDICES.npy": "667a3f1aa4f75f2129605e83d0afff03a244d5e90dbfd6e1a7c8fd04a639e53c",
+    "VALID_COUNTS.npy": "64853296a6eafd50ef2d3d5d4764f22d920399fea7947eb3e11f3ccccd61c709",
+    "TOKEN_POOL.npy": "6d8fc485ab9dd423e1c1a48c9a81273f53a2855f7bf04547ad43ac74b5376584"
+  },
+  "rows": [
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 87.35141409811563
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 12.60497165092759
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 94.09116170223633
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 143000,
+      "drop_pp": 14.77569421322737
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 61.37918499152902
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 143000,
+      "drop_pp": 15.338238177203293
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 15.831544147516711
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 79.42198245134216
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 143000,
+      "drop_pp": 11.62216536882595
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 84.77825336994997
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 10.226686491595146
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 57.44695419418401
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 143000,
+      "drop_pp": 16.94937152968465
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 81.0025728451848
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 143000,
+      "drop_pp": 15.7127810178222
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 48.572326826063545
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 143000,
+      "drop_pp": 18.157592472915145
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 68.35093072097823
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 143000,
+      "drop_pp": 20.01400783205786
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 25.920029934666406
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 143000,
+      "drop_pp": 12.605975909930947
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 21.629905621246536
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 143000,
+      "drop_pp": 12.36895289355962
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 143000,
+      "drop_pp": 13.656745979612092
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 143000,
+      "drop_pp": 35.29993363999085
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 79.19361060413182
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 143000,
+      "drop_pp": 10.854639120114888
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 143000,
+      "drop_pp": 17.49976895598155
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 75.09109662030093
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 143000,
+      "drop_pp": 10.776685158282557
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 143000,
+      "drop_pp": 10.914109843825537
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 35.014308314512064
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 143000,
+      "drop_pp": 20.63576380624755
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 143000,
+      "drop_pp": 20.88033960382821
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 16.140662813666694
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 143000,
+      "drop_pp": 10.864426435471875
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 8.286526158713551
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 22.53404409612191
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 20.245090133198566
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 1000,
+      "drop_pp": 9.706462852666053
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 26.283103092229805
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 1000,
+      "drop_pp": 0.3124909153813693
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 15.954396853508952
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 23.815897956489664
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 1000,
+      "drop_pp": 0.6543711778476236
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 22.241821945365114
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 13.303126186862869
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 23.341809032409078
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 1000,
+      "drop_pp": -0.053171759154535536
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 40.940838669230914
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 1000,
+      "drop_pp": -0.07781066554922722
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 8.112099376371468
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 1000,
+      "drop_pp": -0.04723656762906647
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 40.340323394560876
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 1000,
+      "drop_pp": -0.053744316797588176
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 12.573876529564812
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 1000,
+      "drop_pp": -0.09208885533635303
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 25.722823106870845
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 1000,
+      "drop_pp": 0.2733062504885697
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 1000,
+      "drop_pp": -0.1209666401250642
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 1000,
+      "drop_pp": -0.20903860410742547
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 0.9886895768409155
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 1000,
+      "drop_pp": -0.008830867191443603
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 1000,
+      "drop_pp": -0.005323026032871825
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 31.079152755382033
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 1000,
+      "drop_pp": -0.042832744850818116
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 1000,
+      "drop_pp": -0.06148444107247908
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 2.4502050473969694
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 1000,
+      "drop_pp": -0.017205096886248328
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 1000,
+      "drop_pp": -0.016264975314154995
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 13.318668759855267
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 1000,
+      "drop_pp": 0.04908305761133144
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": 0.0008046068235088855
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": 4.3085844168497256e-05
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": -0.0002199477273336775
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 0,
+      "drop_pp": -6.278466806799998e-05
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": -0.0004332814386352746
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 0,
+      "drop_pp": 0.0003558134285909509
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": 0.0003566666215926162
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": 0.0003364922874848214
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 0,
+      "drop_pp": -0.0003717669214590297
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": 0.0007506302806652154
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": -0.0009975835456536158
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": 4.060838250004306e-05
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 0,
+      "drop_pp": -2.9127487002553187e-05
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": -0.0005577073411717343
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 0,
+      "drop_pp": 0.0002751976385103466
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": -7.994137138193913e-05
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 0,
+      "drop_pp": -0.0006120469166478321
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": -0.0007528904229638783
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 0,
+      "drop_pp": 1.7671787296349994e-05
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": 0.001017724362530753
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 0,
+      "drop_pp": -0.0006234725403779506
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": -0.0005657842407670588
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 0,
+      "drop_pp": 0.000901805229530997
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 0,
+      "drop_pp": 0.00019017338251867133
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 0,
+      "drop_pp": 0.0001809003201767162
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": 5.8002972021936605e-05
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 0,
+      "drop_pp": -0.0008012698186746214
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 0,
+      "drop_pp": 0.0001526327637422359
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": 0.00015304918273492674
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 0,
+      "drop_pp": 0.0002381424574614266
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 0,
+      "drop_pp": 0.0006004304400460125
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": -0.00012807474612727687
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 0,
+      "drop_pp": -4.344529308600298e-05
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 0,
+      "drop_pp": 0.00027524774479578684
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": 0.00023907167975983912
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 0,
+      "drop_pp": -0.00017108946227424593
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": -0.0004539301509641491
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": -0.0009038009048310119
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": 0.0005050650336114321
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 128,
+      "drop_pp": -0.0001957796263569317
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": -2.6240968616086935e-05
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 128,
+      "drop_pp": -0.00038976133412867153
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": 0.00025359515266089316
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": -0.0005386068671842104
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 128,
+      "drop_pp": -5.537015096632181e-05
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": 6.741044107881622e-05
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": 0.0005126399143382671
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": -0.0003602442046311133
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 128,
+      "drop_pp": 0.0006232117387358627
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": -0.00011609208144941485
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 128,
+      "drop_pp": 0.0006080066006719509
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": 0.0001179069866706628
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 128,
+      "drop_pp": -0.00039690528721436635
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": -1.3824813772933542e-05
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 128,
+      "drop_pp": 0.00037005032812037486
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": -0.0007168061713930945
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 128,
+      "drop_pp": 0.0007868983221293729
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": 0.0005313555725423857
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 128,
+      "drop_pp": 0.0002095224362813619
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 128,
+      "drop_pp": -0.0005996678095032681
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 128,
+      "drop_pp": 0.0009040527620372829
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": -0.0001441169452047475
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 128,
+      "drop_pp": 0.00035801456805019394
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 128,
+      "drop_pp": 0.00020899236113751385
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": -0.0006917412155360569
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 128,
+      "drop_pp": 0.0005479514038876643
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 128,
+      "drop_pp": 6.988989821217484e-05
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": -0.00023968724030681843
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 128,
+      "drop_pp": -0.0007651127363866861
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 128,
+      "drop_pp": 0.0005238696809281573
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": 0.00072875934345705
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 128,
+      "drop_pp": 6.858326607322995e-06
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": -0.001050873504545094
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": -0.0007407050962721096
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": 0.0001129663052941432
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 256,
+      "drop_pp": 0.00036191398651644335
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": -0.0007986834227900058
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 256,
+      "drop_pp": -0.0005278441166198244
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": -8.850335696045097e-05
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": -0.0006253864715227708
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 256,
+      "drop_pp": 0.0003782975668602251
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": -0.00012086682784837044
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": 0.000523863470720462
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": 0.00011066347741228721
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 256,
+      "drop_pp": 0.00034728073758094613
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": -0.0006397951149605258
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 256,
+      "drop_pp": 0.000766184643804721
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": 0.0008604101856851676
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 256,
+      "drop_pp": 0.00029541056380949504
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": -0.0001183806666540943
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 256,
+      "drop_pp": 0.0004220395449068548
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": -0.0002587188731882628
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 256,
+      "drop_pp": 0.0009558523954122933
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": 0.000750323475928738
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 256,
+      "drop_pp": -3.1102709761171576e-05
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 256,
+      "drop_pp": -0.00045271589167866777
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 256,
+      "drop_pp": 0.0015487560247648413
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": -0.00023049120289504732
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 256,
+      "drop_pp": 0.00014524977851836096
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 256,
+      "drop_pp": -8.739759416905024e-05
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": -0.000766656326177742
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 256,
+      "drop_pp": 0.0007689765153709449
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 256,
+      "drop_pp": -4.0843959038180944e-05
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": -0.0004786059441257151
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 256,
+      "drop_pp": -0.0008947067056626345
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 256,
+      "drop_pp": 0.00047319588851700567
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": 0.0004074887103602126
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 256,
+      "drop_pp": -0.00017948123635855295
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.011150824707983897
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.006335781779417959
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.014833153924690562
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 512,
+      "drop_pp": 0.009426531197749555
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.018497403232032444
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 512,
+      "drop_pp": -0.002891451249901339
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.008377732265052451
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.01955237078830399
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 512,
+      "drop_pp": -0.0007738063096993097
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.020350023021741687
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.007842637771679484
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.015203553898037597
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 512,
+      "drop_pp": -0.0008744634479737612
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.011011315768214014
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 512,
+      "drop_pp": -0.0018426027250287302
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.004732329114187639
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 512,
+      "drop_pp": -0.0014391456156587212
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.010647307723909982
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 512,
+      "drop_pp": 0.0004295788249043808
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.010571542617332508
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 512,
+      "drop_pp": 0.0008674013002758774
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.027682153583355462
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 512,
+      "drop_pp": -0.005913771991904182
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 512,
+      "drop_pp": -0.0011594387529734185
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 512,
+      "drop_pp": 0.0007948819765013493
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.0025288553353833287
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 512,
+      "drop_pp": 4.7782298571302784e-05
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 512,
+      "drop_pp": -0.0016266233617931447
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.011337165899257678
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 512,
+      "drop_pp": 0.0007317234298850894
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 512,
+      "drop_pp": -0.0011617663990069749
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.002553425115376512
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 512,
+      "drop_pp": -0.0005696984715176934
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 512,
+      "drop_pp": -9.79560835119575e-05
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.019826221524453513
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 512,
+      "drop_pp": 0.004162043945683813
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 16.877888188694047
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 56.18540872614851
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 48.083568005679396
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 2000,
+      "drop_pp": 12.219991408454211
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 41.74707094759826
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 2000,
+      "drop_pp": 2.9646071233268456
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 21.459071566850323
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 49.04753525532065
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 2000,
+      "drop_pp": 1.526694042085397
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 39.3037511271322
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 12.790905347061543
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 32.95783194384065
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 2000,
+      "drop_pp": -0.10513571866709315
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 63.976400965756184
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 2000,
+      "drop_pp": -0.11516237591698841
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 20.31387814860195
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 2000,
+      "drop_pp": -0.11226659859138732
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 59.918937626547695
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 2000,
+      "drop_pp": -0.08734625263879803
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 19.180331004789114
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 2000,
+      "drop_pp": -0.13837632200717764
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 33.01421074157308
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 2000,
+      "drop_pp": 3.3491716148965844
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 2000,
+      "drop_pp": -0.09107875621623407
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 2000,
+      "drop_pp": -0.0030155389668551358
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 5.847906831296462
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 2000,
+      "drop_pp": -0.033161722305216634
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 2000,
+      "drop_pp": 0.001472133592733682
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 53.324612842244065
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 2000,
+      "drop_pp": -0.042918148302584225
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 2000,
+      "drop_pp": 0.017832462674416405
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 9.75399568411312
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 2000,
+      "drop_pp": -0.0262902027271944
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 2000,
+      "drop_pp": -0.0009476134761682298
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 25.353867707916443
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 2000,
+      "drop_pp": 0.36419254313643096
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 24.5096655692355
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 67.35754676536844
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 56.51044885910008
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 3000,
+      "drop_pp": 11.419011851460581
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 48.5294021514244
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 3000,
+      "drop_pp": 4.831108832139264
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 26.387133516599192
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 72.63784198290094
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 3000,
+      "drop_pp": 2.449103276193565
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 69.28538993573123
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 13.825165906172193
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 39.55972802865107
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 3000,
+      "drop_pp": 0.28172030963909966
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 75.49772467774066
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 3000,
+      "drop_pp": -0.1341103121806908
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 34.98911592451645
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 3000,
+      "drop_pp": 0.3008427443016104
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 66.43272971413315
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 3000,
+      "drop_pp": 0.06752742210480722
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 22.805189824999783
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 3000,
+      "drop_pp": -0.005555462781359211
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 38.930393905527275
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 3000,
+      "drop_pp": 5.892119292596087
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 3000,
+      "drop_pp": -0.29183204667376783
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 3000,
+      "drop_pp": 0.33176071846696686
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 19.501172019670136
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 3000,
+      "drop_pp": 0.28421892348044486
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 3000,
+      "drop_pp": 0.04660370856175988
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 67.53070828221486
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 3000,
+      "drop_pp": 0.024571799522898896
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 3000,
+      "drop_pp": 0.1791257793333445
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 16.467550130481207
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 3000,
+      "drop_pp": 0.2919882370116811
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 3000,
+      "drop_pp": -0.0026904740243249847
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 27.136191025404386
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 3000,
+      "drop_pp": 1.043873239323008
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 39.12847725110596
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 72.09361896563529
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 62.983229794380854
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 5000,
+      "drop_pp": 9.841511695709181
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 53.56873969704063
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 5000,
+      "drop_pp": 6.109912613645618
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 33.03406918029533
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 80.73101751710392
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 5000,
+      "drop_pp": 1.8498599832994733
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 80.50582360832132
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 15.222157476977479
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 45.0241323945626
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 5000,
+      "drop_pp": 2.112633334269942
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 77.98166498610051
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 5000,
+      "drop_pp": 1.3371084063105054
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 43.13934435435858
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 5000,
+      "drop_pp": 2.0985470180271304
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 68.12546568006648
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 5000,
+      "drop_pp": 0.8531594824378375
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 28.40789787661564
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 5000,
+      "drop_pp": 1.2822300074478155
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 38.595552429259236
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 5000,
+      "drop_pp": 7.110514643945454
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 5000,
+      "drop_pp": 0.12111117244870684
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 5000,
+      "drop_pp": 7.673096602677154
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 33.75234522126958
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 5000,
+      "drop_pp": 2.0066600293254133
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 5000,
+      "drop_pp": 3.438322262647675
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 71.09003972145244
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 5000,
+      "drop_pp": 0.8841068227898208
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 5000,
+      "drop_pp": 2.3555943213127373
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 24.899488833500357
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 5000,
+      "drop_pp": 2.119189509593072
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 5000,
+      "drop_pp": 2.379949063856529
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 26.782446427080398
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 5000,
+      "drop_pp": 2.3706247412534074
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 57.866753348617664
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 73.04445966074633
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 89.05681704751848
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 8000,
+      "drop_pp": 15.616908839403044
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 61.292189008197084
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 8000,
+      "drop_pp": 12.78188534862429
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 37.95320052083928
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 84.50037907956774
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 8000,
+      "drop_pp": 5.788145212478623
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 89.38938988398057
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 14.326679426572506
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 49.61058809828281
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 8000,
+      "drop_pp": 4.240665439635006
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 78.29224703350582
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 8000,
+      "drop_pp": 2.0418117755113374
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 48.88577094629382
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 8000,
+      "drop_pp": 4.44298080144454
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 65.00636857200787
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 8000,
+      "drop_pp": 1.3054380065402382
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 31.101829236510593
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 8000,
+      "drop_pp": 2.7509392390098197
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 34.79721692866849
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 8000,
+      "drop_pp": 6.484298072114791
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 8000,
+      "drop_pp": 1.143821754066654
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 8000,
+      "drop_pp": 16.121590411606057
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 46.02689091730643
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 8000,
+      "drop_pp": 4.419349761729475
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 8000,
+      "drop_pp": 10.193623616117586
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 66.09775634530746
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 8000,
+      "drop_pp": 1.5099725350281257
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 8000,
+      "drop_pp": 4.719012916689513
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 29.902381443950155
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 8000,
+      "drop_pp": 4.464719877760171
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 8000,
+      "drop_pp": 8.260302614457876
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 24.667439899577513
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 8000,
+      "drop_pp": 3.614794506299926
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 67.65821850305863
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 59.26552862367404
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 91.85312130369343
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 10000,
+      "drop_pp": 15.853432434428505
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 61.013574932583396
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 10000,
+      "drop_pp": 14.156189200749514
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 39.691226524268664
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 84.02054020294906
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 10000,
+      "drop_pp": 6.580032244626821
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 90.34631119149824
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 14.362700920627441
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 51.99575407498096
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 10000,
+      "drop_pp": 5.223424699853085
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 78.72555646363764
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 10000,
+      "drop_pp": 2.3142919512306848
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 51.78370107733039
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 10000,
+      "drop_pp": 5.843160673517234
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 64.35328479362114
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 10000,
+      "drop_pp": 1.6106347856472358
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 32.18782614651481
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 10000,
+      "drop_pp": 3.572623547574627
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 34.13590157380775
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 10000,
+      "drop_pp": 7.426666508932966
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 10000,
+      "drop_pp": 1.734103223143546
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 10000,
+      "drop_pp": 22.33119072570373
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 52.17933337646677
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 10000,
+      "drop_pp": 5.967887109908454
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 10000,
+      "drop_pp": 13.591541009951392
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 63.71592576412153
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 10000,
+      "drop_pp": 1.7893590096484724
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 10000,
+      "drop_pp": 5.513229948631948
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 33.54452876213659
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 10000,
+      "drop_pp": 6.060628809487478
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 10000,
+      "drop_pp": 11.09393514536421
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 23.04503796923404
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 10000,
+      "drop_pp": 3.550949682545576
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 79.94189993268608
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 43.33750998509591
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 93.9651568482492
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 15000,
+      "drop_pp": 16.358629521418965
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 62.923393410297265
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 15000,
+      "drop_pp": 15.908687879187223
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 41.609345233351725
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 79.61958823682305
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 15000,
+      "drop_pp": 8.985035279041853
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 90.57538969167051
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 13.38491996445418
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 58.00217559969736
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 15000,
+      "drop_pp": 6.937995695997346
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 81.80111224094324
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 15000,
+      "drop_pp": 3.5952662282466186
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 56.655630527366895
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 15000,
+      "drop_pp": 8.818814257425057
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 69.29989713164349
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 15000,
+      "drop_pp": 3.440559301698387
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 33.545088636076756
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 15000,
+      "drop_pp": 5.3850410165452836
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 32.59732967848025
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 15000,
+      "drop_pp": 8.270648670990898
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 15000,
+      "drop_pp": 3.6674691435837348
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 15000,
+      "drop_pp": 28.57623973050154
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 64.03868158595591
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 15000,
+      "drop_pp": 7.227030346691099
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 15000,
+      "drop_pp": 16.994473594333847
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 62.05493378065273
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 15000,
+      "drop_pp": 3.2708816856339973
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 15000,
+      "drop_pp": 7.36288495466042
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 34.911879421194946
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 15000,
+      "drop_pp": 8.565523787821427
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 15000,
+      "drop_pp": 14.796589444861574
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 19.890287563075105
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 15000,
+      "drop_pp": 4.437648860114985
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 84.85108989538772
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 48.26673209197392
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 92.90044671716646
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 20000,
+      "drop_pp": 15.167492884686261
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 44.36746780258535
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 20000,
+      "drop_pp": 17.05160456381603
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 41.11721307878632
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 77.7459806647019
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 20000,
+      "drop_pp": 10.665736689627202
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 90.17779520177376
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 12.670966720178251
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 60.498073150911544
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 20000,
+      "drop_pp": 8.354929048543235
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 82.22894816097646
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 20000,
+      "drop_pp": 4.71668455015336
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 57.12700014220362
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 20000,
+      "drop_pp": 9.916318473768293
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 68.96500401344343
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 20000,
+      "drop_pp": 4.870869780397424
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 32.755551594277385
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 20000,
+      "drop_pp": 6.8447201776305535
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 30.834018361293435
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 20000,
+      "drop_pp": 9.61167120389529
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 20000,
+      "drop_pp": 5.30423940003204
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 20000,
+      "drop_pp": 32.76355922178246
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 66.21691890843849
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 20000,
+      "drop_pp": 6.706916870108404
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 20000,
+      "drop_pp": 15.789517546687836
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 58.763156929675574
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 20000,
+      "drop_pp": 4.6193896447795035
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 20000,
+      "drop_pp": 8.645163239594778
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 34.86007258581624
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 20000,
+      "drop_pp": 10.54225538237179
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 20000,
+      "drop_pp": 16.908586034297855
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 18.697749270626637
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 20000,
+      "drop_pp": 4.461663893820542
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 85.7112606088821
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 24.837129566306597
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 95.91551792149198
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 30000,
+      "drop_pp": 15.355691593804366
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 61.63418717210656
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 30000,
+      "drop_pp": 15.54916493665544
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 36.09765564075265
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 82.67015782857185
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 30000,
+      "drop_pp": 9.122205500827407
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 89.69488479634316
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 11.92106073151967
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 62.41300686031589
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 30000,
+      "drop_pp": 9.884030747121543
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 83.89414929243084
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 30000,
+      "drop_pp": 6.185177641978945
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 57.22296692595993
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 30000,
+      "drop_pp": 12.53238592808742
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 69.16420663363957
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 30000,
+      "drop_pp": 6.5441627827287245
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 33.26965306575194
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 30000,
+      "drop_pp": 9.142214081849664
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 28.424070893295617
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 30000,
+      "drop_pp": 8.970873996163675
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 30000,
+      "drop_pp": 7.9932447524850625
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 30000,
+      "drop_pp": 34.27964886981089
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 67.42073873181211
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 30000,
+      "drop_pp": 6.64647248293867
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 30000,
+      "drop_pp": 13.689814674936585
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 53.322196200683806
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 30000,
+      "drop_pp": 4.98010115710078
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 30000,
+      "drop_pp": 6.706073220695252
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 36.238598449364886
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 30000,
+      "drop_pp": 13.870787625851012
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 30000,
+      "drop_pp": 17.84497979185368
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 17.414499056951367
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 30000,
+      "drop_pp": 5.965659263702813
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 86.99023698560188
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 23.435918329865125
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 95.40984556160346
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 40000,
+      "drop_pp": 16.01162455426931
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 58.13525443853723
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 40000,
+      "drop_pp": 15.360022909775811
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 31.743953990466988
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 77.29082587124441
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 40000,
+      "drop_pp": 11.628603060968224
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 89.64830449799058
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 11.273977742308997
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 66.7205257478069
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 40000,
+      "drop_pp": 12.045574440168682
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 82.7246583353116
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 40000,
+      "drop_pp": 8.963422115359576
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 53.28684739524032
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 40000,
+      "drop_pp": 13.906833793115197
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 75.45661075555475
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 40000,
+      "drop_pp": 9.292832550027663
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 32.55053487786597
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 40000,
+      "drop_pp": 10.938528105409823
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 27.523803684523813
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 40000,
+      "drop_pp": 10.866466323904689
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 40000,
+      "drop_pp": 10.471416017823055
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 40000,
+      "drop_pp": 38.59462580196939
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 74.22135450077828
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 40000,
+      "drop_pp": 8.170270127628909
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 40000,
+      "drop_pp": 15.518051789579534
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 59.241909567760366
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 40000,
+      "drop_pp": 6.058342631461944
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 40000,
+      "drop_pp": 7.798018268053619
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 38.42301446557477
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 40000,
+      "drop_pp": 16.2202330478381
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 40000,
+      "drop_pp": 19.1842647259704
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 16.328910570581414
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 40000,
+      "drop_pp": 6.322071018542758
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 88.79374229296944
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 17.062190790406586
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 95.61860480291405
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 60000,
+      "drop_pp": 14.696469651526566
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 64.31967164313856
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 60000,
+      "drop_pp": 14.447988434334679
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 24.81814435900569
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 80.87619711682053
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 60000,
+      "drop_pp": 10.476045005321522
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 88.93050989260249
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 11.068763107066287
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 63.15635957927406
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 60000,
+      "drop_pp": 13.725966318812954
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 82.73040192129936
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 60000,
+      "drop_pp": 10.809093758294386
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 55.75912688863374
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 60000,
+      "drop_pp": 15.937564581061391
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 74.11565957058258
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 60000,
+      "drop_pp": 12.433935060600987
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 30.568458718291602
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 60000,
+      "drop_pp": 11.545329494338768
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 24.892186175345703
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 60000,
+      "drop_pp": 11.08551023419917
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 60000,
+      "drop_pp": 11.922325591992195
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 60000,
+      "drop_pp": 37.79647192175089
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 75.7648747484891
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 60000,
+      "drop_pp": 7.7994797266584985
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 60000,
+      "drop_pp": 13.53215430978566
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 65.53535901233238
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 60000,
+      "drop_pp": 7.251274781566208
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 60000,
+      "drop_pp": 9.249492548006566
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 38.56820756172921
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 60000,
+      "drop_pp": 18.619851873540565
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 60000,
+      "drop_pp": 18.983723878183945
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 15.907426248656387
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 60000,
+      "drop_pp": 8.247114458192051
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 88.17983797564708
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 16.75542400019642
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 94.80670516176362
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 80000,
+      "drop_pp": 15.255323640892698
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 61.621651514571184
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 80000,
+      "drop_pp": 14.502248896065439
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 20.11236088383836
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 77.6153238242095
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 80000,
+      "drop_pp": 12.245214464405585
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 88.65320313968668
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 10.9908242646183
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 63.088701441620664
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 80000,
+      "drop_pp": 15.69869060411384
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 82.78563332116389
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 80000,
+      "drop_pp": 12.210735191072185
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 52.28598985051015
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 80000,
+      "drop_pp": 16.68553811746859
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 72.74791860785079
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 80000,
+      "drop_pp": 15.155175737110893
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 28.872033410043528
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 80000,
+      "drop_pp": 12.09655934119655
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 22.220500154652495
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 80000,
+      "drop_pp": 11.202052404918945
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 80000,
+      "drop_pp": 12.481595175065019
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 80000,
+      "drop_pp": 35.47809209214363
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 79.9744850112161
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 80000,
+      "drop_pp": 9.479360119865865
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 80000,
+      "drop_pp": 15.012788088449092
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 71.50465482210046
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 80000,
+      "drop_pp": 8.87845523452272
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 80000,
+      "drop_pp": 9.714899180326665
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 39.52210165919608
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 80000,
+      "drop_pp": 21.107146920079284
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 80000,
+      "drop_pp": 20.07916041198295
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 15.856800519510236
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 80000,
+      "drop_pp": 8.9594420266846
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 87.43839808849883
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 13.629694739674141
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 94.26645333838871
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 100000,
+      "drop_pp": 15.07905862189453
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 60.96666324701475
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 100000,
+      "drop_pp": 15.080727587771337
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 16.96459720652615
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 79.0151806475786
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 100000,
+      "drop_pp": 11.621309809645485
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 86.47436583365179
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 10.387142074410871
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 61.054753445120994
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 100000,
+      "drop_pp": 17.325251386464725
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 80.40210495462681
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 100000,
+      "drop_pp": 15.72697689787389
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 50.83194000771881
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 100000,
+      "drop_pp": 18.693139294693502
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 70.16807548866008
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 100000,
+      "drop_pp": 19.488067838417788
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 27.447759927994785
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 100000,
+      "drop_pp": 12.988434441942815
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 21.855468577035058
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 100000,
+      "drop_pp": 12.181015197720924
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 100000,
+      "drop_pp": 13.986277183253659
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 100000,
+      "drop_pp": 38.02226816843769
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 81.62683168341952
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 100000,
+      "drop_pp": 11.685910662628373
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 100000,
+      "drop_pp": 19.01179605567168
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 72.11119786713533
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 100000,
+      "drop_pp": 9.866856384086887
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 100000,
+      "drop_pp": 10.683523532187845
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 36.58948471344085
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 100000,
+      "drop_pp": 21.81234994463933
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 100000,
+      "drop_pp": 20.690848508259702
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 15.322896817124773
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 100000,
+      "drop_pp": 10.001648335111735
+    },
+    {
+      "reader": "L6H2",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 87.20156716696681
+    },
+    {
+      "reader": "L6H3",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 14.352910643249695
+    },
+    {
+      "reader": "L7H1",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 94.59334324153025
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L4H9",
+      "step": 120000,
+      "drop_pp": 14.844534943531485
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 60.99548277054082
+    },
+    {
+      "reader": "L7H7",
+      "writer": "L6H13",
+      "step": 120000,
+      "drop_pp": 15.402141632879596
+    },
+    {
+      "reader": "L8H3",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 16.5997498807551
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 78.24291472944736
+    },
+    {
+      "reader": "L8H6",
+      "writer": "L5H4",
+      "step": 120000,
+      "drop_pp": 12.168269692853917
+    },
+    {
+      "reader": "L8H7",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 84.5903074663811
+    },
+    {
+      "reader": "L9H4",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 10.796954743805934
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 59.40382963593579
+    },
+    {
+      "reader": "L10H0",
+      "writer": "L9H8",
+      "step": 120000,
+      "drop_pp": 17.41496630383996
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 77.65716417469403
+    },
+    {
+      "reader": "L10H3",
+      "writer": "L9H8",
+      "step": 120000,
+      "drop_pp": 17.427028119477107
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 46.6564700586831
+    },
+    {
+      "reader": "L10H4",
+      "writer": "L9H8",
+      "step": 120000,
+      "drop_pp": 18.13608245914647
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 69.75879935794829
+    },
+    {
+      "reader": "L10H9",
+      "writer": "L9H8",
+      "step": 120000,
+      "drop_pp": 20.955414942538354
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 26.324610581071994
+    },
+    {
+      "reader": "L10H13",
+      "writer": "L9H8",
+      "step": 120000,
+      "drop_pp": 12.135303797874847
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 22.281924018443277
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L6H13",
+      "step": 120000,
+      "drop_pp": 13.299244703053287
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L9H8",
+      "step": 120000,
+      "drop_pp": 13.350620514096489
+    },
+    {
+      "reader": "L11H1",
+      "writer": "L10H11",
+      "step": 120000,
+      "drop_pp": 36.54566981885844
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 84.21042143397963
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L9H8",
+      "step": 120000,
+      "drop_pp": 12.037345628062557
+    },
+    {
+      "reader": "L11H2",
+      "writer": "L10H11",
+      "step": 120000,
+      "drop_pp": 22.334910822053324
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 75.9820225055031
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L9H8",
+      "step": 120000,
+      "drop_pp": 10.27113275762096
+    },
+    {
+      "reader": "L11H14",
+      "writer": "L10H11",
+      "step": 120000,
+      "drop_pp": 11.38261060699961
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 35.51456300883424
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L9H8",
+      "step": 120000,
+      "drop_pp": 20.332325235089648
+    },
+    {
+      "reader": "L12H4",
+      "writer": "L10H11",
+      "step": 120000,
+      "drop_pp": 21.14001982738572
+    },
+    {
+      "reader": "L12H8",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 14.258279266982571
+    },
+    {
+      "reader": "L16H3",
+      "writer": "L5H2",
+      "step": 120000,
+      "drop_pp": 10.443896169027877
+    }
+  ]
+}
