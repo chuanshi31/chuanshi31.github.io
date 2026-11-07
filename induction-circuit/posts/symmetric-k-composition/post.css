@@ -156,6 +156,27 @@ code { font-size:.78em; overflow-wrap:anywhere; background:#f5f7f7; padding:2px 
 .article-body #rotation-explorer { margin:28px 0 42px; padding:22px 20px; border:1px solid #dbe5e8; border-radius:6px; }
 #rotation-explorer .explorer-controls { grid-template-columns:1fr 2fr; }
 .rotation-card[hidden] { display:none; }
+
+/* Accepted endpoint mean-margin decompositions, one model at a time. */
+.article-body #endpoint-waterfall-explorer { margin:26px 0 34px; padding:20px 18px; border:1px solid #dbe5e8; border-radius:6px; }
+#endpoint-waterfall-explorer .figure-controls { margin:0 auto 18px; }
+#endpoint-waterfall-explorer .waterfall-panel[hidden] { display:none; }
+#endpoint-waterfall-explorer .waterfall-metrics { margin-bottom:20px; }
+#endpoint-waterfall-explorer figure { margin:24px 0; }
+#endpoint-waterfall-explorer .waterfall-scroll { overflow-x:auto; border:1px solid #edf0f1; border-radius:4px; }
+#endpoint-waterfall-explorer .waterfall-scroll img { min-width:0; max-width:none; margin:0; }
+#endpoint-waterfall-explorer .waterfall-scroll:focus-visible { outline:3px solid #82b8c7; outline-offset:3px; }
+#endpoint-waterfall-explorer .waterfall-scroll a { display:block; }
+#endpoint-waterfall-explorer .table-scroll { margin-bottom:8px; }
+.article-body .waterfall-equation { max-width:100%; overflow-x:auto; white-space:nowrap; text-align:center; font-family:'Cambria Math',Georgia,serif; padding:12px 0; }
+#from-center-separation-to-self-matching { margin-top:38px; padding-top:22px; border-top:1px solid #dce5e7; }
+@media(max-width:700px) {
+ .article-body #endpoint-waterfall-explorer { padding:16px 10px; }
+ #endpoint-waterfall-explorer .waterfall-scroll img { min-width:760px; }
+ #endpoint-waterfall-explorer .waterfall-metrics { grid-template-columns:1fr; gap:8px; }
+ #endpoint-waterfall-explorer .waterfall-metrics div { padding:9px 12px; }
+ #endpoint-waterfall-explorer .waterfall-metrics strong { font-size:21px; }
+}
 #other-routes-softmax-schematic { overflow-x:auto; }
 #other-routes-softmax-schematic img { min-width:760px; }
 @media(max-width:700px) {
