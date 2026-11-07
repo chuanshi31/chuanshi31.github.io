@@ -1,15 +1,17 @@
-/* One accepted endpoint comparison at a time; no inferred or pending results. */
+/* Accepted model/control views; show one comparison at a time. */
 (() => {
-  const selector = document.getElementById('waterfall-model');
-  if (!selector) return;
-  const panels = [...document.querySelectorAll('[data-waterfall-model]')];
+  const model = document.getElementById('waterfall-model');
+  const control = document.getElementById('waterfall-control');
+  if (!model || !control) return;
+  const panels = [...document.querySelectorAll('[data-waterfall-model][data-waterfall-view]')];
   const note = document.getElementById('waterfall-model-note');
   const show = () => {
-    const selected = panels.find(panel => panel.dataset.waterfallModel === selector.value);
+    const selected = panels.find(p => p.dataset.waterfallModel === model.value && p.dataset.waterfallView === control.value);
     if (!selected) return;
-    for (const panel of panels) panel.hidden = panel !== selected;
+    panels.forEach(p => { p.hidden = p !== selected; });
     if (note) note.textContent = selected.dataset.description;
   };
-  selector.addEventListener('change', show);
+  model.addEventListener('change', show);
+  control.addEventListener('change', show);
   show();
 })();
