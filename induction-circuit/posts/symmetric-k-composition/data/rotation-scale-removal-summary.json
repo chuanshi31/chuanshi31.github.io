@@ -1,11 +1,11 @@
 {
-  "status": "PASS",
+  "status": "COMPLETE_ACCEPTED",
   "metric": "Native single-route-removal correct-successor attention decrease (Reader score),percentage points",
   "definition": "For either original or rotated route:attention with that route retained minus attention after removing the same route",
-  "weighting": "Within each route,equal queries/copies/contexts/tokens as Section1.3;then equal weight per route within scale",
-  "queries_per_route": 150000,
-  "sequences_per_route": 2084,
+  "weighting": "Within each route,equal evaluated queries;then equal route weight within scale",
   "step": 143000,
+  "sequences_per_route": 2084,
+  "queries_per_route": 150000,
   "negative_scores_preserved": true,
   "models": [
     {
@@ -20,21 +20,49 @@
       "scale": "160m",
       "step": 143000,
       "routes": 29,
-      "mean_reader_score_before_pp": 31.256481498709782,
-      "mean_reader_score_after_pp": 3.650912127630204,
-      "change_pp": -27.60556937107958
+      "mean_reader_score_before_pp": 31.25648149870977,
+      "mean_reader_score_after_pp": 3.6509121276302037,
+      "change_pp": -27.605569371079568
+    },
+    {
+      "scale": "410m",
+      "step": 143000,
+      "routes": 36,
+      "mean_reader_score_before_pp": 34.52707748213138,
+      "mean_reader_score_after_pp": 3.0289122847012035,
+      "change_pp": -31.49816519743018
+    },
+    {
+      "scale": "1b",
+      "step": 143000,
+      "routes": 18,
+      "mean_reader_score_before_pp": 31.740979304611358,
+      "mean_reader_score_after_pp": 5.439377987829261,
+      "change_pp": -26.301601316782097
+    },
+    {
+      "scale": "1.4b",
+      "step": 143000,
+      "routes": 36,
+      "mean_reader_score_before_pp": 29.10578617163911,
+      "mean_reader_score_after_pp": 3.773093736721618,
+      "change_pp": -25.33269243491749
+    },
+    {
+      "scale": "2.8b",
+      "step": 143000,
+      "routes": 64,
+      "mean_reader_score_before_pp": 24.38535516804234,
+      "mean_reader_score_after_pp": 2.040465993389982,
+      "change_pp": -22.34488917465236
     }
   ],
   "source_SHA": {
-    "70m": {
-      "accepted_result_SHA": "21ca1f0d651b32c3e69794b372bd228322c80820a54fe395fe3b8563b74a3858",
-      "published_route_values_SHA": "4fc0232c8626764b73f1c7e56577abfc0ef5f3397153c5ccbe849828e9a9e8ad",
-      "published_route_values": "rotation-by-head.json"
-    },
-    "160m": {
-      "accepted_result_SHA": "daf5ae0f4caba901b1e910b55634c43157ba3e6c7c272f00b3e1f5b2d12dfca4",
-      "published_route_values_SHA": "0f46c055d63840ed9b9de7c899ed5325f6d7b8a7472bd0b9090e8a315f9f8bdd",
-      "published_route_values": "rotation-by-route-160m.json"
-    }
+    "70m": "4fc0232c8626764b73f1c7e56577abfc0ef5f3397153c5ccbe849828e9a9e8ad",
+    "160m": "0f46c055d63840ed9b9de7c899ed5325f6d7b8a7472bd0b9090e8a315f9f8bdd",
+    "410m": "cfa305ba738f03d98366d6962a8ba18e23c902917ff8b26ddd4deada4cb56ce4",
+    "1b": "48349115fdfd5193dd4c99d989904240993e20a9f48c660dc930629be4aa3eeb",
+    "1.4b": "666c868e0c815d6e4d2e8ae6deb7c13a5ebb332928ae66fff9751ec565db12ac",
+    "2.8b": "17681fbd0347e6fc6315e7b015a1d7a846e510d13c2bcc04aaf08b9c43881211"
   }
 }
