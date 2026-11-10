@@ -1,0 +1,12 @@
+{
+  "updated": "2026-11-10",
+  "source_SHA256": {
+    "analysis_outputs/fixed_rank_current_routes_20261108/PLAN.json": "db9320975e3897c8505d74565e32255f052f9ba1022564cf0934ffbf453199cc",
+    "analysis_outputs/fixed_rank_current_routes_20261108/FINAL_ANALYSIS.json": "79babdd948f88bd8ae067dfd3abfb7f954c13759b43d824a9aadbe9d19bd7c8e",
+    "analysis_outputs/fixed_rank_current_routes_20261108/AUDIT.json": "bc9bfe6ea46fbff9098bad3093747ea1fdd1d26487857dfbc18a5ac78d1fe655",
+    "analysis_outputs/fixed_rank_current_routes_20261108/CONTRASTS.json": "8f57c677b73af2edfea104a2511afa79a6df4bbb902a83c695673667dec39627",
+    "public_posts/20261110_subspace_overlap/subspace-proof.md": "95bb358ab812d45f35a7c689fcce84f720ba733895652580b48d3a36697f970c",
+    "public_posts/20261110_subspace_overlap/check_subspace_proof.py": "980ebdb049b097a68bd8d661fa50f1509d0c2e787b3f1904d9620bb10591490e",
+    "public_posts/20261110_subspace_overlap/subspace-proof-checks.json": "0f9093955f60c27c1138ae0bef8f2ac6b736e4852917a9edd253e614b86982cb"
+  }
+}

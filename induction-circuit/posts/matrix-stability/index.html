@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="A detailed Gram-matrix proof of RoPE composition-operator stability, with selected versus ordinary route measurements in Pythia and OLMo."><meta name="theme-color" content="#ffffff"><title>Why Matching Operators Stay Stable Across Distance | Shaoxiang Wu</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="./post.css"></head><body><a class="skip-link" href="#main">Skip to main content</a><main id="main" class="article-shell"><nav class="article-nav"><a href="/">Shaoxiang Wu</a> / <a href="/induction-circuit/">Induction-Circuit Initialization</a></nav><header class="article-header"><p class="eyebrow">Research post · <time datetime="2026-11-07">7 November 2026</time></p><h1>Why Matching Operators Stay Stable Across Distance</h1><p class="dek">From rotary channel structure to a computable bound on the complete Writer–Reader matrix.</p><p class="byline">Shaoxiang Wu</p></header><nav class="article-contents" aria-label="Article contents"><a href="#observation">1. Observation</a><a href="#nonrotary">2. Rotary split</a><a href="#plane-expansion">3. Matrix coefficients</a><a href="#gram-from-zero">4. Gram matrices</a><a href="#weighted-gram">5. Response energy</a><a href="#phase-response">6. Stability bound</a><a href="#structure">7. Structural meaning</a><a href="#experiments">8. Experiments</a><a href="#data">Data</a></nav><article class="article-body"><section id="observation">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Gram-matrix bounds for RoPE operator stability and a cross-boundary coupling proof of high mean subspace overlap, with Pythia and OLMo measurements."><meta name="theme-color" content="#ffffff"><title>Why Matching Operators Stay Stable Across Distance | Shaoxiang Wu</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="./post.css"></head><body><a class="skip-link" href="#main">Skip to main content</a><main id="main" class="article-shell"><nav class="article-nav"><a href="/">Shaoxiang Wu</a> / <a href="/induction-circuit/">Induction-Circuit Initialization</a></nav><header class="article-header"><p class="eyebrow">Research post · <time datetime="2026-11-07">7 November 2026</time> · Updated <time datetime="2026-11-10">10 November 2026</time></p><h1>Why Matching Operators Stay Stable Across Distance</h1><p class="dek">From rotary channel structure to matrix stability and a coupling criterion for high mean subspace overlap.</p><p class="byline">Shaoxiang Wu</p></header><nav class="article-contents" aria-label="Article contents"><a href="#observation">1. Observation</a><a href="#nonrotary">2. Rotary split</a><a href="#plane-expansion">3. Matrix coefficients</a><a href="#gram-from-zero">4. Gram matrices</a><a href="#weighted-gram">5. Response energy</a><a href="#phase-response">6. Stability bound</a><a href="#structure">7. Structural meaning</a><a href="#experiments">8. Experiments</a><a href="#subspace-proof">9. Subspace proof</a><a href="#subspace-experiments">10. Fixed-rank overlap</a><a href="#data">Data</a></nav><article class="article-body"><section id="observation">
 <h2 id="an-empirical-clue-matching-operators-vary-less-with-distance">1. An empirical clue: matching operators vary less with distance</h2>
 <p>We also find that the composition operators <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>D</mi></msub><annotation encoding="application/x-tex">C_D</annotation></semantics></math> of selected functional Writer–Reader routes are more stable across relative distance than those of ordinary control routes. Here, stability means a smaller change of the <strong>complete matrix</strong>, rather than only a stable positive spectrum or a stable set of eigenvectors.</p>
 <p>For each route, use every integer distance in <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>L</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathcal D=\{0,1,\ldots,L\}</annotation></semantics></math>, with <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mn>2047</mn></mrow><annotation encoding="application/x-tex">L=2047</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mi>L</mi><mo>+</mo><mn>1</mn><mo>=</mo><mn>2048</mn></mrow><annotation encoding="application/x-tex">N=L+1=2048</annotation></semantics></math>. Define</p>
@@ -178,7 +178,7 @@ r_p(D)^2&amp;=1+|\mu_p|^2-2\operatorname{Re}\!\left(e^{iD\omega_p}\overline{\mu_
 <p>Our reported low-frequency bin uses <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><msub><mi>ω</mi><mi>p</mi></msub><mo>&lt;</mo><mn>2</mn><mi>π</mi></mrow><annotation encoding="application/x-tex">L\omega_p&lt;2\pi</annotation></semantics></math>: less than one full rotation across the context span. This is a descriptive bin, not a theorem that every plane in it barely moves. A plane close to that cutoff can still undergo a substantial phase change. The sufficient condition uses the actual <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>p</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">r_p(D)</annotation></semantics></math> or its frequency envelope, rather than the low-frequency percentage alone.</p>
 <p>Likewise, a large low-frequency <strong>fraction</strong> is insufficient if the absolute rotational coefficients are large or <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>C</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar C</annotation></semantics></math> is small through cancellation. A large nonrotary contribution does not automatically guarantee a large reference norm after all terms are added. These scale effects are retained explicitly in Equations (20)–(23).</p>
 <p>For Pythia, nonrotary channels offer a particularly direct mechanism: they contribute to the reference matrix without contributing to its distance perturbation. For fully rotary OLMo, sufficiently slow channels can play an analogous, approximate role. The proof covers both architectures with the same expression.</p>
-<p>The condition concerns the complete <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>D</mi></msub><annotation encoding="application/x-tex">C_D</annotation></semantics></math>, so it also controls its symmetric and antisymmetric parts in Frobenius norm. For <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>D</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>C</mi><mi>D</mi></msub><mo>+</mo><msubsup><mi>C</mi><mi>D</mi><mi>⊤</mi></msubsup><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">H_D=(C_D+C_D^\top)/2</annotation></semantics></math>, Weyl’s inequality gives <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><msub><mi>λ</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>H</mi><mi>D</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>−</mo><msub><mi>λ</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">sym</mi><mo>&#8289;</mo></mrow><mover><mi>C</mi><mo accent="true">‾</mo></mover><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mo stretchy="false" form="postfix">∥</mo><msub><mi>C</mi><mi>D</mi></msub><mo>−</mo><mover><mi>C</mi><mo accent="true">‾</mo></mover><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">|\lambda_i(H_D)-\lambda_i(\operatorname{sym}\bar C)|\le\|C_D-\bar C\|_2</annotation></semantics></math>. Retained subspace stability additionally requires a suitable spectral gap; successful token competition additionally requires input geometry and a sufficient score margin. Neither follows from the frequency percentage alone.</p>
+<p>The condition concerns the complete <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>D</mi></msub><annotation encoding="application/x-tex">C_D</annotation></semantics></math>, so it also controls its symmetric and antisymmetric parts in Frobenius norm. For <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>D</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>C</mi><mi>D</mi></msub><mo>+</mo><msubsup><mi>C</mi><mi>D</mi><mi>⊤</mi></msubsup><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">H_D=(C_D+C_D^\top)/2</annotation></semantics></math>, Weyl’s inequality gives <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><msub><mi>λ</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>H</mi><mi>D</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>−</mo><msub><mi>λ</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">sym</mi><mo>&#8289;</mo></mrow><mover><mi>C</mi><mo accent="true">‾</mo></mover><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mo stretchy="false" form="postfix">∥</mo><msub><mi>C</mi><mi>D</mi></msub><mo>−</mo><mover><mi>C</mi><mo accent="true">‾</mo></mover><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">|\lambda_i(H_D)-\lambda_i(\operatorname{sym}\bar C)|\le\|C_D-\bar C\|_2</annotation></semantics></math>. Section 9 derives a coupling-and-separation criterion for retained subspace overlap; successful token competition additionally requires input geometry and a sufficient score margin. Neither follows from the frequency percentage alone.</p>
 </section>
 <section id="experiments">
 <h2 id="functional-routes-versus-ordinary-controls">8. Functional routes versus ordinary controls</h2>
@@ -637,6 +637,986 @@ Mean over routes of uniform certificate
 <p>The certificate column evaluates Equation (21), not a product of separately averaged structural factors. These are worst-distance quantities, unlike the mean deviations in the opening comparison. The numerical checks use FP64 arithmetic, not interval arithmetic.</p>
 <p>Additional static channel interventions at the same endpoint support the role of the frequency arrangement. Jointly permuting <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> rows preserves <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mn>0</mn></msub><annotation encoding="application/x-tex">C_0</annotation></semantics></math> but changes which contributions rotate. Three frozen permutations increased RMS absolute matrix fluctuation by <strong>10.61–12.14× at 70M</strong> and <strong>9.34–9.90× at 160M</strong>. Freezing the original low-frequency planes reduced fluctuation to <strong>0.826× / 0.848×</strong>; accelerating them fourfold increased it to <strong>1.854× / 1.746×</strong>. These are interventions on static operator geometry, without a new model forward pass.</p>
 <p>The empirical comparisons and the sufficient condition answer complementary questions. Selected routes exhibit stronger slow-channel concentration and lower mean drift; the Gram certificate specifies when the measured weight structure is sufficient to control the complete matrix over the chosen distance range. It does not claim every selected route has small absolute drift: for example, OLMo-6M still has a mean relative deviation of about 100%, despite being more stable than its ordinary controls.</p>
+</section>
+<section id="subspace-proof">
+<h2 id="from-cross-boundary-coupling-to-high-subspace-overlap">9. From cross-boundary coupling to high subspace overlap</h2>
+<p>We now prove a sufficient condition for high mean overlap of the leading positive subspaces. The order is important: first identify the squared cross-boundary coupling that controls overlap, then combine it with the matrix bound, and finally express that coupling through the RoPE planes. A spectral separation condition must accompany the coupling bound.</p>
+<h3 id="the-coupling-quantity-and-the-required-separation">9.1 The coupling quantity and the required separation</h3>
+<p>Let <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>D</mi></msub><mo>=</mo><mrow><mi mathvariant="normal">sym</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>C</mi><mi>D</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H_D=\operatorname{sym}(C_D)</annotation></semantics></math> and fix an orthonormal reference basis <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>∈</mo><msup><mi>ℝ</mi><mrow><mi>d</mi><mo>×</mo><mi>k</mi></mrow></msup></mrow><annotation encoding="application/x-tex">U\in\mathbb R^{d\times k}</annotation></semantics></math>. Complete it to an orthogonal matrix <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>U</mi><mo>,</mo><mi>V</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[U,V]</annotation></semantics></math>; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math> includes every residual-space direction outside <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>, including any zero directions outside a compact factorization. In these fixed coordinates write</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>U</mi><mo>,</mo><mi>V</mi><msup><mo stretchy="false" form="postfix">]</mo><mi>⊤</mi></msup><msub><mi>H</mi><mi>D</mi></msub><mo stretchy="false" form="prefix">[</mo><mi>U</mi><mo>,</mo><mi>V</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>X</mi><mi>D</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><msubsup><mi>B</mi><mi>D</mi><mi>⊤</mi></msubsup></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>B</mi><mi>D</mi></msub></mtd><mtd columnalign="center" style="text-align: center"><msub><mi>Y</mi><mi>D</mi></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>B</mi><mi>D</mi></msub><mo>=</mo><msup><mi>V</mi><mi>⊤</mi></msup><msub><mi>H</mi><mi>D</mi></msub><mi>U</mi><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>δ</mi><mi>D</mi></msub><mo>=</mo><msub><mi>λ</mi><mi mathvariant="normal">min</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>X</mi><mi>D</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>−</mo><msub><mi>λ</mi><mi mathvariant="normal">max</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>Y</mi><mi>D</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">[U,V]^\top H_D[U,V]=\begin{pmatrix}X_D&amp;B_D^\top\\B_D&amp;Y_D\end{pmatrix},\qquad B_D=V^\top H_DU,\qquad \delta_D=\lambda_{\min}(X_D)-\lambda_{\max}(Y_D). \tag{27}</annotation></semantics></math></div><span class="equation-number">(27)</span></div>
+<p>The matrix <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>B</mi><mi>D</mi></msub><annotation encoding="application/x-tex">B_D</annotation></semantics></math> maps the reference space across its boundary. Its squared Frobenius norm sums the squared coupling over all selected and exterior directions. The number <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>δ</mi><mi>D</mi></msub><annotation encoding="application/x-tex">\delta_D</annotation></semantics></math> compares the lowest Rayleigh value inside the reference space with the highest outside it. Assume <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mi>D</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta_D&gt;0</annotation></semantics></math> for the distances being certified.</p>
+<p>Let <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>U</mi><mo accent="true">̂</mo></mover><mi>D</mi></msub><annotation encoding="application/x-tex">\widehat U_D</annotation></semantics></math> span the leading <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> eigenvectors of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>H</mi><mi>D</mi></msub><annotation encoding="application/x-tex">H_D</annotation></semantics></math>, with orthogonal complement <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>V</mi><mo accent="true">̂</mo></mover><mi>D</mi></msub><annotation encoding="application/x-tex">\widehat V_D</annotation></semantics></math>. Define reference overlap and leakage by</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>O</mi><mrow><mn>0</mn><mi>D</mi></mrow></msub><mo>=</mo><mfrac><mrow><mo stretchy="false" form="postfix">∥</mo><msup><mi>U</mi><mi>⊤</mi></msup><msub><mover><mi>U</mi><mo accent="true">̂</mo></mover><mi>D</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mrow><mi>k</mi></mfrac><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>ℓ</mi><mi>D</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><msub><mi>O</mi><mrow><mn>0</mn><mi>D</mi></mrow></msub><mo>=</mo><mfrac><mrow><mo stretchy="false" form="postfix">∥</mo><msubsup><mover><mi>V</mi><mo accent="true">̂</mo></mover><mi>D</mi><mi>⊤</mi></msubsup><mi>U</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mrow><mi>k</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">O_{0D}=\frac{\|U^\top\widehat U_D\|_F^2}{k},\qquad \ell_D=1-O_{0D}=\frac{\|\widehat V_D^\top U\|_F^2}{k}. \tag{28}</annotation></semantics></math></div><span class="equation-number">(28)</span></div>
+<p>We will prove <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ℓ</mi><mi>D</mi></msub><mo>≤</mo><mo stretchy="false" form="postfix">∥</mo><msub><mi>B</mi><mi>D</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><msubsup><mi>δ</mi><mi>D</mi><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\ell_D\le\|B_D\|_F^2/(k\delta_D^2)</annotation></semantics></math>. Thus the relevant condition for a high <strong>mean</strong> overlap is small squared cross-boundary coupling relative to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> times the squared separation. Small coupling is a sufficient condition in this comparison, not a necessary characterization of every persistent space.</p>
+<h3 id="prove-the-squared-coupling-bound">9.2 Prove the squared-coupling bound</h3>
+<p>The Courant–Fischer principle, applied to the trial spaces <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>, gives</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mi>k</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>H</mi><mi>D</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>≥</mo><msub><mi>λ</mi><mi mathvariant="normal">min</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>X</mi><mi>D</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>λ</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>H</mi><mi>D</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>≤</mo><msub><mi>λ</mi><mi mathvariant="normal">max</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>Y</mi><mi>D</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">\lambda_k(H_D)\ge\lambda_{\min}(X_D),\qquad \lambda_{k+1}(H_D)\le\lambda_{\max}(Y_D). \tag{29}</annotation></semantics></math></div><span class="equation-number">(29)</span></div>
+<p>Consequently the actual leading-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> boundary is separated by at least <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>δ</mi><mi>D</mi></msub><annotation encoding="application/x-tex">\delta_D</annotation></semantics></math>. If also <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mi mathvariant="normal">min</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>X</mi><mi>D</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lambda_{\min}(X_D)&gt;0</annotation></semantics></math>, these <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> directions belong to the positive spectrum and hence are precisely the leading <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> directions of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>H</mi><mi>D</mi><mo>+</mo></msubsup><annotation encoding="application/x-tex">H_D^+</annotation></semantics></math>.</p>
+<p>The reference basis has residual <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>D</mi></msub><mi>U</mi><mo>−</mo><mi>U</mi><msub><mi>X</mi><mi>D</mi></msub><mo>=</mo><mi>V</mi><msub><mi>B</mi><mi>D</mi></msub></mrow><annotation encoding="application/x-tex">H_DU-UX_D=VB_D</annotation></semantics></math>. Write <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mi>D</mi></msub><mo>=</mo><msub><mi>W</mi><mi>D</mi></msub><msub><mi mathvariant="normal">Ξ</mi><mi>D</mi></msub><msubsup><mi>W</mi><mi>D</mi><mi>⊤</mi></msubsup></mrow><annotation encoding="application/x-tex">X_D=W_D\Xi_DW_D^\top</annotation></semantics></math>, where <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Ξ</mi><mi>D</mi></msub><mo>=</mo><mrow><mi mathvariant="normal">diag</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>ξ</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>ξ</mi><mi>k</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\Xi_D=\operatorname{diag}(\xi_1,\ldots,\xi_k)</annotation></semantics></math>, and let <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Λ</mi><mrow><mo>⟂</mo><mo>,</mo><mi>D</mi></mrow></msub><annotation encoding="application/x-tex">\Lambda_{\perp,D}</annotation></semantics></math> contain the exterior eigenvalues of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>H</mi><mi>D</mi></msub><annotation encoding="application/x-tex">H_D</annotation></semantics></math>. Multiplying the residual by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mover><mi>V</mi><mo accent="true">̂</mo></mover><mi>D</mi><mi>⊤</mi></msubsup><annotation encoding="application/x-tex">\widehat V_D^\top</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>D</mi></msub><annotation encoding="application/x-tex">W_D</annotation></semantics></math> gives</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Λ</mi><mrow><mo>⟂</mo><mo>,</mo><mi>D</mi></mrow></msub><msub><mi>Z</mi><mi>D</mi></msub><mo>−</mo><msub><mi>Z</mi><mi>D</mi></msub><msub><mi mathvariant="normal">Ξ</mi><mi>D</mi></msub><mo>=</mo><msubsup><mover><mi>V</mi><mo accent="true">̂</mo></mover><mi>D</mi><mi>⊤</mi></msubsup><mi>V</mi><msub><mi>B</mi><mi>D</mi></msub><msub><mi>W</mi><mi>D</mi></msub><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>Z</mi><mi>D</mi></msub><mo>=</mo><msubsup><mover><mi>V</mi><mo accent="true">̂</mo></mover><mi>D</mi><mi>⊤</mi></msubsup><mi>U</mi><msub><mi>W</mi><mi>D</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">\Lambda_{\perp,D}Z_D-Z_D\Xi_D=\widehat V_D^\top VB_DW_D,\qquad Z_D=\widehat V_D^\top UW_D. \tag{30}</annotation></semantics></math></div><span class="equation-number">(30)</span></div>
+<p>Every denominator <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ξ</mi><mi>a</mi></msub><mo>−</mo><msub><mi>λ</mi><mi>b</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>H</mi><mi>D</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\xi_a-\lambda_b(H_D)</annotation></semantics></math> on the exterior side is at least <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>δ</mi><mi>D</mi></msub><annotation encoding="application/x-tex">\delta_D</annotation></semantics></math>, by Equation (29). Therefore, entry by entry,</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mo stretchy="false" form="postfix">∥</mo><msub><mi>Z</mi><mi>D</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><munder><mo>∑</mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow></munder><mfrac><mrow><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="prefix">(</mo><msubsup><mover><mi>V</mi><mo accent="true">̂</mo></mover><mi>D</mi><mi>⊤</mi></msubsup><mi>V</mi><msub><mi>B</mi><mi>D</mi></msub><msub><mi>W</mi><mi>D</mi></msub><msub><mo stretchy="false" form="postfix">)</mo><mrow><mi>b</mi><mi>a</mi></mrow></msub><msup><mo stretchy="false" form="prefix">|</mo><mn>2</mn></msup></mrow><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>ξ</mi><mi>a</mi></msub><mo>−</mo><msub><mi>λ</mi><mi>b</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>H</mi><mi>D</mi></msub><mo stretchy="false" form="postfix">)</mo><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>≤</mo><mfrac><mrow><mo stretchy="false" form="postfix">∥</mo><msubsup><mover><mi>V</mi><mo accent="true">̂</mo></mover><mi>D</mi><mi>⊤</mi></msubsup><mi>V</mi><msub><mi>B</mi><mi>D</mi></msub><msub><mi>W</mi><mi>D</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mrow><msubsup><mi>δ</mi><mi>D</mi><mn>2</mn></msubsup></mfrac><mo>≤</mo><mfrac><mrow><mo stretchy="false" form="postfix">∥</mo><msub><mi>B</mi><mi>D</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mrow><msubsup><mi>δ</mi><mi>D</mi><mn>2</mn></msubsup></mfrac><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+\|Z_D\|_F^2
+&amp;=\sum_{a,b}\frac{|(\widehat V_D^\top VB_DW_D)_{ba}|^2}{(\xi_a-\lambda_b(H_D))^2}\\
+&amp;\le\frac{\|\widehat V_D^\top VB_DW_D\|_F^2}{\delta_D^2}
+\le\frac{\|B_D\|_F^2}{\delta_D^2}.
+\end{aligned} \tag{31}</annotation></semantics></math></div><span class="equation-number">(31)</span></div>
+<p>Orthogonal multiplication preserves the relevant Frobenius norms, and the overlap between two orthonormal complements is a contraction. Substituting into Equation (28) proves</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><mn>1</mn><mo>−</mo><msub><mi>O</mi><mrow><mn>0</mn><mi>D</mi></mrow></msub><mo>≤</mo><mfrac><mrow><mo stretchy="false" form="postfix">∥</mo><msub><mi>B</mi><mi>D</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mrow><mrow><mi>k</mi><msubsup><mi>δ</mi><mi>D</mi><mn>2</mn></msubsup></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>O</mi><mrow><mn>0</mn><mi>D</mi></mrow></msub><mo>≥</mo><msub><mrow><mo stretchy="true" form="prefix">[</mo><mn>1</mn><mo>−</mo><mfrac><mrow><mo stretchy="false" form="postfix">∥</mo><msub><mi>B</mi><mi>D</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mrow><mrow><mi>k</mi><msubsup><mi>δ</mi><mi>D</mi><mn>2</mn></msubsup></mrow></mfrac><mo stretchy="true" form="postfix">]</mo></mrow><mo>+</mo></msub><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">\boxed{1-O_{0D}\le\frac{\|B_D\|_F^2}{k\delta_D^2},\qquad O_{0D}\ge\left[1-\frac{\|B_D\|_F^2}{k\delta_D^2}\right]_+.} \tag{32}</annotation></semantics></math></div><span class="equation-number">(32)</span></div>
+<p>Here <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>x</mi><msub><mo stretchy="false" form="postfix">]</mo><mo>+</mo></msub><mo>=</mo><mrow><mi mathvariant="normal">max</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">[x]_+=\max\{x,0\}</annotation></semantics></math>. This is a residual-form subspace perturbation argument; see also the <a href="https://arxiv.org/abs/1405.0680">Davis–Kahan discussion by Yu, Wang and Samworth</a>. The derivation above supplies the particular Frobenius leakage bound used here.</p>
+<h3 id="combine-reference-leakage-into-the-measured-distance-pair-overlap">9.3 Combine reference leakage into the measured distance-pair overlap</h3>
+<p>The experiments compare different distances with each other. Set <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>D</mi></msub><mo>=</mo><msub><mover><mi>U</mi><mo accent="true">̂</mo></mover><mi>D</mi></msub><msubsup><mover><mi>U</mi><mo accent="true">̂</mo></mover><mi>D</mi><mi>⊤</mi></msubsup></mrow><annotation encoding="application/x-tex">P_D=\widehat U_D\widehat U_D^\top</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>=</mo><mi>U</mi><msup><mi>U</mi><mi>⊤</mi></msup></mrow><annotation encoding="application/x-tex">P_0=UU^\top</annotation></semantics></math>, and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>P</mi><mo accent="true">‾</mo></mover><mo>=</mo><msup><mi>N</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><msub><mo>∑</mo><mi>D</mi></msub><msub><mi>P</mi><mi>D</mi></msub></mrow><annotation encoding="application/x-tex">\bar P=N^{-1}\sum_DP_D</annotation></semantics></math>. For fixed rank <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>,</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>O</mi><mrow><mi>D</mi><mi>E</mi></mrow></msub><mo>=</mo><mfrac><mrow><mrow><mi mathvariant="normal">tr</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>P</mi><mi>D</mi></msub><msub><mi>P</mi><mi>E</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><mi>k</mi></mfrac><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><mrow><mo stretchy="false" form="postfix">∥</mo><msub><mi>P</mi><mi>D</mi></msub><mo>−</mo><msub><mi>P</mi><mi>E</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><mi>k</mi></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mover><mi>O</mi><mo accent="true">‾</mo></mover><mo>=</mo><mfrac><mn>1</mn><mrow><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><munder><mo>∑</mo><mrow><mi>D</mi><mo>≠</mo><mi>E</mi></mrow></munder><msub><mi>O</mi><mrow><mi>D</mi><mi>E</mi></mrow></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">O_{DE}=\frac{\operatorname{tr}(P_DP_E)}k=1-\frac{\|P_D-P_E\|_F^2}{2k},\qquad \bar O=\frac1{N(N-1)}\sum_{D\ne E}O_{DE}. \tag{33}</annotation></semantics></math></div><span class="equation-number">(33)</span></div>
+<p>The projector variance identity gives an exact relation to reference leakage:</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mover><mi>O</mi><mo accent="true">‾</mo></mover></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mfrac><mrow><mi>N</mi><mo stretchy="false" form="postfix">∥</mo><mover><mi>P</mi><mo accent="true">‾</mo></mover><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup><mo>−</mo><mi>k</mi></mrow><mrow><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mi>k</mi></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><mrow><mn>2</mn><mi>N</mi></mrow><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>1</mn><mi>N</mi></mfrac><munder><mo>∑</mo><mi>D</mi></munder><msub><mi>ℓ</mi><mi>D</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mfrac><mi>N</mi><mrow><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><mo stretchy="false" form="postfix">∥</mo><mover><mi>P</mi><mo accent="true">‾</mo></mover><mo>−</mo><msub><mi>P</mi><mn>0</mn></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>≥</mo><mn>1</mn><mo>−</mo><mfrac><mrow><mn>2</mn><mi>N</mi></mrow><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>1</mn><mi>N</mi></mfrac><munder><mo>∑</mo><mi>D</mi></munder><msub><mi>ℓ</mi><mi>D</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+\bar O
+&amp;=\frac{N\|\bar P\|_F^2-k}{(N-1)k}\\
+&amp;=1-\frac{2N}{N-1}\left(\frac1N\sum_D\ell_D\right)
++\frac{N}{k(N-1)}\|\bar P-P_0\|_F^2\\
+&amp;\ge1-\frac{2N}{N-1}\left(\frac1N\sum_D\ell_D\right).
+\end{aligned} \tag{34}</annotation></semantics></math></div><span class="equation-number">(34)</span></div>
+<p>For completeness, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>N</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><msub><mo>∑</mo><mi>D</mi></msub><mo stretchy="false" form="postfix">∥</mo><msub><mi>P</mi><mi>D</mi></msub><mo>−</mo><msub><mi>P</mi><mn>0</mn></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup><mo>=</mo><mn>2</mn><mi>k</mi><mspace width="0.167em"></mspace><msup><mi>N</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><msub><mo>∑</mo><mi>D</mi></msub><msub><mi>ℓ</mi><mi>D</mi></msub></mrow><annotation encoding="application/x-tex">N^{-1}\sum_D\|P_D-P_0\|_F^2=2k\,N^{-1}\sum_D\ell_D</annotation></semantics></math>. Subtracting <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mover><mi>P</mi><mo accent="true">‾</mo></mover><mo>−</mo><msub><mi>P</mi><mn>0</mn></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">\|\bar P-P_0\|_F^2</annotation></semantics></math> gives the variance around <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>P</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar P</annotation></semantics></math>, and the sum of squared differences over distinct pairs equals <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><msup><mi>N</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">2N^2</annotation></semantics></math> times that variance. These identities produce Equation (34), including its finite-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> factor.</p>
+<p>Equations (32) and (34) now yield the requested sufficient condition:</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><mover><mi>O</mi><mo accent="true">‾</mo></mover><mo>≥</mo><msub><mrow><mo stretchy="true" form="prefix">[</mo><mn>1</mn><mo>−</mo><mfrac><mn>2</mn><mrow><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><munder><mo>∑</mo><mi>D</mi></munder><mfrac><mrow><mo stretchy="false" form="postfix">∥</mo><msub><mi>B</mi><mi>D</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mrow><msubsup><mi>δ</mi><mi>D</mi><mn>2</mn></msubsup></mfrac><mo stretchy="true" form="postfix">]</mo></mrow><mo>+</mo></msub><mi>.</mi><mspace width="1.0em"></mspace><mfrac><mn>1</mn><mi>N</mi></mfrac><munder><mo>∑</mo><mi>D</mi></munder><mfrac><mrow><mo stretchy="false" form="postfix">∥</mo><msub><mi>B</mi><mi>D</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mrow><msubsup><mi>δ</mi><mi>D</mi><mn>2</mn></msubsup></mfrac><mo>≤</mo><mfrac><mrow><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mn>2</mn><mi>N</mi></mrow></mfrac><mi>ε</mi><mspace width="0.222em"></mspace><mo>⇒</mo><mspace width="0.222em"></mspace><mover><mi>O</mi><mo accent="true">‾</mo></mover><mo>≥</mo><mn>1</mn><mo>−</mo><mi>ε</mi><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">\boxed{\bar O\ge\left[1-\frac{2}{k(N-1)}\sum_D\frac{\|B_D\|_F^2}{\delta_D^2}\right]_+.\quad
+\frac1N\sum_D\frac{\|B_D\|_F^2}{\delta_D^2}\le\frac{k(N-1)}{2N}\varepsilon\ \Longrightarrow\ \bar O\ge1-\varepsilon.} \tag{35}</annotation></semantics></math></div><span class="equation-number">(35)</span></div>
+<p>The assumption <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mi>D</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta_D&gt;0</annotation></semantics></math> remains part of the implication. This controls an average over directions and distance pairs. It permits a few poorly preserved directions; it does not certify a small worst principal angle. For example, replacing one of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> orthogonal directions by an orthogonal exterior direction gives overlap <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mn>1</mn><mi>/</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">1-1/k</annotation></semantics></math> even though the worst angle is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>90</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">90^\circ</annotation></semantics></math>.</p>
+<h3 id="combine-the-coupling-condition-with-the-complete-matrix-bound">9.4 Combine the coupling condition with the complete-matrix bound</h3>
+<p>Choose the reference <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>=</mo><mrow><mi mathvariant="normal">sym</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mover><mi>C</mi><mo accent="true">‾</mo></mover><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H_0=\operatorname{sym}(\bar C)</annotation></semantics></math>, and let <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math> be its leading-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> eigenbasis. Then <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>V</mi><mi>⊤</mi></msup><msub><mi>H</mi><mn>0</mn></msub><mi>U</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">V^\top H_0U=0</annotation></semantics></math>. Put <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><msub><mi>H</mi><mi>D</mi></msub><mo>=</mo><msub><mi>H</mi><mi>D</mi></msub><mo>−</mo><msub><mi>H</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\Delta H_D=H_D-H_0</annotation></semantics></math>. In the same fixed blocks, symmetry gives</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mn>2</mn><mo stretchy="false" form="postfix">∥</mo><msub><mi>B</mi><mi>D</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>≤</mo><mo stretchy="false" form="postfix">∥</mo><mi mathvariant="normal">Δ</mi><msub><mi>H</mi><mi>D</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup><mo>≤</mo><mo stretchy="false" form="postfix">∥</mo><msub><mi>C</mi><mi>D</mi></msub><mo>−</mo><mover><mi>C</mi><mo accent="true">‾</mo></mover><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>≤</mo><mi>κ</mi><msub><mi>ℰ</mi><mi mathvariant="normal">r</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+2\|B_D\|_F^2
+&amp;\le\|\Delta H_D\|_F^2
+\le\|C_D-\bar C\|_F^2\\
+&amp;\le\kappa\mathcal E_{\mathrm r}(D).
+\end{aligned} \tag{36}</annotation></semantics></math></div><span class="equation-number">(36)</span></div>
+<p>The factor two appears because the symmetric perturbation contains both <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>B</mi><mi>D</mi></msub><annotation encoding="application/x-tex">B_D</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>B</mi><mi>D</mi><mi>⊤</mi></msubsup><annotation encoding="application/x-tex">B_D^\top</annotation></semantics></math>. Combining this with Equation (35) gives</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><mover><mi>O</mi><mo accent="true">‾</mo></mover><mo>≥</mo><msub><mrow><mo stretchy="true" form="prefix">[</mo><mn>1</mn><mo>−</mo><mfrac><mi>κ</mi><mrow><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><munder><mo>∑</mo><mi>D</mi></munder><mfrac><mrow><msub><mi>ℰ</mi><mi mathvariant="normal">r</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo></mrow><msubsup><mi>δ</mi><mi>D</mi><mn>2</mn></msubsup></mfrac><mo stretchy="true" form="postfix">]</mo></mrow><mo>+</mo></msub><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">\boxed{\bar O\ge\left[1-\frac{\kappa}{k(N-1)}\sum_D\frac{\mathcal E_{\mathrm r}(D)}{\delta_D^2}\right]_+.} \tag{37}</annotation></semantics></math></div><span class="equation-number">(37)</span></div>
+<p>A positive lower bound on the separation is still needed. For example, if the reference gap is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mn>0</mn></msub><mo>=</mo><msub><mi>λ</mi><mi>k</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>H</mi><mn>0</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>−</mo><msub><mi>λ</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>H</mi><mn>0</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g_0=\lambda_k(H_0)-\lambda_{k+1}(H_0)&gt;0</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>η</mi><mi>D</mi></msub><mo>=</mo><msqrt><mrow><mi>κ</mi><msub><mi>ℰ</mi><mi mathvariant="normal">r</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo></mrow></msqrt></mrow><annotation encoding="application/x-tex">\eta_D=\sqrt{\kappa\mathcal E_{\mathrm r}(D)}</annotation></semantics></math>, then <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mi>D</mi></msub><mo>≥</mo><msub><mi>g</mi><mn>0</mn></msub><mo>−</mo><mn>2</mn><msub><mi>η</mi><mi>D</mi></msub></mrow><annotation encoding="application/x-tex">\delta_D\ge g_0-2\eta_D</annotation></semantics></math>. A uniform condition <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mn>0</mn></msub><mo>&gt;</mo><mn>2</mn><msub><mrow><mi mathvariant="normal">max</mi><mo>&#8289;</mo></mrow><mi>D</mi></msub><msub><mi>η</mi><mi>D</mi></msub></mrow><annotation encoding="application/x-tex">g_0&gt;2\max_D\eta_D</annotation></semantics></math> closes this global route. The additional condition <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mi>k</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>H</mi><mn>0</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><msub><mrow><mi mathvariant="normal">max</mi><mo>&#8289;</mo></mrow><mi>D</mi></msub><msub><mi>η</mi><mi>D</mi></msub></mrow><annotation encoding="application/x-tex">\lambda_k(H_0)&gt;\max_D\eta_D</annotation></semantics></math> ensures that the retained directions remain positive.</p>
+<p>The complete-matrix route can be conservative: large changes confined within <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math> do not themselves couple it to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>. We next retain only the frequency contributions that actually cross the boundary.</p>
+<h3 id="express-the-boundary-coupling-through-the-rope-planes">9.5 Express the boundary coupling through the RoPE planes</h3>
+<p>Keep the reference eigenbasis fixed. Project the symmetric parts of the original coefficient matrices from Equation (6):</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msub><mi>F</mi><mi>p</mi></msub></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><msup><mi>V</mi><mi>⊤</mi></msup><mrow><mi mathvariant="normal">sym</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>B</mi><mi>p</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>U</mi><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>G</mi><mi>p</mi></msub><mo>=</mo><msup><mi>V</mi><mi>⊤</mi></msup><mrow><mi mathvariant="normal">sym</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>S</mi><mi>p</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>U</mi><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msub><mi>B</mi><mi>D</mi></msub></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><munder><mo>∑</mo><mi>p</mi></munder><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>F</mi><mi>p</mi></msub><mi>δ</mi><msub><mi>c</mi><mi>p</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><msub><mi>G</mi><mi>p</mi></msub><mi>δ</mi><msub><mi>s</mi><mi>p</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">]</mo></mrow><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+F_p&amp;=V^\top\operatorname{sym}(B_p)U,\qquad G_p=V^\top\operatorname{sym}(S_p)U,\\
+B_D&amp;=\sum_p\left[F_p\delta c_p(D)+G_p\delta s_p(D)\right].
+\end{aligned} \tag{38}</annotation></semantics></math></div><span class="equation-number">(38)</span></div>
+<p>Thus it is the <strong>cross-boundary images</strong> of the frequency coefficients that rotate the reference space. A large contribution confined to either diagonal block has no direct cross-boundary coupling.</p>
+<p>Define <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>E</mi><mi>p</mi><mo>×</mo></msubsup><mo>=</mo><mo stretchy="false" form="postfix">∥</mo><msub><mi>F</mi><mi>p</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup><mi>+</mi><mo stretchy="false" form="postfix">∥</mo><msub><mi>G</mi><mi>p</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">E_p^\times=\|F_p\|_F^2+\|G_p\|_F^2</annotation></semantics></math>. Form <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Γ</mi><mo>×</mo></msub><annotation encoding="application/x-tex">\Gamma_\times</annotation></semantics></math> from the Frobenius inner products of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>F</mi><mn>1</mn></msub><mo>,</mo><msub><mi>G</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(F_1,G_1,\ldots)</annotation></semantics></math>, and normalize it with <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mo>×</mo></msub><mo>=</mo><mrow><mi mathvariant="normal">diag</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msubsup><mi>E</mi><mn>1</mn><mo>×</mo></msubsup><mo>,</mo><msubsup><mi>E</mi><mn>1</mn><mo>×</mo></msubsup><mo>,</mo><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">J_\times=\operatorname{diag}(E_1^\times,E_1^\times,\ldots)</annotation></semantics></math>. As before, omit zero-energy coordinates and set <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>κ</mi><mo>×</mo></msub><mo>=</mo><msub><mi>λ</mi><mi mathvariant="normal">max</mi></msub><mo stretchy="false" form="prefix">(</mo><msubsup><mi>J</mi><mo>×</mo><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><msub><mi mathvariant="normal">Γ</mi><mo>×</mo></msub><msubsup><mi>J</mi><mo>×</mo><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msubsup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\kappa_\times=\lambda_{\max}(J_\times^{-1/2}\Gamma_\times J_\times^{-1/2})</annotation></semantics></math>. If every cross-boundary coefficient vanishes, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>D</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">B_D=0</annotation></semantics></math> for every <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math> and no inverse is needed. The same Gram calculation now gives</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><mo stretchy="false" form="postfix">∥</mo><msub><mi>B</mi><mi>D</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup><mo>=</mo><mi>z</mi><mo stretchy="false" form="prefix">(</mo><mi>D</mi><msup><mo stretchy="false" form="postfix">)</mo><mi>⊤</mi></msup><msub><mi mathvariant="normal">Γ</mi><mo>×</mo></msub><mi>z</mi><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo><mo>≤</mo><msub><mi>κ</mi><mo>×</mo></msub><munder><mo>∑</mo><mi>p</mi></munder><msubsup><mi>E</mi><mi>p</mi><mo>×</mo></msubsup><msub><mi>r</mi><mi>p</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">\boxed{\|B_D\|_F^2=z(D)^\top\Gamma_\times z(D)\le\kappa_\times\sum_pE_p^\times r_p(D)^2.} \tag{39}</annotation></semantics></math></div><span class="equation-number">(39)</span></div>
+<p>This is the link between frequency structure and the coupling required in Equation (35). It concerns the projected strengths <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>E</mi><mi>p</mi><mo>×</mo></msubsup><annotation encoding="application/x-tex">E_p^\times</annotation></semantics></math>, not merely the full coefficient strengths <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>p</mi></msub><annotation encoding="application/x-tex">E_p</annotation></semantics></math>. In fact, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>E</mi><mi>p</mi><mo>×</mo></msubsup><mo>≤</mo><msub><mi>E</mi><mi>p</mi></msub><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">E_p^\times\le E_p/2</annotation></semantics></math>, because each symmetric coefficient contains two transposed cross blocks.</p>
+<p>Using the phase envelope from Section 6, for slow planes <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℒ</mi><annotation encoding="application/x-tex">\mathcal L</annotation></semantics></math> and remaining planes <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℋ</mi><annotation encoding="application/x-tex">\mathcal H</annotation></semantics></math>,</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><mo stretchy="false" form="postfix">∥</mo><msub><mi>B</mi><mi>D</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup><mo>≤</mo><msub><mi>κ</mi><mo>×</mo></msub><mrow><mo stretchy="true" form="prefix">[</mo><mfrac><msup><mi>L</mi><mn>2</mn></msup><mn>4</mn></mfrac><munder><mo>∑</mo><mrow><mi>p</mi><mo>∈</mo><mi>ℒ</mi></mrow></munder><msubsup><mi>E</mi><mi>p</mi><mo>×</mo></msubsup><msubsup><mi>ω</mi><mi>p</mi><mn>2</mn></msubsup><mo>+</mo><mn>4</mn><munder><mo>∑</mo><mrow><mi>p</mi><mo>∈</mo><mi>ℋ</mi></mrow></munder><msubsup><mi>E</mi><mi>p</mi><mo>×</mo></msubsup><mo stretchy="true" form="postfix">]</mo></mrow><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">\boxed{\|B_D\|_F^2\le\kappa_\times\left[\frac{L^2}{4}\sum_{p\in\mathcal L}E_p^\times\omega_p^2+4\sum_{p\in\mathcal H}E_p^\times\right].} \tag{40}</annotation></semantics></math></div><span class="equation-number">(40)</span></div>
+<p>The sharper version retains <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">min</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">{</mo><mn>4</mn><mo>,</mo><mo stretchy="false" form="prefix">(</mo><mi>L</mi><msub><mi>ω</mi><mi>p</mi></msub><mi>/</mi><mn>2</mn><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\min\{4,(L\omega_p/2)^2\}</annotation></semantics></math> plane by plane. Here the post’s <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math> is the maximum distance, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">N-1</annotation></semantics></math>, not sequence length. In particular, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo stretchy="false" form="prefix">|</mo><msub><mi>ω</mi><mi>p</mi></msub><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">L|\omega_p|\le1</annotation></semantics></math> gives <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>p</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo><mo>≤</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">r_p(D)\le1/2</annotation></semantics></math> for the mean reference. Merely belonging to the descriptive bin <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><msub><mi>ω</mi><mi>p</mi></msub><mo>&lt;</mo><mn>2</mn><mi>π</mi></mrow><annotation encoding="application/x-tex">L\omega_p&lt;2\pi</annotation></semantics></math> does not ensure such a small response.</p>
+<h3 id="protect-the-separation-and-close-the-structural-implication">9.6 Protect the separation and close the structural implication</h3>
+<p>Small <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>B</mi><mi>D</mi></msub><annotation encoding="application/x-tex">B_D</annotation></semantics></math> alone is insufficient if the eigenvalue ordering switches across the boundary. With the reference <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>H</mi><mn>0</mn></msub><annotation encoding="application/x-tex">H_0</annotation></semantics></math> above, define</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>D</mi></msub><mo>=</mo><mo stretchy="false" form="postfix">∥</mo><msup><mi>U</mi><mi>⊤</mi></msup><mi mathvariant="normal">Δ</mi><msub><mi>H</mi><mi>D</mi></msub><mi>U</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>c</mi><mi>D</mi></msub><mo>=</mo><mo stretchy="false" form="postfix">∥</mo><msup><mi>V</mi><mi>⊤</mi></msup><mi mathvariant="normal">Δ</mi><msub><mi>H</mi><mi>D</mi></msub><mi>V</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>δ</mi><mi>D</mi></msub><mo>≥</mo><msub><mi>g</mi><mn>0</mn></msub><mo>−</mo><msub><mi>a</mi><mi>D</mi></msub><mo>−</mo><msub><mi>c</mi><mi>D</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">a_D=\|U^\top\Delta H_DU\|_2,\qquad c_D=\|V^\top\Delta H_DV\|_2,\qquad \delta_D\ge g_0-a_D-c_D. \tag{41}</annotation></semantics></math></div><span class="equation-number">(41)</span></div>
+<p>The inequality follows by bounding the lowest eigenvalue of the selected diagonal block and the highest eigenvalue of its complement separately. It also explains why the two diagonal blocks matter even when their contributions do not directly rotate <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>.</p>
+<p>These variations have frequency bounds as well. Project <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sym</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>B</mi><mi>p</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mrow><mi mathvariant="normal">sym</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>S</mi><mi>p</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{sym}(B_p),\operatorname{sym}(S_p)</annotation></semantics></math> into <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mi>⊤</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>⋅</mi><mo stretchy="false" form="postfix">)</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">U^\top(\cdot)U</annotation></semantics></math> to obtain plane strengths <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>E</mi><mi>p</mi><mi>U</mi></msubsup><annotation encoding="application/x-tex">E_p^U</annotation></semantics></math> and normalized Gram factor <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>κ</mi><mi>U</mi></msub><annotation encoding="application/x-tex">\kappa_U</annotation></semantics></math>; use <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>V</mi><mi>⊤</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>⋅</mi><mo stretchy="false" form="postfix">)</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">V^\top(\cdot)V</annotation></semantics></math> for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>E</mi><mi>p</mi><mi>V</mi></msubsup><mo>,</mo><msub><mi>κ</mi><mi>V</mi></msub></mrow><annotation encoding="application/x-tex">E_p^V,\kappa_V</annotation></semantics></math>. Repeating the same weighted-Gram argument gives</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msub><mi>a</mi><mi>D</mi></msub></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>≤</mo><msub><mi>a</mi><mo>↑</mo></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><msqrt><mrow><msub><mi>κ</mi><mi>U</mi></msub><munder><mo>∑</mo><mi>p</mi></munder><msubsup><mi>E</mi><mi>p</mi><mi>U</mi></msubsup><msub><mi>r</mi><mi>p</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></msqrt><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msub><mi>c</mi><mi>D</mi></msub></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>≤</mo><msub><mi>c</mi><mo>↑</mo></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><msqrt><mrow><msub><mi>κ</mi><mi>V</mi></msub><munder><mo>∑</mo><mi>p</mi></munder><msubsup><mi>E</mi><mi>p</mi><mi>V</mi></msubsup><msub><mi>r</mi><mi>p</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></msqrt><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msub><mi>δ</mi><mo>↓</mo></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>:=</mo><msub><mi>g</mi><mn>0</mn></msub><mo>−</mo><msub><mi>a</mi><mo>↑</mo></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><msub><mi>c</mi><mo>↑</mo></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo><mo>≤</mo><msub><mi>δ</mi><mi>D</mi></msub><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+a_D&amp;\le a_\uparrow(D):=\sqrt{\kappa_U\sum_pE_p^U r_p(D)^2},\\
+c_D&amp;\le c_\uparrow(D):=\sqrt{\kappa_V\sum_pE_p^V r_p(D)^2},\\
+\delta_\downarrow(D)&amp;:=g_0-a_\uparrow(D)-c_\uparrow(D)\le\delta_D.
+\end{aligned} \tag{42}</annotation></semantics></math></div><span class="equation-number">(42)</span></div>
+<p>All coefficients and the reference basis are fixed by the learned maps and chosen distance interval. No measured overlap is used to fit them. If <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mo>↓</mo></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta_\downarrow(D)&gt;0</annotation></semantics></math> for every distance, Equations (35) and (39) yield the closed sufficient bound</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><mover><mi>O</mi><mo accent="true">‾</mo></mover><mo>≥</mo><msub><mrow><mo stretchy="true" form="prefix">[</mo><mn>1</mn><mo>−</mo><mfrac><mrow><mn>2</mn><msub><mi>κ</mi><mo>×</mo></msub></mrow><mrow><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><munder><mo>∑</mo><mi>D</mi></munder><mfrac><mrow><munder><mo>∑</mo><mi>p</mi></munder><msubsup><mi>E</mi><mi>p</mi><mo>×</mo></msubsup><msub><mi>r</mi><mi>p</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><mrow><msub><mi>δ</mi><mo>↓</mo></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></mfrac><mo stretchy="true" form="postfix">]</mo></mrow><mo>+</mo></msub><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">\boxed{\bar O\ge\left[1-\frac{2\kappa_\times}{k(N-1)}\sum_D\frac{\sum_pE_p^\times r_p(D)^2}{\delta_\downarrow(D)^2}\right]_+.} \tag{43}</annotation></semantics></math></div><span class="equation-number">(43)</span></div>
+<p>For a statement about the leading <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math> space, also require <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mi>k</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>H</mi><mn>0</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><msub><mi>a</mi><mo>↑</mo></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\lambda_k(H_0)&gt;a_\uparrow(D)</annotation></semantics></math> throughout the interval. A convenient uniform version uses <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mo>*</mo></msub><mo>=</mo><msub><mrow><mi mathvariant="normal">min</mi><mo>&#8289;</mo></mrow><mi>D</mi></msub><msub><mi>δ</mi><mo>↓</mo></msub><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta_*=\min_D\delta_\downarrow(D)&gt;0</annotation></semantics></math>:</p>
+<div class="equation"><div class="math-scroll"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><mover><mi>O</mi><mo accent="true">‾</mo></mover><mo>≥</mo><msub><mrow><mo stretchy="true" form="prefix">[</mo><mn>1</mn><mo>−</mo><mfrac><mrow><mn>2</mn><mi>N</mi><msub><mi>κ</mi><mo>×</mo></msub></mrow><mrow><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><msubsup><mi>δ</mi><mo>*</mo><mn>2</mn></msubsup></mrow></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msup><mi>L</mi><mn>2</mn></msup><mn>4</mn></mfrac><munder><mo>∑</mo><mrow><mi>p</mi><mo>∈</mo><mi>ℒ</mi></mrow></munder><msubsup><mi>E</mi><mi>p</mi><mo>×</mo></msubsup><msubsup><mi>ω</mi><mi>p</mi><mn>2</mn></msubsup><mo>+</mo><mn>4</mn><munder><mo>∑</mo><mrow><mi>p</mi><mo>∈</mo><mi>ℋ</mi></mrow></munder><msubsup><mi>E</mi><mi>p</mi><mo>×</mo></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mo>+</mo></msub><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">\boxed{\bar O\ge\left[1-\frac{2N\kappa_\times}{k(N-1)\delta_*^2}\left(\frac{L^2}{4}\sum_{p\in\mathcal L}E_p^\times\omega_p^2+4\sum_{p\in\mathcal H}E_p^\times\right)\right]_+.} \tag{44}</annotation></semantics></math></div><span class="equation-number">(44)</span></div>
+<p>This completes the implication: slow or nonrotary structure controls the phase responses; weak fast-channel boundary coefficients and controlled projected Gram amplification keep <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><msub><mi>B</mi><mi>D</mi></msub><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>F</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">\|B_D\|_F^2</annotation></semantics></math> small; controlled diagonal variations preserve the reference separation; and the coupling-to-separation ratio guarantees high mean overlap. Low-frequency concentration by itself supplies neither the reference gap nor its preservation.</p>
+<p>The same subspace argument applies to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><msub><mi>H</mi><mi>D</mi></msub></mrow><annotation encoding="application/x-tex">-H_D</annotation></semantics></math> for the most negative directions. For <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>D</mi></msub><mo>=</mo><mrow><mi mathvariant="normal">skew</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>C</mi><mi>D</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A_D=\operatorname{skew}(C_D)</annotation></semantics></math>, use the symmetric matrix <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>A</mi><mi>D</mi><mi>⊤</mi></msubsup><msub><mi>A</mi><mi>D</mi></msub></mrow><annotation encoding="application/x-tex">A_D^\top A_D</annotation></semantics></math> and retain complete real singular planes. Its gaps have squared-singular-value units, and its perturbation obeys <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><msubsup><mi>A</mi><mi>D</mi><mi>⊤</mi></msubsup><msub><mi>A</mi><mi>D</mi></msub><mo>−</mo><msubsup><mi>A</mi><mn>0</mn><mi>⊤</mi></msubsup><msub><mi>A</mi><mn>0</mn></msub><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>≤</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo stretchy="false" form="postfix">∥</mo><msub><mi>A</mi><mn>0</mn></msub><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mi>+</mi><mo stretchy="false" form="postfix">∥</mo><msub><mi>A</mi><mi>D</mi></msub><mo>−</mo><msub><mi>A</mi><mn>0</mn></msub><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">∥</mo><msub><mi>A</mi><mi>D</mi></msub><mo>−</mo><msub><mi>A</mi><mn>0</mn></msub><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\|A_D^\top A_D-A_0^\top A_0\|_2\le(2\|A_0\|_2+\|A_D-A_0\|_2)\|A_D-A_0\|_2</annotation></semantics></math>. This keeps the gap and perturbation in the same units. The theorem does not intrinsically prefer the positive component.</p>
+</section>
+<section id="subspace-experiments">
+<h2 id="fixed-rank-overlap-in-the-latest-selected-routes">10. Fixed-rank overlap in the latest selected routes</h2>
+<p>We evaluated all 193 latest selected Pythia routes at checkpoint 143000 and the 240 selected OLMo routes in the retained 42-model set. Each distance uses its own leading subspace, with the same real rank <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> and the exact same eligible routes for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>−</mo></msup><annotation encoding="application/x-tex">H^-</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>. The negative component is ordered by absolute negative eigenvalue; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> retains complete real singular planes, so the common ranks are even. No zero eigenvectors are added to reach an unsupported rank.</p>
+<p>The reported statistic is Equation (33), over every distinct pair of the 2,048 integer distances. It is computed exactly through the mean projector, without sampling distance pairs. Routes receive equal weight within each model; eligible OLMo models receive equal weight within scale. Retained eigenvalue shares, when reported separately, use unsquared spectral magnitudes.</p>
+<p>At <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">k=2</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">k=4</annotation></semantics></math>, the <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mo>+</mo></msup><annotation encoding="application/x-tex">H^+</annotation></semantics></math> scale mean exceeds both other components at all six Pythia scales and all thirteen eligible OLMo scales. This advantage is concentrated in the leading core: Pythia retains it at every scale for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>8</mn><mo>,</mo><mn>16</mn><mo>,</mo><mn>32</mn></mrow><annotation encoding="application/x-tex">k=8,16,32</annotation></semantics></math>, whereas OLMo retains it at ten of thirteen eligible scales for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">k=8</annotation></semantics></math>, six of twelve for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>16</mn></mrow><annotation encoding="application/x-tex">k=16</annotation></semantics></math>, and two of seven for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>32</mn></mrow><annotation encoding="application/x-tex">k=32</annotation></semantics></math>. These are descriptive mean comparisons, not a claim about every route or every direction.</p>
+<div class="table-scroll">
+<table>
+<caption>
+Pythia: identical retained ranks and matched selected routes
+</caption>
+<thead>
+<tr>
+<th scope="col">
+Scale
+</th>
+<th scope="col">
+Rank
+</th>
+<th scope="col">
+Routes
+</th>
+<th scope="col">
+H<sup>+</sup>
+</th>
+<th scope="col">
+H<sup>−</sup>
+</th>
+<th scope="col">
+A
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+70M
+</th>
+<td>
+4
+</td>
+<td>
+10
+</td>
+<td>
+97.05%
+</td>
+<td>
+79.90%
+</td>
+<td>
+85.74%
+</td>
+</tr>
+<tr>
+<th scope="row">
+70M
+</th>
+<td>
+8
+</td>
+<td>
+10
+</td>
+<td>
+97.54%
+</td>
+<td>
+84.32%
+</td>
+<td>
+87.91%
+</td>
+</tr>
+<tr>
+<th scope="row">
+160M
+</th>
+<td>
+4
+</td>
+<td>
+29
+</td>
+<td>
+97.48%
+</td>
+<td>
+83.66%
+</td>
+<td>
+83.22%
+</td>
+</tr>
+<tr>
+<th scope="row">
+160M
+</th>
+<td>
+8
+</td>
+<td>
+29
+</td>
+<td>
+98.27%
+</td>
+<td>
+88.33%
+</td>
+<td>
+89.91%
+</td>
+</tr>
+<tr>
+<th scope="row">
+410M
+</th>
+<td>
+4
+</td>
+<td>
+36
+</td>
+<td>
+99.20%
+</td>
+<td>
+89.36%
+</td>
+<td>
+90.59%
+</td>
+</tr>
+<tr>
+<th scope="row">
+410M
+</th>
+<td>
+8
+</td>
+<td>
+36
+</td>
+<td>
+98.99%
+</td>
+<td>
+91.49%
+</td>
+<td>
+93.70%
+</td>
+</tr>
+<tr>
+<th scope="row">
+1B
+</th>
+<td>
+4
+</td>
+<td>
+18
+</td>
+<td>
+96.78%
+</td>
+<td>
+85.43%
+</td>
+<td>
+89.87%
+</td>
+</tr>
+<tr>
+<th scope="row">
+1B
+</th>
+<td>
+8
+</td>
+<td>
+18
+</td>
+<td>
+97.28%
+</td>
+<td>
+87.25%
+</td>
+<td>
+91.41%
+</td>
+</tr>
+<tr>
+<th scope="row">
+1.4B
+</th>
+<td>
+4
+</td>
+<td>
+36
+</td>
+<td>
+99.18%
+</td>
+<td>
+90.37%
+</td>
+<td>
+95.43%
+</td>
+</tr>
+<tr>
+<th scope="row">
+1.4B
+</th>
+<td>
+8
+</td>
+<td>
+36
+</td>
+<td>
+99.14%
+</td>
+<td>
+91.67%
+</td>
+<td>
+94.84%
+</td>
+</tr>
+<tr>
+<th scope="row">
+2.8B
+</th>
+<td>
+4
+</td>
+<td>
+64
+</td>
+<td>
+97.57%
+</td>
+<td>
+90.97%
+</td>
+<td>
+93.47%
+</td>
+</tr>
+<tr>
+<th scope="row">
+2.8B
+</th>
+<td>
+8
+</td>
+<td>
+64
+</td>
+<td>
+98.03%
+</td>
+<td>
+93.47%
+</td>
+<td>
+93.50%
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-scroll">
+<table>
+<caption>
+OLMo: identical retained ranks and matched selected routes
+</caption>
+<thead>
+<tr>
+<th scope="col">
+Scale
+</th>
+<th scope="col">
+Rank
+</th>
+<th scope="col">
+Routes
+</th>
+<th scope="col">
+H<sup>+</sup>
+</th>
+<th scope="col">
+H<sup>−</sup>
+</th>
+<th scope="col">
+A
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+4M
+</th>
+<td>
+4
+</td>
+<td>
+0
+</td>
+<td>
+NA
+</td>
+<td>
+NA
+</td>
+<td>
+NA
+</td>
+</tr>
+<tr>
+<th scope="row">
+4M
+</th>
+<td>
+8
+</td>
+<td>
+0
+</td>
+<td>
+NA
+</td>
+<td>
+NA
+</td>
+<td>
+NA
+</td>
+</tr>
+<tr>
+<th scope="row">
+6M
+</th>
+<td>
+4
+</td>
+<td>
+4
+</td>
+<td>
+65.88%
+</td>
+<td>
+46.86%
+</td>
+<td>
+63.36%
+</td>
+</tr>
+<tr>
+<th scope="row">
+6M
+</th>
+<td>
+8
+</td>
+<td>
+4
+</td>
+<td>
+61.47%
+</td>
+<td>
+61.37%
+</td>
+<td>
+85.40%
+</td>
+</tr>
+<tr>
+<th scope="row">
+8M
+</th>
+<td>
+4
+</td>
+<td>
+7
+</td>
+<td>
+77.81%
+</td>
+<td>
+51.10%
+</td>
+<td>
+68.82%
+</td>
+</tr>
+<tr>
+<th scope="row">
+8M
+</th>
+<td>
+8
+</td>
+<td>
+7
+</td>
+<td>
+68.72%
+</td>
+<td>
+66.79%
+</td>
+<td>
+79.66%
+</td>
+</tr>
+<tr>
+<th scope="row">
+10M
+</th>
+<td>
+4
+</td>
+<td>
+15
+</td>
+<td>
+82.24%
+</td>
+<td>
+47.54%
+</td>
+<td>
+59.57%
+</td>
+</tr>
+<tr>
+<th scope="row">
+10M
+</th>
+<td>
+8
+</td>
+<td>
+15
+</td>
+<td>
+70.62%
+</td>
+<td>
+64.04%
+</td>
+<td>
+78.84%
+</td>
+</tr>
+<tr>
+<th scope="row">
+14M
+</th>
+<td>
+4
+</td>
+<td>
+13
+</td>
+<td>
+83.80%
+</td>
+<td>
+44.65%
+</td>
+<td>
+58.57%
+</td>
+</tr>
+<tr>
+<th scope="row">
+14M
+</th>
+<td>
+8
+</td>
+<td>
+13
+</td>
+<td>
+77.90%
+</td>
+<td>
+59.99%
+</td>
+<td>
+74.74%
+</td>
+</tr>
+<tr>
+<th scope="row">
+16M
+</th>
+<td>
+4
+</td>
+<td>
+11
+</td>
+<td>
+83.49%
+</td>
+<td>
+43.74%
+</td>
+<td>
+56.87%
+</td>
+</tr>
+<tr>
+<th scope="row">
+16M
+</th>
+<td>
+8
+</td>
+<td>
+11
+</td>
+<td>
+81.37%
+</td>
+<td>
+60.06%
+</td>
+<td>
+73.71%
+</td>
+</tr>
+<tr>
+<th scope="row">
+20M
+</th>
+<td>
+4
+</td>
+<td>
+16
+</td>
+<td>
+82.62%
+</td>
+<td>
+51.16%
+</td>
+<td>
+61.73%
+</td>
+</tr>
+<tr>
+<th scope="row">
+20M
+</th>
+<td>
+8
+</td>
+<td>
+16
+</td>
+<td>
+79.19%
+</td>
+<td>
+65.42%
+</td>
+<td>
+77.02%
+</td>
+</tr>
+<tr>
+<th scope="row">
+60M
+</th>
+<td>
+4
+</td>
+<td>
+17
+</td>
+<td>
+83.43%
+</td>
+<td>
+47.87%
+</td>
+<td>
+59.98%
+</td>
+</tr>
+<tr>
+<th scope="row">
+60M
+</th>
+<td>
+8
+</td>
+<td>
+17
+</td>
+<td>
+85.13%
+</td>
+<td>
+64.21%
+</td>
+<td>
+69.69%
+</td>
+</tr>
+<tr>
+<th scope="row">
+90M
+</th>
+<td>
+4
+</td>
+<td>
+16
+</td>
+<td>
+84.83%
+</td>
+<td>
+50.54%
+</td>
+<td>
+63.23%
+</td>
+</tr>
+<tr>
+<th scope="row">
+90M
+</th>
+<td>
+8
+</td>
+<td>
+16
+</td>
+<td>
+90.45%
+</td>
+<td>
+62.94%
+</td>
+<td>
+66.84%
+</td>
+</tr>
+<tr>
+<th scope="row">
+150M
+</th>
+<td>
+4
+</td>
+<td>
+17
+</td>
+<td>
+87.85%
+</td>
+<td>
+46.83%
+</td>
+<td>
+57.22%
+</td>
+</tr>
+<tr>
+<th scope="row">
+150M
+</th>
+<td>
+8
+</td>
+<td>
+17
+</td>
+<td>
+90.24%
+</td>
+<td>
+59.12%
+</td>
+<td>
+62.36%
+</td>
+</tr>
+<tr>
+<th scope="row">
+300M
+</th>
+<td>
+4
+</td>
+<td>
+25
+</td>
+<td>
+86.13%
+</td>
+<td>
+46.77%
+</td>
+<td>
+57.10%
+</td>
+</tr>
+<tr>
+<th scope="row">
+300M
+</th>
+<td>
+8
+</td>
+<td>
+25
+</td>
+<td>
+88.41%
+</td>
+<td>
+57.22%
+</td>
+<td>
+63.49%
+</td>
+</tr>
+<tr>
+<th scope="row">
+530M
+</th>
+<td>
+4
+</td>
+<td>
+29
+</td>
+<td>
+86.64%
+</td>
+<td>
+46.85%
+</td>
+<td>
+55.30%
+</td>
+</tr>
+<tr>
+<th scope="row">
+530M
+</th>
+<td>
+8
+</td>
+<td>
+29
+</td>
+<td>
+88.87%
+</td>
+<td>
+55.56%
+</td>
+<td>
+60.33%
+</td>
+</tr>
+<tr>
+<th scope="row">
+750M
+</th>
+<td>
+4
+</td>
+<td>
+36
+</td>
+<td>
+88.10%
+</td>
+<td>
+49.27%
+</td>
+<td>
+59.47%
+</td>
+</tr>
+<tr>
+<th scope="row">
+750M
+</th>
+<td>
+8
+</td>
+<td>
+36
+</td>
+<td>
+89.49%
+</td>
+<td>
+57.06%
+</td>
+<td>
+64.43%
+</td>
+</tr>
+<tr>
+<th scope="row">
+1B
+</th>
+<td>
+4
+</td>
+<td>
+34
+</td>
+<td>
+86.92%
+</td>
+<td>
+49.59%
+</td>
+<td>
+57.77%
+</td>
+</tr>
+<tr>
+<th scope="row">
+1B
+</th>
+<td>
+8
+</td>
+<td>
+34
+</td>
+<td>
+88.43%
+</td>
+<td>
+56.24%
+</td>
+<td>
+62.04%
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="method-note">
+4M has no qualifying route. At 6M and 8M the scale means cover one and two eligible models; other eligible scales cover all three. Each component uses the same route set at a given rank.
+</p>
+<figure>
+<img src="assets/pythia-fixed-rank.png" loading="lazy" alt="Across all six Pythia scales, mean subspace overlap versus identical retained rank for positive, negative and antisymmetric components.">
+<figcaption>
+Pythia: all mutually supported even ranks. The positive leading core has the highest scale means at small ranks; the ordering need not persist as weak directions are included.
+</figcaption>
+</figure>
+<figure>
+<img src="assets/olmo-fixed-rank.png" loading="lazy" alt="Across fourteen OLMo scales, mean subspace overlap versus identical retained rank; 4M has no qualifying route.">
+<figcaption>
+OLMo: equal-rank comparisons distinguish the leading positive core from larger, less persistent positive spaces. At full positive/negative support, their overlaps agree because those equal-dimensional spaces are complementary. The A curves here stop at the shared supported rank, not its entire support.
+</figcaption>
+</figure>
+<p>The numerical audit covers 433 route identities and 866 complete positive/negative-support replays. Across 3,076 comparisons with the previous fixed-rank or complete-support results, the maximum absolute overlap discrepancy was below <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>×</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>16</mn></mrow></msup></mrow><annotation encoding="application/x-tex">9\times10^{-16}</annotation></semantics></math>. The new census establishes observed mean persistence. Equations (35) and (43) state what additional routewise gap and frequency-coupling inequalities would certify it; they are not asserted to pass for every route in this census.</p>
+<p>Previous structural examples comprised five strong 70M routes and six preselected OLMo 90M/300M examples. Their positive reference spaces had more favorable gap-resolved coupling diagnostics, and their query-row-space return maps were strongly biased toward the positive symmetric part. These examples support investigating a strong positive return block, but do not constitute a mechanism census or a causal explanation of all 433 latest routes. Slow-channel capacity alone constrains positive and negative structure symmetrically.</p>
+<ul class="data-links">
+<li>
+<a href="data/fixed-rank-overlap.csv">Standard fixed-rank scale comparisons</a> · <a href="data/fixed-rank-overlap.json">All supported even ranks and definitions</a>
+</li>
+<li>
+<a href="data/fixed-rank-audit.json">Latest-route numerical audit</a> · <a href="data/fixed-rank-report.txt">Complete standard-rank report</a>
+</li>
+<li>
+<a href="data/subspace-proof-checks.json">Independent finite-matrix checks of the coupling proof</a> · <a href="data/subspace-source-manifest.json">Subspace source hashes</a>
+</li>
+</ul>
 </section>
 <section id="data">
 <h2 id="data-and-reproducibility">Data and reproducibility</h2>
