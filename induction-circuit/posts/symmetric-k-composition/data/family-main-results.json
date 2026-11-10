@@ -1,0 +1,4249 @@
+{
+  "status": "ALL13_ACCEPTED",
+  "models": [
+    {
+      "model_source": {
+        "recipe": "Dolma1.7",
+        "scale": "60M",
+        "repo": "allenai/DataDecide-dolma1_7-60M",
+        "branch": "step29042-seed-default",
+        "revision": "8a3bfe1b78bf0100f5bddcf73cde5edd18e0142e",
+        "step": 29042,
+        "training_tokens": 5709889536
+      },
+      "selected": 31,
+      "ordinary_unique": 120,
+      "controls": {
+        "global_random50": {
+          "selected": {
+            "mean": {
+              "Gplus": 13.212921066815285,
+              "minus_bplus": 0.23642436609323395,
+              "Tplus": 0.3561568489181215,
+              "Rplus": 3.1292339062828023,
+              "Gminus": -2.9996787103022458,
+              "minus_bminus": -0.1011183450509083,
+              "Tminus": 0.35302584967309597,
+              "Rminus": 1.465889117946695,
+              "minus_bA": -0.01247443960599243,
+              "TA": 0.10113496358395668,
+              "RA": 0.8111968805108327,
+              "mC": 16.55271150486488
+            },
+            "count": 31,
+            "RMS": {
+              "C": {
+                "R": 10.032744091510905,
+                "m": 22.254200081256652,
+                "pooled_ratio": 0.4508247456605223,
+                "route_ratio_quantiles": [
+                  0.3379515602445469,
+                  0.352361282106985,
+                  0.4656721649289233,
+                  0.6679608179473775,
+                  0.7265572848390646
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 5.3341523565343545,
+                "m": 22.329892992146554,
+                "pooled_ratio": 0.23887944104391282,
+                "route_ratio_quantiles": [
+                  0.14096923397261865,
+                  0.16299244254463544,
+                  0.2637434587895662,
+                  0.3610049367643849,
+                  0.4360085151591642
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.5073531147531473,
+              "minus_bplus": 0.017959775991345493,
+              "Tplus": -0.18518037756728256,
+              "Rplus": -0.029159361642181143,
+              "Gminus": -0.5247045799715256,
+              "minus_bminus": -0.02106447016524344,
+              "Tminus": 0.1789911717030233,
+              "Rminus": -0.021042346333458868,
+              "minus_bA": -0.0008394365197243519,
+              "TA": -0.006752280677007789,
+              "RA": -0.005538597351198428,
+              "mC": -0.0899773877801062
+            },
+            "count": 50,
+            "RMS": {
+              "C": {
+                "R": 1.4570320566248618,
+                "m": 1.4164415249504885,
+                "pooled_ratio": 1.0286566942294297,
+                "route_ratio_quantiles": [
+                  0.5068086689019745,
+                  0.725170815708484,
+                  0.9945188573853025,
+                  1.3822868796910548,
+                  1.840870204016789
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.5419482135754298,
+                "m": 0.8818877094276758,
+                "pooled_ratio": 0.6145319951529218,
+                "route_ratio_quantiles": [
+                  0.3148149092668817,
+                  0.4336277547433295,
+                  0.6677962843588581,
+                  0.9087340036520221,
+                  1.6278137712742038
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 12.705567952062138,
+            "minus_bplus": 0.21846459010188846,
+            "Tplus": 0.541337226485404,
+            "Rplus": 3.1583932679249833,
+            "Gminus": -2.47497413033072,
+            "minus_bminus": -0.08005387488566487,
+            "Tminus": 0.17403467797007266,
+            "Rminus": 1.4869314642801539,
+            "minus_bA": -0.011635003086268077,
+            "TA": 0.10788724426096447,
+            "RA": 0.8167354778620312,
+            "mC": 16.642688892644987
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 12.705567952062138
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.21846459010188846
+            },
+            {
+              "term": "Tplus",
+              "change": 0.541337226485404
+            },
+            {
+              "term": "Rplus",
+              "change": 3.1583932679249833
+            },
+            {
+              "term": "Gminus",
+              "change": -2.47497413033072
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.08005387488566487
+            },
+            {
+              "term": "Tminus",
+              "change": 0.17403467797007266
+            },
+            {
+              "term": "Rminus",
+              "change": 1.4869314642801539
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.011635003086268077
+            },
+            {
+              "term": "TA",
+              "change": 0.10788724426096447
+            },
+            {
+              "term": "RA",
+              "change": 0.8167354778620312
+            }
+          ],
+          "weighting": "Within each model, selected uniform; global50 uniform."
+        },
+        "matched_layer_pair5": {
+          "selected": {
+            "mean": {
+              "Gplus": 13.212921066815285,
+              "minus_bplus": 0.23642436609323395,
+              "Tplus": 0.3561568489181215,
+              "Rplus": 3.1292339062828023,
+              "Gminus": -2.9996787103022458,
+              "minus_bminus": -0.1011183450509083,
+              "Tminus": 0.35302584967309597,
+              "Rminus": 1.465889117946695,
+              "minus_bA": -0.01247443960599243,
+              "TA": 0.10113496358395668,
+              "RA": 0.8111968805108327,
+              "mC": 16.55271150486488
+            },
+            "count": 31,
+            "RMS": {
+              "C": {
+                "R": 10.032744091510905,
+                "m": 22.254200081256652,
+                "pooled_ratio": 0.4508247456605223,
+                "route_ratio_quantiles": [
+                  0.3379515602445469,
+                  0.352361282106985,
+                  0.4656721649289233,
+                  0.6679608179473775,
+                  0.7265572848390646
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 5.3341523565343545,
+                "m": 22.329892992146554,
+                "pooled_ratio": 0.23887944104391282,
+                "route_ratio_quantiles": [
+                  0.14096923397261865,
+                  0.16299244254463544,
+                  0.2637434587895662,
+                  0.3610049367643849,
+                  0.4360085151591642
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.7669813861809079,
+              "minus_bplus": 0.019154441727860867,
+              "Tplus": -0.08301628102931821,
+              "Rplus": -0.00408139063513945,
+              "Gminus": -0.4940326285086272,
+              "minus_bminus": -0.01647906493958243,
+              "Tminus": 0.04096277289658966,
+              "Rminus": 0.011304212656257214,
+              "minus_bA": -0.0002899019431318696,
+              "TA": 0.01018626281347662,
+              "RA": 0.006505869346677018,
+              "mC": 0.2571956785659698
+            },
+            "count": 70,
+            "RMS": {
+              "C": {
+                "R": 1.2680898600684418,
+                "m": 1.8561309222296167,
+                "pooled_ratio": 0.6831898789473267,
+                "route_ratio_quantiles": [
+                  0.4209968200122409,
+                  0.6364875531095019,
+                  0.9877110227365345,
+                  1.2905318235480545,
+                  1.5783241828085521
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.5554507152375652,
+                "m": 1.733189651419283,
+                "pooled_ratio": 0.3204789013035676,
+                "route_ratio_quantiles": [
+                  0.22945331012348444,
+                  0.35244613633809363,
+                  0.5776607342641851,
+                  0.8277452315476138,
+                  0.9511396605816911
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 12.445939680634378,
+            "minus_bplus": 0.21726992436537307,
+            "Tplus": 0.43917312994743973,
+            "Rplus": 3.133315296917942,
+            "Gminus": -2.5056460817936186,
+            "minus_bminus": -0.08463928011132588,
+            "Tminus": 0.3120630767765063,
+            "Rminus": 1.4545849052904378,
+            "minus_bA": -0.01218453766286056,
+            "TA": 0.09094870077048006,
+            "RA": 0.8046910111641556,
+            "mC": 16.29551582629891
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 12.445939680634378
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.21726992436537307
+            },
+            {
+              "term": "Tplus",
+              "change": 0.43917312994743973
+            },
+            {
+              "term": "Rplus",
+              "change": 3.133315296917942
+            },
+            {
+              "term": "Gminus",
+              "change": -2.5056460817936186
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.08463928011132588
+            },
+            {
+              "term": "Tminus",
+              "change": 0.3120630767765063
+            },
+            {
+              "term": "Rminus",
+              "change": 1.4545849052904378
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.01218453766286056
+            },
+            {
+              "term": "TA",
+              "change": 0.09094870077048006
+            },
+            {
+              "term": "RA",
+              "change": 0.8046910111641556
+            }
+          ],
+          "weighting": "Ordinary routes share selected-route mass of the same writer/reader layer pair; no one-to-one head matching."
+        }
+      },
+      "result_SHA": "5ef643f220a0201cc3b70dd25c035b2e9e814982519b87bc421b895d74a110ca",
+      "source_SHA": "c89d5fdcb7b365facf66580bbf3ccc3fdeb5097afdac6aee5aa9bfe6747b0855",
+      "id": "olmo-60m",
+      "label": "OLMo 60M",
+      "family": "OLMo / Dolma1.7",
+      "checkpoint_label": "fixed public step 29,042"
+    },
+    {
+      "model_source": {
+        "recipe": "Dolma1.7",
+        "scale": "90M",
+        "repo": "allenai/DataDecide-dolma1_7-90M",
+        "branch": "step29901-seed-default",
+        "revision": "c52b41035b6420ccc2b5518ec7a803029140aed8",
+        "step": 29901,
+        "training_tokens": 9797959680
+      },
+      "selected": 22,
+      "ordinary_unique": 105,
+      "controls": {
+        "global_random50": {
+          "selected": {
+            "mean": {
+              "Gplus": 17.401223644055506,
+              "minus_bplus": 0.30912577301160654,
+              "Tplus": 2.823601337711278,
+              "Rplus": 2.4301556242523805,
+              "Gminus": -1.8053753359652704,
+              "minus_bminus": -0.08667520778018578,
+              "Tminus": -0.030546630671035278,
+              "Rminus": 0.9336431344437071,
+              "minus_bA": -0.011427691674606258,
+              "TA": 0.2241372627637408,
+              "RA": 0.39171858451281205,
+              "mC": 22.579580494659933
+            },
+            "count": 22,
+            "RMS": {
+              "C": {
+                "R": 9.556115022900133,
+                "m": 32.10359199671451,
+                "pooled_ratio": 0.297664978544398,
+                "route_ratio_quantiles": [
+                  0.21566472633723394,
+                  0.22214527905264567,
+                  0.3714576792449965,
+                  0.5826375839562626,
+                  0.6559393944000753
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 4.825176025514736,
+                "m": 32.21192554892182,
+                "pooled_ratio": 0.14979470935962852,
+                "route_ratio_quantiles": [
+                  0.08736113807216384,
+                  0.10304110266142655,
+                  0.18465308798928498,
+                  0.287284201255103,
+                  0.3062566602501915
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.6727794362362972,
+              "minus_bplus": 0.0164269872116765,
+              "Tplus": -0.1970900636873311,
+              "Rplus": -0.004007395956031791,
+              "Gminus": -0.6149858028694276,
+              "minus_bminus": -0.01911294161717908,
+              "Tminus": 0.2039127750540226,
+              "Rminus": 0.015044159064491759,
+              "minus_bA": -0.0008619402441452422,
+              "TA": 0.008381428278330917,
+              "RA": -0.008322042062043119,
+              "mC": 0.0721645994086609
+            },
+            "count": 50,
+            "RMS": {
+              "C": {
+                "R": 1.3035821680241149,
+                "m": 1.7068356407140275,
+                "pooled_ratio": 0.7637420598264412,
+                "route_ratio_quantiles": [
+                  0.34940260777165116,
+                  0.8324067841701314,
+                  0.9971025018511877,
+                  1.4402390293078997,
+                  2.0195330530682294
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.5445509486825086,
+                "m": 1.2960654010576955,
+                "pooled_ratio": 0.42015699843396054,
+                "route_ratio_quantiles": [
+                  0.1853648831557104,
+                  0.3528789879502259,
+                  0.5835129763507998,
+                  0.9870419218078089,
+                  1.6389905572052184
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 16.72844420781921,
+            "minus_bplus": 0.29269878579993003,
+            "Tplus": 3.0206914013986093,
+            "Rplus": 2.434163020208412,
+            "Gminus": -1.1903895330958427,
+            "minus_bminus": -0.0675622661630067,
+            "Tminus": -0.23445940572505788,
+            "Rminus": 0.9185989753792153,
+            "minus_bA": -0.010565751430461016,
+            "TA": 0.2157558344854099,
+            "RA": 0.4000406265748552,
+            "mC": 22.50741589525127
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 16.72844420781921
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.29269878579993003
+            },
+            {
+              "term": "Tplus",
+              "change": 3.0206914013986093
+            },
+            {
+              "term": "Rplus",
+              "change": 2.434163020208412
+            },
+            {
+              "term": "Gminus",
+              "change": -1.1903895330958427
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.0675622661630067
+            },
+            {
+              "term": "Tminus",
+              "change": -0.23445940572505788
+            },
+            {
+              "term": "Rminus",
+              "change": 0.9185989753792153
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.010565751430461016
+            },
+            {
+              "term": "TA",
+              "change": 0.2157558344854099
+            },
+            {
+              "term": "RA",
+              "change": 0.4000406265748552
+            }
+          ],
+          "weighting": "Within each model, selected uniform; global50 uniform."
+        },
+        "matched_layer_pair5": {
+          "selected": {
+            "mean": {
+              "Gplus": 17.401223644055506,
+              "minus_bplus": 0.30912577301160654,
+              "Tplus": 2.823601337711278,
+              "Rplus": 2.4301556242523805,
+              "Gminus": -1.8053753359652704,
+              "minus_bminus": -0.08667520778018578,
+              "Tminus": -0.030546630671035278,
+              "Rminus": 0.9336431344437071,
+              "minus_bA": -0.011427691674606258,
+              "TA": 0.2241372627637408,
+              "RA": 0.39171858451281205,
+              "mC": 22.579580494659933
+            },
+            "count": 22,
+            "RMS": {
+              "C": {
+                "R": 9.556115022900133,
+                "m": 32.10359199671451,
+                "pooled_ratio": 0.297664978544398,
+                "route_ratio_quantiles": [
+                  0.21566472633723394,
+                  0.22214527905264567,
+                  0.3714576792449965,
+                  0.5826375839562626,
+                  0.6559393944000753
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 4.825176025514736,
+                "m": 32.21192554892182,
+                "pooled_ratio": 0.14979470935962852,
+                "route_ratio_quantiles": [
+                  0.08736113807216384,
+                  0.10304110266142655,
+                  0.18465308798928498,
+                  0.287284201255103,
+                  0.3062566602501915
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.967844762661448,
+              "minus_bplus": 0.030078638060832188,
+              "Tplus": 0.10740759842640582,
+              "Rplus": 0.05683446048185159,
+              "Gminus": -0.7542332280001556,
+              "minus_bminus": -0.03296090704017485,
+              "Tminus": -0.06100048931082815,
+              "Rminus": 0.022186878654787707,
+              "minus_bA": -0.0029909304370520314,
+              "TA": 0.005522984195937708,
+              "RA": 0.014427526181232183,
+              "mC": 0.35311729387428453
+            },
+            "count": 55,
+            "RMS": {
+              "C": {
+                "R": 1.6750117604557366,
+                "m": 2.2017636933385294,
+                "pooled_ratio": 0.7607590975923124,
+                "route_ratio_quantiles": [
+                  0.2714402491033052,
+                  0.6450417023970336,
+                  0.9441490904865589,
+                  1.1592864496960544,
+                  1.7583762640079463
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.6884262276499881,
+                "m": 2.1583450224221057,
+                "pooled_ratio": 0.3189602313338359,
+                "route_ratio_quantiles": [
+                  0.11928466937511038,
+                  0.282392856431861,
+                  0.4548422807046724,
+                  0.6814200597956045,
+                  0.9686839541117772
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 16.43337888139406,
+            "minus_bplus": 0.2790471349507744,
+            "Tplus": 2.716193739284872,
+            "Rplus": 2.373321163770529,
+            "Gminus": -1.0511421079651149,
+            "minus_bminus": -0.053714300740010934,
+            "Tminus": 0.030453858639792875,
+            "Rminus": 0.9114562557889193,
+            "minus_bA": -0.008436761237554227,
+            "TA": 0.21861427856780308,
+            "RA": 0.3772910583315799,
+            "mC": 22.22646320078565
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 16.43337888139406
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.2790471349507744
+            },
+            {
+              "term": "Tplus",
+              "change": 2.716193739284872
+            },
+            {
+              "term": "Rplus",
+              "change": 2.373321163770529
+            },
+            {
+              "term": "Gminus",
+              "change": -1.0511421079651149
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.053714300740010934
+            },
+            {
+              "term": "Tminus",
+              "change": 0.030453858639792875
+            },
+            {
+              "term": "Rminus",
+              "change": 0.9114562557889193
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.008436761237554227
+            },
+            {
+              "term": "TA",
+              "change": 0.21861427856780308
+            },
+            {
+              "term": "RA",
+              "change": 0.3772910583315799
+            }
+          ],
+          "weighting": "Ordinary routes share selected-route mass of the same writer/reader layer pair; no one-to-one head matching."
+        }
+      },
+      "result_SHA": "b7d72edbcc0e65141c2a2f1c494e3308d7559db70b31b5d315a456e30e0a40ed",
+      "source_SHA": "988eb90650593b56db115aa6e438ba7b7b74c1b505941bd4da884107087e03ae",
+      "id": "olmo-90m",
+      "label": "OLMo 90M",
+      "family": "OLMo / Dolma1.7",
+      "checkpoint_label": "fixed public step 29,901"
+    },
+    {
+      "model_source": {
+        "recipe": "Dolma1.7",
+        "scale": "150M",
+        "repo": "allenai/DataDecide-dolma1_7-150M",
+        "branch": "step37500-seed-default",
+        "revision": "829bdefdf0e1500fc27deaabb1998007bf2cd32c",
+        "step": 37500,
+        "training_tokens": 14745600000
+      },
+      "selected": 27,
+      "ordinary_unique": 90,
+      "controls": {
+        "global_random50": {
+          "selected": {
+            "mean": {
+              "Gplus": 9.715315325468138,
+              "minus_bplus": 0.1809974726308578,
+              "Tplus": 1.827579174437477,
+              "Rplus": 1.1075139512852048,
+              "Gminus": -1.5205734890823324,
+              "minus_bminus": -0.05851078700100831,
+              "Tminus": -0.04024947046002267,
+              "Rminus": 0.4716722660576949,
+              "minus_bA": -0.005960612509084634,
+              "TA": 0.33425504230811504,
+              "RA": 0.08104490343540803,
+              "mC": 12.09308377657044
+            },
+            "count": 27,
+            "RMS": {
+              "C": {
+                "R": 4.664655372868703,
+                "m": 15.579321834529427,
+                "pooled_ratio": 0.29941324933221003,
+                "route_ratio_quantiles": [
+                  0.1639141926824522,
+                  0.17547271832570938,
+                  0.2805223009403439,
+                  0.5302723561697144,
+                  0.5706593285884698
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 2.60493414467212,
+                "m": 16.20452117111358,
+                "pooled_ratio": 0.16075354014876506,
+                "route_ratio_quantiles": [
+                  0.07061708099123071,
+                  0.08520692595980074,
+                  0.1136489296533978,
+                  0.27494812473650676,
+                  0.37329643361444914
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.8081966692498304,
+              "minus_bplus": 0.027136116177536706,
+              "Tplus": -0.10199815057415584,
+              "Rplus": 0.017168183048314484,
+              "Gminus": -0.7221240168704431,
+              "minus_bminus": -0.027012586244829745,
+              "Tminus": 0.24070973590921443,
+              "Rminus": 0.032156756900515046,
+              "minus_bA": -0.0012635684008343129,
+              "TA": 0.007023528141094731,
+              "RA": -0.0011341860248072124,
+              "mC": 0.27885848131143587
+            },
+            "count": 50,
+            "RMS": {
+              "C": {
+                "R": 1.420140289515177,
+                "m": 2.03504739819181,
+                "pooled_ratio": 0.6978413823565027,
+                "route_ratio_quantiles": [
+                  0.4202542060016311,
+                  0.6395858958094476,
+                  1.0012858191665,
+                  1.2684965224613798,
+                  1.6760641411452748
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.5476054872145938,
+                "m": 2.041577374541004,
+                "pooled_ratio": 0.2682266633845845,
+                "route_ratio_quantiles": [
+                  0.1806160419980324,
+                  0.3294873274573598,
+                  0.5371383759676294,
+                  0.8738765140306857,
+                  1.5703235925555021
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 8.907118656218309,
+            "minus_bplus": 0.1538613564533211,
+            "Tplus": 1.9295773250116328,
+            "Rplus": 1.0903457682368902,
+            "Gminus": -0.7984494722118892,
+            "minus_bminus": -0.03149820075617857,
+            "Tminus": -0.2809592063692371,
+            "Rminus": 0.43951550915717985,
+            "minus_bA": -0.004697044108250321,
+            "TA": 0.3272315141670203,
+            "RA": 0.08217908946021524,
+            "mC": 11.814225295259003
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 8.907118656218309
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.1538613564533211
+            },
+            {
+              "term": "Tplus",
+              "change": 1.9295773250116328
+            },
+            {
+              "term": "Rplus",
+              "change": 1.0903457682368902
+            },
+            {
+              "term": "Gminus",
+              "change": -0.7984494722118892
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.03149820075617857
+            },
+            {
+              "term": "Tminus",
+              "change": -0.2809592063692371
+            },
+            {
+              "term": "Rminus",
+              "change": 0.43951550915717985
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.004697044108250321
+            },
+            {
+              "term": "TA",
+              "change": 0.3272315141670203
+            },
+            {
+              "term": "RA",
+              "change": 0.08217908946021524
+            }
+          ],
+          "weighting": "Within each model, selected uniform; global50 uniform."
+        },
+        "matched_layer_pair5": {
+          "selected": {
+            "mean": {
+              "Gplus": 9.715315325468138,
+              "minus_bplus": 0.1809974726308578,
+              "Tplus": 1.827579174437477,
+              "Rplus": 1.1075139512852048,
+              "Gminus": -1.5205734890823324,
+              "minus_bminus": -0.05851078700100831,
+              "Tminus": -0.04024947046002267,
+              "Rminus": 0.4716722660576949,
+              "minus_bA": -0.005960612509084634,
+              "TA": 0.33425504230811504,
+              "RA": 0.08104490343540803,
+              "mC": 12.09308377657044
+            },
+            "count": 27,
+            "RMS": {
+              "C": {
+                "R": 4.664655372868703,
+                "m": 15.579321834529427,
+                "pooled_ratio": 0.29941324933221003,
+                "route_ratio_quantiles": [
+                  0.1639141926824522,
+                  0.17547271832570938,
+                  0.2805223009403439,
+                  0.5302723561697144,
+                  0.5706593285884698
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 2.60493414467212,
+                "m": 16.20452117111358,
+                "pooled_ratio": 0.16075354014876506,
+                "route_ratio_quantiles": [
+                  0.07061708099123071,
+                  0.08520692595980074,
+                  0.1136489296533978,
+                  0.27494812473650676,
+                  0.37329643361444914
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 1.2006999652825276,
+              "minus_bplus": 0.03623767289327874,
+              "Tplus": 0.06900006954987575,
+              "Rplus": 0.10348188696587673,
+              "Gminus": -0.8168040953495884,
+              "minus_bminus": -0.030699118077307623,
+              "Tminus": -0.043633730052222694,
+              "Rminus": 0.08386024616751185,
+              "minus_bA": -0.000848763467477507,
+              "TA": 0.027150122910464872,
+              "RA": 0.013349560405853599,
+              "mC": 0.6417938172287946
+            },
+            "count": 40,
+            "RMS": {
+              "C": {
+                "R": 1.4482284726328012,
+                "m": 2.450317639017662,
+                "pooled_ratio": 0.5910370351875683,
+                "route_ratio_quantiles": [
+                  0.36528585856065215,
+                  0.50851790340812,
+                  0.9214662321353845,
+                  1.1336735673042897,
+                  1.8023513381663459
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.689293150953073,
+                "m": 2.653549568975242,
+                "pooled_ratio": 0.2597626812825158,
+                "route_ratio_quantiles": [
+                  0.13393210787886634,
+                  0.23471573576687108,
+                  0.3995364354073885,
+                  0.6084103890410816,
+                  0.8348019245479213
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 8.51461536018561,
+            "minus_bplus": 0.14475979973757908,
+            "Tplus": 1.7585791048876012,
+            "Rplus": 1.0040320643193281,
+            "Gminus": -0.7037693937327439,
+            "minus_bminus": -0.02781166892370069,
+            "Tminus": 0.0033842595922000257,
+            "Rminus": 0.38781201989018305,
+            "minus_bA": -0.005111849041607127,
+            "TA": 0.30710491939765017,
+            "RA": 0.06769534302955443,
+            "mC": 11.451289959341645
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 8.51461536018561
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.14475979973757908
+            },
+            {
+              "term": "Tplus",
+              "change": 1.7585791048876012
+            },
+            {
+              "term": "Rplus",
+              "change": 1.0040320643193281
+            },
+            {
+              "term": "Gminus",
+              "change": -0.7037693937327439
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.02781166892370069
+            },
+            {
+              "term": "Tminus",
+              "change": 0.0033842595922000257
+            },
+            {
+              "term": "Rminus",
+              "change": 0.38781201989018305
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.005111849041607127
+            },
+            {
+              "term": "TA",
+              "change": 0.30710491939765017
+            },
+            {
+              "term": "RA",
+              "change": 0.06769534302955443
+            }
+          ],
+          "weighting": "Ordinary routes share selected-route mass of the same writer/reader layer pair; no one-to-one head matching."
+        }
+      },
+      "result_SHA": "85cb77ab96c52af16b14a86ca1db8f85c5cabe7b499559ef0568766807b21a45",
+      "source_SHA": "e9056d8f058b07c4ad14e008b7fba29e5a1bed7384309a34a412ad45de384b20",
+      "id": "olmo-150m",
+      "label": "OLMo 150M",
+      "family": "OLMo / Dolma1.7",
+      "checkpoint_label": "fixed public step 37,500"
+    },
+    {
+      "model_source": {
+        "recipe": "Dolma1.7",
+        "scale": "300M",
+        "repo": "allenai/DataDecide-dolma1_7-300M",
+        "branch": "step45000-seed-default",
+        "revision": "29a66f2f9ab329cbc2cf68a8e0df9d7807c240ed",
+        "step": 45000,
+        "training_tokens": 29491200000
+      },
+      "selected": 38,
+      "ordinary_unique": 105,
+      "controls": {
+        "global_random50": {
+          "selected": {
+            "mean": {
+              "Gplus": 9.780048484149537,
+              "minus_bplus": 0.17326382304913188,
+              "Tplus": 0.44922121417994687,
+              "Rplus": 1.5857809082292331,
+              "Gminus": -1.5228294609110444,
+              "minus_bminus": -0.051967738014054354,
+              "Tminus": 0.028760025682564763,
+              "Rminus": 0.6544177890984033,
+              "minus_bA": -0.005894729532502115,
+              "TA": 0.2318289560870704,
+              "RA": 0.12364532894840247,
+              "mC": 11.446274600966687
+            },
+            "count": 38,
+            "RMS": {
+              "C": {
+                "R": 4.6356547670958514,
+                "m": 14.390678399816098,
+                "pooled_ratio": 0.3221289947772783,
+                "route_ratio_quantiles": [
+                  0.17341718323935484,
+                  0.1964757105668601,
+                  0.32685916164958384,
+                  0.5358813584219458,
+                  0.6331392089114222
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 2.813468584708535,
+                "m": 14.72166769597819,
+                "pooled_ratio": 0.1911107248723693,
+                "route_ratio_quantiles": [
+                  0.06967953941324591,
+                  0.08720926006116536,
+                  0.15152103451978066,
+                  0.29976100362862523,
+                  0.4437208583601726
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.595471292996416,
+              "minus_bplus": 0.019410959431646696,
+              "Tplus": -0.06242390201825625,
+              "Rplus": -0.01923557650867748,
+              "Gminus": -0.5871980439458531,
+              "minus_bminus": -0.02515790718853711,
+              "Tminus": 0.07022055783016319,
+              "Rminus": -0.017466045739174978,
+              "minus_bA": -0.002611969277733258,
+              "TA": 0.00044979911932155976,
+              "RA": 0.010552275156236014,
+              "mC": -0.017988560144448947
+            },
+            "count": 50,
+            "RMS": {
+              "C": {
+                "R": 1.1444921604288205,
+                "m": 1.2354746842492421,
+                "pooled_ratio": 0.9263582451503579,
+                "route_ratio_quantiles": [
+                  0.4987613223028592,
+                  0.6959689722788925,
+                  0.95555062091694,
+                  1.2976693430170414,
+                  2.097387866565742
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.4492455070279309,
+                "m": 1.1137768567165995,
+                "pooled_ratio": 0.40335324290388036,
+                "route_ratio_quantiles": [
+                  0.25755329532659255,
+                  0.31760642734833644,
+                  0.5567377320234506,
+                  0.8146056710980568,
+                  1.8950991111162077
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 9.18457719115312,
+            "minus_bplus": 0.15385286361748518,
+            "Tplus": 0.5116451161982031,
+            "Rplus": 1.6050164847379107,
+            "Gminus": -0.9356314169651914,
+            "minus_bminus": -0.026809830825517245,
+            "Tminus": -0.04146053214759843,
+            "Rminus": 0.6718838348375783,
+            "minus_bA": -0.003282760254768857,
+            "TA": 0.23137915696774886,
+            "RA": 0.11309305379216646,
+            "mC": 11.464263161111136
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 9.18457719115312
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.15385286361748518
+            },
+            {
+              "term": "Tplus",
+              "change": 0.5116451161982031
+            },
+            {
+              "term": "Rplus",
+              "change": 1.6050164847379107
+            },
+            {
+              "term": "Gminus",
+              "change": -0.9356314169651914
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.026809830825517245
+            },
+            {
+              "term": "Tminus",
+              "change": -0.04146053214759843
+            },
+            {
+              "term": "Rminus",
+              "change": 0.6718838348375783
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.003282760254768857
+            },
+            {
+              "term": "TA",
+              "change": 0.23137915696774886
+            },
+            {
+              "term": "RA",
+              "change": 0.11309305379216646
+            }
+          ],
+          "weighting": "Within each model, selected uniform; global50 uniform."
+        },
+        "matched_layer_pair5": {
+          "selected": {
+            "mean": {
+              "Gplus": 9.780048484149537,
+              "minus_bplus": 0.17326382304913188,
+              "Tplus": 0.44922121417994687,
+              "Rplus": 1.5857809082292331,
+              "Gminus": -1.5228294609110444,
+              "minus_bminus": -0.051967738014054354,
+              "Tminus": 0.028760025682564763,
+              "Rminus": 0.6544177890984033,
+              "minus_bA": -0.005894729532502115,
+              "TA": 0.2318289560870704,
+              "RA": 0.12364532894840247,
+              "mC": 11.446274600966687
+            },
+            "count": 38,
+            "RMS": {
+              "C": {
+                "R": 4.6356547670958514,
+                "m": 14.390678399816098,
+                "pooled_ratio": 0.3221289947772783,
+                "route_ratio_quantiles": [
+                  0.17341718323935484,
+                  0.1964757105668601,
+                  0.32685916164958384,
+                  0.5358813584219458,
+                  0.6331392089114222
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 2.813468584708535,
+                "m": 14.72166769597819,
+                "pooled_ratio": 0.1911107248723693,
+                "route_ratio_quantiles": [
+                  0.06967953941324591,
+                  0.08720926006116536,
+                  0.15152103451978066,
+                  0.29976100362862523,
+                  0.4437208583601726
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 1.168464358211839,
+              "minus_bplus": 0.03166301332139263,
+              "Tplus": 0.16464823437014633,
+              "Rplus": 0.03675008599284762,
+              "Gminus": -0.7517949891445856,
+              "minus_bminus": -0.02824996414986459,
+              "Tminus": -0.05682488158577356,
+              "Rminus": -0.003911567137823812,
+              "minus_bA": -0.002415821017487826,
+              "TA": 0.015292170326930461,
+              "RA": -0.003227965799059397,
+              "mC": 0.5703926733885605
+            },
+            "count": 55,
+            "RMS": {
+              "C": {
+                "R": 1.3146145214356109,
+                "m": 2.857818038542311,
+                "pooled_ratio": 0.46000637679023015,
+                "route_ratio_quantiles": [
+                  0.2138292160251504,
+                  0.522474213763002,
+                  1.0127820678818185,
+                  1.270532678689051,
+                  1.575310481652811
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.5732501104965525,
+                "m": 2.927123289810912,
+                "pooled_ratio": 0.19584078077339326,
+                "route_ratio_quantiles": [
+                  0.0965637083725728,
+                  0.20719505222598603,
+                  0.44850625954268947,
+                  0.6286526565106305,
+                  0.7291467344349692
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 8.611584125937698,
+            "minus_bplus": 0.14160080972773925,
+            "Tplus": 0.28457297980980056,
+            "Rplus": 1.5490308222363856,
+            "Gminus": -0.7710344717664588,
+            "minus_bminus": -0.023717773864189766,
+            "Tminus": 0.08558490726833833,
+            "Rminus": 0.6583293562362271,
+            "minus_bA": -0.0034789085150142888,
+            "TA": 0.21653678576013996,
+            "RA": 0.12687329474746187,
+            "mC": 10.875881927578126
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 8.611584125937698
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.14160080972773925
+            },
+            {
+              "term": "Tplus",
+              "change": 0.28457297980980056
+            },
+            {
+              "term": "Rplus",
+              "change": 1.5490308222363856
+            },
+            {
+              "term": "Gminus",
+              "change": -0.7710344717664588
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.023717773864189766
+            },
+            {
+              "term": "Tminus",
+              "change": 0.08558490726833833
+            },
+            {
+              "term": "Rminus",
+              "change": 0.6583293562362271
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.0034789085150142888
+            },
+            {
+              "term": "TA",
+              "change": 0.21653678576013996
+            },
+            {
+              "term": "RA",
+              "change": 0.12687329474746187
+            }
+          ],
+          "weighting": "Ordinary routes share selected-route mass of the same writer/reader layer pair; no one-to-one head matching."
+        }
+      },
+      "result_SHA": "30b0486a2e2c0f13e4ae8fe0cc91d524fa05aca752a99cc72b69128a23d4d4c3",
+      "source_SHA": "6cb3e9a58265c0e8c096f75de74e6752d55e7fb89863f8d50a13e762818f5a01",
+      "id": "olmo-300m",
+      "label": "OLMo 300M",
+      "family": "OLMo / Dolma1.7",
+      "checkpoint_label": "fixed public step 45,000"
+    },
+    {
+      "model_source": {
+        "recipe": "Dolma1.7",
+        "scale": "530M",
+        "repo": "allenai/DataDecide-dolma1_7-530M",
+        "branch": "step51250-seed-default",
+        "revision": "25a26e17f55a8456b75d065124483c3d4efd6728",
+        "step": 51250,
+        "training_tokens": 47022080000
+      },
+      "selected": 34,
+      "ordinary_unique": 105,
+      "controls": {
+        "global_random50": {
+          "selected": {
+            "mean": {
+              "Gplus": 11.465892347403901,
+              "minus_bplus": 0.19798291384020164,
+              "Tplus": 0.7357553640793166,
+              "Rplus": 0.7004732226377032,
+              "Gminus": -1.2975206772548156,
+              "minus_bminus": -0.0452605521609894,
+              "Tminus": -0.1811568984670769,
+              "Rminus": 0.2993420326599975,
+              "minus_bA": -0.007824579633735004,
+              "TA": 0.44724751690234027,
+              "RA": 0.06453927360254927,
+              "mC": 12.379469963609393
+            },
+            "count": 34,
+            "RMS": {
+              "C": {
+                "R": 3.4049982472453584,
+                "m": 15.221790284352474,
+                "pooled_ratio": 0.22369236362069647,
+                "route_ratio_quantiles": [
+                  0.12430990676538987,
+                  0.144382043774827,
+                  0.2057555328691148,
+                  0.39939057578596737,
+                  0.5773903181366998
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 1.8246654893980478,
+                "m": 15.71203384227423,
+                "pooled_ratio": 0.11613171838318402,
+                "route_ratio_quantiles": [
+                  0.04707760844674901,
+                  0.06623377880782484,
+                  0.10258904658155525,
+                  0.21342552273367077,
+                  0.3213330440682512
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.5783491725998532,
+              "minus_bplus": 0.01606057829706284,
+              "Tplus": -0.04911337177908806,
+              "Rplus": -0.0017736345960195524,
+              "Gminus": -0.5175402205180343,
+              "minus_bminus": -0.019803360934306007,
+              "Tminus": 0.0807601999556167,
+              "Rminus": 0.017202876266992045,
+              "minus_bA": -0.004488246119964543,
+              "TA": 0.025353894544678172,
+              "RA": 0.007712974224908753,
+              "mC": 0.13272086194169933
+            },
+            "count": 50,
+            "RMS": {
+              "C": {
+                "R": 0.8662330875109882,
+                "m": 1.071769968932767,
+                "pooled_ratio": 0.8082266835425089,
+                "route_ratio_quantiles": [
+                  0.2997087117727594,
+                  0.5732841034141367,
+                  0.8714280299507352,
+                  1.1176811685713408,
+                  1.4378272007050363
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.35360484901557165,
+                "m": 1.0161714530483075,
+                "pooled_ratio": 0.34797754646111057,
+                "route_ratio_quantiles": [
+                  0.14241148193969735,
+                  0.248921934805809,
+                  0.45291522536841883,
+                  0.8086166541723487,
+                  1.022592548666919
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 10.887543174804048,
+            "minus_bplus": 0.1819223355431388,
+            "Tplus": 0.7848687358584047,
+            "Rplus": 0.7022468572337227,
+            "Gminus": -0.7799804567367813,
+            "minus_bminus": -0.02545719122668339,
+            "Tminus": -0.2619170984226936,
+            "Rminus": 0.28213915639300546,
+            "minus_bA": -0.0033363335137704606,
+            "TA": 0.4218936223576621,
+            "RA": 0.05682629937764051,
+            "mC": 12.246749101667694
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 10.887543174804048
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.1819223355431388
+            },
+            {
+              "term": "Tplus",
+              "change": 0.7848687358584047
+            },
+            {
+              "term": "Rplus",
+              "change": 0.7022468572337227
+            },
+            {
+              "term": "Gminus",
+              "change": -0.7799804567367813
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.02545719122668339
+            },
+            {
+              "term": "Tminus",
+              "change": -0.2619170984226936
+            },
+            {
+              "term": "Rminus",
+              "change": 0.28213915639300546
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.0033363335137704606
+            },
+            {
+              "term": "TA",
+              "change": 0.4218936223576621
+            },
+            {
+              "term": "RA",
+              "change": 0.05682629937764051
+            }
+          ],
+          "weighting": "Within each model, selected uniform; global50 uniform."
+        },
+        "matched_layer_pair5": {
+          "selected": {
+            "mean": {
+              "Gplus": 11.465892347403901,
+              "minus_bplus": 0.19798291384020164,
+              "Tplus": 0.7357553640793166,
+              "Rplus": 0.7004732226377032,
+              "Gminus": -1.2975206772548156,
+              "minus_bminus": -0.0452605521609894,
+              "Tminus": -0.1811568984670769,
+              "Rminus": 0.2993420326599975,
+              "minus_bA": -0.007824579633735004,
+              "TA": 0.44724751690234027,
+              "RA": 0.06453927360254927,
+              "mC": 12.379469963609393
+            },
+            "count": 34,
+            "RMS": {
+              "C": {
+                "R": 3.4049982472453584,
+                "m": 15.221790284352474,
+                "pooled_ratio": 0.22369236362069647,
+                "route_ratio_quantiles": [
+                  0.12430990676538987,
+                  0.144382043774827,
+                  0.2057555328691148,
+                  0.39939057578596737,
+                  0.5773903181366998
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 1.8246654893980478,
+                "m": 15.71203384227423,
+                "pooled_ratio": 0.11613171838318402,
+                "route_ratio_quantiles": [
+                  0.04707760844674901,
+                  0.06623377880782484,
+                  0.10258904658155525,
+                  0.21342552273367077,
+                  0.3213330440682512
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.70529595645917,
+              "minus_bplus": 0.021949945360920937,
+              "Tplus": 0.06672911232659585,
+              "Rplus": 0.01662517545159713,
+              "Gminus": -0.627477654867879,
+              "minus_bminus": -0.028035273829488925,
+              "Tminus": -0.029881838305864165,
+              "Rminus": 0.05984993312384088,
+              "minus_bA": -0.004279556068299053,
+              "TA": 0.016237842690468313,
+              "RA": 0.004246965406079744,
+              "mC": 0.20126060774714175
+            },
+            "count": 55,
+            "RMS": {
+              "C": {
+                "R": 1.086551581370645,
+                "m": 1.5672834217676639,
+                "pooled_ratio": 0.6932706403192701,
+                "route_ratio_quantiles": [
+                  0.3349238912270066,
+                  0.628230090037691,
+                  0.8425571070434412,
+                  1.1295768104838613,
+                  1.3076836166568695
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.5037678781336511,
+                "m": 1.685374436661546,
+                "pooled_ratio": 0.2989056124118826,
+                "route_ratio_quantiles": [
+                  0.15639707477795228,
+                  0.22641622871506603,
+                  0.3770303300615314,
+                  0.6772278463246668,
+                  0.9785538046428582
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 10.760596390944732,
+            "minus_bplus": 0.1760329684792807,
+            "Tplus": 0.6690262517527208,
+            "Rplus": 0.683848047186106,
+            "Gminus": -0.6700430223869366,
+            "minus_bminus": -0.017225278331500473,
+            "Tminus": -0.15127506016121273,
+            "Rminus": 0.2394920995361566,
+            "minus_bA": -0.0035450235654359502,
+            "TA": 0.431009674211872,
+            "RA": 0.060292308196469524,
+            "mC": 12.178209355862252
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 10.760596390944732
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.1760329684792807
+            },
+            {
+              "term": "Tplus",
+              "change": 0.6690262517527208
+            },
+            {
+              "term": "Rplus",
+              "change": 0.683848047186106
+            },
+            {
+              "term": "Gminus",
+              "change": -0.6700430223869366
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.017225278331500473
+            },
+            {
+              "term": "Tminus",
+              "change": -0.15127506016121273
+            },
+            {
+              "term": "Rminus",
+              "change": 0.2394920995361566
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.0035450235654359502
+            },
+            {
+              "term": "TA",
+              "change": 0.431009674211872
+            },
+            {
+              "term": "RA",
+              "change": 0.060292308196469524
+            }
+          ],
+          "weighting": "Ordinary routes share selected-route mass of the same writer/reader layer pair; no one-to-one head matching."
+        }
+      },
+      "result_SHA": "1291e716255ca872709a5ca85e9562158661db5730d0a8518ccdb12d75aac08c",
+      "source_SHA": "bea4191ea3e2ec939f1915d2ae2c73c93ca6a7aefa05039d5cd391dcde253e8e",
+      "id": "olmo-530m",
+      "label": "OLMo 530M",
+      "family": "OLMo / Dolma1.7",
+      "checkpoint_label": "fixed public step 51,250"
+    },
+    {
+      "model_source": {
+        "recipe": "Dolma1.7",
+        "scale": "750M",
+        "repo": "allenai/DataDecide-dolma1_7-750M",
+        "branch": "step27500-seed-default",
+        "revision": "2b4f0413a71930b5dd2c29ed5d4cc5215d973aba",
+        "step": 27500,
+        "training_tokens": 32440320000
+      },
+      "selected": 35,
+      "ordinary_unique": 120,
+      "controls": {
+        "global_random50": {
+          "selected": {
+            "mean": {
+              "Gplus": 15.11388645121881,
+              "minus_bplus": 0.2684273874416901,
+              "Tplus": 4.358457682110627,
+              "Rplus": 1.6146398611486918,
+              "Gminus": -2.3871359376477255,
+              "minus_bminus": -0.07810274254837869,
+              "Tminus": -0.5042955158102687,
+              "Rminus": 0.6966653599427555,
+              "minus_bA": -0.012631807548535573,
+              "TA": 0.6368833874733668,
+              "RA": 0.1562727677288053,
+              "mC": 19.863066893509846
+            },
+            "count": 35,
+            "RMS": {
+              "C": {
+                "R": 6.123279833820471,
+                "m": 25.02206393624935,
+                "pooled_ratio": 0.24471521811395036,
+                "route_ratio_quantiles": [
+                  0.1212614375443079,
+                  0.1605192542899237,
+                  0.2552370003793966,
+                  0.4299162290099086,
+                  0.5018350456550321
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 3.4216900464938664,
+                "m": 26.261657962702124,
+                "pooled_ratio": 0.13029223255262443,
+                "route_ratio_quantiles": [
+                  0.04679771087041446,
+                  0.06910349579425788,
+                  0.1216491734098567,
+                  0.23379790442411127,
+                  0.30443303283468465
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 1.4043596697843883,
+              "minus_bplus": 0.030278869209562166,
+              "Tplus": -0.23159159783527633,
+              "Rplus": 0.05477840074978628,
+              "Gminus": -1.3289320146207526,
+              "minus_bminus": -0.039209794615024954,
+              "Tminus": 0.265168324536095,
+              "Rminus": 0.003946949491785045,
+              "minus_bA": -0.0063424525395061205,
+              "TA": 0.03450967930029048,
+              "RA": 0.009812783004633204,
+              "mC": 0.19677881646598136
+            },
+            "count": 50,
+            "RMS": {
+              "C": {
+                "R": 1.9246880064586902,
+                "m": 2.495202744054659,
+                "pooled_ratio": 0.7713553582147425,
+                "route_ratio_quantiles": [
+                  0.26486597882449253,
+                  0.6658356849917056,
+                  0.9059467700374659,
+                  1.1533099264650621,
+                  1.4361419380607348
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.7665999344340411,
+                "m": 2.459162107821358,
+                "pooled_ratio": 0.3117321676337937,
+                "route_ratio_quantiles": [
+                  0.11618378408384365,
+                  0.2859221377473684,
+                  0.4580581037400537,
+                  0.7716104198734338,
+                  1.0179809047579995
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 13.709526781434423,
+            "minus_bplus": 0.23814851823212793,
+            "Tplus": 4.590049279945903,
+            "Rplus": 1.5598614603989056,
+            "Gminus": -1.0582039230269729,
+            "minus_bminus": -0.03889294793335374,
+            "Tminus": -0.7694638403463636,
+            "Rminus": 0.6927184104509704,
+            "minus_bA": -0.0062893550090294525,
+            "TA": 0.6023737081730763,
+            "RA": 0.1464599847241721,
+            "mC": 19.666288077043863
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 13.709526781434423
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.23814851823212793
+            },
+            {
+              "term": "Tplus",
+              "change": 4.590049279945903
+            },
+            {
+              "term": "Rplus",
+              "change": 1.5598614603989056
+            },
+            {
+              "term": "Gminus",
+              "change": -1.0582039230269729
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.03889294793335374
+            },
+            {
+              "term": "Tminus",
+              "change": -0.7694638403463636
+            },
+            {
+              "term": "Rminus",
+              "change": 0.6927184104509704
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.0062893550090294525
+            },
+            {
+              "term": "TA",
+              "change": 0.6023737081730763
+            },
+            {
+              "term": "RA",
+              "change": 0.1464599847241721
+            }
+          ],
+          "weighting": "Within each model, selected uniform; global50 uniform."
+        },
+        "matched_layer_pair5": {
+          "selected": {
+            "mean": {
+              "Gplus": 15.11388645121881,
+              "minus_bplus": 0.2684273874416901,
+              "Tplus": 4.358457682110627,
+              "Rplus": 1.6146398611486918,
+              "Gminus": -2.3871359376477255,
+              "minus_bminus": -0.07810274254837869,
+              "Tminus": -0.5042955158102687,
+              "Rminus": 0.6966653599427555,
+              "minus_bA": -0.012631807548535573,
+              "TA": 0.6368833874733668,
+              "RA": 0.1562727677288053,
+              "mC": 19.863066893509846
+            },
+            "count": 35,
+            "RMS": {
+              "C": {
+                "R": 6.123279833820471,
+                "m": 25.02206393624935,
+                "pooled_ratio": 0.24471521811395036,
+                "route_ratio_quantiles": [
+                  0.1212614375443079,
+                  0.1605192542899237,
+                  0.2552370003793966,
+                  0.4299162290099086,
+                  0.5018350456550321
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 3.4216900464938664,
+                "m": 26.261657962702124,
+                "pooled_ratio": 0.13029223255262443,
+                "route_ratio_quantiles": [
+                  0.04679771087041446,
+                  0.06910349579425788,
+                  0.1216491734098567,
+                  0.23379790442411127,
+                  0.30443303283468465
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 1.7221230489129902,
+              "minus_bplus": 0.047641282833152436,
+              "Tplus": 0.3192419688510437,
+              "Rplus": 0.11021279121105927,
+              "Gminus": -1.3386794883571251,
+              "minus_bminus": -0.05254402218447175,
+              "Tminus": -0.22697843367099355,
+              "Rminus": 0.07700737382723885,
+              "minus_bA": -0.005729914465761453,
+              "TA": 0.05124369568338098,
+              "RA": 0.026183315180842492,
+              "mC": 0.7297216178213556
+            },
+            "count": 70,
+            "RMS": {
+              "C": {
+                "R": 2.285499967379271,
+                "m": 3.309551624005328,
+                "pooled_ratio": 0.690576920088433,
+                "route_ratio_quantiles": [
+                  0.20908584098921715,
+                  0.5146946925446608,
+                  0.8688105823072534,
+                  1.136761666182532,
+                  1.4846870357843676
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.9458218660388354,
+                "m": 3.592173280087901,
+                "pooled_ratio": 0.2633007353185621,
+                "route_ratio_quantiles": [
+                  0.0782860607060645,
+                  0.21281869006264872,
+                  0.3635531096097082,
+                  0.5256130057958871,
+                  0.744537139539371
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 13.39176340230582,
+            "minus_bplus": 0.22078610460853765,
+            "Tplus": 4.039215713259583,
+            "Rplus": 1.5044270699376325,
+            "Gminus": -1.0484564492906003,
+            "minus_bminus": -0.02555872036390694,
+            "Tminus": -0.2773170821392751,
+            "Rminus": 0.6196579861155166,
+            "minus_bA": -0.00690189308277412,
+            "TA": 0.5856396917899859,
+            "RA": 0.1300894525479628,
+            "mC": 19.13334527568849
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 13.39176340230582
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.22078610460853765
+            },
+            {
+              "term": "Tplus",
+              "change": 4.039215713259583
+            },
+            {
+              "term": "Rplus",
+              "change": 1.5044270699376325
+            },
+            {
+              "term": "Gminus",
+              "change": -1.0484564492906003
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.02555872036390694
+            },
+            {
+              "term": "Tminus",
+              "change": -0.2773170821392751
+            },
+            {
+              "term": "Rminus",
+              "change": 0.6196579861155166
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.00690189308277412
+            },
+            {
+              "term": "TA",
+              "change": 0.5856396917899859
+            },
+            {
+              "term": "RA",
+              "change": 0.1300894525479628
+            }
+          ],
+          "weighting": "Ordinary routes share selected-route mass of the same writer/reader layer pair; no one-to-one head matching."
+        }
+      },
+      "result_SHA": "355fd89913262e1202920c5e93a803d14e2eba2e0a67e65e1ecf4c93670d6d2a",
+      "source_SHA": "e911f06066bb7886a58f4ade3866304dc6731371850864499d68cb89aebf081d",
+      "id": "olmo-750m",
+      "label": "OLMo 750M",
+      "family": "OLMo / Dolma1.7",
+      "checkpoint_label": "fixed public step 27,500"
+    },
+    {
+      "model_source": {
+        "recipe": "Dolma1.7",
+        "scale": "1B",
+        "repo": "allenai/DataDecide-dolma1_7-1B",
+        "branch": "step69369-seed-default",
+        "revision": "c880c1565f57c13eab7e41d53fe3351be2ef38a9",
+        "step": 69369,
+        "training_tokens": 100015669248
+      },
+      "selected": 34,
+      "ordinary_unique": 115,
+      "controls": {
+        "global_random50": {
+          "selected": {
+            "mean": {
+              "Gplus": 7.25853708600873,
+              "minus_bplus": 0.1377615265852792,
+              "Tplus": 2.567401344648258,
+              "Rplus": 0.6886454450428872,
+              "Gminus": -1.3313833639146213,
+              "minus_bminus": -0.05362785754755596,
+              "Tminus": -0.1692503386295844,
+              "Rminus": 0.2907231873089664,
+              "minus_bA": -0.007534053867404111,
+              "TA": 0.48389888534859893,
+              "RA": 0.03268629521674081,
+              "mC": 9.897858156200293
+            },
+            "count": 34,
+            "RMS": {
+              "C": {
+                "R": 2.732748852517553,
+                "m": 12.607031706199635,
+                "pooled_ratio": 0.21676385974136134,
+                "route_ratio_quantiles": [
+                  0.11934184598745864,
+                  0.13734493332887202,
+                  0.23314061725566587,
+                  0.4099789091698147,
+                  0.5273985893037194
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 1.505596487551868,
+                "m": 13.271723737241635,
+                "pooled_ratio": 0.11344392916551077,
+                "route_ratio_quantiles": [
+                  0.059076244182679725,
+                  0.0627052099750705,
+                  0.11118746909651125,
+                  0.25296071183848756,
+                  0.2815856160172583
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.7996151941749935,
+              "minus_bplus": 0.026948293095323553,
+              "Tplus": -0.036129715475648326,
+              "Rplus": 0.007695867105848233,
+              "Gminus": -0.7326060953097955,
+              "minus_bminus": -0.030138559340117946,
+              "Tminus": 0.10544151366568986,
+              "Rminus": 0.017692691254211704,
+              "minus_bA": -0.0018783781671430002,
+              "TA": 0.025492676441764405,
+              "RA": 0.013356160351417602,
+              "mC": 0.19548964779654437
+            },
+            "count": 50,
+            "RMS": {
+              "C": {
+                "R": 1.0001657905721453,
+                "m": 1.2308820971217123,
+                "pooled_ratio": 0.8125601898922141,
+                "route_ratio_quantiles": [
+                  0.4151666983789829,
+                  0.6397874470674839,
+                  0.8858552687047745,
+                  1.1055776652469462,
+                  1.50969271403672
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.425019516285558,
+                "m": 1.491763659293278,
+                "pooled_ratio": 0.2849107589113082,
+                "route_ratio_quantiles": [
+                  0.15756274340684226,
+                  0.22301436427403054,
+                  0.3486822778256404,
+                  0.6884293040003531,
+                  1.055611956055422
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 6.458921891833737,
+            "minus_bplus": 0.11081323348995566,
+            "Tplus": 2.6035310601239066,
+            "Rplus": 0.6809495779370389,
+            "Gminus": -0.5987772686048258,
+            "minus_bminus": -0.023489298207438013,
+            "Tminus": -0.27469185229527426,
+            "Rminus": 0.2730304960547547,
+            "minus_bA": -0.005655675700261111,
+            "TA": 0.45840620890683453,
+            "RA": 0.019330134865323208,
+            "mC": 9.70236850840375
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 6.458921891833737
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.11081323348995566
+            },
+            {
+              "term": "Tplus",
+              "change": 2.6035310601239066
+            },
+            {
+              "term": "Rplus",
+              "change": 0.6809495779370389
+            },
+            {
+              "term": "Gminus",
+              "change": -0.5987772686048258
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.023489298207438013
+            },
+            {
+              "term": "Tminus",
+              "change": -0.27469185229527426
+            },
+            {
+              "term": "Rminus",
+              "change": 0.2730304960547547
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.005655675700261111
+            },
+            {
+              "term": "TA",
+              "change": 0.45840620890683453
+            },
+            {
+              "term": "RA",
+              "change": 0.019330134865323208
+            }
+          ],
+          "weighting": "Within each model, selected uniform; global50 uniform."
+        },
+        "matched_layer_pair5": {
+          "selected": {
+            "mean": {
+              "Gplus": 7.25853708600873,
+              "minus_bplus": 0.1377615265852792,
+              "Tplus": 2.567401344648258,
+              "Rplus": 0.6886454450428872,
+              "Gminus": -1.3313833639146213,
+              "minus_bminus": -0.05362785754755596,
+              "Tminus": -0.1692503386295844,
+              "Rminus": 0.2907231873089664,
+              "minus_bA": -0.007534053867404111,
+              "TA": 0.48389888534859893,
+              "RA": 0.03268629521674081,
+              "mC": 9.897858156200293
+            },
+            "count": 34,
+            "RMS": {
+              "C": {
+                "R": 2.732748852517553,
+                "m": 12.607031706199635,
+                "pooled_ratio": 0.21676385974136134,
+                "route_ratio_quantiles": [
+                  0.11934184598745864,
+                  0.13734493332887202,
+                  0.23314061725566587,
+                  0.4099789091698147,
+                  0.5273985893037194
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 1.505596487551868,
+                "m": 13.271723737241635,
+                "pooled_ratio": 0.11344392916551077,
+                "route_ratio_quantiles": [
+                  0.059076244182679725,
+                  0.0627052099750705,
+                  0.11118746909651125,
+                  0.25296071183848756,
+                  0.2815856160172583
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.6388712059009535,
+              "minus_bplus": 0.022546441488096387,
+              "Tplus": 0.08424553003734478,
+              "Rplus": 0.0036186952041956416,
+              "Gminus": -0.5909335354641498,
+              "minus_bminus": -0.026670548795640632,
+              "Tminus": -0.07205811115605569,
+              "Rminus": -0.008735314482418422,
+              "minus_bA": -0.002635615534115709,
+              "TA": 0.006365484137871495,
+              "RA": -0.0006512630003825219,
+              "mC": 0.053962968335699295
+            },
+            "count": 65,
+            "RMS": {
+              "C": {
+                "R": 0.7349085738423289,
+                "m": 0.9033547576563961,
+                "pooled_ratio": 0.8135326322395502,
+                "route_ratio_quantiles": [
+                  0.2511019422061633,
+                  0.5495178938548946,
+                  0.8856655133410266,
+                  1.0987276695988344,
+                  1.6176517225594398
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.31483935926530204,
+                "m": 1.0705702933409147,
+                "pooled_ratio": 0.29408564876462895,
+                "route_ratio_quantiles": [
+                  0.11208731402167467,
+                  0.2073466571181804,
+                  0.3585522106529011,
+                  0.534746502469247,
+                  0.7729412676234043
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 6.619665880107777,
+            "minus_bplus": 0.11521508509718283,
+            "Tplus": 2.4831558146109134,
+            "Rplus": 0.6850267498386915,
+            "Gminus": -0.7404498284504715,
+            "minus_bminus": -0.026957308751915328,
+            "Tminus": -0.09719222747352872,
+            "Rminus": 0.29945850179138483,
+            "minus_bA": -0.004898438333288402,
+            "TA": 0.47753340121072746,
+            "RA": 0.03333755821712333,
+            "mC": 9.843895187864593
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 6.619665880107777
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.11521508509718283
+            },
+            {
+              "term": "Tplus",
+              "change": 2.4831558146109134
+            },
+            {
+              "term": "Rplus",
+              "change": 0.6850267498386915
+            },
+            {
+              "term": "Gminus",
+              "change": -0.7404498284504715
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.026957308751915328
+            },
+            {
+              "term": "Tminus",
+              "change": -0.09719222747352872
+            },
+            {
+              "term": "Rminus",
+              "change": 0.29945850179138483
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.004898438333288402
+            },
+            {
+              "term": "TA",
+              "change": 0.47753340121072746
+            },
+            {
+              "term": "RA",
+              "change": 0.03333755821712333
+            }
+          ],
+          "weighting": "Ordinary routes share selected-route mass of the same writer/reader layer pair; no one-to-one head matching."
+        }
+      },
+      "result_SHA": "d042f34c2167487388386dd485ffa24749594f7e7947e0b3adc467be5eb15170",
+      "source_SHA": "a872e193a6557eb1df4a504d4a77f73d70fec2a2cb6c64a086b1e6a9a57f843d",
+      "id": "olmo-1b",
+      "label": "OLMo 1B",
+      "family": "OLMo / Dolma1.7",
+      "checkpoint_label": "fixed public step 69,369"
+    },
+    {
+      "model_source": {
+        "family": "qwen2",
+        "scale": "0.5B",
+        "repo": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      },
+      "selected": 29,
+      "ordinary_unique": 75,
+      "controls": {
+        "global_random50": {
+          "selected": {
+            "mean": {
+              "Gplus": 4.071498574356345,
+              "minus_bplus": 0.06687913022227025,
+              "Tplus": 0.8866698727706835,
+              "Rplus": -0.011366791066309136,
+              "Gminus": -0.2517214961530245,
+              "minus_bminus": -0.005264386122590852,
+              "Tminus": -0.012693701615190338,
+              "Rminus": 0.0022798421810976324,
+              "minus_bA": 0.0006856801597454383,
+              "TA": 0.2522985353333046,
+              "RA": 0.011947014530746513,
+              "mC": 5.011212274597081
+            },
+            "count": 29,
+            "RMS": {
+              "C": {
+                "R": 0.19490910897784922,
+                "m": 6.327156138176217,
+                "pooled_ratio": 0.03080516818635539,
+                "route_ratio_quantiles": [
+                  0.007372547882091296,
+                  0.014697614877228657,
+                  0.03260274148983507,
+                  0.08280902155870398,
+                  0.2959901134624605
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.10477844298111226,
+                "m": 6.19678950474671,
+                "pooled_ratio": 0.016908504460390737,
+                "route_ratio_quantiles": [
+                  0.00393175957657979,
+                  0.005987631963192544,
+                  0.015870929386374976,
+                  0.03808343629321324,
+                  0.11559522216854888
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.08842510265177257,
+              "minus_bplus": 0.002404779342980876,
+              "Tplus": -0.03891985172807639,
+              "Rplus": -0.0003306822678123791,
+              "Gminus": -0.08358035565619344,
+              "minus_bminus": -0.0021742260380245874,
+              "Tminus": 0.03993118954083466,
+              "Rminus": 0.0008318041324314205,
+              "minus_bA": -0.00018487348796792066,
+              "TA": 0.001816079260031675,
+              "RA": 0.0010307048360829471,
+              "mC": 0.0092496705860594
+            },
+            "count": 50,
+            "RMS": {
+              "C": {
+                "R": 0.05823397826600833,
+                "m": 0.1510245628320736,
+                "pooled_ratio": 0.38559276169373546,
+                "route_ratio_quantiles": [
+                  0.09139637584802307,
+                  0.17567723905639548,
+                  0.5137416281519553,
+                  0.9026965918210901,
+                  1.057965414656632
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.02819799728143559,
+                "m": 0.10727751671948184,
+                "pooled_ratio": 0.26285095091425403,
+                "route_ratio_quantiles": [
+                  0.07666632146966391,
+                  0.12659941071116243,
+                  0.30484726496131853,
+                  0.5867444431166361,
+                  1.0951807788591892
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 3.9830734717045724,
+            "minus_bplus": 0.06447435087928938,
+            "Tplus": 0.92558972449876,
+            "Rplus": -0.011036108798496758,
+            "Gminus": -0.1681411404968311,
+            "minus_bminus": -0.0030901600845662644,
+            "Tminus": -0.052624891156025,
+            "Rminus": 0.0014480380486662117,
+            "minus_bA": 0.0008705536477133589,
+            "TA": 0.2504824560732729,
+            "RA": 0.010916309694663565,
+            "mC": 5.001962604011021
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 3.9830734717045724
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.06447435087928938
+            },
+            {
+              "term": "Tplus",
+              "change": 0.92558972449876
+            },
+            {
+              "term": "Rplus",
+              "change": -0.011036108798496758
+            },
+            {
+              "term": "Gminus",
+              "change": -0.1681411404968311
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.0030901600845662644
+            },
+            {
+              "term": "Tminus",
+              "change": -0.052624891156025
+            },
+            {
+              "term": "Rminus",
+              "change": 0.0014480380486662117
+            },
+            {
+              "term": "minus_bA",
+              "change": 0.0008705536477133589
+            },
+            {
+              "term": "TA",
+              "change": 0.2504824560732729
+            },
+            {
+              "term": "RA",
+              "change": 0.010916309694663565
+            }
+          ],
+          "weighting": "Within each model, selected uniform; global50 uniform."
+        },
+        "matched_layer_pair5": {
+          "selected": {
+            "mean": {
+              "Gplus": 4.071498574356345,
+              "minus_bplus": 0.06687913022227025,
+              "Tplus": 0.8866698727706835,
+              "Rplus": -0.011366791066309136,
+              "Gminus": -0.2517214961530245,
+              "minus_bminus": -0.005264386122590852,
+              "Tminus": -0.012693701615190338,
+              "Rminus": 0.0022798421810976324,
+              "minus_bA": 0.0006856801597454383,
+              "TA": 0.2522985353333046,
+              "RA": 0.011947014530746513,
+              "mC": 5.011212274597081
+            },
+            "count": 29,
+            "RMS": {
+              "C": {
+                "R": 0.19490910897784922,
+                "m": 6.327156138176217,
+                "pooled_ratio": 0.03080516818635539,
+                "route_ratio_quantiles": [
+                  0.007372547882091296,
+                  0.014697614877228657,
+                  0.03260274148983507,
+                  0.08280902155870398,
+                  0.2959901134624605
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.10477844298111226,
+                "m": 6.19678950474671,
+                "pooled_ratio": 0.016908504460390737,
+                "route_ratio_quantiles": [
+                  0.00393175957657979,
+                  0.005987631963192544,
+                  0.015870929386374976,
+                  0.03808343629321324,
+                  0.11559522216854888
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.11386648064155451,
+              "minus_bplus": 0.003117291941905682,
+              "Tplus": 0.017849882371926203,
+              "Rplus": -0.0005273908568517858,
+              "Gminus": -0.09841707970365143,
+              "minus_bminus": -0.002762913113914901,
+              "Tminus": -0.011124123394566369,
+              "Rminus": -8.465600186093882e-05,
+              "minus_bA": 0.00013179289197021908,
+              "TA": 0.00969446175746888,
+              "RA": 0.003231565927530192,
+              "mC": 0.034975312461510234
+            },
+            "count": 25,
+            "RMS": {
+              "C": {
+                "R": 0.10238894553192787,
+                "m": 0.2447666841630662,
+                "pooled_ratio": 0.41831242630927357,
+                "route_ratio_quantiles": [
+                  0.11184978230093394,
+                  0.16996044267852295,
+                  0.5278600477980971,
+                  0.9789855154521322,
+                  1.2916163598003958
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.05978986189511924,
+                "m": 0.24058841961897054,
+                "pooled_ratio": 0.24851512799248954,
+                "route_ratio_quantiles": [
+                  0.05229987648859969,
+                  0.08176718785679978,
+                  0.2849528594542809,
+                  0.6709510065281153,
+                  0.9822740121106828
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 3.9576320937147904,
+            "minus_bplus": 0.06376183828036457,
+            "Tplus": 0.8688199903987573,
+            "Rplus": -0.01083940020945735,
+            "Gminus": -0.1533044164493731,
+            "minus_bminus": -0.0025014730086759507,
+            "Tminus": -0.001569578220623969,
+            "Rminus": 0.002364498182958571,
+            "minus_bA": 0.0005538872677752192,
+            "TA": 0.24260407357583572,
+            "RA": 0.008715448603216321,
+            "mC": 4.97623696213557
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 3.9576320937147904
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.06376183828036457
+            },
+            {
+              "term": "Tplus",
+              "change": 0.8688199903987573
+            },
+            {
+              "term": "Rplus",
+              "change": -0.01083940020945735
+            },
+            {
+              "term": "Gminus",
+              "change": -0.1533044164493731
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.0025014730086759507
+            },
+            {
+              "term": "Tminus",
+              "change": -0.001569578220623969
+            },
+            {
+              "term": "Rminus",
+              "change": 0.002364498182958571
+            },
+            {
+              "term": "minus_bA",
+              "change": 0.0005538872677752192
+            },
+            {
+              "term": "TA",
+              "change": 0.24260407357583572
+            },
+            {
+              "term": "RA",
+              "change": 0.008715448603216321
+            }
+          ],
+          "weighting": "Ordinary routes share selected-route mass of the same writer/reader layer pair; no one-to-one head matching."
+        }
+      },
+      "result_SHA": "60967eedec7b3c3dc5b654a67c4692479ee5e10a671012d22ca4c5fa7654b252",
+      "source_SHA": "e688148a5f291508847b4a07807c2de28373450815fdc3f98f6e69b597caa812",
+      "id": "qwen2p5-0p5b",
+      "label": "Qwen2.5 0.5B",
+      "family": "Qwen2.5 Base",
+      "checkpoint_label": "pinned public Base weights"
+    },
+    {
+      "model_source": {
+        "family": "qwen2",
+        "scale": "1.5B",
+        "repo": "Qwen/Qwen2.5-1.5B",
+        "revision": "8faed761d45a263340a0528343f099c05c9a4323"
+      },
+      "selected": 29,
+      "ordinary_unique": 90,
+      "controls": {
+        "global_random50": {
+          "selected": {
+            "mean": {
+              "Gplus": 6.7028223233104525,
+              "minus_bplus": 0.12367588271881876,
+              "Tplus": 2.3103899645102564,
+              "Rplus": -0.004841920230253777,
+              "Gminus": -0.5338407298863634,
+              "minus_bminus": -0.018185584856635816,
+              "Tminus": 0.017763015697357488,
+              "Rminus": 0.003597660903049133,
+              "minus_bA": 0.0002730999322576392,
+              "TA": 0.6450171451295997,
+              "RA": 0.007919514611764204,
+              "mC": 9.254590371840301
+            },
+            "count": 29,
+            "RMS": {
+              "C": {
+                "R": 0.330914119624267,
+                "m": 13.71701797307135,
+                "pooled_ratio": 0.024124348329491375,
+                "route_ratio_quantiles": [
+                  0.008289516240778432,
+                  0.012153129412646537,
+                  0.030136845899983323,
+                  0.0725303538236751,
+                  0.12396110570301899
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.16685496348826742,
+                "m": 13.455282141940383,
+                "pooled_ratio": 0.012400703435877956,
+                "route_ratio_quantiles": [
+                  0.004904481100036696,
+                  0.005041912124975139,
+                  0.01935134713769731,
+                  0.033060968764647175,
+                  0.04880891322853231
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.34807450111881033,
+              "minus_bplus": 0.011878409954430928,
+              "Tplus": -0.14994564481854736,
+              "Rplus": -0.00137230526609745,
+              "Gminus": -0.34212834186944513,
+              "minus_bminus": -0.01135706906480884,
+              "Tminus": 0.1485656790666179,
+              "Rminus": 0.0034343692704999307,
+              "minus_bA": -0.00013430282845824717,
+              "TA": 0.0062255984257188505,
+              "RA": -0.0026516894385924155,
+              "mC": 0.010589204550128642
+            },
+            "count": 50,
+            "RMS": {
+              "C": {
+                "R": 0.15367430628406342,
+                "m": 0.3982526624862393,
+                "pooled_ratio": 0.38587138457454323,
+                "route_ratio_quantiles": [
+                  0.07963707498920057,
+                  0.19603533344484045,
+                  0.5528712095872331,
+                  0.800065355899696,
+                  0.8967761214509135
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.07669544579065736,
+                "m": 0.3862974188125048,
+                "pooled_ratio": 0.1985398867702055,
+                "route_ratio_quantiles": [
+                  0.08472693115782841,
+                  0.10652691690134324,
+                  0.28557025183359064,
+                  0.5405310165502961,
+                  0.6605867683307428
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 6.3547478221916425,
+            "minus_bplus": 0.11179747276438783,
+            "Tplus": 2.4603356093288036,
+            "Rplus": -0.0034696149641563275,
+            "Gminus": -0.1917123880169183,
+            "minus_bminus": -0.006828515791826976,
+            "Tminus": -0.1308026633692604,
+            "Rminus": 0.00016329163254920212,
+            "minus_bA": 0.0004074027607158864,
+            "TA": 0.6387915467038808,
+            "RA": 0.010571204050356619,
+            "mC": 9.244001167290172
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 6.3547478221916425
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.11179747276438783
+            },
+            {
+              "term": "Tplus",
+              "change": 2.4603356093288036
+            },
+            {
+              "term": "Rplus",
+              "change": -0.0034696149641563275
+            },
+            {
+              "term": "Gminus",
+              "change": -0.1917123880169183
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.006828515791826976
+            },
+            {
+              "term": "Tminus",
+              "change": -0.1308026633692604
+            },
+            {
+              "term": "Rminus",
+              "change": 0.00016329163254920212
+            },
+            {
+              "term": "minus_bA",
+              "change": 0.0004074027607158864
+            },
+            {
+              "term": "TA",
+              "change": 0.6387915467038808
+            },
+            {
+              "term": "RA",
+              "change": 0.010571204050356619
+            }
+          ],
+          "weighting": "Within each model, selected uniform; global50 uniform."
+        },
+        "matched_layer_pair5": {
+          "selected": {
+            "mean": {
+              "Gplus": 6.7028223233104525,
+              "minus_bplus": 0.12367588271881876,
+              "Tplus": 2.3103899645102564,
+              "Rplus": -0.004841920230253777,
+              "Gminus": -0.5338407298863634,
+              "minus_bminus": -0.018185584856635816,
+              "Tminus": 0.017763015697357488,
+              "Rminus": 0.003597660903049133,
+              "minus_bA": 0.0002730999322576392,
+              "TA": 0.6450171451295997,
+              "RA": 0.007919514611764204,
+              "mC": 9.254590371840301
+            },
+            "count": 29,
+            "RMS": {
+              "C": {
+                "R": 0.330914119624267,
+                "m": 13.71701797307135,
+                "pooled_ratio": 0.024124348329491375,
+                "route_ratio_quantiles": [
+                  0.008289516240778432,
+                  0.012153129412646537,
+                  0.030136845899983323,
+                  0.0725303538236751,
+                  0.12396110570301899
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.16685496348826742,
+                "m": 13.455282141940383,
+                "pooled_ratio": 0.012400703435877956,
+                "route_ratio_quantiles": [
+                  0.004904481100036696,
+                  0.005041912124975139,
+                  0.01935134713769731,
+                  0.033060968764647175,
+                  0.04880891322853231
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.42306793821626487,
+              "minus_bplus": 0.011563782703670793,
+              "Tplus": 0.05900258525810945,
+              "Rplus": -0.0022681053479706404,
+              "Gminus": -0.3302457137736927,
+              "minus_bminus": -0.009326419740000987,
+              "Tminus": -0.04082471219339687,
+              "Rminus": -0.006570179044408733,
+              "minus_bA": 0.00023969766294165533,
+              "TA": 0.018849267777297573,
+              "RA": 0.0037530176140785805,
+              "mC": 0.12724115913289302
+            },
+            "count": 40,
+            "RMS": {
+              "C": {
+                "R": 0.19249984842895154,
+                "m": 0.6757928444046126,
+                "pooled_ratio": 0.2848503798505707,
+                "route_ratio_quantiles": [
+                  0.12351272786421494,
+                  0.18564075822603432,
+                  0.5892140602234253,
+                  0.8324234029221893,
+                  1.2708365760080378
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.0827119634658801,
+                "m": 0.8251676413697209,
+                "pooled_ratio": 0.10023655717834984,
+                "route_ratio_quantiles": [
+                  0.03207598479755589,
+                  0.06748853539419601,
+                  0.2379674213281252,
+                  0.5039833238464709,
+                  0.6186711728812266
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 6.279754385094187,
+            "minus_bplus": 0.11211210001514796,
+            "Tplus": 2.251387379252147,
+            "Rplus": -0.002573814882283137,
+            "Gminus": -0.20359501611267072,
+            "minus_bminus": -0.008859165116634829,
+            "Tminus": 0.05858772789075435,
+            "Rminus": 0.010167839947457867,
+            "minus_bA": 3.340226931598388e-05,
+            "TA": 0.6261678773523022,
+            "RA": 0.004166496997685624,
+            "mC": 9.127349212707408
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 6.279754385094187
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.11211210001514796
+            },
+            {
+              "term": "Tplus",
+              "change": 2.251387379252147
+            },
+            {
+              "term": "Rplus",
+              "change": -0.002573814882283137
+            },
+            {
+              "term": "Gminus",
+              "change": -0.20359501611267072
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.008859165116634829
+            },
+            {
+              "term": "Tminus",
+              "change": 0.05858772789075435
+            },
+            {
+              "term": "Rminus",
+              "change": 0.010167839947457867
+            },
+            {
+              "term": "minus_bA",
+              "change": 3.340226931598388e-05
+            },
+            {
+              "term": "TA",
+              "change": 0.6261678773523022
+            },
+            {
+              "term": "RA",
+              "change": 0.004166496997685624
+            }
+          ],
+          "weighting": "Ordinary routes share selected-route mass of the same writer/reader layer pair; no one-to-one head matching."
+        }
+      },
+      "result_SHA": "bc50892fba4bb3900c058a0e5631ca1bd6ce33c37aa2dbeacf797a95c68762e5",
+      "source_SHA": "05209be4c833d5712673889b93b147e6013353e7bdb568f1d626204688bd4462",
+      "id": "qwen2p5-1p5b",
+      "label": "Qwen2.5 1.5B",
+      "family": "Qwen2.5 Base",
+      "checkpoint_label": "pinned public Base weights"
+    },
+    {
+      "model_source": {
+        "family": "qwen2",
+        "scale": "3B",
+        "repo": "Qwen/Qwen2.5-3B",
+        "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b"
+      },
+      "selected": 45,
+      "ordinary_unique": 100,
+      "controls": {
+        "global_random50": {
+          "selected": {
+            "mean": {
+              "Gplus": 6.383481871202509,
+              "minus_bplus": 0.0842364183786975,
+              "Tplus": 2.664642378853816,
+              "Rplus": -0.011512740533258365,
+              "Gminus": -0.46614063116505844,
+              "minus_bminus": -0.0029059809917260327,
+              "Tminus": -0.04535111359905365,
+              "Rminus": 0.0040466007690606424,
+              "minus_bA": 0.003856602481918114,
+              "TA": 0.46142988633136955,
+              "RA": -0.008649640339075485,
+              "mC": 9.067133651389204
+            },
+            "count": 45,
+            "RMS": {
+              "C": {
+                "R": 0.276720456168058,
+                "m": 12.88757421672515,
+                "pooled_ratio": 0.0214718807057528,
+                "route_ratio_quantiles": [
+                  0.007461891832566327,
+                  0.0155117570724918,
+                  0.02405074437830202,
+                  0.042459592939652055,
+                  0.08655123485673885
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.176407469619016,
+                "m": 12.91858536536612,
+                "pooled_ratio": 0.01365532406450267,
+                "route_ratio_quantiles": [
+                  0.004199196187644735,
+                  0.00650759161186826,
+                  0.016838127097754656,
+                  0.021865684877312996,
+                  0.031236176117362707
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.23417571566229428,
+              "minus_bplus": 0.0019738041017846072,
+              "Tplus": -0.11182659472391439,
+              "Rplus": 0.0007914224565887947,
+              "Gminus": -0.2269610435564653,
+              "minus_bminus": -0.001830109658852157,
+              "Tminus": 0.12226223259890351,
+              "Rminus": 0.00020873215779178568,
+              "minus_bA": 0.00022003432788150184,
+              "TA": 0.007004770736470182,
+              "RA": 0.000723173380565853,
+              "mC": 0.026742137483048583
+            },
+            "count": 50,
+            "RMS": {
+              "C": {
+                "R": 0.11437847869646223,
+                "m": 0.2729306253437642,
+                "pooled_ratio": 0.4190752816852236,
+                "route_ratio_quantiles": [
+                  0.03821442579810713,
+                  0.20009949718316436,
+                  0.5360161213441665,
+                  0.8058769760359866,
+                  0.8900555180999252
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.051349490693739765,
+                "m": 0.22257810542240147,
+                "pooled_ratio": 0.23070324278432677,
+                "route_ratio_quantiles": [
+                  0.04242975387172594,
+                  0.10621964836770072,
+                  0.2875341785091561,
+                  0.4729117636771004,
+                  0.605127115591382
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 6.149306155540215,
+            "minus_bplus": 0.0822626142769129,
+            "Tplus": 2.7764689735777304,
+            "Rplus": -0.01230416298984716,
+            "Gminus": -0.23917958760859315,
+            "minus_bminus": -0.0010758713328738758,
+            "Tminus": -0.16761334619795715,
+            "Rminus": 0.0038378686112688566,
+            "minus_bA": 0.003636568154036612,
+            "TA": 0.4544251155948994,
+            "RA": -0.009372813719641339,
+            "mC": 9.040391513906155
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 6.149306155540215
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.0822626142769129
+            },
+            {
+              "term": "Tplus",
+              "change": 2.7764689735777304
+            },
+            {
+              "term": "Rplus",
+              "change": -0.01230416298984716
+            },
+            {
+              "term": "Gminus",
+              "change": -0.23917958760859315
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.0010758713328738758
+            },
+            {
+              "term": "Tminus",
+              "change": -0.16761334619795715
+            },
+            {
+              "term": "Rminus",
+              "change": 0.0038378686112688566
+            },
+            {
+              "term": "minus_bA",
+              "change": 0.003636568154036612
+            },
+            {
+              "term": "TA",
+              "change": 0.4544251155948994
+            },
+            {
+              "term": "RA",
+              "change": -0.009372813719641339
+            }
+          ],
+          "weighting": "Within each model, selected uniform; global50 uniform."
+        },
+        "matched_layer_pair5": {
+          "selected": {
+            "mean": {
+              "Gplus": 6.383481871202509,
+              "minus_bplus": 0.0842364183786975,
+              "Tplus": 2.664642378853816,
+              "Rplus": -0.011512740533258365,
+              "Gminus": -0.46614063116505844,
+              "minus_bminus": -0.0029059809917260327,
+              "Tminus": -0.04535111359905365,
+              "Rminus": 0.0040466007690606424,
+              "minus_bA": 0.003856602481918114,
+              "TA": 0.46142988633136955,
+              "RA": -0.008649640339075485,
+              "mC": 9.067133651389204
+            },
+            "count": 45,
+            "RMS": {
+              "C": {
+                "R": 0.276720456168058,
+                "m": 12.88757421672515,
+                "pooled_ratio": 0.0214718807057528,
+                "route_ratio_quantiles": [
+                  0.007461891832566327,
+                  0.0155117570724918,
+                  0.02405074437830202,
+                  0.042459592939652055,
+                  0.08655123485673885
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.176407469619016,
+                "m": 12.91858536536612,
+                "pooled_ratio": 0.01365532406450267,
+                "route_ratio_quantiles": [
+                  0.004199196187644735,
+                  0.00650759161186826,
+                  0.016838127097754656,
+                  0.021865684877312996,
+                  0.031236176117362707
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.6818744966538423,
+              "minus_bplus": 0.00807676504128741,
+              "Tplus": 0.2569095435754722,
+              "Rplus": -0.0015381965279306503,
+              "Gminus": -0.6428129370256649,
+              "minus_bminus": -0.005747758568167546,
+              "Tminus": -0.13942051469800432,
+              "Rminus": -0.0009022656172588006,
+              "minus_bA": -0.0010932617085471449,
+              "TA": 0.02817039717747382,
+              "RA": -0.0024112608684409777,
+              "mC": 0.1811050074340617
+            },
+            "count": 50,
+            "RMS": {
+              "C": {
+                "R": 0.16844213083169343,
+                "m": 2.0535129949033966,
+                "pooled_ratio": 0.08202632817505859,
+                "route_ratio_quantiles": [
+                  0.043049877285752,
+                  0.1035012351840738,
+                  0.30849894039859016,
+                  0.7463963158876269,
+                  0.8678532149179369
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.07837551414110397,
+                "m": 2.270722202268633,
+                "pooled_ratio": 0.034515677022403074,
+                "route_ratio_quantiles": [
+                  0.016280676230413026,
+                  0.041095946974230343,
+                  0.11632151307271324,
+                  0.2637975667800716,
+                  0.4028999100223265
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 5.701607374548667,
+            "minus_bplus": 0.0761596533374101,
+            "Tplus": 2.407732835278344,
+            "Rplus": -0.009974544005327714,
+            "Gminus": 0.17667230586060645,
+            "minus_bminus": 0.0028417775764415136,
+            "Tminus": 0.09406940109895066,
+            "Rminus": 0.004948866386319443,
+            "minus_bA": 0.004949864190465259,
+            "TA": 0.4332594891538957,
+            "RA": -0.0062383794706345076,
+            "mC": 8.886028643955143
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 5.701607374548667
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.0761596533374101
+            },
+            {
+              "term": "Tplus",
+              "change": 2.407732835278344
+            },
+            {
+              "term": "Rplus",
+              "change": -0.009974544005327714
+            },
+            {
+              "term": "Gminus",
+              "change": 0.17667230586060645
+            },
+            {
+              "term": "minus_bminus",
+              "change": 0.0028417775764415136
+            },
+            {
+              "term": "Tminus",
+              "change": 0.09406940109895066
+            },
+            {
+              "term": "Rminus",
+              "change": 0.004948866386319443
+            },
+            {
+              "term": "minus_bA",
+              "change": 0.004949864190465259
+            },
+            {
+              "term": "TA",
+              "change": 0.4332594891538957
+            },
+            {
+              "term": "RA",
+              "change": -0.0062383794706345076
+            }
+          ],
+          "weighting": "Ordinary routes share selected-route mass of the same writer/reader layer pair; no one-to-one head matching."
+        }
+      },
+      "result_SHA": "8f66b6b4a2862b8fd8349f6740f7e74736138ec2723cf237f24911f3d765f2ea",
+      "source_SHA": "5c56b997b93570d7f231a28d095f88aad15be0d8326829c12dcb7b00cfc674d3",
+      "id": "qwen2p5-3b",
+      "label": "Qwen2.5 3B",
+      "family": "Qwen2.5 Base",
+      "checkpoint_label": "pinned public Base weights"
+    },
+    {
+      "model_source": {
+        "family": "qwen2",
+        "scale": "7B",
+        "repo": "Qwen/Qwen2.5-7B",
+        "revision": "d149729398750b98c0af14eb82c78cfe92750796"
+      },
+      "selected": 27,
+      "ordinary_unique": 105,
+      "controls": {
+        "global_random50": {
+          "selected": {
+            "mean": {
+              "Gplus": 5.5731679369173355,
+              "minus_bplus": 0.09995077269069659,
+              "Tplus": 1.529001134593199,
+              "Rplus": -0.005972731703653546,
+              "Gminus": -0.46107954509271665,
+              "minus_bminus": -0.012539551443983115,
+              "Tminus": -0.005257956340982142,
+              "Rminus": 0.0013200428244180599,
+              "minus_bA": -0.0005425937359026544,
+              "TA": 0.404295714701367,
+              "RA": 0.0005892955041613367,
+              "mC": 7.122932518913939
+            },
+            "count": 27,
+            "RMS": {
+              "C": {
+                "R": 0.29483137773810475,
+                "m": 10.336113041240583,
+                "pooled_ratio": 0.028524395637097043,
+                "route_ratio_quantiles": [
+                  0.010609511765095095,
+                  0.01381807014725675,
+                  0.03452538931864923,
+                  0.06359006414920232,
+                  0.08251474789695862
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.13784410556146917,
+                "m": 10.310280111162191,
+                "pooled_ratio": 0.013369579106995879,
+                "route_ratio_quantiles": [
+                  0.003772573837494908,
+                  0.006138576517222651,
+                  0.015824303668223755,
+                  0.03318402624563145,
+                  0.052201810422060436
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.12461549206865269,
+              "minus_bplus": 0.003230148285895374,
+              "Tplus": -0.051438205131216636,
+              "Rplus": 8.200155194608855e-06,
+              "Gminus": -0.11858349591269962,
+              "minus_bminus": -0.0031729531102092185,
+              "Tminus": 0.054051871296835835,
+              "Rminus": 0.0013684340250124554,
+              "minus_bA": -9.128336989063815e-05,
+              "TA": 0.0033296081489126365,
+              "RA": 0.0004933678233399674,
+              "mC": 0.013811184279827481
+            },
+            "count": 50,
+            "RMS": {
+              "C": {
+                "R": 0.06374391928087242,
+                "m": 0.1447043908422399,
+                "pooled_ratio": 0.4405112996907435,
+                "route_ratio_quantiles": [
+                  0.05858772682549983,
+                  0.30117798530180745,
+                  0.5558205196288126,
+                  0.7790788487452052,
+                  0.9007629307431274
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.027916768261575017,
+                "m": 0.15832799092996658,
+                "pooled_ratio": 0.17632238050644802,
+                "route_ratio_quantiles": [
+                  0.021166188167889982,
+                  0.13162777414417273,
+                  0.2846853571132999,
+                  0.4384519165103981,
+                  0.5383639647167873
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 5.448552444848683,
+            "minus_bplus": 0.09672062440480121,
+            "Tplus": 1.5804393397244156,
+            "Rplus": -0.005980931858848155,
+            "Gminus": -0.342496049180017,
+            "minus_bminus": -0.009366598333773898,
+            "Tminus": -0.059309827637817975,
+            "Rminus": -4.839120059439554e-05,
+            "minus_bA": -0.0004513103660120163,
+            "TA": 0.40096610655245435,
+            "RA": 9.592768082136932e-05,
+            "mC": 7.1091213346341116
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 5.448552444848683
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.09672062440480121
+            },
+            {
+              "term": "Tplus",
+              "change": 1.5804393397244156
+            },
+            {
+              "term": "Rplus",
+              "change": -0.005980931858848155
+            },
+            {
+              "term": "Gminus",
+              "change": -0.342496049180017
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.009366598333773898
+            },
+            {
+              "term": "Tminus",
+              "change": -0.059309827637817975
+            },
+            {
+              "term": "Rminus",
+              "change": -4.839120059439554e-05
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.0004513103660120163
+            },
+            {
+              "term": "TA",
+              "change": 0.40096610655245435
+            },
+            {
+              "term": "RA",
+              "change": 9.592768082136932e-05
+            }
+          ],
+          "weighting": "Within each model, selected uniform; global50 uniform."
+        },
+        "matched_layer_pair5": {
+          "selected": {
+            "mean": {
+              "Gplus": 5.5731679369173355,
+              "minus_bplus": 0.09995077269069659,
+              "Tplus": 1.529001134593199,
+              "Rplus": -0.005972731703653546,
+              "Gminus": -0.46107954509271665,
+              "minus_bminus": -0.012539551443983115,
+              "Tminus": -0.005257956340982142,
+              "Rminus": 0.0013200428244180599,
+              "minus_bA": -0.0005425937359026544,
+              "TA": 0.404295714701367,
+              "RA": 0.0005892955041613367,
+              "mC": 7.122932518913939
+            },
+            "count": 27,
+            "RMS": {
+              "C": {
+                "R": 0.29483137773810475,
+                "m": 10.336113041240583,
+                "pooled_ratio": 0.028524395637097043,
+                "route_ratio_quantiles": [
+                  0.010609511765095095,
+                  0.01381807014725675,
+                  0.03452538931864923,
+                  0.06359006414920232,
+                  0.08251474789695862
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.13784410556146917,
+                "m": 10.310280111162191,
+                "pooled_ratio": 0.013369579106995879,
+                "route_ratio_quantiles": [
+                  0.003772573837494908,
+                  0.006138576517222651,
+                  0.015824303668223755,
+                  0.03318402624563145,
+                  0.052201810422060436
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 0.17513309483733963,
+              "minus_bplus": 0.004837546641183977,
+              "Tplus": 0.06920980454238812,
+              "Rplus": -0.0029529749506221263,
+              "Gminus": -0.12965063460563778,
+              "minus_bminus": -0.0035589705582805276,
+              "Tminus": -0.035375021416287365,
+              "Rminus": -0.00013818027786784316,
+              "minus_bA": 7.429335312861291e-05,
+              "TA": 0.009457600362094495,
+              "RA": 0.0005048520620463403,
+              "mC": 0.0875414099894856
+            },
+            "count": 55,
+            "RMS": {
+              "C": {
+                "R": 0.08717299318824033,
+                "m": 0.4067254451122678,
+                "pooled_ratio": 0.21432884083310327,
+                "route_ratio_quantiles": [
+                  0.11342282005394574,
+                  0.18271008919705314,
+                  0.47015588726217955,
+                  0.6990299635370156,
+                  0.8639801765374224
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 0.048745397724930285,
+                "m": 0.5258610703483713,
+                "pooled_ratio": 0.09269634219668998,
+                "route_ratio_quantiles": [
+                  0.03132388526749918,
+                  0.06701278363972292,
+                  0.1680290193393557,
+                  0.33369933608691443,
+                  0.466775607651465
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 5.398034842079996,
+            "minus_bplus": 0.09511322604951261,
+            "Tplus": 1.459791330050811,
+            "Rplus": -0.00301975675303142,
+            "Gminus": -0.3314289104870789,
+            "minus_bminus": -0.008980580885702588,
+            "Tminus": 0.030117065075305222,
+            "Rminus": 0.001458223102285903,
+            "minus_bA": -0.0006168870890312674,
+            "TA": 0.3948381143392725,
+            "RA": 8.444344211499643e-05,
+            "mC": 7.035391108924453
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 5.398034842079996
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.09511322604951261
+            },
+            {
+              "term": "Tplus",
+              "change": 1.459791330050811
+            },
+            {
+              "term": "Rplus",
+              "change": -0.00301975675303142
+            },
+            {
+              "term": "Gminus",
+              "change": -0.3314289104870789
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.008980580885702588
+            },
+            {
+              "term": "Tminus",
+              "change": 0.030117065075305222
+            },
+            {
+              "term": "Rminus",
+              "change": 0.001458223102285903
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.0006168870890312674
+            },
+            {
+              "term": "TA",
+              "change": 0.3948381143392725
+            },
+            {
+              "term": "RA",
+              "change": 8.444344211499643e-05
+            }
+          ],
+          "weighting": "Ordinary routes share selected-route mass of the same writer/reader layer pair; no one-to-one head matching."
+        }
+      },
+      "result_SHA": "b508e8c7a421cad7d66654ca7e4e9b5977181fd14443b859194ad17a4871aece",
+      "source_SHA": "34162ab39fcb16809e957db97a232f6dc16032373d97ab31fb46a761f5773073",
+      "id": "qwen2p5-7b",
+      "label": "Qwen2.5 7B",
+      "family": "Qwen2.5 Base",
+      "checkpoint_label": "pinned public Base weights"
+    },
+    {
+      "model_source": {
+        "family": "gpt2",
+        "scale": "124M",
+        "repo": "openai-community/gpt2",
+        "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e"
+      },
+      "selected": 11,
+      "ordinary_unique": 80,
+      "controls": {
+        "global_random50": {
+          "selected": {
+            "mean": {
+              "Gplus": 7.575600234812108,
+              "minus_bplus": 0.13196806558756602,
+              "Tplus": 1.5076567710458009,
+              "Rplus": -2.3103785706234808e-17,
+              "Gminus": -0.5276225676442771,
+              "minus_bminus": -0.03744499255906446,
+              "Tminus": -0.0790707903817418,
+              "Rminus": 1.6702175407291598e-16,
+              "minus_bA": 0.0005685703939558148,
+              "TA": 0.09802408114485207,
+              "RA": 1.3884093560584192e-17,
+              "mC": 8.669679372399207
+            },
+            "count": 11,
+            "RMS": {
+              "C": {
+                "R": 4.899864170359189e-15,
+                "m": 10.454370128931158,
+                "pooled_ratio": 4.686905198429343e-16,
+                "route_ratio_quantiles": [
+                  4.255819362417045e-16,
+                  4.4196692200487705e-16,
+                  4.944185293792579e-16,
+                  5.571651752995444e-16,
+                  5.808197471112831e-16
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 6.076958548963826e-15,
+                "m": 11.124473945513941,
+                "pooled_ratio": 5.462692958541579e-16,
+                "route_ratio_quantiles": [
+                  5.023163362850009e-16,
+                  5.070110107666709e-16,
+                  5.566387707748091e-16,
+                  5.946363177961359e-16,
+                  6.326063713550774e-16
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 1.15476383760032,
+              "minus_bplus": 0.03942737409754743,
+              "Tplus": -0.13903042956135112,
+              "Rplus": -3.329849693298152e-17,
+              "Gminus": -1.019609325590612,
+              "minus_bminus": -0.039237828875098066,
+              "Tminus": 0.15890551621141621,
+              "Rminus": 3.24706600330731e-17,
+              "minus_bA": 0.0014631013338569532,
+              "TA": 0.006110997032076076,
+              "RA": 1.828136955092356e-18,
+              "mC": 0.162793242248156
+            },
+            "count": 50,
+            "RMS": {
+              "C": {
+                "R": 1.9751734049746873e-15,
+                "m": 2.065482004715145,
+                "pooled_ratio": 9.562772275264086e-16,
+                "route_ratio_quantiles": [
+                  6.024869498140137e-16,
+                  7.536470770017306e-16,
+                  1.0450873406463505e-15,
+                  1.5486338965719735e-15,
+                  2.3176511912306217e-15
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 1.7218327404417192e-15,
+                "m": 1.9427053945498503,
+                "pooled_ratio": 8.863066655768925e-16,
+                "route_ratio_quantiles": [
+                  5.205384481140432e-16,
+                  7.224269184172089e-16,
+                  1.0619644967231676e-15,
+                  1.7694088036431341e-15,
+                  2.214223159697652e-15
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 6.420836397211788,
+            "minus_bplus": 0.09254069149001859,
+            "Tplus": 1.646687200607152,
+            "Rplus": 1.0194711226746714e-17,
+            "Gminus": 0.49198675794633495,
+            "minus_bminus": 0.001792836316033608,
+            "Tminus": -0.23797630659315802,
+            "Rminus": 1.3455109403984287e-16,
+            "minus_bA": -0.0008945309399011384,
+            "TA": 0.091913084112776,
+            "RA": 1.2055956605491836e-17,
+            "mC": 8.50688613015105
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 6.420836397211788
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.09254069149001859
+            },
+            {
+              "term": "Tplus",
+              "change": 1.646687200607152
+            },
+            {
+              "term": "Rplus",
+              "change": 1.0194711226746714e-17
+            },
+            {
+              "term": "Gminus",
+              "change": 0.49198675794633495
+            },
+            {
+              "term": "minus_bminus",
+              "change": 0.001792836316033608
+            },
+            {
+              "term": "Tminus",
+              "change": -0.23797630659315802
+            },
+            {
+              "term": "Rminus",
+              "change": 1.3455109403984287e-16
+            },
+            {
+              "term": "minus_bA",
+              "change": -0.0008945309399011384
+            },
+            {
+              "term": "TA",
+              "change": 0.091913084112776
+            },
+            {
+              "term": "RA",
+              "change": 1.2055956605491836e-17
+            }
+          ],
+          "weighting": "Within each model, selected uniform; global50 uniform."
+        },
+        "matched_layer_pair5": {
+          "selected": {
+            "mean": {
+              "Gplus": 7.575600234812108,
+              "minus_bplus": 0.13196806558756602,
+              "Tplus": 1.5076567710458009,
+              "Rplus": -2.3103785706234808e-17,
+              "Gminus": -0.5276225676442771,
+              "minus_bminus": -0.03744499255906446,
+              "Tminus": -0.0790707903817418,
+              "Rminus": 1.6702175407291598e-16,
+              "minus_bA": 0.0005685703939558148,
+              "TA": 0.09802408114485207,
+              "RA": 1.3884093560584192e-17,
+              "mC": 8.669679372399207
+            },
+            "count": 11,
+            "RMS": {
+              "C": {
+                "R": 4.899864170359189e-15,
+                "m": 10.454370128931158,
+                "pooled_ratio": 4.686905198429343e-16,
+                "route_ratio_quantiles": [
+                  4.255819362417045e-16,
+                  4.4196692200487705e-16,
+                  4.944185293792579e-16,
+                  5.571651752995444e-16,
+                  5.808197471112831e-16
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 6.076958548963826e-15,
+                "m": 11.124473945513941,
+                "pooled_ratio": 5.462692958541579e-16,
+                "route_ratio_quantiles": [
+                  5.023163362850009e-16,
+                  5.070110107666709e-16,
+                  5.566387707748091e-16,
+                  5.946363177961359e-16,
+                  6.326063713550774e-16
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 1.1152351254317614,
+              "minus_bplus": 0.037217432856238415,
+              "Tplus": 0.3122219098389405,
+              "Rplus": -4.6121259456030306e-17,
+              "Gminus": -0.8483458713969239,
+              "minus_bminus": -0.030456034568799365,
+              "Tminus": -0.24508710247216037,
+              "Rminus": 8.622582750104737e-17,
+              "minus_bA": 0.00036818103076903123,
+              "TA": 7.163116389826037e-05,
+              "RA": -1.6418906491291642e-18,
+              "mC": 0.3412252718837237
+            },
+            "count": 30,
+            "RMS": {
+              "C": {
+                "R": 2.5392506574068855e-15,
+                "m": 1.7137247768590853,
+                "pooled_ratio": 1.481714387102942e-15,
+                "route_ratio_quantiles": [
+                  8.115627794382251e-16,
+                  9.50599240110247e-16,
+                  1.2255626506563607e-15,
+                  1.842562650172296e-15,
+                  2.29961422488145e-15
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 2.3272836231053434e-15,
+                "m": 2.188599396834835,
+                "pooled_ratio": 1.0633666565343453e-15,
+                "route_ratio_quantiles": [
+                  5.637942247485579e-16,
+                  7.454597703453289e-16,
+                  1.057287970619322e-15,
+                  1.4862223305250758e-15,
+                  1.8920285312968202e-15
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 6.460365109380347,
+            "minus_bplus": 0.09475063273132761,
+            "Tplus": 1.1954348612068604,
+            "Rplus": 2.3017473749795498e-17,
+            "Gminus": 0.3207233037526468,
+            "minus_bminus": -0.006988957990265093,
+            "Tminus": 0.16601631209041856,
+            "Rminus": 8.07959265718686e-17,
+            "minus_bA": 0.00020038936318678358,
+            "TA": 0.09795244998095382,
+            "RA": 1.5525984209713357e-17,
+            "mC": 8.328454100515483
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 6.460365109380347
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.09475063273132761
+            },
+            {
+              "term": "Tplus",
+              "change": 1.1954348612068604
+            },
+            {
+              "term": "Rplus",
+              "change": 2.3017473749795498e-17
+            },
+            {
+              "term": "Gminus",
+              "change": 0.3207233037526468
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.006988957990265093
+            },
+            {
+              "term": "Tminus",
+              "change": 0.16601631209041856
+            },
+            {
+              "term": "Rminus",
+              "change": 8.07959265718686e-17
+            },
+            {
+              "term": "minus_bA",
+              "change": 0.00020038936318678358
+            },
+            {
+              "term": "TA",
+              "change": 0.09795244998095382
+            },
+            {
+              "term": "RA",
+              "change": 1.5525984209713357e-17
+            }
+          ],
+          "weighting": "Ordinary routes share selected-route mass of the same writer/reader layer pair; no one-to-one head matching."
+        }
+      },
+      "result_SHA": "ae0814e0da027513a0daefbf4ef41a07c5fcbdda38344c52c33c4c692c2d6090",
+      "source_SHA": "12fd1657db7440b9b624d24d8bb1bf84c11069bcfa7ad2fdb3951b2fa2ad9006",
+      "id": "gpt2-small",
+      "label": "GPT-2 Small (124M)",
+      "family": "GPT-2",
+      "checkpoint_label": "pinned public Base weights"
+    },
+    {
+      "model_source": {
+        "family": "gpt2",
+        "scale": "355M",
+        "repo": "openai-community/gpt2-medium",
+        "revision": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da"
+      },
+      "selected": 11,
+      "ordinary_unique": 95,
+      "controls": {
+        "global_random50": {
+          "selected": {
+            "mean": {
+              "Gplus": 9.276783149373005,
+              "minus_bplus": 0.16103761313054782,
+              "Tplus": 2.0293907918155663,
+              "Rplus": 3.3538430864641926e-17,
+              "Gminus": -1.0499779614468432,
+              "minus_bminus": -0.08927126154955452,
+              "Tminus": -0.0332889303576252,
+              "Rminus": -8.258773805180643e-17,
+              "minus_bA": 0.0005250141071348985,
+              "TA": 0.22676322455972786,
+              "RA": 8.012085394234574e-18,
+              "mC": 10.521961639631954
+            },
+            "count": 11,
+            "RMS": {
+              "C": {
+                "R": 5.383656014138901e-15,
+                "m": 12.012293370282856,
+                "pooled_ratio": 4.481788654494151e-16,
+                "route_ratio_quantiles": [
+                  3.9245556792681874e-16,
+                  3.924935538676537e-16,
+                  4.787130338700521e-16,
+                  5.603094038824932e-16,
+                  5.761435047995083e-16
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 7.049741903209479e-15,
+                "m": 12.873602957985225,
+                "pooled_ratio": 5.476121895492102e-16,
+                "route_ratio_quantiles": [
+                  5.135195175105401e-16,
+                  5.268711573990514e-16,
+                  5.432852664737675e-16,
+                  5.847376790194384e-16,
+                  6.346039306052766e-16
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 1.0250966124737877,
+              "minus_bplus": 0.053170141264355486,
+              "Tplus": -0.14988766836385425,
+              "Rplus": -2.2439488376430826e-17,
+              "Gminus": -0.9813974801984051,
+              "minus_bminus": -0.05650687522511151,
+              "Tminus": 0.15652979867831604,
+              "Rminus": 2.805870715035251e-17,
+              "minus_bA": -0.0013109383063299024,
+              "TA": -0.03255943900993957,
+              "RA": 2.7423836257141616e-18,
+              "mC": 0.013134151312818232
+            },
+            "count": 50,
+            "RMS": {
+              "C": {
+                "R": 4.257875169713456e-15,
+                "m": 4.736629686513345,
+                "pooled_ratio": 8.989250694089405e-16,
+                "route_ratio_quantiles": [
+                  6.69327260492219e-16,
+                  8.944915318791887e-16,
+                  1.0579092512588871e-15,
+                  1.586183189117417e-15,
+                  1.956084318805285e-15
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 3.4858830366309423e-15,
+                "m": 4.136975679061241,
+                "pooled_ratio": 8.426162750422444e-16,
+                "route_ratio_quantiles": [
+                  5.519486595834295e-16,
+                  7.577119398156499e-16,
+                  1.1431632807102028e-15,
+                  1.894271752271086e-15,
+                  2.9790742835471447e-15
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 8.251686536899218,
+            "minus_bplus": 0.10786747186619233,
+            "Tplus": 2.1792784601794204,
+            "Rplus": 5.597791924107275e-17,
+            "Gminus": -0.06858048124843807,
+            "minus_bminus": -0.03276438632444301,
+            "Tminus": -0.18981872903594124,
+            "Rminus": -1.1064644520215894e-16,
+            "minus_bA": 0.0018359524134648009,
+            "TA": 0.25932266356966743,
+            "RA": 5.269701768520412e-18,
+            "mC": 10.508827488319136
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 8.251686536899218
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.10786747186619233
+            },
+            {
+              "term": "Tplus",
+              "change": 2.1792784601794204
+            },
+            {
+              "term": "Rplus",
+              "change": 5.597791924107275e-17
+            },
+            {
+              "term": "Gminus",
+              "change": -0.06858048124843807
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.03276438632444301
+            },
+            {
+              "term": "Tminus",
+              "change": -0.18981872903594124
+            },
+            {
+              "term": "Rminus",
+              "change": -1.1064644520215894e-16
+            },
+            {
+              "term": "minus_bA",
+              "change": 0.0018359524134648009
+            },
+            {
+              "term": "TA",
+              "change": 0.25932266356966743
+            },
+            {
+              "term": "RA",
+              "change": 5.269701768520412e-18
+            }
+          ],
+          "weighting": "Within each model, selected uniform; global50 uniform."
+        },
+        "matched_layer_pair5": {
+          "selected": {
+            "mean": {
+              "Gplus": 9.276783149373005,
+              "minus_bplus": 0.16103761313054782,
+              "Tplus": 2.0293907918155663,
+              "Rplus": 3.3538430864641926e-17,
+              "Gminus": -1.0499779614468432,
+              "minus_bminus": -0.08927126154955452,
+              "Tminus": -0.0332889303576252,
+              "Rminus": -8.258773805180643e-17,
+              "minus_bA": 0.0005250141071348985,
+              "TA": 0.22676322455972786,
+              "RA": 8.012085394234574e-18,
+              "mC": 10.521961639631954
+            },
+            "count": 11,
+            "RMS": {
+              "C": {
+                "R": 5.383656014138901e-15,
+                "m": 12.012293370282856,
+                "pooled_ratio": 4.481788654494151e-16,
+                "route_ratio_quantiles": [
+                  3.9245556792681874e-16,
+                  3.924935538676537e-16,
+                  4.787130338700521e-16,
+                  5.603094038824932e-16,
+                  5.761435047995083e-16
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 7.049741903209479e-15,
+                "m": 12.873602957985225,
+                "pooled_ratio": 5.476121895492102e-16,
+                "route_ratio_quantiles": [
+                  5.135195175105401e-16,
+                  5.268711573990514e-16,
+                  5.432852664737675e-16,
+                  5.847376790194384e-16,
+                  6.346039306052766e-16
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "ordinary": {
+            "mean": {
+              "Gplus": 1.3272217996779576,
+              "minus_bplus": 0.06575324646965135,
+              "Tplus": 0.2520374793578596,
+              "Rplus": -2.8947813897517346e-18,
+              "Gminus": -1.3496137160051762,
+              "minus_bminus": -0.05411374182744857,
+              "Tminus": -0.24259954141535653,
+              "Rminus": 2.214418666749902e-17,
+              "minus_bA": -0.0015280102632884876,
+              "TA": 0.024557686862710253,
+              "RA": 1.4190092760883039e-19,
+              "mC": 0.021715202856909137
+            },
+            "count": 45,
+            "RMS": {
+              "C": {
+                "R": 3.1265144366222017e-15,
+                "m": 2.357742021544179,
+                "pooled_ratio": 1.3260629907993594e-15,
+                "route_ratio_quantiles": [
+                  8.272566562935915e-16,
+                  9.744211704938839e-16,
+                  1.2783348170503575e-15,
+                  2.2082665223377997e-15,
+                  2.51217388005003e-15
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              },
+              "Hplus": {
+                "R": 3.771818928534038e-15,
+                "m": 2.860817425906387,
+                "pooled_ratio": 1.3184409792732649e-15,
+                "route_ratio_quantiles": [
+                  6.15665680977854e-16,
+                  7.045767322189382e-16,
+                  1.0680244922885097e-15,
+                  1.96365120571112e-15,
+                  3.4466502679008428e-15
+                ],
+                "weighting": "model-specific control weights; pooled RMS ratio and unweighted route distribution separately named"
+              }
+            }
+          },
+          "selected_minus_ordinary": {
+            "Gplus": 7.949561349695047,
+            "minus_bplus": 0.09528436666089647,
+            "Tplus": 1.7773533124577066,
+            "Rplus": 3.643321225439366e-17,
+            "Gminus": 0.299635754558333,
+            "minus_bminus": -0.03515751972210595,
+            "Tminus": 0.20931061105773133,
+            "Rminus": -1.0473192471930544e-16,
+            "minus_bA": 0.002053024370423386,
+            "TA": 0.2022055376970176,
+            "RA": 7.870184466625744e-18,
+            "mC": 10.500246436775045
+          },
+          "waterfall": [
+            {
+              "term": "Gplus",
+              "change": 7.949561349695047
+            },
+            {
+              "term": "minus_bplus",
+              "change": 0.09528436666089647
+            },
+            {
+              "term": "Tplus",
+              "change": 1.7773533124577066
+            },
+            {
+              "term": "Rplus",
+              "change": 3.643321225439366e-17
+            },
+            {
+              "term": "Gminus",
+              "change": 0.299635754558333
+            },
+            {
+              "term": "minus_bminus",
+              "change": -0.03515751972210595
+            },
+            {
+              "term": "Tminus",
+              "change": 0.20931061105773133
+            },
+            {
+              "term": "Rminus",
+              "change": -1.0473192471930544e-16
+            },
+            {
+              "term": "minus_bA",
+              "change": 0.002053024370423386
+            },
+            {
+              "term": "TA",
+              "change": 0.2022055376970176
+            },
+            {
+              "term": "RA",
+              "change": 7.870184466625744e-18
+            }
+          ],
+          "weighting": "Ordinary routes share selected-route mass of the same writer/reader layer pair; no one-to-one head matching."
+        }
+      },
+      "result_SHA": "73f770fe8166df1679d027ffd53f501f815d588588440604cd699367a1ab7694",
+      "source_SHA": "80e7f67ed222137505136aa317ec014604b0a4086f27dc3fd2ce105347df9e55",
+      "id": "gpt2-medium",
+      "label": "GPT-2 Medium (355M)",
+      "family": "GPT-2",
+      "checkpoint_label": "pinned public Base weights"
+    }
+  ],
+  "source_manifest_SHA": "fe8bc521e7bcf23fb9c0b7d76f3635ae14fd17356b873d2a9fdad46553109697",
+  "comparison_weighting": "Equal actual comparisons within route; selected routes equal within model; global controls equal; matched controls follow selected layer-pair weights",
+  "control_population": "All legal earlier-layer routes excluding selected functional routes; unlike Pythia, no nonReader/nonWriter threshold",
+  "token_ranks": [
+    5001,
+    10000
+  ],
+  "reference_distances": [
+    0,
+    2047
+  ]
+}

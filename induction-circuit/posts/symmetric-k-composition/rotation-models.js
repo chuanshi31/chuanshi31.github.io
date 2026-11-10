@@ -6,7 +6,7 @@
   const meta = document.getElementById('rotation-metadata');
   const link = document.getElementById('rotation-model-data');
   const cards = [...document.querySelectorAll('[data-rotation-model]')];
-  const response = await fetch('./data/rotation-models.json?v=20261108-six-scales-hplus-only');
+  const response = await fetch('./data/rotation-models.json?v=20261110-family-frequency');
   if (!response.ok) throw new Error('Rotation model data could not be loaded');
   const data = await response.json();
   const option = (parent,value,label,disabled=false) => {
@@ -20,7 +20,7 @@
     if (!selected) return;
     cards.forEach(card=>{card.hidden=card.id!==selected.id;card.open=card.id===selected.id;});
     const card=document.getElementById(selected.id);
-    meta.textContent=config.label+' · step '+config.step.toLocaleString('en-US')+' · '+selected.reader+' ← '+selected.writer+' · '+card.querySelector('summary span').textContent+' · 2,084 sequences / 150,000 queries.';
+    meta.textContent=config.label+' · '+(config.checkpoint_label||('step '+config.step.toLocaleString('en-US')))+' · '+selected.reader+' ← '+selected.writer+' · '+card.querySelector('summary span').textContent+' · '+(config.evaluation_label||'2,084 sequences / 150,000 queries.');
     link.href='./data/'+config.data;
   }
   function chooseModel(preferred) {

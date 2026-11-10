@@ -1205,7 +1205,2375 @@
         }
       ],
       "step": 143000
+    },
+    {
+      "id": "olmo-60m",
+      "label": "OLMo 60M",
+      "data": "family-rotation-olmo-60m.json",
+      "step": 29042,
+      "checkpoint_label": "fixed public step 29,042",
+      "evaluation_label": "2,083 sequences not used to fit directions / 149,928 queries; shared full-data centers",
+      "routes": [
+        {
+          "id": "rotation-olmo-60m-L4H7-L2H1",
+          "reader": "L4H7",
+          "writer": "L2H1",
+          "asset": "family-rotation-olmo-60m-L4H7-L2H1.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L4H7-L2H2",
+          "reader": "L4H7",
+          "writer": "L2H2",
+          "asset": "family-rotation-olmo-60m-L4H7-L2H2.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L4H7-L3H3",
+          "reader": "L4H7",
+          "writer": "L3H3",
+          "asset": "family-rotation-olmo-60m-L4H7-L3H3.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L4H8-L2H1",
+          "reader": "L4H8",
+          "writer": "L2H1",
+          "asset": "family-rotation-olmo-60m-L4H8-L2H1.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L4H8-L2H2",
+          "reader": "L4H8",
+          "writer": "L2H2",
+          "asset": "family-rotation-olmo-60m-L4H8-L2H2.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L4H8-L3H3",
+          "reader": "L4H8",
+          "writer": "L3H3",
+          "asset": "family-rotation-olmo-60m-L4H8-L3H3.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L4H8-L3H10",
+          "reader": "L4H8",
+          "writer": "L3H10",
+          "asset": "family-rotation-olmo-60m-L4H8-L3H10.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L6H7-L2H1",
+          "reader": "L6H7",
+          "writer": "L2H1",
+          "asset": "family-rotation-olmo-60m-L6H7-L2H1.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L6H7-L2H2",
+          "reader": "L6H7",
+          "writer": "L2H2",
+          "asset": "family-rotation-olmo-60m-L6H7-L2H2.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L6H7-L3H3",
+          "reader": "L6H7",
+          "writer": "L3H3",
+          "asset": "family-rotation-olmo-60m-L6H7-L3H3.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L6H7-L5H8",
+          "reader": "L6H7",
+          "writer": "L5H8",
+          "asset": "family-rotation-olmo-60m-L6H7-L5H8.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L6H7-L5H10",
+          "reader": "L6H7",
+          "writer": "L5H10",
+          "asset": "family-rotation-olmo-60m-L6H7-L5H10.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L6H11-L3H3",
+          "reader": "L6H11",
+          "writer": "L3H3",
+          "asset": "family-rotation-olmo-60m-L6H11-L3H3.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L6H11-L5H10",
+          "reader": "L6H11",
+          "writer": "L5H10",
+          "asset": "family-rotation-olmo-60m-L6H11-L5H10.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L7H2-L3H3",
+          "reader": "L7H2",
+          "writer": "L3H3",
+          "asset": "family-rotation-olmo-60m-L7H2-L3H3.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L7H2-L5H10",
+          "reader": "L7H2",
+          "writer": "L5H10",
+          "asset": "family-rotation-olmo-60m-L7H2-L5H10.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L8H5-L3H3",
+          "reader": "L8H5",
+          "writer": "L3H3",
+          "asset": "family-rotation-olmo-60m-L8H5-L3H3.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L8H5-L5H10",
+          "reader": "L8H5",
+          "writer": "L5H10",
+          "asset": "family-rotation-olmo-60m-L8H5-L5H10.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L8H5-L7H9",
+          "reader": "L8H5",
+          "writer": "L7H9",
+          "asset": "family-rotation-olmo-60m-L8H5-L7H9.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L8H9-L3H3",
+          "reader": "L8H9",
+          "writer": "L3H3",
+          "asset": "family-rotation-olmo-60m-L8H9-L3H3.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L8H9-L5H10",
+          "reader": "L8H9",
+          "writer": "L5H10",
+          "asset": "family-rotation-olmo-60m-L8H9-L5H10.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L8H9-L7H9",
+          "reader": "L8H9",
+          "writer": "L7H9",
+          "asset": "family-rotation-olmo-60m-L8H9-L7H9.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L8H10-L3H3",
+          "reader": "L8H10",
+          "writer": "L3H3",
+          "asset": "family-rotation-olmo-60m-L8H10-L3H3.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L8H10-L5H10",
+          "reader": "L8H10",
+          "writer": "L5H10",
+          "asset": "family-rotation-olmo-60m-L8H10-L5H10.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L8H10-L7H9",
+          "reader": "L8H10",
+          "writer": "L7H9",
+          "asset": "family-rotation-olmo-60m-L8H10-L7H9.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L9H0-L3H3",
+          "reader": "L9H0",
+          "writer": "L3H3",
+          "asset": "family-rotation-olmo-60m-L9H0-L3H3.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L9H0-L5H10",
+          "reader": "L9H0",
+          "writer": "L5H10",
+          "asset": "family-rotation-olmo-60m-L9H0-L5H10.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L9H0-L7H9",
+          "reader": "L9H0",
+          "writer": "L7H9",
+          "asset": "family-rotation-olmo-60m-L9H0-L7H9.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L9H5-L3H3",
+          "reader": "L9H5",
+          "writer": "L3H3",
+          "asset": "family-rotation-olmo-60m-L9H5-L3H3.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L9H5-L7H9",
+          "reader": "L9H5",
+          "writer": "L7H9",
+          "asset": "family-rotation-olmo-60m-L9H5-L7H9.svg"
+        },
+        {
+          "id": "rotation-olmo-60m-L13H10-L12H10",
+          "reader": "L13H10",
+          "writer": "L12H10",
+          "asset": "family-rotation-olmo-60m-L13H10-L12H10.svg"
+        }
+      ]
+    },
+    {
+      "id": "olmo-90m",
+      "label": "OLMo 90M",
+      "data": "family-rotation-olmo-90m.json",
+      "step": 29901,
+      "checkpoint_label": "fixed public step 29,901",
+      "evaluation_label": "2,083 sequences not used to fit directions / 149,928 queries; shared full-data centers",
+      "routes": [
+        {
+          "id": "rotation-olmo-90m-L8H2-L7H0",
+          "reader": "L8H2",
+          "writer": "L7H0",
+          "asset": "family-rotation-olmo-90m-L8H2-L7H0.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L8H2-L7H11",
+          "reader": "L8H2",
+          "writer": "L7H11",
+          "asset": "family-rotation-olmo-90m-L8H2-L7H11.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L9H9-L7H0",
+          "reader": "L9H9",
+          "writer": "L7H0",
+          "asset": "family-rotation-olmo-90m-L9H9-L7H0.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L9H9-L7H11",
+          "reader": "L9H9",
+          "writer": "L7H11",
+          "asset": "family-rotation-olmo-90m-L9H9-L7H11.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L9H9-L8H9",
+          "reader": "L9H9",
+          "writer": "L8H9",
+          "asset": "family-rotation-olmo-90m-L9H9-L8H9.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L9H11-L7H0",
+          "reader": "L9H11",
+          "writer": "L7H0",
+          "asset": "family-rotation-olmo-90m-L9H11-L7H0.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L9H11-L8H9",
+          "reader": "L9H11",
+          "writer": "L8H9",
+          "asset": "family-rotation-olmo-90m-L9H11-L8H9.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L10H1-L7H0",
+          "reader": "L10H1",
+          "writer": "L7H0",
+          "asset": "family-rotation-olmo-90m-L10H1-L7H0.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L10H1-L9H2",
+          "reader": "L10H1",
+          "writer": "L9H2",
+          "asset": "family-rotation-olmo-90m-L10H1-L9H2.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L10H3-L9H2",
+          "reader": "L10H3",
+          "writer": "L9H2",
+          "asset": "family-rotation-olmo-90m-L10H3-L9H2.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L10H5-L7H0",
+          "reader": "L10H5",
+          "writer": "L7H0",
+          "asset": "family-rotation-olmo-90m-L10H5-L7H0.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L10H5-L8H9",
+          "reader": "L10H5",
+          "writer": "L8H9",
+          "asset": "family-rotation-olmo-90m-L10H5-L8H9.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L10H5-L9H2",
+          "reader": "L10H5",
+          "writer": "L9H2",
+          "asset": "family-rotation-olmo-90m-L10H5-L9H2.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L10H7-L9H2",
+          "reader": "L10H7",
+          "writer": "L9H2",
+          "asset": "family-rotation-olmo-90m-L10H7-L9H2.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L10H8-L7H0",
+          "reader": "L10H8",
+          "writer": "L7H0",
+          "asset": "family-rotation-olmo-90m-L10H8-L7H0.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L10H8-L9H2",
+          "reader": "L10H8",
+          "writer": "L9H2",
+          "asset": "family-rotation-olmo-90m-L10H8-L9H2.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L13H6-L9H2",
+          "reader": "L13H6",
+          "writer": "L9H2",
+          "asset": "family-rotation-olmo-90m-L13H6-L9H2.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L13H6-L12H1",
+          "reader": "L13H6",
+          "writer": "L12H1",
+          "asset": "family-rotation-olmo-90m-L13H6-L12H1.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L14H5-L12H1",
+          "reader": "L14H5",
+          "writer": "L12H1",
+          "asset": "family-rotation-olmo-90m-L14H5-L12H1.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L14H9-L9H2",
+          "reader": "L14H9",
+          "writer": "L9H2",
+          "asset": "family-rotation-olmo-90m-L14H9-L9H2.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L14H9-L12H1",
+          "reader": "L14H9",
+          "writer": "L12H1",
+          "asset": "family-rotation-olmo-90m-L14H9-L12H1.svg"
+        },
+        {
+          "id": "rotation-olmo-90m-L14H9-L13H11",
+          "reader": "L14H9",
+          "writer": "L13H11",
+          "asset": "family-rotation-olmo-90m-L14H9-L13H11.svg"
+        }
+      ]
+    },
+    {
+      "id": "olmo-150m",
+      "label": "OLMo 150M",
+      "data": "family-rotation-olmo-150m.json",
+      "step": 37500,
+      "checkpoint_label": "fixed public step 37,500",
+      "evaluation_label": "2,083 sequences not used to fit directions / 149,928 queries; shared full-data centers",
+      "routes": [
+        {
+          "id": "rotation-olmo-150m-L4H3-L3H0",
+          "reader": "L4H3",
+          "writer": "L3H0",
+          "asset": "family-rotation-olmo-150m-L4H3-L3H0.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L4H3-L3H3",
+          "reader": "L4H3",
+          "writer": "L3H3",
+          "asset": "family-rotation-olmo-150m-L4H3-L3H3.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L4H3-L3H7",
+          "reader": "L4H3",
+          "writer": "L3H7",
+          "asset": "family-rotation-olmo-150m-L4H3-L3H7.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L4H4-L3H7",
+          "reader": "L4H4",
+          "writer": "L3H7",
+          "asset": "family-rotation-olmo-150m-L4H4-L3H7.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L4H7-L3H3",
+          "reader": "L4H7",
+          "writer": "L3H3",
+          "asset": "family-rotation-olmo-150m-L4H7-L3H3.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L4H7-L3H7",
+          "reader": "L4H7",
+          "writer": "L3H7",
+          "asset": "family-rotation-olmo-150m-L4H7-L3H7.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L5H11-L1H7",
+          "reader": "L5H11",
+          "writer": "L1H7",
+          "asset": "family-rotation-olmo-150m-L5H11-L1H7.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L5H11-L1H9",
+          "reader": "L5H11",
+          "writer": "L1H9",
+          "asset": "family-rotation-olmo-150m-L5H11-L1H9.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L5H11-L3H0",
+          "reader": "L5H11",
+          "writer": "L3H0",
+          "asset": "family-rotation-olmo-150m-L5H11-L3H0.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L5H11-L3H3",
+          "reader": "L5H11",
+          "writer": "L3H3",
+          "asset": "family-rotation-olmo-150m-L5H11-L3H3.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L5H11-L3H7",
+          "reader": "L5H11",
+          "writer": "L3H7",
+          "asset": "family-rotation-olmo-150m-L5H11-L3H7.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L6H1-L3H7",
+          "reader": "L6H1",
+          "writer": "L3H7",
+          "asset": "family-rotation-olmo-150m-L6H1-L3H7.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L6H1-L5H6",
+          "reader": "L6H1",
+          "writer": "L5H6",
+          "asset": "family-rotation-olmo-150m-L6H1-L5H6.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L6H6-L3H7",
+          "reader": "L6H6",
+          "writer": "L3H7",
+          "asset": "family-rotation-olmo-150m-L6H6-L3H7.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L6H6-L5H6",
+          "reader": "L6H6",
+          "writer": "L5H6",
+          "asset": "family-rotation-olmo-150m-L6H6-L5H6.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L6H9-L3H7",
+          "reader": "L6H9",
+          "writer": "L3H7",
+          "asset": "family-rotation-olmo-150m-L6H9-L3H7.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L6H9-L5H6",
+          "reader": "L6H9",
+          "writer": "L5H6",
+          "asset": "family-rotation-olmo-150m-L6H9-L5H6.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L6H10-L3H7",
+          "reader": "L6H10",
+          "writer": "L3H7",
+          "asset": "family-rotation-olmo-150m-L6H10-L3H7.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L6H10-L5H6",
+          "reader": "L6H10",
+          "writer": "L5H6",
+          "asset": "family-rotation-olmo-150m-L6H10-L5H6.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L8H3-L7H2",
+          "reader": "L8H3",
+          "writer": "L7H2",
+          "asset": "family-rotation-olmo-150m-L8H3-L7H2.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L8H7-L7H2",
+          "reader": "L8H7",
+          "writer": "L7H2",
+          "asset": "family-rotation-olmo-150m-L8H7-L7H2.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L8H10-L7H2",
+          "reader": "L8H10",
+          "writer": "L7H2",
+          "asset": "family-rotation-olmo-150m-L8H10-L7H2.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L9H0-L7H2",
+          "reader": "L9H0",
+          "writer": "L7H2",
+          "asset": "family-rotation-olmo-150m-L9H0-L7H2.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L9H5-L7H2",
+          "reader": "L9H5",
+          "writer": "L7H2",
+          "asset": "family-rotation-olmo-150m-L9H5-L7H2.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L9H8-L5H6",
+          "reader": "L9H8",
+          "writer": "L5H6",
+          "asset": "family-rotation-olmo-150m-L9H8-L5H6.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L9H8-L7H2",
+          "reader": "L9H8",
+          "writer": "L7H2",
+          "asset": "family-rotation-olmo-150m-L9H8-L7H2.svg"
+        },
+        {
+          "id": "rotation-olmo-150m-L9H9-L7H2",
+          "reader": "L9H9",
+          "writer": "L7H2",
+          "asset": "family-rotation-olmo-150m-L9H9-L7H2.svg"
+        }
+      ]
+    },
+    {
+      "id": "olmo-300m",
+      "label": "OLMo 300M",
+      "data": "family-rotation-olmo-300m.json",
+      "step": 45000,
+      "checkpoint_label": "fixed public step 45,000",
+      "evaluation_label": "2,083 sequences not used to fit directions / 149,928 queries; shared full-data centers",
+      "routes": [
+        {
+          "id": "rotation-olmo-300m-L5H5-L1H7",
+          "reader": "L5H5",
+          "writer": "L1H7",
+          "asset": "family-rotation-olmo-300m-L5H5-L1H7.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L5H5-L4H9",
+          "reader": "L5H5",
+          "writer": "L4H9",
+          "asset": "family-rotation-olmo-300m-L5H5-L4H9.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L5H6-L1H7",
+          "reader": "L5H6",
+          "writer": "L1H7",
+          "asset": "family-rotation-olmo-300m-L5H6-L1H7.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L5H6-L1H12",
+          "reader": "L5H6",
+          "writer": "L1H12",
+          "asset": "family-rotation-olmo-300m-L5H6-L1H12.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L5H6-L4H4",
+          "reader": "L5H6",
+          "writer": "L4H4",
+          "asset": "family-rotation-olmo-300m-L5H6-L4H4.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L5H6-L4H9",
+          "reader": "L5H6",
+          "writer": "L4H9",
+          "asset": "family-rotation-olmo-300m-L5H6-L4H9.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L5H6-L4H14",
+          "reader": "L5H6",
+          "writer": "L4H14",
+          "asset": "family-rotation-olmo-300m-L5H6-L4H14.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L5H8-L4H9",
+          "reader": "L5H8",
+          "writer": "L4H9",
+          "asset": "family-rotation-olmo-300m-L5H8-L4H9.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L5H14-L4H9",
+          "reader": "L5H14",
+          "writer": "L4H9",
+          "asset": "family-rotation-olmo-300m-L5H14-L4H9.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L6H8-L4H9",
+          "reader": "L6H8",
+          "writer": "L4H9",
+          "asset": "family-rotation-olmo-300m-L6H8-L4H9.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L7H3-L4H9",
+          "reader": "L7H3",
+          "writer": "L4H9",
+          "asset": "family-rotation-olmo-300m-L7H3-L4H9.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L7H3-L6H6",
+          "reader": "L7H3",
+          "writer": "L6H6",
+          "asset": "family-rotation-olmo-300m-L7H3-L6H6.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L7H3-L6H7",
+          "reader": "L7H3",
+          "writer": "L6H7",
+          "asset": "family-rotation-olmo-300m-L7H3-L6H7.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L7H8-L6H6",
+          "reader": "L7H8",
+          "writer": "L6H6",
+          "asset": "family-rotation-olmo-300m-L7H8-L6H6.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L7H8-L6H7",
+          "reader": "L7H8",
+          "writer": "L6H7",
+          "asset": "family-rotation-olmo-300m-L7H8-L6H7.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L7H9-L4H9",
+          "reader": "L7H9",
+          "writer": "L4H9",
+          "asset": "family-rotation-olmo-300m-L7H9-L4H9.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L7H9-L6H6",
+          "reader": "L7H9",
+          "writer": "L6H6",
+          "asset": "family-rotation-olmo-300m-L7H9-L6H6.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L7H9-L6H7",
+          "reader": "L7H9",
+          "writer": "L6H7",
+          "asset": "family-rotation-olmo-300m-L7H9-L6H7.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L7H10-L6H6",
+          "reader": "L7H10",
+          "writer": "L6H6",
+          "asset": "family-rotation-olmo-300m-L7H10-L6H6.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L7H12-L4H9",
+          "reader": "L7H12",
+          "writer": "L4H9",
+          "asset": "family-rotation-olmo-300m-L7H12-L4H9.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L7H12-L6H6",
+          "reader": "L7H12",
+          "writer": "L6H6",
+          "asset": "family-rotation-olmo-300m-L7H12-L6H6.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L7H12-L6H7",
+          "reader": "L7H12",
+          "writer": "L6H7",
+          "asset": "family-rotation-olmo-300m-L7H12-L6H7.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L7H14-L4H9",
+          "reader": "L7H14",
+          "writer": "L4H9",
+          "asset": "family-rotation-olmo-300m-L7H14-L4H9.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L7H14-L6H6",
+          "reader": "L7H14",
+          "writer": "L6H6",
+          "asset": "family-rotation-olmo-300m-L7H14-L6H6.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L7H15-L6H6",
+          "reader": "L7H15",
+          "writer": "L6H6",
+          "asset": "family-rotation-olmo-300m-L7H15-L6H6.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L8H0-L4H9",
+          "reader": "L8H0",
+          "writer": "L4H9",
+          "asset": "family-rotation-olmo-300m-L8H0-L4H9.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L8H4-L4H9",
+          "reader": "L8H4",
+          "writer": "L4H9",
+          "asset": "family-rotation-olmo-300m-L8H4-L4H9.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L8H4-L6H6",
+          "reader": "L8H4",
+          "writer": "L6H6",
+          "asset": "family-rotation-olmo-300m-L8H4-L6H6.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L8H4-L6H7",
+          "reader": "L8H4",
+          "writer": "L6H7",
+          "asset": "family-rotation-olmo-300m-L8H4-L6H7.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L8H7-L4H9",
+          "reader": "L8H7",
+          "writer": "L4H9",
+          "asset": "family-rotation-olmo-300m-L8H7-L4H9.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L8H7-L6H6",
+          "reader": "L8H7",
+          "writer": "L6H6",
+          "asset": "family-rotation-olmo-300m-L8H7-L6H6.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L8H11-L1H7",
+          "reader": "L8H11",
+          "writer": "L1H7",
+          "asset": "family-rotation-olmo-300m-L8H11-L1H7.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L8H11-L4H9",
+          "reader": "L8H11",
+          "writer": "L4H9",
+          "asset": "family-rotation-olmo-300m-L8H11-L4H9.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L8H11-L6H6",
+          "reader": "L8H11",
+          "writer": "L6H6",
+          "asset": "family-rotation-olmo-300m-L8H11-L6H6.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L8H11-L6H7",
+          "reader": "L8H11",
+          "writer": "L6H7",
+          "asset": "family-rotation-olmo-300m-L8H11-L6H7.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L10H14-L6H6",
+          "reader": "L10H14",
+          "writer": "L6H6",
+          "asset": "family-rotation-olmo-300m-L10H14-L6H6.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L13H12-L11H14",
+          "reader": "L13H12",
+          "writer": "L11H14",
+          "asset": "family-rotation-olmo-300m-L13H12-L11H14.svg"
+        },
+        {
+          "id": "rotation-olmo-300m-L13H12-L12H5",
+          "reader": "L13H12",
+          "writer": "L12H5",
+          "asset": "family-rotation-olmo-300m-L13H12-L12H5.svg"
+        }
+      ]
+    },
+    {
+      "id": "olmo-530m",
+      "label": "OLMo 530M",
+      "data": "family-rotation-olmo-530m.json",
+      "step": 51250,
+      "checkpoint_label": "fixed public step 51,250",
+      "evaluation_label": "2,083 sequences not used to fit directions / 149,928 queries; shared full-data centers",
+      "routes": [
+        {
+          "id": "rotation-olmo-530m-L4H12-L3H12",
+          "reader": "L4H12",
+          "writer": "L3H12",
+          "asset": "family-rotation-olmo-530m-L4H12-L3H12.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L5H0-L3H12",
+          "reader": "L5H0",
+          "writer": "L3H12",
+          "asset": "family-rotation-olmo-530m-L5H0-L3H12.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L5H11-L3H11",
+          "reader": "L5H11",
+          "writer": "L3H11",
+          "asset": "family-rotation-olmo-530m-L5H11-L3H11.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L5H11-L3H12",
+          "reader": "L5H11",
+          "writer": "L3H12",
+          "asset": "family-rotation-olmo-530m-L5H11-L3H12.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L6H3-L3H12",
+          "reader": "L6H3",
+          "writer": "L3H12",
+          "asset": "family-rotation-olmo-530m-L6H3-L3H12.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L6H3-L5H2",
+          "reader": "L6H3",
+          "writer": "L5H2",
+          "asset": "family-rotation-olmo-530m-L6H3-L5H2.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L6H3-L5H10",
+          "reader": "L6H3",
+          "writer": "L5H10",
+          "asset": "family-rotation-olmo-530m-L6H3-L5H10.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L6H4-L3H12",
+          "reader": "L6H4",
+          "writer": "L3H12",
+          "asset": "family-rotation-olmo-530m-L6H4-L3H12.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L6H4-L5H2",
+          "reader": "L6H4",
+          "writer": "L5H2",
+          "asset": "family-rotation-olmo-530m-L6H4-L5H2.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L6H6-L5H2",
+          "reader": "L6H6",
+          "writer": "L5H2",
+          "asset": "family-rotation-olmo-530m-L6H6-L5H2.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L6H9-L3H12",
+          "reader": "L6H9",
+          "writer": "L3H12",
+          "asset": "family-rotation-olmo-530m-L6H9-L3H12.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L6H9-L5H2",
+          "reader": "L6H9",
+          "writer": "L5H2",
+          "asset": "family-rotation-olmo-530m-L6H9-L5H2.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L6H9-L5H10",
+          "reader": "L6H9",
+          "writer": "L5H10",
+          "asset": "family-rotation-olmo-530m-L6H9-L5H10.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L6H12-L3H11",
+          "reader": "L6H12",
+          "writer": "L3H11",
+          "asset": "family-rotation-olmo-530m-L6H12-L3H11.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L6H12-L3H12",
+          "reader": "L6H12",
+          "writer": "L3H12",
+          "asset": "family-rotation-olmo-530m-L6H12-L3H12.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L6H12-L5H2",
+          "reader": "L6H12",
+          "writer": "L5H2",
+          "asset": "family-rotation-olmo-530m-L6H12-L5H2.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L6H12-L5H10",
+          "reader": "L6H12",
+          "writer": "L5H10",
+          "asset": "family-rotation-olmo-530m-L6H12-L5H10.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L6H14-L5H2",
+          "reader": "L6H14",
+          "writer": "L5H2",
+          "asset": "family-rotation-olmo-530m-L6H14-L5H2.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L6H14-L5H10",
+          "reader": "L6H14",
+          "writer": "L5H10",
+          "asset": "family-rotation-olmo-530m-L6H14-L5H10.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L7H6-L3H12",
+          "reader": "L7H6",
+          "writer": "L3H12",
+          "asset": "family-rotation-olmo-530m-L7H6-L3H12.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L7H6-L5H2",
+          "reader": "L7H6",
+          "writer": "L5H2",
+          "asset": "family-rotation-olmo-530m-L7H6-L5H2.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L7H12-L3H12",
+          "reader": "L7H12",
+          "writer": "L3H12",
+          "asset": "family-rotation-olmo-530m-L7H12-L3H12.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L7H12-L5H2",
+          "reader": "L7H12",
+          "writer": "L5H2",
+          "asset": "family-rotation-olmo-530m-L7H12-L5H2.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L7H12-L5H10",
+          "reader": "L7H12",
+          "writer": "L5H10",
+          "asset": "family-rotation-olmo-530m-L7H12-L5H10.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L7H14-L3H12",
+          "reader": "L7H14",
+          "writer": "L3H12",
+          "asset": "family-rotation-olmo-530m-L7H14-L3H12.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L7H14-L5H2",
+          "reader": "L7H14",
+          "writer": "L5H2",
+          "asset": "family-rotation-olmo-530m-L7H14-L5H2.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L7H14-L5H10",
+          "reader": "L7H14",
+          "writer": "L5H10",
+          "asset": "family-rotation-olmo-530m-L7H14-L5H10.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L8H8-L5H2",
+          "reader": "L8H8",
+          "writer": "L5H2",
+          "asset": "family-rotation-olmo-530m-L8H8-L5H2.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L8H8-L7H2",
+          "reader": "L8H8",
+          "writer": "L7H2",
+          "asset": "family-rotation-olmo-530m-L8H8-L7H2.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L8H13-L5H2",
+          "reader": "L8H13",
+          "writer": "L5H2",
+          "asset": "family-rotation-olmo-530m-L8H13-L5H2.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L8H13-L7H2",
+          "reader": "L8H13",
+          "writer": "L7H2",
+          "asset": "family-rotation-olmo-530m-L8H13-L7H2.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L9H12-L5H2",
+          "reader": "L9H12",
+          "writer": "L5H2",
+          "asset": "family-rotation-olmo-530m-L9H12-L5H2.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L9H12-L7H2",
+          "reader": "L9H12",
+          "writer": "L7H2",
+          "asset": "family-rotation-olmo-530m-L9H12-L7H2.svg"
+        },
+        {
+          "id": "rotation-olmo-530m-L12H2-L11H8",
+          "reader": "L12H2",
+          "writer": "L11H8",
+          "asset": "family-rotation-olmo-530m-L12H2-L11H8.svg"
+        }
+      ]
+    },
+    {
+      "id": "olmo-750m",
+      "label": "OLMo 750M",
+      "data": "family-rotation-olmo-750m.json",
+      "step": 27500,
+      "checkpoint_label": "fixed public step 27,500",
+      "evaluation_label": "2,083 sequences not used to fit directions / 149,928 queries; shared full-data centers",
+      "routes": [
+        {
+          "id": "rotation-olmo-750m-L3H7-L1H1",
+          "reader": "L3H7",
+          "writer": "L1H1",
+          "asset": "family-rotation-olmo-750m-L3H7-L1H1.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L3H7-L2H8",
+          "reader": "L3H7",
+          "writer": "L2H8",
+          "asset": "family-rotation-olmo-750m-L3H7-L2H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L3H7-L2H14",
+          "reader": "L3H7",
+          "writer": "L2H14",
+          "asset": "family-rotation-olmo-750m-L3H7-L2H14.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L4H3-L1H1",
+          "reader": "L4H3",
+          "writer": "L1H1",
+          "asset": "family-rotation-olmo-750m-L4H3-L1H1.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L4H3-L2H8",
+          "reader": "L4H3",
+          "writer": "L2H8",
+          "asset": "family-rotation-olmo-750m-L4H3-L2H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L6H5-L2H8",
+          "reader": "L6H5",
+          "writer": "L2H8",
+          "asset": "family-rotation-olmo-750m-L6H5-L2H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L6H5-L5H5",
+          "reader": "L6H5",
+          "writer": "L5H5",
+          "asset": "family-rotation-olmo-750m-L6H5-L5H5.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L6H5-L5H8",
+          "reader": "L6H5",
+          "writer": "L5H8",
+          "asset": "family-rotation-olmo-750m-L6H5-L5H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L6H11-L2H8",
+          "reader": "L6H11",
+          "writer": "L2H8",
+          "asset": "family-rotation-olmo-750m-L6H11-L2H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L6H11-L5H5",
+          "reader": "L6H11",
+          "writer": "L5H5",
+          "asset": "family-rotation-olmo-750m-L6H11-L5H5.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L6H11-L5H8",
+          "reader": "L6H11",
+          "writer": "L5H8",
+          "asset": "family-rotation-olmo-750m-L6H11-L5H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L7H0-L5H8",
+          "reader": "L7H0",
+          "writer": "L5H8",
+          "asset": "family-rotation-olmo-750m-L7H0-L5H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L7H0-L6H7",
+          "reader": "L7H0",
+          "writer": "L6H7",
+          "asset": "family-rotation-olmo-750m-L7H0-L6H7.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L7H2-L2H8",
+          "reader": "L7H2",
+          "writer": "L2H8",
+          "asset": "family-rotation-olmo-750m-L7H2-L2H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L7H2-L5H5",
+          "reader": "L7H2",
+          "writer": "L5H5",
+          "asset": "family-rotation-olmo-750m-L7H2-L5H5.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L7H2-L5H8",
+          "reader": "L7H2",
+          "writer": "L5H8",
+          "asset": "family-rotation-olmo-750m-L7H2-L5H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L7H2-L6H7",
+          "reader": "L7H2",
+          "writer": "L6H7",
+          "asset": "family-rotation-olmo-750m-L7H2-L6H7.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L7H6-L2H8",
+          "reader": "L7H6",
+          "writer": "L2H8",
+          "asset": "family-rotation-olmo-750m-L7H6-L2H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L7H6-L5H8",
+          "reader": "L7H6",
+          "writer": "L5H8",
+          "asset": "family-rotation-olmo-750m-L7H6-L5H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L7H6-L6H7",
+          "reader": "L7H6",
+          "writer": "L6H7",
+          "asset": "family-rotation-olmo-750m-L7H6-L6H7.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L8H2-L7H4",
+          "reader": "L8H2",
+          "writer": "L7H4",
+          "asset": "family-rotation-olmo-750m-L8H2-L7H4.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L8H5-L5H8",
+          "reader": "L8H5",
+          "writer": "L5H8",
+          "asset": "family-rotation-olmo-750m-L8H5-L5H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L8H5-L6H7",
+          "reader": "L8H5",
+          "writer": "L6H7",
+          "asset": "family-rotation-olmo-750m-L8H5-L6H7.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L8H5-L7H4",
+          "reader": "L8H5",
+          "writer": "L7H4",
+          "asset": "family-rotation-olmo-750m-L8H5-L7H4.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L8H6-L5H8",
+          "reader": "L8H6",
+          "writer": "L5H8",
+          "asset": "family-rotation-olmo-750m-L8H6-L5H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L8H6-L6H7",
+          "reader": "L8H6",
+          "writer": "L6H7",
+          "asset": "family-rotation-olmo-750m-L8H6-L6H7.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L8H6-L7H4",
+          "reader": "L8H6",
+          "writer": "L7H4",
+          "asset": "family-rotation-olmo-750m-L8H6-L7H4.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L8H12-L5H8",
+          "reader": "L8H12",
+          "writer": "L5H8",
+          "asset": "family-rotation-olmo-750m-L8H12-L5H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L8H12-L7H4",
+          "reader": "L8H12",
+          "writer": "L7H4",
+          "asset": "family-rotation-olmo-750m-L8H12-L7H4.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L8H13-L5H8",
+          "reader": "L8H13",
+          "writer": "L5H8",
+          "asset": "family-rotation-olmo-750m-L8H13-L5H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L10H9-L9H15",
+          "reader": "L10H9",
+          "writer": "L9H15",
+          "asset": "family-rotation-olmo-750m-L10H9-L9H15.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L10H10-L9H15",
+          "reader": "L10H10",
+          "writer": "L9H15",
+          "asset": "family-rotation-olmo-750m-L10H10-L9H15.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L10H11-L5H8",
+          "reader": "L10H11",
+          "writer": "L5H8",
+          "asset": "family-rotation-olmo-750m-L10H11-L5H8.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L10H11-L9H15",
+          "reader": "L10H11",
+          "writer": "L9H15",
+          "asset": "family-rotation-olmo-750m-L10H11-L9H15.svg"
+        },
+        {
+          "id": "rotation-olmo-750m-L10H14-L9H15",
+          "reader": "L10H14",
+          "writer": "L9H15",
+          "asset": "family-rotation-olmo-750m-L10H14-L9H15.svg"
+        }
+      ]
+    },
+    {
+      "id": "olmo-1b",
+      "label": "OLMo 1B",
+      "data": "family-rotation-olmo-1b.json",
+      "step": 69369,
+      "checkpoint_label": "fixed public step 69,369",
+      "evaluation_label": "2,083 sequences not used to fit directions / 149,928 queries; shared full-data centers",
+      "routes": [
+        {
+          "id": "rotation-olmo-1b-L3H8-L1H4",
+          "reader": "L3H8",
+          "writer": "L1H4",
+          "asset": "family-rotation-olmo-1b-L3H8-L1H4.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L3H8-L1H5",
+          "reader": "L3H8",
+          "writer": "L1H5",
+          "asset": "family-rotation-olmo-1b-L3H8-L1H5.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L3H8-L2H6",
+          "reader": "L3H8",
+          "writer": "L2H6",
+          "asset": "family-rotation-olmo-1b-L3H8-L2H6.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L3H13-L1H5",
+          "reader": "L3H13",
+          "writer": "L1H5",
+          "asset": "family-rotation-olmo-1b-L3H13-L1H5.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L3H13-L2H6",
+          "reader": "L3H13",
+          "writer": "L2H6",
+          "asset": "family-rotation-olmo-1b-L3H13-L2H6.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L5H4-L1H5",
+          "reader": "L5H4",
+          "writer": "L1H5",
+          "asset": "family-rotation-olmo-1b-L5H4-L1H5.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L5H4-L2H6",
+          "reader": "L5H4",
+          "writer": "L2H6",
+          "asset": "family-rotation-olmo-1b-L5H4-L2H6.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L5H4-L4H1",
+          "reader": "L5H4",
+          "writer": "L4H1",
+          "asset": "family-rotation-olmo-1b-L5H4-L4H1.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L5H4-L4H8",
+          "reader": "L5H4",
+          "writer": "L4H8",
+          "asset": "family-rotation-olmo-1b-L5H4-L4H8.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L5H5-L2H6",
+          "reader": "L5H5",
+          "writer": "L2H6",
+          "asset": "family-rotation-olmo-1b-L5H5-L2H6.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L5H5-L4H1",
+          "reader": "L5H5",
+          "writer": "L4H1",
+          "asset": "family-rotation-olmo-1b-L5H5-L4H1.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L5H5-L4H8",
+          "reader": "L5H5",
+          "writer": "L4H8",
+          "asset": "family-rotation-olmo-1b-L5H5-L4H8.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L6H6-L4H8",
+          "reader": "L6H6",
+          "writer": "L4H8",
+          "asset": "family-rotation-olmo-1b-L6H6-L4H8.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L6H6-L5H15",
+          "reader": "L6H6",
+          "writer": "L5H15",
+          "asset": "family-rotation-olmo-1b-L6H6-L5H15.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L6H11-L2H6",
+          "reader": "L6H11",
+          "writer": "L2H6",
+          "asset": "family-rotation-olmo-1b-L6H11-L2H6.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L6H11-L4H1",
+          "reader": "L6H11",
+          "writer": "L4H1",
+          "asset": "family-rotation-olmo-1b-L6H11-L4H1.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L6H11-L4H8",
+          "reader": "L6H11",
+          "writer": "L4H8",
+          "asset": "family-rotation-olmo-1b-L6H11-L4H8.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L6H11-L5H15",
+          "reader": "L6H11",
+          "writer": "L5H15",
+          "asset": "family-rotation-olmo-1b-L6H11-L5H15.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L6H12-L4H8",
+          "reader": "L6H12",
+          "writer": "L4H8",
+          "asset": "family-rotation-olmo-1b-L6H12-L4H8.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L6H12-L5H15",
+          "reader": "L6H12",
+          "writer": "L5H15",
+          "asset": "family-rotation-olmo-1b-L6H12-L5H15.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L6H14-L4H8",
+          "reader": "L6H14",
+          "writer": "L4H8",
+          "asset": "family-rotation-olmo-1b-L6H14-L4H8.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L6H14-L5H6",
+          "reader": "L6H14",
+          "writer": "L5H6",
+          "asset": "family-rotation-olmo-1b-L6H14-L5H6.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L6H14-L5H15",
+          "reader": "L6H14",
+          "writer": "L5H15",
+          "asset": "family-rotation-olmo-1b-L6H14-L5H15.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L7H1-L4H8",
+          "reader": "L7H1",
+          "writer": "L4H8",
+          "asset": "family-rotation-olmo-1b-L7H1-L4H8.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L7H1-L5H15",
+          "reader": "L7H1",
+          "writer": "L5H15",
+          "asset": "family-rotation-olmo-1b-L7H1-L5H15.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L7H4-L4H1",
+          "reader": "L7H4",
+          "writer": "L4H1",
+          "asset": "family-rotation-olmo-1b-L7H4-L4H1.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L7H4-L4H8",
+          "reader": "L7H4",
+          "writer": "L4H8",
+          "asset": "family-rotation-olmo-1b-L7H4-L4H8.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L7H4-L5H15",
+          "reader": "L7H4",
+          "writer": "L5H15",
+          "asset": "family-rotation-olmo-1b-L7H4-L5H15.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L7H15-L4H8",
+          "reader": "L7H15",
+          "writer": "L4H8",
+          "asset": "family-rotation-olmo-1b-L7H15-L4H8.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L7H15-L5H15",
+          "reader": "L7H15",
+          "writer": "L5H15",
+          "asset": "family-rotation-olmo-1b-L7H15-L5H15.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L10H3-L9H15",
+          "reader": "L10H3",
+          "writer": "L9H15",
+          "asset": "family-rotation-olmo-1b-L10H3-L9H15.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L10H4-L9H15",
+          "reader": "L10H4",
+          "writer": "L9H15",
+          "asset": "family-rotation-olmo-1b-L10H4-L9H15.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L11H7-L9H15",
+          "reader": "L11H7",
+          "writer": "L9H15",
+          "asset": "family-rotation-olmo-1b-L11H7-L9H15.svg"
+        },
+        {
+          "id": "rotation-olmo-1b-L12H5-L9H15",
+          "reader": "L12H5",
+          "writer": "L9H15",
+          "asset": "family-rotation-olmo-1b-L12H5-L9H15.svg"
+        }
+      ]
+    },
+    {
+      "id": "qwen2p5-0p5b",
+      "label": "Qwen2.5 0.5B",
+      "data": "family-rotation-qwen2p5-0p5b.json",
+      "step": null,
+      "checkpoint_label": "pinned public Base weights",
+      "evaluation_label": "2,083 sequences not used to fit directions / 149,928 queries; shared full-data centers",
+      "routes": [
+        {
+          "id": "rotation-qwen2p5-0p5b-L9H8-L8H7",
+          "reader": "L9H8",
+          "writer": "L8H7",
+          "asset": "family-rotation-qwen2p5-0p5b-L9H8-L8H7.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L9H8-L8H8",
+          "reader": "L9H8",
+          "writer": "L8H8",
+          "asset": "family-rotation-qwen2p5-0p5b-L9H8-L8H8.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L9H8-L8H11",
+          "reader": "L9H8",
+          "writer": "L8H11",
+          "asset": "family-rotation-qwen2p5-0p5b-L9H8-L8H11.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L9H10-L8H7",
+          "reader": "L9H10",
+          "writer": "L8H7",
+          "asset": "family-rotation-qwen2p5-0p5b-L9H10-L8H7.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L9H10-L8H11",
+          "reader": "L9H10",
+          "writer": "L8H11",
+          "asset": "family-rotation-qwen2p5-0p5b-L9H10-L8H11.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L9H11-L8H7",
+          "reader": "L9H11",
+          "writer": "L8H7",
+          "asset": "family-rotation-qwen2p5-0p5b-L9H11-L8H7.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L9H13-L8H7",
+          "reader": "L9H13",
+          "writer": "L8H7",
+          "asset": "family-rotation-qwen2p5-0p5b-L9H13-L8H7.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L11H9-L8H7",
+          "reader": "L11H9",
+          "writer": "L8H7",
+          "asset": "family-rotation-qwen2p5-0p5b-L11H9-L8H7.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L11H9-L8H11",
+          "reader": "L11H9",
+          "writer": "L8H11",
+          "asset": "family-rotation-qwen2p5-0p5b-L11H9-L8H11.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L11H10-L8H7",
+          "reader": "L11H10",
+          "writer": "L8H7",
+          "asset": "family-rotation-qwen2p5-0p5b-L11H10-L8H7.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L11H10-L8H11",
+          "reader": "L11H10",
+          "writer": "L8H11",
+          "asset": "family-rotation-qwen2p5-0p5b-L11H10-L8H11.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L11H10-L10H2",
+          "reader": "L11H10",
+          "writer": "L10H2",
+          "asset": "family-rotation-qwen2p5-0p5b-L11H10-L10H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L11H12-L8H7",
+          "reader": "L11H12",
+          "writer": "L8H7",
+          "asset": "family-rotation-qwen2p5-0p5b-L11H12-L8H7.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H0-L15H2",
+          "reader": "L16H0",
+          "writer": "L15H2",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H0-L15H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H0-L15H4",
+          "reader": "L16H0",
+          "writer": "L15H4",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H0-L15H4.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H1-L15H2",
+          "reader": "L16H1",
+          "writer": "L15H2",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H1-L15H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H2-L8H7",
+          "reader": "L16H2",
+          "writer": "L8H7",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H2-L8H7.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H2-L15H2",
+          "reader": "L16H2",
+          "writer": "L15H2",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H2-L15H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H3-L8H7",
+          "reader": "L16H3",
+          "writer": "L8H7",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H3-L8H7.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H3-L15H2",
+          "reader": "L16H3",
+          "writer": "L15H2",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H3-L15H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H4-L15H2",
+          "reader": "L16H4",
+          "writer": "L15H2",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H4-L15H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H6-L15H2",
+          "reader": "L16H6",
+          "writer": "L15H2",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H6-L15H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H6-L15H4",
+          "reader": "L16H6",
+          "writer": "L15H4",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H6-L15H4.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H7-L15H2",
+          "reader": "L16H7",
+          "writer": "L15H2",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H7-L15H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H9-L8H7",
+          "reader": "L16H9",
+          "writer": "L8H7",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H9-L8H7.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H9-L15H2",
+          "reader": "L16H9",
+          "writer": "L15H2",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H9-L15H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H9-L15H4",
+          "reader": "L16H9",
+          "writer": "L15H4",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H9-L15H4.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H12-L15H2",
+          "reader": "L16H12",
+          "writer": "L15H2",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H12-L15H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-0p5b-L16H13-L15H2",
+          "reader": "L16H13",
+          "writer": "L15H2",
+          "asset": "family-rotation-qwen2p5-0p5b-L16H13-L15H2.svg"
+        }
+      ]
+    },
+    {
+      "id": "qwen2p5-1p5b",
+      "label": "Qwen2.5 1.5B",
+      "data": "family-rotation-qwen2p5-1p5b.json",
+      "step": null,
+      "checkpoint_label": "pinned public Base weights",
+      "evaluation_label": "2,083 sequences not used to fit directions / 149,928 queries; shared full-data centers",
+      "routes": [
+        {
+          "id": "rotation-qwen2p5-1p5b-L2H3-L0H8",
+          "reader": "L2H3",
+          "writer": "L0H8",
+          "asset": "family-rotation-qwen2p5-1p5b-L2H3-L0H8.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L2H3-L1H4",
+          "reader": "L2H3",
+          "writer": "L1H4",
+          "asset": "family-rotation-qwen2p5-1p5b-L2H3-L1H4.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L2H5-L1H4",
+          "reader": "L2H5",
+          "writer": "L1H4",
+          "asset": "family-rotation-qwen2p5-1p5b-L2H5-L1H4.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L8H7-L7H8",
+          "reader": "L8H7",
+          "writer": "L7H8",
+          "asset": "family-rotation-qwen2p5-1p5b-L8H7-L7H8.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L8H7-L7H10",
+          "reader": "L8H7",
+          "writer": "L7H10",
+          "asset": "family-rotation-qwen2p5-1p5b-L8H7-L7H10.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L14H0-L7H8",
+          "reader": "L14H0",
+          "writer": "L7H8",
+          "asset": "family-rotation-qwen2p5-1p5b-L14H0-L7H8.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L14H0-L13H4",
+          "reader": "L14H0",
+          "writer": "L13H4",
+          "asset": "family-rotation-qwen2p5-1p5b-L14H0-L13H4.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L14H1-L13H4",
+          "reader": "L14H1",
+          "writer": "L13H4",
+          "asset": "family-rotation-qwen2p5-1p5b-L14H1-L13H4.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L14H3-L13H4",
+          "reader": "L14H3",
+          "writer": "L13H4",
+          "asset": "family-rotation-qwen2p5-1p5b-L14H3-L13H4.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L14H4-L7H8",
+          "reader": "L14H4",
+          "writer": "L7H8",
+          "asset": "family-rotation-qwen2p5-1p5b-L14H4-L7H8.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L14H4-L13H4",
+          "reader": "L14H4",
+          "writer": "L13H4",
+          "asset": "family-rotation-qwen2p5-1p5b-L14H4-L13H4.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L14H5-L7H8",
+          "reader": "L14H5",
+          "writer": "L7H8",
+          "asset": "family-rotation-qwen2p5-1p5b-L14H5-L7H8.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L14H5-L7H10",
+          "reader": "L14H5",
+          "writer": "L7H10",
+          "asset": "family-rotation-qwen2p5-1p5b-L14H5-L7H10.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L14H5-L13H2",
+          "reader": "L14H5",
+          "writer": "L13H2",
+          "asset": "family-rotation-qwen2p5-1p5b-L14H5-L13H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L14H5-L13H4",
+          "reader": "L14H5",
+          "writer": "L13H4",
+          "asset": "family-rotation-qwen2p5-1p5b-L14H5-L13H4.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L14H6-L13H2",
+          "reader": "L14H6",
+          "writer": "L13H2",
+          "asset": "family-rotation-qwen2p5-1p5b-L14H6-L13H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L19H0-L18H8",
+          "reader": "L19H0",
+          "writer": "L18H8",
+          "asset": "family-rotation-qwen2p5-1p5b-L19H0-L18H8.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L19H1-L18H8",
+          "reader": "L19H1",
+          "writer": "L18H8",
+          "asset": "family-rotation-qwen2p5-1p5b-L19H1-L18H8.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L19H2-L18H8",
+          "reader": "L19H2",
+          "writer": "L18H8",
+          "asset": "family-rotation-qwen2p5-1p5b-L19H2-L18H8.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L19H3-L18H8",
+          "reader": "L19H3",
+          "writer": "L18H8",
+          "asset": "family-rotation-qwen2p5-1p5b-L19H3-L18H8.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L19H4-L18H8",
+          "reader": "L19H4",
+          "writer": "L18H8",
+          "asset": "family-rotation-qwen2p5-1p5b-L19H4-L18H8.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L19H5-L13H4",
+          "reader": "L19H5",
+          "writer": "L13H4",
+          "asset": "family-rotation-qwen2p5-1p5b-L19H5-L13H4.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L19H5-L18H8",
+          "reader": "L19H5",
+          "writer": "L18H8",
+          "asset": "family-rotation-qwen2p5-1p5b-L19H5-L18H8.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L23H0-L22H2",
+          "reader": "L23H0",
+          "writer": "L22H2",
+          "asset": "family-rotation-qwen2p5-1p5b-L23H0-L22H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L23H1-L22H2",
+          "reader": "L23H1",
+          "writer": "L22H2",
+          "asset": "family-rotation-qwen2p5-1p5b-L23H1-L22H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L23H2-L22H2",
+          "reader": "L23H2",
+          "writer": "L22H2",
+          "asset": "family-rotation-qwen2p5-1p5b-L23H2-L22H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L23H3-L22H2",
+          "reader": "L23H3",
+          "writer": "L22H2",
+          "asset": "family-rotation-qwen2p5-1p5b-L23H3-L22H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L23H4-L22H2",
+          "reader": "L23H4",
+          "writer": "L22H2",
+          "asset": "family-rotation-qwen2p5-1p5b-L23H4-L22H2.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-1p5b-L23H8-L22H2",
+          "reader": "L23H8",
+          "writer": "L22H2",
+          "asset": "family-rotation-qwen2p5-1p5b-L23H8-L22H2.svg"
+        }
+      ]
+    },
+    {
+      "id": "qwen2p5-3b",
+      "label": "Qwen2.5 3B",
+      "data": "family-rotation-qwen2p5-3b.json",
+      "step": null,
+      "checkpoint_label": "pinned public Base weights",
+      "evaluation_label": "2,083 sequences not used to fit directions / 149,928 queries; shared full-data centers",
+      "routes": [
+        {
+          "id": "rotation-qwen2p5-3b-L3H0-L1H1",
+          "reader": "L3H0",
+          "writer": "L1H1",
+          "asset": "family-rotation-qwen2p5-3b-L3H0-L1H1.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L3H0-L2H13",
+          "reader": "L3H0",
+          "writer": "L2H13",
+          "asset": "family-rotation-qwen2p5-3b-L3H0-L2H13.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L5H12-L1H1",
+          "reader": "L5H12",
+          "writer": "L1H1",
+          "asset": "family-rotation-qwen2p5-3b-L5H12-L1H1.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L5H12-L4H4",
+          "reader": "L5H12",
+          "writer": "L4H4",
+          "asset": "family-rotation-qwen2p5-3b-L5H12-L4H4.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L5H12-L4H15",
+          "reader": "L5H12",
+          "writer": "L4H15",
+          "asset": "family-rotation-qwen2p5-3b-L5H12-L4H15.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L7H3-L4H4",
+          "reader": "L7H3",
+          "writer": "L4H4",
+          "asset": "family-rotation-qwen2p5-3b-L7H3-L4H4.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L7H3-L4H15",
+          "reader": "L7H3",
+          "writer": "L4H15",
+          "asset": "family-rotation-qwen2p5-3b-L7H3-L4H15.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L7H4-L4H4",
+          "reader": "L7H4",
+          "writer": "L4H4",
+          "asset": "family-rotation-qwen2p5-3b-L7H4-L4H4.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L20H1-L19H11",
+          "reader": "L20H1",
+          "writer": "L19H11",
+          "asset": "family-rotation-qwen2p5-3b-L20H1-L19H11.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L20H2-L19H11",
+          "reader": "L20H2",
+          "writer": "L19H11",
+          "asset": "family-rotation-qwen2p5-3b-L20H2-L19H11.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L20H3-L19H11",
+          "reader": "L20H3",
+          "writer": "L19H11",
+          "asset": "family-rotation-qwen2p5-3b-L20H3-L19H11.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L20H4-L19H11",
+          "reader": "L20H4",
+          "writer": "L19H11",
+          "asset": "family-rotation-qwen2p5-3b-L20H4-L19H11.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L20H5-L19H11",
+          "reader": "L20H5",
+          "writer": "L19H11",
+          "asset": "family-rotation-qwen2p5-3b-L20H5-L19H11.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L20H6-L19H11",
+          "reader": "L20H6",
+          "writer": "L19H11",
+          "asset": "family-rotation-qwen2p5-3b-L20H6-L19H11.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L20H7-L19H11",
+          "reader": "L20H7",
+          "writer": "L19H11",
+          "asset": "family-rotation-qwen2p5-3b-L20H7-L19H11.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L25H1-L24H15",
+          "reader": "L25H1",
+          "writer": "L24H15",
+          "asset": "family-rotation-qwen2p5-3b-L25H1-L24H15.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L25H4-L19H11",
+          "reader": "L25H4",
+          "writer": "L19H11",
+          "asset": "family-rotation-qwen2p5-3b-L25H4-L19H11.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L25H4-L24H15",
+          "reader": "L25H4",
+          "writer": "L24H15",
+          "asset": "family-rotation-qwen2p5-3b-L25H4-L24H15.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L25H5-L19H11",
+          "reader": "L25H5",
+          "writer": "L19H11",
+          "asset": "family-rotation-qwen2p5-3b-L25H5-L19H11.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L25H5-L24H15",
+          "reader": "L25H5",
+          "writer": "L24H15",
+          "asset": "family-rotation-qwen2p5-3b-L25H5-L24H15.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L32H0-L31H9",
+          "reader": "L32H0",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L32H0-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L32H1-L31H9",
+          "reader": "L32H1",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L32H1-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L32H2-L31H9",
+          "reader": "L32H2",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L32H2-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L32H3-L31H9",
+          "reader": "L32H3",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L32H3-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L32H6-L31H9",
+          "reader": "L32H6",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L32H6-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L32H7-L31H9",
+          "reader": "L32H7",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L32H7-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L32H9-L31H9",
+          "reader": "L32H9",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L32H9-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L32H10-L31H9",
+          "reader": "L32H10",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L32H10-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L32H12-L31H9",
+          "reader": "L32H12",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L32H12-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L32H14-L31H9",
+          "reader": "L32H14",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L32H14-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L33H0-L31H9",
+          "reader": "L33H0",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L33H0-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L33H1-L31H9",
+          "reader": "L33H1",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L33H1-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L33H2-L31H9",
+          "reader": "L33H2",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L33H2-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L33H3-L31H9",
+          "reader": "L33H3",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L33H3-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L33H4-L31H9",
+          "reader": "L33H4",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L33H4-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L33H5-L31H9",
+          "reader": "L33H5",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L33H5-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L33H6-L31H9",
+          "reader": "L33H6",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L33H6-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L33H7-L31H9",
+          "reader": "L33H7",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L33H7-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L33H8-L31H9",
+          "reader": "L33H8",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L33H8-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L33H9-L31H9",
+          "reader": "L33H9",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L33H9-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L33H10-L31H9",
+          "reader": "L33H10",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L33H10-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L33H11-L31H9",
+          "reader": "L33H11",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L33H11-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L33H12-L31H9",
+          "reader": "L33H12",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L33H12-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L33H14-L31H9",
+          "reader": "L33H14",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L33H14-L31H9.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-3b-L33H15-L31H9",
+          "reader": "L33H15",
+          "writer": "L31H9",
+          "asset": "family-rotation-qwen2p5-3b-L33H15-L31H9.svg"
+        }
+      ]
+    },
+    {
+      "id": "qwen2p5-7b",
+      "label": "Qwen2.5 7B",
+      "data": "family-rotation-qwen2p5-7b.json",
+      "step": null,
+      "checkpoint_label": "pinned public Base weights",
+      "evaluation_label": "2,083 sequences not used to fit directions / 149,928 queries; shared full-data centers",
+      "routes": [
+        {
+          "id": "rotation-qwen2p5-7b-L2H26-L0H6",
+          "reader": "L2H26",
+          "writer": "L0H6",
+          "asset": "family-rotation-qwen2p5-7b-L2H26-L0H6.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L2H26-L1H15",
+          "reader": "L2H26",
+          "writer": "L1H15",
+          "asset": "family-rotation-qwen2p5-7b-L2H26-L1H15.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L5H18-L3H10",
+          "reader": "L5H18",
+          "writer": "L3H10",
+          "asset": "family-rotation-qwen2p5-7b-L5H18-L3H10.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L5H19-L3H10",
+          "reader": "L5H19",
+          "writer": "L3H10",
+          "asset": "family-rotation-qwen2p5-7b-L5H19-L3H10.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L14H0-L13H13",
+          "reader": "L14H0",
+          "writer": "L13H13",
+          "asset": "family-rotation-qwen2p5-7b-L14H0-L13H13.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L14H1-L13H13",
+          "reader": "L14H1",
+          "writer": "L13H13",
+          "asset": "family-rotation-qwen2p5-7b-L14H1-L13H13.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L14H2-L13H10",
+          "reader": "L14H2",
+          "writer": "L13H10",
+          "asset": "family-rotation-qwen2p5-7b-L14H2-L13H10.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L14H2-L13H13",
+          "reader": "L14H2",
+          "writer": "L13H13",
+          "asset": "family-rotation-qwen2p5-7b-L14H2-L13H13.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L14H4-L3H10",
+          "reader": "L14H4",
+          "writer": "L3H10",
+          "asset": "family-rotation-qwen2p5-7b-L14H4-L3H10.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L14H4-L13H10",
+          "reader": "L14H4",
+          "writer": "L13H10",
+          "asset": "family-rotation-qwen2p5-7b-L14H4-L13H10.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L14H4-L13H13",
+          "reader": "L14H4",
+          "writer": "L13H13",
+          "asset": "family-rotation-qwen2p5-7b-L14H4-L13H13.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L14H6-L13H13",
+          "reader": "L14H6",
+          "writer": "L13H13",
+          "asset": "family-rotation-qwen2p5-7b-L14H6-L13H13.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L17H8-L13H13",
+          "reader": "L17H8",
+          "writer": "L13H13",
+          "asset": "family-rotation-qwen2p5-7b-L17H8-L13H13.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L17H8-L15H11",
+          "reader": "L17H8",
+          "writer": "L15H11",
+          "asset": "family-rotation-qwen2p5-7b-L17H8-L15H11.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L17H13-L13H13",
+          "reader": "L17H13",
+          "writer": "L13H13",
+          "asset": "family-rotation-qwen2p5-7b-L17H13-L13H13.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L17H13-L15H11",
+          "reader": "L17H13",
+          "writer": "L15H11",
+          "asset": "family-rotation-qwen2p5-7b-L17H13-L15H11.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L17H18-L16H8",
+          "reader": "L17H18",
+          "writer": "L16H8",
+          "asset": "family-rotation-qwen2p5-7b-L17H18-L16H8.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L22H0-L21H15",
+          "reader": "L22H0",
+          "writer": "L21H15",
+          "asset": "family-rotation-qwen2p5-7b-L22H0-L21H15.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L22H1-L13H13",
+          "reader": "L22H1",
+          "writer": "L13H13",
+          "asset": "family-rotation-qwen2p5-7b-L22H1-L13H13.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L22H1-L21H15",
+          "reader": "L22H1",
+          "writer": "L21H15",
+          "asset": "family-rotation-qwen2p5-7b-L22H1-L21H15.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L22H2-L21H15",
+          "reader": "L22H2",
+          "writer": "L21H15",
+          "asset": "family-rotation-qwen2p5-7b-L22H2-L21H15.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L22H3-L21H15",
+          "reader": "L22H3",
+          "writer": "L21H15",
+          "asset": "family-rotation-qwen2p5-7b-L22H3-L21H15.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L22H4-L21H15",
+          "reader": "L22H4",
+          "writer": "L21H15",
+          "asset": "family-rotation-qwen2p5-7b-L22H4-L21H15.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L22H5-L21H15",
+          "reader": "L22H5",
+          "writer": "L21H15",
+          "asset": "family-rotation-qwen2p5-7b-L22H5-L21H15.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L22H6-L21H15",
+          "reader": "L22H6",
+          "writer": "L21H15",
+          "asset": "family-rotation-qwen2p5-7b-L22H6-L21H15.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L23H11-L21H15",
+          "reader": "L23H11",
+          "writer": "L21H15",
+          "asset": "family-rotation-qwen2p5-7b-L23H11-L21H15.svg"
+        },
+        {
+          "id": "rotation-qwen2p5-7b-L23H13-L21H15",
+          "reader": "L23H13",
+          "writer": "L21H15",
+          "asset": "family-rotation-qwen2p5-7b-L23H13-L21H15.svg"
+        }
+      ]
+    },
+    {
+      "id": "gpt2-small",
+      "label": "GPT-2 Small (124M)",
+      "data": "family-rotation-gpt2-small.json",
+      "step": null,
+      "checkpoint_label": "pinned public Base weights",
+      "evaluation_label": "2,083 sequences not used to fit directions / 149,928 queries; shared full-data centers",
+      "routes": [
+        {
+          "id": "rotation-gpt2-small-L5H0-L4H11",
+          "reader": "L5H0",
+          "writer": "L4H11",
+          "asset": "family-rotation-gpt2-small-L5H0-L4H11.svg"
+        },
+        {
+          "id": "rotation-gpt2-small-L5H1-L4H11",
+          "reader": "L5H1",
+          "writer": "L4H11",
+          "asset": "family-rotation-gpt2-small-L5H1-L4H11.svg"
+        },
+        {
+          "id": "rotation-gpt2-small-L5H5-L4H11",
+          "reader": "L5H5",
+          "writer": "L4H11",
+          "asset": "family-rotation-gpt2-small-L5H5-L4H11.svg"
+        },
+        {
+          "id": "rotation-gpt2-small-L5H8-L4H11",
+          "reader": "L5H8",
+          "writer": "L4H11",
+          "asset": "family-rotation-gpt2-small-L5H8-L4H11.svg"
+        },
+        {
+          "id": "rotation-gpt2-small-L6H9-L4H11",
+          "reader": "L6H9",
+          "writer": "L4H11",
+          "asset": "family-rotation-gpt2-small-L6H9-L4H11.svg"
+        },
+        {
+          "id": "rotation-gpt2-small-L6H9-L5H6",
+          "reader": "L6H9",
+          "writer": "L5H6",
+          "asset": "family-rotation-gpt2-small-L6H9-L5H6.svg"
+        },
+        {
+          "id": "rotation-gpt2-small-L7H2-L4H11",
+          "reader": "L7H2",
+          "writer": "L4H11",
+          "asset": "family-rotation-gpt2-small-L7H2-L4H11.svg"
+        },
+        {
+          "id": "rotation-gpt2-small-L7H10-L4H11",
+          "reader": "L7H10",
+          "writer": "L4H11",
+          "asset": "family-rotation-gpt2-small-L7H10-L4H11.svg"
+        },
+        {
+          "id": "rotation-gpt2-small-L7H11-L4H11",
+          "reader": "L7H11",
+          "writer": "L4H11",
+          "asset": "family-rotation-gpt2-small-L7H11-L4H11.svg"
+        },
+        {
+          "id": "rotation-gpt2-small-L7H11-L6H8",
+          "reader": "L7H11",
+          "writer": "L6H8",
+          "asset": "family-rotation-gpt2-small-L7H11-L6H8.svg"
+        },
+        {
+          "id": "rotation-gpt2-small-L8H1-L4H11",
+          "reader": "L8H1",
+          "writer": "L4H11",
+          "asset": "family-rotation-gpt2-small-L8H1-L4H11.svg"
+        }
+      ]
+    },
+    {
+      "id": "gpt2-medium",
+      "label": "GPT-2 Medium (355M)",
+      "data": "family-rotation-gpt2-medium.json",
+      "step": null,
+      "checkpoint_label": "pinned public Base weights",
+      "evaluation_label": "2,083 sequences not used to fit directions / 149,928 queries; shared full-data centers",
+      "routes": [
+        {
+          "id": "rotation-gpt2-medium-L5H8-L4H13",
+          "reader": "L5H8",
+          "writer": "L4H13",
+          "asset": "family-rotation-gpt2-medium-L5H8-L4H13.svg"
+        },
+        {
+          "id": "rotation-gpt2-medium-L6H1-L4H13",
+          "reader": "L6H1",
+          "writer": "L4H13",
+          "asset": "family-rotation-gpt2-medium-L6H1-L4H13.svg"
+        },
+        {
+          "id": "rotation-gpt2-medium-L6H1-L5H11",
+          "reader": "L6H1",
+          "writer": "L5H11",
+          "asset": "family-rotation-gpt2-medium-L6H1-L5H11.svg"
+        },
+        {
+          "id": "rotation-gpt2-medium-L6H11-L4H13",
+          "reader": "L6H11",
+          "writer": "L4H13",
+          "asset": "family-rotation-gpt2-medium-L6H11-L4H13.svg"
+        },
+        {
+          "id": "rotation-gpt2-medium-L6H11-L5H11",
+          "reader": "L6H11",
+          "writer": "L5H11",
+          "asset": "family-rotation-gpt2-medium-L6H11-L5H11.svg"
+        },
+        {
+          "id": "rotation-gpt2-medium-L9H4-L8H1",
+          "reader": "L9H4",
+          "writer": "L8H1",
+          "asset": "family-rotation-gpt2-medium-L9H4-L8H1.svg"
+        },
+        {
+          "id": "rotation-gpt2-medium-L10H1-L4H13",
+          "reader": "L10H1",
+          "writer": "L4H13",
+          "asset": "family-rotation-gpt2-medium-L10H1-L4H13.svg"
+        },
+        {
+          "id": "rotation-gpt2-medium-L10H1-L5H11",
+          "reader": "L10H1",
+          "writer": "L5H11",
+          "asset": "family-rotation-gpt2-medium-L10H1-L5H11.svg"
+        },
+        {
+          "id": "rotation-gpt2-medium-L10H1-L6H7",
+          "reader": "L10H1",
+          "writer": "L6H7",
+          "asset": "family-rotation-gpt2-medium-L10H1-L6H7.svg"
+        },
+        {
+          "id": "rotation-gpt2-medium-L10H1-L7H13",
+          "reader": "L10H1",
+          "writer": "L7H13",
+          "asset": "family-rotation-gpt2-medium-L10H1-L7H13.svg"
+        },
+        {
+          "id": "rotation-gpt2-medium-L10H8-L8H1",
+          "reader": "L10H8",
+          "writer": "L8H1",
+          "asset": "family-rotation-gpt2-medium-L10H8-L8H1.svg"
+        }
+      ]
     }
   ],
-  "scope": "All193 endpoint-selected routes across six Pythia scales;step143000;2084sequences,150000queries,and20849616comparisons perroute;Hplus-only operator rotation"
+  "scope": "19 accepted models: six original Pythia scales (193 routes) plus 13 family-frequency models (373 routes). Per-model checkpoint and evaluation scopes are retained."
 }
